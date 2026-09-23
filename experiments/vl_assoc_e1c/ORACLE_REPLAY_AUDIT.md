@@ -1,0 +1,3 @@
+# Isolated oracle continuation: not launched
+
+The pre-GT candidate set was frozen before exposed-GT scoring. Independent scoring found **zero confirmed GT-correct executable recovery proposals**. Therefore there was no legal positive candidate to inject into a cloned causal state for the 30/90/150-frame-and-remainder oracle follow-up. `validation:1-4:5` has a correct old swap but `Bridge.stage` rejects it for `current_quality_or_contact`, so overriding it would violate the legal-candidate requirement. No transaction stream, cloned continuation, IDF1/HOTA or TrackEval output was generated. This is `STOP_NO_CONFIRMED_COUNTERFACTUAL_HEADROOM`, not a negative measured loop effect.

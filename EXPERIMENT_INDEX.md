@@ -1,5 +1,9 @@
 # Experiment record
 
+## E1C-A: recovery-candidate audit, no new API
+
+[Results](experiments/vl_assoc_e1c/RESULTS.md), [full event funnel](experiments/vl_assoc_e1c/EVENT_FUNNEL.md), [handoff](experiments/vl_assoc_e1c/HANDOFF.md). Fixed review base `12c6dcf60df86deedc71c719b867d56e8ab53838`. Read-only old-response and actual-host input verification preceded an independent exposed-GT score. The 289 registered events produced six events with executable restore candidates, but zero confirmed correct executable recovery; seven frozen probe rows breached the two-current-tracklet cap. E1C-A is **STOP / ENGINEERING_FAILURE**. No new model/API call, oracle trajectory continuation, E1C-B freeze, or E2.
+
 ## SLR-1: structured spatial text, offline
 
 Authoritative report: [RESULTS.md](offline/slr1_text/RESULTS.md). Read [PLAN.md](offline/slr1_text/PLAN.md), [MODEL_CONFIG.json](offline/slr1_text/MODEL_CONFIG.json), [PROMPT.txt](offline/slr1_text/PROMPT.txt), [SUMMARY.json](offline/slr1_text/SUMMARY.json), [EVENT_RESULTS.json](offline/slr1_text/EVENT_RESULTS.json), [MODEL_DECISIONS.json](offline/slr1_text/MODEL_DECISIONS.json), and [INVARIANCE.json](offline/slr1_text/INVARIANCE.json) together. The test used 18 exposed first-split events and 72 actual responses. Of 72 outputs, 68 were valid; 24/36 original/reordered pairs agreed. Its local shadow strategy was correct in 11/18 events against the archived Z4Q baseline's 13/18, with one rescue and three previously correct cases harmed. The `STOP_SLR1` decision does not imply a continuous-tracking score.

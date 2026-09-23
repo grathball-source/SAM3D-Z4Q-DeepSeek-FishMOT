@@ -1,0 +1,33 @@
+# E1C-A final audit — STOP
+
+Execution: 2026-09-24, laboratory host `xiongxiong@10.2.212.110`; independent local/server worktrees on branch `codex/vl-assoc-e1c-recovery`, fixed review base `12c6dcf60df86deedc71c719b867d56e8ab53838`. The new commit is stated in the final task response. This was E1C-A only. **No model/API calls**, no old API rerun, no unexposed test GT, no E1C-B request freeze and no E2. Old sealed directories were read-only.
+
+| Axis | Verdict | Evidence |
+| --- | --- | --- |
+| Engineering | **ENGINEERING_FAILURE** | The frozen diagnostic probe generated seven one-owner events with three current tracklets, exceeding the two-tracklet cap; real E1C packets/visual evidence and atomic end-to-end continuation were not completed. Thirteen isolated contract checks pass, but do not cure this failure. |
+| Real input | **INPUT_BLOCKED for new E1C** | Actual-host old RGB, predicted RLE masks, depth and appearance were readable and four old harmful temporal sheets/45 rows were re-bound and inspected. No compliant new E1C image packet was built. |
+| Candidate | **FAIL / STOP** | Of 289 registered events, 14 one-owner queries yielded six events with executable recovery candidates but **zero confirmed correct executable recovery** after separate exposed-GT scoring; twelve one-owner queries were unscorable. At least two sustainable opportunities were required. |
+| Model evidence | **INCONCLUSIVE for E1C** | No new model call. Prior E1 was 113/120 format-legal but temporal selection harmed four B0-correct scorable cases. Its model did affect choices; that does not prove this new recovery method. |
+| Follow-up | **STOP, not measured benefit** | No legal GT-correct recovery existed for a 30/90/150-frame oracle continuation. No TrackEval/IDF1/HOTA claim. |
+
+## Determined errors and boundaries
+
+1. `event_probe.py:32-35,122-125` required both historical identities to have current owners; a missing-old-ID reconnection could not reach the old E1 query/candidate path. `event_probe.py:47-58` offered only current-ID swaps. `probe.py:49-80` exercised a new one-owner restore path on cloned original stages, but the seven >2-tracklet rows make this frozen A implementation noncompliant.
+2. `build_packets.py:119-127` sampled current native frames without full intervening lineage certification. Actual old 24-packet audit found 0 disappearance and 0 public-ID switches across 48 current segments, but 17 contact-state transitions. It is an unguarded mechanism, **not** an established cause of the four wrong choices. New `contract.py:12-24` enforces stable observation/epoch fields only in synthetic checks; no real packet used it.
+3. `e1_protocol.py:65-94` accepted an `applicability` object but did not let it veto a directional preference. `contract.py:83-135` makes cited applicable evidence decision-essential; this remains untested against new model responses. Old legality, association correctness, and policy fallback are separate: 113/120, four harmful scorable temporal choices, and 120/120 consistent archived fallback statuses respectively. See [validity audit](VALIDITY_VS_SEMANTICS.md).
+4. `build_packets.py:66-89` used only final samples for old numeric N, whereas the temporal model saw short sequences. `contract.py:32-63,136-170` supplies a same-sample multi-frame N with explicit null cost and missingness, tested only synthetically. This null cost and the new evidence schema are **new research assumptions**, not retrospective R0 fixes. No fair real E1C numerical-model paired outcome exists.
+5. Four old errors are retained, not cherry-picked: [FAILURE_CASES.md](FAILURE_CASES.md). Old temporal main was wrong on P4218132a1659f1e2, P04c303d9612421d6, P175d295a01799fe5, P1797ad89bd359331. Repeat and aliases are diagnostics, not best-of-run selection.
+
+## Full event and source audit
+
+Original V4 registered 185 development + 104 validation events, 242 two-owner queries, 60 events with executable old swaps. New prediction-only replay kept all 289 trigger episodes: 256 query frames, 261 generated proposals, 64 executable proposals in 62 events; 14 one-owner recovery queries, six with executable recovery. The candidate streams and old-response audit were hashed in `EXPOSURE_MANIFEST.json` before an independent process read exposed development/validation GT. Among 160 scorable events, B0 erred in four; only one had a GT-correct old swap, which the original stage vetoed. The true frame-219 reappearance was absent from the generated restore candidates. All unscorable rows are kept in `ERROR_COVERAGE.jsonl`. See [funnel](EVENT_FUNNEL.md) and [reachability data](CANDIDATE_REACHABILITY.jsonl).
+
+Actual server assets were verified: original RGB bytes, predicted mask RLE bytes, depth, appearance and four old real visual sheets; 45 source rows were checked. The old private wire was readable and 120/120 formal request/response pairs matched archived hashes. The 48 old sheets were **not** all visually reviewed, and no new E1C visual input or evidence-location map was created. The original model's old-episode score is not a closed-loop tracking metric. [Visual scope](PRIVATE_VISUAL_QA.md) and [lineage audit](INPUT_LINEAGE_AUDIT.md) state the limits.
+
+## Tests, cost and stop condition
+
+`EVIDENCE_CONTRACT_TESTS.json`: 13/13 synthetic checks, including model-off, legal preference influence, inapplicable/irrelevant-evidence fallback, epoch/public-switch rejection, numeric tie/missingness and occupied target. The actual-host prediction replay of all 11,288 frames passed exact B0 row parity against archived streams; independent exposed-GT scorer passed file hashes and wrote 289 retained results. A prior-response re-audit verified 120/120 private bindings and decisions. These tests are **not** a completed atomic E1C intervention or sustainable oracle follow-up. No new paid requests or token charges (**$0 new API cost**); E1C model latency is unmeasured. For context only, the old exploratory E1 estimated $1.4613543 for 122 calls and had 36.07-second median formal-call latency, neither a bill nor an E1C pilot estimate. Server `/home/data2` had about 2 GB free at launch, so new small outputs were placed under `/home`; no GPU was allocated.
+
+The phase gate fails on both engineering compliance and zero confirmed sustainable recovery opportunities. `READY_FOR_E1C_PILOT` is **not** delivered. No paid pilot budget/request set was frozen.
+
+One next step: design and prospectively freeze **one corrected two-tracklet recovery-candidate register with verified lineage and real visual packets**, then audit it without API calls before seeking any pilot authorization. Do not retune or re-score this failed frozen probe as if it were a fresh result.

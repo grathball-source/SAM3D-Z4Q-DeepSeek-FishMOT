@@ -1,0 +1,7 @@
+# Old saved-response re-audit
+
+`reaudit.py` checked the immutable 120 formal public responses, decision and ledger seal hashes, then bound all 120 saved private requests/responses to their published hashes on the execution host. It made no API call and read no GT. Results: **113/120 strictly valid**, five `INVALID_EVIDENCE_REFERENCE`, two `INVALID_REASON`; all 120 stored fallback/choice statuses agree with the old decoder. The two reason failures include F000080 (P175d295a01799fe5) whose explanation exceeds the frozen 80-character limit; a plausible direction does not legalize that response.
+
+Strict format validity is not association truth. The old `applicability` object was checked for allowed strings, but `decode` ignored it when finding a winner. Our narrow mechanical semantic check found no explicit single-cue direction declared non-applicable; that **does not** verify evidence strength, fish identity or image interpretation. New `contract.py` rejects a directional winner supported only by inapplicable evidence, separately classifying format fallback and semantic fallback. This has synthetic tests but no new model output.
+
+Under the original all-24 diagnostic denominator, temporal repeat agreement is 21/24 and alias-permuted agreement 19/24. Among pairs where **both** responses are legal, the same counts become 21/22 and 19/21. The latter are conditional diagnostics and do not replace the preregistered all-event denominator. No invalid format response was counted as a correct semantic association.

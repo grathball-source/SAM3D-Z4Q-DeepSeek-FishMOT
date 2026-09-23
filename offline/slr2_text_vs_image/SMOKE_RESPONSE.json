@@ -1,0 +1,35 @@
+{
+  "response": {
+    "id": "e8f0fccb-9e0e-4eac-a1c2-ef4a99077cb2",
+    "object": "chat.completion",
+    "created": 1789889435,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"left\":\"red\",\"right\":\"blue\"}",
+          "reasoning_content": "We need answer JSON only. Need identify left and right large filled square colors. Image: left red square, right blue square. Need basic English color name. Output {\"left\":\"red\",\"right\":\"blue\"}. Ensure schema."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 56,
+      "total_tokens": 349,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 46
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 293
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "seconds": 1.1090000001713634
+}

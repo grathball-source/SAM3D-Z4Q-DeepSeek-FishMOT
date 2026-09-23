@@ -1,0 +1,27 @@
+{
+  "provider": "DeepSeek official API",
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "documented_version_at_design": "DeepSeek-V4.1-Flash",
+  "model_alias_is_immutable_snapshot": false,
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "high",
+  "max_tokens": 65536,
+  "response_format": {"type": "json_object"},
+  "temperature": null,
+  "credential_environment_variable": "DEEPSEEK_API_KEY",
+  "timeout_seconds": 600,
+  "formal_requests": 72,
+  "max_transport_retries_per_request": 1,
+  "maximum_admitted_estimated_usd": 5.0,
+  "prior_engineering_calls_reserve_usd": 0.25,
+  "budget_policy": "Prior reserve + actual peak-price token estimates + next attempt worst-case reserve <= 5 USD; stop before a call that would exceed this. Unknown-charge failures retain full attempt reserve.",
+  "peak_usd_per_million_input_tokens": 0.3,
+  "peak_usd_per_million_output_tokens": 1.2,
+  "documentation": [
+    "https://api-docs.deepseek.com/zh-cn/",
+    "https://api-docs.deepseek.com/guides/thinking_mode/",
+    "https://api-docs.deepseek.com/guides/json_mode/",
+    "https://api-docs.deepseek.com/quick_start/pricing/"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "posthoc_only": true,
+  "source_evaluator_unchanged": true,
+  "invalid_count": 4,
+  "invalid_all_reference_only": true,
+  "invariance_failure_categories": {
+    "reference_validity_only_same_physical_decision": 1,
+    "different_physical_assignment": 4,
+    "MATCH_vs_WAIT": 7
+  },
+  "split_invariance_failure_categories": {
+    "different_physical_assignment": 4,
+    "MATCH_vs_WAIT": 4
+  },
+  "stable_metric_is_local_continuity": true,
+  "all_18_stable_local_flags_reproduced": true,
+  "all_18_pre_public_ids_unique": true,
+  "wrong_proposal_frames": [
+    1276,
+    10659,
+    11488,
+    11920,
+    11950
+  ],
+  "harm_frames": [
+    11488,
+    11920,
+    11950
+  ],
+  "repair_frames": [
+    9408
+  ],
+  "ignoring_reference_contract_original_correct": 10,
+  "ignoring_reference_contract_permuted_correct": 10,
+  "posthoc_history_ownership_counts": {
+    "consistent": 104,
+    "unknown": 2
+  },
+  "posthoc_history_events_with_unknown_or_contradicted": [
+    9518,
+    12072
+  ]
+}

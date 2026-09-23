@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-20T15:38:45+08:00",
+  "exit_code": 0,
+  "frozen_files_verified": 90,
+  "status": {
+    "at": "2026-09-20T15:38:24+08:00",
+    "stage": "MODEL_RUNNING",
+    "pid": 43432,
+    "completed": 2,
+    "valid": 2,
+    "total": 144,
+    "network_attempts": 4,
+    "inflight": 2,
+    "conservative_cost_used_usd": 0.03957479999999999,
+    "reserved_cost_usd": 0.3448688999999999,
+    "model": "deepseek-flash"
+  },
+  "pilot": {
+    "at": "2026-09-20T15:37:54+08:00",
+    "exit_code": 0,
+    "requests": [
+      "R2e6a324e2",
+      "R44d387ec5"
+    ],
+    "actual_image_call_verified": true,
+    "GT_read": false
+  },
+  "responses": [
+    {
+      "request_id": "R2e6a324e2",
+      "arm": "T",
+      "valid": true,
+      "finish_reason": "stop",
+      "seconds": 44.26599999982864
+    },
+    {
+      "request_id": "R44d387ec5",
+      "arm": "V",
+      "valid": true,
+      "finish_reason": "stop",
+      "seconds": 73.43700000015087
+    }
+  ],
+  "effect_scoring_started": false
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "query_id": "Qb3603c42",
+    "variant": "renamed_reversed",
+    "frame": 1182,
+    "stage": "merge_snapshot",
+    "bad_refs": [
+      {
+        "ref": "/recent/3/observations/3/raw_depth_mm/whole/median",
+        "error": "KeyError: 'whole'"
+      },
+      {
+        "ref": "/recent/3/observations/5/raw_depth_mm/whole/median",
+        "error": "KeyError: 'whole'"
+      }
+    ],
+    "non_reference_contract_pass": true,
+    "normalized": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T025f9b48",
+          "O15ab328d"
+        ],
+        [
+          "Tb3603c42",
+          "O71c126d0"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    }
+  },
+  {
+    "query_id": "Qc026476b",
+    "variant": "original",
+    "frame": 8035,
+    "stage": "first_split",
+    "bad_refs": [
+      {
+        "ref": "/current/3/native_lineage_focal_track",
+        "error": "KeyError: 'native_lineage_focal_track'"
+      }
+    ],
+    "non_reference_contract_pass": true,
+    "normalized": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T3cc6818a",
+          "O6a0250c2"
+        ],
+        [
+          "T7ff80ce5",
+          "O415e8444"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    }
+  },
+  {
+    "query_id": "Qcb5416e0",
+    "variant": "original",
+    "frame": 9518,
+    "stage": "first_split",
+    "bad_refs": [
+      {
+        "ref": "/current/2/native_lineage_focal_track",
+        "error": "KeyError: 'native_lineage_focal_track'"
+      }
+    ],
+    "non_reference_contract_pass": true,
+    "normalized": {
+      "state": "UNRESOLVED",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [],
+      "unresolved": [
+        "T0b820aa9",
+        "T33e5b3cc"
+      ]
+    }
+  },
+  {
+    "query_id": "Qd3bdaf12",
+    "variant": "original",
+    "frame": 11900,
+    "stage": "first_split",
+    "bad_refs": [
+      {
+        "ref": "/current/0/native_lineage_focal_track",
+        "error": "KeyError: 'native_lineage_focal_track'"
+      },
+      {
+        "ref": "/current/1/native_lineage_focal_track",
+        "error": "KeyError: 'native_lineage_focal_track'"
+      }
+    ],
+    "non_reference_contract_pass": true,
+    "normalized": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T95e8b10b",
+          "O44c794c8"
+        ],
+        [
+          "Td3bdaf12",
+          "O15ae3481"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    }
+  }
+]

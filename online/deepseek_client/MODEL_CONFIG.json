@@ -1,0 +1,17 @@
+{
+  "base_url": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "thinking": {"type":"enabled"},
+  "reasoning_effort": "high",
+  "max_tokens": 65536,
+  "response_format": {"type":"json_object"},
+  "timeout_seconds": 600,
+  "concurrency": 2,
+  "formal_requests": 144,
+  "maximum_admitted_estimated_usd": 5.0,
+  "peak_usd_per_million_input_tokens": 0.30,
+  "peak_usd_per_million_output_tokens": 1.20,
+  "price_basis": "Official peak prices; ignore cache discounts; estimates are not invoice charges.",
+  "same_model_alias_as_SLR1": true,
+  "immutable_model_revision_available": false
+}

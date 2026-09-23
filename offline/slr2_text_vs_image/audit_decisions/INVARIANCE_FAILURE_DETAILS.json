@@ -1,0 +1,649 @@
+[
+  {
+    "query_id": "Qb3603c42",
+    "frame": 1182,
+    "stage": "merge_snapshot",
+    "category": "reference_validity_only_same_physical_decision",
+    "original_valid": true,
+    "permuted_valid": false,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T025f9b48",
+          "O15ab328d"
+        ],
+        [
+          "Tb3603c42",
+          "O71c126d0"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T025f9b48",
+          "O15ab328d"
+        ],
+        [
+          "Tb3603c42",
+          "O71c126d0"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "permuted_native_matches": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  {
+    "query_id": "Qe476cbd2",
+    "frame": 1276,
+    "stage": "first_split",
+    "category": "different_physical_assignment",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T025f9b48",
+          "O82948d9b"
+        ],
+        [
+          "Tb3603c42",
+          "O030f2911"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T025f9b48",
+          "O82948d9b"
+        ],
+        [
+          "Tb3603c42",
+          "O9de6d13e"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "permuted_native_matches": [
+      [
+        0,
+        6
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  {
+    "query_id": "Qcdb54f79",
+    "frame": 2157,
+    "stage": "merge_snapshot",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "POSSIBLE_MERGE",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [
+        [
+          "O588f3b8b",
+          [
+            "T9c2580d1",
+            "Te924889e"
+          ]
+        ]
+      ],
+      "unresolved": [
+        "T9c2580d1",
+        "Te924889e"
+      ]
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T9c2580d1",
+          "O588f3b8b"
+        ],
+        [
+          "Te924889e",
+          "O43f16f0e"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [],
+    "permuted_native_matches": [
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  {
+    "query_id": "Q85a3b53d",
+    "frame": 5939,
+    "stage": "first_split",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T137a5742",
+          "Ob960e197"
+        ],
+        [
+          "T85a3b53d",
+          "Ob7a8fa55"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "POSSIBLE_MERGE",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [
+        [
+          "Ob7a8fa55",
+          [
+            "T137a5742",
+            "T85a3b53d"
+          ]
+        ]
+      ],
+      "unresolved": [
+        "T137a5742",
+        "T85a3b53d"
+      ]
+    },
+    "original_native_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "permuted_native_matches": []
+  },
+  {
+    "query_id": "Qc026476b",
+    "frame": 8035,
+    "stage": "first_split",
+    "category": "different_physical_assignment",
+    "original_valid": false,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T3cc6818a",
+          "O6a0250c2"
+        ],
+        [
+          "T7ff80ce5",
+          "O415e8444"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T3cc6818a",
+          "O6a0250c2"
+        ],
+        [
+          "T7ff80ce5",
+          "Of64b24fd"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [
+      [
+        2,
+        7
+      ],
+      [
+        5,
+        5
+      ]
+    ],
+    "permuted_native_matches": [
+      [
+        2,
+        8
+      ],
+      [
+        5,
+        5
+      ]
+    ]
+  },
+  {
+    "query_id": "Qcb5416e0",
+    "frame": 9518,
+    "stage": "first_split",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": false,
+    "permuted_valid": true,
+    "original": {
+      "state": "UNRESOLVED",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [],
+      "unresolved": [
+        "T0b820aa9",
+        "T33e5b3cc"
+      ]
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T0b820aa9",
+          "O734e9fc9"
+        ],
+        [
+          "T33e5b3cc",
+          "O26627d9d"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [],
+    "permuted_native_matches": [
+      [
+        2,
+        7
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  {
+    "query_id": "Qdcd2a6cb",
+    "frame": 10659,
+    "stage": "first_split",
+    "category": "different_physical_assignment",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T1eddd335",
+          "Oc6e2ea2e"
+        ],
+        [
+          "Tdcd2a6cb",
+          "O40220318"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T1eddd335",
+          "Oc6e2ea2e"
+        ],
+        [
+          "Tdcd2a6cb",
+          "O7a2df678"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [
+      [
+        1,
+        3
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "permuted_native_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  {
+    "query_id": "Qcdd56746",
+    "frame": 11488,
+    "stage": "first_split",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T5a3c7e7a",
+          "O6bb207a4"
+        ],
+        [
+          "Ta21f885d",
+          "Od7c6f5c6"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "UNRESOLVED",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [],
+      "unresolved": [
+        "T5a3c7e7a",
+        "Ta21f885d"
+      ]
+    },
+    "original_native_matches": [
+      [
+        3,
+        1
+      ],
+      [
+        7,
+        7
+      ]
+    ],
+    "permuted_native_matches": []
+  },
+  {
+    "query_id": "Q08072754",
+    "frame": 11882,
+    "stage": "merge_snapshot",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T95e8b10b",
+          "O914137e3"
+        ],
+        [
+          "Td3bdaf12",
+          "O7c1a9a5c"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "POSSIBLE_MERGE",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [
+        [
+          "O914137e3",
+          [
+            "T95e8b10b",
+            "Td3bdaf12"
+          ]
+        ]
+      ],
+      "unresolved": [
+        "T95e8b10b",
+        "Td3bdaf12"
+      ]
+    },
+    "original_native_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "permuted_native_matches": []
+  },
+  {
+    "query_id": "Qd3bdaf12",
+    "frame": 11900,
+    "stage": "first_split",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": false,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T95e8b10b",
+          "O44c794c8"
+        ],
+        [
+          "Td3bdaf12",
+          "O15ae3481"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "UNRESOLVED",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [],
+      "unresolved": [
+        "T95e8b10b",
+        "Td3bdaf12"
+      ]
+    },
+    "original_native_matches": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    "permuted_native_matches": []
+  },
+  {
+    "query_id": "Qb301072f",
+    "frame": 12072,
+    "stage": "first_split",
+    "category": "different_physical_assignment",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T32ffa7f8",
+          "O6f9b9023"
+        ],
+        [
+          "T7623649f",
+          "O0a02c84d"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "T32ffa7f8",
+          "O9894eb3a"
+        ],
+        [
+          "T7623649f",
+          "O6f9b9023"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "permuted_native_matches": [
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        4
+      ]
+    ]
+  },
+  {
+    "query_id": "Qb949e765",
+    "frame": 12075,
+    "stage": "merge_snapshot",
+    "category": "MATCH_vs_WAIT",
+    "original_valid": true,
+    "permuted_valid": true,
+    "original": {
+      "state": "POSSIBLE_MERGE",
+      "action": "WAIT",
+      "matches": [],
+      "groups": [
+        [
+          "O915ec890",
+          [
+            "Ta6edda09",
+            "Tb55efaa5"
+          ]
+        ]
+      ],
+      "unresolved": [
+        "Ta6edda09",
+        "Tb55efaa5"
+      ]
+    },
+    "permuted": {
+      "state": "MATCH",
+      "action": "PROPOSE_MATCH",
+      "matches": [
+        [
+          "Ta6edda09",
+          "Od0765bb8"
+        ],
+        [
+          "Tb55efaa5",
+          "O6878d58d"
+        ]
+      ],
+      "groups": [],
+      "unresolved": []
+    },
+    "original_native_matches": [],
+    "permuted_native_matches": [
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ]
+    ]
+  }
+]

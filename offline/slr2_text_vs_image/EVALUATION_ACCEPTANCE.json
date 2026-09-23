@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-20T17:15:40+08:00",
+  "exit_code": 0,
+  "model_outputs_sealed_before_GT": true,
+  "model_decisions_sha256": "a690716b21e4ff8a0fbcf15ed99cfa3032a00dd5e0816a11f37c14a83722eab8",
+  "truth_sha256": "88d29eb15557f374837c9e1cc2ac17120476f0292ab1f666c949f848394fd6ce",
+  "reproduced_stable_local_correct": 13,
+  "semantic_checks": {
+    "passed": 20,
+    "failed": 0,
+    "names": [
+      "wrong_match_harms_prior_success",
+      "correct_match_repairs_prior_failure",
+      "WAIT_preserves_success_without_claiming_repair",
+      "invalid_fallback_preserves_failure",
+      "physical_option_name_and_pair_order_independent",
+      "three_physical_matches_required",
+      "third_view_disagreement_veto",
+      "invalid_equal_payload_does_not_establish_consensus",
+      "consistent_WAIT_is_not_match",
+      "repeat_compare_ignores_explanation",
+      "repeat_vs_wait_is_real_change",
+      "focal_swap_permitted_by_transaction_guard",
+      "existing_nonfocal_identity_protected",
+      "newborn_current_identity_can_reconnect",
+      "unselected_focal_owner_duplicate_veto",
+      "negative_quarantine_ID_duplicates_not_identity_collision",
+      "guard_never_mutates_original_public_map",
+      "guard_keeps_unselected_current_observations",
+      "duplicate_selected_observation_rejected",
+      "ambiguous_pre_focal_identity_rejected"
+    ]
+  },
+  "decision": "STOP_SLR2",
+  "hashes": {
+    "EVENT_RESULTS.json": "8afb210554305e27e89ebf5eaaa6f6c4b49324ff47a8307e139c9c7606da8236",
+    "SUMMARY.json": "a0326e25ca2067792bbc49b6bac13e71c3d386a851206bc847a25f5cd3cc3ab2",
+    "RESULTS.md": "0e61d461a9d237346803e7815a5cf895a62286e39760f59b0516939c597bf750"
+  }
+}

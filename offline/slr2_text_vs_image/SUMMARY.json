@@ -1,0 +1,274 @@
+{
+  "at": "2026-09-20T17:15:40+08:00",
+  "decision": "STOP_SLR2",
+  "events": 18,
+  "queries": 36,
+  "model_responses": 144,
+  "stable_correct": 13,
+  "arms": {
+    "T": {
+      "valid_responses": 72,
+      "total_responses": 72,
+      "first_split_views": {
+        "original": {
+          "proposed": 18,
+          "correct_assignment": 17,
+          "abstain": 0,
+          "correct_repair": 4,
+          "wrong_proposal": 1,
+          "harms_stable_success": 0,
+          "policy_correct": 17,
+          "preserves_stable_success": 13
+        },
+        "repeat": {
+          "proposed": 18,
+          "correct_assignment": 16,
+          "abstain": 0,
+          "correct_repair": 3,
+          "wrong_proposal": 2,
+          "harms_stable_success": 0,
+          "policy_correct": 16,
+          "preserves_stable_success": 13
+        },
+        "permuted": {
+          "proposed": 18,
+          "correct_assignment": 16,
+          "abstain": 0,
+          "correct_repair": 3,
+          "wrong_proposal": 2,
+          "harms_stable_success": 0,
+          "policy_correct": 16,
+          "preserves_stable_success": 13
+        }
+      },
+      "consensus": {
+        "proposed": 16,
+        "correct_assignment": 15,
+        "abstain": 2,
+        "correct_repair": 2,
+        "wrong_proposal": 1,
+        "harms_stable_success": 0,
+        "policy_correct": 15,
+        "preserves_stable_success": 13
+      },
+      "guarded_consensus": {
+        "proposed": 16,
+        "correct_assignment": 15,
+        "abstain": 2,
+        "correct_repair": 2,
+        "wrong_proposal": 1,
+        "harms_stable_success": 0,
+        "policy_correct": 15,
+        "preserves_stable_success": 13
+      },
+      "consensus_wait_reasons": {
+        "physical_decision_disagreement": 2
+      },
+      "guard_veto_events": 0,
+      "guard_veto_reasons": {},
+      "original_repeat": {
+        "consistent": 17,
+        "total": 18,
+        "categories": {
+          "same_physical_decision": 17,
+          "different_physical_assignment": 1
+        }
+      },
+      "original_permuted": {
+        "consistent": 17,
+        "total": 18,
+        "categories": {
+          "same_physical_decision": 17,
+          "different_physical_assignment": 1
+        }
+      },
+      "merge_safety": {
+        "total": 18,
+        "valid": 18,
+        "states": {
+          "MATCH": 16,
+          "POSSIBLE_MERGE": 2
+        },
+        "single_call_match_passes_public_guard": 15,
+        "physical_occlusion_truth_scored": false,
+        "actual_tracker_actions": 0
+      }
+    },
+    "V": {
+      "valid_responses": 72,
+      "total_responses": 72,
+      "first_split_views": {
+        "original": {
+          "proposed": 18,
+          "correct_assignment": 15,
+          "abstain": 0,
+          "correct_repair": 3,
+          "wrong_proposal": 3,
+          "harms_stable_success": 1,
+          "policy_correct": 15,
+          "preserves_stable_success": 12
+        },
+        "repeat": {
+          "proposed": 18,
+          "correct_assignment": 16,
+          "abstain": 0,
+          "correct_repair": 3,
+          "wrong_proposal": 2,
+          "harms_stable_success": 0,
+          "policy_correct": 16,
+          "preserves_stable_success": 13
+        },
+        "permuted": {
+          "proposed": 18,
+          "correct_assignment": 15,
+          "abstain": 0,
+          "correct_repair": 3,
+          "wrong_proposal": 3,
+          "harms_stable_success": 1,
+          "policy_correct": 15,
+          "preserves_stable_success": 12
+        }
+      },
+      "consensus": {
+        "proposed": 14,
+        "correct_assignment": 13,
+        "abstain": 4,
+        "correct_repair": 2,
+        "wrong_proposal": 1,
+        "harms_stable_success": 0,
+        "policy_correct": 15,
+        "preserves_stable_success": 13
+      },
+      "guarded_consensus": {
+        "proposed": 13,
+        "correct_assignment": 12,
+        "abstain": 5,
+        "correct_repair": 1,
+        "wrong_proposal": 1,
+        "harms_stable_success": 0,
+        "policy_correct": 14,
+        "preserves_stable_success": 13
+      },
+      "consensus_wait_reasons": {
+        "physical_decision_disagreement": 4
+      },
+      "guard_veto_events": 1,
+      "guard_veto_reasons": {
+        "duplicate_nonnegative_public_identity": 1
+      },
+      "original_repeat": {
+        "consistent": 17,
+        "total": 18,
+        "categories": {
+          "same_physical_decision": 17,
+          "different_physical_assignment": 1
+        }
+      },
+      "original_permuted": {
+        "consistent": 14,
+        "total": 18,
+        "categories": {
+          "same_physical_decision": 14,
+          "different_physical_assignment": 4
+        }
+      },
+      "merge_safety": {
+        "total": 18,
+        "valid": 18,
+        "states": {
+          "MATCH": 17,
+          "POSSIBLE_MERGE": 1
+        },
+        "single_call_match_passes_public_guard": 14,
+        "physical_occlusion_truth_scored": false,
+        "actual_tracker_actions": 0
+      }
+    }
+  },
+  "conservative_cost_usd_including_smoke": 3.4606970999999978,
+  "B2": {
+    "original": {
+      "proposed": 0,
+      "correct_assignment": 0,
+      "abstain": 18,
+      "correct_repair": 0,
+      "wrong_proposal": 0,
+      "harms_stable_success": 0,
+      "policy_correct": 13,
+      "preserves_stable_success": 13
+    },
+    "guarded": {
+      "proposed": 0,
+      "correct_assignment": 0,
+      "abstain": 18,
+      "correct_repair": 0,
+      "wrong_proposal": 0,
+      "harms_stable_success": 0,
+      "policy_correct": 13,
+      "preserves_stable_success": 13
+    }
+  },
+  "gates": {
+    "all_144_sealed": true,
+    "T_valid_at_least_69": true,
+    "V_valid_at_least_69": true,
+    "V_policy_at_least_15": false,
+    "V_repairs_at_least_2": false,
+    "V_zero_harms": true,
+    "V_exceeds_T_by_at_least_1": false
+  },
+  "usage": {
+    "prompt_tokens": 2282796,
+    "completion_tokens": 2313086,
+    "total_tokens": 4595882,
+    "prompt_cache_hit_tokens": 1382654,
+    "prompt_cache_miss_tokens": 900142
+  },
+  "latency_seconds": {
+    "mean": 81.95104166666958,
+    "p95": 150.76500000013039,
+    "maximum": 816.3129999998491
+  },
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "evaluation_checks": {
+    "passed": 20,
+    "failed": 0,
+    "names": [
+      "wrong_match_harms_prior_success",
+      "correct_match_repairs_prior_failure",
+      "WAIT_preserves_success_without_claiming_repair",
+      "invalid_fallback_preserves_failure",
+      "physical_option_name_and_pair_order_independent",
+      "three_physical_matches_required",
+      "third_view_disagreement_veto",
+      "invalid_equal_payload_does_not_establish_consensus",
+      "consistent_WAIT_is_not_match",
+      "repeat_compare_ignores_explanation",
+      "repeat_vs_wait_is_real_change",
+      "focal_swap_permitted_by_transaction_guard",
+      "existing_nonfocal_identity_protected",
+      "newborn_current_identity_can_reconnect",
+      "unselected_focal_owner_duplicate_veto",
+      "negative_quarantine_ID_duplicates_not_identity_collision",
+      "guard_never_mutates_original_public_map",
+      "guard_keeps_unselected_current_observations",
+      "duplicate_selected_observation_rejected",
+      "ambiguous_pre_focal_identity_rejected"
+    ]
+  },
+  "oracle_conditioned": true,
+  "independent_blind_test": false,
+  "continuous_tracking_modified": false,
+  "ground_truth_read_after_all_model_outputs_sealed": true,
+  "notes": [
+    "Stable13/18 is local pre-to-post public-ID continuity, not global identity accuracy.",
+    "Three calls must agree on the same legal physical MATCH; otherwise retain frozen Stable.",
+    "Public guard only simulates two-mask ID assignment and preserves all other current mask IDs.",
+    "Existing nonfocal nonnegative public IDs are protected; newly born IDs may be replaced.",
+    "All exposed correlated events belong to one sequence. No IDF1/HOTA or deployment claim.",
+    "Original-repeat estimates stochastic variability; original-permuted also includes variability.",
+    "Merge snapshots have no physical occlusion truth score and no tracker actions."
+  ]
+}

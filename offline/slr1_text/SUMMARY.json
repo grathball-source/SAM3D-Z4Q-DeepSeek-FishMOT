@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-20T15:06:38+08:00",
+  "decision": "STOP_SLR1",
+  "events": 18,
+  "queries": 36,
+  "model_responses": 72,
+  "stable_correct": 13,
+  "variants": {
+    "B1": {
+      "valid": 18,
+      "proposed": 9,
+      "correct_assignment": 1,
+      "abstain": 9,
+      "correct_repair": 0,
+      "wrong_proposal": 8,
+      "harms_stable_success": 5,
+      "policy_correct": 8,
+      "preserves_stable_success": 8
+    },
+    "L1": {
+      "valid": 15,
+      "proposed": 14,
+      "correct_assignment": 9,
+      "abstain": 4,
+      "correct_repair": 1,
+      "wrong_proposal": 5,
+      "harms_stable_success": 3,
+      "policy_correct": 11,
+      "preserves_stable_success": 10
+    }
+  },
+  "valid_responses": 68,
+  "invariance_pass": 24,
+  "split_invariance_pass": 10,
+  "latency_seconds": {
+    "mean": 72.51236111110968,
+    "p95": 132.34399999980815,
+    "maximum": 196.3279999999795
+  },
+  "usage": {
+    "prompt_tokens": 871130,
+    "completion_tokens": 1206194,
+    "total_tokens": 2077324,
+    "prompt_cache_hit_tokens": 71296,
+    "prompt_cache_miss_tokens": 799834
+  },
+  "returned_models": [
+    "deepseek-flash"
+  ],
+  "oracle_conditioned": true,
+  "independent_blind_test": false,
+  "continuous_tracking_modified": false,
+  "notes": [
+    "Events are correlated and previously exposed.",
+    "No IDF1/HOTA claim; no tracker integration.",
+    "WAIT/invalid maintains frozen B0 for shadow policy; this is not a correct LLM repair.",
+    "Merge snapshot is offline selected, not physical occlusion truth."
+  ]
+}

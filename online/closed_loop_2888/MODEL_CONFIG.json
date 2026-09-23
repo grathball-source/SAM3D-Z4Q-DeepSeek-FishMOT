@@ -1,0 +1,17 @@
+{
+  "base_url": "https://api.deepseek.com/chat/completions",
+  "model": "deepseek-flash",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "high",
+  "response_format": {"type": "json_object"},
+  "max_tokens": 65536,
+  "timeout_seconds": 600,
+  "votes_per_check": 3,
+  "max_http_attempts": 360,
+  "max_input_tokens": 8000000,
+  "max_estimated_usd": 5.0,
+  "max_wall_seconds": 28800,
+  "peak_usd_per_million_input_tokens": 0.30,
+  "peak_usd_per_million_output_tokens": 1.20,
+  "exposure": "EXPOSED_VALIDATION_FEASIBILITY_NOT_BLIND"
+}

@@ -1,0 +1,13 @@
+# DeepSeek + Z4Q closed-loop feasibility (exposed validation)
+
+Status: server engineering validation complete; no DeepSeek API call or effect result yet.
+
+The authoritative experiment directory is `/home/xiongxiong/deepseek_z4q_closedloop_20260923_side` on the lab server. The Windows directory is only a source-preparation copy. The server has independently reproduced all 2,888 B0 frames, passed transaction fixtures, and tested its TrackEval scorer on a deliberately incorrect B1 identity assignment. Raw validation GT is read only by `score.py` after prediction sealing; real-call inference has a GT-denying file audit.
+
+The isolated source copy combines the repaired Z4Q transaction runner from `grathball-source/SAM3D-Z4Q-JEV-FishMOT` with the prior DeepSeek transport as a reference. The copied Z4Q baseline has been checked against all 2,888 archived validation predictions. No old experiment files are changed.
+
+This is a **new** DeepSeek decision protocol, not a rerun of SLR-2 and not the Jev probability protocol. For each eligible causal Z4Q proposal check, the text-only `deepseek-flash` model will see the complete current state and alternatives. Three independent identical requests must unanimously select the same complete edit and independently affirm positive support for every changed edge and a contradiction for every displaced nontransient claim. There are no synthetic probabilities. The existing Z4Q episode rules then require a second qualifying new observation at least five frames later, with at most three checks per episode; the transaction is staged, committed once, and the modified branch continues from its own state.
+
+Comparison is B0 unchanged Z4Q versus B1 DeepSeek-assisted Z4Q on global frames 9301–12188. Both use the same frozen upstream observations. This validation segment has been inspected in previous experiments; results can show engineering and within-segment feasibility, not independent generalization. Inference must not read GT. Seal predictions and transactions before independent scoring. Report all requests, invalid replies, disagreements, first/second confirmations, stage failures, correct/wrong/unscorable transactions, full-timeline incremental identity harm, IDF1/HOTA/AssA/IDSW/FP/FN, latency and cost. Never infer online gain from the earlier 17/18 offline result.
+
+Before real calls: validate the vote contract, run a full runner-chain mock smoke test, freeze code/config/input hashes, and verify the scorer can independently process a nonidentical B1 prediction. A mock response is `ENGINEERING_FIXTURE`, never model evidence. The real-call budget will be at most 360 HTTP attempts, 8 hours, and an estimated USD 5, stopping at the first cap. No semantic retry or GT-guided event selection.

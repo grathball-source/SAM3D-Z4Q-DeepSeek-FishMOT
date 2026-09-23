@@ -1,0 +1,19 @@
+{
+  "experiment": "VL_ASSOC_E1",
+  "base_commit": "a566dc6d606ab77696f08f5490486d6f541ebe15",
+  "allow_api": false,
+  "model": "deepseek-flash",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "high",
+  "response_format": {"type": "json_object"},
+  "max_tokens": 8192,
+  "max_formal_calls": 120,
+  "max_smoke_calls": 2,
+  "max_estimated_usd": 5.0,
+  "event": {"contact_cooldown_seconds": 6, "query_wait_acquired_frames": 15, "query_deadline_seconds": 6, "max_history_identities": 2, "max_current_candidates": 3, "max_nonbaseline_candidates": 4, "references_per_identity": 3, "minimum_reference_spacing_frames": 5},
+  "sampling": {"development_max": 12, "validation_max": 12, "order": "SHA256(registered_episode_id) among causal events with executable nonbaseline candidates"},
+  "numeric_N": {"modalities": ["D", "A", "M"], "distance": "D=depth residual/(15+1.4826*(two MAD)); A=48-bin RGB histogram L1/2; M=extrapolated centroid residual/history box diagonal", "fusion": "equal-weight within-packet candidate ranks for modalities available for every candidate", "missing": "exclude modality; all missing returns B0", "unmatched": "not allowed: each complete candidate assigns both historical identities exactly once", "tie": "B0"},
+  "E1_decoding": "one candidate strictly beats every other complete candidate; otherwise B0",
+  "legacy_online_gate_changed": false,
+  "GT_visible_during_inference": false
+}

@@ -1,0 +1,7 @@
+# Registered protocol differences
+
+R0 is a source-copy engineering repair. `r0_source/bridge.py` shares one epoch transition helper between preview, stage and commit; `r0_source/policy.py` cites the actual latest D1 bank depth sample and its clean anchor rather than substituting an unrelated event anchor; `r0_source/scoring.py` adds causal pairwise GT association relations so fragmented GT individuals are represented. The old source, historical requests, three votes, five-frame confirmation, episode cap, thresholds and sealed outputs remain byte-for-byte unchanged.
+
+E1 is a new research protocol: contact-based events replace the old proposal check moments; a two-history, up-to-three-current complete-candidate interface replaces absolute edit approval; multiple pre-contact and arrived post-contact observations plus optional real RGB sheets replace the old text-only request. The model ranks every legal complete candidate pair using evidence citations. The strict-winner decoder has one call per arm; repeat and alias permutation cannot select the best run. Numerical N is active and uses the same packet.
+
+Candidate reachability still uses the old clone stage, including its quality, historical anchor and native lifecycle vetoes. No old heuristic is silently removed. Stage failures are audited. E1 performs no authoritative commit, so a stage-pass only establishes representability under the old lifecycle; it is not a claim that a model change would improve continuous tracking.

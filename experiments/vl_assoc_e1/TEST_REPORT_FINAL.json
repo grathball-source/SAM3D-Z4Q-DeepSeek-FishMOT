@@ -1,0 +1,39 @@
+{
+  "status": "PASS_R0_ENGINEERING_NO_API_NO_GT",
+  "checks": [
+    "new_native",
+    "same_mapping",
+    "public_change",
+    "alias_change",
+    "alias_revocation",
+    "reappearance",
+    "preview_isolated",
+    "failed_stage_rollback",
+    "duplicate_commit_rejected",
+    "stale_snapshot_rejected",
+    "fragmented_GT4_GT5_included",
+    "wrong_link",
+    "later_harm",
+    "missing_GT_retained",
+    "missed_prediction_unscorable",
+    "duplicate_identity_harm",
+    "fixed_followup_windows",
+    "right_censoring",
+    "original_single_reconnect",
+    "original_atomic_swap",
+    "original_three_check_budget",
+    "original_native_return",
+    "original_input_contract"
+  ],
+  "fixed_B0": {
+    "frames": 2888,
+    "R000010_depth_source_count": 1
+  },
+  "API_calls": 0,
+  "source_hashes": {
+    "bridge.py": "6a0befd59bb0fe6ba6391d4ed68602eb320435c9d7b29cf43086fc81eff0a43a",
+    "policy.py": "da0c80148ce2f84fe1e6311777f2320bd8b2541c7e486e13b97ff1320efc485a",
+    "runner.py": "0aa1866f2af8fd6d7d619421c9a44c067469414d4c91b656f02e7e09e089b9eb",
+    "scoring.py": "c96c07ae9019f0cd3c7930540b1167e996cdc3f4374ec2e969dbea81c0d33be9"
+  }
+}

@@ -1,0 +1,13 @@
+# R0 fixes and limits
+
+The historical source and outputs are read-only. `replay_original.py` first rebuilt all 33 original request bodies byte-for-byte under the frozen source, bound each to the saved request/response hashes and ledger, and matched the sealed 2888 decompressed prediction and transaction rows exactly. It made zero API calls. This validates the historical zero-edit B0/B1 equality; it is not a new repaired-model response. A repaired payload that differs from an old request is a cache miss and must never reuse that answer as a new model observation.
+
+`r0_source/policy.py` now traces `depth_history_source` to the latest D1 bank sample actually read by the depth comparison, including frame, native, canonical/public ID and source mask; it no longer substitutes an unrelated event anchor when the old anchor is empty. The frame-241 `R000010` historical request exposes such a null old anchor and is covered by the fixed-B0 regression. No candidate threshold or ordering changed.
+
+`r0_source/bridge.py` uses one `next_epochs` helper for preview, stage and commit. Version changes on new/reappearing native observations, public-ID changes or alias changes. Preview and failed stage operate on clones; duplicate and stale commits fail. Old three-vote, five-frame and episode-budget rules remain untouched. `TEST_REPORT_FINAL.json` records 23 checks and exact 2888-frame B0 equality.
+
+`r0_source/scoring.py` adds observation-pair relation evaluation anchored in past GT and public observations, so fragmented GT4/GT5 are retained. Same-GT broken links and different-GT wrong links are distinct; missing GT or prediction is retained as unscorable. The fixed 30/90/150-frame follow-up and remaining segment report right-censoring instead of treating a short tail as complete. Synthetic tests include later harm, wrong occupant, duplicate public identity, missing prediction/GT and truncated follow-up. The independent post-seal audit counted 102479 scorable and 6504 unscorable historical pairs, including 16458 GT4 and 17176 GT5 pairs. Since the sealed B0/B1 predictions are identical, incremental harms and improvements are both zero. These are not E1 outcomes.
+
+`R0_SCORE_AUDIT.json` hashes the actual 12-file TrackEval source tree (`1819e779861319c3133dcb9c3cf00fd6a56c36621160a7928d966f78e050ddcd`) and retains the historical standard TrackEval metrics. The relation audit supplements, rather than replaces, IDF1/HOTA. The archived old score remains unchanged.
+
+No new full-sequence corrected closed loop was run. These repairs establish engineering readiness and test contracts, not a tracking improvement.

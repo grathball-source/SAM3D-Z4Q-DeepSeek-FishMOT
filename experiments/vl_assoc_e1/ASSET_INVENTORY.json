@@ -1,0 +1,81 @@
+{
+  "status": "VERIFIED_SERVER_ASSETS",
+  "manifest_sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e",
+  "development": {
+    "split": "development",
+    "first_global_frame": 1,
+    "last_global_frame": 8400,
+    "extra_non_native_masks": 60,
+    "frames": 8400,
+    "observations": 50271,
+    "RGB_unpaired_first_frame": 1,
+    "feature_id_differs_from_native": 7466,
+    "FPN_256_available": 48896,
+    "RGB_hist_48_available": 50268,
+    "RGB_available_frames": 8399,
+    "RGB_hash_verified_frames": 6,
+    "mask_decoded_aligned_frames": 6,
+    "sample": {
+      "global_frame": 8400,
+      "RGB_size": [
+        1920,
+        1080
+      ],
+      "mask_size": [
+        640,
+        360
+      ],
+      "scale_xy": [
+        3,
+        3
+      ],
+      "sample_mask_area": 1059
+    },
+    "source_sha256": {
+      "observations": "92ce16dc5896e17ab80de5ae6bd6e73dfd841bcc01c8e5f53501e87a7fae903e",
+      "depth": "5047adf883c4d7514140a8350ed3141e5e56e51d49d13e61250b55d8a6b93660",
+      "appearance": "236730a11ee85f6f1dfdac57dad3ed6ff590143696c720f5990893c0c0b5a2bf",
+      "masks": "49fc127d359566da392f401a68a304cc213d8e3ac702ad93e91894309200708b"
+    }
+  },
+  "validation": {
+    "split": "validation",
+    "first_global_frame": 9301,
+    "last_global_frame": 12188,
+    "extra_non_native_masks": 20,
+    "frames": 2888,
+    "observations": 17197,
+    "RGB_available_frames": 2888,
+    "feature_id_differs_from_native": 6189,
+    "FPN_256_available": 16872,
+    "RGB_hist_48_available": 17179,
+    "RGB_hash_verified_frames": 4,
+    "mask_decoded_aligned_frames": 4,
+    "sample": {
+      "global_frame": 12188,
+      "RGB_size": [
+        1920,
+        1080
+      ],
+      "mask_size": [
+        640,
+        360
+      ],
+      "scale_xy": [
+        3,
+        3
+      ],
+      "sample_mask_area": 1240
+    },
+    "source_sha256": {
+      "observations": "3fc24d623ca3af22520dc7333ba07ad1479bc766425a2c548b1a13aa922a2e87",
+      "depth": "91a154246748146896ac846f0bdd934bb67be874fe823124263650e88ad62f0e",
+      "appearance": "2510e8b25593ca048d4a00fa05562c03a4503d3e4568c3dff135ff4e4a0ac388",
+      "masks": "ea468964e4b287a3879dfb83b304dd64c83f055e9649d3155fa62c41b717a0fc"
+    }
+  },
+  "FPN_provenance": "existing active_identity_features_v1, 256D whole mask candidate",
+  "RGB_hist_provenance": "existing active_identity_features_v1, 48 bins whole predicted mask",
+  "HSV_provenance": "SLR-2 body mask HSV extractor source only; not present in these feature streams",
+  "visual_QA_scope": "source pixel, hash, grid and mask area verified at listed sample frames; no human image review yet"
+}

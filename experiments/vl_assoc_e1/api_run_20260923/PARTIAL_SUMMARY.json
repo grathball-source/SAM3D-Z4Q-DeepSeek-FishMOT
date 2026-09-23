@@ -1,0 +1,46 @@
+{
+  "research_conclusion": "ENGINEERING_FAILURE",
+  "engineering_status": "STOPPED_EARLY_VALIDITY_GATE",
+  "base_commit": "a566dc6d606ab77696f08f5490486d6f541ebe15",
+  "formal_calls": 34,
+  "formal_calls_started": 35,
+  "smoke_calls": 2,
+  "response_valid": 27,
+  "scorable": 7,
+  "unscorable": 0,
+  "improvement_opportunities": 0,
+  "correct_counts": {
+    "B0": 7,
+    "N": 7,
+    "L-T": 6,
+    "L-V-static": 7,
+    "L-V-temporal": 7
+  },
+  "new_B0_correct_harm": 0,
+  "repeat_agreement": {
+    "L-V-temporal-repeat": 4,
+    "L-V-temporal-permuted": 4
+  },
+  "model_changes_from_B0": 0,
+  "legal_preference_flip_effect": 4,
+  "gates": {
+    "formal_complete": false,
+    "valid_rate_ge_95": false,
+    "scorable_ge_8": false,
+    "improvement_opportunities_ge_2": false,
+    "temporal_minus_N_ge_2": false,
+    "no_new_B0_correct_harm": true,
+    "repeat_agreement_ge_90": false,
+    "alias_agreement_ge_90": false,
+    "nonzero_real_model_influence": false
+  },
+  "estimated_peak_upper_usd": 0.3792579,
+  "truth_sources": {
+    "development": {
+      "baseline_sha256": "18793b53c7f751b149d0bbaa01f307b6c86a48f9c831edb761fe87e2b2a9a8cb",
+      "offline_matches_sha256": "34091028d1e33fde29f89246a91543867d6e0c16d960775725dc4008d9d9977f",
+      "frames_read": 28
+    }
+  },
+  "note": "Offline correct-choice counts are not IDF1/HOTA or a continuous tracking gain."
+}

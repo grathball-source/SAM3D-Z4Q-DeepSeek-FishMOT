@@ -1,0 +1,53 @@
+{
+  "research_conclusion": "INCONCLUSIVE",
+  "exploratory_gate_outcome": "INCONCLUSIVE",
+  "confirmatory_blind": false,
+  "engineering_status": "SCORED_SEALED_E1",
+  "base_commit": "a566dc6d606ab77696f08f5490486d6f541ebe15",
+  "formal_calls": 120,
+  "formal_calls_started": 120,
+  "smoke_calls": 2,
+  "response_valid": 113,
+  "scorable": 19,
+  "unscorable": 5,
+  "improvement_opportunities": 0,
+  "correct_counts": {
+    "B0": 19,
+    "N": 18,
+    "L-T": 16,
+    "L-V-static": 16,
+    "L-V-temporal": 15
+  },
+  "new_B0_correct_harm": 4,
+  "repeat_agreement": {
+    "L-V-temporal-repeat": 21,
+    "L-V-temporal-permuted": 19
+  },
+  "model_changes_from_B0": 5,
+  "legal_preference_flip_effect": 21,
+  "gates": {
+    "formal_complete": true,
+    "scorable_ge_8": true,
+    "improvement_opportunities_ge_2": false,
+    "temporal_minus_N_ge_2": false,
+    "no_new_B0_correct_harm": false,
+    "repeat_agreement_ge_90": false,
+    "alias_agreement_ge_90": false,
+    "nonzero_real_model_influence": true,
+    "valid_rate_ge_90": true
+  },
+  "estimated_peak_upper_usd": 1.4613543,
+  "truth_sources": {
+    "development": {
+      "baseline_sha256": "18793b53c7f751b149d0bbaa01f307b6c86a48f9c831edb761fe87e2b2a9a8cb",
+      "offline_matches_sha256": "34091028d1e33fde29f89246a91543867d6e0c16d960775725dc4008d9d9977f",
+      "frames_read": 52
+    },
+    "validation": {
+      "baseline_sha256": "9a95ed32e184d2e37c185104df184c943733c00d2cbed8b3e85967e8728dbdef",
+      "offline_matches_sha256": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1",
+      "frames_read": 61
+    }
+  },
+  "note": "Offline correct-choice counts are not IDF1/HOTA or a continuous tracking gain."
+}

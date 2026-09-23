@@ -17,7 +17,9 @@ from e1_protocol import decode, validate_packet, validate_response
 from preflight_e1 import body, read, sha
 
 HERE = Path(__file__).resolve().parent
-RUN = HERE / "api_run_20260923"
+RUN_ID = os.environ.get("E1_RUN_ID", "api_run_20260923")
+assert RUN_ID in {"api_run_20260923", "api_rerun_20260923_default64k"}
+RUN = HERE / RUN_ID
 PRIVATE = RUN / "private_api"
 ENDPOINT = "https://api.deepseek.com/chat/completions"
 PRICE_INPUT = .30
@@ -64,16 +66,36 @@ def verify():
     assert sha(HERE / "FREEZE.json") == auth["frozen_freeze_sha256"]
     assert freeze["status"] == "READY_FOR_E1_API" and freeze["model_calls"] == 0
     assert config["allow_api"] is False and auth["allow_api"] is True
-    assert auth["E1_paid_call_authorized"] and auth["budget_usd_hard_cap"] == 5.0
+    rerun = RUN_ID == "api_rerun_20260923_default64k"
+    assert auth["E1_paid_call_authorized"] and auth["budget_usd_hard_cap"] == (20.0 if rerun else 5.0)
     assert auth["max_formal_calls"] == 120 and auth["max_technical_smoke_calls"] == 2
     assert len(freeze["file_sha256"]) == 235
     for name, expected in freeze["file_sha256"].items():
         assert sha(HERE / name) == expected, name
-    plan = read(HERE / "COST_PLAN_FINAL.json")
-    assert plan["formal_calls"] == 120 and plan["combined_peak_worst_usd"] <= 5.
+    plan = read(RUN / "COST_PLAN.json") if rerun else read(HERE / "COST_PLAN_FINAL.json")
+    assert plan["formal_calls"] == 120 and plan["combined_peak_worst_usd"] <= auth["budget_usd_hard_cap"]
     assert config["model"] == plan["model"] == "deepseek-flash"
-    assert config["max_tokens"] == plan["assumptions"]["max_output_tokens"] == 8192
+    if rerun:
+        assert plan["assumptions"]["provider_default_thinking_output_tokens"] == 65536
+        request_freeze = read(RUN / "REQUEST_FREEZE.json")
+        assert request_freeze["status"] == "RERUN_REQUESTS_FROZEN_BEFORE_API"
+        assert request_freeze["cost_plan_sha256"] == sha(RUN / "COST_PLAN.json")
+        assert request_freeze["executor_sha256"] == sha(HERE / "e1_execute.py")
+        assert request_freeze["runner_sha256"] == sha(HERE / "run_phase.sh")
+        assert auth["request_freeze_sha256"] == sha(RUN / "REQUEST_FREEZE.json")
+        config = dict(config, max_tokens=65536, omit_max_tokens=True,
+                      budget_cap_usd=auth["budget_usd_hard_cap"])
+    else:
+        assert config["max_tokens"] == plan["assumptions"]["max_output_tokens"] == 8192
+        config = dict(config, budget_cap_usd=auth["budget_usd_hard_cap"])
     return config, plan
+
+
+def request_body(packet, image, config, prompt):
+    payload = body(packet, image, config, prompt)
+    if config.get("omit_max_tokens"):
+        payload.pop("max_tokens")
+    return payload
 
 
 def key_from_fifo():
@@ -97,7 +119,7 @@ def post(wire, key):
     req = urllib.request.Request(ENDPOINT, data=wire,
                                  headers={"Authorization": "Bearer " + key,
                                           "Content-Type": "application/json"}, method="POST")
-    with urllib.request.build_opener(NoRedirect).open(req, timeout=180) as response:
+    with urllib.request.build_opener(NoRedirect).open(req, timeout=900 if RUN_ID.endswith("default64k") else 180) as response:
         raw = response.read(8 * 1024 * 1024 + 1)
         assert len(raw) <= 8 * 1024 * 1024, "response too large"
         return raw, response.headers.get("x-request-id")
@@ -125,7 +147,7 @@ def call(ident, phase, body_value, packet, baseline, plan_row, key, config):
                    config["max_tokens"] * PRICE_OUTPUT) / 1e6
     spent, started, _ = spent_and_attempts()
     assert ident not in started and len(started) < 122
-    assert spent + reserve <= 5., "paid budget gate"
+    assert spent + reserve <= config["budget_cap_usd"], "paid budget gate"
     request_private = PRIVATE / "requests" / f"{ident}.json"
     assert not request_private.exists()
     request_private.write_bytes(wire)
@@ -160,7 +182,9 @@ def call(ident, phase, body_value, packet, baseline, plan_row, key, config):
             valid, reason = validate_response(packet, output) if isinstance(output, dict) else (False, "INVALID_JSON")
             if finish != "stop":
                 valid, reason = False, "GENERATION_NOT_FINISHED"
-        decision = decode(packet, output, baseline) if packet and phase != "smoke_image" else None
+        decision = ((decode(packet, output, baseline) if valid else
+                     dict(selected=baseline, status="INVALID", reason=reason))
+                    if packet and phase != "smoke_image" else None)
         usage = response.get("usage") or {}
         pt, ct = usage.get("prompt_tokens"), usage.get("completion_tokens")
         charge = ((pt * PRICE_INPUT + ct * PRICE_OUTPUT) / 1e6
@@ -207,7 +231,7 @@ def smoke_bodies(config, dataset):
                                            dict(candidate_id="C2", full_mapping={"X":"B", "Y":"A"})])
     assert validate_packet(packet)
     prompt = (HERE / "PROMPT.txt").read_text(encoding="utf-8")
-    text_body = body(packet, None, config, prompt)
+    text_body = request_body(packet, None, config, prompt)
     first = json.loads((dataset / "manifest.jsonl").open(encoding="utf-8").readline())
     assert first["frame_id"] + 1 == 2
     image = dataset / first["rgb_original"]
@@ -220,6 +244,8 @@ def smoke_bodies(config, dataset):
                                 dict(role="user", content=[dict(type="text", text="Return {\"ok\":true}."),
                                    dict(type="image_url", image_url=dict(url="data:" + mime + ";base64," +
                                                                           base64.b64encode(image.read_bytes()).decode("ascii")))])])
+    if config.get("omit_max_tokens"):
+        image_body.pop("max_tokens")
     return packet, text_body, image_body, sha(image)
 
 
@@ -268,7 +294,7 @@ def run_formal(key, config, plan):
             image = HERE / "images" / image_info["file"] if image_info else None
             if image:
                 assert sha(image) == image_info["sha256"]
-            payload = body(packet, image, config, prompt)
+            payload = request_body(packet, image, config, prompt)
             plan_row = lookup[manifest_path.name]
             baseline = episode["baseline_candidate"]
             if arm.endswith("permuted"):
@@ -290,10 +316,27 @@ def run_formal(key, config, plan):
                           query_time=episode["query_time"], at_utc=complete["at_utc"])
             append(decisions_path, result)
             print("FORMAL", ident, pid, arm, decision["status"], flush=True)
+            if RUN_ID.endswith("default64k"):
+                decisions = rows(decisions_path)
+                if sum(not x["response_valid"] for x in decisions) > 12:
+                    spent_now, started_now, completed_now = spent_and_attempts()
+                    assert len(started_now) == len(completed_now)
+                    save(RUN / "EARLY_STOP_SEALED.json", dict(
+                        status="STOP_90_PERCENT_VALIDITY_UNREACHABLE_BEFORE_GT",
+                        formal_calls_completed=len(decisions),
+                        invalid_formal=sum(not x["response_valid"] for x in decisions),
+                        E1_GT_read=False, freeze_sha256=sha(HERE / "FREEZE.json"),
+                        authorization_sha256=sha(RUN / "RUN_AUTHORIZATION.json"),
+                        ledger_sha256=sha(RUN / "CALL_LEDGER.jsonl"),
+                        decisions_sha256=sha(decisions_path),
+                        response_sha256={p.name: sha(p) for p in sorted((RUN / "responses").glob("*.json"))},
+                        estimated_peak_upper_usd=spent_now, sealed_at_utc=utc()))
+                    print("SEALED_EARLY_STOP_90_PERCENT_GATE", flush=True)
+                    raise SystemExit(3)
     final_spent, final_started, final_completed = spent_and_attempts()
     decisions = rows(decisions_path)
     assert len(decisions) == 120 and len({x["id"] for x in decisions}) == 120
-    assert len(final_started) == len(final_completed) == 122 and final_spent <= 5.
+    assert len(final_started) == len(final_completed) == 122 and final_spent <= config["budget_cap_usd"]
     response_hashes = {p.name: sha(p) for p in sorted((RUN / "responses").glob("*.json"))}
     assert len(response_hashes) == 122
     seal = dict(status="SEALED_BEFORE_INDEPENDENT_E1_SCORING", formal_calls=120,

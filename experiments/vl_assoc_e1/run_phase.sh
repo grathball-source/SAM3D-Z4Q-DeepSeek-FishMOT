@@ -4,7 +4,8 @@ cd "$(dirname "$0")"
 phase="$1"
 shift
 case "$phase" in smoke|formal) ;; *) exit 2 ;; esac
-run_dir=api_run_20260923
+run_dir=${E1_RUN_ID:-api_run_20260923}
+case "$run_dir" in api_run_20260923|api_rerun_20260923_default64k) ;; *) exit 2 ;; esac
 test ! -e "$run_dir/${phase}.log" || exit 3
 test ! -e "$run_dir/${phase}_exit_code.txt" || exit 3
 umask 077

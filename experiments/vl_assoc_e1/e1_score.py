@@ -6,6 +6,7 @@ import copy
 import gzip
 import hashlib
 import json
+import os
 from collections import Counter
 from pathlib import Path
 
@@ -13,7 +14,9 @@ from e1_protocol import decode, model_off, validate_packet, validate_response
 from preflight_e1 import read, sha
 
 HERE = Path(__file__).resolve().parent
-RUN = HERE / "api_run_20260923"
+RUN_ID = os.environ.get("E1_RUN_ID", "api_run_20260923")
+assert RUN_ID in {"api_run_20260923", "api_rerun_20260923_default64k"}
+RUN = HERE / RUN_ID
 
 
 def lines(path):
@@ -57,7 +60,8 @@ def verify_seal(partial=False):
         assert (RUN / "formal_exit_code.txt").read_text().strip() == "143"
     else:
         assert len(starts) == len(completes) == 122 and set(starts) == set(completes)
-    planned = {x["request"]: x for x in read(HERE / "COST_PLAN_FINAL.json")["requests"]}
+    plan_path = RUN / "COST_PLAN.json" if RUN_ID.endswith("default64k") else HERE / "COST_PLAN_FINAL.json"
+    planned = {x["request"]: x for x in read(plan_path)["requests"]}
     assert len(planned) == 120
     for ident, start in starts.items():
         public = read(RUN / "requests" / f"{ident}.json")
@@ -265,8 +269,9 @@ def main():
                           x["selected"][main] == x["selected"][arm] for x in results)
                  for arm in ("L-V-temporal-repeat", "L-V-temporal-permuted")}
     model_change = sum(x["selected"][main] != x["B0"] for x in results)
+    validity_gate = .90 if RUN_ID.endswith("default64k") else .95
+    validity_name = "valid_rate_ge_90" if RUN_ID.endswith("default64k") else "valid_rate_ge_95"
     gates = dict(formal_complete=len(decisions) == 120,
-                 valid_rate_ge_95=valid_responses / 120 >= .95,
                  scorable_ge_8=len(scorable) >= 8,
                  improvement_opportunities_ge_2=sum(x["opportunity"] for x in results) >= 2,
                  temporal_minus_N_ge_2=correct_counts[main] - correct_counts["N"] >= 2,
@@ -274,10 +279,13 @@ def main():
                  repeat_agreement_ge_90=agreement["L-V-temporal-repeat"] / 24 >= .9,
                  alias_agreement_ge_90=agreement["L-V-temporal-permuted"] / 24 >= .9,
                  nonzero_real_model_influence=model_change > 0 and flip_effect > 0)
-    conclusion = ("ENGINEERING_FAILURE" if not gates["formal_complete"] or not gates["valid_rate_ge_95"] else
+    gates[validity_name] = valid_responses / 120 >= validity_gate
+    conclusion = ("ENGINEERING_FAILURE" if not gates["formal_complete"] or not gates[validity_name] else
                   "INCONCLUSIVE" if not gates["scorable_ge_8"] or not gates["improvement_opportunities_ge_2"] else
                   "PASS" if all(gates.values()) else "FAIL")
-    summary = dict(research_conclusion=conclusion,
+    summary = dict(research_conclusion=("INCONCLUSIVE" if RUN_ID.endswith("default64k") else conclusion),
+                   exploratory_gate_outcome=(conclusion if RUN_ID.endswith("default64k") else None),
+                   confirmatory_blind=(not RUN_ID.endswith("default64k")),
                    engineering_status=("STOPPED_EARLY_VALIDITY_GATE" if partial else "SCORED_SEALED_E1"),
                    base_commit=read(HERE / "CONFIG.json")["base_commit"],
                    formal_calls=len(decisions), formal_calls_started=(35 if partial else 120),

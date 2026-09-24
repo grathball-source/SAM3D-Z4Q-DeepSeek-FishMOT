@@ -1,0 +1,11 @@
+{
+  "status": "FROZEN_E1C_DAM_SAME_VISIBLE_SOURCES_NOT_A_MODEL_RESULT",
+  "note": "C1/C2 here are AO1 blind aliases. Historical correctness is a separated exposed-case scoring key; numeric choices did not choose packet construction.",
+  "cases": [
+    {"alias":"B01","role":"AO0_POSITIVE","V1_unique_frames":9,"V2_unique_frames":237,"V0_V1_equal":true,"V0":"NO_EVIDENCE_KEEP","V2":"NO_EVIDENCE_KEEP","V2_numeric_samples_used":179,"complete_comparable_modalities":[],"boundary":"A-side clean historical evidence absent; fallback is not positive KEEP evidence"},
+    {"alias":"B02","role":"OLD_HARM_NEGATIVE","V1_unique_frames":7,"V2_unique_frames":151,"V0_V1_equal":true,"V0":"TIE_KEEP","V2":"TIE_KEEP","V2_numeric_samples_used":151,"complete_comparable_modalities":["D","A"],"boundary":"four older reference frames retained separately from the trigger-minus-60 window"},
+    {"alias":"B03","role":"OLD_HARM_NEGATIVE","V1_unique_frames":9,"V2_unique_frames":119,"V0_V1_equal":true,"V0":"UNIQUE_KEEP","V2":"UNIQUE_KEEP","V2_numeric_samples_used":75,"complete_comparable_modalities":["D","A","M"],"boundary":"same candidate decision, expanded visible timeline"},
+    {"alias":"B04","role":"OLD_HARM_NEGATIVE","V1_unique_frames":9,"V2_unique_frames":154,"V0_V1_equal":true,"V0":"CHANGE","V2":"CHANGE","V2_numeric_samples_used":117,"complete_comparable_modalities":["D","A","M"],"boundary":"existing comparator still chooses historically harmful mapping; scores changed with more samples"},
+    {"alias":"B05","role":"OLD_HARM_NEGATIVE","V1_unique_frames":8,"V2_unique_frames":112,"V0_V1_equal":true,"V0":"CHANGE","V2":"CHANGE","V2_numeric_samples_used":112,"complete_comparable_modalities":["D","A","M"],"boundary":"existing comparator still chooses historically harmful mapping; two older references separate"}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "study": "AO1_INPUT_FIDELITY_PAIRED_DIAGNOSTIC",
+  "fixed_review_base": "9e70e02cc7163c75b1e5c34c6d720c501e08aa87",
+  "external_model_api_calls": 0,
+  "exposure": "EXPOSED_AO0_DIAGNOSTIC_AND_FROZEN_E1_NEGATIVES",
+  "positive_case": "AO0-V-GT2-GT6-1322",
+  "negative_packet_ids": [
+    "P4218132a1659f1e2",
+    "P04c303d9612421d6",
+    "P175d295a01799fe5",
+    "P1797ad89bd359331"
+  ],
+  "v2_start": "max(split_start, registered_prediction_trigger - 60)",
+  "v2_sampling": "every_acquired_frame_through_frozen_query",
+  "fixed_roi": "full_original_1920x1080_frame_for_every_version",
+  "v0": "original_archived_sheets; AO0 frame-number header redacted in blind copy only",
+  "v1": "same V0 source frames, original JPEG and exact uncolored original-resolution crops",
+  "v2": "V1 plus every causally available original JPEG in fixed window; older V1 references separately retained",
+  "mask_guidance": "separate endpoint contour copies only; no identity color in main RGB or middle video frames",
+  "blind_answer_choices": ["C1", "C2", "INSUFFICIENT"],
+  "old_sealed_results_mutable": false
+}

@@ -1,0 +1,40 @@
+{
+  "experiment": "AO1_INPUT_FIDELITY_PAIRED_DIAGNOSTIC",
+  "date_local": "2026-09-24",
+  "host": "ps-ESC8000-G4 / xiongxiong@10.2.212.110",
+  "remote_work_dir": "/home/xiongxiong/ao1_input_fidelity_20260924",
+  "authoritative_private_run": "/home/xiongxiong/ao1_input_fidelity_20260924/range_corrected_run",
+  "origin_main_at_start": "9e70e02cc7163c75b1e5c34c6d720c501e08aa87",
+  "local_branch": "codex/ao1-input-fidelity-main-sync",
+  "python": "/home/data2/xiongxiong/dmot-annotation/env/bin/python3 (Python 3.12.14; cv2 4.11.0; numpy 1.26.4; pycocotools available)",
+  "compute": "CPU only; no GPU allocation, package installation, model call or training",
+  "storage_at_preflight": "/home 29G free; /home/data2 1.8G free; AO1 writes only under /home/xiongxiong and public Git checkout",
+  "source_fidelity": "Actual original RGB 1920x1080 and predicted masks 640x360 with manifest SHA and time alignment; every final V1 crop roundtripped pixel-exactly",
+  "code_sha256": {
+    "build_input.py": "9d7b6a09afdfcfe28c210e982abf0d66db5773bf40cab747799fa216d1e062ec",
+    "build_full.py": "5d400d4f166051ff3a531d27b21c9c8c234a00394a5ea851ac77a85c93682906",
+    "numeric_full.py": "c8092f736582e23a0c80c210851c26700f73fad83ee6c86500918db6d5aafb6d",
+    "parity_check.py": "d645df9b5cabe52d0d0e58053cc06454ff99ad1fcbe3e8bc9e39b9273685b61d",
+    "test_ao1.py": "13d15bb56722e0d918a572b77d0624b6f7546e164bb6615128424e6a2ac700fc"
+  },
+  "authoritative_public_output_sha256": {
+    "SOURCE_MANIFEST.json": "8378df27b617cbe00218449784935fb828bcb5bbbed1a8006f99b02d66bedfbd",
+    "NUMERIC_COMPARISON.json": "869874750e78e42f3f48a4f6dc33f79bb8f9deea0d0eb5bd0752bc18c407aee3",
+    "PARITY_CHECK.json": "a85aa79057f229b62eab55a18d3b85a654b86277b5a06da20d7b24a145d2efa7",
+    "INPUT_QA.json": "11f713a1d4c8bf52ee0d886a52d56dd9f0e261efd943dcdf5f12caa3f3b90b31",
+    "SCORE_KEY.json": "322535914a7305b8ae59963898e85784d34adddc1195043296c902618bef258d"
+  },
+  "run_exit_codes": {
+    "final_build": 0,
+    "final_numeric": 0,
+    "B0_parity": 0,
+    "final_unittest": 0
+  },
+  "model_calls": 0,
+  "API_cost_usd": 0,
+  "unexposed_test_GT_read": false,
+  "exposed_GT_raster_read": false,
+  "old_sealed_outputs_modified": false,
+  "complete_stdout_stderr_and_command_log": "EXECUTION_LOG.md",
+  "restricted_media_manifest": "ARTIFACT_MANIFEST.json"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS_FOR_EXECUTED_AO1_ENGINEERING_CONTRACTS",
+  "actual_host": "ps-ESC8000-G4 / xiongxiong@10.2.212.110",
+  "python": "/home/data2/xiongxiong/dmot-annotation/env/bin/python3",
+  "unittest_command": "AO1_SOURCE_MANIFEST=/home/xiongxiong/ao1_input_fidelity_20260924/range_corrected_run/public/SOURCE_MANIFEST.json AO1_NUMERIC=/home/xiongxiong/ao1_input_fidelity_20260924/range_corrected_run/public/NUMERIC_COMPARISON.json AO1_PRIVATE_ROOT=/home/xiongxiong/ao1_input_fidelity_20260924/range_corrected_run AO1_REPO=/home/xiongxiong/SAM3D-Z4Q-DeepSeek-FishMOT-ao0 python3 -m unittest -q test_ao1",
+  "exit_code": 0,
+  "stdout_stderr": "Ran 10 tests in 0.097s; OK",
+  "tests": [
+    "future_frame_and_timestamp_rejected",
+    "exact_original_RGB_ROI_and_no_coloring",
+    "all_intermediate_frames_native_public_epoch_and_contact_risk_checked",
+    "right_scan_edge_contact_marked_censored",
+    "actual_AO0_clipped_contact_scan_ends_1380_but_wide_scan_ends_1419_with_same_query_1498",
+    "candidate_permutation_reversible_same_physical_answer",
+    "all_five_frozen_cases_same_V0_V1_source_and_causal_V2_with_exact_V0_context_and_close_ranges",
+    "numeric_sources_subset_of_visible_and_V0_V1_identical",
+    "all_15_blind_cards_without_answer_or_source_identity",
+    "old_AO0_oracle_state_metrics_hashes_unchanged"
+  ],
+  "additional_real_checks": {
+    "RGB_original_and_predicted_mask_verified_on_all_built_frames": true,
+    "all_ao1_pixel_exact_crop_roundtrips": true,
+    "old_V0_media_sha256_verified": true,
+    "old_B0_mapping_parity_development_frames": 8069,
+    "old_B0_mapping_parity_validation_frames": 2638,
+    "V0_V1_numeric_equal_all_five": true
+  },
+  "retained_diagnostic": "The first privacy test falsely matched token B0 inside opaque alias B01; revised to a whole-token check. First pilot also stopped on a duplicate frame keyword; the first full script attempt stopped on syntax; the first numeric attempt stopped on an uncollected intermediate frame. An additional V0-range audit found that old E1 crop_xyxy denoted the mask bbox, not its context/close render fields; the earlier complete packets were retained and a new range-corrected run rebuilt exact V0 fields. All are recorded in EXECUTION_LOG.md; no old sealed result was changed.",
+  "not_tested": "No independent blinded human decision, model/VLM capability, method improvement, E2 or unexposed test GT."
+}

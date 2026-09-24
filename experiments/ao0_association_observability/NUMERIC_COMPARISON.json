@@ -1,0 +1,180 @@
+{
+  "status": "SAME_CAUSAL_PACKET_NUMERIC_DIAGNOSTIC",
+  "selected": {
+    "selected": "KEEP",
+    "status": "NO_EVIDENCE_KEEP"
+  },
+  "pairwise": {
+    "A:X": {
+      "values": {
+        "D": null,
+        "A": null,
+        "M": null
+      },
+      "applicability": {
+        "depth": "UNRELIABLE",
+        "appearance": "UNRELIABLE",
+        "motion": "UNRELIABLE"
+      },
+      "mixed_mask": "UNRELIABLE",
+      "source_observations": [
+        [
+          "validation",
+          1484,
+          1,
+          "n:1"
+        ],
+        [
+          "validation",
+          1490,
+          1,
+          "n:1"
+        ],
+        [
+          "validation",
+          1498,
+          1,
+          "n:1"
+        ]
+      ]
+    },
+    "A:Y": {
+      "values": {
+        "D": null,
+        "A": null,
+        "M": null
+      },
+      "applicability": {
+        "depth": "UNRELIABLE",
+        "appearance": "UNRELIABLE",
+        "motion": "UNRELIABLE"
+      },
+      "mixed_mask": "UNRELIABLE",
+      "source_observations": [
+        [
+          "validation",
+          1484,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1490,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1498,
+          4,
+          "n:4"
+        ]
+      ]
+    },
+    "B:X": {
+      "values": {
+        "D": 0.10561799626304588,
+        "A": 0.10754139321390091,
+        "M": 6.6377937501353586
+      },
+      "applicability": {
+        "depth": "APPLICABLE",
+        "appearance": "APPLICABLE",
+        "motion": "APPLICABLE"
+      },
+      "mixed_mask": "UNRELIABLE",
+      "source_observations": [
+        [
+          "validation",
+          1300,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1310,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1484,
+          1,
+          "n:1"
+        ],
+        [
+          "validation",
+          1490,
+          1,
+          "n:1"
+        ],
+        [
+          "validation",
+          1498,
+          1,
+          "n:1"
+        ]
+      ]
+    },
+    "B:Y": {
+      "values": {
+        "D": 0.06757327404186149,
+        "A": 0.19127396357046172,
+        "M": 5.5203507942565935
+      },
+      "applicability": {
+        "depth": "APPLICABLE",
+        "appearance": "APPLICABLE",
+        "motion": "APPLICABLE"
+      },
+      "mixed_mask": "UNRELIABLE",
+      "source_observations": [
+        [
+          "validation",
+          1300,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1310,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1484,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1490,
+          4,
+          "n:4"
+        ],
+        [
+          "validation",
+          1498,
+          4,
+          "n:4"
+        ]
+      ]
+    }
+  },
+  "sample_frames": [
+    1300,
+    1310,
+    1321,
+    1484,
+    1490,
+    1498
+  ],
+  "current_cutoff": 1787709101.092,
+  "source_sha256": {
+    "observations": "3fc24d623ca3af22520dc7333ba07ad1479bc766425a2c548b1a13aa922a2e87",
+    "depth": "91a154246748146896ac846f0bdd934bb67be874fe823124263650e88ad62f0e",
+    "appearance": "2510e8b25593ca048d4a00fa05562c03a4503d3e4568c3dff135ff4e4a0ac388"
+  },
+  "note": "No learned weights, no GT, no numerical evidence invented; D/A/M are the existing E1C comparator. This is one exposed-case diagnostic, not a VLM result."
+}

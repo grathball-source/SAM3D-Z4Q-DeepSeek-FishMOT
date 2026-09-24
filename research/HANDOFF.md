@@ -1,4 +1,8 @@
-# VL_ASSOC_E1 handoff — 2026-09-23
+# Active handoff — AO0, 2026-09-24
+
+Start with `experiments/ao0_association_observability/RESULTS.md`, `DECISION.md`, `PROTOCOL.md`, `CASE_MANIFEST.json`, `METRICS.json` and `ARTIFACT_MANIFEST.json`. AO0's fixed review base is `6d090f9`; it identifies one exposed validation GT2/GT6 swap with both relation-oracle headroom and a real stage/commit continuation. It has no new VLM/model result and no independent query-cutoff identity verification or second qualifying interaction. Status: engineering PASS for one slice; scientific EXISTENCE_ONLY / INCONCLUSIVE_INPUT / STOP_NOT_READY. The four old harmful E1 cases and all older sealed outputs remain unchanged. AO0's latest user authorization requires all public outputs and reports be committed and verified in `origin/main`; it does not grant API calls, E2 or use of private pixels/GT raster in Git. This section supersedes the older handoff as the active entry; the older text below is preserved as historical guidance under its original permissions.
+
+# Historical VL_ASSOC_E1 handoff — 2026-09-23
 
 Fixed base `a566dc6d606ab77696f08f5490486d6f541ebe15`; branch `codex/vl-assoc-r0-e1`. This branch contains only isolated R0 repair copies and E1 offline feasibility preparation under `experiments/vl_assoc_e1/`. Historical public archives and server side inputs/results were read-only. Execution occurred in an independent checkout on the authorized laboratory server. Private image sheets stay in that checkout's `experiments/vl_assoc_e1/images/` and are ignored by Git; do not copy original RGB, base64, credentials or raw predicted masks into the public repository.
 

@@ -1,0 +1,187 @@
+{
+  "status": "EXPOSED_GT_RELATION_DIAGNOSTIC_ONLY",
+  "input_sha256": {
+    "predictions": "eb3e01ac00fb3e4f16a39ecf739a850bb613ceb6f6f3c7e65365311a0f663634",
+    "truth": "55d88b7edae92c993c4ed0a4340307e696bf7cdbcf853c38cd805d9ec50b6057",
+    "matches": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1"
+  },
+  "rows": 17322,
+  "unique_by_gt": {
+    "2": 2848,
+    "3": 2824,
+    "5": 2833,
+    "6": 2842,
+    "4": 2712,
+    "1": 2840
+  },
+  "cooccurrence": {
+    "1": {
+      "0": 0,
+      "1": 0,
+      "2": 2716,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 124,
+      "7": 0,
+      "11": 0
+    },
+    "2": {
+      "0": 0,
+      "1": 1343,
+      "2": 0,
+      "3": 0,
+      "4": 1505,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "11": 0
+    },
+    "3": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 2824,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "11": 0
+    },
+    "4": {
+      "0": 0,
+      "1": 0,
+      "2": 51,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 5,
+      "7": 2656,
+      "11": 0
+    },
+    "5": {
+      "0": 87,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 2720,
+      "6": 0,
+      "7": 0,
+      "11": 26
+    },
+    "6": {
+      "0": 0,
+      "1": 1507,
+      "2": 0,
+      "3": 0,
+      "4": 1335,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "11": 0
+    }
+  },
+  "transitions": [
+    {
+      "gt_id": "5",
+      "before_public": 0,
+      "after_public": 5,
+      "before_end": 89,
+      "after_start": 108,
+      "gap_frames": 18,
+      "after_duration": 2509,
+      "after_end": 2616,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "1",
+      "before_public": 2,
+      "after_public": 6,
+      "before_end": 125,
+      "after_start": 126,
+      "gap_frames": 0,
+      "after_duration": 51,
+      "after_end": 176,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "4",
+      "before_public": 2,
+      "after_public": 6,
+      "before_end": 175,
+      "after_start": 177,
+      "gap_frames": 1,
+      "after_duration": 1,
+      "after_end": 177,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "4",
+      "before_public": 6,
+      "after_public": 7,
+      "before_end": 192,
+      "after_start": 218,
+      "gap_frames": 25,
+      "after_duration": 1916,
+      "after_end": 2133,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "1",
+      "before_public": 6,
+      "after_public": 2,
+      "before_end": 279,
+      "after_start": 280,
+      "gap_frames": 0,
+      "after_duration": 2367,
+      "after_end": 2646,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "2",
+      "before_public": 1,
+      "after_public": 4,
+      "before_end": 1343,
+      "after_start": 1359,
+      "gap_frames": 15,
+      "after_duration": 1223,
+      "after_end": 2581,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "6",
+      "before_public": 4,
+      "after_public": 1,
+      "before_end": 1357,
+      "after_start": 1359,
+      "gap_frames": 1,
+      "after_duration": 1215,
+      "after_end": 2573,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "5",
+      "before_public": 5,
+      "after_public": 11,
+      "before_end": 2823,
+      "after_start": 2824,
+      "gap_frames": 0,
+      "after_duration": 26,
+      "after_end": 2849,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    },
+    {
+      "gt_id": "5",
+      "before_public": 11,
+      "after_public": 5,
+      "before_end": 2849,
+      "after_start": 2850,
+      "gap_frames": 0,
+      "after_duration": 39,
+      "after_end": 2888,
+      "relation": "PUBLIC_CHANGE_NOT_YET_CAUSALLY_ATTRIBUTED"
+    }
+  ],
+  "note": "Public names have no intrinsic GT meaning; transitions survive any global bijective renaming. UNKNOWN never certifies a physical interaction."
+}

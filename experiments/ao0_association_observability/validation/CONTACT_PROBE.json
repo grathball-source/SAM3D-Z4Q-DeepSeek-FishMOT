@@ -1,0 +1,66 @@
+{
+  "status": "PREDICTION_ONLY_PROBE_GT_NOT_READ",
+  "public_ids": [
+    1,
+    4
+  ],
+  "scan_window": [
+    1200,
+    1380
+  ],
+  "rule": "first 15 consecutive eligible frames within 150 after registered pair contact end; same native and epoch; original quality; no contact",
+  "contacts": [
+    {
+      "start": 1322,
+      "end": 1349,
+      "public_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "start": 1351,
+      "end": 1367,
+      "public_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "start": 1370,
+      "end": 1370,
+      "public_ids": [
+        1,
+        4
+      ]
+    },
+    {
+      "start": 1373,
+      "end": 1380,
+      "public_ids": [
+        1,
+        4
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "contact_end": 1380,
+      "query_frame": 1498,
+      "query_time": 1787709101.092,
+      "native_and_epoch": {
+        "1": [
+          1,
+          1
+        ],
+        "4": [
+          4,
+          1
+        ]
+      },
+      "start_of_streak": 1484,
+      "evidence_cutoff_global_frame": 10798
+    }
+  ],
+  "allow_api": false
+}

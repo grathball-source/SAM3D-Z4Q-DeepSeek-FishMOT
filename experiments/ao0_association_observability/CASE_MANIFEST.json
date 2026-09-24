@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_BEFORE_COUNTERFACTUAL",
+  "selection_exposure": "EXPOSED_DIAGNOSTIC_GT_ENRICHED_DEVELOPMENT",
+  "rule": "Prioritize validation GT2/GT6 sustained temporal relation change; at most one additional nonoverlapping independently evidenced physical interaction. Do not select by oracle success.",
+  "first_case": {
+    "case_id": "AO0-V-GT2-GT6-1322",
+    "split": "validation",
+    "gt_diagnostic_only": [2, 6],
+    "pre_intervention_relation_anchor_frame": 1300,
+    "pre_intervention_relation": {"GT2": 1, "GT6": 4},
+    "raw_predicted_pair_contact_runs": [[1322, 1349], [1351, 1367], [1370, 1370], [1373, 1417], [1419, 1419]],
+    "registered_episode": [1322, 1419],
+    "contact_run_gap_tolerance_frames": 2,
+    "query_streak": [1484, 1498],
+    "query_frame": 1498,
+    "query_global_frame": 10798,
+    "query_time_seconds": 1787709101.092,
+    "query_native_epoch": {"public_1": [1, 1], "public_4": [4, 1]},
+    "query_rule": "First 15 consecutive original-quality, contact-free, unchanged native/epoch observations of both related current fragments within 150 frames after registered predicted contact end",
+    "complete_candidates": {
+      "KEEP": {"native_1": 1, "native_4": 4},
+      "SWAP": {"native_1": 4, "native_4": 1}
+    },
+    "output_oracle_id_domain": [1, 4],
+    "output_oracle_alias_policy": "All future masks whose actual B0 public ID equals 1 or 4 are permuted; new unrelated alias IDs are unchanged.",
+    "unparticipating_masks": "unchanged",
+    "input_provenance": {
+      "RQ0_B0_predictions_sha256": "eb3e01ac00fb3e4f16a39ecf739a850bb613ceb6f6f3c7e65365311a0f663634",
+      "observations_sha256": "3fc24d623ca3af22520dc7333ba07ad1479bc766425a2c548b1a13aa922a2e87",
+      "depth_sha256": "91a154246748146896ac846f0bdd934bb67be874fe823124263650e88ad62f0e",
+      "exposed_truth_sha256": "55d88b7edae92c993c4ed0a4340307e696bf7cdbcf853c38cd805d9ec50b6057",
+      "exposed_matches_sha256": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6619fe5928cbd1",
+      "predicted_contact_probe_sha256": "969dde81566a3b3a7c07b45805bb7476f4441236b93103db900f9f6a0113134b"
+    }
+  },
+  "old_VLM_harm_negative_packet_ids": ["P4218132a1659f1e2", "P04c303d9612421d6", "P175d295a01799fe5", "P1797ad89bd359331"],
+  "second_case_policy": "Do not extend until the first real end-to-end stage/commit slice has been checked; require separate physical interaction and persistent correction opportunity. No gate relaxation."
+}

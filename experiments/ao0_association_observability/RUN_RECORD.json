@@ -1,0 +1,31 @@
+{
+  "experiment": "AO0_ASSOCIATION_RECOVERABILITY_DIAGNOSTIC",
+  "date_local": "2026-09-24",
+  "host": "xiongxiong@10.2.212.110",
+  "isolated_server_checkout": "/home/xiongxiong/SAM3D-Z4Q-DeepSeek-FishMOT-ao0",
+  "local_checkout": "E:/CAU/D-MOT/.codex-build/SAM3D-Z4Q-DeepSeek-FishMOT-rq0",
+  "local_branch": "codex/ao0-recoverability-main-sync",
+  "origin_main_at_start": "6d090f9b6482eecbd769177a058f506ea16a129d",
+  "python_prediction": "/home/data2/xiongxiong/dmot-depth-restoration/envs/D-MOT/bin/python3 (Python 3.12.14)",
+  "python_score_visual": "/home/data2/xiongxiong/dmot-annotation/env/bin/python3 (Python 3.12.14)",
+  "compute": "CPU only, CUDA_VISIBLE_DEVICES empty; OMP/OPENBLAS/MKL each 1 for state replay/scoring",
+  "run_order": [
+    "Read archived RQ0 records and actual private input paths; no old API/model replay",
+    "Run relation_audit.py on complete exposed development and validation; retain v1 and authoritative _rel_v2 ambiguity refinement",
+    "Run prediction-only case_probe.py; retain clipped first probe and use widened probe as frozen source",
+    "Freeze CONFIG.json, PROTOCOL.md, CASE_MANIFEST.json and CASES.jsonl before counterfactual",
+    "Run counterfactual.py once on validation with RQ0 B0 prediction parity and real Bridge.stage/commit; seal outputs before GT score",
+    "Run independent score_counterfactual.py on sealed output and exposed validation GT; retain postseal metadata-hash correction, no output change",
+    "Render only query-and-earlier original RGB/predicted-mask images to private directory and inspect two sheets",
+    "Run existing E1C D/A/M numeric comparison on one fixed causal packet, no model call",
+    "Probe only predeclared second-case eligibility; no expanded counterfactual due frozen gate"
+  ],
+  "sealed_case_manifest_sha256": "3ba680956c030f50a20d02afbd58045138d029dd15806e5d719fbef3a2505394",
+  "exposure": "development_and_validation_already_exposed; no_unexposed_test_GT",
+  "allow_api": false,
+  "new_model_calls": 0,
+  "paid_cost_usd": 0,
+  "GPU_used": false,
+  "old_sealed_outputs_modified": false,
+  "notes": "Original RQ0 remote checkout remained dirty with its old untracked artifacts and was not modified. AO0 used a separate clean GitHub clone. The lab host /home/data2 filesystem had approximately 1.8 GiB free at live preflight; no large source copy, package installation or GPU job was started."
+}

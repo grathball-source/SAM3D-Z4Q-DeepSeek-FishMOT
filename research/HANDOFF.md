@@ -1,4 +1,8 @@
-# Active handoff — M1, 2026-09-24
+# Active handoff — M2-T, 2026-09-24
+
+Read `experiments/m2t_motion_first/FINAL_REVIEW.md`, `RESULTS.md`, `PROTOCOL.md`, `EXECUTION_LOG.md`, `EVENT_RESULTS.jsonl`, `ATTEMPT_RESULTS.jsonl`, both request/response seals and `ARTIFACT_MANIFEST.json`. Fixed base `a27720ff313a27037eb5cbdd9d629506911af7d2`. M2-T completed 25 frozen official `deepseek-flash` image calls plus one same-route smoke, USD 1.2293283 rate-based upper accounting of its USD 3 cap. The full engineering/source-fidelity chain passed; B01 geometry-sequence first and exact repeat both abstained, B03/B04 geometry repeats made wrong associations, and B01 appearance-augmented first/repeat were wrong. **FAIL / STOP this frozen method definition.** All five cases were pre-exposed; no new tracker stage, IDF1/HOTA, E2, training or hidden test GT. The user authorization applied only to this batch: do not infer permission for additional paid calls from the key or old M1/M2-T budget. Source media and private wire stay on the lab server with exact path/size/hash inventory, while all public records must be non-force synced to `origin/main` even for failure. The M1 handoff below is historical, not active permission.
+
+# Historical handoff — M1, 2026-09-24
 
 The completed outcome and one next step are in `experiments/m1_real_vlm_pilot/FINAL_REVIEW.md`: engineering PASS, frozen model-evidence gate FAIL, scientific `INCONCLUSIVE_UNSTABLE / STOP`. Thirty formal choices and two smoke attempts were sealed at upper-accounted USD 1.1983182; the lone B01 first P2 rescue was not repeat-stable. Read the full review before any continuation.
 

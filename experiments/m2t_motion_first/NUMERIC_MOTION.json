@@ -1,0 +1,74 @@
+{
+  "B01": {
+    "status": "UNAVAILABLE",
+    "reason": "FEWER_THAN_THREE_DISTINCT_TIMES",
+    "counts": {
+      "A": 2,
+      "B": 2,
+      "X": 3,
+      "Y": 3
+    }
+  },
+  "B02": {
+    "status": "UNAVAILABLE",
+    "reason": "FEWER_THAN_THREE_DISTINCT_TIMES",
+    "counts": {
+      "A": 1,
+      "B": 3,
+      "X": 3,
+      "Y": 3
+    }
+  },
+  "B03": {
+    "status": "AVAILABLE",
+    "counts": {
+      "A": 3,
+      "B": 3,
+      "X": 3,
+      "Y": 3
+    },
+    "edge_costs": {
+      "A-X": 0.30837423837885586,
+      "A-Y": 0.2196271252014285,
+      "B-X": 0.21197522830123586,
+      "B-Y": 0.17273699167907766
+    },
+    "candidate_costs": {
+      "STRAIGHT": 0.48111123005793355,
+      "CROSSED": 0.43160235350266435
+    },
+    "choice": "CROSSED",
+    "definition": "Least-squares last-reference and first-current velocities; true dt; no middle frames; ROI diagonal"
+  },
+  "B04": {
+    "status": "AVAILABLE",
+    "counts": {
+      "A": 3,
+      "B": 3,
+      "X": 3,
+      "Y": 3
+    },
+    "edge_costs": {
+      "A-X": 0.25712730690207386,
+      "A-Y": 0.42813718009089174,
+      "B-X": 0.13199134423663508,
+      "B-Y": 0.5410152012434402
+    },
+    "candidate_costs": {
+      "STRAIGHT": 0.798142508145514,
+      "CROSSED": 0.5601285243275268
+    },
+    "choice": "CROSSED",
+    "definition": "Least-squares last-reference and first-current velocities; true dt; no middle frames; ROI diagonal"
+  },
+  "B05": {
+    "status": "UNAVAILABLE",
+    "reason": "FEWER_THAN_THREE_DISTINCT_TIMES",
+    "counts": {
+      "A": 2,
+      "B": 3,
+      "X": 3,
+      "Y": 3
+    }
+  }
+}

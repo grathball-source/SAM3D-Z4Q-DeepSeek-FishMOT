@@ -1,0 +1,21 @@
+{
+  "review_base": "a27720ff313a27037eb5cbdd9d629506911af7d2",
+  "case_aliases": ["B01", "B02", "B03", "B04", "B05"],
+  "source": "experiments/ao1_input_fidelity/SOURCE_MANIFEST.json / range_corrected_run",
+  "seed": 202609242,
+  "window_samples": 32,
+  "roi_padding_fraction_each_axis": 0.2,
+  "arms": ["G-SEQ", "G-SEQ-REPEAT", "G+AP", "G+AP-REPEAT", "G-END"],
+  "model": "deepseek-flash",
+  "thinking": "enabled",
+  "reasoning_effort": "high",
+  "max_tokens": 65536,
+  "response_format": "json_object",
+  "formal_inference_max": 25,
+  "technical_smoke_max": 1,
+  "total_inference_max": 26,
+  "total_cost_upper_usd": 3.0,
+  "concurrency": 1,
+  "no_retries": true,
+  "no_new_idf1_hota": true
+}

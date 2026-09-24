@@ -1,0 +1,75 @@
+{
+  "status": "RETROSPECTIVE_RELATION_DIAGNOSTIC_V2",
+  "split": "development",
+  "supersedes": "first-anchor relation counts in METRICS_{split}.json only; TrackEval scores unchanged",
+  "global_assignment": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5
+  },
+  "dominance": {
+    "1": 0.99296031071732,
+    "2": 1.0,
+    "3": 0.9977256404117788,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0
+  },
+  "certified_at_0_8": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5
+  },
+  "calibration_uses_full_exposed_GT": true,
+  "never_used_by_gate": true,
+  "old_new_crosswalk": {
+    "rows": 50271,
+    "unknown": 194
+  },
+  "old_new_mismatch_examples": [],
+  "switch_counts": {
+    "native_changes": 5,
+    "public_changes": 6,
+    "fragmentations_or_new_public": 2,
+    "self_recoveries": 3,
+    "exchanges_into_other_global_id": 1
+  },
+  "interval_count": 33,
+  "interaction_clusters": 13,
+  "status_counts": {
+    "B0": {
+      "CORRECT": 50000,
+      "NO_UNIQUE_OBSERVATION": 323,
+      "ASSOCIATION_ERROR": 77
+    },
+    "Q-rule": {
+      "CORRECT": 42976,
+      "NO_UNIQUE_OBSERVATION": 323,
+      "ASSOCIATION_ERROR": 7101
+    },
+    "Q-visible-oracle": {
+      "CORRECT": 50000,
+      "NO_UNIQUE_OBSERVATION": 323,
+      "ASSOCIATION_ERROR": 77
+    },
+    "quota": {
+      "CORRECT": 50000,
+      "NO_UNIQUE_OBSERVATION": 323,
+      "ASSOCIATION_ERROR": 77
+    }
+  },
+  "census_sha256": "031f6ff352a752b76ba2ee67d00724e708b956629a268416c2d41cfd62213afe",
+  "followup_sha256": "75914ce1bb665fcdc88eeb2dd91a6928ea9a2fc163d92a56e3183db31bed5881",
+  "inputs": {
+    "predictions_sha256": "943663271e4abec61b7afc1282c862efface7740a1041d9909e7db9af36a2489",
+    "truth_sha256": "4b84955c1a3efb167bc5360d47dfe94064a82cee76d50eec6cfc1ab1289b55e0",
+    "matches_sha256": "34091028d1e33fde29f89246a91543867d6e0c16d960775725dc4008d9d9977f"
+  },
+  "API_calls": 0
+}

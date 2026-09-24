@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "split": "development",
+  "frames": 8400,
+  "selected": {
+    "anchor": {
+      "frame": 986,
+      "native_id": 0,
+      "mask": "n:0",
+      "canonical_id": 0
+    },
+    "reader_frame": 1327,
+    "event_kind": "reconnect",
+    "event_native": 6,
+    "event_public": 0
+  },
+  "targeted_write": {
+    "frame": 986,
+    "native_id": 0,
+    "public_id": 0,
+    "observation_key": "986:n:0",
+    "veto": true,
+    "bank_fields": [
+      "clean_count",
+      "clean_time",
+      "clean_box",
+      "motion",
+      "areas",
+      "anchor",
+      "depth_history",
+      "ema"
+    ],
+    "view_bank": true,
+    "recent_core": true,
+    "before": "5cee62c9df384481d695058d7f23dd09802f249336c73771a5f9f9a1369a80b0",
+    "after": "21290691aefca2e4fe1cae3e4365d5de11f863e799732073809730e4b4c87c53",
+    "committed": "5cee62c9df384481d695058d7f23dd09802f249336c73771a5f9f9a1369a80b0"
+  },
+  "lifecycle": {
+    "frame": 986,
+    "same_output": true,
+    "same_last_seen": true,
+    "same_last_frame": true,
+    "reference_changed": true
+  },
+  "first_changed_reader": {
+    "frame": 1274,
+    "allow": {
+      "frame": 1274,
+      "reader": "history:core",
+      "public_id": 0,
+      "reference": "e23cc854eeb2fdef3c3c37e568906f849915e134448c154e347586e772cc87a0",
+      "anchor": {
+        "frame": 986,
+        "native_id": 0,
+        "mask": "n:0",
+        "canonical_id": 0
+      }
+    },
+    "veto": {
+      "frame": 1274,
+      "reader": "history:core",
+      "public_id": 0,
+      "reference": "d97506e22ba3773c5d556d84640d93f10fa292ca4c50eef163ad449d1982b2a0",
+      "anchor": {
+        "frame": 985,
+        "native_id": 0,
+        "mask": "n:0",
+        "canonical_id": 0
+      }
+    }
+  },
+  "changed_reader_count": 13,
+  "inputs": {
+    "observations": "92ce16dc5896e17ab80de5ae6bd6e73dfd841bcc01c8e5f53501e87a7fae903e",
+    "depth": "5047adf883c4d7514140a8350ed3141e5e56e51d49d13e61250b55d8a6b93660",
+    "baseline": "18793b53c7f751b149d0bbaa01f307b6c86a48f9c831edb761fe87e2b2a9a8cb",
+    "config": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af"
+  },
+  "GT_read": false,
+  "API_calls": 0
+}

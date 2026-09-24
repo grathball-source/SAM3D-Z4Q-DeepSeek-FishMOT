@@ -1,0 +1,36 @@
+{
+  "development": {
+    "counts": {
+      "frames": 8400,
+      "old_extra_keys": 0,
+      "objects_without_old_key": 0,
+      "objects": 50271,
+      "unknown": 194
+    },
+    "policies": [
+      {
+        "matching": "frame_local_max_cardinality_then_IoU_Hungarian_threshold_0.5",
+        "ambiguity_policy": "withhold identity if >=2 eligible GT or any eligible GT has >=2 predictions",
+        "frames": 8400
+      }
+    ],
+    "examples": []
+  },
+  "validation": {
+    "counts": {
+      "frames": 2888,
+      "old_extra_keys": 0,
+      "objects_without_old_key": 0,
+      "objects": 17197,
+      "unknown": 298
+    },
+    "policies": [
+      {
+        "matching": "frame_local_max_cardinality_then_IoU_Hungarian_threshold_0.5",
+        "ambiguity_policy": "withhold identity if >=2 eligible GT or any eligible GT has >=2 predictions",
+        "frames": 2888
+      }
+    ],
+    "examples": []
+  }
+}

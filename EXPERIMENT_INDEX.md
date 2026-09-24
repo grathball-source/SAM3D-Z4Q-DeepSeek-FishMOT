@@ -1,5 +1,9 @@
 # Experiment record
 
+## RQ0: real association-reference quality gate, no API
+
+[Results](experiments/rq0_memory_headroom/RESULTS.md), [real writer-reader map](experiments/rq0_memory_headroom/MEMORY_WRITER_READER_MAP.md), [full exposed-sequence census](experiments/rq0_memory_headroom/FULL_SEQUENCE_ERROR_CENSUS.jsonl), and [decision](experiments/rq0_memory_headroom/NEXT_DECISION.md). Fixed base `6320f29bdaf8d33ed64dd7e4888089a0f19e3319`. A genuine veto changed Z4Q reference writes and later reads while ALLOW reproduced B0; two visibly defective validation references yielded zero output/TrackEval benefit in full continuous branches. **STOP_NO_VISIBLE_QUALITY_HEADROOM** for this operation/data, with no model call, paid pilot, E1C-B, SAM3 internal-memory edit, or E2. Private pixels and GT raster stayed off Git.
+
 ## E1C-A: recovery-candidate audit, no new API
 
 [Results](experiments/vl_assoc_e1c/RESULTS.md), [full event funnel](experiments/vl_assoc_e1c/EVENT_FUNNEL.md), [handoff](experiments/vl_assoc_e1c/HANDOFF.md). Fixed review base `12c6dcf60df86deedc71c719b867d56e8ab53838`. Read-only old-response and actual-host input verification preceded an independent exposed-GT score. The 289 registered events produced six events with executable restore candidates, but zero confirmed correct executable recovery; seven frozen probe rows breached the two-current-tracklet cap. E1C-A is **STOP / ENGINEERING_FAILURE**. No new model/API call, oracle trajectory continuation, E1C-B freeze, or E2.

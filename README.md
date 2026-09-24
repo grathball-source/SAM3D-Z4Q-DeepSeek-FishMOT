@@ -14,4 +14,6 @@ Start with [EXPERIMENT_INDEX.md](EXPERIMENT_INDEX.md) for the stage-by-stage rec
 
 Newer research extensions: [E1 R0/E1 and exploratory rerun](experiments/vl_assoc_e1/README.md), and [E1C-A recovery audit](experiments/vl_assoc_e1c/RESULTS.md). The root `MANIFEST.json` covers the original packaged archive, not these later extension files; E1C-A has its own prediction-only exposure manifest. The E1C-A audit stops with an engineering failure and no confirmed correct executable recovery candidate; it made no API call and does not authorize E1C-B or E2.
 
+The independent [RQ0 association-reference quality go/no-go](experiments/rq0_memory_headroom/RESULTS.md) starts from E1C-A commit `6320f29`, changes real Z4Q reference admission without any model/API call, and stops before a VLM pilot: two visibly bad admitted references changed later readers but no output identity or full-sequence score. Its original-source archive and prior conclusions remain unchanged.
+
 The online bridge preserves its actual historical source, including an inherited `jev-1.13.0` metadata field and Jev-style questions in the DeepSeek user payload. The **outer HTTP model was `deepseek-flash`**. These inherited fields are a documented prompt-design limitation of this DeepSeek run, not evidence of a Jev API call or a Jev experiment in this repository. The Jev evaluation remains stopped.

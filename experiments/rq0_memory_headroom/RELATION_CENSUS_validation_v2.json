@@ -1,0 +1,76 @@
+{
+  "status": "RETROSPECTIVE_RELATION_DIAGNOSTIC_V2",
+  "split": "validation",
+  "supersedes": "first-anchor relation counts in METRICS_{split}.json only; TrackEval scores unchanged",
+  "global_assignment": {
+    "1": 2,
+    "2": 4,
+    "3": 3,
+    "4": 7,
+    "5": 5,
+    "6": 1
+  },
+  "dominance": {
+    "1": 0.956338028169014,
+    "2": 0.5284410112359551,
+    "3": 1.0,
+    "4": 0.9793510324483776,
+    "5": 0.9601129544652311,
+    "6": 0.5302603800140746
+  },
+  "certified_at_0_8": {
+    "1": 2,
+    "3": 3,
+    "4": 7,
+    "5": 5
+  },
+  "calibration_uses_full_exposed_GT": true,
+  "never_used_by_gate": true,
+  "old_new_crosswalk": {
+    "rows": 17197,
+    "unknown": 298
+  },
+  "old_new_mismatch_examples": [],
+  "switch_counts": {
+    "native_changes": 8,
+    "public_changes": 9,
+    "self_recoveries": 4,
+    "fragmentations_or_new_public": 5
+  },
+  "interval_count": 94,
+  "interaction_clusters": 1,
+  "status_counts": {
+    "B0": {
+      "NO_UNIQUE_OBSERVATION": 423,
+      "CORRECT": 10916,
+      "ASSOCIATION_ERROR": 293,
+      "UNKNOWN_GLOBAL_ID": 5690
+    },
+    "Q-rule": {
+      "NO_UNIQUE_OBSERVATION": 423,
+      "CORRECT": 8229,
+      "ASSOCIATION_ERROR": 2980,
+      "UNKNOWN_GLOBAL_ID": 5690
+    },
+    "Q-visible-oracle": {
+      "NO_UNIQUE_OBSERVATION": 423,
+      "CORRECT": 10916,
+      "ASSOCIATION_ERROR": 293,
+      "UNKNOWN_GLOBAL_ID": 5690
+    },
+    "quota": {
+      "NO_UNIQUE_OBSERVATION": 423,
+      "CORRECT": 10916,
+      "ASSOCIATION_ERROR": 293,
+      "UNKNOWN_GLOBAL_ID": 5690
+    }
+  },
+  "census_sha256": "d629ba859a1c61851ff4253da6c9d527c02dda839609ddd95f580c29c8dac773",
+  "followup_sha256": "157484c55300295a18deadf66ed30b6ca7a52d3c7af2291b639f4ce471007687",
+  "inputs": {
+    "predictions_sha256": "eb3e01ac00fb3e4f16a39ecf739a850bb613ceb6f6f3c7e65365311a0f663634",
+    "truth_sha256": "55d88b7edae92c993c4ed0a4340307e696bf7cdbcf853c38cd805d9ec50b6057",
+    "matches_sha256": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1"
+  },
+  "API_calls": 0
+}

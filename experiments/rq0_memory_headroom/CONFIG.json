@@ -1,0 +1,16 @@
+{
+  "experiment": "RQ0_ASSOCIATION_MEMORY_GO_NO_GO",
+  "fixed_base": "6320f29bdaf8d33ed64dd7e4888089a0f19e3319",
+  "allow_api": false,
+  "network_model_calls": 0,
+  "splits": {"development": 8400, "validation": 2888},
+  "operation": ["ACCEPT_EXISTING_WRITE", "VETO_EXISTING_WRITE"],
+  "B0_original_Z4Q_quality_rules_retained": true,
+  "quality_rule": "Veto a frozen-B0-admitted reference if predicted mask area / box area < 0.45 OR finite predicted presence < 0.65",
+  "visible_oracle": "Veto only actually reviewed VISIBLY_UNUSABLE observation keys; UNKNOWN allows B0",
+  "quota_control": "SHA256 rank of B0-admitted keys, same total veto count as visible oracle; offline-only quota diagnostic",
+  "visual_selection": "Prediction-only contact-risk ranking, max 48 per split, 45-frame per-public spacing",
+  "GT_policy": "Freeze prediction inputs, quality labels, code, and branch predictions first; independent score reads exposed development/validation only",
+  "scientific_promotion_requirements": "All attached RQ0 section 7 requirements; no threshold changes or new branches for performance search",
+  "E1C_B_or_E2_authorized": false
+}

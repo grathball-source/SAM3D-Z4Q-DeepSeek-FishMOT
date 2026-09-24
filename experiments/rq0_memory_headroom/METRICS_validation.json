@@ -1,0 +1,93 @@
+{
+  "split": "validation",
+  "frames": 2888,
+  "metrics": {
+    "B0": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "Q-rule": {
+      "IDF1": 80.2282800776384,
+      "HOTA": 69.1016867528886,
+      "AssA": 59.70732724741949,
+      "DetA": 79.99491919833206,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "Q-visible-oracle": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "quota": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    }
+  },
+  "relation_counts": {
+    "B0": {
+      "CORRECT": 5764,
+      "ASSOCIATION_ERROR": 11018,
+      "NO_UNIQUE_OBSERVATION": 423,
+      "UNKNOWN_INITIAL_ID": 117
+    },
+    "Q-rule": {
+      "CORRECT": 8314,
+      "ASSOCIATION_ERROR": 8468,
+      "NO_UNIQUE_OBSERVATION": 423,
+      "UNKNOWN_INITIAL_ID": 117
+    },
+    "Q-visible-oracle": {
+      "CORRECT": 5764,
+      "ASSOCIATION_ERROR": 11018,
+      "NO_UNIQUE_OBSERVATION": 423,
+      "UNKNOWN_INITIAL_ID": 117
+    },
+    "quota": {
+      "CORRECT": 5764,
+      "ASSOCIATION_ERROR": 11018,
+      "NO_UNIQUE_OBSERVATION": 423,
+      "UNKNOWN_INITIAL_ID": 117
+    }
+  },
+  "fixed_public_to_gt": {
+    "0": 5,
+    "1": 2,
+    "3": 3,
+    "4": 6,
+    "2": 4,
+    "6": 1
+  },
+  "fixed_mapping_note": "First unique unambiguous match per GT/public within each exposed split; relation diagnostic, not TrackEval and not injected into gates.",
+  "old_new_scoring_crosswalk": {
+    "object_rows": 17197,
+    "unknown_object_rows": 298
+  },
+  "crosswalk_examples": [],
+  "census_intervals": 96,
+  "census_sha256": "15e48fc6b4840f3a327631b533db77d3da851ad2e11f52ae759489f33ff244d0",
+  "followup_sha256": "d33c0f6756677af6b47f61a432c5fd0c02b39b3ae688f3a738dce58b418e70fe",
+  "input_hashes": {
+    "assignments": "ea468964e4b287a3879dfb83b304dd64c83f055e9649d3155fa62c41b717a0fc",
+    "truth": "55d88b7edae92c993c4ed0a4340307e696bf7cdbcf853c38cd805d9ec50b6057",
+    "matches": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1",
+    "predictions": "eb3e01ac00fb3e4f16a39ecf739a850bb613ceb6f6f3c7e65365311a0f663634"
+  },
+  "GT_read": "exposed_split_only_post_prediction_seal",
+  "API_calls": 0
+}

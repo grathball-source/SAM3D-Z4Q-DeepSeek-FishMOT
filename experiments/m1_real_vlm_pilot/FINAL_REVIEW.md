@@ -1,0 +1,45 @@
+# M1 final review — real DeepSeek VLM association-choice pilot
+
+## Judgments and boundary
+
+**Engineering PASS; real-input transport PASS; parser/choice-format PASS; frozen model-evidence advancement FAIL; scientific result INCONCLUSIVE_UNSTABLE / STOP this interface.** The official `deepseek-flash` model made nonzero choices between complete C1/C2 identity-association hypotheses, so it was not merely asked for explanations and this was not a numerical-tracker replacement. But its one exposed AO0 recovery was not repeat-stable, two of four old harmful cases remained wrong on first P2, and a third reverted to wrong under both diagnostics. No model-driven stage/commit, new full-sequence IDF1/HOTA, E2 promotion, training, unexposed test-GT read or revised prompt occurred. The old AO0 oracle-stage improvement remains a one-case *oracle* existence result, not M1's score.
+
+Fixed review base `bdf1ba5a1406be136fb65acd085592503e35865c`; source is the AO1 `range_corrected_run` restricted media. All five events were already exposed. The output-only five-case key was read by a separate scorer **after** `DECISIONS_SEALED.json`; the sender's isolated mount did not contain that key, the repository or current chat. The public `REQUESTS_SEALED.json`, `REQUEST_MANIFEST.json`, `CALL_LEDGER.jsonl`, 31 public successful response records (30 formal plus successful smoke), `EVENT_RESULTS.jsonl`, and private-artifact inventory give the reproducible chain. `S001` has only a failed ledger entry because DNS failed before a response.
+
+## Exact work and input coverage
+
+`adapter.py:74`/`:94` bind the E1 static and temporal sheets or AO0 grid and interaction picture to their *own* true role/time/tile legends. `adapter.py:111` makes P1 solely from same-source original-resolution matched AO1 crops, with no extra full frame or outline. `adapter.py:147` adds the fixed causal original full-frame window to form P2. `adapter.py:162` renders only anonymous complete candidate mappings, the sent-image legend and an image-availability flag. The frozen seed reorders candidate labels without using the key. `runner.py:122` builds the two-message whitelist, `:139` freezes all 30 exact bodies before first formal call, `:180` keeps decision, usable completion and citation format separate, and `:250` records every HTTP attempt and cost. `score.py:41` first opens the exposed key only after the decision seal, converts candidate names back to a canonical relation, and preserves wrong/abstaining answers. No hidden B0 edit or fallback changes a model choice. `test_m1.py` validates the actual-media plan and isolation.
+
+P0 sent two old AO1 V0 sheets per event. P1 image counts for B01–B05 were 14, 28, 32, 32, 30. P2 image counts were 251, 175, 151, 186, 140, with exact query cutoffs 1498, 8069, 377, 2638, 2580 and full-frame windows 1262–1498, 7923–8069, 259–377, 2485–2638, 2471–2580. All source-image hashes were checked; 779 unique restricted media objects represented 2,855 image references across the 30 requests. The AO1 source records document 1920×1080 RGB and 640×360 mask alignment; M1 did not create substitute RGB or change AO1 media. P2 is **crop plus whole-frame context**, not an isolated temporal-only ablation. The same causal event, cutoff, complete candidate mappings and evidence deadline were used within each P0/P1/P2 group; repeat was identical, permutation only renamed/reordered C1/C2, and image-off carried no image. `INPUT_ADAPTER_AUDIT.json`, `PREFLIGHT.json`, `PROTOCOL.md` and `TEST_REPORT.md` provide the checks.
+
+## Five-case paired result
+
+Choices below are mapped back to the original canonical relation; ✓ and ✗ are against the *already exposed* score key. N means `INSUFFICIENT`, not a correct identity. A row remains one event even with repeat/diagnostics.
+
+| Case, role | Exposed answer / B0 | P0 first | P1 first | P2 first | Exact P2 repeat | C1/C2 permutation | P2 no image |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| B01, sole AO0 positive | C1 / C2 | C2 ✗ | C2 ✗ | C1 ✓ | C2 ✗ | C1 ✓ | N |
+| B02, old harm | C2 / C2 | C1 ✗ | C1 ✗ | C1 ✗ | C1 ✗ | C1 ✗ | N |
+| B03, old harm | C1 / C1 | C2 ✗ | C1 ✓ | C2 ✗ | C2 ✗ | C2 ✗ | N |
+| B04, old harm | C2 / C2 | C1 ✗ | C2 ✓ | C2 ✓ | C2 ✓ | C2 ✓ | N |
+| B05, old harm | C2 / C2 | C1 ✗ | C1 ✗ | C2 ✓ | C1 ✗ | C1 ✗ | N |
+
+P0/P1/P2 first correct counts are **0/5, 2/5, 3/5**. P2 first has the single B01 rescue but harms B02 and B03 relative to the correct B0 relation. The B01 exact repeat reverses to wrong; B05 repeats and alias permutation reverse to wrong. Repeat agreement is 3/5, permutation agreement 4/5. All five no-image controls abstained. No repeat or permutation vote replaced the first P2 choice, and five responses from one event were not counted as five independent successes. The complete first/diagnostic records, finish reasons, citations and per-request token usage are in `EVENT_RESULTS.jsonl` and `responses/`; all four known failure cases remain visible in `FAILURE_CASES.md`.
+
+## Model-action and evidence audit
+
+All **30/30** research responses returned the bound C1/C2/INSUFFICIENT schema, `finish_reason=stop`, and a usable choice. All 15 first-arm choices were usable. Citation *format* passed 29/30; `D03S` made a valid candidate choice but omitted a valid region/time object in one citation, retained as `REGION_NOT_OBJECT`. The 25 image-bearing requests each provided at least one image citation. However, in **all 15 P2 image-bearing first/repeat/permuted responses**, every cited image was a crop already in P1; **zero** newly added whole frames were cited. P1→P2 choice changes in B01, B03 and B05 therefore cannot be attributed to a located full-frame observation, even though the added context may have influenced the model internally. Five image-off abstentions show a nonzero image-availability effect, not correct visual identification. This is a real association-choice mechanism test, not proof of robust image grounding.
+
+The restricted-pixel `VISUAL_QA.md` documents exactly seven manually opened crop images across B01 and B05, after key exposure. In B01, overlapping fish prevent confident assignment of several detailed shape/mark claims to the intended anonymous role. In B05, the red eye is visible in two crops but the claimed A spot row and complete X body comparison are not clear. These checks are neither a blind reviewer verdict nor a review of all 779 images. The other three cases' semantic pixel grounding and all uninspected images remain **UNKNOWN**; a correctly formatted citation is not automatically a visually supported citation or a correct identity relation.
+
+## Calls, cost, latency and failure accounting
+
+All 30 formal calls and two allowed technical smoke attempts are accounted for; no semantic or HTTP inference retry occurred. `S001` had a DNS failure before a provider response and is conservatively charged its full USD 0.0808788 reserve because actual billing is unknown; `S002` succeeded on a synthetic color image (USD 0.0002241 at official peak token prices). The 30 formal responses used USD 1.1172153 at peak-price token accounting. Total **upper accounting USD 1.1983182**, below the authorized USD 5. This is **not** the provider invoice. The worst-case frozen reserve was USD 3.6073125 with 65,536 output tokens per request. Research-response wall latency totaled 1,537.389 s (mean 51.246 s, max 84.154 s), excluding the 779 exact Files API uploads. All 30 formal responses reported `deepseek-flash`; no output ended by token-limit truncation. Official price/vision/file-interface source URLs and the read date are in `DOCS_SNAPSHOT.json`.
+
+`EXECUTION_LOG.md` preserves the pre-research engineering corrections and why they did not consume formal calls. `ARTIFACT_MANIFEST.json` lists the actual private server path, byte size and SHA-256 for each of 779 media files and 63 private request/wire/file-ID files, plus preliminary run locations. Restricted pixels, raw provider wire/reasoning and File IDs are not in Git. `TEST_REPORT.md` records 10/10 actual-host regressions and the public secret-pattern scan. Old AO1/E1/AO0 results and predictions were not rewritten.
+
+## Scope of conclusion
+
+The model changed candidate choices across actual image presentations, but this five-case exposed pilot fails its frozen stability/safety advancement gate. It cannot establish performance on a second independent positive, a blind sequence, or a continuous tracker. The correct B01 first P2 response cannot be promoted to an IDF1/HOTA gain: the AO0 full-segment score was achieved by an oracle-selected stage/commit, while M1 was an offline association-choice probe and did not commit. The remaining unknowns are full semantic citation support, effect of any uncited whole-frame context, provider-final invoice for the pre-service failed attempt, and generalization outside these five already exposed cases. No E2 authorization follows.
+
+**One next step:** obtain an independent, answer-blind pixel review of the already sealed B01/B02/B03/B05 cited evidence and decision reasons; do not rerun or retune this cohort.

@@ -1,5 +1,7 @@
 # Repository delivery and evidence boundary
 
+M1 (2026-09-24) separately authorizes at most 32 official `deepseek-flash` inference HTTP calls and USD 5 for its frozen necessary AO1 images only. Its code, public call/results records, tests and report must be synced to `origin/main` even on failure, with restricted pixels, file IDs, keys and raw wire excluded. This exception does not retroactively alter AO0/AO1 no-API instructions and does not authorize E2, test GT, training or later paid calls. Read `experiments/m1_real_vlm_pilot/PROTOCOL.md` and its final report before continuation.
+
 For tasks with explicit user authorization to update `main` (including AO0 and AO1), finish by committing all authorized code, configuration, tests, records, outputs and reports, integrating non-destructively into the latest `main`, pushing `origin/main`, and checking the remote contains the commit and required files. A negative scientific result does not cancel delivery. Never force-push, modify old sealed results, or publish private RGB/GT raster, credentials or private wire. Historical branch-only instructions remain part of their original experiments; they do not describe AO0/AO1's later delivery authorization.
 
 On the laboratory server, also follow the active D-MOT server rules and the task README; verify live resources before jobs. This file grants no model API, test-GT, environment-installation or cleanup authority.

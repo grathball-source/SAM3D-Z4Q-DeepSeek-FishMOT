@@ -1,0 +1,23 @@
+{
+  "experiment": "M1_REAL_VLM_PILOT",
+  "allow_api_for_this_m1_batch_only": true,
+  "review_base": "bdf1ba5a1406be136fb65acd085592503e35865c",
+  "model": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "files_endpoint": "https://api.deepseek.com/files",
+  "thinking": {"type": "enabled"},
+  "reasoning_effort": "high",
+  "max_tokens": 65536,
+  "response_format": {"type": "json_object"},
+  "research_calls": 30,
+  "technical_smoke_max": 2,
+  "all_inference_http_max": 32,
+  "paid_hard_cap_usd": 5.0,
+  "peak_input_cache_miss_usd_per_million": 0.30,
+  "peak_output_usd_per_million": 1.20,
+  "concurrency": 1,
+  "schedule_seed": 20260924,
+  "no_semantic_retry": true,
+  "no_new_tracker_scores": true,
+  "no_unexposed_test_gt": true
+}

@@ -1,0 +1,26 @@
+{
+  "checked_date": "2026-09-24",
+  "sources": {
+    "vision": "https://api-docs.deepseek.com/guides/vision/",
+    "pricing": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "thinking": "https://api-docs.deepseek.com/guides/thinking_mode/",
+    "files": "https://api-docs.deepseek.com/guides/files_api/"
+  },
+  "official_current_facts": {
+    "deepseek_flash_supports_images": true,
+    "model_version_label": "DeepSeek-V4.1-Flash",
+    "max_images_per_request": 600,
+    "inline_body_limit_mib": 48,
+    "total_image_limit_mib_with_file_id": 200,
+    "max_side_px_at_15_or_more_images": 4096,
+    "image_tokens_upper_per_image": 1024,
+    "files_user_storage_limit_gib": 25,
+    "files_user_count_limit": 10000,
+    "file_id_usable_in_chat_file_block": true,
+    "thinking_high_supported": true,
+    "peak_cache_miss_input_usd_per_million": 0.30,
+    "peak_output_usd_per_million": 1.20,
+    "server_resizes_images_for_tokenization": true
+  },
+  "inference": "The original file is transmitted without our resizing; this does not prove the model's internal visual tokens preserve every original pixel."
+}

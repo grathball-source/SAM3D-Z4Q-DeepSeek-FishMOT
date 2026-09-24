@@ -1,0 +1,16 @@
+{
+  "authority": "Current user request executing CODEX_M1_REAL_VLM_PILOT_MAIN_SYNC.md",
+  "scope": "Official DeepSeek deepseek-flash only; frozen M1 fish images may be sent to that official service",
+  "inference_http_request_max": 32,
+  "paid_hard_cap_usd": 5.0,
+  "old_ao0_ao1_no_api_restriction_overridden_for_m1_only": true,
+  "not_authorized": [
+    "Other model services or image hosts",
+    "Training or model changes",
+    "E2 full-sequence loop",
+    "Unexposed test GT",
+    "Public Git upload of private pixels or sensitive file IDs",
+    "Replacing archived experiment outputs"
+  ],
+  "main_sync_authorized_and_required_even_on_fail": true
+}

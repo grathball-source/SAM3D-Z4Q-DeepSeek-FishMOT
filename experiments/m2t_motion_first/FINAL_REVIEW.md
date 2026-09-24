@@ -1,6 +1,7 @@
 # M2-T final review — frozen version stopped
 
 [SCORE_PROVENANCE.json](SCORE_PROVENANCE.json) fixes the exact request/response seal and exposed answer-key hashes.
+[DELIVERY_VERIFICATION.md](DELIVERY_VERIFICATION.md) records the actual non-force GitHub main push and remote-tree check.
 
 Research result: **FAIL / STOP_FROZEN_M2T** on five already exposed cases. Engineering: **PASS**. Source-input fidelity: **PASS**, but whether the allowed sparse geometry is identity-discriminative is **INCONCLUSIVE**. Both complete candidates were reachable and unchanged. VLM evidence was source-citable and causally entered the offline decoder, yet the required B01 positive recovery did not occur and two old negative cases became wrong on exact G-SEQ repeat. This is neither METHOD PASS nor E2 permission.
 

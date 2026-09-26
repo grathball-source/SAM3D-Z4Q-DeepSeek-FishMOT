@@ -1,0 +1,3 @@
+# M2T-F frozen evidence-chain audit
+
+Start with [FINAL_REVIEW.md](FINAL_REVIEW.md), then [PROTOCOL.md](PROTOCOL.md), [full 100-edge bindings](EDGE_CLAIM_BINDINGS.jsonl), [gap/observation coverage](OBSERVATION_COVERAGE.jsonl), [first-divergence records](FIRST_DIVERGENCE.jsonl), [visual QA](VISUAL_AUDIT.md) and [restricted-artifact inventory](ARTIFACT_MANIFEST.json). This is a read-only post-score audit of the 25 already sealed M2-T responses, with **zero new model calls and no new tracking metric**. It does not alter the historical FAIL/STOP conclusion. Public code/tests and all final per-record outputs are in this directory; private pixels, file IDs, wire and GT raster remain off Git.

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "host": "ps-ESC8000-G4",
+  "interpreter": "python3 (3.10)",
+  "command": "python3 -m unittest -q test_audit",
+  "test_methods": 5,
+  "fixtures": [
+    "evidence=null/object/string/empty list -> INVALID_EVIDENCE, no unpacking crash or fabricated UNRESOLVED",
+    "unsent image and observation token -> INVALID_EVIDENCE",
+    "NaN and Infinity relative time -> INVALID_EVIDENCE",
+    "missing edge -> NOT_EXACTLY_FOUR_EDGES; duplicate JSON edge key -> DUPLICATE_JSON_KEY",
+    "legal four-edge fixture retains STRAIGHT decode",
+    "same-citation competing object stays separate from claimed path"
+  ],
+  "sealed_25_response_parity": "REPLAY_PARITY.json: 25/25 exact edge-status, decoded-choice and identity-result equality",
+  "old_score_py_modified": false
+}

@@ -1,0 +1,5 @@
+# Limited addendum to the old M2T-F audit
+
+The old `m2tf_frozen_evidence_audit/audit.py::claim_usage` is a regex screening rule, not a semantic truth label. Synthetic counterexamples are “A does not continue at f014:o04; that observation is B.”, “A fish moves at f014:o04.”, and “If A continued at f014:o04, the alternative would fit.” Each may be incorrectly marked `PATH_STEP`; none is claimed to be an actual old model utterance. The old B01 critical support-path claims are explicit affirmative statements and do not depend on these examples.
+
+The old gap parser takes the first two G numbers in prose; they need not be the actual claimed gap bounds. In particular B04-G-END A-X mentions G014/G015 as history, not necessarily a gap interval. The 29 mechanically localizable old gap records must not be described as semantically validated gap boundaries. Neither old `claim_usage` nor this gap regex selects M3-L samples or supplies M3-L truth labels. The old sealed audit and M2-T failure conclusion remain unchanged.

@@ -1,0 +1,251 @@
+{
+  "model": "deepseek-flash",
+  "max_tokens": 65536,
+  "schedule": [
+    "P01-FIRST",
+    "P02-FIRST",
+    "P01-REPEAT",
+    "P03-FIRST",
+    "P02-REPEAT",
+    "P04-FIRST",
+    "P03-REPEAT",
+    "P05-FIRST",
+    "P04-REPEAT",
+    "P06-FIRST",
+    "P05-REPEAT",
+    "P07-FIRST",
+    "P06-REPEAT",
+    "P08-FIRST",
+    "P07-REPEAT",
+    "P09-FIRST",
+    "P08-REPEAT",
+    "P10-FIRST",
+    "P09-REPEAT",
+    "P11-FIRST",
+    "P10-REPEAT",
+    "P12-FIRST",
+    "P11-REPEAT",
+    "P12-REPEAT"
+  ],
+  "requests": [
+    {
+      "pair": "P01",
+      "core_text": "{\"request_id\":\"M3L-P01\",\"source\":{\"image_id\":\"G006\",\"relative_seconds\":-0.267,\"observations\":[{\"token\":\"f006:o01\",\"center_norm\":[0.27187,0.72036],\"bbox_norm\":[0.19872,0.62029,0.375,0.83188]},{\"token\":\"f006:o02\",\"center_norm\":[0.41493,0.53386],\"bbox_norm\":[0.33974,0.42899,0.52244,0.6029]},{\"token\":\"f006:o03\",\"center_norm\":[0.4975,0.46091],\"bbox_norm\":[0.34936,0.37971,0.63782,0.51304]},{\"token\":\"f006:o04\",\"center_norm\":[0.57176,0.64697],\"bbox_norm\":[0.44551,0.54783,0.6891,0.78841]},{\"token\":\"f006:o05\",\"center_norm\":[0.6054,0.19767],\"bbox_norm\":[0.46154,0.16522,0.75962,0.25797]},{\"token\":\"f006:o06\",\"center_norm\":[0.638,0.40535],\"bbox_norm\":[0.51923,0.29275,0.75641,0.49565]}]},\"target\":{\"image_id\":\"G007\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f007:o01\",\"center_norm\":[0.21659,0.65],\"bbox_norm\":[0.17628,0.53623,0.27885,0.77971]},{\"token\":\"f007:o02\",\"center_norm\":[0.44683,0.55163],\"bbox_norm\":[0.30128,0.46957,0.56731,0.6087]},{\"token\":\"f007:o03\",\"center_norm\":[0.50178,0.4627],\"bbox_norm\":[0.34295,0.3942,0.64103,0.51884]},{\"token\":\"f007:o04\",\"center_norm\":[0.53236,0.19388],\"bbox_norm\":[0.38141,0.15942,0.72436,0.23188]},{\"token\":\"f007:o05\",\"center_norm\":[0.56833,0.6518],\"bbox_norm\":[0.42949,0.55072,0.6891,0.77971]},{\"token\":\"f007:o06\",\"center_norm\":[0.69421,0.43667],\"bbox_norm\":[0.54808,0.32174,0.8109,0.53043]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G006",
+          "media_file": "f7a903f98bdc8c1ff18b9281edc6cab37d3dfcee89fb1db308f839a7222f9101.png",
+          "image_sha256": "f7a903f98bdc8c1ff18b9281edc6cab37d3dfcee89fb1db308f839a7222f9101",
+          "image_bytes": 12432
+        },
+        {
+          "image_id": "G007",
+          "media_file": "d989683d867e891921cc4a14b36e2eb1c42deddd23b09a55e9564b6f2a4266fe.png",
+          "image_sha256": "d989683d867e891921cc4a14b36e2eb1c42deddd23b09a55e9564b6f2a4266fe",
+          "image_bytes": 12319
+        }
+      ]
+    },
+    {
+      "pair": "P02",
+      "core_text": "{\"request_id\":\"M3L-P02\",\"source\":{\"image_id\":\"G007\",\"relative_seconds\":-0.233,\"observations\":[{\"token\":\"f007:o01\",\"center_norm\":[0.21659,0.65],\"bbox_norm\":[0.17628,0.53623,0.27885,0.77971]},{\"token\":\"f007:o02\",\"center_norm\":[0.44683,0.55163],\"bbox_norm\":[0.30128,0.46957,0.56731,0.6087]},{\"token\":\"f007:o03\",\"center_norm\":[0.50178,0.4627],\"bbox_norm\":[0.34295,0.3942,0.64103,0.51884]},{\"token\":\"f007:o04\",\"center_norm\":[0.53236,0.19388],\"bbox_norm\":[0.38141,0.15942,0.72436,0.23188]},{\"token\":\"f007:o05\",\"center_norm\":[0.56833,0.6518],\"bbox_norm\":[0.42949,0.55072,0.6891,0.77971]},{\"token\":\"f007:o06\",\"center_norm\":[0.69421,0.43667],\"bbox_norm\":[0.54808,0.32174,0.8109,0.53043]}]},\"target\":{\"image_id\":\"G008\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f008:o01\",\"center_norm\":[0.19835,0.60496],\"bbox_norm\":[0.16667,0.48116,0.23397,0.74493]},{\"token\":\"f008:o02\",\"center_norm\":[0.46003,0.19822],\"bbox_norm\":[0.32372,0.15072,0.63462,0.26087]},{\"token\":\"f008:o03\",\"center_norm\":[0.50636,0.56821],\"bbox_norm\":[0.375,0.50725,0.59615,0.61449]},{\"token\":\"f008:o04\",\"center_norm\":[0.50793,0.46468],\"bbox_norm\":[0.34615,0.4,0.65064,0.51884]},{\"token\":\"f008:o05\",\"center_norm\":[0.56179,0.65915],\"bbox_norm\":[0.41346,0.55362,0.68269,0.78261]},{\"token\":\"f008:o06\",\"center_norm\":[0.75562,0.47538],\"bbox_norm\":[0.65705,0.34783,0.82051,0.57971]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G007",
+          "media_file": "d989683d867e891921cc4a14b36e2eb1c42deddd23b09a55e9564b6f2a4266fe.png",
+          "image_sha256": "d989683d867e891921cc4a14b36e2eb1c42deddd23b09a55e9564b6f2a4266fe",
+          "image_bytes": 12319
+        },
+        {
+          "image_id": "G008",
+          "media_file": "65f32cf1d53e3c1b4b7ce54b0fa6161171b0316eac89eb5b3395b8c49638d5a5.png",
+          "image_sha256": "65f32cf1d53e3c1b4b7ce54b0fa6161171b0316eac89eb5b3395b8c49638d5a5",
+          "image_bytes": 12620
+        }
+      ]
+    },
+    {
+      "pair": "P03",
+      "core_text": "{\"request_id\":\"M3L-P03\",\"source\":{\"image_id\":\"G008\",\"relative_seconds\":-0.2,\"observations\":[{\"token\":\"f008:o01\",\"center_norm\":[0.19835,0.60496],\"bbox_norm\":[0.16667,0.48116,0.23397,0.74493]},{\"token\":\"f008:o02\",\"center_norm\":[0.46003,0.19822],\"bbox_norm\":[0.32372,0.15072,0.63462,0.26087]},{\"token\":\"f008:o03\",\"center_norm\":[0.50636,0.56821],\"bbox_norm\":[0.375,0.50725,0.59615,0.61449]},{\"token\":\"f008:o04\",\"center_norm\":[0.50793,0.46468],\"bbox_norm\":[0.34615,0.4,0.65064,0.51884]},{\"token\":\"f008:o05\",\"center_norm\":[0.56179,0.65915],\"bbox_norm\":[0.41346,0.55362,0.68269,0.78261]},{\"token\":\"f008:o06\",\"center_norm\":[0.75562,0.47538],\"bbox_norm\":[0.65705,0.34783,0.82051,0.57971]}]},\"target\":{\"image_id\":\"G009\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f009:o01\",\"center_norm\":[0.19521,0.57403],\"bbox_norm\":[0.15705,0.44058,0.24359,0.73623]},{\"token\":\"f009:o02\",\"center_norm\":[0.40507,0.22063],\"bbox_norm\":[0.27564,0.15942,0.57372,0.30145]},{\"token\":\"f009:o03\",\"center_norm\":[0.50823,0.46521],\"bbox_norm\":[0.35256,0.3971,0.65705,0.52174]},{\"token\":\"f009:o04\",\"center_norm\":[0.54459,0.5529],\"bbox_norm\":[0.46795,0.42899,0.58974,0.66087]},{\"token\":\"f009:o05\",\"center_norm\":[0.56517,0.6584],\"bbox_norm\":[0.41987,0.55362,0.67628,0.78261]},{\"token\":\"f009:o06\",\"center_norm\":[0.7314,0.49424],\"bbox_norm\":[0.61218,0.41449,0.84615,0.54203]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G008",
+          "media_file": "65f32cf1d53e3c1b4b7ce54b0fa6161171b0316eac89eb5b3395b8c49638d5a5.png",
+          "image_sha256": "65f32cf1d53e3c1b4b7ce54b0fa6161171b0316eac89eb5b3395b8c49638d5a5",
+          "image_bytes": 12620
+        },
+        {
+          "image_id": "G009",
+          "media_file": "2611558f344b010a8d0ca50ad2d70f8f6391c5b064eca1cf6b951babf58aaccd.png",
+          "image_sha256": "2611558f344b010a8d0ca50ad2d70f8f6391c5b064eca1cf6b951babf58aaccd",
+          "image_bytes": 12558
+        }
+      ]
+    },
+    {
+      "pair": "P04",
+      "core_text": "{\"request_id\":\"M3L-P04\",\"source\":{\"image_id\":\"G009\",\"relative_seconds\":-0.067,\"observations\":[{\"token\":\"f009:o01\",\"center_norm\":[0.19521,0.57403],\"bbox_norm\":[0.15705,0.44058,0.24359,0.73623]},{\"token\":\"f009:o02\",\"center_norm\":[0.40507,0.22063],\"bbox_norm\":[0.27564,0.15942,0.57372,0.30145]},{\"token\":\"f009:o03\",\"center_norm\":[0.50823,0.46521],\"bbox_norm\":[0.35256,0.3971,0.65705,0.52174]},{\"token\":\"f009:o04\",\"center_norm\":[0.54459,0.5529],\"bbox_norm\":[0.46795,0.42899,0.58974,0.66087]},{\"token\":\"f009:o05\",\"center_norm\":[0.56517,0.6584],\"bbox_norm\":[0.41987,0.55362,0.67628,0.78261]},{\"token\":\"f009:o06\",\"center_norm\":[0.7314,0.49424],\"bbox_norm\":[0.61218,0.41449,0.84615,0.54203]}]},\"target\":{\"image_id\":\"G010\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f010:o01\",\"center_norm\":[0.19381,0.55955],\"bbox_norm\":[0.15385,0.42319,0.24679,0.72754]},{\"token\":\"f010:o02\",\"center_norm\":[0.37896,0.23064],\"bbox_norm\":[0.24679,0.14493,0.54808,0.31304]},{\"token\":\"f010:o03\",\"center_norm\":[0.50966,0.46717],\"bbox_norm\":[0.35256,0.4029,0.65385,0.52464]},{\"token\":\"f010:o04\",\"center_norm\":[0.54755,0.53314],\"bbox_norm\":[0.48077,0.4087,0.59615,0.65507]},{\"token\":\"f010:o05\",\"center_norm\":[0.56784,0.65679],\"bbox_norm\":[0.42308,0.55362,0.67628,0.78261]},{\"token\":\"f010:o06\",\"center_norm\":[0.71856,0.48589],\"bbox_norm\":[0.58974,0.42029,0.85577,0.53913]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G009",
+          "media_file": "2611558f344b010a8d0ca50ad2d70f8f6391c5b064eca1cf6b951babf58aaccd.png",
+          "image_sha256": "2611558f344b010a8d0ca50ad2d70f8f6391c5b064eca1cf6b951babf58aaccd",
+          "image_bytes": 12558
+        },
+        {
+          "image_id": "G010",
+          "media_file": "640b9dbf52a8d35c4c2f4fc4c3502ddbd735e6d7b73a890092777f5030692210.png",
+          "image_sha256": "640b9dbf52a8d35c4c2f4fc4c3502ddbd735e6d7b73a890092777f5030692210",
+          "image_bytes": 12733
+        }
+      ]
+    },
+    {
+      "pair": "P05",
+      "core_text": "{\"request_id\":\"M3L-P05\",\"source\":{\"image_id\":\"G010\",\"relative_seconds\":-0.266,\"observations\":[{\"token\":\"f010:o01\",\"center_norm\":[0.19381,0.55955],\"bbox_norm\":[0.15385,0.42319,0.24679,0.72754]},{\"token\":\"f010:o02\",\"center_norm\":[0.37896,0.23064],\"bbox_norm\":[0.24679,0.14493,0.54808,0.31304]},{\"token\":\"f010:o03\",\"center_norm\":[0.50966,0.46717],\"bbox_norm\":[0.35256,0.4029,0.65385,0.52464]},{\"token\":\"f010:o04\",\"center_norm\":[0.54755,0.53314],\"bbox_norm\":[0.48077,0.4087,0.59615,0.65507]},{\"token\":\"f010:o05\",\"center_norm\":[0.56784,0.65679],\"bbox_norm\":[0.42308,0.55362,0.67628,0.78261]},{\"token\":\"f010:o06\",\"center_norm\":[0.71856,0.48589],\"bbox_norm\":[0.58974,0.42029,0.85577,0.53913]}]},\"target\":{\"image_id\":\"G011\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f011:o01\",\"center_norm\":[0.19927,0.50185],\"bbox_norm\":[0.14744,0.37391,0.25,0.65797]},{\"token\":\"f011:o02\",\"center_norm\":[0.29032,0.28512],\"bbox_norm\":[0.23397,0.1971,0.41987,0.4087]},{\"token\":\"f011:o03\",\"center_norm\":[0.51489,0.47742],\"bbox_norm\":[0.35897,0.4058,0.65385,0.53043]},{\"token\":\"f011:o04\",\"center_norm\":[0.52869,0.41178],\"bbox_norm\":[0.44872,0.34783,0.61859,0.48986]},{\"token\":\"f011:o05\",\"center_norm\":[0.56847,0.65891],\"bbox_norm\":[0.44231,0.56812,0.6891,0.7913]},{\"token\":\"f011:o06\",\"center_norm\":[0.60794,0.42548],\"bbox_norm\":[0.49359,0.32754,0.74359,0.54783]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G010",
+          "media_file": "640b9dbf52a8d35c4c2f4fc4c3502ddbd735e6d7b73a890092777f5030692210.png",
+          "image_sha256": "640b9dbf52a8d35c4c2f4fc4c3502ddbd735e6d7b73a890092777f5030692210",
+          "image_bytes": 12733
+        },
+        {
+          "image_id": "G011",
+          "media_file": "f9b382331937383147533dfc83b26614e77eca65fdd8f14c1ee407d4d79a3082.png",
+          "image_sha256": "f9b382331937383147533dfc83b26614e77eca65fdd8f14c1ee407d4d79a3082",
+          "image_bytes": 12013
+        }
+      ]
+    },
+    {
+      "pair": "P06",
+      "core_text": "{\"request_id\":\"M3L-P06\",\"source\":{\"image_id\":\"G011\",\"relative_seconds\":-0.233,\"observations\":[{\"token\":\"f011:o01\",\"center_norm\":[0.19927,0.50185],\"bbox_norm\":[0.14744,0.37391,0.25,0.65797]},{\"token\":\"f011:o02\",\"center_norm\":[0.29032,0.28512],\"bbox_norm\":[0.23397,0.1971,0.41987,0.4087]},{\"token\":\"f011:o03\",\"center_norm\":[0.51489,0.47742],\"bbox_norm\":[0.35897,0.4058,0.65385,0.53043]},{\"token\":\"f011:o04\",\"center_norm\":[0.52869,0.41178],\"bbox_norm\":[0.44872,0.34783,0.61859,0.48986]},{\"token\":\"f011:o05\",\"center_norm\":[0.56847,0.65891],\"bbox_norm\":[0.44231,0.56812,0.6891,0.7913]},{\"token\":\"f011:o06\",\"center_norm\":[0.60794,0.42548],\"bbox_norm\":[0.49359,0.32754,0.74359,0.54783]}]},\"target\":{\"image_id\":\"G012\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f012:o01\",\"center_norm\":[0.20578,0.47196],\"bbox_norm\":[0.15385,0.34493,0.24359,0.62609]},{\"token\":\"f012:o02\",\"center_norm\":[0.26588,0.34383],\"bbox_norm\":[0.22756,0.17681,0.3109,0.48406]},{\"token\":\"f012:o03\",\"center_norm\":[0.51167,0.38078],\"bbox_norm\":[0.37179,0.33913,0.625,0.47826]},{\"token\":\"f012:o04\",\"center_norm\":[0.51984,0.48115],\"bbox_norm\":[0.36859,0.4087,0.66346,0.52754]},{\"token\":\"f012:o05\",\"center_norm\":[0.56392,0.36044],\"bbox_norm\":[0.41026,0.31304,0.66667,0.46377]},{\"token\":\"f012:o06\",\"center_norm\":[0.5633,0.66318],\"bbox_norm\":[0.41987,0.57101,0.69231,0.78551]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G011",
+          "media_file": "f9b382331937383147533dfc83b26614e77eca65fdd8f14c1ee407d4d79a3082.png",
+          "image_sha256": "f9b382331937383147533dfc83b26614e77eca65fdd8f14c1ee407d4d79a3082",
+          "image_bytes": 12013
+        },
+        {
+          "image_id": "G012",
+          "media_file": "a8e65365d90603381cbdedc259cbda5b0bfc4001850da8460a7d6290ccb51392.png",
+          "image_sha256": "a8e65365d90603381cbdedc259cbda5b0bfc4001850da8460a7d6290ccb51392",
+          "image_bytes": 12487
+        }
+      ]
+    },
+    {
+      "pair": "P07",
+      "core_text": "{\"request_id\":\"M3L-P07\",\"source\":{\"image_id\":\"G012\",\"relative_seconds\":-0.267,\"observations\":[{\"token\":\"f012:o01\",\"center_norm\":[0.20578,0.47196],\"bbox_norm\":[0.15385,0.34493,0.24359,0.62609]},{\"token\":\"f012:o02\",\"center_norm\":[0.26588,0.34383],\"bbox_norm\":[0.22756,0.17681,0.3109,0.48406]},{\"token\":\"f012:o03\",\"center_norm\":[0.51167,0.38078],\"bbox_norm\":[0.37179,0.33913,0.625,0.47826]},{\"token\":\"f012:o04\",\"center_norm\":[0.51984,0.48115],\"bbox_norm\":[0.36859,0.4087,0.66346,0.52754]},{\"token\":\"f012:o05\",\"center_norm\":[0.56392,0.36044],\"bbox_norm\":[0.41026,0.31304,0.66667,0.46377]},{\"token\":\"f012:o06\",\"center_norm\":[0.5633,0.66318],\"bbox_norm\":[0.41987,0.57101,0.69231,0.78551]}]},\"target\":{\"image_id\":\"G013\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f013:o01\",\"center_norm\":[0.20943,0.45273],\"bbox_norm\":[0.17628,0.32174,0.24038,0.6087]},{\"token\":\"f013:o02\",\"center_norm\":[0.27489,0.43081],\"bbox_norm\":[0.22756,0.26667,0.31731,0.56522]},{\"token\":\"f013:o03\",\"center_norm\":[0.44578,0.33524],\"bbox_norm\":[0.32692,0.29275,0.64744,0.3971]},{\"token\":\"f013:o04\",\"center_norm\":[0.51704,0.48239],\"bbox_norm\":[0.38782,0.4029,0.66026,0.52174]},{\"token\":\"f013:o05\",\"center_norm\":[0.55387,0.33166],\"bbox_norm\":[0.40385,0.29855,0.65705,0.35362]},{\"token\":\"f013:o06\",\"center_norm\":[0.56617,0.66194],\"bbox_norm\":[0.40705,0.56232,0.6891,0.76812]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G012",
+          "media_file": "a8e65365d90603381cbdedc259cbda5b0bfc4001850da8460a7d6290ccb51392.png",
+          "image_sha256": "a8e65365d90603381cbdedc259cbda5b0bfc4001850da8460a7d6290ccb51392",
+          "image_bytes": 12487
+        },
+        {
+          "image_id": "G013",
+          "media_file": "a23e712b3339508fbf488d1e91a2d471da5af14fadd427bde85e407371484949.png",
+          "image_sha256": "a23e712b3339508fbf488d1e91a2d471da5af14fadd427bde85e407371484949",
+          "image_bytes": 11930
+        }
+      ]
+    },
+    {
+      "pair": "P08",
+      "core_text": "{\"request_id\":\"M3L-P08\",\"source\":{\"image_id\":\"G013\",\"relative_seconds\":-0.233,\"observations\":[{\"token\":\"f013:o01\",\"center_norm\":[0.20943,0.45273],\"bbox_norm\":[0.17628,0.32174,0.24038,0.6087]},{\"token\":\"f013:o02\",\"center_norm\":[0.27489,0.43081],\"bbox_norm\":[0.22756,0.26667,0.31731,0.56522]},{\"token\":\"f013:o03\",\"center_norm\":[0.44578,0.33524],\"bbox_norm\":[0.32692,0.29275,0.64744,0.3971]},{\"token\":\"f013:o04\",\"center_norm\":[0.51704,0.48239],\"bbox_norm\":[0.38782,0.4029,0.66026,0.52174]},{\"token\":\"f013:o05\",\"center_norm\":[0.55387,0.33166],\"bbox_norm\":[0.40385,0.29855,0.65705,0.35362]},{\"token\":\"f013:o06\",\"center_norm\":[0.56617,0.66194],\"bbox_norm\":[0.40705,0.56232,0.6891,0.76812]}]},\"target\":{\"image_id\":\"G014\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f014:o01\",\"center_norm\":[0.20754,0.42806],\"bbox_norm\":[0.17308,0.30145,0.24038,0.58551]},{\"token\":\"f014:o02\",\"center_norm\":[0.28406,0.50249],\"bbox_norm\":[0.24679,0.32464,0.33654,0.64928]},{\"token\":\"f014:o03\",\"center_norm\":[0.39495,0.32543],\"bbox_norm\":[0.27885,0.24638,0.56731,0.42899]},{\"token\":\"f014:o04\",\"center_norm\":[0.47756,0.31304],\"bbox_norm\":[0.3141,0.27246,0.5641,0.3971]},{\"token\":\"f014:o05\",\"center_norm\":[0.51785,0.48388],\"bbox_norm\":[0.37179,0.41739,0.66346,0.51594]},{\"token\":\"f014:o06\",\"center_norm\":[0.55814,0.66873],\"bbox_norm\":[0.40385,0.56232,0.67628,0.77101]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G013",
+          "media_file": "a23e712b3339508fbf488d1e91a2d471da5af14fadd427bde85e407371484949.png",
+          "image_sha256": "a23e712b3339508fbf488d1e91a2d471da5af14fadd427bde85e407371484949",
+          "image_bytes": 11930
+        },
+        {
+          "image_id": "G014",
+          "media_file": "090dfac7f772b8ff56eb852daae02c7a39a9e704009a3444b44bd05a865a256b.png",
+          "image_sha256": "090dfac7f772b8ff56eb852daae02c7a39a9e704009a3444b44bd05a865a256b",
+          "image_bytes": 12139
+        }
+      ]
+    },
+    {
+      "pair": "P09",
+      "core_text": "{\"request_id\":\"M3L-P09\",\"source\":{\"image_id\":\"G014\",\"relative_seconds\":-0.267,\"observations\":[{\"token\":\"f014:o01\",\"center_norm\":[0.20754,0.42806],\"bbox_norm\":[0.17308,0.30145,0.24038,0.58551]},{\"token\":\"f014:o02\",\"center_norm\":[0.28406,0.50249],\"bbox_norm\":[0.24679,0.32464,0.33654,0.64928]},{\"token\":\"f014:o03\",\"center_norm\":[0.39495,0.32543],\"bbox_norm\":[0.27885,0.24638,0.56731,0.42899]},{\"token\":\"f014:o04\",\"center_norm\":[0.47756,0.31304],\"bbox_norm\":[0.3141,0.27246,0.5641,0.3971]},{\"token\":\"f014:o05\",\"center_norm\":[0.51785,0.48388],\"bbox_norm\":[0.37179,0.41739,0.66346,0.51594]},{\"token\":\"f014:o06\",\"center_norm\":[0.55814,0.66873],\"bbox_norm\":[0.40385,0.56232,0.67628,0.77101]}]},\"target\":{\"image_id\":\"G015\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f015:o01\",\"center_norm\":[0.20102,0.40417],\"bbox_norm\":[0.16667,0.28116,0.23718,0.55652]},{\"token\":\"f015:o02\",\"center_norm\":[0.30294,0.59327],\"bbox_norm\":[0.24359,0.42609,0.37179,0.73043]},{\"token\":\"f015:o03\",\"center_norm\":[0.34042,0.26962],\"bbox_norm\":[0.23718,0.21159,0.45192,0.35942]},{\"token\":\"f015:o04\",\"center_norm\":[0.33839,0.34626],\"bbox_norm\":[0.25,0.26377,0.51923,0.43768]},{\"token\":\"f015:o05\",\"center_norm\":[0.52508,0.48519],\"bbox_norm\":[0.37179,0.42319,0.66667,0.51594]},{\"token\":\"f015:o06\",\"center_norm\":[0.55805,0.67234],\"bbox_norm\":[0.41346,0.56232,0.67628,0.7913]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G014",
+          "media_file": "090dfac7f772b8ff56eb852daae02c7a39a9e704009a3444b44bd05a865a256b.png",
+          "image_sha256": "090dfac7f772b8ff56eb852daae02c7a39a9e704009a3444b44bd05a865a256b",
+          "image_bytes": 12139
+        },
+        {
+          "image_id": "G015",
+          "media_file": "c2eff38fbc14a4576d80bb1fed5c2179703086f511437b60ab9afe94119626da.png",
+          "image_sha256": "c2eff38fbc14a4576d80bb1fed5c2179703086f511437b60ab9afe94119626da",
+          "image_bytes": 12731
+        }
+      ]
+    },
+    {
+      "pair": "P10",
+      "core_text": "{\"request_id\":\"M3L-P10\",\"source\":{\"image_id\":\"G015\",\"relative_seconds\":-0.266,\"observations\":[{\"token\":\"f015:o01\",\"center_norm\":[0.20102,0.40417],\"bbox_norm\":[0.16667,0.28116,0.23718,0.55652]},{\"token\":\"f015:o02\",\"center_norm\":[0.30294,0.59327],\"bbox_norm\":[0.24359,0.42609,0.37179,0.73043]},{\"token\":\"f015:o03\",\"center_norm\":[0.34042,0.26962],\"bbox_norm\":[0.23718,0.21159,0.45192,0.35942]},{\"token\":\"f015:o04\",\"center_norm\":[0.33839,0.34626],\"bbox_norm\":[0.25,0.26377,0.51923,0.43768]},{\"token\":\"f015:o05\",\"center_norm\":[0.52508,0.48519],\"bbox_norm\":[0.37179,0.42319,0.66667,0.51594]},{\"token\":\"f015:o06\",\"center_norm\":[0.55805,0.67234],\"bbox_norm\":[0.41346,0.56232,0.67628,0.7913]}]},\"target\":{\"image_id\":\"G016\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f016:o01\",\"center_norm\":[0.19161,0.39956],\"bbox_norm\":[0.16346,0.27246,0.23077,0.54783]},{\"token\":\"f016:o02\",\"center_norm\":[0.28155,0.2283],\"bbox_norm\":[0.19231,0.1942,0.42308,0.28696]},{\"token\":\"f016:o03\",\"center_norm\":[0.32075,0.66809],\"bbox_norm\":[0.24038,0.51304,0.39103,0.8]},{\"token\":\"f016:o04\",\"center_norm\":[0.3126,0.35334],\"bbox_norm\":[0.25641,0.24348,0.4359,0.48406]},{\"token\":\"f016:o05\",\"center_norm\":[0.52744,0.48533],\"bbox_norm\":[0.36859,0.42899,0.66987,0.51884]},{\"token\":\"f016:o06\",\"center_norm\":[0.56182,0.66898],\"bbox_norm\":[0.41667,0.55652,0.67308,0.77971]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G015",
+          "media_file": "c2eff38fbc14a4576d80bb1fed5c2179703086f511437b60ab9afe94119626da.png",
+          "image_sha256": "c2eff38fbc14a4576d80bb1fed5c2179703086f511437b60ab9afe94119626da",
+          "image_bytes": 12731
+        },
+        {
+          "image_id": "G016",
+          "media_file": "ce212efa8fea2ae284402be212de0ee54029900599b25630c2dfe207e359a571.png",
+          "image_sha256": "ce212efa8fea2ae284402be212de0ee54029900599b25630c2dfe207e359a571",
+          "image_bytes": 12878
+        }
+      ]
+    },
+    {
+      "pair": "P11",
+      "core_text": "{\"request_id\":\"M3L-P11\",\"source\":{\"image_id\":\"G016\",\"relative_seconds\":-0.234,\"observations\":[{\"token\":\"f016:o01\",\"center_norm\":[0.19161,0.39956],\"bbox_norm\":[0.16346,0.27246,0.23077,0.54783]},{\"token\":\"f016:o02\",\"center_norm\":[0.28155,0.2283],\"bbox_norm\":[0.19231,0.1942,0.42308,0.28696]},{\"token\":\"f016:o03\",\"center_norm\":[0.32075,0.66809],\"bbox_norm\":[0.24038,0.51304,0.39103,0.8]},{\"token\":\"f016:o04\",\"center_norm\":[0.3126,0.35334],\"bbox_norm\":[0.25641,0.24348,0.4359,0.48406]},{\"token\":\"f016:o05\",\"center_norm\":[0.52744,0.48533],\"bbox_norm\":[0.36859,0.42899,0.66987,0.51884]},{\"token\":\"f016:o06\",\"center_norm\":[0.56182,0.66898],\"bbox_norm\":[0.41667,0.55652,0.67308,0.77971]}]},\"target\":{\"image_id\":\"G017\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f017:o01\",\"center_norm\":[0.18751,0.40236],\"bbox_norm\":[0.16026,0.26377,0.22756,0.55942]},{\"token\":\"f017:o02\",\"center_norm\":[0.24952,0.2323],\"bbox_norm\":[0.22115,0.11594,0.30449,0.34783]},{\"token\":\"f017:o03\",\"center_norm\":[0.2859,0.38772],\"bbox_norm\":[0.25321,0.24638,0.33654,0.51014]},{\"token\":\"f017:o04\",\"center_norm\":[0.33276,0.72094],\"bbox_norm\":[0.26282,0.54783,0.41667,0.85507]},{\"token\":\"f017:o05\",\"center_norm\":[0.52866,0.48401],\"bbox_norm\":[0.36538,0.43188,0.66987,0.51884]},{\"token\":\"f017:o06\",\"center_norm\":[0.57642,0.65444],\"bbox_norm\":[0.44231,0.53913,0.66987,0.77971]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G016",
+          "media_file": "ce212efa8fea2ae284402be212de0ee54029900599b25630c2dfe207e359a571.png",
+          "image_sha256": "ce212efa8fea2ae284402be212de0ee54029900599b25630c2dfe207e359a571",
+          "image_bytes": 12878
+        },
+        {
+          "image_id": "G017",
+          "media_file": "21afc4500839fca13c9ad5c6bf7976f06a526e0792b88e070fc05fbf10cc23da.png",
+          "image_sha256": "21afc4500839fca13c9ad5c6bf7976f06a526e0792b88e070fc05fbf10cc23da",
+          "image_bytes": 13059
+        }
+      ]
+    },
+    {
+      "pair": "P12",
+      "core_text": "{\"request_id\":\"M3L-P12\",\"source\":{\"image_id\":\"G017\",\"relative_seconds\":-0.266,\"observations\":[{\"token\":\"f017:o01\",\"center_norm\":[0.18751,0.40236],\"bbox_norm\":[0.16026,0.26377,0.22756,0.55942]},{\"token\":\"f017:o02\",\"center_norm\":[0.24952,0.2323],\"bbox_norm\":[0.22115,0.11594,0.30449,0.34783]},{\"token\":\"f017:o03\",\"center_norm\":[0.2859,0.38772],\"bbox_norm\":[0.25321,0.24638,0.33654,0.51014]},{\"token\":\"f017:o04\",\"center_norm\":[0.33276,0.72094],\"bbox_norm\":[0.26282,0.54783,0.41667,0.85507]},{\"token\":\"f017:o05\",\"center_norm\":[0.52866,0.48401],\"bbox_norm\":[0.36538,0.43188,0.66987,0.51884]},{\"token\":\"f017:o06\",\"center_norm\":[0.57642,0.65444],\"bbox_norm\":[0.44231,0.53913,0.66987,0.77971]}]},\"target\":{\"image_id\":\"G018\",\"relative_seconds\":0,\"observations\":[{\"token\":\"f018:o01\",\"center_norm\":[0.18289,0.39474],\"bbox_norm\":[0.15385,0.25797,0.21795,0.55362]},{\"token\":\"f018:o02\",\"center_norm\":[0.27898,0.41056],\"bbox_norm\":[0.25,0.23768,0.33013,0.53913]},{\"token\":\"f018:o03\",\"center_norm\":[0.28106,0.31175],\"bbox_norm\":[0.21795,0.16812,0.36859,0.42029]},{\"token\":\"f018:o04\",\"center_norm\":[0.35676,0.79385],\"bbox_norm\":[0.26923,0.63478,0.46795,0.90145]},{\"token\":\"f018:o05\",\"center_norm\":[0.52384,0.48316],\"bbox_norm\":[0.37179,0.43188,0.66346,0.52464]},{\"token\":\"f018:o06\",\"center_norm\":[0.58594,0.65194],\"bbox_norm\":[0.46795,0.51304,0.66987,0.78551]}]},\"note\":\"Two actual sampled moments only. Tokens are frame-local, not persistent identities. All ROI objects are listed. Do not invent intermediate observations.\"}",
+      "images": [
+        {
+          "image_id": "G017",
+          "media_file": "21afc4500839fca13c9ad5c6bf7976f06a526e0792b88e070fc05fbf10cc23da.png",
+          "image_sha256": "21afc4500839fca13c9ad5c6bf7976f06a526e0792b88e070fc05fbf10cc23da",
+          "image_bytes": 13059
+        },
+        {
+          "image_id": "G018",
+          "media_file": "5c045b8d7e5e4b71279c1ecebd19a92ef79397e18034308bd4237878126bf8f8.png",
+          "image_sha256": "5c045b8d7e5e4b71279c1ecebd19a92ef79397e18034308bd4237878126bf8f8",
+          "image_bytes": 13305
+        }
+      ]
+    }
+  ],
+  "reserve_each_usd": 0.11,
+  "smoke_max": 1,
+  "cost_cap_usd": 3.0
+}

@@ -1,0 +1,61 @@
+{
+  "status": "POST_SEAL_SCORE_COMPLETE",
+  "technical_complete": true,
+  "parseable": 24,
+  "scoreable_hops": 12,
+  "scoreable_sources": 66,
+  "metrics": {
+    "FIRST": {
+      "scoreable": 66,
+      "selected": 58,
+      "correct": 58,
+      "wrong": 0,
+      "coverage": 0.8787878787878788,
+      "precision": 1.0
+    },
+    "REPEAT": {
+      "scoreable": 66,
+      "selected": 59,
+      "correct": 59,
+      "wrong": 0,
+      "coverage": 0.8939393939393939,
+      "precision": 1.0
+    }
+  },
+  "baseline_metrics": {
+    "N-C": {
+      "scoreable": 66,
+      "selected": 66,
+      "correct": 64,
+      "wrong": 2,
+      "coverage": 1.0,
+      "precision": 0.9696969696969697
+    },
+    "N-I": {
+      "scoreable": 66,
+      "selected": 66,
+      "correct": 66,
+      "wrong": 0,
+      "coverage": 1.0,
+      "precision": 1.0
+    }
+  },
+  "repeat_agreement": 0.7878787878787878,
+  "raw_repeat_agreement": 0.9545454545454546,
+  "citation_invalid_attempts": [
+    "P01-REPEAT",
+    "P05-FIRST"
+  ],
+  "both_numeric_wrong_vlm_both_correct": [],
+  "distinct_increment_hops": 0,
+  "paired_gain_against_both_wrong": 0,
+  "paired_harm_against_both_right": 0,
+  "local_signal": true,
+  "tentative_increment": false,
+  "formal_latency_seconds": 1014.9820673372597,
+  "latency_min_seconds": 10.19201316870749,
+  "latency_max_seconds": 82.08779364824295,
+  "formal_charge_upper_usd": 0.2950218,
+  "smoke_charge_upper_usd": 0.0001665,
+  "decision": "HAS_LOCAL_CAPABILITY_NO_INCREMENT"
+}

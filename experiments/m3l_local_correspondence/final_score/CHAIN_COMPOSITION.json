@@ -1,0 +1,78 @@
+[
+  {
+    "role": "A",
+    "arm": "FIRST",
+    "start_token": "f006:o06",
+    "path": [
+      {
+        "frame": 1300,
+        "token": "f006:o06"
+      },
+      {
+        "frame": 1308,
+        "token": "f007:o06"
+      }
+    ],
+    "last_reached_frame": 1308,
+    "stop": {
+      "pair": "P02",
+      "reason": "UNRESOLVED"
+    },
+    "first_certified_wrong_step": null
+  },
+  {
+    "role": "B",
+    "arm": "FIRST",
+    "start_token": "f006:o02",
+    "path": [
+      {
+        "frame": 1300,
+        "token": "f006:o02"
+      },
+      {
+        "frame": 1308,
+        "token": "f007:o02"
+      }
+    ],
+    "last_reached_frame": 1308,
+    "stop": {
+      "pair": "P02",
+      "reason": "UNRESOLVED"
+    },
+    "first_certified_wrong_step": null
+  },
+  {
+    "role": "A",
+    "arm": "REPEAT",
+    "start_token": "f006:o06",
+    "path": [
+      {
+        "frame": 1300,
+        "token": "f006:o06"
+      }
+    ],
+    "last_reached_frame": 1300,
+    "stop": {
+      "pair": "P01",
+      "reason": "CITATION_INVALID"
+    },
+    "first_certified_wrong_step": null
+  },
+  {
+    "role": "B",
+    "arm": "REPEAT",
+    "start_token": "f006:o02",
+    "path": [
+      {
+        "frame": 1300,
+        "token": "f006:o02"
+      }
+    ],
+    "last_reached_frame": 1300,
+    "stop": {
+      "pair": "P01",
+      "reason": "CITATION_INVALID"
+    },
+    "first_certified_wrong_step": null
+  }
+]

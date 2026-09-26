@@ -1,0 +1,5 @@
+# Quality-complete EHR-1R input, zero inference calls
+
+This is the independent `run_v6` preparation after the v5 partial stop. It adds model-visible `sensor_available`, `synchronized`, core/whole sample counts and MAD, overlap, and depth-quality/risk for every anonymous event observation. The current `prepare.py`, `contract.py`, `audit.py`, `depth_audit.py`, and `test_ehr1r.py` produced and checked this directory. All 25 logical requests are recorded in `OFFLINE_REQUESTS_FROZEN.json` as **UNSENT**. There are no provider file IDs, request bodies with uploaded files, response contents, call ledger, or trial score for this package.
+
+The source audit and 727-frame raw HDF5 parity passed. The 26-request peak reserve based on this actual payload is USD 2.968511, but that estimate is **not** permission to send calls. The previously returned v5 responses cannot be used as answers to these changed inputs. The source cases are exposed offline diagnostic controls because the complete online hard-event gate was not verified.

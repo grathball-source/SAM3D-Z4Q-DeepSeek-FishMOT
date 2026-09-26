@@ -1,0 +1,326 @@
+{
+  "status": "SOURCE_CONTRACT_FAILURE_AFTER_SEAL",
+  "root_cause": "verbose anonymous records and compact H-D table both omitted required depth quality; preflight compared H2D/HD symmetry but did not validate quality completeness",
+  "cases": [
+    {
+      "attempt_id": "B01-H-2D",
+      "arm": "H-2D",
+      "anonymous_depth_rows": 1210,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "DEPTH_NOT_SENT_OR_PASS"
+    },
+    {
+      "attempt_id": "B01-H-D",
+      "arm": "H-D",
+      "anonymous_depth_rows": 1210,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B01-H-D-REPEAT",
+      "arm": "H-D-REPEAT",
+      "anonymous_depth_rows": 1210,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B01-H-D-PERMUTE",
+      "arm": "H-D-PERMUTE",
+      "anonymous_depth_rows": 1210,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B02-H-2D",
+      "arm": "H-2D",
+      "anonymous_depth_rows": 1297,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "DEPTH_NOT_SENT_OR_PASS"
+    },
+    {
+      "attempt_id": "B02-H-D",
+      "arm": "H-D",
+      "anonymous_depth_rows": 1297,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B02-H-D-REPEAT",
+      "arm": "H-D-REPEAT",
+      "anonymous_depth_rows": 1297,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B02-H-D-PERMUTE",
+      "arm": "H-D-PERMUTE",
+      "anonymous_depth_rows": 1297,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B03-H-2D",
+      "arm": "H-2D",
+      "anonymous_depth_rows": 520,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "DEPTH_NOT_SENT_OR_PASS"
+    },
+    {
+      "attempt_id": "B03-H-D",
+      "arm": "H-D",
+      "anonymous_depth_rows": 520,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B03-H-D-REPEAT",
+      "arm": "H-D-REPEAT",
+      "anonymous_depth_rows": 520,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B03-H-D-PERMUTE",
+      "arm": "H-D-PERMUTE",
+      "anonymous_depth_rows": 520,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B04-H-2D",
+      "arm": "H-2D",
+      "anonymous_depth_rows": 805,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "DEPTH_NOT_SENT_OR_PASS"
+    },
+    {
+      "attempt_id": "B04-H-D",
+      "arm": "H-D",
+      "anonymous_depth_rows": 805,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B04-H-D-REPEAT",
+      "arm": "H-D-REPEAT",
+      "anonymous_depth_rows": 805,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B04-H-D-PERMUTE",
+      "arm": "H-D-PERMUTE",
+      "anonymous_depth_rows": 805,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B05-H-2D",
+      "arm": "H-2D",
+      "anonymous_depth_rows": 670,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "DEPTH_NOT_SENT_OR_PASS"
+    },
+    {
+      "attempt_id": "B05-H-D",
+      "arm": "H-D",
+      "anonymous_depth_rows": 670,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B05-H-D-REPEAT",
+      "arm": "H-D-REPEAT",
+      "anonymous_depth_rows": 670,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    },
+    {
+      "attempt_id": "B05-H-D-PERMUTE",
+      "arm": "H-D-PERMUTE",
+      "anonymous_depth_rows": 670,
+      "missing_required_fields": [
+        "depth_sensor_available",
+        "depth_synchronized",
+        "depth_core_n",
+        "depth_core_mad",
+        "depth_whole_n",
+        "depth_whole_mad",
+        "depth_overlap_pixels",
+        "depth_quality"
+      ],
+      "source_contract": "FAIL"
+    }
+  ]
+}

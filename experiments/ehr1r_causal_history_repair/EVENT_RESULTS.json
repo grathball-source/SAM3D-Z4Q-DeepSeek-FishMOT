@@ -1,0 +1,422 @@
+{
+  "status": "NO_VALID_PAIRED_TRIAL_SCORE",
+  "cases": [
+    {
+      "case": "B01",
+      "source_contract_v5": "FAIL_ANONYMOUS_DEPTH_QUALITY",
+      "predicted_pair_contact_proxy": true,
+      "strict_prediction_driven_hard_trigger": "NOT_VERIFIED",
+      "analysis_role": "OFFLINE_DIAGNOSTIC_CONTROL",
+      "old_to_new_reference": {
+        "A": {
+          "old_anchor_frame": 1321,
+          "new_anchor_frame": 1314,
+          "semantic_relation": "ORIGINAL_REFERENCE_UNRESOLVED",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        },
+        "B": {
+          "old_anchor_frame": 1321,
+          "new_anchor_frame": 1317,
+          "semantic_relation": "ORIGINAL_REFERENCE_UNRESOLVED",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        }
+      },
+      "posthoc_new_reference_answer": "H1",
+      "posthoc_old_answer_relation": "SAME_MAPPING_POSTHOC",
+      "N_H2D": "H2",
+      "N_HD": "H2",
+      "N_HD_depth_mode": "ALL_FOUR_EDGES",
+      "arms": {
+        "E": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "DEFER",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-2D": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "DEFER",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "H1",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-REPEAT": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "DEFER",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-PERMUTE": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "DEFER",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        }
+      }
+    },
+    {
+      "case": "B02",
+      "source_contract_v5": "FAIL_ANONYMOUS_DEPTH_QUALITY",
+      "predicted_pair_contact_proxy": true,
+      "strict_prediction_driven_hard_trigger": "NOT_VERIFIED",
+      "analysis_role": "OFFLINE_DIAGNOSTIC_CONTROL",
+      "old_to_new_reference": {
+        "A": {
+          "old_anchor_frame": 7866,
+          "new_anchor_frame": 7866,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        },
+        "B": {
+          "old_anchor_frame": 7890,
+          "new_anchor_frame": 7890,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        }
+      },
+      "posthoc_new_reference_answer": "H2",
+      "posthoc_old_answer_relation": "SAME_MAPPING_POSTHOC",
+      "N_H2D": "H2",
+      "N_HD": "H2",
+      "N_HD_depth_mode": "ALL_FOUR_EDGES",
+      "arms": {
+        "E": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "DEFER",
+          "parseable": true,
+          "citation_legal": true,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-2D": {
+          "transport": "RETURNED_UNSCORED",
+          "raw_choice": "H2",
+          "parseable": true,
+          "citation_legal": false,
+          "evidence_errors": [
+            "INVALID_SUPPORTING_FACT_IDS_H1"
+          ],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D": {
+          "transport": "HTTP_OUTCOME_UNKNOWN_INTERRUPTED",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-REPEAT": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-PERMUTE": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        }
+      }
+    },
+    {
+      "case": "B03",
+      "source_contract_v5": "FAIL_ANONYMOUS_DEPTH_QUALITY",
+      "predicted_pair_contact_proxy": true,
+      "strict_prediction_driven_hard_trigger": "NOT_VERIFIED",
+      "analysis_role": "OFFLINE_DIAGNOSTIC_CONTROL",
+      "old_to_new_reference": {
+        "A": {
+          "old_anchor_frame": 306,
+          "new_anchor_frame": 306,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        },
+        "B": {
+          "old_anchor_frame": 315,
+          "new_anchor_frame": 315,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        }
+      },
+      "posthoc_new_reference_answer": "H1",
+      "posthoc_old_answer_relation": "SAME_MAPPING_POSTHOC",
+      "N_H2D": "H2",
+      "N_HD": "H1",
+      "N_HD_depth_mode": "ALL_FOUR_EDGES",
+      "arms": {
+        "E": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-2D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-REPEAT": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-PERMUTE": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        }
+      }
+    },
+    {
+      "case": "B04",
+      "source_contract_v5": "FAIL_ANONYMOUS_DEPTH_QUALITY",
+      "predicted_pair_contact_proxy": true,
+      "strict_prediction_driven_hard_trigger": "NOT_VERIFIED",
+      "analysis_role": "OFFLINE_DIAGNOSTIC_CONTROL",
+      "old_to_new_reference": {
+        "A": {
+          "old_anchor_frame": 2544,
+          "new_anchor_frame": 2544,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        },
+        "B": {
+          "old_anchor_frame": 2525,
+          "new_anchor_frame": 2525,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        }
+      },
+      "posthoc_new_reference_answer": "H2",
+      "posthoc_old_answer_relation": "SAME_MAPPING_POSTHOC",
+      "N_H2D": "H1",
+      "N_HD": "H1",
+      "N_HD_depth_mode": "ALL_FOUR_EDGES",
+      "arms": {
+        "E": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-2D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-REPEAT": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-PERMUTE": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        }
+      }
+    },
+    {
+      "case": "B05",
+      "source_contract_v5": "FAIL_ANONYMOUS_DEPTH_QUALITY",
+      "predicted_pair_contact_proxy": true,
+      "strict_prediction_driven_hard_trigger": "NOT_VERIFIED",
+      "analysis_role": "OFFLINE_DIAGNOSTIC_CONTROL",
+      "old_to_new_reference": {
+        "A": {
+          "old_anchor_frame": 2469,
+          "new_anchor_frame": 2469,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        },
+        "B": {
+          "old_anchor_frame": 2525,
+          "new_anchor_frame": 2525,
+          "semantic_relation": "SAME_CLEAN_FRAGMENT",
+          "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+        }
+      },
+      "posthoc_new_reference_answer": "H2",
+      "posthoc_old_answer_relation": "SAME_MAPPING_POSTHOC",
+      "N_H2D": "H1",
+      "N_HD": "H1",
+      "N_HD_depth_mode": "DEPTH_UNAVAILABLE_FALLBACK",
+      "arms": {
+        "E": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-2D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-REPEAT": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        },
+        "H-D-PERMUTE": {
+          "transport": "UNSENT",
+          "raw_choice": null,
+          "parseable": null,
+          "citation_legal": null,
+          "evidence_errors": [],
+          "correct": null,
+          "wrong": null,
+          "abstention_as_valid_trial": null,
+          "score_bucket": "UNSCORABLE_SOURCE_CONTRACT"
+        }
+      }
+    }
+  ]
+}

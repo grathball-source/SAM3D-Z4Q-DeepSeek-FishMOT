@@ -1,0 +1,324 @@
+{
+  "status": "PASS",
+  "old_packet_rejection_sha256": "f02cae7493fa951afb25e2fe9a6c7985a778ff3ecf0777dbd9f1bd93a70e4ae3",
+  "depth_audit_sha256": "41bf3e4c8b957d7044f5a51350059f412d55406f291686a0784e52d245a9c74a",
+  "plan_sha256": "3038db53e9ba3af085d75bb3096ad2d4490fdb7e31373a2bc7333dceee8462db",
+  "contract_code_sha256": "fb0c7c9e4719f7ef6b1ec440f1cfcf01b9155838c00380cb32e6a142fad33253",
+  "cases": [
+    {
+      "case": "B01",
+      "status": "PASS",
+      "source_observations": 1272,
+      "event_observations": 1210,
+      "pre_frames": {
+        "A": 1,
+        "B": 31
+      },
+      "post_frames": {
+        "X": 15,
+        "Y": 15
+      },
+      "image_count": 11,
+      "prediction_contact": true
+    },
+    {
+      "case": "B02",
+      "status": "PASS",
+      "source_observations": 1380,
+      "event_observations": 1297,
+      "pre_frames": {
+        "A": 31,
+        "B": 31
+      },
+      "post_frames": {
+        "X": 6,
+        "Y": 15
+      },
+      "image_count": 11,
+      "prediction_contact": true
+    },
+    {
+      "case": "B03",
+      "status": "PASS",
+      "source_observations": 612,
+      "event_observations": 520,
+      "pre_frames": {
+        "A": 31,
+        "B": 31
+      },
+      "post_frames": {
+        "X": 15,
+        "Y": 15
+      },
+      "image_count": 11,
+      "prediction_contact": true
+    },
+    {
+      "case": "B04",
+      "status": "PASS",
+      "source_observations": 858,
+      "event_observations": 805,
+      "pre_frames": {
+        "A": 8,
+        "B": 31
+      },
+      "post_frames": {
+        "X": 7,
+        "Y": 7
+      },
+      "image_count": 11,
+      "prediction_contact": true
+    },
+    {
+      "case": "B05",
+      "status": "PASS",
+      "source_observations": 726,
+      "event_observations": 670,
+      "pre_frames": {
+        "A": 10,
+        "B": 31
+      },
+      "post_frames": {
+        "X": 13,
+        "Y": 2
+      },
+      "image_count": 11,
+      "prediction_contact": true
+    }
+  ],
+  "request_count": 25,
+  "model": "deepseek-flash",
+  "max_tokens": 65536,
+  "pricing_source": "official DeepSeek V4.1 Flash peak cache-miss 2026-09-26 USD0.30/M input, USD1.20/M output",
+  "budget_method": "0.60 token per input character (2x published English heuristic), 1024 per image upper, 1024 request overhead, full 65536 output each",
+  "request_budget": [
+    {
+      "attempt_id": "B01-E",
+      "text_characters": 5762,
+      "text_bytes": 5762,
+      "images": 3,
+      "input_token_reserve": 7554,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.0809094
+    },
+    {
+      "attempt_id": "B01-H-2D",
+      "text_characters": 165203,
+      "text_bytes": 165203,
+      "images": 11,
+      "input_token_reserve": 111410,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1120662
+    },
+    {
+      "attempt_id": "B01-H-D",
+      "text_characters": 231056,
+      "text_bytes": 231056,
+      "images": 11,
+      "input_token_reserve": 150922,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1239198
+    },
+    {
+      "attempt_id": "B01-H-D-REPEAT",
+      "text_characters": 231056,
+      "text_bytes": 231056,
+      "images": 11,
+      "input_token_reserve": 150922,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1239198
+    },
+    {
+      "attempt_id": "B01-H-D-PERMUTE",
+      "text_characters": 231056,
+      "text_bytes": 231056,
+      "images": 11,
+      "input_token_reserve": 150922,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1239198
+    },
+    {
+      "attempt_id": "B02-E",
+      "text_characters": 5759,
+      "text_bytes": 5759,
+      "images": 3,
+      "input_token_reserve": 7552,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.0809088
+    },
+    {
+      "attempt_id": "B02-H-2D",
+      "text_characters": 176040,
+      "text_bytes": 176040,
+      "images": 11,
+      "input_token_reserve": 117912,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1140168
+    },
+    {
+      "attempt_id": "B02-H-D",
+      "text_characters": 253933,
+      "text_bytes": 253933,
+      "images": 11,
+      "input_token_reserve": 164648,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1280376
+    },
+    {
+      "attempt_id": "B02-H-D-REPEAT",
+      "text_characters": 253933,
+      "text_bytes": 253933,
+      "images": 11,
+      "input_token_reserve": 164648,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1280376
+    },
+    {
+      "attempt_id": "B02-H-D-PERMUTE",
+      "text_characters": 253933,
+      "text_bytes": 253933,
+      "images": 11,
+      "input_token_reserve": 164648,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1280376
+    },
+    {
+      "attempt_id": "B03-E",
+      "text_characters": 5703,
+      "text_bytes": 5703,
+      "images": 3,
+      "input_token_reserve": 7518,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.0808986
+    },
+    {
+      "attempt_id": "B03-H-2D",
+      "text_characters": 109439,
+      "text_bytes": 109439,
+      "images": 11,
+      "input_token_reserve": 77952,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1020288
+    },
+    {
+      "attempt_id": "B03-H-D",
+      "text_characters": 170742,
+      "text_bytes": 170742,
+      "images": 11,
+      "input_token_reserve": 114734,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1130634
+    },
+    {
+      "attempt_id": "B03-H-D-REPEAT",
+      "text_characters": 170742,
+      "text_bytes": 170742,
+      "images": 11,
+      "input_token_reserve": 114734,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1130634
+    },
+    {
+      "attempt_id": "B03-H-D-PERMUTE",
+      "text_characters": 170742,
+      "text_bytes": 170742,
+      "images": 11,
+      "input_token_reserve": 114734,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1130634
+    },
+    {
+      "attempt_id": "B04-E",
+      "text_characters": 5749,
+      "text_bytes": 5749,
+      "images": 3,
+      "input_token_reserve": 7546,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.080907
+    },
+    {
+      "attempt_id": "B04-H-2D",
+      "text_characters": 124536,
+      "text_bytes": 124536,
+      "images": 11,
+      "input_token_reserve": 87010,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1047462
+    },
+    {
+      "attempt_id": "B04-H-D",
+      "text_characters": 173461,
+      "text_bytes": 173461,
+      "images": 11,
+      "input_token_reserve": 116365,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1135527
+    },
+    {
+      "attempt_id": "B04-H-D-REPEAT",
+      "text_characters": 173461,
+      "text_bytes": 173461,
+      "images": 11,
+      "input_token_reserve": 116365,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1135527
+    },
+    {
+      "attempt_id": "B04-H-D-PERMUTE",
+      "text_characters": 173461,
+      "text_bytes": 173461,
+      "images": 11,
+      "input_token_reserve": 116365,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1135527
+    },
+    {
+      "attempt_id": "B05-E",
+      "text_characters": 5753,
+      "text_bytes": 5753,
+      "images": 3,
+      "input_token_reserve": 7548,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.0809076
+    },
+    {
+      "attempt_id": "B05-H-2D",
+      "text_characters": 104486,
+      "text_bytes": 104486,
+      "images": 11,
+      "input_token_reserve": 74980,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1011372
+    },
+    {
+      "attempt_id": "B05-H-D",
+      "text_characters": 151341,
+      "text_bytes": 151341,
+      "images": 11,
+      "input_token_reserve": 103093,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1095711
+    },
+    {
+      "attempt_id": "B05-H-D-REPEAT",
+      "text_characters": 151341,
+      "text_bytes": 151341,
+      "images": 11,
+      "input_token_reserve": 103093,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1095711
+    },
+    {
+      "attempt_id": "B05-H-D-PERMUTE",
+      "text_characters": 151341,
+      "text_bytes": 151341,
+      "images": 11,
+      "input_token_reserve": 103093,
+      "output_token_reserve": 65536,
+      "reserve_usd": 0.1095711
+    }
+  ],
+  "smoke_reserve_usd": 0.0792576,
+  "total_reserve_usd": 2.782218,
+  "cap_usd": 3
+}

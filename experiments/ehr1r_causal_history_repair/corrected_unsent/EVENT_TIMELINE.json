@@ -1,0 +1,4577 @@
+[
+  {
+    "case": "B01",
+    "trigger": {
+      "frame": 1322,
+      "source": "fixed_AO1_prediction_window",
+      "pair_contact_predicted": true,
+      "scope": "PREDICTION_DRIVEN_CONTACT_PROXY"
+    },
+    "old_to_new_reference": {
+      "A": {
+        "old_anchor_frame": 1321,
+        "new_anchor_frame": 1314,
+        "semantic_relation": "ORIGINAL_REFERENCE_UNRESOLVED",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      },
+      "B": {
+        "old_anchor_frame": 1321,
+        "new_anchor_frame": 1317,
+        "semantic_relation": "ORIGINAL_REFERENCE_UNRESOLVED",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      }
+    },
+    "pre_fragments": {
+      "A": "A-F1314-1314",
+      "B": "B-F1287-1317"
+    },
+    "post_fragments": {
+      "X": "X-F1484-1498",
+      "Y": "Y-F1484-1498"
+    },
+    "availability_intervals": {
+      "A": [
+        {
+          "status": "CLEAN",
+          "start_frame": 1314,
+          "end_frame": 1314,
+          "fact_id": "INTERVAL-A-1",
+          "source_fact_ids": [
+            "SRC-F1314-N1"
+          ],
+          "start_time_seconds": 1787709094.961,
+          "end_time_seconds": 1787709094.961
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1315,
+          "end_frame": 1349,
+          "fact_id": "INTERVAL-A-2",
+          "source_fact_ids": [
+            "SRC-F1315-N1",
+            "SRC-F1316-N1",
+            "SRC-F1317-N1",
+            "SRC-F1318-N1",
+            "SRC-F1319-N1",
+            "SRC-F1320-N1",
+            "SRC-F1321-N1",
+            "SRC-F1322-N1",
+            "SRC-F1323-N1",
+            "SRC-F1324-N1",
+            "SRC-F1325-N1",
+            "SRC-F1326-N1",
+            "SRC-F1327-N1",
+            "SRC-F1328-N1",
+            "SRC-F1329-N1",
+            "SRC-F1330-N1",
+            "SRC-F1331-N1",
+            "SRC-F1332-N1",
+            "SRC-F1333-N1",
+            "SRC-F1334-N1",
+            "SRC-F1335-N1",
+            "SRC-F1336-N1",
+            "SRC-F1337-N1",
+            "SRC-F1338-N1",
+            "SRC-F1339-N1",
+            "SRC-F1340-N1",
+            "SRC-F1341-N1",
+            "SRC-F1342-N1",
+            "SRC-F1343-N1",
+            "SRC-F1344-N1",
+            "SRC-F1345-N1",
+            "SRC-F1346-N1",
+            "SRC-F1347-N1",
+            "SRC-F1348-N1",
+            "SRC-F1349-N1"
+          ],
+          "start_time_seconds": 1787709094.994,
+          "end_time_seconds": 1787709096.127
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 1350,
+          "end_frame": 1350,
+          "fact_id": "INTERVAL-A-3",
+          "source_fact_ids": [
+            "SRC-F1350-N1"
+          ],
+          "start_time_seconds": 1787709096.16,
+          "end_time_seconds": 1787709096.16
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1351,
+          "end_frame": 1367,
+          "fact_id": "INTERVAL-A-4",
+          "source_fact_ids": [
+            "SRC-F1351-N1",
+            "SRC-F1352-N1",
+            "SRC-F1353-N1",
+            "SRC-F1354-N1",
+            "SRC-F1355-N1",
+            "SRC-F1356-N1",
+            "SRC-F1357-N1",
+            "SRC-F1358-N1",
+            "SRC-F1359-N1",
+            "SRC-F1360-N1",
+            "SRC-F1361-N1",
+            "SRC-F1362-N1",
+            "SRC-F1363-N1",
+            "SRC-F1364-N1",
+            "SRC-F1365-N1",
+            "SRC-F1366-N1",
+            "SRC-F1367-N1"
+          ],
+          "start_time_seconds": 1787709096.194,
+          "end_time_seconds": 1787709096.727
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1368,
+          "end_frame": 1369,
+          "fact_id": "INTERVAL-A-5",
+          "source_fact_ids": [
+            "SRC-F1368-N1",
+            "SRC-F1369-N1"
+          ],
+          "start_time_seconds": 1787709096.76,
+          "end_time_seconds": 1787709096.793
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1370,
+          "end_frame": 1370,
+          "fact_id": "INTERVAL-A-6",
+          "source_fact_ids": [
+            "SRC-F1370-N1"
+          ],
+          "start_time_seconds": 1787709096.827,
+          "end_time_seconds": 1787709096.827
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1371,
+          "end_frame": 1372,
+          "fact_id": "INTERVAL-A-7",
+          "source_fact_ids": [
+            "SRC-F1371-N1",
+            "SRC-F1372-N1"
+          ],
+          "start_time_seconds": 1787709096.86,
+          "end_time_seconds": 1787709096.893
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1373,
+          "end_frame": 1417,
+          "fact_id": "INTERVAL-A-8",
+          "source_fact_ids": [
+            "SRC-F1373-N1",
+            "SRC-F1374-N1",
+            "SRC-F1375-N1",
+            "SRC-F1376-N1",
+            "SRC-F1377-N1",
+            "SRC-F1378-N1",
+            "SRC-F1379-N1",
+            "SRC-F1380-N1",
+            "SRC-F1381-N1",
+            "SRC-F1382-N1",
+            "SRC-F1383-N1",
+            "SRC-F1384-N1",
+            "SRC-F1385-N1",
+            "SRC-F1386-N1",
+            "SRC-F1387-N1",
+            "SRC-F1388-N1",
+            "SRC-F1389-N1",
+            "SRC-F1390-N1",
+            "SRC-F1391-N1",
+            "SRC-F1392-N1",
+            "SRC-F1393-N1",
+            "SRC-F1394-N1",
+            "SRC-F1395-N1",
+            "SRC-F1396-N1",
+            "SRC-F1397-N1",
+            "SRC-F1398-N1",
+            "SRC-F1399-N1",
+            "SRC-F1400-N1",
+            "SRC-F1401-N1",
+            "SRC-F1402-N1",
+            "SRC-F1403-N1",
+            "SRC-F1404-N1",
+            "SRC-F1405-N1",
+            "SRC-F1406-N1",
+            "SRC-F1407-N1",
+            "SRC-F1408-N1",
+            "SRC-F1409-N1",
+            "SRC-F1410-N1",
+            "SRC-F1411-N1",
+            "SRC-F1412-N1",
+            "SRC-F1413-N1",
+            "SRC-F1414-N1",
+            "SRC-F1415-N1",
+            "SRC-F1416-N1",
+            "SRC-F1417-N1"
+          ],
+          "start_time_seconds": 1787709096.927,
+          "end_time_seconds": 1787709098.393
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1418,
+          "end_frame": 1418,
+          "fact_id": "INTERVAL-A-9",
+          "source_fact_ids": [
+            "SRC-F1418-N1"
+          ],
+          "start_time_seconds": 1787709098.426,
+          "end_time_seconds": 1787709098.426
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1419,
+          "end_frame": 1483,
+          "fact_id": "INTERVAL-A-10",
+          "source_fact_ids": [
+            "SRC-F1419-N1",
+            "SRC-F1420-N1",
+            "SRC-F1421-N1",
+            "SRC-F1422-N1",
+            "SRC-F1423-N1",
+            "SRC-F1424-N1",
+            "SRC-F1425-N1",
+            "SRC-F1426-N1",
+            "SRC-F1427-N1",
+            "SRC-F1428-N1",
+            "SRC-F1429-N1",
+            "SRC-F1430-N1",
+            "SRC-F1431-N1",
+            "SRC-F1432-N1",
+            "SRC-F1433-N1",
+            "SRC-F1434-N1",
+            "SRC-F1435-N1",
+            "SRC-F1436-N1",
+            "SRC-F1437-N1",
+            "SRC-F1438-N1",
+            "SRC-F1439-N1",
+            "SRC-F1440-N1",
+            "SRC-F1441-N1",
+            "SRC-F1442-N1",
+            "SRC-F1443-N1",
+            "SRC-F1444-N1",
+            "SRC-F1445-N1",
+            "SRC-F1446-N1",
+            "SRC-F1447-N1",
+            "SRC-F1448-N1",
+            "SRC-F1449-N1",
+            "SRC-F1450-N1",
+            "SRC-F1451-N1",
+            "SRC-F1452-N1",
+            "SRC-F1453-N1",
+            "SRC-F1454-N1",
+            "SRC-F1455-N1",
+            "SRC-F1456-N1",
+            "SRC-F1457-N1",
+            "SRC-F1458-N1",
+            "SRC-F1459-N1",
+            "SRC-F1460-N1",
+            "SRC-F1461-N1",
+            "SRC-F1462-N1",
+            "SRC-F1463-N1",
+            "SRC-F1464-N1",
+            "SRC-F1465-N1",
+            "SRC-F1466-N1",
+            "SRC-F1467-N1",
+            "SRC-F1468-N1",
+            "SRC-F1469-N1",
+            "SRC-F1470-N1",
+            "SRC-F1471-N1",
+            "SRC-F1472-N1",
+            "SRC-F1473-N1",
+            "SRC-F1474-N1",
+            "SRC-F1475-N1",
+            "SRC-F1476-N1",
+            "SRC-F1477-N1",
+            "SRC-F1478-N1",
+            "SRC-F1479-N1",
+            "SRC-F1480-N1",
+            "SRC-F1481-N1",
+            "SRC-F1482-N1",
+            "SRC-F1483-N1"
+          ],
+          "start_time_seconds": 1787709098.459,
+          "end_time_seconds": 1787709100.592
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1484,
+          "end_frame": 1498,
+          "fact_id": "INTERVAL-A-11",
+          "source_fact_ids": [
+            "SRC-F1484-N1",
+            "SRC-F1485-N1",
+            "SRC-F1486-N1",
+            "SRC-F1487-N1",
+            "SRC-F1488-N1",
+            "SRC-F1489-N1",
+            "SRC-F1490-N1",
+            "SRC-F1491-N1",
+            "SRC-F1492-N1",
+            "SRC-F1493-N1",
+            "SRC-F1494-N1",
+            "SRC-F1495-N1",
+            "SRC-F1496-N1",
+            "SRC-F1497-N1",
+            "SRC-F1498-N1"
+          ],
+          "start_time_seconds": 1787709100.625,
+          "end_time_seconds": 1787709101.092
+        }
+      ],
+      "B": [
+        {
+          "status": "CLEAN",
+          "start_frame": 1317,
+          "end_frame": 1317,
+          "fact_id": "INTERVAL-B-1",
+          "source_fact_ids": [
+            "SRC-F1317-N4"
+          ],
+          "start_time_seconds": 1787709095.061,
+          "end_time_seconds": 1787709095.061
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1318,
+          "end_frame": 1349,
+          "fact_id": "INTERVAL-B-2",
+          "source_fact_ids": [
+            "SRC-F1318-N4",
+            "SRC-F1319-N4",
+            "SRC-F1320-N4",
+            "SRC-F1321-N4",
+            "SRC-F1322-N4",
+            "SRC-F1323-N4",
+            "SRC-F1324-N4",
+            "SRC-F1325-N4",
+            "SRC-F1326-N4",
+            "SRC-F1327-N4",
+            "SRC-F1328-N4",
+            "SRC-F1329-N4",
+            "SRC-F1330-N4",
+            "SRC-F1331-N4",
+            "SRC-F1332-N4",
+            "SRC-F1333-N4",
+            "SRC-F1334-N4",
+            "SRC-F1335-N4",
+            "SRC-F1336-N4",
+            "SRC-F1337-N4",
+            "SRC-F1338-N4",
+            "SRC-F1339-N4",
+            "SRC-F1340-N4",
+            "SRC-F1341-N4",
+            "SRC-F1342-N4",
+            "SRC-F1343-N4",
+            "SRC-F1344-N4",
+            "SRC-F1345-N4",
+            "SRC-F1346-N4",
+            "SRC-F1347-N4",
+            "SRC-F1348-N4",
+            "SRC-F1349-N4"
+          ],
+          "start_time_seconds": 1787709095.094,
+          "end_time_seconds": 1787709096.127
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1350,
+          "end_frame": 1350,
+          "fact_id": "INTERVAL-B-3",
+          "source_fact_ids": [
+            "SRC-F1350-N4"
+          ],
+          "start_time_seconds": 1787709096.16,
+          "end_time_seconds": 1787709096.16
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1351,
+          "end_frame": 1370,
+          "fact_id": "INTERVAL-B-4",
+          "source_fact_ids": [
+            "SRC-F1351-N4",
+            "SRC-F1352-N4",
+            "SRC-F1353-N4",
+            "SRC-F1354-N4",
+            "SRC-F1355-N4",
+            "SRC-F1356-N4",
+            "SRC-F1357-N4",
+            "SRC-F1358-N4",
+            "SRC-F1359-N4",
+            "SRC-F1360-N4",
+            "SRC-F1361-N4",
+            "SRC-F1362-N4",
+            "SRC-F1363-N4",
+            "SRC-F1364-N4",
+            "SRC-F1365-N4",
+            "SRC-F1366-N4",
+            "SRC-F1367-N4",
+            "SRC-F1368-N4",
+            "SRC-F1369-N4",
+            "SRC-F1370-N4"
+          ],
+          "start_time_seconds": 1787709096.194,
+          "end_time_seconds": 1787709096.827
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1371,
+          "end_frame": 1372,
+          "fact_id": "INTERVAL-B-5",
+          "source_fact_ids": [
+            "SRC-F1371-N4",
+            "SRC-F1372-N4"
+          ],
+          "start_time_seconds": 1787709096.86,
+          "end_time_seconds": 1787709096.893
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1373,
+          "end_frame": 1417,
+          "fact_id": "INTERVAL-B-6",
+          "source_fact_ids": [
+            "SRC-F1373-N4",
+            "SRC-F1374-N4",
+            "SRC-F1375-N4",
+            "SRC-F1376-N4",
+            "SRC-F1377-N4",
+            "SRC-F1378-N4",
+            "SRC-F1379-N4",
+            "SRC-F1380-N4",
+            "SRC-F1381-N4",
+            "SRC-F1382-N4",
+            "SRC-F1383-N4",
+            "SRC-F1384-N4",
+            "SRC-F1385-N4",
+            "SRC-F1386-N4",
+            "SRC-F1387-N4",
+            "SRC-F1388-N4",
+            "SRC-F1389-N4",
+            "SRC-F1390-N4",
+            "SRC-F1391-N4",
+            "SRC-F1392-N4",
+            "SRC-F1393-N4",
+            "SRC-F1394-N4",
+            "SRC-F1395-N4",
+            "SRC-F1396-N4",
+            "SRC-F1397-N4",
+            "SRC-F1398-N4",
+            "SRC-F1399-N4",
+            "SRC-F1400-N4",
+            "SRC-F1401-N4",
+            "SRC-F1402-N4",
+            "SRC-F1403-N4",
+            "SRC-F1404-N4",
+            "SRC-F1405-N4",
+            "SRC-F1406-N4",
+            "SRC-F1407-N4",
+            "SRC-F1408-N4",
+            "SRC-F1409-N4",
+            "SRC-F1410-N4",
+            "SRC-F1411-N4",
+            "SRC-F1412-N4",
+            "SRC-F1413-N4",
+            "SRC-F1414-N4",
+            "SRC-F1415-N4",
+            "SRC-F1416-N4",
+            "SRC-F1417-N4"
+          ],
+          "start_time_seconds": 1787709096.927,
+          "end_time_seconds": 1787709098.393
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1418,
+          "end_frame": 1418,
+          "fact_id": "INTERVAL-B-7",
+          "source_fact_ids": [
+            "SRC-F1418-N4"
+          ],
+          "start_time_seconds": 1787709098.426,
+          "end_time_seconds": 1787709098.426
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1419,
+          "end_frame": 1419,
+          "fact_id": "INTERVAL-B-8",
+          "source_fact_ids": [
+            "SRC-F1419-N4"
+          ],
+          "start_time_seconds": 1787709098.459,
+          "end_time_seconds": 1787709098.459
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1420,
+          "end_frame": 1498,
+          "fact_id": "INTERVAL-B-9",
+          "source_fact_ids": [
+            "SRC-F1420-N4",
+            "SRC-F1421-N4",
+            "SRC-F1422-N4",
+            "SRC-F1423-N4",
+            "SRC-F1424-N4",
+            "SRC-F1425-N4",
+            "SRC-F1426-N4",
+            "SRC-F1427-N4",
+            "SRC-F1428-N4",
+            "SRC-F1429-N4",
+            "SRC-F1430-N4",
+            "SRC-F1431-N4",
+            "SRC-F1432-N4",
+            "SRC-F1433-N4",
+            "SRC-F1434-N4",
+            "SRC-F1435-N4",
+            "SRC-F1436-N4",
+            "SRC-F1437-N4",
+            "SRC-F1438-N4",
+            "SRC-F1439-N4",
+            "SRC-F1440-N4",
+            "SRC-F1441-N4",
+            "SRC-F1442-N4",
+            "SRC-F1443-N4",
+            "SRC-F1444-N4",
+            "SRC-F1445-N4",
+            "SRC-F1446-N4",
+            "SRC-F1447-N4",
+            "SRC-F1448-N4",
+            "SRC-F1449-N4",
+            "SRC-F1450-N4",
+            "SRC-F1451-N4",
+            "SRC-F1452-N4",
+            "SRC-F1453-N4",
+            "SRC-F1454-N4",
+            "SRC-F1455-N4",
+            "SRC-F1456-N4",
+            "SRC-F1457-N4",
+            "SRC-F1458-N4",
+            "SRC-F1459-N4",
+            "SRC-F1460-N4",
+            "SRC-F1461-N4",
+            "SRC-F1462-N4",
+            "SRC-F1463-N4",
+            "SRC-F1464-N4",
+            "SRC-F1465-N4",
+            "SRC-F1466-N4",
+            "SRC-F1467-N4",
+            "SRC-F1468-N4",
+            "SRC-F1469-N4",
+            "SRC-F1470-N4",
+            "SRC-F1471-N4",
+            "SRC-F1472-N4",
+            "SRC-F1473-N4",
+            "SRC-F1474-N4",
+            "SRC-F1475-N4",
+            "SRC-F1476-N4",
+            "SRC-F1477-N4",
+            "SRC-F1478-N4",
+            "SRC-F1479-N4",
+            "SRC-F1480-N4",
+            "SRC-F1481-N4",
+            "SRC-F1482-N4",
+            "SRC-F1483-N4",
+            "SRC-F1484-N4",
+            "SRC-F1485-N4",
+            "SRC-F1486-N4",
+            "SRC-F1487-N4",
+            "SRC-F1488-N4",
+            "SRC-F1489-N4",
+            "SRC-F1490-N4",
+            "SRC-F1491-N4",
+            "SRC-F1492-N4",
+            "SRC-F1493-N4",
+            "SRC-F1494-N4",
+            "SRC-F1495-N4",
+            "SRC-F1496-N4",
+            "SRC-F1497-N4",
+            "SRC-F1498-N4"
+          ],
+          "start_time_seconds": 1787709098.493,
+          "end_time_seconds": 1787709101.092
+        }
+      ]
+    },
+    "reappearance_intervals": {
+      "X": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1323,
+          "end_frame": 1349,
+          "fact_id": "INTERVAL-X-1",
+          "source_fact_ids": [
+            "SRC-F1323-N1",
+            "SRC-F1324-N1",
+            "SRC-F1325-N1",
+            "SRC-F1326-N1",
+            "SRC-F1327-N1",
+            "SRC-F1328-N1",
+            "SRC-F1329-N1",
+            "SRC-F1330-N1",
+            "SRC-F1331-N1",
+            "SRC-F1332-N1",
+            "SRC-F1333-N1",
+            "SRC-F1334-N1",
+            "SRC-F1335-N1",
+            "SRC-F1336-N1",
+            "SRC-F1337-N1",
+            "SRC-F1338-N1",
+            "SRC-F1339-N1",
+            "SRC-F1340-N1",
+            "SRC-F1341-N1",
+            "SRC-F1342-N1",
+            "SRC-F1343-N1",
+            "SRC-F1344-N1",
+            "SRC-F1345-N1",
+            "SRC-F1346-N1",
+            "SRC-F1347-N1",
+            "SRC-F1348-N1",
+            "SRC-F1349-N1"
+          ],
+          "start_time_seconds": 1787709095.261,
+          "end_time_seconds": 1787709096.127
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 1350,
+          "end_frame": 1350,
+          "fact_id": "INTERVAL-X-2",
+          "source_fact_ids": [
+            "SRC-F1350-N1"
+          ],
+          "start_time_seconds": 1787709096.16,
+          "end_time_seconds": 1787709096.16
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1351,
+          "end_frame": 1367,
+          "fact_id": "INTERVAL-X-3",
+          "source_fact_ids": [
+            "SRC-F1351-N1",
+            "SRC-F1352-N1",
+            "SRC-F1353-N1",
+            "SRC-F1354-N1",
+            "SRC-F1355-N1",
+            "SRC-F1356-N1",
+            "SRC-F1357-N1",
+            "SRC-F1358-N1",
+            "SRC-F1359-N1",
+            "SRC-F1360-N1",
+            "SRC-F1361-N1",
+            "SRC-F1362-N1",
+            "SRC-F1363-N1",
+            "SRC-F1364-N1",
+            "SRC-F1365-N1",
+            "SRC-F1366-N1",
+            "SRC-F1367-N1"
+          ],
+          "start_time_seconds": 1787709096.194,
+          "end_time_seconds": 1787709096.727
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1368,
+          "end_frame": 1369,
+          "fact_id": "INTERVAL-X-4",
+          "source_fact_ids": [
+            "SRC-F1368-N1",
+            "SRC-F1369-N1"
+          ],
+          "start_time_seconds": 1787709096.76,
+          "end_time_seconds": 1787709096.793
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1370,
+          "end_frame": 1370,
+          "fact_id": "INTERVAL-X-5",
+          "source_fact_ids": [
+            "SRC-F1370-N1"
+          ],
+          "start_time_seconds": 1787709096.827,
+          "end_time_seconds": 1787709096.827
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1371,
+          "end_frame": 1372,
+          "fact_id": "INTERVAL-X-6",
+          "source_fact_ids": [
+            "SRC-F1371-N1",
+            "SRC-F1372-N1"
+          ],
+          "start_time_seconds": 1787709096.86,
+          "end_time_seconds": 1787709096.893
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1373,
+          "end_frame": 1417,
+          "fact_id": "INTERVAL-X-7",
+          "source_fact_ids": [
+            "SRC-F1373-N1",
+            "SRC-F1374-N1",
+            "SRC-F1375-N1",
+            "SRC-F1376-N1",
+            "SRC-F1377-N1",
+            "SRC-F1378-N1",
+            "SRC-F1379-N1",
+            "SRC-F1380-N1",
+            "SRC-F1381-N1",
+            "SRC-F1382-N1",
+            "SRC-F1383-N1",
+            "SRC-F1384-N1",
+            "SRC-F1385-N1",
+            "SRC-F1386-N1",
+            "SRC-F1387-N1",
+            "SRC-F1388-N1",
+            "SRC-F1389-N1",
+            "SRC-F1390-N1",
+            "SRC-F1391-N1",
+            "SRC-F1392-N1",
+            "SRC-F1393-N1",
+            "SRC-F1394-N1",
+            "SRC-F1395-N1",
+            "SRC-F1396-N1",
+            "SRC-F1397-N1",
+            "SRC-F1398-N1",
+            "SRC-F1399-N1",
+            "SRC-F1400-N1",
+            "SRC-F1401-N1",
+            "SRC-F1402-N1",
+            "SRC-F1403-N1",
+            "SRC-F1404-N1",
+            "SRC-F1405-N1",
+            "SRC-F1406-N1",
+            "SRC-F1407-N1",
+            "SRC-F1408-N1",
+            "SRC-F1409-N1",
+            "SRC-F1410-N1",
+            "SRC-F1411-N1",
+            "SRC-F1412-N1",
+            "SRC-F1413-N1",
+            "SRC-F1414-N1",
+            "SRC-F1415-N1",
+            "SRC-F1416-N1",
+            "SRC-F1417-N1"
+          ],
+          "start_time_seconds": 1787709096.927,
+          "end_time_seconds": 1787709098.393
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1418,
+          "end_frame": 1418,
+          "fact_id": "INTERVAL-X-8",
+          "source_fact_ids": [
+            "SRC-F1418-N1"
+          ],
+          "start_time_seconds": 1787709098.426,
+          "end_time_seconds": 1787709098.426
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1419,
+          "end_frame": 1483,
+          "fact_id": "INTERVAL-X-9",
+          "source_fact_ids": [
+            "SRC-F1419-N1",
+            "SRC-F1420-N1",
+            "SRC-F1421-N1",
+            "SRC-F1422-N1",
+            "SRC-F1423-N1",
+            "SRC-F1424-N1",
+            "SRC-F1425-N1",
+            "SRC-F1426-N1",
+            "SRC-F1427-N1",
+            "SRC-F1428-N1",
+            "SRC-F1429-N1",
+            "SRC-F1430-N1",
+            "SRC-F1431-N1",
+            "SRC-F1432-N1",
+            "SRC-F1433-N1",
+            "SRC-F1434-N1",
+            "SRC-F1435-N1",
+            "SRC-F1436-N1",
+            "SRC-F1437-N1",
+            "SRC-F1438-N1",
+            "SRC-F1439-N1",
+            "SRC-F1440-N1",
+            "SRC-F1441-N1",
+            "SRC-F1442-N1",
+            "SRC-F1443-N1",
+            "SRC-F1444-N1",
+            "SRC-F1445-N1",
+            "SRC-F1446-N1",
+            "SRC-F1447-N1",
+            "SRC-F1448-N1",
+            "SRC-F1449-N1",
+            "SRC-F1450-N1",
+            "SRC-F1451-N1",
+            "SRC-F1452-N1",
+            "SRC-F1453-N1",
+            "SRC-F1454-N1",
+            "SRC-F1455-N1",
+            "SRC-F1456-N1",
+            "SRC-F1457-N1",
+            "SRC-F1458-N1",
+            "SRC-F1459-N1",
+            "SRC-F1460-N1",
+            "SRC-F1461-N1",
+            "SRC-F1462-N1",
+            "SRC-F1463-N1",
+            "SRC-F1464-N1",
+            "SRC-F1465-N1",
+            "SRC-F1466-N1",
+            "SRC-F1467-N1",
+            "SRC-F1468-N1",
+            "SRC-F1469-N1",
+            "SRC-F1470-N1",
+            "SRC-F1471-N1",
+            "SRC-F1472-N1",
+            "SRC-F1473-N1",
+            "SRC-F1474-N1",
+            "SRC-F1475-N1",
+            "SRC-F1476-N1",
+            "SRC-F1477-N1",
+            "SRC-F1478-N1",
+            "SRC-F1479-N1",
+            "SRC-F1480-N1",
+            "SRC-F1481-N1",
+            "SRC-F1482-N1",
+            "SRC-F1483-N1"
+          ],
+          "start_time_seconds": 1787709098.459,
+          "end_time_seconds": 1787709100.592
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1484,
+          "end_frame": 1498,
+          "fact_id": "INTERVAL-X-10",
+          "source_fact_ids": [
+            "SRC-F1484-N1",
+            "SRC-F1485-N1",
+            "SRC-F1486-N1",
+            "SRC-F1487-N1",
+            "SRC-F1488-N1",
+            "SRC-F1489-N1",
+            "SRC-F1490-N1",
+            "SRC-F1491-N1",
+            "SRC-F1492-N1",
+            "SRC-F1493-N1",
+            "SRC-F1494-N1",
+            "SRC-F1495-N1",
+            "SRC-F1496-N1",
+            "SRC-F1497-N1",
+            "SRC-F1498-N1"
+          ],
+          "start_time_seconds": 1787709100.625,
+          "end_time_seconds": 1787709101.092
+        }
+      ],
+      "Y": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1323,
+          "end_frame": 1349,
+          "fact_id": "INTERVAL-Y-1",
+          "source_fact_ids": [
+            "SRC-F1323-N4",
+            "SRC-F1324-N4",
+            "SRC-F1325-N4",
+            "SRC-F1326-N4",
+            "SRC-F1327-N4",
+            "SRC-F1328-N4",
+            "SRC-F1329-N4",
+            "SRC-F1330-N4",
+            "SRC-F1331-N4",
+            "SRC-F1332-N4",
+            "SRC-F1333-N4",
+            "SRC-F1334-N4",
+            "SRC-F1335-N4",
+            "SRC-F1336-N4",
+            "SRC-F1337-N4",
+            "SRC-F1338-N4",
+            "SRC-F1339-N4",
+            "SRC-F1340-N4",
+            "SRC-F1341-N4",
+            "SRC-F1342-N4",
+            "SRC-F1343-N4",
+            "SRC-F1344-N4",
+            "SRC-F1345-N4",
+            "SRC-F1346-N4",
+            "SRC-F1347-N4",
+            "SRC-F1348-N4",
+            "SRC-F1349-N4"
+          ],
+          "start_time_seconds": 1787709095.261,
+          "end_time_seconds": 1787709096.127
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1350,
+          "end_frame": 1350,
+          "fact_id": "INTERVAL-Y-2",
+          "source_fact_ids": [
+            "SRC-F1350-N4"
+          ],
+          "start_time_seconds": 1787709096.16,
+          "end_time_seconds": 1787709096.16
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1351,
+          "end_frame": 1370,
+          "fact_id": "INTERVAL-Y-3",
+          "source_fact_ids": [
+            "SRC-F1351-N4",
+            "SRC-F1352-N4",
+            "SRC-F1353-N4",
+            "SRC-F1354-N4",
+            "SRC-F1355-N4",
+            "SRC-F1356-N4",
+            "SRC-F1357-N4",
+            "SRC-F1358-N4",
+            "SRC-F1359-N4",
+            "SRC-F1360-N4",
+            "SRC-F1361-N4",
+            "SRC-F1362-N4",
+            "SRC-F1363-N4",
+            "SRC-F1364-N4",
+            "SRC-F1365-N4",
+            "SRC-F1366-N4",
+            "SRC-F1367-N4",
+            "SRC-F1368-N4",
+            "SRC-F1369-N4",
+            "SRC-F1370-N4"
+          ],
+          "start_time_seconds": 1787709096.194,
+          "end_time_seconds": 1787709096.827
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1371,
+          "end_frame": 1372,
+          "fact_id": "INTERVAL-Y-4",
+          "source_fact_ids": [
+            "SRC-F1371-N4",
+            "SRC-F1372-N4"
+          ],
+          "start_time_seconds": 1787709096.86,
+          "end_time_seconds": 1787709096.893
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1373,
+          "end_frame": 1417,
+          "fact_id": "INTERVAL-Y-5",
+          "source_fact_ids": [
+            "SRC-F1373-N4",
+            "SRC-F1374-N4",
+            "SRC-F1375-N4",
+            "SRC-F1376-N4",
+            "SRC-F1377-N4",
+            "SRC-F1378-N4",
+            "SRC-F1379-N4",
+            "SRC-F1380-N4",
+            "SRC-F1381-N4",
+            "SRC-F1382-N4",
+            "SRC-F1383-N4",
+            "SRC-F1384-N4",
+            "SRC-F1385-N4",
+            "SRC-F1386-N4",
+            "SRC-F1387-N4",
+            "SRC-F1388-N4",
+            "SRC-F1389-N4",
+            "SRC-F1390-N4",
+            "SRC-F1391-N4",
+            "SRC-F1392-N4",
+            "SRC-F1393-N4",
+            "SRC-F1394-N4",
+            "SRC-F1395-N4",
+            "SRC-F1396-N4",
+            "SRC-F1397-N4",
+            "SRC-F1398-N4",
+            "SRC-F1399-N4",
+            "SRC-F1400-N4",
+            "SRC-F1401-N4",
+            "SRC-F1402-N4",
+            "SRC-F1403-N4",
+            "SRC-F1404-N4",
+            "SRC-F1405-N4",
+            "SRC-F1406-N4",
+            "SRC-F1407-N4",
+            "SRC-F1408-N4",
+            "SRC-F1409-N4",
+            "SRC-F1410-N4",
+            "SRC-F1411-N4",
+            "SRC-F1412-N4",
+            "SRC-F1413-N4",
+            "SRC-F1414-N4",
+            "SRC-F1415-N4",
+            "SRC-F1416-N4",
+            "SRC-F1417-N4"
+          ],
+          "start_time_seconds": 1787709096.927,
+          "end_time_seconds": 1787709098.393
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1418,
+          "end_frame": 1418,
+          "fact_id": "INTERVAL-Y-6",
+          "source_fact_ids": [
+            "SRC-F1418-N4"
+          ],
+          "start_time_seconds": 1787709098.426,
+          "end_time_seconds": 1787709098.426
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 1419,
+          "end_frame": 1419,
+          "fact_id": "INTERVAL-Y-7",
+          "source_fact_ids": [
+            "SRC-F1419-N4"
+          ],
+          "start_time_seconds": 1787709098.459,
+          "end_time_seconds": 1787709098.459
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 1420,
+          "end_frame": 1498,
+          "fact_id": "INTERVAL-Y-8",
+          "source_fact_ids": [
+            "SRC-F1420-N4",
+            "SRC-F1421-N4",
+            "SRC-F1422-N4",
+            "SRC-F1423-N4",
+            "SRC-F1424-N4",
+            "SRC-F1425-N4",
+            "SRC-F1426-N4",
+            "SRC-F1427-N4",
+            "SRC-F1428-N4",
+            "SRC-F1429-N4",
+            "SRC-F1430-N4",
+            "SRC-F1431-N4",
+            "SRC-F1432-N4",
+            "SRC-F1433-N4",
+            "SRC-F1434-N4",
+            "SRC-F1435-N4",
+            "SRC-F1436-N4",
+            "SRC-F1437-N4",
+            "SRC-F1438-N4",
+            "SRC-F1439-N4",
+            "SRC-F1440-N4",
+            "SRC-F1441-N4",
+            "SRC-F1442-N4",
+            "SRC-F1443-N4",
+            "SRC-F1444-N4",
+            "SRC-F1445-N4",
+            "SRC-F1446-N4",
+            "SRC-F1447-N4",
+            "SRC-F1448-N4",
+            "SRC-F1449-N4",
+            "SRC-F1450-N4",
+            "SRC-F1451-N4",
+            "SRC-F1452-N4",
+            "SRC-F1453-N4",
+            "SRC-F1454-N4",
+            "SRC-F1455-N4",
+            "SRC-F1456-N4",
+            "SRC-F1457-N4",
+            "SRC-F1458-N4",
+            "SRC-F1459-N4",
+            "SRC-F1460-N4",
+            "SRC-F1461-N4",
+            "SRC-F1462-N4",
+            "SRC-F1463-N4",
+            "SRC-F1464-N4",
+            "SRC-F1465-N4",
+            "SRC-F1466-N4",
+            "SRC-F1467-N4",
+            "SRC-F1468-N4",
+            "SRC-F1469-N4",
+            "SRC-F1470-N4",
+            "SRC-F1471-N4",
+            "SRC-F1472-N4",
+            "SRC-F1473-N4",
+            "SRC-F1474-N4",
+            "SRC-F1475-N4",
+            "SRC-F1476-N4",
+            "SRC-F1477-N4",
+            "SRC-F1478-N4",
+            "SRC-F1479-N4",
+            "SRC-F1480-N4",
+            "SRC-F1481-N4",
+            "SRC-F1482-N4",
+            "SRC-F1483-N4",
+            "SRC-F1484-N4",
+            "SRC-F1485-N4",
+            "SRC-F1486-N4",
+            "SRC-F1487-N4",
+            "SRC-F1488-N4",
+            "SRC-F1489-N4",
+            "SRC-F1490-N4",
+            "SRC-F1491-N4",
+            "SRC-F1492-N4",
+            "SRC-F1493-N4",
+            "SRC-F1494-N4",
+            "SRC-F1495-N4",
+            "SRC-F1496-N4",
+            "SRC-F1497-N4",
+            "SRC-F1498-N4"
+          ],
+          "start_time_seconds": 1787709098.493,
+          "end_time_seconds": 1787709101.092
+        }
+      ]
+    },
+    "per_object_loss": {
+      "A": {
+        "fact_id": "LOSS-A",
+        "source_fact_ids": [
+          "SRC-F1314-N1",
+          "SRC-F1315-N1"
+        ],
+        "last_usable_frame": 1314,
+        "first_unusable_frame": 1315,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      },
+      "B": {
+        "fact_id": "LOSS-B",
+        "source_fact_ids": [
+          "SRC-F1317-N4",
+          "SRC-F1318-N4"
+        ],
+        "last_usable_frame": 1317,
+        "first_unusable_frame": 1318,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      }
+    },
+    "per_handle_clean_return": {
+      "X": {
+        "fact_id": "RETURN-X",
+        "source_fact_ids": [
+          "SRC-F1368-N1"
+        ],
+        "first_clean_frame": 1368,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      },
+      "Y": {
+        "fact_id": "RETURN-Y",
+        "source_fact_ids": [
+          "SRC-F1350-N4"
+        ],
+        "first_clean_frame": 1350,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      }
+    },
+    "first_unusable_observation": "A",
+    "first_physical_entry": "UNKNOWN",
+    "first_identity_reappearance": "UNKNOWN",
+    "joint_clean_pair_streak": {
+      "fact_id": "PAIR-CLEAN-STREAK",
+      "source_fact_ids": [
+        "SRC-F1484-N1",
+        "SRC-F1484-N4",
+        "SRC-F1485-N1",
+        "SRC-F1485-N4",
+        "SRC-F1486-N1",
+        "SRC-F1486-N4"
+      ],
+      "frames": [
+        1484,
+        1486
+      ],
+      "interpretation": "two_handles_jointly_clean_only"
+    },
+    "entry_side": {
+      "A": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          334.0,
+          192.5
+        ]
+      },
+      "B": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          416.5,
+          159.0
+        ]
+      }
+    },
+    "relative_motion": {
+      "pre": {
+        "status": "UNKNOWN",
+        "reason": "UNALIGNED_OR_MISSING_VELOCITY"
+      },
+      "post": {
+        "fact_id": "RELATIVE-POST-Q",
+        "source_fact_ids": [
+          "X-F1498",
+          "Y-F1498",
+          "VELOCITY-X",
+          "VELOCITY-Y"
+        ],
+        "status": "OBSERVED_POSITION",
+        "time_seconds": 1787709101.092,
+        "relative_position_Y_minus_X_px": [
+          108.0,
+          48.5
+        ],
+        "relative_velocity_Y_minus_X_px_per_s": [
+          22.892,
+          -16.513
+        ]
+      }
+    },
+    "event_frame_count": 212,
+    "anonymous_observation_count": 1210
+  },
+  {
+    "case": "B02",
+    "trigger": {
+      "frame": 7983,
+      "source": "fixed_AO1_prediction_window",
+      "pair_contact_predicted": true,
+      "scope": "PREDICTION_DRIVEN_CONTACT_PROXY"
+    },
+    "old_to_new_reference": {
+      "A": {
+        "old_anchor_frame": 7866,
+        "new_anchor_frame": 7866,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      },
+      "B": {
+        "old_anchor_frame": 7890,
+        "new_anchor_frame": 7890,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      }
+    },
+    "pre_fragments": {
+      "A": "A-F7836-7866",
+      "B": "B-F7860-7890"
+    },
+    "post_fragments": {
+      "X": "X-F8064-8069",
+      "Y": "Y-F8055-8069"
+    },
+    "availability_intervals": {
+      "A": [
+        {
+          "status": "CLEAN",
+          "start_frame": 7866,
+          "end_frame": 7866,
+          "fact_id": "INTERVAL-A-1",
+          "source_fact_ids": [
+            "SRC-F7866-N1"
+          ],
+          "start_time_seconds": 1787709003.405,
+          "end_time_seconds": 1787709003.405
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 7867,
+          "end_frame": 8063,
+          "fact_id": "INTERVAL-A-2",
+          "source_fact_ids": [
+            "SRC-F7867-N1",
+            "SRC-F7868-N1",
+            "SRC-F7869-N1",
+            "SRC-F7870-N1",
+            "SRC-F7871-N1",
+            "SRC-F7872-N1",
+            "SRC-F7873-N1",
+            "SRC-F7874-N1",
+            "SRC-F7875-N1",
+            "SRC-F7876-N1",
+            "SRC-F7877-N1",
+            "SRC-F7878-N1",
+            "SRC-F7879-N1",
+            "SRC-F7880-N1",
+            "SRC-F7881-N1",
+            "SRC-F7882-N1",
+            "SRC-F7883-N1",
+            "SRC-F7884-N1",
+            "SRC-F7885-N1",
+            "SRC-F7886-N1",
+            "SRC-F7887-N1",
+            "SRC-F7888-N1",
+            "SRC-F7889-N1",
+            "SRC-F7890-N1",
+            "SRC-F7891-N1",
+            "SRC-F7892-N1",
+            "SRC-F7893-N1",
+            "SRC-F7894-N1",
+            "SRC-F7895-N1",
+            "SRC-F7896-N1",
+            "SRC-F7897-N1",
+            "SRC-F7898-N1",
+            "SRC-F7899-N1",
+            "SRC-F7900-N1",
+            "SRC-F7901-N1",
+            "SRC-F7902-N1",
+            "SRC-F7903-N1",
+            "SRC-F7904-N1",
+            "SRC-F7905-N1",
+            "SRC-F7906-N1",
+            "SRC-F7907-N1",
+            "SRC-F7908-N1",
+            "SRC-F7909-N1",
+            "SRC-F7910-N1",
+            "SRC-F7911-N1",
+            "SRC-F7912-N1",
+            "SRC-F7913-N1",
+            "SRC-F7914-N1",
+            "SRC-F7915-N1",
+            "SRC-F7916-N1",
+            "SRC-F7917-N1",
+            "SRC-F7918-N1",
+            "SRC-F7919-N1",
+            "SRC-F7920-N1",
+            "SRC-F7921-N1",
+            "SRC-F7922-N1",
+            "SRC-F7923-N1",
+            "SRC-F7924-N1",
+            "SRC-F7925-N1",
+            "SRC-F7926-N1",
+            "SRC-F7927-N1",
+            "SRC-F7928-N1",
+            "SRC-F7929-N1",
+            "SRC-F7930-N1",
+            "SRC-F7931-N1",
+            "SRC-F7932-N1",
+            "SRC-F7933-N1",
+            "SRC-F7934-N1",
+            "SRC-F7935-N1",
+            "SRC-F7936-N1",
+            "SRC-F7937-N1",
+            "SRC-F7938-N1",
+            "SRC-F7939-N1",
+            "SRC-F7940-N1",
+            "SRC-F7941-N1",
+            "SRC-F7942-N1",
+            "SRC-F7943-N1",
+            "SRC-F7944-N1",
+            "SRC-F7945-N1",
+            "SRC-F7946-N1",
+            "SRC-F7947-N1",
+            "SRC-F7948-N1",
+            "SRC-F7949-N1",
+            "SRC-F7950-N1",
+            "SRC-F7951-N1",
+            "SRC-F7952-N1",
+            "SRC-F7953-N1",
+            "SRC-F7954-N1",
+            "SRC-F7955-N1",
+            "SRC-F7956-N1",
+            "SRC-F7957-N1",
+            "SRC-F7958-N1",
+            "SRC-F7959-N1",
+            "SRC-F7960-N1",
+            "SRC-F7961-N1",
+            "SRC-F7962-N1",
+            "SRC-F7963-N1",
+            "SRC-F7964-N1",
+            "SRC-F7965-N1",
+            "SRC-F7966-N1",
+            "SRC-F7967-N1",
+            "SRC-F7968-N1",
+            "SRC-F7969-N1",
+            "SRC-F7970-N1",
+            "SRC-F7971-N1",
+            "SRC-F7972-N1",
+            "SRC-F7973-N1",
+            "SRC-F7974-N1",
+            "SRC-F7975-N1",
+            "SRC-F7976-N1",
+            "SRC-F7977-N1",
+            "SRC-F7978-N1",
+            "SRC-F7979-N1",
+            "SRC-F7980-N1",
+            "SRC-F7981-N1",
+            "SRC-F7982-N1",
+            "SRC-F7983-N1",
+            "SRC-F7984-N1",
+            "SRC-F7985-N1",
+            "SRC-F7986-N1",
+            "SRC-F7987-N1",
+            "SRC-F7988-N1",
+            "SRC-F7989-N1",
+            "SRC-F7990-N1",
+            "SRC-F7991-N1",
+            "SRC-F7992-N1",
+            "SRC-F7993-N1",
+            "SRC-F7994-N1",
+            "SRC-F7995-N1",
+            "SRC-F7996-N1",
+            "SRC-F7997-N1",
+            "SRC-F7998-N1",
+            "SRC-F7999-N1",
+            "SRC-F8000-N1",
+            "SRC-F8001-N1",
+            "SRC-F8002-N1",
+            "SRC-F8003-N1",
+            "SRC-F8004-N1",
+            "SRC-F8005-N1",
+            "SRC-F8006-N1",
+            "SRC-F8007-N1",
+            "SRC-F8008-N1",
+            "SRC-F8009-N1",
+            "SRC-F8010-N1",
+            "SRC-F8011-N1",
+            "SRC-F8012-N1",
+            "SRC-F8013-N1",
+            "SRC-F8014-N1",
+            "SRC-F8015-N1",
+            "SRC-F8016-N1",
+            "SRC-F8017-N1",
+            "SRC-F8018-N1",
+            "SRC-F8019-N1",
+            "SRC-F8020-N1",
+            "SRC-F8021-N1",
+            "SRC-F8022-N1",
+            "SRC-F8023-N1",
+            "SRC-F8024-N1",
+            "SRC-F8025-N1",
+            "SRC-F8026-N1",
+            "SRC-F8027-N1",
+            "SRC-F8028-N1",
+            "SRC-F8029-N1",
+            "SRC-F8030-N1",
+            "SRC-F8031-N1",
+            "SRC-F8032-N1",
+            "SRC-F8033-N1",
+            "SRC-F8034-N1",
+            "SRC-F8035-N1",
+            "SRC-F8036-N1",
+            "SRC-F8037-N1",
+            "SRC-F8038-N1",
+            "SRC-F8039-N1",
+            "SRC-F8040-N1",
+            "SRC-F8041-N1",
+            "SRC-F8042-N1",
+            "SRC-F8043-N1",
+            "SRC-F8044-N1",
+            "SRC-F8045-N1",
+            "SRC-F8046-N1",
+            "SRC-F8047-N1",
+            "SRC-F8048-N1",
+            "SRC-F8049-N1",
+            "SRC-F8050-N1",
+            "SRC-F8051-N1",
+            "SRC-F8052-N1",
+            "SRC-F8053-N1",
+            "SRC-F8054-N1",
+            "SRC-F8055-N1",
+            "SRC-F8056-N1",
+            "SRC-F8057-N1",
+            "SRC-F8058-N1",
+            "SRC-F8059-N1",
+            "SRC-F8060-N1",
+            "SRC-F8061-N1",
+            "SRC-F8062-N1",
+            "SRC-F8063-N1"
+          ],
+          "start_time_seconds": 1787709003.438,
+          "end_time_seconds": 1787709009.968
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 8064,
+          "end_frame": 8069,
+          "fact_id": "INTERVAL-A-3",
+          "source_fact_ids": [
+            "SRC-F8064-N1",
+            "SRC-F8065-N1",
+            "SRC-F8066-N1",
+            "SRC-F8067-N1",
+            "SRC-F8068-N1",
+            "SRC-F8069-N1"
+          ],
+          "start_time_seconds": 1787709010.002,
+          "end_time_seconds": 1787709010.168
+        }
+      ],
+      "B": [
+        {
+          "status": "CLEAN",
+          "start_frame": 7890,
+          "end_frame": 7890,
+          "fact_id": "INTERVAL-B-1",
+          "source_fact_ids": [
+            "SRC-F7890-N2"
+          ],
+          "start_time_seconds": 1787709004.204,
+          "end_time_seconds": 1787709004.204
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 7891,
+          "end_frame": 8008,
+          "fact_id": "INTERVAL-B-2",
+          "source_fact_ids": [
+            "SRC-F7891-N2",
+            "SRC-F7892-N2",
+            "SRC-F7893-N2",
+            "SRC-F7894-N2",
+            "SRC-F7895-N2",
+            "SRC-F7896-N2",
+            "SRC-F7897-N2",
+            "SRC-F7898-N2",
+            "SRC-F7899-N2",
+            "SRC-F7900-N2",
+            "SRC-F7901-N2",
+            "SRC-F7902-N2",
+            "SRC-F7903-N2",
+            "SRC-F7904-N2",
+            "SRC-F7905-N2",
+            "SRC-F7906-N2",
+            "SRC-F7907-N2",
+            "SRC-F7908-N2",
+            "SRC-F7909-N2",
+            "SRC-F7910-N2",
+            "SRC-F7911-N2",
+            "SRC-F7912-N2",
+            "SRC-F7913-N2",
+            "SRC-F7914-N2",
+            "SRC-F7915-N2",
+            "SRC-F7916-N2",
+            "SRC-F7917-N2",
+            "SRC-F7918-N2",
+            "SRC-F7919-N2",
+            "SRC-F7920-N2",
+            "SRC-F7921-N2",
+            "SRC-F7922-N2",
+            "SRC-F7923-N2",
+            "SRC-F7924-N2",
+            "SRC-F7925-N2",
+            "SRC-F7926-N2",
+            "SRC-F7927-N2",
+            "SRC-F7928-N2",
+            "SRC-F7929-N2",
+            "SRC-F7930-N2",
+            "SRC-F7931-N2",
+            "SRC-F7932-N2",
+            "SRC-F7933-N2",
+            "SRC-F7934-N2",
+            "SRC-F7935-N2",
+            "SRC-F7936-N2",
+            "SRC-F7937-N2",
+            "SRC-F7938-N2",
+            "SRC-F7939-N2",
+            "SRC-F7940-N2",
+            "SRC-F7941-N2",
+            "SRC-F7942-N2",
+            "SRC-F7943-N2",
+            "SRC-F7944-N2",
+            "SRC-F7945-N2",
+            "SRC-F7946-N2",
+            "SRC-F7947-N2",
+            "SRC-F7948-N2",
+            "SRC-F7949-N2",
+            "SRC-F7950-N2",
+            "SRC-F7951-N2",
+            "SRC-F7952-N2",
+            "SRC-F7953-N2",
+            "SRC-F7954-N2",
+            "SRC-F7955-N2",
+            "SRC-F7956-N2",
+            "SRC-F7957-N2",
+            "SRC-F7958-N2",
+            "SRC-F7959-N2",
+            "SRC-F7960-N2",
+            "SRC-F7961-N2",
+            "SRC-F7962-N2",
+            "SRC-F7963-N2",
+            "SRC-F7964-N2",
+            "SRC-F7965-N2",
+            "SRC-F7966-N2",
+            "SRC-F7967-N2",
+            "SRC-F7968-N2",
+            "SRC-F7969-N2",
+            "SRC-F7970-N2",
+            "SRC-F7971-N2",
+            "SRC-F7972-N2",
+            "SRC-F7973-N2",
+            "SRC-F7974-N2",
+            "SRC-F7975-N2",
+            "SRC-F7976-N2",
+            "SRC-F7977-N2",
+            "SRC-F7978-N2",
+            "SRC-F7979-N2",
+            "SRC-F7980-N2",
+            "SRC-F7981-N2",
+            "SRC-F7982-N2",
+            "SRC-F7983-N2",
+            "SRC-F7984-N2",
+            "SRC-F7985-N2",
+            "SRC-F7986-N2",
+            "SRC-F7987-N2",
+            "SRC-F7988-N2",
+            "SRC-F7989-N2",
+            "SRC-F7990-N2",
+            "SRC-F7991-N2",
+            "SRC-F7992-N2",
+            "SRC-F7993-N2",
+            "SRC-F7994-N2",
+            "SRC-F7995-N2",
+            "SRC-F7996-N2",
+            "SRC-F7997-N2",
+            "SRC-F7998-N2",
+            "SRC-F7999-N2",
+            "SRC-F8000-N2",
+            "SRC-F8001-N2",
+            "SRC-F8002-N2",
+            "SRC-F8003-N2",
+            "SRC-F8004-N2",
+            "SRC-F8005-N2",
+            "SRC-F8006-N2",
+            "SRC-F8007-N2",
+            "SRC-F8008-N2"
+          ],
+          "start_time_seconds": 1787709004.238,
+          "end_time_seconds": 1787709008.136
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 8009,
+          "end_frame": 8009,
+          "fact_id": "INTERVAL-B-3",
+          "source_fact_ids": [
+            "SRC-F8009-N2"
+          ],
+          "start_time_seconds": 1787709008.169,
+          "end_time_seconds": 1787709008.169
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 8010,
+          "end_frame": 8010,
+          "fact_id": "INTERVAL-B-4",
+          "source_fact_ids": [
+            "SRC-F8010-N2"
+          ],
+          "start_time_seconds": 1787709008.202,
+          "end_time_seconds": 1787709008.202
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 8011,
+          "end_frame": 8011,
+          "fact_id": "INTERVAL-B-5",
+          "source_fact_ids": [
+            "SRC-F8011-N2"
+          ],
+          "start_time_seconds": 1787709008.236,
+          "end_time_seconds": 1787709008.236
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 8012,
+          "end_frame": 8069,
+          "fact_id": "INTERVAL-B-6",
+          "source_fact_ids": [
+            "SRC-F8012-N2",
+            "SRC-F8013-N2",
+            "SRC-F8014-N2",
+            "SRC-F8015-N2",
+            "SRC-F8016-N2",
+            "SRC-F8017-N2",
+            "SRC-F8018-N2",
+            "SRC-F8019-N2",
+            "SRC-F8020-N2",
+            "SRC-F8021-N2",
+            "SRC-F8022-N2",
+            "SRC-F8023-N2",
+            "SRC-F8024-N2",
+            "SRC-F8025-N2",
+            "SRC-F8026-N2",
+            "SRC-F8027-N2",
+            "SRC-F8028-N2",
+            "SRC-F8029-N2",
+            "SRC-F8030-N2",
+            "SRC-F8031-N2",
+            "SRC-F8032-N2",
+            "SRC-F8033-N2",
+            "SRC-F8034-N2",
+            "SRC-F8035-N2",
+            "SRC-F8036-N2",
+            "SRC-F8037-N2",
+            "SRC-F8038-N2",
+            "SRC-F8039-N2",
+            "SRC-F8040-N2",
+            "SRC-F8041-N2",
+            "SRC-F8042-N2",
+            "SRC-F8043-N2",
+            "SRC-F8044-N2",
+            "SRC-F8045-N2",
+            "SRC-F8046-N2",
+            "SRC-F8047-N2",
+            "SRC-F8048-N2",
+            "SRC-F8049-N2",
+            "SRC-F8050-N2",
+            "SRC-F8051-N2",
+            "SRC-F8052-N2",
+            "SRC-F8053-N2",
+            "SRC-F8054-N2",
+            "SRC-F8055-N2",
+            "SRC-F8056-N2",
+            "SRC-F8057-N2",
+            "SRC-F8058-N2",
+            "SRC-F8059-N2",
+            "SRC-F8060-N2",
+            "SRC-F8061-N2",
+            "SRC-F8062-N2",
+            "SRC-F8063-N2",
+            "SRC-F8064-N2",
+            "SRC-F8065-N2",
+            "SRC-F8066-N2",
+            "SRC-F8067-N2",
+            "SRC-F8068-N2",
+            "SRC-F8069-N2"
+          ],
+          "start_time_seconds": 1787709008.269,
+          "end_time_seconds": 1787709010.168
+        }
+      ]
+    },
+    "reappearance_intervals": {
+      "X": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 7984,
+          "end_frame": 8063,
+          "fact_id": "INTERVAL-X-1",
+          "source_fact_ids": [
+            "SRC-F7984-N1",
+            "SRC-F7985-N1",
+            "SRC-F7986-N1",
+            "SRC-F7987-N1",
+            "SRC-F7988-N1",
+            "SRC-F7989-N1",
+            "SRC-F7990-N1",
+            "SRC-F7991-N1",
+            "SRC-F7992-N1",
+            "SRC-F7993-N1",
+            "SRC-F7994-N1",
+            "SRC-F7995-N1",
+            "SRC-F7996-N1",
+            "SRC-F7997-N1",
+            "SRC-F7998-N1",
+            "SRC-F7999-N1",
+            "SRC-F8000-N1",
+            "SRC-F8001-N1",
+            "SRC-F8002-N1",
+            "SRC-F8003-N1",
+            "SRC-F8004-N1",
+            "SRC-F8005-N1",
+            "SRC-F8006-N1",
+            "SRC-F8007-N1",
+            "SRC-F8008-N1",
+            "SRC-F8009-N1",
+            "SRC-F8010-N1",
+            "SRC-F8011-N1",
+            "SRC-F8012-N1",
+            "SRC-F8013-N1",
+            "SRC-F8014-N1",
+            "SRC-F8015-N1",
+            "SRC-F8016-N1",
+            "SRC-F8017-N1",
+            "SRC-F8018-N1",
+            "SRC-F8019-N1",
+            "SRC-F8020-N1",
+            "SRC-F8021-N1",
+            "SRC-F8022-N1",
+            "SRC-F8023-N1",
+            "SRC-F8024-N1",
+            "SRC-F8025-N1",
+            "SRC-F8026-N1",
+            "SRC-F8027-N1",
+            "SRC-F8028-N1",
+            "SRC-F8029-N1",
+            "SRC-F8030-N1",
+            "SRC-F8031-N1",
+            "SRC-F8032-N1",
+            "SRC-F8033-N1",
+            "SRC-F8034-N1",
+            "SRC-F8035-N1",
+            "SRC-F8036-N1",
+            "SRC-F8037-N1",
+            "SRC-F8038-N1",
+            "SRC-F8039-N1",
+            "SRC-F8040-N1",
+            "SRC-F8041-N1",
+            "SRC-F8042-N1",
+            "SRC-F8043-N1",
+            "SRC-F8044-N1",
+            "SRC-F8045-N1",
+            "SRC-F8046-N1",
+            "SRC-F8047-N1",
+            "SRC-F8048-N1",
+            "SRC-F8049-N1",
+            "SRC-F8050-N1",
+            "SRC-F8051-N1",
+            "SRC-F8052-N1",
+            "SRC-F8053-N1",
+            "SRC-F8054-N1",
+            "SRC-F8055-N1",
+            "SRC-F8056-N1",
+            "SRC-F8057-N1",
+            "SRC-F8058-N1",
+            "SRC-F8059-N1",
+            "SRC-F8060-N1",
+            "SRC-F8061-N1",
+            "SRC-F8062-N1",
+            "SRC-F8063-N1"
+          ],
+          "start_time_seconds": 1787709007.336,
+          "end_time_seconds": 1787709009.968
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 8064,
+          "end_frame": 8069,
+          "fact_id": "INTERVAL-X-2",
+          "source_fact_ids": [
+            "SRC-F8064-N1",
+            "SRC-F8065-N1",
+            "SRC-F8066-N1",
+            "SRC-F8067-N1",
+            "SRC-F8068-N1",
+            "SRC-F8069-N1"
+          ],
+          "start_time_seconds": 1787709010.002,
+          "end_time_seconds": 1787709010.168
+        }
+      ],
+      "Y": [
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 7984,
+          "end_frame": 8034,
+          "fact_id": "INTERVAL-Y-1",
+          "source_fact_ids": [
+            "SRC-F7984-N8",
+            "SRC-F7985-N8",
+            "SRC-F7986-N8",
+            "SRC-F7987-N8",
+            "SRC-F7988-N8",
+            "SRC-F7989-N8",
+            "SRC-F7990-N8",
+            "SRC-F7991-N8",
+            "SRC-F7992-N8",
+            "SRC-F7993-N8",
+            "SRC-F7994-N8",
+            "SRC-F7995-N8",
+            "SRC-F7996-N8",
+            "SRC-F7997-N8",
+            "SRC-F7998-N8",
+            "SRC-F7999-N8",
+            "SRC-F8000-N8",
+            "SRC-F8001-N8",
+            "SRC-F8002-N8",
+            "SRC-F8003-N8",
+            "SRC-F8004-N8",
+            "SRC-F8005-N8",
+            "SRC-F8006-N8",
+            "SRC-F8007-N8",
+            "SRC-F8008-N8",
+            "SRC-F8009-N8",
+            "SRC-F8010-N8",
+            "SRC-F8011-N8",
+            "SRC-F8012-N8",
+            "SRC-F8013-N8",
+            "SRC-F8014-N8",
+            "SRC-F8015-N8",
+            "SRC-F8016-N8",
+            "SRC-F8017-N8",
+            "SRC-F8018-N8",
+            "SRC-F8019-N8",
+            "SRC-F8020-N8",
+            "SRC-F8021-N8",
+            "SRC-F8022-N8",
+            "SRC-F8023-N8",
+            "SRC-F8024-N8",
+            "SRC-F8025-N8",
+            "SRC-F8026-N8",
+            "SRC-F8027-N8",
+            "SRC-F8028-N8",
+            "SRC-F8029-N8",
+            "SRC-F8030-N8",
+            "SRC-F8031-N8",
+            "SRC-F8032-N8",
+            "SRC-F8033-N8",
+            "SRC-F8034-N8"
+          ],
+          "start_time_seconds": 1787709007.336,
+          "end_time_seconds": 1787709009.002
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 8035,
+          "end_frame": 8049,
+          "fact_id": "INTERVAL-Y-2",
+          "source_fact_ids": [
+            "SRC-F8035-N8",
+            "SRC-F8036-N8",
+            "SRC-F8037-N8",
+            "SRC-F8038-N8",
+            "SRC-F8039-N8",
+            "SRC-F8040-N8",
+            "SRC-F8041-N8",
+            "SRC-F8042-N8",
+            "SRC-F8043-N8",
+            "SRC-F8044-N8",
+            "SRC-F8045-N8",
+            "SRC-F8046-N8",
+            "SRC-F8047-N8",
+            "SRC-F8048-N8",
+            "SRC-F8049-N8"
+          ],
+          "start_time_seconds": 1787709009.035,
+          "end_time_seconds": 1787709009.502
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 8050,
+          "end_frame": 8069,
+          "fact_id": "INTERVAL-Y-3",
+          "source_fact_ids": [
+            "SRC-F8050-N8",
+            "SRC-F8051-N8",
+            "SRC-F8052-N8",
+            "SRC-F8053-N8",
+            "SRC-F8054-N8",
+            "SRC-F8055-N8",
+            "SRC-F8056-N8",
+            "SRC-F8057-N8",
+            "SRC-F8058-N8",
+            "SRC-F8059-N8",
+            "SRC-F8060-N8",
+            "SRC-F8061-N8",
+            "SRC-F8062-N8",
+            "SRC-F8063-N8",
+            "SRC-F8064-N8",
+            "SRC-F8065-N8",
+            "SRC-F8066-N8",
+            "SRC-F8067-N8",
+            "SRC-F8068-N8",
+            "SRC-F8069-N8"
+          ],
+          "start_time_seconds": 1787709009.535,
+          "end_time_seconds": 1787709010.168
+        }
+      ]
+    },
+    "per_object_loss": {
+      "A": {
+        "fact_id": "LOSS-A",
+        "source_fact_ids": [
+          "SRC-F7866-N1",
+          "SRC-F7867-N1"
+        ],
+        "last_usable_frame": 7866,
+        "first_unusable_frame": 7867,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      },
+      "B": {
+        "fact_id": "LOSS-B",
+        "source_fact_ids": [
+          "SRC-F7890-N2",
+          "SRC-F7891-N2"
+        ],
+        "last_usable_frame": 7890,
+        "first_unusable_frame": 7891,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      }
+    },
+    "per_handle_clean_return": {
+      "X": {
+        "fact_id": "RETURN-X",
+        "source_fact_ids": [
+          "SRC-F8064-N1"
+        ],
+        "first_clean_frame": 8064,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      },
+      "Y": {
+        "fact_id": "RETURN-Y",
+        "source_fact_ids": [
+          "SRC-F8050-N8"
+        ],
+        "first_clean_frame": 8050,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      }
+    },
+    "first_unusable_observation": "A",
+    "first_physical_entry": "UNKNOWN",
+    "first_identity_reappearance": "UNKNOWN",
+    "joint_clean_pair_streak": {
+      "fact_id": "PAIR-CLEAN-STREAK",
+      "source_fact_ids": [
+        "SRC-F8064-N1",
+        "SRC-F8064-N8",
+        "SRC-F8065-N1",
+        "SRC-F8065-N8",
+        "SRC-F8066-N1",
+        "SRC-F8066-N8"
+      ],
+      "frames": [
+        8064,
+        8066
+      ],
+      "interpretation": "two_handles_jointly_clean_only"
+    },
+    "entry_side": {
+      "A": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          262.5,
+          106.0
+        ]
+      },
+      "B": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          411.5,
+          175.5
+        ]
+      }
+    },
+    "relative_motion": {
+      "pre": {
+        "fact_id": "RELATIVE-PRE",
+        "source_fact_ids": [
+          "A-F7866",
+          "B-F7890",
+          "VELOCITY-A",
+          "VELOCITY-B"
+        ],
+        "status": "ESTIMATE",
+        "aligned_time_seconds": 1787709004.204,
+        "relative_position_B_minus_A_px": [
+          146.0,
+          79.308
+        ],
+        "relative_velocity_B_minus_A_px_per_s": [
+          -6.802,
+          8.433
+        ],
+        "method": "constant_velocity_projection_within_short_clean_fragments",
+        "max_alignment_gap_seconds": 0.7990000247955322
+      },
+      "post": {
+        "fact_id": "RELATIVE-POST-Q",
+        "source_fact_ids": [
+          "X-F8069",
+          "Y-F8069",
+          "VELOCITY-X",
+          "VELOCITY-Y"
+        ],
+        "status": "OBSERVED_POSITION",
+        "time_seconds": 1787709010.168,
+        "relative_position_Y_minus_X_px": [
+          -92.5,
+          7.5
+        ],
+        "relative_velocity_Y_minus_X_px_per_s": [
+          -56.251,
+          17.922
+        ]
+      }
+    },
+    "event_frame_count": 234,
+    "anonymous_observation_count": 1297
+  },
+  {
+    "case": "B03",
+    "trigger": {
+      "frame": 319,
+      "source": "fixed_AO1_prediction_window",
+      "pair_contact_predicted": true,
+      "scope": "PREDICTION_DRIVEN_CONTACT_PROXY"
+    },
+    "old_to_new_reference": {
+      "A": {
+        "old_anchor_frame": 306,
+        "new_anchor_frame": 306,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      },
+      "B": {
+        "old_anchor_frame": 315,
+        "new_anchor_frame": 315,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      }
+    },
+    "pre_fragments": {
+      "A": "A-F276-306",
+      "B": "B-F285-315"
+    },
+    "post_fragments": {
+      "X": "X-F363-377",
+      "Y": "Y-F363-377"
+    },
+    "availability_intervals": {
+      "A": [
+        {
+          "status": "CLEAN",
+          "start_frame": 306,
+          "end_frame": 306,
+          "fact_id": "INTERVAL-A-1",
+          "source_fact_ids": [
+            "SRC-F306-N1"
+          ],
+          "start_time_seconds": 1787709061.376,
+          "end_time_seconds": 1787709061.376
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 307,
+          "end_frame": 343,
+          "fact_id": "INTERVAL-A-2",
+          "source_fact_ids": [
+            "SRC-F307-N1",
+            "SRC-F308-N1",
+            "SRC-F309-N1",
+            "SRC-F310-N1",
+            "SRC-F311-N1",
+            "SRC-F312-N1",
+            "SRC-F313-N1",
+            "SRC-F314-N1",
+            "SRC-F315-N1",
+            "SRC-F316-N1",
+            "SRC-F317-N1",
+            "SRC-F318-N1",
+            "SRC-F319-N1",
+            "SRC-F320-N1",
+            "SRC-F321-N1",
+            "SRC-F322-N1",
+            "SRC-F323-N1",
+            "SRC-F324-N1",
+            "SRC-F325-N1",
+            "SRC-F326-N1",
+            "SRC-F327-N1",
+            "SRC-F328-N1",
+            "SRC-F329-N1",
+            "SRC-F330-N1",
+            "SRC-F331-N1",
+            "SRC-F332-N1",
+            "SRC-F333-N1",
+            "SRC-F334-N1",
+            "SRC-F335-N1",
+            "SRC-F336-N1",
+            "SRC-F337-N1",
+            "SRC-F338-N1",
+            "SRC-F339-N1",
+            "SRC-F340-N1",
+            "SRC-F341-N1",
+            "SRC-F342-N1",
+            "SRC-F343-N1"
+          ],
+          "start_time_seconds": 1787709061.409,
+          "end_time_seconds": 1787709062.609
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 344,
+          "end_frame": 346,
+          "fact_id": "INTERVAL-A-3",
+          "source_fact_ids": [
+            "SRC-F344-N1",
+            "SRC-F345-N1",
+            "SRC-F346-N1"
+          ],
+          "start_time_seconds": 1787709062.642,
+          "end_time_seconds": 1787709062.709
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 347,
+          "end_frame": 361,
+          "fact_id": "INTERVAL-A-4",
+          "source_fact_ids": [
+            "SRC-F347-N1",
+            "SRC-F348-N1",
+            "SRC-F349-N1",
+            "SRC-F350-N1",
+            "SRC-F351-N1",
+            "SRC-F352-N1",
+            "SRC-F353-N1",
+            "SRC-F354-N1",
+            "SRC-F355-N1",
+            "SRC-F356-N1",
+            "SRC-F357-N1",
+            "SRC-F358-N1",
+            "SRC-F359-N1",
+            "SRC-F360-N1",
+            "SRC-F361-N1"
+          ],
+          "start_time_seconds": 1787709062.742,
+          "end_time_seconds": 1787709063.208
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 362,
+          "end_frame": 377,
+          "fact_id": "INTERVAL-A-5",
+          "source_fact_ids": [
+            "SRC-F362-N1",
+            "SRC-F363-N1",
+            "SRC-F364-N1",
+            "SRC-F365-N1",
+            "SRC-F366-N1",
+            "SRC-F367-N1",
+            "SRC-F368-N1",
+            "SRC-F369-N1",
+            "SRC-F370-N1",
+            "SRC-F371-N1",
+            "SRC-F372-N1",
+            "SRC-F373-N1",
+            "SRC-F374-N1",
+            "SRC-F375-N1",
+            "SRC-F376-N1",
+            "SRC-F377-N1"
+          ],
+          "start_time_seconds": 1787709063.242,
+          "end_time_seconds": 1787709063.741
+        }
+      ],
+      "B": [
+        {
+          "status": "CLEAN",
+          "start_frame": 315,
+          "end_frame": 315,
+          "fact_id": "INTERVAL-B-1",
+          "source_fact_ids": [
+            "SRC-F315-N5"
+          ],
+          "start_time_seconds": 1787709061.676,
+          "end_time_seconds": 1787709061.676
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 316,
+          "end_frame": 343,
+          "fact_id": "INTERVAL-B-2",
+          "source_fact_ids": [
+            "SRC-F316-N5",
+            "SRC-F317-N5",
+            "SRC-F318-N5",
+            "SRC-F319-N5",
+            "SRC-F320-N5",
+            "SRC-F321-N5",
+            "SRC-F322-N5",
+            "SRC-F323-N5",
+            "SRC-F324-N5",
+            "SRC-F325-N5",
+            "SRC-F326-N5",
+            "SRC-F327-N5",
+            "SRC-F328-N5",
+            "SRC-F329-N5",
+            "SRC-F330-N5",
+            "SRC-F331-N5",
+            "SRC-F332-N5",
+            "SRC-F333-N5",
+            "SRC-F334-N5",
+            "SRC-F335-N5",
+            "SRC-F336-N5",
+            "SRC-F337-N5",
+            "SRC-F338-N5",
+            "SRC-F339-N5",
+            "SRC-F340-N5",
+            "SRC-F341-N5",
+            "SRC-F342-N5",
+            "SRC-F343-N5"
+          ],
+          "start_time_seconds": 1787709061.709,
+          "end_time_seconds": 1787709062.609
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 344,
+          "end_frame": 346,
+          "fact_id": "INTERVAL-B-3",
+          "source_fact_ids": [
+            "SRC-F344-N5",
+            "SRC-F345-N5",
+            "SRC-F346-N5"
+          ],
+          "start_time_seconds": 1787709062.642,
+          "end_time_seconds": 1787709062.709
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 347,
+          "end_frame": 361,
+          "fact_id": "INTERVAL-B-4",
+          "source_fact_ids": [
+            "SRC-F347-N5",
+            "SRC-F348-N5",
+            "SRC-F349-N5",
+            "SRC-F350-N5",
+            "SRC-F351-N5",
+            "SRC-F352-N5",
+            "SRC-F353-N5",
+            "SRC-F354-N5",
+            "SRC-F355-N5",
+            "SRC-F356-N5",
+            "SRC-F357-N5",
+            "SRC-F358-N5",
+            "SRC-F359-N5",
+            "SRC-F360-N5",
+            "SRC-F361-N5"
+          ],
+          "start_time_seconds": 1787709062.742,
+          "end_time_seconds": 1787709063.208
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 362,
+          "end_frame": 377,
+          "fact_id": "INTERVAL-B-5",
+          "source_fact_ids": [
+            "SRC-F362-N5",
+            "SRC-F363-N5",
+            "SRC-F364-N5",
+            "SRC-F365-N5",
+            "SRC-F366-N5",
+            "SRC-F367-N5",
+            "SRC-F368-N5",
+            "SRC-F369-N5",
+            "SRC-F370-N5",
+            "SRC-F371-N5",
+            "SRC-F372-N5",
+            "SRC-F373-N5",
+            "SRC-F374-N5",
+            "SRC-F375-N5",
+            "SRC-F376-N5",
+            "SRC-F377-N5"
+          ],
+          "start_time_seconds": 1787709063.242,
+          "end_time_seconds": 1787709063.741
+        }
+      ]
+    },
+    "reappearance_intervals": {
+      "X": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 320,
+          "end_frame": 343,
+          "fact_id": "INTERVAL-X-1",
+          "source_fact_ids": [
+            "SRC-F320-N1",
+            "SRC-F321-N1",
+            "SRC-F322-N1",
+            "SRC-F323-N1",
+            "SRC-F324-N1",
+            "SRC-F325-N1",
+            "SRC-F326-N1",
+            "SRC-F327-N1",
+            "SRC-F328-N1",
+            "SRC-F329-N1",
+            "SRC-F330-N1",
+            "SRC-F331-N1",
+            "SRC-F332-N1",
+            "SRC-F333-N1",
+            "SRC-F334-N1",
+            "SRC-F335-N1",
+            "SRC-F336-N1",
+            "SRC-F337-N1",
+            "SRC-F338-N1",
+            "SRC-F339-N1",
+            "SRC-F340-N1",
+            "SRC-F341-N1",
+            "SRC-F342-N1",
+            "SRC-F343-N1"
+          ],
+          "start_time_seconds": 1787709061.842,
+          "end_time_seconds": 1787709062.609
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 344,
+          "end_frame": 346,
+          "fact_id": "INTERVAL-X-2",
+          "source_fact_ids": [
+            "SRC-F344-N1",
+            "SRC-F345-N1",
+            "SRC-F346-N1"
+          ],
+          "start_time_seconds": 1787709062.642,
+          "end_time_seconds": 1787709062.709
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 347,
+          "end_frame": 361,
+          "fact_id": "INTERVAL-X-3",
+          "source_fact_ids": [
+            "SRC-F347-N1",
+            "SRC-F348-N1",
+            "SRC-F349-N1",
+            "SRC-F350-N1",
+            "SRC-F351-N1",
+            "SRC-F352-N1",
+            "SRC-F353-N1",
+            "SRC-F354-N1",
+            "SRC-F355-N1",
+            "SRC-F356-N1",
+            "SRC-F357-N1",
+            "SRC-F358-N1",
+            "SRC-F359-N1",
+            "SRC-F360-N1",
+            "SRC-F361-N1"
+          ],
+          "start_time_seconds": 1787709062.742,
+          "end_time_seconds": 1787709063.208
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 362,
+          "end_frame": 377,
+          "fact_id": "INTERVAL-X-4",
+          "source_fact_ids": [
+            "SRC-F362-N1",
+            "SRC-F363-N1",
+            "SRC-F364-N1",
+            "SRC-F365-N1",
+            "SRC-F366-N1",
+            "SRC-F367-N1",
+            "SRC-F368-N1",
+            "SRC-F369-N1",
+            "SRC-F370-N1",
+            "SRC-F371-N1",
+            "SRC-F372-N1",
+            "SRC-F373-N1",
+            "SRC-F374-N1",
+            "SRC-F375-N1",
+            "SRC-F376-N1",
+            "SRC-F377-N1"
+          ],
+          "start_time_seconds": 1787709063.242,
+          "end_time_seconds": 1787709063.741
+        }
+      ],
+      "Y": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 320,
+          "end_frame": 343,
+          "fact_id": "INTERVAL-Y-1",
+          "source_fact_ids": [
+            "SRC-F320-N5",
+            "SRC-F321-N5",
+            "SRC-F322-N5",
+            "SRC-F323-N5",
+            "SRC-F324-N5",
+            "SRC-F325-N5",
+            "SRC-F326-N5",
+            "SRC-F327-N5",
+            "SRC-F328-N5",
+            "SRC-F329-N5",
+            "SRC-F330-N5",
+            "SRC-F331-N5",
+            "SRC-F332-N5",
+            "SRC-F333-N5",
+            "SRC-F334-N5",
+            "SRC-F335-N5",
+            "SRC-F336-N5",
+            "SRC-F337-N5",
+            "SRC-F338-N5",
+            "SRC-F339-N5",
+            "SRC-F340-N5",
+            "SRC-F341-N5",
+            "SRC-F342-N5",
+            "SRC-F343-N5"
+          ],
+          "start_time_seconds": 1787709061.842,
+          "end_time_seconds": 1787709062.609
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 344,
+          "end_frame": 346,
+          "fact_id": "INTERVAL-Y-2",
+          "source_fact_ids": [
+            "SRC-F344-N5",
+            "SRC-F345-N5",
+            "SRC-F346-N5"
+          ],
+          "start_time_seconds": 1787709062.642,
+          "end_time_seconds": 1787709062.709
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 347,
+          "end_frame": 361,
+          "fact_id": "INTERVAL-Y-3",
+          "source_fact_ids": [
+            "SRC-F347-N5",
+            "SRC-F348-N5",
+            "SRC-F349-N5",
+            "SRC-F350-N5",
+            "SRC-F351-N5",
+            "SRC-F352-N5",
+            "SRC-F353-N5",
+            "SRC-F354-N5",
+            "SRC-F355-N5",
+            "SRC-F356-N5",
+            "SRC-F357-N5",
+            "SRC-F358-N5",
+            "SRC-F359-N5",
+            "SRC-F360-N5",
+            "SRC-F361-N5"
+          ],
+          "start_time_seconds": 1787709062.742,
+          "end_time_seconds": 1787709063.208
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 362,
+          "end_frame": 377,
+          "fact_id": "INTERVAL-Y-4",
+          "source_fact_ids": [
+            "SRC-F362-N5",
+            "SRC-F363-N5",
+            "SRC-F364-N5",
+            "SRC-F365-N5",
+            "SRC-F366-N5",
+            "SRC-F367-N5",
+            "SRC-F368-N5",
+            "SRC-F369-N5",
+            "SRC-F370-N5",
+            "SRC-F371-N5",
+            "SRC-F372-N5",
+            "SRC-F373-N5",
+            "SRC-F374-N5",
+            "SRC-F375-N5",
+            "SRC-F376-N5",
+            "SRC-F377-N5"
+          ],
+          "start_time_seconds": 1787709063.242,
+          "end_time_seconds": 1787709063.741
+        }
+      ]
+    },
+    "per_object_loss": {
+      "A": {
+        "fact_id": "LOSS-A",
+        "source_fact_ids": [
+          "SRC-F306-N1",
+          "SRC-F307-N1"
+        ],
+        "last_usable_frame": 306,
+        "first_unusable_frame": 307,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      },
+      "B": {
+        "fact_id": "LOSS-B",
+        "source_fact_ids": [
+          "SRC-F315-N5",
+          "SRC-F316-N5"
+        ],
+        "last_usable_frame": 315,
+        "first_unusable_frame": 316,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      }
+    },
+    "per_handle_clean_return": {
+      "X": {
+        "fact_id": "RETURN-X",
+        "source_fact_ids": [
+          "SRC-F344-N1"
+        ],
+        "first_clean_frame": 344,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      },
+      "Y": {
+        "fact_id": "RETURN-Y",
+        "source_fact_ids": [
+          "SRC-F344-N5"
+        ],
+        "first_clean_frame": 344,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      }
+    },
+    "first_unusable_observation": "A",
+    "first_physical_entry": "UNKNOWN",
+    "first_identity_reappearance": "UNKNOWN",
+    "joint_clean_pair_streak": {
+      "fact_id": "PAIR-CLEAN-STREAK",
+      "source_fact_ids": [
+        "SRC-F344-N1",
+        "SRC-F344-N5",
+        "SRC-F345-N1",
+        "SRC-F345-N5",
+        "SRC-F346-N1",
+        "SRC-F346-N5"
+      ],
+      "frames": [
+        344,
+        346
+      ],
+      "interpretation": "two_handles_jointly_clean_only"
+    },
+    "entry_side": {
+      "A": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          264.0,
+          143.0
+        ]
+      },
+      "B": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          301.0,
+          139.5
+        ]
+      }
+    },
+    "relative_motion": {
+      "pre": {
+        "fact_id": "RELATIVE-PRE",
+        "source_fact_ids": [
+          "A-F306",
+          "B-F315",
+          "VELOCITY-A",
+          "VELOCITY-B"
+        ],
+        "status": "ESTIMATE",
+        "aligned_time_seconds": 1787709061.676,
+        "relative_position_B_minus_A_px": [
+          35.538,
+          5.102
+        ],
+        "relative_velocity_B_minus_A_px_per_s": [
+          -11.976,
+          26.419
+        ],
+        "method": "constant_velocity_projection_within_short_clean_fragments",
+        "max_alignment_gap_seconds": 0.3000001907348633
+      },
+      "post": {
+        "fact_id": "RELATIVE-POST-Q",
+        "source_fact_ids": [
+          "X-F377",
+          "Y-F377",
+          "VELOCITY-X",
+          "VELOCITY-Y"
+        ],
+        "status": "OBSERVED_POSITION",
+        "time_seconds": 1787709063.741,
+        "relative_position_Y_minus_X_px": [
+          -45.0,
+          21.5
+        ],
+        "relative_velocity_Y_minus_X_px_per_s": [
+          18.234,
+          20.752
+        ]
+      }
+    },
+    "event_frame_count": 102,
+    "anonymous_observation_count": 520
+  },
+  {
+    "case": "B04",
+    "trigger": {
+      "frame": 2545,
+      "source": "fixed_AO1_prediction_window",
+      "pair_contact_predicted": true,
+      "scope": "PREDICTION_DRIVEN_CONTACT_PROXY"
+    },
+    "old_to_new_reference": {
+      "A": {
+        "old_anchor_frame": 2544,
+        "new_anchor_frame": 2544,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      },
+      "B": {
+        "old_anchor_frame": 2525,
+        "new_anchor_frame": 2525,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      }
+    },
+    "pre_fragments": {
+      "A": "A-F2537-2544",
+      "B": "B-F2495-2525"
+    },
+    "post_fragments": {
+      "X": "X-F2632-2638",
+      "Y": "Y-F2632-2638"
+    },
+    "availability_intervals": {
+      "A": [
+        {
+          "status": "CLEAN",
+          "start_frame": 2544,
+          "end_frame": 2544,
+          "fact_id": "INTERVAL-A-1",
+          "source_fact_ids": [
+            "SRC-F2544-N1"
+          ],
+          "start_time_seconds": 1787709135.941,
+          "end_time_seconds": 1787709135.941
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2545,
+          "end_frame": 2558,
+          "fact_id": "INTERVAL-A-2",
+          "source_fact_ids": [
+            "SRC-F2545-N1",
+            "SRC-F2546-N1",
+            "SRC-F2547-N1",
+            "SRC-F2548-N1",
+            "SRC-F2549-N1",
+            "SRC-F2550-N1",
+            "SRC-F2551-N1",
+            "SRC-F2552-N1",
+            "SRC-F2553-N1",
+            "SRC-F2554-N1",
+            "SRC-F2555-N1",
+            "SRC-F2556-N1",
+            "SRC-F2557-N1",
+            "SRC-F2558-N1"
+          ],
+          "start_time_seconds": 1787709135.975,
+          "end_time_seconds": 1787709136.408
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2559,
+          "end_frame": 2559,
+          "fact_id": "INTERVAL-A-3",
+          "source_fact_ids": [
+            "SRC-F2559-N1"
+          ],
+          "start_time_seconds": 1787709136.441,
+          "end_time_seconds": 1787709136.441
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2560,
+          "end_frame": 2561,
+          "fact_id": "INTERVAL-A-4",
+          "source_fact_ids": [
+            "SRC-F2560-N1",
+            "SRC-F2561-N1"
+          ],
+          "start_time_seconds": 1787709136.474,
+          "end_time_seconds": 1787709136.508
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2562,
+          "end_frame": 2562,
+          "fact_id": "INTERVAL-A-5",
+          "source_fact_ids": [
+            "SRC-F2562-N1"
+          ],
+          "start_time_seconds": 1787709136.541,
+          "end_time_seconds": 1787709136.541
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2563,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-A-6",
+          "source_fact_ids": [
+            "SRC-F2563-N1",
+            "SRC-F2564-N1",
+            "SRC-F2565-N1"
+          ],
+          "start_time_seconds": 1787709136.574,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-A-7",
+          "source_fact_ids": [
+            "SRC-F2566-N1"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-A-8",
+          "source_fact_ids": [
+            "SRC-F2567-N1"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-A-9",
+          "source_fact_ids": [
+            "SRC-F2568-N1",
+            "SRC-F2569-N1",
+            "SRC-F2570-N1",
+            "SRC-F2571-N1",
+            "SRC-F2572-N1",
+            "SRC-F2573-N1",
+            "SRC-F2574-N1",
+            "SRC-F2575-N1",
+            "SRC-F2576-N1",
+            "SRC-F2577-N1",
+            "SRC-F2578-N1",
+            "SRC-F2579-N1",
+            "SRC-F2580-N1"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2581,
+          "end_frame": 2590,
+          "fact_id": "INTERVAL-A-10",
+          "source_fact_ids": [
+            "SRC-F2581-N1",
+            "SRC-F2582-N1",
+            "SRC-F2583-N1",
+            "SRC-F2584-N1",
+            "SRC-F2585-N1",
+            "SRC-F2586-N1",
+            "SRC-F2587-N1",
+            "SRC-F2588-N1",
+            "SRC-F2589-N1",
+            "SRC-F2590-N1"
+          ],
+          "start_time_seconds": 1787709137.174,
+          "end_time_seconds": 1787709137.474
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2591,
+          "end_frame": 2595,
+          "fact_id": "INTERVAL-A-11",
+          "source_fact_ids": [
+            "SRC-F2591-N1",
+            "SRC-F2592-N1",
+            "SRC-F2593-N1",
+            "SRC-F2594-N1",
+            "SRC-F2595-N1"
+          ],
+          "start_time_seconds": 1787709137.507,
+          "end_time_seconds": 1787709137.641
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2596,
+          "end_frame": 2596,
+          "fact_id": "INTERVAL-A-12",
+          "source_fact_ids": [
+            "SRC-F2596-N1"
+          ],
+          "start_time_seconds": 1787709137.674,
+          "end_time_seconds": 1787709137.674
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2597,
+          "end_frame": 2599,
+          "fact_id": "INTERVAL-A-13",
+          "source_fact_ids": [
+            "SRC-F2597-N1",
+            "SRC-F2598-N1",
+            "SRC-F2599-N1"
+          ],
+          "start_time_seconds": 1787709137.707,
+          "end_time_seconds": 1787709137.774
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2600,
+          "end_frame": 2606,
+          "fact_id": "INTERVAL-A-14",
+          "source_fact_ids": [
+            "SRC-F2600-N1",
+            "SRC-F2601-N1",
+            "SRC-F2602-N1",
+            "SRC-F2603-N1",
+            "SRC-F2604-N1",
+            "SRC-F2605-N1",
+            "SRC-F2606-N1"
+          ],
+          "start_time_seconds": 1787709137.807,
+          "end_time_seconds": 1787709138.007
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2607,
+          "end_frame": 2609,
+          "fact_id": "INTERVAL-A-15",
+          "source_fact_ids": [
+            "SRC-F2607-N1",
+            "SRC-F2608-N1",
+            "SRC-F2609-N1"
+          ],
+          "start_time_seconds": 1787709138.04,
+          "end_time_seconds": 1787709138.107
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2610,
+          "end_frame": 2631,
+          "fact_id": "INTERVAL-A-16",
+          "source_fact_ids": [
+            "SRC-F2610-N1",
+            "SRC-F2611-N1",
+            "SRC-F2612-N1",
+            "SRC-F2613-N1",
+            "SRC-F2614-N1",
+            "SRC-F2615-N1",
+            "SRC-F2616-N1",
+            "SRC-F2617-N1",
+            "SRC-F2618-N1",
+            "SRC-F2619-N1",
+            "SRC-F2620-N1",
+            "SRC-F2621-N1",
+            "SRC-F2622-N1",
+            "SRC-F2623-N1",
+            "SRC-F2624-N1",
+            "SRC-F2625-N1",
+            "SRC-F2626-N1",
+            "SRC-F2627-N1",
+            "SRC-F2628-N1",
+            "SRC-F2629-N1",
+            "SRC-F2630-N1",
+            "SRC-F2631-N1"
+          ],
+          "start_time_seconds": 1787709138.14,
+          "end_time_seconds": 1787709138.84
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2632,
+          "end_frame": 2638,
+          "fact_id": "INTERVAL-A-17",
+          "source_fact_ids": [
+            "SRC-F2632-N1",
+            "SRC-F2633-N1",
+            "SRC-F2634-N1",
+            "SRC-F2635-N1",
+            "SRC-F2636-N1",
+            "SRC-F2637-N1",
+            "SRC-F2638-N1"
+          ],
+          "start_time_seconds": 1787709138.873,
+          "end_time_seconds": 1787709139.073
+        }
+      ],
+      "B": [
+        {
+          "status": "CLEAN",
+          "start_frame": 2525,
+          "end_frame": 2525,
+          "fact_id": "INTERVAL-B-1",
+          "source_fact_ids": [
+            "SRC-F2525-N4"
+          ],
+          "start_time_seconds": 1787709135.308,
+          "end_time_seconds": 1787709135.308
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2526,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-B-2",
+          "source_fact_ids": [
+            "SRC-F2526-N4",
+            "SRC-F2527-N4",
+            "SRC-F2528-N4",
+            "SRC-F2529-N4",
+            "SRC-F2530-N4",
+            "SRC-F2531-N4",
+            "SRC-F2532-N4",
+            "SRC-F2533-N4",
+            "SRC-F2534-N4",
+            "SRC-F2535-N4",
+            "SRC-F2536-N4",
+            "SRC-F2537-N4",
+            "SRC-F2538-N4",
+            "SRC-F2539-N4",
+            "SRC-F2540-N4",
+            "SRC-F2541-N4",
+            "SRC-F2542-N4",
+            "SRC-F2543-N4",
+            "SRC-F2544-N4",
+            "SRC-F2545-N4",
+            "SRC-F2546-N4",
+            "SRC-F2547-N4",
+            "SRC-F2548-N4",
+            "SRC-F2549-N4",
+            "SRC-F2550-N4",
+            "SRC-F2551-N4",
+            "SRC-F2552-N4",
+            "SRC-F2553-N4",
+            "SRC-F2554-N4",
+            "SRC-F2555-N4",
+            "SRC-F2556-N4",
+            "SRC-F2557-N4",
+            "SRC-F2558-N4",
+            "SRC-F2559-N4",
+            "SRC-F2560-N4",
+            "SRC-F2561-N4",
+            "SRC-F2562-N4",
+            "SRC-F2563-N4",
+            "SRC-F2564-N4",
+            "SRC-F2565-N4"
+          ],
+          "start_time_seconds": 1787709135.341,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-B-3",
+          "source_fact_ids": [
+            "SRC-F2566-N4"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-B-4",
+          "source_fact_ids": [
+            "SRC-F2567-N4"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-B-5",
+          "source_fact_ids": [
+            "SRC-F2568-N4",
+            "SRC-F2569-N4",
+            "SRC-F2570-N4",
+            "SRC-F2571-N4",
+            "SRC-F2572-N4",
+            "SRC-F2573-N4",
+            "SRC-F2574-N4",
+            "SRC-F2575-N4",
+            "SRC-F2576-N4",
+            "SRC-F2577-N4",
+            "SRC-F2578-N4",
+            "SRC-F2579-N4",
+            "SRC-F2580-N4"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2581,
+          "end_frame": 2590,
+          "fact_id": "INTERVAL-B-6",
+          "source_fact_ids": [
+            "SRC-F2581-N4",
+            "SRC-F2582-N4",
+            "SRC-F2583-N4",
+            "SRC-F2584-N4",
+            "SRC-F2585-N4",
+            "SRC-F2586-N4",
+            "SRC-F2587-N4",
+            "SRC-F2588-N4",
+            "SRC-F2589-N4",
+            "SRC-F2590-N4"
+          ],
+          "start_time_seconds": 1787709137.174,
+          "end_time_seconds": 1787709137.474
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 2591,
+          "end_frame": 2591,
+          "fact_id": "INTERVAL-B-7",
+          "source_fact_ids": [
+            "SRC-F2591-N4"
+          ],
+          "start_time_seconds": 1787709137.507,
+          "end_time_seconds": 1787709137.507
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 2592,
+          "end_frame": 2595,
+          "fact_id": "INTERVAL-B-8",
+          "source_fact_ids": [
+            "SRC-F2592-N4",
+            "SRC-F2593-N4",
+            "SRC-F2594-N4",
+            "SRC-F2595-N4"
+          ],
+          "start_time_seconds": 1787709137.541,
+          "end_time_seconds": 1787709137.641
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2596,
+          "end_frame": 2596,
+          "fact_id": "INTERVAL-B-9",
+          "source_fact_ids": [
+            "SRC-F2596-N4"
+          ],
+          "start_time_seconds": 1787709137.674,
+          "end_time_seconds": 1787709137.674
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 2597,
+          "end_frame": 2597,
+          "fact_id": "INTERVAL-B-10",
+          "source_fact_ids": [
+            "SRC-F2597-N4"
+          ],
+          "start_time_seconds": 1787709137.707,
+          "end_time_seconds": 1787709137.707
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 2598,
+          "end_frame": 2599,
+          "fact_id": "INTERVAL-B-11",
+          "source_fact_ids": [
+            "SRC-F2598-N4",
+            "SRC-F2599-N4"
+          ],
+          "start_time_seconds": 1787709137.741,
+          "end_time_seconds": 1787709137.774
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2600,
+          "end_frame": 2606,
+          "fact_id": "INTERVAL-B-12",
+          "source_fact_ids": [
+            "SRC-F2600-N4",
+            "SRC-F2601-N4",
+            "SRC-F2602-N4",
+            "SRC-F2603-N4",
+            "SRC-F2604-N4",
+            "SRC-F2605-N4",
+            "SRC-F2606-N4"
+          ],
+          "start_time_seconds": 1787709137.807,
+          "end_time_seconds": 1787709138.007
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2607,
+          "end_frame": 2609,
+          "fact_id": "INTERVAL-B-13",
+          "source_fact_ids": [
+            "SRC-F2607-N4",
+            "SRC-F2608-N4",
+            "SRC-F2609-N4"
+          ],
+          "start_time_seconds": 1787709138.04,
+          "end_time_seconds": 1787709138.107
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2610,
+          "end_frame": 2619,
+          "fact_id": "INTERVAL-B-14",
+          "source_fact_ids": [
+            "SRC-F2610-N4",
+            "SRC-F2611-N4",
+            "SRC-F2612-N4",
+            "SRC-F2613-N4",
+            "SRC-F2614-N4",
+            "SRC-F2615-N4",
+            "SRC-F2616-N4",
+            "SRC-F2617-N4",
+            "SRC-F2618-N4",
+            "SRC-F2619-N4"
+          ],
+          "start_time_seconds": 1787709138.14,
+          "end_time_seconds": 1787709138.44
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2620,
+          "end_frame": 2621,
+          "fact_id": "INTERVAL-B-15",
+          "source_fact_ids": [
+            "SRC-F2620-N4",
+            "SRC-F2621-N4"
+          ],
+          "start_time_seconds": 1787709138.474,
+          "end_time_seconds": 1787709138.507
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2622,
+          "end_frame": 2622,
+          "fact_id": "INTERVAL-B-16",
+          "source_fact_ids": [
+            "SRC-F2622-N4"
+          ],
+          "start_time_seconds": 1787709138.54,
+          "end_time_seconds": 1787709138.54
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2623,
+          "end_frame": 2623,
+          "fact_id": "INTERVAL-B-17",
+          "source_fact_ids": [
+            "SRC-F2623-N4"
+          ],
+          "start_time_seconds": 1787709138.573,
+          "end_time_seconds": 1787709138.573
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2624,
+          "end_frame": 2631,
+          "fact_id": "INTERVAL-B-18",
+          "source_fact_ids": [
+            "SRC-F2624-N4",
+            "SRC-F2625-N4",
+            "SRC-F2626-N4",
+            "SRC-F2627-N4",
+            "SRC-F2628-N4",
+            "SRC-F2629-N4",
+            "SRC-F2630-N4",
+            "SRC-F2631-N4"
+          ],
+          "start_time_seconds": 1787709138.607,
+          "end_time_seconds": 1787709138.84
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2632,
+          "end_frame": 2638,
+          "fact_id": "INTERVAL-B-19",
+          "source_fact_ids": [
+            "SRC-F2632-N4",
+            "SRC-F2633-N4",
+            "SRC-F2634-N4",
+            "SRC-F2635-N4",
+            "SRC-F2636-N4",
+            "SRC-F2637-N4",
+            "SRC-F2638-N4"
+          ],
+          "start_time_seconds": 1787709138.873,
+          "end_time_seconds": 1787709139.073
+        }
+      ]
+    },
+    "reappearance_intervals": {
+      "X": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2546,
+          "end_frame": 2558,
+          "fact_id": "INTERVAL-X-1",
+          "source_fact_ids": [
+            "SRC-F2546-N1",
+            "SRC-F2547-N1",
+            "SRC-F2548-N1",
+            "SRC-F2549-N1",
+            "SRC-F2550-N1",
+            "SRC-F2551-N1",
+            "SRC-F2552-N1",
+            "SRC-F2553-N1",
+            "SRC-F2554-N1",
+            "SRC-F2555-N1",
+            "SRC-F2556-N1",
+            "SRC-F2557-N1",
+            "SRC-F2558-N1"
+          ],
+          "start_time_seconds": 1787709136.008,
+          "end_time_seconds": 1787709136.408
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2559,
+          "end_frame": 2559,
+          "fact_id": "INTERVAL-X-2",
+          "source_fact_ids": [
+            "SRC-F2559-N1"
+          ],
+          "start_time_seconds": 1787709136.441,
+          "end_time_seconds": 1787709136.441
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2560,
+          "end_frame": 2561,
+          "fact_id": "INTERVAL-X-3",
+          "source_fact_ids": [
+            "SRC-F2560-N1",
+            "SRC-F2561-N1"
+          ],
+          "start_time_seconds": 1787709136.474,
+          "end_time_seconds": 1787709136.508
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2562,
+          "end_frame": 2562,
+          "fact_id": "INTERVAL-X-4",
+          "source_fact_ids": [
+            "SRC-F2562-N1"
+          ],
+          "start_time_seconds": 1787709136.541,
+          "end_time_seconds": 1787709136.541
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2563,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-X-5",
+          "source_fact_ids": [
+            "SRC-F2563-N1",
+            "SRC-F2564-N1",
+            "SRC-F2565-N1"
+          ],
+          "start_time_seconds": 1787709136.574,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-X-6",
+          "source_fact_ids": [
+            "SRC-F2566-N1"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-X-7",
+          "source_fact_ids": [
+            "SRC-F2567-N1"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-X-8",
+          "source_fact_ids": [
+            "SRC-F2568-N1",
+            "SRC-F2569-N1",
+            "SRC-F2570-N1",
+            "SRC-F2571-N1",
+            "SRC-F2572-N1",
+            "SRC-F2573-N1",
+            "SRC-F2574-N1",
+            "SRC-F2575-N1",
+            "SRC-F2576-N1",
+            "SRC-F2577-N1",
+            "SRC-F2578-N1",
+            "SRC-F2579-N1",
+            "SRC-F2580-N1"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2581,
+          "end_frame": 2590,
+          "fact_id": "INTERVAL-X-9",
+          "source_fact_ids": [
+            "SRC-F2581-N1",
+            "SRC-F2582-N1",
+            "SRC-F2583-N1",
+            "SRC-F2584-N1",
+            "SRC-F2585-N1",
+            "SRC-F2586-N1",
+            "SRC-F2587-N1",
+            "SRC-F2588-N1",
+            "SRC-F2589-N1",
+            "SRC-F2590-N1"
+          ],
+          "start_time_seconds": 1787709137.174,
+          "end_time_seconds": 1787709137.474
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2591,
+          "end_frame": 2595,
+          "fact_id": "INTERVAL-X-10",
+          "source_fact_ids": [
+            "SRC-F2591-N1",
+            "SRC-F2592-N1",
+            "SRC-F2593-N1",
+            "SRC-F2594-N1",
+            "SRC-F2595-N1"
+          ],
+          "start_time_seconds": 1787709137.507,
+          "end_time_seconds": 1787709137.641
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2596,
+          "end_frame": 2596,
+          "fact_id": "INTERVAL-X-11",
+          "source_fact_ids": [
+            "SRC-F2596-N1"
+          ],
+          "start_time_seconds": 1787709137.674,
+          "end_time_seconds": 1787709137.674
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2597,
+          "end_frame": 2599,
+          "fact_id": "INTERVAL-X-12",
+          "source_fact_ids": [
+            "SRC-F2597-N1",
+            "SRC-F2598-N1",
+            "SRC-F2599-N1"
+          ],
+          "start_time_seconds": 1787709137.707,
+          "end_time_seconds": 1787709137.774
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2600,
+          "end_frame": 2606,
+          "fact_id": "INTERVAL-X-13",
+          "source_fact_ids": [
+            "SRC-F2600-N1",
+            "SRC-F2601-N1",
+            "SRC-F2602-N1",
+            "SRC-F2603-N1",
+            "SRC-F2604-N1",
+            "SRC-F2605-N1",
+            "SRC-F2606-N1"
+          ],
+          "start_time_seconds": 1787709137.807,
+          "end_time_seconds": 1787709138.007
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2607,
+          "end_frame": 2609,
+          "fact_id": "INTERVAL-X-14",
+          "source_fact_ids": [
+            "SRC-F2607-N1",
+            "SRC-F2608-N1",
+            "SRC-F2609-N1"
+          ],
+          "start_time_seconds": 1787709138.04,
+          "end_time_seconds": 1787709138.107
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2610,
+          "end_frame": 2631,
+          "fact_id": "INTERVAL-X-15",
+          "source_fact_ids": [
+            "SRC-F2610-N1",
+            "SRC-F2611-N1",
+            "SRC-F2612-N1",
+            "SRC-F2613-N1",
+            "SRC-F2614-N1",
+            "SRC-F2615-N1",
+            "SRC-F2616-N1",
+            "SRC-F2617-N1",
+            "SRC-F2618-N1",
+            "SRC-F2619-N1",
+            "SRC-F2620-N1",
+            "SRC-F2621-N1",
+            "SRC-F2622-N1",
+            "SRC-F2623-N1",
+            "SRC-F2624-N1",
+            "SRC-F2625-N1",
+            "SRC-F2626-N1",
+            "SRC-F2627-N1",
+            "SRC-F2628-N1",
+            "SRC-F2629-N1",
+            "SRC-F2630-N1",
+            "SRC-F2631-N1"
+          ],
+          "start_time_seconds": 1787709138.14,
+          "end_time_seconds": 1787709138.84
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2632,
+          "end_frame": 2638,
+          "fact_id": "INTERVAL-X-16",
+          "source_fact_ids": [
+            "SRC-F2632-N1",
+            "SRC-F2633-N1",
+            "SRC-F2634-N1",
+            "SRC-F2635-N1",
+            "SRC-F2636-N1",
+            "SRC-F2637-N1",
+            "SRC-F2638-N1"
+          ],
+          "start_time_seconds": 1787709138.873,
+          "end_time_seconds": 1787709139.073
+        }
+      ],
+      "Y": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2546,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-Y-1",
+          "source_fact_ids": [
+            "SRC-F2546-N4",
+            "SRC-F2547-N4",
+            "SRC-F2548-N4",
+            "SRC-F2549-N4",
+            "SRC-F2550-N4",
+            "SRC-F2551-N4",
+            "SRC-F2552-N4",
+            "SRC-F2553-N4",
+            "SRC-F2554-N4",
+            "SRC-F2555-N4",
+            "SRC-F2556-N4",
+            "SRC-F2557-N4",
+            "SRC-F2558-N4",
+            "SRC-F2559-N4",
+            "SRC-F2560-N4",
+            "SRC-F2561-N4",
+            "SRC-F2562-N4",
+            "SRC-F2563-N4",
+            "SRC-F2564-N4",
+            "SRC-F2565-N4"
+          ],
+          "start_time_seconds": 1787709136.008,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-Y-2",
+          "source_fact_ids": [
+            "SRC-F2566-N4"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-Y-3",
+          "source_fact_ids": [
+            "SRC-F2567-N4"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-Y-4",
+          "source_fact_ids": [
+            "SRC-F2568-N4",
+            "SRC-F2569-N4",
+            "SRC-F2570-N4",
+            "SRC-F2571-N4",
+            "SRC-F2572-N4",
+            "SRC-F2573-N4",
+            "SRC-F2574-N4",
+            "SRC-F2575-N4",
+            "SRC-F2576-N4",
+            "SRC-F2577-N4",
+            "SRC-F2578-N4",
+            "SRC-F2579-N4",
+            "SRC-F2580-N4"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2581,
+          "end_frame": 2590,
+          "fact_id": "INTERVAL-Y-5",
+          "source_fact_ids": [
+            "SRC-F2581-N4",
+            "SRC-F2582-N4",
+            "SRC-F2583-N4",
+            "SRC-F2584-N4",
+            "SRC-F2585-N4",
+            "SRC-F2586-N4",
+            "SRC-F2587-N4",
+            "SRC-F2588-N4",
+            "SRC-F2589-N4",
+            "SRC-F2590-N4"
+          ],
+          "start_time_seconds": 1787709137.174,
+          "end_time_seconds": 1787709137.474
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 2591,
+          "end_frame": 2591,
+          "fact_id": "INTERVAL-Y-6",
+          "source_fact_ids": [
+            "SRC-F2591-N4"
+          ],
+          "start_time_seconds": 1787709137.507,
+          "end_time_seconds": 1787709137.507
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 2592,
+          "end_frame": 2595,
+          "fact_id": "INTERVAL-Y-7",
+          "source_fact_ids": [
+            "SRC-F2592-N4",
+            "SRC-F2593-N4",
+            "SRC-F2594-N4",
+            "SRC-F2595-N4"
+          ],
+          "start_time_seconds": 1787709137.541,
+          "end_time_seconds": 1787709137.641
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2596,
+          "end_frame": 2596,
+          "fact_id": "INTERVAL-Y-8",
+          "source_fact_ids": [
+            "SRC-F2596-N4"
+          ],
+          "start_time_seconds": 1787709137.674,
+          "end_time_seconds": 1787709137.674
+        },
+        {
+          "status": "ZERO_AREA",
+          "start_frame": 2597,
+          "end_frame": 2597,
+          "fact_id": "INTERVAL-Y-9",
+          "source_fact_ids": [
+            "SRC-F2597-N4"
+          ],
+          "start_time_seconds": 1787709137.707,
+          "end_time_seconds": 1787709137.707
+        },
+        {
+          "status": "MISSING_PREDICTED_MASK",
+          "start_frame": 2598,
+          "end_frame": 2599,
+          "fact_id": "INTERVAL-Y-10",
+          "source_fact_ids": [
+            "SRC-F2598-N4",
+            "SRC-F2599-N4"
+          ],
+          "start_time_seconds": 1787709137.741,
+          "end_time_seconds": 1787709137.774
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2600,
+          "end_frame": 2606,
+          "fact_id": "INTERVAL-Y-11",
+          "source_fact_ids": [
+            "SRC-F2600-N4",
+            "SRC-F2601-N4",
+            "SRC-F2602-N4",
+            "SRC-F2603-N4",
+            "SRC-F2604-N4",
+            "SRC-F2605-N4",
+            "SRC-F2606-N4"
+          ],
+          "start_time_seconds": 1787709137.807,
+          "end_time_seconds": 1787709138.007
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2607,
+          "end_frame": 2609,
+          "fact_id": "INTERVAL-Y-12",
+          "source_fact_ids": [
+            "SRC-F2607-N4",
+            "SRC-F2608-N4",
+            "SRC-F2609-N4"
+          ],
+          "start_time_seconds": 1787709138.04,
+          "end_time_seconds": 1787709138.107
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2610,
+          "end_frame": 2619,
+          "fact_id": "INTERVAL-Y-13",
+          "source_fact_ids": [
+            "SRC-F2610-N4",
+            "SRC-F2611-N4",
+            "SRC-F2612-N4",
+            "SRC-F2613-N4",
+            "SRC-F2614-N4",
+            "SRC-F2615-N4",
+            "SRC-F2616-N4",
+            "SRC-F2617-N4",
+            "SRC-F2618-N4",
+            "SRC-F2619-N4"
+          ],
+          "start_time_seconds": 1787709138.14,
+          "end_time_seconds": 1787709138.44
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2620,
+          "end_frame": 2621,
+          "fact_id": "INTERVAL-Y-14",
+          "source_fact_ids": [
+            "SRC-F2620-N4",
+            "SRC-F2621-N4"
+          ],
+          "start_time_seconds": 1787709138.474,
+          "end_time_seconds": 1787709138.507
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2622,
+          "end_frame": 2622,
+          "fact_id": "INTERVAL-Y-15",
+          "source_fact_ids": [
+            "SRC-F2622-N4"
+          ],
+          "start_time_seconds": 1787709138.54,
+          "end_time_seconds": 1787709138.54
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2623,
+          "end_frame": 2623,
+          "fact_id": "INTERVAL-Y-16",
+          "source_fact_ids": [
+            "SRC-F2623-N4"
+          ],
+          "start_time_seconds": 1787709138.573,
+          "end_time_seconds": 1787709138.573
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2624,
+          "end_frame": 2631,
+          "fact_id": "INTERVAL-Y-17",
+          "source_fact_ids": [
+            "SRC-F2624-N4",
+            "SRC-F2625-N4",
+            "SRC-F2626-N4",
+            "SRC-F2627-N4",
+            "SRC-F2628-N4",
+            "SRC-F2629-N4",
+            "SRC-F2630-N4",
+            "SRC-F2631-N4"
+          ],
+          "start_time_seconds": 1787709138.607,
+          "end_time_seconds": 1787709138.84
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2632,
+          "end_frame": 2638,
+          "fact_id": "INTERVAL-Y-18",
+          "source_fact_ids": [
+            "SRC-F2632-N4",
+            "SRC-F2633-N4",
+            "SRC-F2634-N4",
+            "SRC-F2635-N4",
+            "SRC-F2636-N4",
+            "SRC-F2637-N4",
+            "SRC-F2638-N4"
+          ],
+          "start_time_seconds": 1787709138.873,
+          "end_time_seconds": 1787709139.073
+        }
+      ]
+    },
+    "per_object_loss": {
+      "A": {
+        "fact_id": "LOSS-A",
+        "source_fact_ids": [
+          "SRC-F2544-N1",
+          "SRC-F2545-N1"
+        ],
+        "last_usable_frame": 2544,
+        "first_unusable_frame": 2545,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      },
+      "B": {
+        "fact_id": "LOSS-B",
+        "source_fact_ids": [
+          "SRC-F2525-N4",
+          "SRC-F2526-N4"
+        ],
+        "last_usable_frame": 2525,
+        "first_unusable_frame": 2526,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      }
+    },
+    "per_handle_clean_return": {
+      "X": {
+        "fact_id": "RETURN-X",
+        "source_fact_ids": [
+          "SRC-F2559-N1"
+        ],
+        "first_clean_frame": 2559,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      },
+      "Y": {
+        "fact_id": "RETURN-Y",
+        "source_fact_ids": [
+          "SRC-F2566-N4"
+        ],
+        "first_clean_frame": 2566,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      }
+    },
+    "first_unusable_observation": "B",
+    "first_physical_entry": "UNKNOWN",
+    "first_identity_reappearance": "UNKNOWN",
+    "joint_clean_pair_streak": {
+      "fact_id": "PAIR-CLEAN-STREAK",
+      "source_fact_ids": [
+        "SRC-F2568-N1",
+        "SRC-F2568-N4",
+        "SRC-F2569-N1",
+        "SRC-F2569-N4",
+        "SRC-F2570-N1",
+        "SRC-F2570-N4"
+      ],
+      "frames": [
+        2568,
+        2570
+      ],
+      "interpretation": "two_handles_jointly_clean_only"
+    },
+    "entry_side": {
+      "A": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          318.0,
+          113.0
+        ]
+      },
+      "B": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          407.5,
+          157.0
+        ]
+      }
+    },
+    "relative_motion": {
+      "pre": {
+        "fact_id": "RELATIVE-PRE",
+        "source_fact_ids": [
+          "A-F2544",
+          "B-F2525",
+          "VELOCITY-A",
+          "VELOCITY-B"
+        ],
+        "status": "ESTIMATE",
+        "aligned_time_seconds": 1787709135.941,
+        "relative_position_B_minus_A_px": [
+          77.7,
+          20.052
+        ],
+        "relative_velocity_B_minus_A_px_per_s": [
+          -4.709,
+          -147.881
+        ],
+        "method": "constant_velocity_projection_within_short_clean_fragments",
+        "max_alignment_gap_seconds": 0.6329998970031738
+      },
+      "post": {
+        "fact_id": "RELATIVE-POST-Q",
+        "source_fact_ids": [
+          "X-F2638",
+          "Y-F2638",
+          "VELOCITY-X",
+          "VELOCITY-Y"
+        ],
+        "status": "OBSERVED_POSITION",
+        "time_seconds": 1787709139.073,
+        "relative_position_Y_minus_X_px": [
+          -28.0,
+          37.5
+        ],
+        "relative_velocity_Y_minus_X_px_per_s": [
+          99.651,
+          62.164
+        ]
+      }
+    },
+    "event_frame_count": 144,
+    "anonymous_observation_count": 805
+  },
+  {
+    "case": "B05",
+    "trigger": {
+      "frame": 2531,
+      "source": "fixed_AO1_prediction_window",
+      "pair_contact_predicted": true,
+      "scope": "PREDICTION_DRIVEN_CONTACT_PROXY"
+    },
+    "old_to_new_reference": {
+      "A": {
+        "old_anchor_frame": 2469,
+        "new_anchor_frame": 2469,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      },
+      "B": {
+        "old_anchor_frame": 2525,
+        "new_anchor_frame": 2525,
+        "semantic_relation": "SAME_CLEAN_FRAGMENT",
+        "source_basis": "predicted_mask_clean_continuity_only_no_GT"
+      }
+    },
+    "pre_fragments": {
+      "A": "A-F2460-2469",
+      "B": "B-F2495-2525"
+    },
+    "post_fragments": {
+      "X": "X-F2568-2580",
+      "Y": "Y-F2579-2580"
+    },
+    "availability_intervals": {
+      "A": [
+        {
+          "status": "CLEAN",
+          "start_frame": 2469,
+          "end_frame": 2469,
+          "fact_id": "INTERVAL-A-1",
+          "source_fact_ids": [
+            "SRC-F2469-N6"
+          ],
+          "start_time_seconds": 1787709133.442,
+          "end_time_seconds": 1787709133.442
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2470,
+          "end_frame": 2564,
+          "fact_id": "INTERVAL-A-2",
+          "source_fact_ids": [
+            "SRC-F2470-N6",
+            "SRC-F2471-N6",
+            "SRC-F2472-N6",
+            "SRC-F2473-N6",
+            "SRC-F2474-N6",
+            "SRC-F2475-N6",
+            "SRC-F2476-N6",
+            "SRC-F2477-N6",
+            "SRC-F2478-N6",
+            "SRC-F2479-N6",
+            "SRC-F2480-N6",
+            "SRC-F2481-N6",
+            "SRC-F2482-N6",
+            "SRC-F2483-N6",
+            "SRC-F2484-N6",
+            "SRC-F2485-N6",
+            "SRC-F2486-N6",
+            "SRC-F2487-N6",
+            "SRC-F2488-N6",
+            "SRC-F2489-N6",
+            "SRC-F2490-N6",
+            "SRC-F2491-N6",
+            "SRC-F2492-N6",
+            "SRC-F2493-N6",
+            "SRC-F2494-N6",
+            "SRC-F2495-N6",
+            "SRC-F2496-N6",
+            "SRC-F2497-N6",
+            "SRC-F2498-N6",
+            "SRC-F2499-N6",
+            "SRC-F2500-N6",
+            "SRC-F2501-N6",
+            "SRC-F2502-N6",
+            "SRC-F2503-N6",
+            "SRC-F2504-N6",
+            "SRC-F2505-N6",
+            "SRC-F2506-N6",
+            "SRC-F2507-N6",
+            "SRC-F2508-N6",
+            "SRC-F2509-N6",
+            "SRC-F2510-N6",
+            "SRC-F2511-N6",
+            "SRC-F2512-N6",
+            "SRC-F2513-N6",
+            "SRC-F2514-N6",
+            "SRC-F2515-N6",
+            "SRC-F2516-N6",
+            "SRC-F2517-N6",
+            "SRC-F2518-N6",
+            "SRC-F2519-N6",
+            "SRC-F2520-N6",
+            "SRC-F2521-N6",
+            "SRC-F2522-N6",
+            "SRC-F2523-N6",
+            "SRC-F2524-N6",
+            "SRC-F2525-N6",
+            "SRC-F2526-N6",
+            "SRC-F2527-N6",
+            "SRC-F2528-N6",
+            "SRC-F2529-N6",
+            "SRC-F2530-N6",
+            "SRC-F2531-N6",
+            "SRC-F2532-N6",
+            "SRC-F2533-N6",
+            "SRC-F2534-N6",
+            "SRC-F2535-N6",
+            "SRC-F2536-N6",
+            "SRC-F2537-N6",
+            "SRC-F2538-N6",
+            "SRC-F2539-N6",
+            "SRC-F2540-N6",
+            "SRC-F2541-N6",
+            "SRC-F2542-N6",
+            "SRC-F2543-N6",
+            "SRC-F2544-N6",
+            "SRC-F2545-N6",
+            "SRC-F2546-N6",
+            "SRC-F2547-N6",
+            "SRC-F2548-N6",
+            "SRC-F2549-N6",
+            "SRC-F2550-N6",
+            "SRC-F2551-N6",
+            "SRC-F2552-N6",
+            "SRC-F2553-N6",
+            "SRC-F2554-N6",
+            "SRC-F2555-N6",
+            "SRC-F2556-N6",
+            "SRC-F2557-N6",
+            "SRC-F2558-N6",
+            "SRC-F2559-N6",
+            "SRC-F2560-N6",
+            "SRC-F2561-N6",
+            "SRC-F2562-N6",
+            "SRC-F2563-N6",
+            "SRC-F2564-N6"
+          ],
+          "start_time_seconds": 1787709133.476,
+          "end_time_seconds": 1787709136.608
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2565,
+          "end_frame": 2570,
+          "fact_id": "INTERVAL-A-3",
+          "source_fact_ids": [
+            "SRC-F2565-N6",
+            "SRC-F2566-N6",
+            "SRC-F2567-N6",
+            "SRC-F2568-N6",
+            "SRC-F2569-N6",
+            "SRC-F2570-N6"
+          ],
+          "start_time_seconds": 1787709136.641,
+          "end_time_seconds": 1787709136.808
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2571,
+          "end_frame": 2578,
+          "fact_id": "INTERVAL-A-4",
+          "source_fact_ids": [
+            "SRC-F2571-N6",
+            "SRC-F2572-N6",
+            "SRC-F2573-N6",
+            "SRC-F2574-N6",
+            "SRC-F2575-N6",
+            "SRC-F2576-N6",
+            "SRC-F2577-N6",
+            "SRC-F2578-N6"
+          ],
+          "start_time_seconds": 1787709136.841,
+          "end_time_seconds": 1787709137.074
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2579,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-A-5",
+          "source_fact_ids": [
+            "SRC-F2579-N6",
+            "SRC-F2580-N6"
+          ],
+          "start_time_seconds": 1787709137.107,
+          "end_time_seconds": 1787709137.141
+        }
+      ],
+      "B": [
+        {
+          "status": "CLEAN",
+          "start_frame": 2525,
+          "end_frame": 2525,
+          "fact_id": "INTERVAL-B-1",
+          "source_fact_ids": [
+            "SRC-F2525-N4"
+          ],
+          "start_time_seconds": 1787709135.308,
+          "end_time_seconds": 1787709135.308
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2526,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-B-2",
+          "source_fact_ids": [
+            "SRC-F2526-N4",
+            "SRC-F2527-N4",
+            "SRC-F2528-N4",
+            "SRC-F2529-N4",
+            "SRC-F2530-N4",
+            "SRC-F2531-N4",
+            "SRC-F2532-N4",
+            "SRC-F2533-N4",
+            "SRC-F2534-N4",
+            "SRC-F2535-N4",
+            "SRC-F2536-N4",
+            "SRC-F2537-N4",
+            "SRC-F2538-N4",
+            "SRC-F2539-N4",
+            "SRC-F2540-N4",
+            "SRC-F2541-N4",
+            "SRC-F2542-N4",
+            "SRC-F2543-N4",
+            "SRC-F2544-N4",
+            "SRC-F2545-N4",
+            "SRC-F2546-N4",
+            "SRC-F2547-N4",
+            "SRC-F2548-N4",
+            "SRC-F2549-N4",
+            "SRC-F2550-N4",
+            "SRC-F2551-N4",
+            "SRC-F2552-N4",
+            "SRC-F2553-N4",
+            "SRC-F2554-N4",
+            "SRC-F2555-N4",
+            "SRC-F2556-N4",
+            "SRC-F2557-N4",
+            "SRC-F2558-N4",
+            "SRC-F2559-N4",
+            "SRC-F2560-N4",
+            "SRC-F2561-N4",
+            "SRC-F2562-N4",
+            "SRC-F2563-N4",
+            "SRC-F2564-N4",
+            "SRC-F2565-N4"
+          ],
+          "start_time_seconds": 1787709135.341,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-B-3",
+          "source_fact_ids": [
+            "SRC-F2566-N4"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-B-4",
+          "source_fact_ids": [
+            "SRC-F2567-N4"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-B-5",
+          "source_fact_ids": [
+            "SRC-F2568-N4",
+            "SRC-F2569-N4",
+            "SRC-F2570-N4",
+            "SRC-F2571-N4",
+            "SRC-F2572-N4",
+            "SRC-F2573-N4",
+            "SRC-F2574-N4",
+            "SRC-F2575-N4",
+            "SRC-F2576-N4",
+            "SRC-F2577-N4",
+            "SRC-F2578-N4",
+            "SRC-F2579-N4",
+            "SRC-F2580-N4"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        }
+      ]
+    },
+    "reappearance_intervals": {
+      "X": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2532,
+          "end_frame": 2565,
+          "fact_id": "INTERVAL-X-1",
+          "source_fact_ids": [
+            "SRC-F2532-N4",
+            "SRC-F2533-N4",
+            "SRC-F2534-N4",
+            "SRC-F2535-N4",
+            "SRC-F2536-N4",
+            "SRC-F2537-N4",
+            "SRC-F2538-N4",
+            "SRC-F2539-N4",
+            "SRC-F2540-N4",
+            "SRC-F2541-N4",
+            "SRC-F2542-N4",
+            "SRC-F2543-N4",
+            "SRC-F2544-N4",
+            "SRC-F2545-N4",
+            "SRC-F2546-N4",
+            "SRC-F2547-N4",
+            "SRC-F2548-N4",
+            "SRC-F2549-N4",
+            "SRC-F2550-N4",
+            "SRC-F2551-N4",
+            "SRC-F2552-N4",
+            "SRC-F2553-N4",
+            "SRC-F2554-N4",
+            "SRC-F2555-N4",
+            "SRC-F2556-N4",
+            "SRC-F2557-N4",
+            "SRC-F2558-N4",
+            "SRC-F2559-N4",
+            "SRC-F2560-N4",
+            "SRC-F2561-N4",
+            "SRC-F2562-N4",
+            "SRC-F2563-N4",
+            "SRC-F2564-N4",
+            "SRC-F2565-N4"
+          ],
+          "start_time_seconds": 1787709135.541,
+          "end_time_seconds": 1787709136.641
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2566,
+          "end_frame": 2566,
+          "fact_id": "INTERVAL-X-2",
+          "source_fact_ids": [
+            "SRC-F2566-N4"
+          ],
+          "start_time_seconds": 1787709136.674,
+          "end_time_seconds": 1787709136.674
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2567,
+          "end_frame": 2567,
+          "fact_id": "INTERVAL-X-3",
+          "source_fact_ids": [
+            "SRC-F2567-N4"
+          ],
+          "start_time_seconds": 1787709136.708,
+          "end_time_seconds": 1787709136.708
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2568,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-X-4",
+          "source_fact_ids": [
+            "SRC-F2568-N4",
+            "SRC-F2569-N4",
+            "SRC-F2570-N4",
+            "SRC-F2571-N4",
+            "SRC-F2572-N4",
+            "SRC-F2573-N4",
+            "SRC-F2574-N4",
+            "SRC-F2575-N4",
+            "SRC-F2576-N4",
+            "SRC-F2577-N4",
+            "SRC-F2578-N4",
+            "SRC-F2579-N4",
+            "SRC-F2580-N4"
+          ],
+          "start_time_seconds": 1787709136.741,
+          "end_time_seconds": 1787709137.141
+        }
+      ],
+      "Y": [
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2532,
+          "end_frame": 2564,
+          "fact_id": "INTERVAL-Y-1",
+          "source_fact_ids": [
+            "SRC-F2532-N6",
+            "SRC-F2533-N6",
+            "SRC-F2534-N6",
+            "SRC-F2535-N6",
+            "SRC-F2536-N6",
+            "SRC-F2537-N6",
+            "SRC-F2538-N6",
+            "SRC-F2539-N6",
+            "SRC-F2540-N6",
+            "SRC-F2541-N6",
+            "SRC-F2542-N6",
+            "SRC-F2543-N6",
+            "SRC-F2544-N6",
+            "SRC-F2545-N6",
+            "SRC-F2546-N6",
+            "SRC-F2547-N6",
+            "SRC-F2548-N6",
+            "SRC-F2549-N6",
+            "SRC-F2550-N6",
+            "SRC-F2551-N6",
+            "SRC-F2552-N6",
+            "SRC-F2553-N6",
+            "SRC-F2554-N6",
+            "SRC-F2555-N6",
+            "SRC-F2556-N6",
+            "SRC-F2557-N6",
+            "SRC-F2558-N6",
+            "SRC-F2559-N6",
+            "SRC-F2560-N6",
+            "SRC-F2561-N6",
+            "SRC-F2562-N6",
+            "SRC-F2563-N6",
+            "SRC-F2564-N6"
+          ],
+          "start_time_seconds": 1787709135.541,
+          "end_time_seconds": 1787709136.608
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2565,
+          "end_frame": 2570,
+          "fact_id": "INTERVAL-Y-2",
+          "source_fact_ids": [
+            "SRC-F2565-N6",
+            "SRC-F2566-N6",
+            "SRC-F2567-N6",
+            "SRC-F2568-N6",
+            "SRC-F2569-N6",
+            "SRC-F2570-N6"
+          ],
+          "start_time_seconds": 1787709136.641,
+          "end_time_seconds": 1787709136.808
+        },
+        {
+          "status": "CONTACT_RISK",
+          "start_frame": 2571,
+          "end_frame": 2578,
+          "fact_id": "INTERVAL-Y-3",
+          "source_fact_ids": [
+            "SRC-F2571-N6",
+            "SRC-F2572-N6",
+            "SRC-F2573-N6",
+            "SRC-F2574-N6",
+            "SRC-F2575-N6",
+            "SRC-F2576-N6",
+            "SRC-F2577-N6",
+            "SRC-F2578-N6"
+          ],
+          "start_time_seconds": 1787709136.841,
+          "end_time_seconds": 1787709137.074
+        },
+        {
+          "status": "CLEAN",
+          "start_frame": 2579,
+          "end_frame": 2580,
+          "fact_id": "INTERVAL-Y-4",
+          "source_fact_ids": [
+            "SRC-F2579-N6",
+            "SRC-F2580-N6"
+          ],
+          "start_time_seconds": 1787709137.107,
+          "end_time_seconds": 1787709137.141
+        }
+      ]
+    },
+    "per_object_loss": {
+      "A": {
+        "fact_id": "LOSS-A",
+        "source_fact_ids": [
+          "SRC-F2469-N6",
+          "SRC-F2470-N6"
+        ],
+        "last_usable_frame": 2469,
+        "first_unusable_frame": 2470,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      },
+      "B": {
+        "fact_id": "LOSS-B",
+        "source_fact_ids": [
+          "SRC-F2525-N4",
+          "SRC-F2526-N4"
+        ],
+        "last_usable_frame": 2525,
+        "first_unusable_frame": 2526,
+        "reason": "CONTACT_RISK",
+        "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+      }
+    },
+    "per_handle_clean_return": {
+      "X": {
+        "fact_id": "RETURN-X",
+        "source_fact_ids": [
+          "SRC-F2566-N4"
+        ],
+        "first_clean_frame": 2566,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      },
+      "Y": {
+        "fact_id": "RETURN-Y",
+        "source_fact_ids": [
+          "SRC-F2565-N6"
+        ],
+        "first_clean_frame": 2565,
+        "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+      }
+    },
+    "first_unusable_observation": "A",
+    "first_physical_entry": "UNKNOWN",
+    "first_identity_reappearance": "UNKNOWN",
+    "joint_clean_pair_streak": {
+      "fact_id": "PAIR-CLEAN-STREAK",
+      "source_fact_ids": [
+        "SRC-F2568-N4",
+        "SRC-F2568-N6",
+        "SRC-F2569-N4",
+        "SRC-F2569-N6",
+        "SRC-F2570-N4",
+        "SRC-F2570-N6"
+      ],
+      "frames": [
+        2568,
+        2570
+      ],
+      "interpretation": "two_handles_jointly_clean_only"
+    },
+    "entry_side": {
+      "A": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          277.0,
+          90.5
+        ]
+      },
+      "B": {
+        "status": "UNKNOWN",
+        "reason": "NO_OBSERVED_ROI_BOUNDARY_CROSSING",
+        "last_center_px": [
+          407.5,
+          157.0
+        ]
+      }
+    },
+    "relative_motion": {
+      "pre": {
+        "fact_id": "RELATIVE-PRE",
+        "source_fact_ids": [
+          "A-F2469",
+          "B-F2525",
+          "VELOCITY-A",
+          "VELOCITY-B"
+        ],
+        "status": "ESTIMATE",
+        "aligned_time_seconds": 1787709135.308,
+        "relative_position_B_minus_A_px": [
+          110.325,
+          292.499
+        ],
+        "relative_velocity_B_minus_A_px_per_s": [
+          -29.454,
+          83.282
+        ],
+        "method": "constant_velocity_projection_within_short_clean_fragments",
+        "max_alignment_gap_seconds": 1.8660001754760742
+      },
+      "post": {
+        "fact_id": "RELATIVE-POST-Q",
+        "source_fact_ids": [
+          "X-F2580",
+          "Y-F2580"
+        ],
+        "status": "OBSERVED_POSITION",
+        "time_seconds": 1787709137.141,
+        "relative_position_Y_minus_X_px": [
+          79.5,
+          15.0
+        ],
+        "relative_velocity_Y_minus_X_px_per_s": "UNKNOWN"
+      }
+    },
+    "event_frame_count": 121,
+    "anonymous_observation_count": 670
+  }
+]

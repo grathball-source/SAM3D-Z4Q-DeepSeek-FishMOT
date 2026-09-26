@@ -1,0 +1,29 @@
+# EHR-1 final review: input-lineage engineering stop
+
+**Engineering: FAIL / STOP this frozen batch. Complete event-history association: INCONCLUSIVE. Depth increment: INCONCLUSIVE. VLM necessity: NOT TESTED.** Five real B01 model calls were made, but their PRE_HISTORY did not meet the required causal identity-reference contract. Twenty fixed negative-control calls were not sent. This is not a negative result for the event-history hypothesis and does not change the sealed M3-L finding of no local increment over its two-frame numeric reference.
+
+## What was genuinely built and checked
+
+The fixed `origin/main` base was `0b65e95ce41ef67978fad08fdd098532112b79b4`. The five exposed AO1/M2-T cases, q frames, legal full mappings and candidate occupancy were retained. Original per-frame predicted masks, image-space boxes, timestamps and raw `aligned/raw_depth_mm` profiles supplied positions, motion estimates and depth quality. No physical quantity was model-generated. Twenty actual raw-HDF5 frames and 120 masks matched existing whole/core depth features exactly; original RGB dimensions and alignment hashes passed. Absolute water-surface calibration was not claimed. B01's original mask pictures at pre-contact, contact and q were opened for answer-exposed input QA; no independent identity judgment was used as a call gate.
+
+All five frozen frames satisfied the deliberately conservative *predicted pair-neighbor contact at that frame* proxy. This establishes a risk signal at the selected instant, not the complete original Z4Q proposal/episode machinery. B02–B05 were previously exposed harmful-change diagnostics; B04/B05 overlap and are not independent replicates. The requested full history requires A/B references frozen before risk, separate anonymous intermediate observations, and bounded X/Y evidence through q. The prepared packet distinguished these sections and withheld depth in E/H-2D, but its **PRE_HISTORY implementation was wrong**: it copied all observations from a matching native handle within the window into a named A/B segment, including contact-risk samples, without checking whether the old frozen role anchor connected through a clean, unchanged lineage. `fit()` excluded those samples for speed but did not remove them from the history presented to the model. The sentence “same native does not prove identity” did not repair that structural error.
+
+| Case | A/B frozen anchor → trigger | First unreliable A/B frame after anchor | Contact-risk frames in sent A/B prehistory | Calls |
+| --- | --- | --- | --- | ---: |
+| B01 | 1321/1321 → 1322 | 1321/1321 | 21/4 | 5 |
+| B02 | 7866/7890 → 7983 | 7867/7891 | 30/30 | 0 |
+| B03 | 306/315 → 319 | 307/316 | 12/3 | 0 |
+| B04 | 2544/2525 → 2545 | none/2526 | 22/19 | 0 |
+| B05 | 2469/2525 → 2531 | 2470/2526 | 30/5 | 0 |
+
+“Unreliable” here means missing/zero-area/contact-flagged predicted observation, not a GT identity error. The exact first reasons, counts and source chronology are in [LINEAGE_AUDIT_V2.json](LINEAGE_AUDIT_V2.json). The fixed pair-contact proxy first appeared at each old trigger among the checked anchors, but individual third-fish contacts had already broken several A/B lineage claims. The case and key choice remains exposed and post-selected; this check is a protocol audit, not blind generalization.
+
+## Actual calls and limited observations
+
+The official `deepseek-flash` Files API smoke succeeded after one DNS-isolation upload error that made **no inference call**. All 25 formal request bodies were sealed before first formal inference. B01's five calls ran once, sequentially, with identical H-D/repeat bodies and a candidate-only permutation. All returned `stop` and a parseable decision. Their raw choices were `DEFER` in E, H-2D, H-D, H-D-REPEAT and H-D-PERMUTE; the postseal parser found legal fact-ID structure. They are **not scoreable as a valid history experiment** because the prehistory contract failed. The four negative cases have 20 explicit missing outcomes. There is no 25-response seal and no full paired comparison. Exact response content, usage, hashes, per-attempt latency and all unsent rows are in [ATTEMPT_RESULTS.json](ATTEMPT_RESULTS.json), [CALL_LEDGER.jsonl](CALL_LEDGER.jsonl), [responses](responses), and the [partial seal](PARTIAL_RESPONSES_SEALED.json).
+
+Peak-rate upper accounting is USD **0.1407354** for one smoke plus five formal calls, versus the authorized USD 3 cap and 26 inference-request ceiling. Formal latency summed to 299.129 seconds. The actual source media, all 25 file-ID-bearing bodies, upload/file IDs, private raw wire and local private QA images remain off Git with bytes and SHA-256 inventories; public logical packets, source facts, code, tests, ledger, response content and this report are committed. No old M3-L/M2-T score or seal was altered. No tracker stage/commit, DAA restart, training, hidden test GT, private raster publication, E2 or new IDF1/HOTA was attempted.
+
+The frozen N-H2D/N-HD files report transparent motion/depth residuals for the same pre/current observations, but they cannot consume anonymous intermediate identity information. They are labelled **endpoint-history references**, and this invalid batch cannot show an advantage over a full same-information numeric comparator. Neither B01's five abstentions nor the old M3-L two-frame no-increment result tests whether a correctly frozen complete event history can help.
+
+**One next step:** in a separately authorized batch, freeze each A/B reference at the last anchor-connected clean predicted observation *before its first individual contact/alias risk*, represent later native segments as anonymous until re-established, validate this lineage on all five cases before any request, then run a new pre-registered paired test with a truly same-information numeric comparator.

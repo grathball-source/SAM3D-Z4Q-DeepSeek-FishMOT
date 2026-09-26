@@ -1,0 +1,149 @@
+{
+  "status": "POST_FREEZE_SOURCE_CONTRACT_FAILURE",
+  "rule": "One pre-event identity hypothesis may use only an anchor-connected clean segment; same native across gaps/contact is not identity proof",
+  "checked_without_GT_or_model_outputs": true,
+  "cases": [
+    {
+      "case": "B01",
+      "roles": {
+        "A": {
+          "anchor": 1321,
+          "trigger": 1322,
+          "first_unreliable": {
+            "frame": 1321,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 1,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 21
+        },
+        "B": {
+          "anchor": 1321,
+          "trigger": 1322,
+          "first_unreliable": {
+            "frame": 1321,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 1,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 4
+        }
+      }
+    },
+    {
+      "case": "B02",
+      "roles": {
+        "A": {
+          "anchor": 7866,
+          "trigger": 7983,
+          "first_unreliable": {
+            "frame": 7867,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 116,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 30
+        },
+        "B": {
+          "anchor": 7890,
+          "trigger": 7983,
+          "first_unreliable": {
+            "frame": 7891,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 92,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 30
+        }
+      }
+    },
+    {
+      "case": "B03",
+      "roles": {
+        "A": {
+          "anchor": 306,
+          "trigger": 319,
+          "first_unreliable": {
+            "frame": 307,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 12,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 12
+        },
+        "B": {
+          "anchor": 315,
+          "trigger": 319,
+          "first_unreliable": {
+            "frame": 316,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 3,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 3
+        }
+      }
+    },
+    {
+      "case": "B04",
+      "roles": {
+        "A": {
+          "anchor": 2544,
+          "trigger": 2545,
+          "first_unreliable": null,
+          "total_unreliable_frames": 0,
+          "original_anchor_connects_as_CLEAN_segment": true,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 22
+        },
+        "B": {
+          "anchor": 2525,
+          "trigger": 2545,
+          "first_unreliable": {
+            "frame": 2526,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 19,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 19
+        }
+      }
+    },
+    {
+      "case": "B05",
+      "roles": {
+        "A": {
+          "anchor": 2469,
+          "trigger": 2531,
+          "first_unreliable": {
+            "frame": 2470,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 61,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 30
+        },
+        "B": {
+          "anchor": 2525,
+          "trigger": 2531,
+          "first_unreliable": {
+            "frame": 2526,
+            "reason": "CONTACT_RISK"
+          },
+          "total_unreliable_frames": 5,
+          "original_anchor_connects_as_CLEAN_segment": false,
+          "sent_PRE_HISTORY_frames": 30,
+          "sent_contact_risk_frames": 5
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# EHR-1 event-history association — frozen engineering stop
+
+Read [FINAL_REVIEW.md](FINAL_REVIEW.md), [PROTOCOL.md](PROTOCOL.md), [SUMMARY.json](SUMMARY.json), [ATTEMPT_RESULTS.json](ATTEMPT_RESULTS.json) and [LINEAGE_AUDIT_V2.json](LINEAGE_AUDIT_V2.json). The 25 logical request bodies were frozen, but the B01-first source audit found an invalid PRE_HISTORY lineage. Only five B01 formal calls plus one image smoke were made; the other 20 are recorded as unsent. This is an engineering failure and an **inconclusive** test of complete event-history association, not evidence that M3-L's local negative result generalizes.
+
+The actual source-host run is `/home/xiongxiong/ehr1_event_history_20260926/run_v6`. Public logical requests, numeric facts, tests, call ledger, response contents and partial seal are in this directory. Restricted mask PNGs, file-ID-bearing wire, upload ledger and raw responses stay on the authorized host and are inventoried in [ARTIFACT_MANIFEST.json](ARTIFACT_MANIFEST.json). `run_v1`–`run_v5` are retained preparation attempts without model calls. No old seal, tracker, DAA process, training or E2 was changed.

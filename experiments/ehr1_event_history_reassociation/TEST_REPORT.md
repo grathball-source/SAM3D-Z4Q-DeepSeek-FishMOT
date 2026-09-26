@@ -1,0 +1,6 @@
+# EHR-1 checks and their limit
+
+- Three standalone regressions passed: invalid evidence cannot rewrite a parseable raw model choice; noncontiguous motion remains UNKNOWN; exact H-D repeat and candidate-only permutation are distinct from physical evidence.
+- Pre-send `audit.py` passed 25 logical requests, source/media hashes, q cutoff, format isolation, same-image pairing, exact repeat, candidate-only permutation, 20 actual raw-HDF5/RGB frames and 120 predicted-mask whole/core depth statistic equalities. This preflight **missed** prehistory anchor-to-segment lineage and therefore did not make the packet valid.
+- Post-freeze `lineage_check.py` found the contract error in all five cases before any negative-control call. Both initial and expanded audit outputs are retained. This check reads only prediction observations and the frozen role references; no GT, score key or model output is used to decide the stop.
+- The independent partial scorer verified 25 frozen body hashes, six inference START/END pairs, five B01 public response hashes, one real-image smoke and the partial response seal before opening the already exposed score key. It marks all five B01 decisions `UNSCORABLE_PROTOCOL` and 20 others `NOT_SENT`.

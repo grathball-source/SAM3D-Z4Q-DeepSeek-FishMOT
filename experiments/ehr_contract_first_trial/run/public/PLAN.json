@@ -1,0 +1,41 @@
+{
+  "model": "deepseek-flash",
+  "max_tokens": 65536,
+  "thinking": "enabled",
+  "reasoning_effort": "high",
+  "response_format": "json_object",
+  "cap_usd": 4,
+  "smoke_schedule": [
+    "S01",
+    "S02"
+  ],
+  "formal_schedule": [
+    "B01-E",
+    "B01-H-2D",
+    "B01-H-D",
+    "B01-H-D-REPEAT",
+    "B01-H-D-PERMUTE",
+    "B02-E",
+    "B02-H-2D",
+    "B02-H-D",
+    "B02-H-D-REPEAT",
+    "B02-H-D-PERMUTE",
+    "B03-E",
+    "B03-H-2D",
+    "B03-H-D",
+    "B03-H-D-REPEAT",
+    "B03-H-D-PERMUTE",
+    "B04-E",
+    "B04-H-2D",
+    "B04-H-D",
+    "B04-H-D-REPEAT",
+    "B04-H-D-PERMUTE",
+    "B05-E",
+    "B05-H-2D",
+    "B05-H-D",
+    "B05-H-D-REPEAT",
+    "B05-H-D-PERMUTE"
+  ],
+  "no_retry": true,
+  "formal_after_both_smoke_qualified": true
+}

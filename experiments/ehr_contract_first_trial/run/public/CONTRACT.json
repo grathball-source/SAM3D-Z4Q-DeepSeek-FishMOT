@@ -1,0 +1,76 @@
+{
+  "version": "EHR-CF-output-v1",
+  "type": "object",
+  "required": [
+    "request_id",
+    "preferred_hypothesis",
+    "hypothesis_assessments",
+    "uncertainty_reason"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "preferred_hypothesis": {
+      "enum": [
+        "H1",
+        "H2",
+        "DEFER"
+      ]
+    },
+    "hypothesis_assessments": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueIds": [
+        "H1",
+        "H2"
+      ],
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "supporting_fact_ids",
+          "conflicting_fact_ids",
+          "unresolved_assumptions"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "enum": [
+              "H1",
+              "H2"
+            ]
+          },
+          "supporting_fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "conflicting_fact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unresolved_assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "uncertainty_reason": {
+      "type": "string"
+    }
+  },
+  "normalizations": [
+    "single_label_alias_to_id",
+    "H1_H2_dictionary_to_list",
+    "assessment_order_H1_H2"
+  ]
+}

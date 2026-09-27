@@ -1,0 +1,61 @@
+{
+  "requests": [
+    {
+      "attempt_id": "S01",
+      "case": "S01",
+      "arm": "SYNTHETIC_TEST_ONLY",
+      "text": "{\"request_id\":\"SYNTHETIC_TEST_ONLY-S01\",\"q_frame\":1,\"q_time_seconds\":1.0,\"coordinate_system\":\"synthetic_320x180_px\",\"role_contract\":\"A/B are before the possible overlap; X/Y are the later observations.\",\"PRE_HISTORY\":{\"A\":{\"role\":\"A\",\"observations\":[{\"fact_id\":\"S01-A-F0\",\"source_frame\":0,\"source_time_seconds\":0.0,\"source_stream_frame\":0,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[80,103],\"bbox_px\":[46,69,114,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]},\"B\":{\"role\":\"B\",\"observations\":[{\"fact_id\":\"S01-B-F0\",\"source_frame\":0,\"source_time_seconds\":0.0,\"source_stream_frame\":0,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[240,103],\"bbox_px\":[206,69,274,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]}},\"POST_HISTORY_TO_Q\":{\"X\":{\"role\":\"X\",\"observations\":[{\"fact_id\":\"S01-X-F1\",\"source_frame\":1,\"source_time_seconds\":1.0,\"source_stream_frame\":1,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[80,103],\"bbox_px\":[46,69,114,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]},\"Y\":{\"role\":\"Y\",\"observations\":[{\"fact_id\":\"S01-Y-F1\",\"source_frame\":1,\"source_time_seconds\":1.0,\"source_stream_frame\":1,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[240,103],\"bbox_px\":[206,69,274,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]}},\"hypotheses\":[{\"id\":\"H1\",\"mapping\":{\"X\":\"B\",\"Y\":\"A\",\"U1\":\"K1\"},\"epistemic_type\":\"HYPOTHESIS\"},{\"id\":\"H2\",\"mapping\":{\"X\":\"A\",\"Y\":\"B\",\"U1\":\"K1\"},\"epistemic_type\":\"HYPOTHESIS\"}],\"IMAGE_INDEX\":[{\"image_id\":\"S01-F0\",\"frame\":0,\"time_seconds\":0.0,\"width\":320,\"height\":180,\"roi_full_mask_xyxy\":[0,0,320,180],\"full_to_image\":\"identity\",\"pixel_source\":\"SYNTHETIC_TEST_ONLY\",\"role_tokens\":[{\"role\":\"A\",\"token\":\"S01-F0:A\",\"bbox_full_px\":[46,69,114,134],\"bbox_image_px\":[46,69,114,134],\"fact_id\":\"S01-A-F0\"},{\"role\":\"B\",\"token\":\"S01-F0:B\",\"bbox_full_px\":[206,69,274,134],\"bbox_image_px\":[206,69,274,134],\"fact_id\":\"S01-B-F0\"}],\"media_file\":\"S01-F0.png\",\"sha256\":\"22e3f385168130e4e8e364c683270a4fa60ebfe3b1c7e2c1e93751c72e830a87\",\"bytes\":2199},{\"image_id\":\"S01-F1\",\"frame\":1,\"time_seconds\":1.0,\"width\":320,\"height\":180,\"roi_full_mask_xyxy\":[0,0,320,180],\"full_to_image\":\"identity\",\"pixel_source\":\"SYNTHETIC_TEST_ONLY\",\"role_tokens\":[{\"role\":\"X\",\"token\":\"S01-F1:X\",\"bbox_full_px\":[46,69,114,134],\"bbox_image_px\":[46,69,114,134],\"fact_id\":\"S01-X-F1\"},{\"role\":\"Y\",\"token\":\"S01-F1:Y\",\"bbox_full_px\":[206,69,274,134],\"bbox_image_px\":[206,69,274,134],\"fact_id\":\"S01-Y-F1\"}],\"media_file\":\"S01-F1.png\",\"sha256\":\"38bd0015ba3fba98dcf2534c2e35305fcebdb78cc4a7f78b435b80652fee0490\",\"bytes\":2214}],\"unknowns\":[\"identity after possible overlap\"],\"condition\":\"SYNTHETIC_TEST_ONLY\",\"fixture_note\":\"Geometric shapes are artificial. Compare both complete mappings using visible images. Cite actual packet fact IDs; abstain if identity is ambiguous.\"}",
+      "images": [
+        {
+          "image_id": "S01-F0",
+          "media_file": "S01-F0.png",
+          "sha256": "22e3f385168130e4e8e364c683270a4fa60ebfe3b1c7e2c1e93751c72e830a87",
+          "bytes": 2199
+        },
+        {
+          "image_id": "S01-F1",
+          "media_file": "S01-F1.png",
+          "sha256": "38bd0015ba3fba98dcf2534c2e35305fcebdb78cc4a7f78b435b80652fee0490",
+          "bytes": 2214
+        }
+      ]
+    },
+    {
+      "attempt_id": "S02",
+      "case": "S02",
+      "arm": "SYNTHETIC_TEST_ONLY",
+      "text": "{\"request_id\":\"SYNTHETIC_TEST_ONLY-S02\",\"q_frame\":1,\"q_time_seconds\":1.0,\"coordinate_system\":\"synthetic_320x180_px\",\"role_contract\":\"A/B are before the possible overlap; X/Y are the later observations.\",\"PRE_HISTORY\":{\"A\":{\"role\":\"A\",\"observations\":[{\"fact_id\":\"S02-A-F0\",\"source_frame\":0,\"source_time_seconds\":0.0,\"source_stream_frame\":0,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[80,103],\"bbox_px\":[46,69,114,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]},\"B\":{\"role\":\"B\",\"observations\":[{\"fact_id\":\"S02-B-F0\",\"source_frame\":0,\"source_time_seconds\":0.0,\"source_stream_frame\":0,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[240,103],\"bbox_px\":[206,69,274,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]}},\"POST_HISTORY_TO_Q\":{\"X\":{\"role\":\"X\",\"observations\":[{\"fact_id\":\"S02-X-F1\",\"source_frame\":1,\"source_time_seconds\":1.0,\"source_stream_frame\":1,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[135,103],\"bbox_px\":[101,69,169,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]},\"Y\":{\"role\":\"Y\",\"observations\":[{\"fact_id\":\"S02-Y-F1\",\"source_frame\":1,\"source_time_seconds\":1.0,\"source_stream_frame\":1,\"coordinate_system\":\"synthetic_320x180_px\",\"unit\":\"px\",\"bbox_center_px\":[185,103],\"bbox_px\":[151,69,219,134],\"area_px\":3500,\"neighbor_count\":0,\"quality\":{\"presence\":1,\"risk\":\"SYNTHETIC_CLEAN\"}}]}},\"hypotheses\":[{\"id\":\"H1\",\"mapping\":{\"X\":\"B\",\"Y\":\"A\",\"U1\":\"K1\"},\"epistemic_type\":\"HYPOTHESIS\"},{\"id\":\"H2\",\"mapping\":{\"X\":\"A\",\"Y\":\"B\",\"U1\":\"K1\"},\"epistemic_type\":\"HYPOTHESIS\"}],\"IMAGE_INDEX\":[{\"image_id\":\"S02-F0\",\"frame\":0,\"time_seconds\":0.0,\"width\":320,\"height\":180,\"roi_full_mask_xyxy\":[0,0,320,180],\"full_to_image\":\"identity\",\"pixel_source\":\"SYNTHETIC_TEST_ONLY\",\"role_tokens\":[{\"role\":\"A\",\"token\":\"S02-F0:A\",\"bbox_full_px\":[46,69,114,134],\"bbox_image_px\":[46,69,114,134],\"fact_id\":\"S02-A-F0\"},{\"role\":\"B\",\"token\":\"S02-F0:B\",\"bbox_full_px\":[206,69,274,134],\"bbox_image_px\":[206,69,274,134],\"fact_id\":\"S02-B-F0\"}],\"media_file\":\"S02-F0.png\",\"sha256\":\"bf3f0e98402fd90ca882ac4aa6e45a65d811d4f808f27efedef417f498653c77\",\"bytes\":2415},{\"image_id\":\"S02-F1\",\"frame\":1,\"time_seconds\":1.0,\"width\":320,\"height\":180,\"roi_full_mask_xyxy\":[0,0,320,180],\"full_to_image\":\"identity\",\"pixel_source\":\"SYNTHETIC_TEST_ONLY\",\"role_tokens\":[{\"role\":\"X\",\"token\":\"S02-F1:X\",\"bbox_full_px\":[101,69,169,134],\"bbox_image_px\":[101,69,169,134],\"fact_id\":\"S02-X-F1\"},{\"role\":\"Y\",\"token\":\"S02-F1:Y\",\"bbox_full_px\":[151,69,219,134],\"bbox_image_px\":[151,69,219,134],\"fact_id\":\"S02-Y-F1\"}],\"media_file\":\"S02-F1.png\",\"sha256\":\"fc32a87b764f33b1b013edde2afbfa9cb8b286a1b238d5c9958a8395aa8cb828\",\"bytes\":2321}],\"unknowns\":[\"identity after possible overlap\"],\"condition\":\"SYNTHETIC_TEST_ONLY\",\"fixture_note\":\"Geometric shapes are artificial. Compare both complete mappings using visible images. Cite actual packet fact IDs; abstain if identity is ambiguous.\"}",
+      "images": [
+        {
+          "image_id": "S02-F0",
+          "media_file": "S02-F0.png",
+          "sha256": "bf3f0e98402fd90ca882ac4aa6e45a65d811d4f808f27efedef417f498653c77",
+          "bytes": 2415
+        },
+        {
+          "image_id": "S02-F1",
+          "media_file": "S02-F1.png",
+          "sha256": "fc32a87b764f33b1b013edde2afbfa9cb8b286a1b238d5c9958a8395aa8cb828",
+          "bytes": 2321
+        }
+      ]
+    }
+  ],
+  "expectations": {
+    "S01": {
+      "expected_choice_diagnostic_only": "H1",
+      "correct_physical_mapping": {
+        "X": "B",
+        "Y": "A",
+        "U1": "K1"
+      },
+      "fixture_type": "DISTINCT_SHAPES"
+    },
+    "S02": {
+      "expected_choice_diagnostic_only": "DEFER",
+      "correct_physical_mapping": null,
+      "fixture_type": "AMBIGUOUS_IDENTICAL_SHAPES"
+    }
+  },
+  "status": "SYNTHETIC_TEST_ONLY"
+}

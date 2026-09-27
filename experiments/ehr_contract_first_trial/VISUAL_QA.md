@@ -1,0 +1,5 @@
+# Pre-inference visual QA of actual sealed images
+
+Eight private images were opened: B01 endpoint frames 1314, 1317, 1498 and middle frame 1323; B02 endpoint frames 7866, 7890, 8069 and middle frame 7984. The endpoint A/B and X/Y yellow boxes visibly lie on the intended fish-like regions in the original RGB ROI. Both middle gray-mask views show six distinct printed frame-local tokens in regions; the B01 `G010` token `f010:o01` binds to `EV-F1323-T04875027` and the frame-1323 table row, and the B02 `G018` token `f018:o01` binds to `EV-F7984-Tc3b9d3da` and the frame-7984 row. The corresponding depth median/quality values are 816.2160 mm/OBSERVED_PROFILE and 816.4629 mm/OBSERVED_PROFILE, respectively, traced to the original depth stream by the source check.
+
+This checks visible placement and token-to-fact linkage only. It does not certify a fish identity through the interaction. The other 47 fixed media files were SHA-256 checked but not visually opened. Pixels and native lineage remain off Git; see `run/public/RESTRICTED_INVENTORY.json` when the run is complete.

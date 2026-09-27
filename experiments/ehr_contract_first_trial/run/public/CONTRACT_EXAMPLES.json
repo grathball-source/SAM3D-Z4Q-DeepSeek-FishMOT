@@ -1,0 +1,75 @@
+{
+  "schema_version": "EHR-CF-output-v1",
+  "examples": [
+    {
+      "request_id": "SYNTHETIC_TEST_ONLY",
+      "preferred_hypothesis": "H1",
+      "hypothesis_assessments": [
+        {
+          "id": "H1",
+          "supporting_fact_ids": [
+            "TEST-F1"
+          ],
+          "conflicting_fact_ids": [],
+          "unresolved_assumptions": []
+        },
+        {
+          "id": "H2",
+          "supporting_fact_ids": [],
+          "conflicting_fact_ids": [
+            "TEST-F2"
+          ],
+          "unresolved_assumptions": []
+        }
+      ],
+      "uncertainty_reason": ""
+    },
+    {
+      "request_id": "SYNTHETIC_TEST_ONLY",
+      "preferred_hypothesis": "H2",
+      "hypothesis_assessments": [
+        {
+          "id": "H1",
+          "supporting_fact_ids": [],
+          "conflicting_fact_ids": [
+            "TEST-F2"
+          ],
+          "unresolved_assumptions": []
+        },
+        {
+          "id": "H2",
+          "supporting_fact_ids": [
+            "TEST-F1"
+          ],
+          "conflicting_fact_ids": [],
+          "unresolved_assumptions": []
+        }
+      ],
+      "uncertainty_reason": ""
+    },
+    {
+      "request_id": "SYNTHETIC_TEST_ONLY",
+      "preferred_hypothesis": "DEFER",
+      "hypothesis_assessments": [
+        {
+          "id": "H1",
+          "supporting_fact_ids": [],
+          "conflicting_fact_ids": [],
+          "unresolved_assumptions": [
+            "fixture ambiguity"
+          ]
+        },
+        {
+          "id": "H2",
+          "supporting_fact_ids": [],
+          "conflicting_fact_ids": [],
+          "unresolved_assumptions": [
+            "fixture ambiguity"
+          ]
+        }
+      ],
+      "uncertainty_reason": "Fixture is ambiguous."
+    }
+  ],
+  "fixture_only": true
+}

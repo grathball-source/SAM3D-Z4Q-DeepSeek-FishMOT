@@ -1,0 +1,1331 @@
+{
+  "status": "POSTSEAL_CLAIM_AND_PHYSICAL_MAPPING_AUDIT",
+  "source_sha256": {
+    "events": "1672835d7115568128890654c543ef8be98e7cc6cd8b3a8fcdb93c4f5ce5f06a",
+    "postseal_score": "fa02136ddd84c8cb2b5471d16946aeab9f991ec42f89f00243d5af69c36a1c43",
+    "old_prediction": "33b0f11d07502ce8a256426a32cfcf7b5500c9a6e43171ea1b88feddcc50d671",
+    "b03_only_prediction": "d32ac30845a57fbdf5399fc435c071517e11dda47d2bfece778378011cee38e6",
+    "B03": {
+      "packet": "d08ddf8a6ddad750a4de886d3493fba083faa1da1d2f6086d2a6a01c8de732ac",
+      "response": "3d1fb11b920c7c63019d5f5c3cdd663aea267d01b7ba81f6daefd4ec417bb8dd"
+    },
+    "B01": {
+      "packet": "cd93b81db27588e86383732289319d7114c025dc2a38960c00c495799270a72f",
+      "response": "b0d27282e1b4718acd87a0d2c10671d31300aed6a13a0a2e2940f9419938c55c"
+    },
+    "B05": {
+      "packet": "83d0008678ff07ca61ce2b53403f8269d1aca27b44cb79521bbf01a14b5cd963",
+      "response": "fbaf6a767d9a918b6ebe95b1dc49865ee0000f42a65166d961757a02c010b75f"
+    },
+    "B04": {
+      "packet": "982f7b314c7924f6879dc239d246d7e7c889bbb1f074fa7156508a832963b8ef",
+      "response": "241a9e72d1d9daaac83c6b54c06fff4b23eadbc66f93f24f6c5efbea2c697892"
+    }
+  },
+  "cases": {
+    "B03": {
+      "q": 377,
+      "trigger_frame": 319,
+      "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+      "model_choice": "H2",
+      "action": "COMMIT",
+      "model_reason": "Y matches A's tall/vertical bbox aspect and fill ratio, while X matches B's broader shape; the pre relative order (B right/above A) is preserved by X/Y (X right/above Y), whereas H1 would imply an unsupported left/right and vertical swap across the contact.",
+      "chosen_complete_local_gt_match": false,
+      "endpoint_facts": {
+        "A": {
+          "source_fact_id": "A-F306",
+          "source_frame": 306,
+          "time_seconds": 1787709061.376,
+          "observation_count": 31,
+          "center_px": [
+            264.0,
+            143.0
+          ],
+          "bbox_px": [
+            247.0,
+            102.0,
+            281.0,
+            184.0
+          ],
+          "depth_fact_id": "D-A-F306",
+          "whole_depth_mm": 828.6537475585938,
+          "whole_depth_mad_mm": 7.55926513671875,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 810.5765380859375,
+          "core_depth_mad_mm": 13.36083984375,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-A",
+          "velocity_px_per_s": [
+            4.873,
+            -28.672
+          ],
+          "speed_px_per_s": 29.084,
+          "velocity_status": "ESTIMATE"
+        },
+        "B": {
+          "source_fact_id": "B-F315",
+          "source_frame": 315,
+          "time_seconds": 1787709061.676,
+          "observation_count": 31,
+          "center_px": [
+            301.0,
+            139.5
+          ],
+          "bbox_px": [
+            265.0,
+            104.0,
+            337.0,
+            175.0
+          ],
+          "depth_fact_id": "D-B-F315",
+          "whole_depth_mm": 838.2077026367188,
+          "whole_depth_mad_mm": 5.67095947265625,
+          "whole_depth_valid_fraction": 0.7839931153184165,
+          "core_depth_mm": 834.4656982421875,
+          "core_depth_mad_mm": 9.77716064453125,
+          "core_depth_valid_fraction": 0.6942857142857143,
+          "velocity_fact_id": "VELOCITY-B",
+          "velocity_px_per_s": [
+            -7.103,
+            -2.253
+          ],
+          "speed_px_per_s": 7.451,
+          "velocity_status": "ESTIMATE"
+        },
+        "X": {
+          "source_fact_id": "X-F377",
+          "source_frame": 377,
+          "time_seconds": 1787709063.741,
+          "observation_count": 15,
+          "center_px": [
+            307.0,
+            96.5
+          ],
+          "bbox_px": [
+            272.0,
+            68.0,
+            342.0,
+            125.0
+          ],
+          "depth_fact_id": "D-X-F377",
+          "whole_depth_mm": 832.3088684082031,
+          "whole_depth_mad_mm": 8.72735595703125,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 822.626953125,
+          "core_depth_mad_mm": 14.660003662109375,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-X",
+          "velocity_px_per_s": [
+            12.282,
+            0.107
+          ],
+          "speed_px_per_s": 12.282,
+          "velocity_status": "ESTIMATE"
+        },
+        "Y": {
+          "source_fact_id": "Y-F377",
+          "source_frame": 377,
+          "time_seconds": 1787709063.741,
+          "observation_count": 15,
+          "center_px": [
+            262.0,
+            118.0
+          ],
+          "bbox_px": [
+            243.0,
+            72.0,
+            281.0,
+            164.0
+          ],
+          "depth_fact_id": "D-Y-F377",
+          "whole_depth_mm": 829.7344970703125,
+          "whole_depth_mad_mm": 8.31170654296875,
+          "whole_depth_valid_fraction": 0.9938488576449912,
+          "core_depth_mm": 833.3970336914062,
+          "core_depth_mad_mm": 6.0804443359375,
+          "core_depth_valid_fraction": 0.9944289693593314,
+          "velocity_fact_id": "VELOCITY-Y",
+          "velocity_px_per_s": [
+            30.516,
+            20.859
+          ],
+          "speed_px_per_s": 36.964,
+          "velocity_status": "ESTIMATE"
+        }
+      },
+      "pre_to_q_gap_seconds": {
+        "A": 2.365000009536743,
+        "B": 2.06499981880188
+      },
+      "interaction_rows": 520,
+      "identity_reappearance": "UNKNOWN",
+      "per_object_loss": {
+        "A": {
+          "fact_id": "LOSS-A",
+          "source_fact_ids": [
+            "A-F306",
+            "EV-F307-T61c455be"
+          ],
+          "last_usable_frame": 306,
+          "first_unusable_frame": 307,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        },
+        "B": {
+          "fact_id": "LOSS-B",
+          "source_fact_ids": [
+            "B-F315",
+            "EV-F316-Tffcc1931"
+          ],
+          "last_usable_frame": 315,
+          "first_unusable_frame": 316,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        }
+      },
+      "per_handle_clean_return": {
+        "X": {
+          "fact_id": "RETURN-X",
+          "source_fact_ids": [
+            "EV-F344-T25f4934b"
+          ],
+          "first_clean_frame": 344,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        },
+        "Y": {
+          "fact_id": "RETURN-Y",
+          "source_fact_ids": [
+            "EV-F344-Taaea0cec"
+          ],
+          "first_clean_frame": 344,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        }
+      },
+      "relative_motion": {
+        "pre": {
+          "fact_id": "RELATIVE-PRE",
+          "source_fact_ids": [
+            "A-F306",
+            "B-F315",
+            "VELOCITY-A",
+            "VELOCITY-B"
+          ],
+          "status": "ESTIMATE",
+          "aligned_time_seconds": 1787709061.676,
+          "relative_position_B_minus_A_px": [
+            35.538,
+            5.102
+          ],
+          "relative_velocity_B_minus_A_px_per_s": [
+            -11.976,
+            26.419
+          ],
+          "method": "constant_velocity_projection_within_short_clean_fragments",
+          "max_alignment_gap_seconds": 0.3000001907348633
+        },
+        "post": {
+          "fact_id": "RELATIVE-POST-Q",
+          "source_fact_ids": [
+            "X-F377",
+            "Y-F377",
+            "VELOCITY-X",
+            "VELOCITY-Y"
+          ],
+          "status": "OBSERVED_POSITION",
+          "time_seconds": 1787709063.741,
+          "relative_position_Y_minus_X_px": [
+            -45.0,
+            21.5
+          ],
+          "relative_velocity_Y_minus_X_px_per_s": [
+            18.234,
+            20.752
+          ]
+        }
+      },
+      "hypotheses": {
+        "H1": {
+          "mapping": {
+            "X": "A",
+            "Y": "B"
+          },
+          "local_gt_edge_matches": {
+            "X": true,
+            "Y": true
+          },
+          "complete_local_gt_match": true,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 3.655120849609375
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 8.47320556640625
+              }
+            ],
+            "sum_absolute_mm": 12.128326416015625
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 12.0504150390625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 1.06866455078125
+              }
+            ],
+            "sum_absolute_mm": 13.11907958984375
+          }
+        },
+        "H2": {
+          "mapping": {
+            "X": "B",
+            "Y": "A"
+          },
+          "local_gt_edge_matches": {
+            "X": false,
+            "Y": false
+          },
+          "complete_local_gt_match": false,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 5.898834228515625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 1.08074951171875
+              }
+            ],
+            "sum_absolute_mm": 6.979583740234375
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 11.8387451171875
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 22.82049560546875
+              }
+            ],
+            "sum_absolute_mm": 34.65924072265625
+          }
+        }
+      },
+      "postseal_role_gt_binding": {
+        "references": {
+          "A": {
+            "frame": 306,
+            "native": 1,
+            "branch_public": 1,
+            "local_gt": 2,
+            "fixed_public_gt": 2
+          },
+          "B": {
+            "frame": 315,
+            "native": 5,
+            "branch_public": 5,
+            "local_gt": 5,
+            "fixed_public_gt": 5
+          }
+        },
+        "q": {
+          "X": {
+            "frame": 377,
+            "native": 1,
+            "gt": 2
+          },
+          "Y": {
+            "frame": 377,
+            "native": 5,
+            "gt": 5
+          }
+        },
+        "choice": "H2",
+        "action": "COMMIT"
+      }
+    },
+    "B01": {
+      "q": 1498,
+      "trigger_frame": 1322,
+      "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+      "model_choice": "H2",
+      "action": "KEEP",
+      "model_reason": "H2 is better supported by the measured post-contact fragment continuations and depth quality: the smaller post-contact fragment track from A continues into X, while the larger, high-valid-fraction track from B continues into Y. H1 would require B to become the stationary X and A to become the moving Y, which is opposite those measured continuities.",
+      "chosen_complete_local_gt_match": false,
+      "endpoint_facts": {
+        "A": {
+          "source_fact_id": "A-F1314",
+          "source_frame": 1314,
+          "time_seconds": 1787709094.961,
+          "observation_count": 1,
+          "center_px": [
+            334.0,
+            192.5
+          ],
+          "bbox_px": [
+            299.0,
+            175.0,
+            369.0,
+            210.0
+          ],
+          "depth_fact_id": "D-A-F1314",
+          "whole_depth_mm": 779.724853515625,
+          "whole_depth_mad_mm": 40.58758544921875,
+          "whole_depth_valid_fraction": 0.6422613531047267,
+          "core_depth_mm": 746.8795776367188,
+          "core_depth_mad_mm": 15.0941162109375,
+          "core_depth_valid_fraction": 0.6564551422319475,
+          "velocity_fact_id": null,
+          "velocity_px_per_s": null,
+          "speed_px_per_s": null,
+          "velocity_status": "UNKNOWN"
+        },
+        "B": {
+          "source_fact_id": "B-F1317",
+          "source_frame": 1317,
+          "time_seconds": 1787709095.061,
+          "observation_count": 31,
+          "center_px": [
+            416.5,
+            159.0
+          ],
+          "bbox_px": [
+            389.0,
+            128.0,
+            444.0,
+            190.0
+          ],
+          "depth_fact_id": "D-B-F1317",
+          "whole_depth_mm": 814.4926452636719,
+          "whole_depth_mad_mm": 9.791839599609375,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 813.431884765625,
+          "core_depth_mad_mm": 8.525634765625,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-B",
+          "velocity_px_per_s": [
+            63.305,
+            47.642
+          ],
+          "speed_px_per_s": 79.23,
+          "velocity_status": "ESTIMATE"
+        },
+        "X": {
+          "source_fact_id": "X-F1498",
+          "source_frame": 1498,
+          "time_seconds": 1787709101.092,
+          "observation_count": 15,
+          "center_px": [
+            267.0,
+            153.0
+          ],
+          "bbox_px": [
+            227.0,
+            112.0,
+            307.0,
+            194.0
+          ],
+          "depth_fact_id": "D-X-F1498",
+          "whole_depth_mm": 829.3338623046875,
+          "whole_depth_mad_mm": 7.66802978515625,
+          "whole_depth_valid_fraction": 0.8770318021201413,
+          "core_depth_mm": 821.4900817871094,
+          "core_depth_mad_mm": 13.722259521484375,
+          "core_depth_valid_fraction": 0.9076305220883534,
+          "velocity_fact_id": "VELOCITY-X",
+          "velocity_px_per_s": [
+            0.107,
+            -0.053
+          ],
+          "speed_px_per_s": 0.12,
+          "velocity_status": "ESTIMATE"
+        },
+        "Y": {
+          "source_fact_id": "Y-F1498",
+          "source_frame": 1498,
+          "time_seconds": 1787709101.092,
+          "observation_count": 15,
+          "center_px": [
+            375.0,
+            201.5
+          ],
+          "bbox_px": [
+            349.0,
+            161.0,
+            401.0,
+            242.0
+          ],
+          "depth_fact_id": "D-Y-F1498",
+          "whole_depth_mm": 825.5032958984375,
+          "whole_depth_mad_mm": 5.10723876953125,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 824.3828125,
+          "core_depth_mad_mm": 6.55584716796875,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-Y",
+          "velocity_px_per_s": [
+            22.999,
+            -16.566
+          ],
+          "speed_px_per_s": 28.344,
+          "velocity_status": "ESTIMATE"
+        }
+      },
+      "pre_to_q_gap_seconds": {
+        "A": 6.13100004196167,
+        "B": 6.0309998989105225
+      },
+      "interaction_rows": 1210,
+      "identity_reappearance": "UNKNOWN",
+      "per_object_loss": {
+        "A": {
+          "fact_id": "LOSS-A",
+          "source_fact_ids": [
+            "A-F1314",
+            "EV-F1315-Td05d31ff"
+          ],
+          "last_usable_frame": 1314,
+          "first_unusable_frame": 1315,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        },
+        "B": {
+          "fact_id": "LOSS-B",
+          "source_fact_ids": [
+            "B-F1317",
+            "EV-F1318-T334085e1"
+          ],
+          "last_usable_frame": 1317,
+          "first_unusable_frame": 1318,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        }
+      },
+      "per_handle_clean_return": {
+        "X": {
+          "fact_id": "RETURN-X",
+          "source_fact_ids": [
+            "EV-F1368-Ta65dd0f7"
+          ],
+          "first_clean_frame": 1368,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        },
+        "Y": {
+          "fact_id": "RETURN-Y",
+          "source_fact_ids": [
+            "EV-F1350-T677db08f"
+          ],
+          "first_clean_frame": 1350,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        }
+      },
+      "relative_motion": {
+        "pre": {
+          "status": "UNKNOWN",
+          "reason": "UNALIGNED_OR_MISSING_VELOCITY"
+        },
+        "post": {
+          "fact_id": "RELATIVE-POST-Q",
+          "source_fact_ids": [
+            "X-F1498",
+            "Y-F1498",
+            "VELOCITY-X",
+            "VELOCITY-Y"
+          ],
+          "status": "OBSERVED_POSITION",
+          "time_seconds": 1787709101.092,
+          "relative_position_Y_minus_X_px": [
+            108.0,
+            48.5
+          ],
+          "relative_velocity_Y_minus_X_px_per_s": [
+            22.892,
+            -16.513
+          ]
+        }
+      },
+      "hypotheses": {
+        "H1": {
+          "mapping": {
+            "X": "B",
+            "Y": "A"
+          },
+          "local_gt_edge_matches": {
+            "X": true,
+            "Y": true
+          },
+          "complete_local_gt_match": true,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 14.841217041015625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 45.7784423828125
+              }
+            ],
+            "sum_absolute_mm": 60.619659423828125
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 8.058197021484375
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 77.50323486328125
+              }
+            ],
+            "sum_absolute_mm": 85.56143188476562
+          }
+        },
+        "H2": {
+          "mapping": {
+            "X": "A",
+            "Y": "B"
+          },
+          "local_gt_edge_matches": {
+            "X": false,
+            "Y": false
+          },
+          "complete_local_gt_match": false,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 49.6090087890625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 11.010650634765625
+              }
+            ],
+            "sum_absolute_mm": 60.619659423828125
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 74.61050415039062
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 10.950927734375
+              }
+            ],
+            "sum_absolute_mm": 85.56143188476562
+          }
+        }
+      },
+      "postseal_role_gt_binding": {
+        "references": {
+          "A": {
+            "frame": 1314,
+            "native": 1,
+            "branch_public": 5,
+            "local_gt": 2,
+            "fixed_public_gt": 5
+          },
+          "B": {
+            "frame": 1317,
+            "native": 4,
+            "branch_public": 4,
+            "local_gt": 6,
+            "fixed_public_gt": 6
+          }
+        },
+        "q": {
+          "X": {
+            "frame": 1498,
+            "native": 1,
+            "gt": 6
+          },
+          "Y": {
+            "frame": 1498,
+            "native": 4,
+            "gt": 2
+          }
+        },
+        "choice": "H2",
+        "action": "KEEP"
+      }
+    },
+    "B05": {
+      "q": 2580,
+      "trigger_frame": 2531,
+      "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+      "model_choice": "H2",
+      "action": "KEEP",
+      "model_reason": "Anonymous contact-risk trajectory evidence links B's first unusable observation (frame 2526, around 407,155) continuously toward X at frame 2568, while A's first unusable observation (frame 2470, around 278,80) continues toward Y at frame 2579. Depth-core medians also align better in H2: A~776 -> Y~779, and B~760 -> X~743-757. H2 (X=B, Y=A) explains the post-contact crossing and relative positions better than H1.",
+      "chosen_complete_local_gt_match": true,
+      "endpoint_facts": {
+        "A": {
+          "source_fact_id": "A-F2469",
+          "source_frame": 2469,
+          "time_seconds": 1787709133.442,
+          "observation_count": 10,
+          "center_px": [
+            277.0,
+            90.5
+          ],
+          "bbox_px": [
+            251.0,
+            54.0,
+            303.0,
+            127.0
+          ],
+          "depth_fact_id": "D-A-F2469",
+          "whole_depth_mm": 819.0371704101562,
+          "whole_depth_mad_mm": 13.37225341796875,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 798.3331298828125,
+          "core_depth_mad_mm": 10.8553466796875,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-A",
+          "velocity_px_per_s": [
+            10.812,
+            -121.114
+          ],
+          "speed_px_per_s": 121.596,
+          "velocity_status": "ESTIMATE"
+        },
+        "B": {
+          "source_fact_id": "B-F2525",
+          "source_frame": 2525,
+          "time_seconds": 1787709135.308,
+          "observation_count": 31,
+          "center_px": [
+            407.5,
+            157.0
+          ],
+          "bbox_px": [
+            365.0,
+            141.0,
+            450.0,
+            173.0
+          ],
+          "depth_fact_id": "D-B-F2525",
+          "whole_depth_mm": 777.5590515136719,
+          "whole_depth_mad_mm": 23.316009521484375,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 751.6807250976562,
+          "core_depth_mad_mm": 5.87371826171875,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-B",
+          "velocity_px_per_s": [
+            -18.642,
+            -37.832
+          ],
+          "speed_px_per_s": 42.176,
+          "velocity_status": "ESTIMATE"
+        },
+        "X": {
+          "source_fact_id": "X-F2580",
+          "source_frame": 2580,
+          "time_seconds": 1787709137.141,
+          "observation_count": 13,
+          "center_px": [
+            264.0,
+            196.0
+          ],
+          "bbox_px": [
+            252.0,
+            175.0,
+            276.0,
+            217.0
+          ],
+          "depth_fact_id": "D-X-F2580",
+          "whole_depth_mm": 828.5519409179688,
+          "whole_depth_mad_mm": 3.2047119140625,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": null,
+          "core_depth_mad_mm": null,
+          "core_depth_valid_fraction": 0.0,
+          "velocity_fact_id": "VELOCITY-X",
+          "velocity_px_per_s": [
+            -20.716,
+            44.154
+          ],
+          "speed_px_per_s": 48.772,
+          "velocity_status": "ESTIMATE"
+        },
+        "Y": {
+          "source_fact_id": "Y-F2580",
+          "source_frame": 2580,
+          "time_seconds": 1787709137.141,
+          "observation_count": 2,
+          "center_px": [
+            343.5,
+            211.0
+          ],
+          "bbox_px": [
+            307.0,
+            185.0,
+            380.0,
+            237.0
+          ],
+          "depth_fact_id": "D-Y-F2580",
+          "whole_depth_mm": 796.258056640625,
+          "whole_depth_mad_mm": 21.154083251953125,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 779.3639526367188,
+          "core_depth_mad_mm": 9.420166015625,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": null,
+          "velocity_px_per_s": null,
+          "speed_px_per_s": null,
+          "velocity_status": "UNKNOWN"
+        }
+      },
+      "pre_to_q_gap_seconds": {
+        "A": 3.699000120162964,
+        "B": 1.8329999446868896
+      },
+      "interaction_rows": 670,
+      "identity_reappearance": "UNKNOWN",
+      "per_object_loss": {
+        "A": {
+          "fact_id": "LOSS-A",
+          "source_fact_ids": [
+            "A-F2469",
+            "EV-F2470-T63b8ad09"
+          ],
+          "last_usable_frame": 2469,
+          "first_unusable_frame": 2470,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        },
+        "B": {
+          "fact_id": "LOSS-B",
+          "source_fact_ids": [
+            "B-F2525",
+            "EV-F2526-T93382c42"
+          ],
+          "last_usable_frame": 2525,
+          "first_unusable_frame": 2526,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        }
+      },
+      "per_handle_clean_return": {
+        "X": {
+          "fact_id": "RETURN-X",
+          "source_fact_ids": [
+            "EV-F2566-T89e60b75"
+          ],
+          "first_clean_frame": 2566,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        },
+        "Y": {
+          "fact_id": "RETURN-Y",
+          "source_fact_ids": [
+            "EV-F2565-T55f2b27f"
+          ],
+          "first_clean_frame": 2565,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        }
+      },
+      "relative_motion": {
+        "pre": {
+          "fact_id": "RELATIVE-PRE",
+          "source_fact_ids": [
+            "A-F2469",
+            "B-F2525",
+            "VELOCITY-A",
+            "VELOCITY-B"
+          ],
+          "status": "ESTIMATE",
+          "aligned_time_seconds": 1787709135.308,
+          "relative_position_B_minus_A_px": [
+            110.325,
+            292.499
+          ],
+          "relative_velocity_B_minus_A_px_per_s": [
+            -29.454,
+            83.282
+          ],
+          "method": "constant_velocity_projection_within_short_clean_fragments",
+          "max_alignment_gap_seconds": 1.8660001754760742
+        },
+        "post": {
+          "fact_id": "RELATIVE-POST-Q",
+          "source_fact_ids": [
+            "X-F2580",
+            "Y-F2580"
+          ],
+          "status": "OBSERVED_POSITION",
+          "time_seconds": 1787709137.141,
+          "relative_position_Y_minus_X_px": [
+            79.5,
+            15.0
+          ],
+          "relative_velocity_Y_minus_X_px_per_s": "UNKNOWN"
+        }
+      },
+      "hypotheses": {
+        "H1": {
+          "mapping": {
+            "X": "A",
+            "Y": "B"
+          },
+          "local_gt_edge_matches": {
+            "X": false,
+            "Y": false
+          },
+          "complete_local_gt_match": false,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 9.5147705078125
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 18.699005126953125
+              }
+            ],
+            "sum_absolute_mm": 28.213775634765625
+          },
+          "core_depth_endpoint_distance": null
+        },
+        "H2": {
+          "mapping": {
+            "X": "B",
+            "Y": "A"
+          },
+          "local_gt_edge_matches": {
+            "X": true,
+            "Y": true
+          },
+          "complete_local_gt_match": true,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 50.992889404296875
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 22.77911376953125
+              }
+            ],
+            "sum_absolute_mm": 73.77200317382812
+          },
+          "core_depth_endpoint_distance": null
+        }
+      },
+      "postseal_role_gt_binding": {
+        "references": {
+          "A": {
+            "frame": 2469,
+            "native": 6,
+            "branch_public": 2,
+            "local_gt": 1,
+            "fixed_public_gt": 4
+          },
+          "B": {
+            "frame": 2525,
+            "native": 4,
+            "branch_public": 4,
+            "local_gt": 2,
+            "fixed_public_gt": 6
+          }
+        },
+        "q": {
+          "X": {
+            "frame": 2580,
+            "native": 4,
+            "gt": 2
+          },
+          "Y": {
+            "frame": 2580,
+            "native": 6,
+            "gt": 1
+          }
+        },
+        "choice": "H2",
+        "action": "KEEP"
+      }
+    },
+    "B04": {
+      "q": 2638,
+      "trigger_frame": 2545,
+      "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+      "model_choice": "H1",
+      "action": "COMMIT",
+      "model_reason": "H1 better fits the measured motion and raw depth: Y continues A's near-vertical downward/slow direction with matching ~829-832 mm whole-depth profile, while X lies up-left of B's last position and falls within B's observed depth range; H2 would require A to reverse direction and B to switch to a much deeper depth profile.",
+      "chosen_complete_local_gt_match": false,
+      "endpoint_facts": {
+        "A": {
+          "source_fact_id": "A-F2544",
+          "source_frame": 2544,
+          "time_seconds": 1787709135.941,
+          "observation_count": 8,
+          "center_px": [
+            318.0,
+            113.0
+          ],
+          "bbox_px": [
+            286.0,
+            68.0,
+            350.0,
+            158.0
+          ],
+          "depth_fact_id": "D-A-F2544",
+          "whole_depth_mm": 831.6930236816406,
+          "whole_depth_mad_mm": 11.31494140625,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 826.14306640625,
+          "core_depth_mad_mm": 12.134521484375,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-A",
+          "velocity_px_per_s": [
+            -13.933,
+            110.049
+          ],
+          "speed_px_per_s": 110.927,
+          "velocity_status": "ESTIMATE"
+        },
+        "B": {
+          "source_fact_id": "B-F2525",
+          "source_frame": 2525,
+          "time_seconds": 1787709135.308,
+          "observation_count": 31,
+          "center_px": [
+            407.5,
+            157.0
+          ],
+          "bbox_px": [
+            365.0,
+            141.0,
+            450.0,
+            173.0
+          ],
+          "depth_fact_id": "D-B-F2525",
+          "whole_depth_mm": 777.5590515136719,
+          "whole_depth_mad_mm": 23.316009521484375,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 751.6807250976562,
+          "core_depth_mad_mm": 5.87371826171875,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-B",
+          "velocity_px_per_s": [
+            -18.642,
+            -37.832
+          ],
+          "speed_px_per_s": 42.176,
+          "velocity_status": "ESTIMATE"
+        },
+        "X": {
+          "source_fact_id": "X-F2638",
+          "source_frame": 2638,
+          "time_seconds": 1787709139.073,
+          "observation_count": 7,
+          "center_px": [
+            345.5,
+            86.0
+          ],
+          "bbox_px": [
+            307.0,
+            73.0,
+            384.0,
+            99.0
+          ],
+          "depth_fact_id": "D-X-F2638",
+          "whole_depth_mm": 797.5133056640625,
+          "whole_depth_mad_mm": 16.026611328125,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 783.3243103027344,
+          "core_depth_mad_mm": 6.970916748046875,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-X",
+          "velocity_px_per_s": [
+            -11.828,
+            -36.425
+          ],
+          "speed_px_per_s": 38.297,
+          "velocity_status": "ESTIMATE"
+        },
+        "Y": {
+          "source_fact_id": "Y-F2638",
+          "source_frame": 2638,
+          "time_seconds": 1787709139.073,
+          "observation_count": 7,
+          "center_px": [
+            317.5,
+            123.5
+          ],
+          "bbox_px": [
+            280.0,
+            114.0,
+            355.0,
+            133.0
+          ],
+          "depth_fact_id": "D-Y-F2638",
+          "whole_depth_mm": 831.670654296875,
+          "whole_depth_mad_mm": 8.28900146484375,
+          "whole_depth_valid_fraction": 1.0,
+          "core_depth_mm": 816.0415954589844,
+          "core_depth_mad_mm": 5.2757568359375,
+          "core_depth_valid_fraction": 1.0,
+          "velocity_fact_id": "VELOCITY-Y",
+          "velocity_px_per_s": [
+            87.823,
+            25.739
+          ],
+          "speed_px_per_s": 91.517,
+          "velocity_status": "ESTIMATE"
+        }
+      },
+      "pre_to_q_gap_seconds": {
+        "A": 3.131999969482422,
+        "B": 3.7649998664855957
+      },
+      "interaction_rows": 805,
+      "identity_reappearance": "UNKNOWN",
+      "per_object_loss": {
+        "A": {
+          "fact_id": "LOSS-A",
+          "source_fact_ids": [
+            "A-F2544",
+            "EV-F2545-T2fc70498"
+          ],
+          "last_usable_frame": 2544,
+          "first_unusable_frame": 2545,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        },
+        "B": {
+          "fact_id": "LOSS-B",
+          "source_fact_ids": [
+            "B-F2525",
+            "EV-F2526-T93382c42"
+          ],
+          "last_usable_frame": 2525,
+          "first_unusable_frame": 2526,
+          "reason": "CONTACT_RISK",
+          "interpretation": "predicted_observation_usable_interval_not_physical_occlusion_time"
+        }
+      },
+      "per_handle_clean_return": {
+        "X": {
+          "fact_id": "RETURN-X",
+          "source_fact_ids": [
+            "EV-F2559-Tfeefd52e"
+          ],
+          "first_clean_frame": 2559,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        },
+        "Y": {
+          "fact_id": "RETURN-Y",
+          "source_fact_ids": [
+            "EV-F2566-T89e60b75"
+          ],
+          "first_clean_frame": 2566,
+          "interpretation": "handle_clean_availability_not_certified_identity_reappearance"
+        }
+      },
+      "relative_motion": {
+        "pre": {
+          "fact_id": "RELATIVE-PRE",
+          "source_fact_ids": [
+            "A-F2544",
+            "B-F2525",
+            "VELOCITY-A",
+            "VELOCITY-B"
+          ],
+          "status": "ESTIMATE",
+          "aligned_time_seconds": 1787709135.941,
+          "relative_position_B_minus_A_px": [
+            77.7,
+            20.052
+          ],
+          "relative_velocity_B_minus_A_px_per_s": [
+            -4.709,
+            -147.881
+          ],
+          "method": "constant_velocity_projection_within_short_clean_fragments",
+          "max_alignment_gap_seconds": 0.6329998970031738
+        },
+        "post": {
+          "fact_id": "RELATIVE-POST-Q",
+          "source_fact_ids": [
+            "X-F2638",
+            "Y-F2638",
+            "VELOCITY-X",
+            "VELOCITY-Y"
+          ],
+          "status": "OBSERVED_POSITION",
+          "time_seconds": 1787709139.073,
+          "relative_position_Y_minus_X_px": [
+            -28.0,
+            37.5
+          ],
+          "relative_velocity_Y_minus_X_px_per_s": [
+            99.651,
+            62.164
+          ]
+        }
+      },
+      "hypotheses": {
+        "H1": {
+          "mapping": {
+            "X": "B",
+            "Y": "A"
+          },
+          "local_gt_edge_matches": {
+            "X": false,
+            "Y": false
+          },
+          "complete_local_gt_match": false,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 19.954254150390625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 0.022369384765625
+              }
+            ],
+            "sum_absolute_mm": 19.97662353515625
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "B",
+                "absolute_mm": 31.643585205078125
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "A",
+                "absolute_mm": 10.101470947265625
+              }
+            ],
+            "sum_absolute_mm": 41.74505615234375
+          }
+        },
+        "H2": {
+          "mapping": {
+            "X": "A",
+            "Y": "B"
+          },
+          "local_gt_edge_matches": {
+            "X": true,
+            "Y": true
+          },
+          "complete_local_gt_match": true,
+          "whole_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 34.179718017578125
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 54.111602783203125
+              }
+            ],
+            "sum_absolute_mm": 88.29132080078125
+          },
+          "core_depth_endpoint_distance": {
+            "edges": [
+              {
+                "post_role": "X",
+                "pre_role": "A",
+                "absolute_mm": 42.818756103515625
+              },
+              {
+                "post_role": "Y",
+                "pre_role": "B",
+                "absolute_mm": 64.36087036132812
+              }
+            ],
+            "sum_absolute_mm": 107.17962646484375
+          }
+        }
+      },
+      "postseal_role_gt_binding": {
+        "references": {
+          "A": {
+            "frame": 2544,
+            "native": 1,
+            "branch_public": 5,
+            "local_gt": 6,
+            "fixed_public_gt": 5
+          },
+          "B": {
+            "frame": 2525,
+            "native": 4,
+            "branch_public": 4,
+            "local_gt": 2,
+            "fixed_public_gt": 6
+          }
+        },
+        "q": {
+          "X": {
+            "frame": 2638,
+            "native": 1,
+            "gt": 6
+          },
+          "Y": {
+            "frame": 2638,
+            "native": 4,
+            "gt": 2
+          }
+        },
+        "choice": "H1",
+        "action": "COMMIT"
+      }
+    }
+  },
+  "permutation_parity": {
+    "pre_frames_same": 376,
+    "middle_frames_swap_1_5": 2261,
+    "tail_frames_b1_vs_b03_only_swap_4_5": 251,
+    "masks_equal_frames": 2888
+  },
+  "summary": {
+    "raw_choices_correct_local": 1,
+    "raw_choices_wrong_local": 3,
+    "committed_wrong_local": 2,
+    "keep_wrong_local": 1
+  }
+}

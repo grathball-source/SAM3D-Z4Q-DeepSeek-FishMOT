@@ -1,0 +1,88 @@
+{
+  "status": "POSTHOC_READ_ONLY_AUDIT_COMPLETE",
+  "base_commit": "4bc02d737250907515d527642b6af73f80832f7d",
+  "new_model_http": 0,
+  "new_model_cost_usd": 0,
+  "files": [
+    {
+      "path": "experiments/direct_history_replay/posthoc/POSTHOC_CAUSE_REVIEW.md",
+      "bytes": 13607,
+      "sha256": "412e8be3959e7adfb8c9ec1e4b64bbadf5eb0be2def261761b35002b0c98d525"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/EXECUTION_LOG.md",
+      "bytes": 5036,
+      "sha256": "d5524e0fcb922fa89892fb18700c53a06039038ecad5921724f0c0bc6b8693d8"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/replay_b03_only.py",
+      "bytes": 4341,
+      "sha256": "ee601031574985c014112e0b9afc0b88970af8d73153111d5002ebc234f65343"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/score_ablation.py",
+      "bytes": 7878,
+      "sha256": "b7d155483eb5f70f17e84ed2814455d7bbc46ce1729cb65f6ded0682ecf96567"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/matched_id_counts.py",
+      "bytes": 3416,
+      "sha256": "b42db88c3d8005bf693c2b24e050f7380617d5d1475f28ccd92089271eda4b3a"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/audit_claims.py",
+      "bytes": 8622,
+      "sha256": "a380dba5fb0bdc937356f4848c67c503943cbca2b6307bc489ba1261ff880ebe"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/predictions_b03_only.jsonl.gz",
+      "bytes": 24468,
+      "sha256": "d32ac30845a57fbdf5399fc435c071517e11dda47d2bfece778378011cee38e6"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/B03_ONLY_SEAL.json",
+      "bytes": 898,
+      "sha256": "dea4866dfaa4e7f2b84d48658ad1e963e8428e276b6132b6df1a5d6615d1d6d9"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/COUNTERFACTUAL_METRICS.json",
+      "bytes": 7578,
+      "sha256": "fa02136ddd84c8cb2b5471d16946aeab9f991ec42f89f00243d5af69c36a1c43"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/MATCHED_ID_COUNTS.json",
+      "bytes": 8908,
+      "sha256": "6789a064a815f6301a52b528211fb3aae97ddb51afcfd0a63fe05a36833d10ba"
+    },
+    {
+      "path": "experiments/direct_history_replay/posthoc/CLAIM_AND_MAPPING_AUDIT.json",
+      "bytes": 39374,
+      "sha256": "294c120926421980b937a34371277ed9e380798cdf6630bb1c09d7bf79993659"
+    }
+  ],
+  "remote_copies": [
+    {
+      "path": "/home/xiongxiong/direct_history_posthoc_20260927/predictions_b03_only.jsonl.gz",
+      "bytes": 24468,
+      "sha256": "d32ac30845a57fbdf5399fc435c071517e11dda47d2bfece778378011cee38e6"
+    },
+    {
+      "path": "/home/xiongxiong/direct_history_posthoc_20260927/B03_ONLY_SEAL.json",
+      "bytes": 898,
+      "sha256": "dea4866dfaa4e7f2b84d48658ad1e963e8428e276b6132b6df1a5d6615d1d6d9"
+    },
+    {
+      "path": "/home/xiongxiong/direct_history_posthoc_20260927/COUNTERFACTUAL_METRICS.json",
+      "bytes": 7578,
+      "sha256": "fa02136ddd84c8cb2b5471d16946aeab9f991ec42f89f00243d5af69c36a1c43"
+    },
+    {
+      "path": "/home/xiongxiong/direct_history_posthoc_20260927/MATCHED_ID_COUNTS.json",
+      "bytes": 8908,
+      "sha256": "6789a064a815f6301a52b528211fb3aae97ddb51afcfd0a63fe05a36833d10ba"
+    }
+  ],
+  "new_restricted_files": [],
+  "restricted_reproduction_dependencies": "Original unmodified Z4Q validation observations/features; original lab GT/TrackEval only after new prediction seal. Prior private model media/pixels and raw wire remain described by ../public/RESTRICTED_INVENTORY.json and are not copied into this posthoc package.",
+  "manifest_excludes_self": true
+}

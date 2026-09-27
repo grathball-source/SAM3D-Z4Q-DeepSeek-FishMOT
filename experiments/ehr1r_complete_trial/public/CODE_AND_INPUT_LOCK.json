@@ -1,0 +1,57 @@
+{
+  "status": "CODE_INPUT_BUDGET_GATES_FROZEN_BEFORE_INFERENCE",
+  "base": "e95f1a776c62028a7f0d6d5e8a48d26b7c7f4f37",
+  "code_sha256": {
+    "build.py": "5a073305d92e26a15921780c291e5d84c34cbcc57a041644e94a2f62d15355c3",
+    "validate.py": "b22705c7cd92f1aa69ac6e350e31d0800370aa9557a2a0ca2be0730f0c87c8fa",
+    "sender.py": "6687538c0fef4d8bcb6759cb50e59d6006e7aa3e72e12d9e738a496b3a46fec1",
+    "score.py": "ce3a21c97ee82f60bad7b54ad1f7aec12a0f50a78189190b45621cd484f8f99e",
+    "freeze.py": "4d98269d78f374260fbde235204bb5ed0a5c83f44d04fdd6c06b9248630ab0c4",
+    "test_acceptance.py": "b163852cb7006d7d3be05c5bcdee1f91d2fc0244b50add35fd339c1d37fd9014"
+  },
+  "input_sha256": {
+    "REQUESTS_LOGICAL.json": "572a527e5d728895edf24864e31effed4fe8495e0e7d2ee417bd602af320d1f6",
+    "REQUEST_MANIFEST.json": "bb30f5396be05f744b1dcbcbc652c3837135f55c7d10cfc496a186955ec41d00",
+    "SOURCE_TO_BODY_AUDIT.json": "0b6220cc3708962d695a68862fb305584779a9395fef5657213aef064373550b",
+    "PLAN.json": "9d3c6e157383c66633f2b7c4bd89530884976eb26e48a685fec44b07228203cc",
+    "SENDER_GATE.json": "ceadd93b2decfa99660e59d36abb74f2dcae7b42498908f3e7f8002404003e41",
+    "BUDGET.json": "1dcf8469eccefaec873d6a6d7f4fadd37c5648f723b65ff59bf651639cdce7f3",
+    "BODY_GATE.json": "b4f101398ec38e4d10b004b60d34ed0fb2a89d91a2e94b53403dd1130e042e6d",
+    "PREUPLOAD_LOCK.json": "6a45f917cd46c51fd2b0a14cc461d18308ba081a3239e526420cc2624d367380"
+  },
+  "request_order": [
+    "B01-E",
+    "B01-H-2D",
+    "B01-H-D",
+    "B01-H-D-REPEAT",
+    "B01-H-D-PERMUTE",
+    "B02-E",
+    "B02-H-2D",
+    "B02-H-D",
+    "B02-H-D-REPEAT",
+    "B02-H-D-PERMUTE",
+    "B03-E",
+    "B03-H-2D",
+    "B03-H-D",
+    "B03-H-D-REPEAT",
+    "B03-H-D-PERMUTE",
+    "B04-E",
+    "B04-H-2D",
+    "B04-H-D",
+    "B04-H-D-REPEAT",
+    "B04-H-D-PERMUTE",
+    "B05-E",
+    "B05-H-2D",
+    "B05-H-D",
+    "B05-H-D-REPEAT",
+    "B05-H-D-PERMUTE"
+  ],
+  "scoring_gates": {
+    "min_structurally_parseable": 24,
+    "B01_requires_all_three_HD_correct_valid": true,
+    "four_negatives_require_all_three_HD_valid_correct_or_legal_defer": true,
+    "E_to_history_requires_valid_scoreable_pair": true,
+    "semantic_citation_review_separate": true,
+    "numeric_same_information_comparator": "NOT_AVAILABLE"
+  }
+}

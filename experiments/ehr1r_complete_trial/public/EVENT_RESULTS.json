@@ -1,0 +1,311 @@
+[
+  {
+    "case": "B01",
+    "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+    "correct_physical_mapping": {
+      "U1": "K1",
+      "U2": "K2",
+      "U3": "K3",
+      "U4": "K4",
+      "X": "B",
+      "Y": "A"
+    },
+    "arms": {
+      "E": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "H1",
+        "physical_choice": {
+          "U1": "K1",
+          "U2": "K2",
+          "U3": "K3",
+          "U4": "K4",
+          "X": "B",
+          "Y": "A"
+        },
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-2D": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-D": {
+        "status": "DEFER",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": true,
+        "usable": true,
+        "evidence_errors": []
+      },
+      "H-D-REPEAT": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-D-PERMUTE": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      }
+    }
+  },
+  {
+    "case": "B02",
+    "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+    "correct_physical_mapping": {
+      "U1": "K2",
+      "U2": "K3",
+      "U3": "K4",
+      "U4": "K1",
+      "X": "A",
+      "Y": "B"
+    },
+    "arms": {
+      "E": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "H1",
+        "physical_choice": {
+          "U1": "K2",
+          "U2": "K3",
+          "U3": "K4",
+          "U4": "K1",
+          "X": "B",
+          "Y": "A"
+        },
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-2D": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-D": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "H2",
+        "physical_choice": {
+          "U1": "K2",
+          "U2": "K3",
+          "U3": "K4",
+          "U4": "K1",
+          "X": "A",
+          "Y": "B"
+        },
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-D-REPEAT": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      },
+      "H-D-PERMUTE": {
+        "status": "UNPARSEABLE",
+        "raw_choice": "DEFER",
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": [
+          "INVALID_STRUCTURE"
+        ]
+      }
+    }
+  },
+  {
+    "case": "B03",
+    "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+    "correct_physical_mapping": {
+      "U1": "K2",
+      "U2": "K3",
+      "U3": "K1",
+      "U4": "K4",
+      "X": "A",
+      "Y": "B"
+    },
+    "arms": {
+      "E": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-2D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-REPEAT": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-PERMUTE": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      }
+    }
+  },
+  {
+    "case": "B04",
+    "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+    "correct_physical_mapping": {
+      "U1": "K3",
+      "U2": "K1",
+      "U3": "K4",
+      "U4": "K2",
+      "X": "A",
+      "Y": "B"
+    },
+    "arms": {
+      "E": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-2D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-REPEAT": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-PERMUTE": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      }
+    }
+  },
+  {
+    "case": "B05",
+    "trigger_scope": "PREDICTION_DRIVEN_CONTACT_PROXY",
+    "correct_physical_mapping": {
+      "U1": "K1",
+      "U2": "K3",
+      "U3": "K4",
+      "U4": "K2",
+      "X": "B",
+      "Y": "A"
+    },
+    "arms": {
+      "E": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-2D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-REPEAT": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      },
+      "H-D-PERMUTE": {
+        "status": "UNSENT",
+        "raw_choice": null,
+        "physical_choice": null,
+        "parseable": false,
+        "usable": false,
+        "evidence_errors": []
+      }
+    }
+  }
+]

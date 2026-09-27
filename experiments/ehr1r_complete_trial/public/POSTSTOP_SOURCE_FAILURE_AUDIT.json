@@ -1,0 +1,82 @@
+{
+  "status": "ENGINEERING_FAILURE_STOP",
+  "issue": "E_ENDPOINT_ANCHOR_LEAK",
+  "acceptance_false_positive": true,
+  "prior_acceptance_sha256": "abd3f505ade2f7bde5b7db8eb48cbb5a0e79cc655ceae1114b310a9bb7a945ec",
+  "discovered_phase": "postfreeze_readonly_audit",
+  "affected_E_requests": 5,
+  "stale_post_role_fields": [
+    {
+      "case": "B01",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "X",
+      "stale_anchor_frame": 1484,
+      "retained_endpoint_frame": 1498
+    },
+    {
+      "case": "B01",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "Y",
+      "stale_anchor_frame": 1484,
+      "retained_endpoint_frame": 1498
+    },
+    {
+      "case": "B02",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "X",
+      "stale_anchor_frame": 8064,
+      "retained_endpoint_frame": 8069
+    },
+    {
+      "case": "B02",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "Y",
+      "stale_anchor_frame": 8055,
+      "retained_endpoint_frame": 8069
+    },
+    {
+      "case": "B03",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "X",
+      "stale_anchor_frame": 363,
+      "retained_endpoint_frame": 377
+    },
+    {
+      "case": "B03",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "Y",
+      "stale_anchor_frame": 363,
+      "retained_endpoint_frame": 377
+    },
+    {
+      "case": "B04",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "X",
+      "stale_anchor_frame": 2632,
+      "retained_endpoint_frame": 2638
+    },
+    {
+      "case": "B04",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "Y",
+      "stale_anchor_frame": 2632,
+      "retained_endpoint_frame": 2638
+    },
+    {
+      "case": "B05",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "X",
+      "stale_anchor_frame": 2568,
+      "retained_endpoint_frame": 2580
+    },
+    {
+      "case": "B05",
+      "section": "POST_HISTORY_TO_Q",
+      "role": "Y",
+      "stale_anchor_frame": 2579,
+      "retained_endpoint_frame": 2580
+    }
+  ],
+  "effect": "E carries an earlier post-fragment anchor while retaining only the q observation. The E-to-history ablation is not endpoint-only; no paired gain or method gate can be used.",
+  "response_policy": "stop new START; let sole in-flight request finish; retain all original bodies and responses"
+}

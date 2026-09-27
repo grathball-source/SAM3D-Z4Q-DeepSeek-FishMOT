@@ -1,0 +1,633 @@
+[
+  {
+    "attempt_id": "B01-E",
+    "case": "B01",
+    "arm": "E",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "H1",
+    "physical_choice": {
+      "U1": "K1",
+      "U2": "K2",
+      "U3": "K3",
+      "U4": "K4",
+      "X": "B",
+      "Y": "A"
+    },
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "H1 is preferred because the supplied mask areas for its matched pairs (B-F1317→X-F1498 and A-F1314→Y-F1498) both scale by ~0.889, a consistent proportional area change not present in H2. However, no interaction observation, contact event, or calibrated trajectory certifies physical identity; the available pre/post fragments are separated by about 180 frames, so this remains a hypothesis-level preference rather than an identity certification. Area matching is not equivalent to fish identity, and orientation can alter mask area.",
+    "response_sha256": "8ec0613e7aed082c4e64b7f701584a83860cf5680b7ab5756cbd6e3d81efb7d5",
+    "usage": {
+      "prompt_tokens": 2469,
+      "completion_tokens": 11809,
+      "total_tokens": 14278,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11460
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2469
+    },
+    "charged_upper_usd": 0.0149115
+  },
+  {
+    "attempt_id": "B01-H-2D",
+    "case": "B01",
+    "arm": "H-2D",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "Neither H1 nor H2 can be certified from the supplied measurements: A/B are separated from X/Y by predicted contact-risk and anonymous intervals, A has no velocity estimate, B's pre-contact motion is not observed through contact, and X/Y clean returns are handle-availability only, not identity reappearance. Endpoint positions and velocities are compatible with either mapping once unobserved contact maneuvers are allowed.",
+    "response_sha256": "f7381c5b8195ec144ed50ebf5c7c43dab7c61ac3f14f4a8bd0224718b9d7b7cf",
+    "usage": {
+      "prompt_tokens": 77995,
+      "completion_tokens": 12869,
+      "total_tokens": 90864,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 12276
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 77867
+    },
+    "charged_upper_usd": 0.0388413
+  },
+  {
+    "attempt_id": "B01-H-D",
+    "case": "B01",
+    "arm": "H-D",
+    "reference_scoreable": true,
+    "status": "DEFER",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": true,
+    "usable": true,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [],
+    "cited_fact_ids": [
+      "A-F1314",
+      "Y-F1498",
+      "B-F1317",
+      "X-F1498",
+      "D-B-F1317",
+      "D-X-F1498",
+      "D-A-F1314",
+      "D-Y-F1498",
+      "VELOCITY-B",
+      "VELOCITY-X",
+      "D-B-F1317",
+      "D-Y-F1498",
+      "VELOCITY-B",
+      "VELOCITY-Y",
+      "A-F1314",
+      "B-F1317",
+      "X-F1498",
+      "Y-F1498",
+      "A-F1314",
+      "X-F1498",
+      "D-A-F1314",
+      "D-X-F1498",
+      "B-F1317",
+      "Y-F1498",
+      "VELOCITY-B",
+      "VELOCITY-Y"
+    ],
+    "uncertainty_reason": "The evidence is mixed and does not uniquely distinguish H1 from H2. H1 is supported by area similarity (A/Y and B/X) but conflicted by A–Y depth mismatch and B–X velocity mismatch. H2 is supported by B–Y depth similarity and by relative horizontal position/velocity sign, but conflicted by A–X and B–Y area differences and by B–Y velocity speed/direction change. No identity-certified observation spans the contact/loss interval; X/Y are q-local handles whose clean returns do not certify identity, A lacks velocity/heading, and depth is unverified relative to the water surface. Therefore the candidates cannot be reliably distinguished from the supplied evidence without inventing unseen paths or identity continuity.",
+    "response_sha256": "fcb590ba0838864595a0cfca17b827daaf6cd8c49b0594cec29a135d1f5106c6",
+    "usage": {
+      "prompt_tokens": 148323,
+      "completion_tokens": 16173,
+      "total_tokens": 164496,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 15499
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 148067
+    },
+    "charged_upper_usd": 0.0639045
+  },
+  {
+    "attempt_id": "B01-H-D-REPEAT",
+    "case": "B01",
+    "arm": "H-D-REPEAT",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "Evidence is mixed and no identity-certifying observation spans the contact/loss interval. H1 is supported by vertical ordering and some depth similarity (X vs B), while H2 is supported by horizontal ordering and depth similarity (Y vs B). Pre-B velocity is measured before loss and may not persist; A has no velocity estimate. Anonymous contact tokens and clean-return intervals do not certify identity, so the two mappings cannot be reliably distinguished.",
+    "response_sha256": "bc8387aa338da5e6bbc4c7f12675b8f12bb3cfcc883257230efb4bf2ee7b4f76",
+    "usage": {
+      "prompt_tokens": 148323,
+      "completion_tokens": 9917,
+      "total_tokens": 158240,
+      "prompt_tokens_details": {
+        "cached_tokens": 148096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9341
+      },
+      "prompt_cache_hit_tokens": 148096,
+      "prompt_cache_miss_tokens": 227
+    },
+    "charged_upper_usd": 0.056397300000000004
+  },
+  {
+    "attempt_id": "B01-H-D-PERMUTE",
+    "case": "B01",
+    "arm": "H-D-PERMUTE",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "The supplied fragments do not contain a certified identity linkage across the contact/loss interval. Pre-risk and q-local measurements are partly compatible with both mappings (left-right order favors H1, vertical order and area-depth similarity favor H2), while no observed trajectory or calibrated depth cue disambiguates X=A/Y=B from X=B/Y=A; anonymous contact observations and handle clears are explicitly non-certifying.",
+    "response_sha256": "f5a34e7ae373311bd3edfb8ad31673126649afb08d13adc75e79eae1aaaaf5c9",
+    "usage": {
+      "prompt_tokens": 148323,
+      "completion_tokens": 11152,
+      "total_tokens": 159475,
+      "prompt_tokens_details": {
+        "cached_tokens": 29312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10731
+      },
+      "prompt_cache_hit_tokens": 29312,
+      "prompt_cache_miss_tokens": 119011
+    },
+    "charged_upper_usd": 0.0578793
+  },
+  {
+    "attempt_id": "B02-E",
+    "case": "B02",
+    "arm": "E",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "H1",
+    "physical_choice": {
+      "U1": "K2",
+      "U2": "K3",
+      "U3": "K4",
+      "U4": "K1",
+      "X": "B",
+      "Y": "A"
+    },
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "Endpoint center measurements and visual fragment appearance favor H1: A-F7866 and Y-F8069 form the left-side compatible pair with smaller endpoint separation, and B-F7890 and X-F8069 form the other compatible pairing. However this remains a hypothesis; identity across the unobserved interval is not directly observed.",
+    "response_sha256": "cea13d7045b6f4e8e8fd3743b6e700b42ec290b77499f06167465d968bdc62e7",
+    "usage": {
+      "prompt_tokens": 2443,
+      "completion_tokens": 15964,
+      "total_tokens": 18407,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 15608
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 2443
+    },
+    "charged_upper_usd": 0.0198897
+  },
+  {
+    "attempt_id": "B02-H-2D",
+    "case": "B02",
+    "arm": "H-2D",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "The packet provides position, mask-area, short local velocity, and relative-motion estimates, but no certified identity link across contact/loss. H1 is supported by preserved left-right order and some B-to-X coarse direction, but conflicts with X/Y velocity signs, X bbox orientation, area, and Y velocity. H2 is supported by X velocity signs matching A, Y x-sign matching B, and larger-Y / smaller-X area ordering, but conflicts with current Y velocity y-sign, X orientation, and observed relative order. Anonymous contact observations and track handles are explicitly non-identifying, and the measurements do not uniquely distinguish the two mappings.",
+    "response_sha256": "4564373bf675bdd519e582cbba6eed9266a46ee2bec9d685536d801c02a8ebfe",
+    "usage": {
+      "prompt_tokens": 79827,
+      "completion_tokens": 17732,
+      "total_tokens": 97559,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 17107
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 79699
+    },
+    "charged_upper_usd": 0.0452265
+  },
+  {
+    "attempt_id": "B02-H-D",
+    "case": "B02",
+    "arm": "H-D",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "H2",
+    "physical_choice": {
+      "U1": "K2",
+      "U2": "K3",
+      "U3": "K4",
+      "U4": "K1",
+      "X": "A",
+      "Y": "B"
+    },
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "H2 preserves the pre-contact area ordering (A smaller → X smaller; B larger → Y larger) and the x-velocity signs (A +x → X +x; B -x → Y -x), whereas H1 requires swapping both area rank and x-velocity signs. However, no fragment certifies physical identity across contact/loss; anonymous contact observations are not used, and depth is uncalibrated. H2 is preferred on the supplied measurements, but the outcome remains an identity hypothesis, not an observed trajectory.",
+    "response_sha256": "95731a55a2890f5b53e918076bc79d111ef88a0d82bbc146e6d6322245efd83b",
+    "usage": {
+      "prompt_tokens": 157801,
+      "completion_tokens": 16677,
+      "total_tokens": 174478,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 16198
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 157545
+    },
+    "charged_upper_usd": 0.0673527
+  },
+  {
+    "attempt_id": "B02-H-D-REPEAT",
+    "case": "B02",
+    "arm": "H-D-REPEAT",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "The two mappings are not distinguished by certified identity evidence. Relative x-position weakly favors H1, while relative velocity/area weakly favors H2, and depth signatures are similar. Identity across the contact/loss interval is unknown; anonymous observations and track handles during contact do not certify fish identity. Therefore the physical identity hypotheses H1 and H2 remain unresolved from the supplied measurements and sent images.",
+    "response_sha256": "614ace4780b5cbe768e1b6361f85e1fa6e509680baaa6c0764c64d2d568e8069",
+    "usage": {
+      "prompt_tokens": 157801,
+      "completion_tokens": 18341,
+      "total_tokens": 176142,
+      "prompt_tokens_details": {
+        "cached_tokens": 157568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 17648
+      },
+      "prompt_cache_hit_tokens": 157568,
+      "prompt_cache_miss_tokens": 233
+    },
+    "charged_upper_usd": 0.0693495
+  },
+  {
+    "attempt_id": "B02-H-D-PERMUTE",
+    "case": "B02",
+    "arm": "H-D-PERMUTE",
+    "reference_scoreable": true,
+    "status": "UNPARSEABLE",
+    "transport_valid": true,
+    "finish_reason": "stop",
+    "parseable": false,
+    "usable": false,
+    "raw_choice": "DEFER",
+    "physical_choice": null,
+    "evidence_errors": [
+      "INVALID_STRUCTURE"
+    ],
+    "cited_fact_ids": [],
+    "uncertainty_reason": "Evidence cannot distinguish H1 from H2. A/B enter CONTACT_RISK and do not have a certified identity reappearance; X/Y are q-local handles only. Availability intervals and predicted masks are not identity certificates, and the supplied position, area, orientation, velocity, and unverified depth measurements permit both mappings only with unresolved assumptions.",
+    "response_sha256": "66f872f3327bdb733a6b7cddb992b0c7873fcd1f0415a503d78f8e6ac6da260f",
+    "usage": {
+      "prompt_tokens": 157801,
+      "completion_tokens": 13409,
+      "total_tokens": 171210,
+      "prompt_tokens_details": {
+        "cached_tokens": 31488
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 12746
+      },
+      "prompt_cache_hit_tokens": 31488,
+      "prompt_cache_miss_tokens": 126313
+    },
+    "charged_upper_usd": 0.06343109999999999
+  },
+  {
+    "attempt_id": "B03-E",
+    "case": "B03",
+    "arm": "E",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B03-H-2D",
+    "case": "B03",
+    "arm": "H-2D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B03-H-D",
+    "case": "B03",
+    "arm": "H-D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B03-H-D-REPEAT",
+    "case": "B03",
+    "arm": "H-D-REPEAT",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B03-H-D-PERMUTE",
+    "case": "B03",
+    "arm": "H-D-PERMUTE",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B04-E",
+    "case": "B04",
+    "arm": "E",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B04-H-2D",
+    "case": "B04",
+    "arm": "H-2D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B04-H-D",
+    "case": "B04",
+    "arm": "H-D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B04-H-D-REPEAT",
+    "case": "B04",
+    "arm": "H-D-REPEAT",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B04-H-D-PERMUTE",
+    "case": "B04",
+    "arm": "H-D-PERMUTE",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B05-E",
+    "case": "B05",
+    "arm": "E",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B05-H-2D",
+    "case": "B05",
+    "arm": "H-2D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B05-H-D",
+    "case": "B05",
+    "arm": "H-D",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B05-H-D-REPEAT",
+    "case": "B05",
+    "arm": "H-D-REPEAT",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  },
+  {
+    "attempt_id": "B05-H-D-PERMUTE",
+    "case": "B05",
+    "arm": "H-D-PERMUTE",
+    "reference_scoreable": true,
+    "status": "UNSENT",
+    "transport_valid": false,
+    "finish_reason": null,
+    "parseable": false,
+    "usable": false,
+    "raw_choice": null,
+    "physical_choice": null,
+    "evidence_errors": [],
+    "response_sha256": null,
+    "usage": null,
+    "charged_upper_usd": null
+  }
+]

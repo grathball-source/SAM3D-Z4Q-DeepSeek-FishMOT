@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN_INPUT_FAILS_ENDPOINT_ONLY",
+  "original_requests_unchanged": true,
+  "fixture": "UNSENT_LOCAL_PROJECTION_ONLY",
+  "failed_E_requests": [
+    {
+      "case": "B01",
+      "stale_role_count": 2
+    },
+    {
+      "case": "B02",
+      "stale_role_count": 2
+    },
+    {
+      "case": "B03",
+      "stale_role_count": 2
+    },
+    {
+      "case": "B04",
+      "stale_role_count": 2
+    },
+    {
+      "case": "B05",
+      "stale_role_count": 2
+    }
+  ],
+  "stale_fields": 10,
+  "correction": "Remove anchor_frame from endpoint-only post segments in a separately frozen future run."
+}

@@ -1,0 +1,90 @@
+{
+  "status": "SCORED_EXPOSED_VALIDATION",
+  "metrics": {
+    "B0": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "B1": {
+      "IDF1": 77.66737159245632,
+      "HOTA": 66.35703240595937,
+      "AssA": 55.15227922973461,
+      "DetA": 79.85412811727657,
+      "IDSW": 12,
+      "FP": 298,
+      "FN": 423
+    }
+  },
+  "difference_frames": 2512,
+  "transactions": [
+    {
+      "frame": 377,
+      "changes": {
+        "1": 5,
+        "5": 1
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 5,
+          "current_gt": 2,
+          "anchor_gt": 5,
+          "fixed_target_gt": 5
+        },
+        {
+          "native": 5,
+          "target": 1,
+          "current_gt": 5,
+          "anchor_gt": 2,
+          "fixed_target_gt": 2
+        }
+      ],
+      "displaced_results": []
+    },
+    {
+      "frame": 2638,
+      "changes": {
+        "1": 4,
+        "4": 5
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 4,
+          "current_gt": 6,
+          "anchor_gt": 2,
+          "fixed_target_gt": 6
+        },
+        {
+          "native": 4,
+          "target": 5,
+          "current_gt": 2,
+          "anchor_gt": 6,
+          "fixed_target_gt": 5
+        }
+      ],
+      "displaced_results": []
+    }
+  ],
+  "transaction_counts": {
+    "correct": 0,
+    "wrong": 2,
+    "unscorable": 0
+  },
+  "status_counts": {
+    "NATIVE": 2884,
+    "COMMIT": 2,
+    "KEEP": 2
+  },
+  "incremental_harm_count": 967,
+  "incremental_improvement_count": 251,
+  "exposure": "EXPOSED_VALIDATION_FEASIBILITY_NOT_BLIND",
+  "source_prediction_sha256": "33b0f11d07502ce8a256426a32cfcf7b5500c9a6e43171ea1b88feddcc50d671"
+}

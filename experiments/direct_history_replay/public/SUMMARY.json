@@ -1,0 +1,98 @@
+{
+  "status": "COMPLETE_NEGATIVE_EXPOSED_REPLAY",
+  "review_base": "ce4a7514e97784952e447cca7914d313239133d8",
+  "frames": 2888,
+  "event_opportunities": 4,
+  "HTTP_attempts": 4,
+  "valid_choices": 4,
+  "defer": 0,
+  "exceptions": 0,
+  "proposals": 2,
+  "commits": 2,
+  "stage_rejections": 0,
+  "prediction_difference_frames": 2512,
+  "transactions": [
+    {
+      "frame": 377,
+      "changes": {
+        "1": 5,
+        "5": 1
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 5,
+          "current_gt": 2,
+          "anchor_gt": 5,
+          "fixed_target_gt": 5
+        },
+        {
+          "native": 5,
+          "target": 1,
+          "current_gt": 5,
+          "anchor_gt": 2,
+          "fixed_target_gt": 2
+        }
+      ],
+      "displaced_results": []
+    },
+    {
+      "frame": 2638,
+      "changes": {
+        "1": 4,
+        "4": 5
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 4,
+          "current_gt": 6,
+          "anchor_gt": 2,
+          "fixed_target_gt": 6
+        },
+        {
+          "native": 4,
+          "target": 5,
+          "current_gt": 2,
+          "anchor_gt": 6,
+          "fixed_target_gt": 5
+        }
+      ],
+      "displaced_results": []
+    }
+  ],
+  "metrics": {
+    "B0": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "B1": {
+      "IDF1": 77.66737159245632,
+      "HOTA": 66.35703240595937,
+      "AssA": 55.15227922973461,
+      "DetA": 79.85412811727657,
+      "IDSW": 12,
+      "FP": 298,
+      "FN": 423
+    }
+  },
+  "delta_B1_minus_B0": {
+    "IDF1": -3.030215243778798,
+    "HOTA": -2.8868365536985863,
+    "AssA": -4.922042225680201,
+    "IDSW": 3,
+    "FP": 0,
+    "FN": 0
+  },
+  "peak_no_cache_upper_usd": 0.2273733,
+  "offpeak_usage_estimate_usd": 0.11368665,
+  "provider_invoice": "UNAVAILABLE",
+  "wall_seconds": 390.3279999999795
+}

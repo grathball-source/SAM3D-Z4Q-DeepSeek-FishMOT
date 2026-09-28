@@ -1,0 +1,19 @@
+{
+  "review_base": "cb98902b61ec46a0f15ca17ff0d4d991f957352c",
+  "history_capacity_frames": 30,
+  "motion_fit_latest_valid_frames": 10,
+  "motion_fit_min_samples": 3,
+  "merge_confirm_consecutive_frames": 2,
+  "split_confirm_consecutive_frames": 3,
+  "post_split_total_consecutive_frames": 5,
+  "max_episode_seconds": 10.0,
+  "max_paid_episodes": 8,
+  "max_inference_http": 16,
+  "budget_usd": 4.0,
+  "mask_coverage_gate": 0.15,
+  "mask_position_tolerance_px": "max(3,0.25*median_bbox_diagonal)+2*prediction_uncertainty",
+  "numeric_weights": {"position": 1.0, "velocity": 0.25, "core_depth": 0.25},
+  "use_raw_rgb_appearance": false,
+  "use_appearance_embedding": false,
+  "replay_mode": "synchronous_causal"
+}

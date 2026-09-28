@@ -1,0 +1,42 @@
+{
+  "status": "POSTSEAL_OUTPUT_ID_AUDIT",
+  "fixed_public_first_matched_gt": {
+    "0": 5,
+    "1": 2,
+    "3": 3,
+    "4": 6,
+    "2": 4,
+    "5": 5,
+    "6": 1,
+    "7": 4,
+    "11": 5
+  },
+  "nonunique_gt_to_public": {
+    "5": [
+      0,
+      5,
+      11
+    ],
+    "4": [
+      2,
+      7
+    ]
+  },
+  "counts": {
+    "changed_detections": 586,
+    "unscorable_changed_detections": 15,
+    "improved": 571
+  },
+  "by_stage": {
+    "group_or_pending": {
+      "changed_detections": 8,
+      "unscorable_changed_detections": 8
+    },
+    "post_q": {
+      "changed_detections": 578,
+      "improved": 571,
+      "unscorable_changed_detections": 7
+    }
+  },
+  "interpretation": "First-matched public-ID accounting is diagnostic; event physical truth is separately audited from fixed clean fragments."
+}

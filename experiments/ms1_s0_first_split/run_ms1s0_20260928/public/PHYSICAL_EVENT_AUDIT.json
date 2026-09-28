@@ -1,0 +1,165 @@
+[
+  {
+    "episode": "MS1-F2586",
+    "reference_tokens": {
+      "A": "F2580:O01",
+      "B": "F2580:O02"
+    },
+    "q_tokens": {
+      "X": "F2600:O01",
+      "Y": "F2600:O02"
+    },
+    "reference_gt": {
+      "A": null,
+      "B": 2
+    },
+    "q_gt": {
+      "X": 2,
+      "Y": 6
+    },
+    "reference_public": {
+      "A": 1,
+      "B": 4
+    },
+    "q_public": {
+      "X": 1,
+      "Y": 4
+    },
+    "anchor_only_candidate_verdict": {
+      "H1": "UNSCORABLE",
+      "H2": "UNSCORABLE"
+    },
+    "clean_segment_consensus_reference_gt": {
+      "A": 6,
+      "B": 2
+    },
+    "clean_segment_consensus_support": {
+      "pre": {
+        "A": {
+          "frames": [
+            2568,
+            2569,
+            2570,
+            2571,
+            2572,
+            2573,
+            2574,
+            2575,
+            2576,
+            2577,
+            2578,
+            2579,
+            2580
+          ],
+          "source_continuous": true,
+          "same_source_and_public_version": true,
+          "matched_count": 8,
+          "matched_identity_set": [
+            6
+          ]
+        },
+        "B": {
+          "frames": [
+            2568,
+            2569,
+            2570,
+            2571,
+            2572,
+            2573,
+            2574,
+            2575,
+            2576,
+            2577,
+            2578,
+            2579,
+            2580
+          ],
+          "source_continuous": true,
+          "same_source_and_public_version": true,
+          "matched_count": 13,
+          "matched_identity_set": [
+            2
+          ]
+        }
+      },
+      "post": {
+        "X": {
+          "frames": [
+            2600
+          ],
+          "source_continuous": true,
+          "same_source_and_public_version": true,
+          "matched_count": 1,
+          "matched_identity_set": [
+            2
+          ]
+        },
+        "Y": {
+          "frames": [
+            2600
+          ],
+          "source_continuous": true,
+          "same_source_and_public_version": true,
+          "matched_count": 1,
+          "matched_identity_set": [
+            6
+          ]
+        }
+      }
+    },
+    "pre_consensus_first_split_candidate_verdict": {
+      "H1": "WRONG",
+      "H2": "CORRECT"
+    },
+    "reference_public_global_first_matched_gt": {
+      "A": 2,
+      "B": 6
+    },
+    "q_public_global_first_matched_gt": {
+      "X": 2,
+      "Y": 6
+    },
+    "model_raw": "H1",
+    "model_anchor_only_verdict": "UNSCORABLE",
+    "model_first_split_verdict": "WRONG",
+    "numeric_choice": "H1",
+    "numeric_first_split_verdict": "WRONG",
+    "applied_choice": "H1",
+    "first_split_pair_correct": "WRONG",
+    "first_publish": {
+      "B-HOLD-S0": {
+        "episode": "MS1-F2586",
+        "evidence_cutoff_frame": 2600,
+        "post_sample_count": 1,
+        "decision_source": "NUMERIC",
+        "first_public_pair": {
+          "X": {
+            "fact_id": "F2600:O01",
+            "public_id": 1
+          },
+          "Y": {
+            "fact_id": "F2600:O02",
+            "public_id": 4
+          }
+        }
+      },
+      "B-VLM-S0": {
+        "episode": "MS1-F2586",
+        "evidence_cutoff_frame": 2600,
+        "post_sample_count": 1,
+        "decision_source": "MODEL",
+        "first_public_pair": {
+          "X": {
+            "fact_id": "F2600:O01",
+            "public_id": 1
+          },
+          "Y": {
+            "fact_id": "F2600:O02",
+            "public_id": 4
+          }
+        }
+      }
+    },
+    "restore_status": "RESOLVE_NO_ID_CHANGE"
+  }
+]

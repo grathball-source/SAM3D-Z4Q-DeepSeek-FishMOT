@@ -1,0 +1,63 @@
+[
+  {
+    "episode": "MS1-F2586",
+    "split_first_frame": 2600,
+    "evidence_cutoff_frame": 2600,
+    "post_sample_count": 1,
+    "reference_anchor_only": {
+      "A": null,
+      "B": 2
+    },
+    "reference_pre_consensus": {
+      "A": 6,
+      "B": 2
+    },
+    "first_split_gt": {
+      "X": 2,
+      "Y": 6
+    },
+    "anchor_only_candidate_verdict": {
+      "H1": "UNSCORABLE",
+      "H2": "UNSCORABLE"
+    },
+    "pre_consensus_candidate_verdict": {
+      "H1": "WRONG",
+      "H2": "CORRECT"
+    },
+    "model_raw": "H1",
+    "model_parse_status": "OK",
+    "model_first_split_verdict": "WRONG",
+    "request_start_monotonic": 604671.656,
+    "response_end_monotonic": 604785.546,
+    "api_latency_seconds": 113.89000000001397,
+    "first_publish_time_monotonic": 604785.546,
+    "arms": {
+      "B-HOLD-S0": {
+        "first_public_pair": {
+          "X": 1,
+          "Y": 4
+        },
+        "decision_source": "NUMERIC",
+        "selected_candidate_verdict": "WRONG",
+        "first_split_pair_correct": "WRONG",
+        "recovery_delay_frames": "UNRESOLVED_OR_UNSCORABLE",
+        "recovery_rule": "first 3 consecutive frames with both physical members uniquely observed and mapped to pre-event public IDs",
+        "assessable_pair_frames_until_resolution": 282,
+        "receive_to_first_publish_seconds": 115.42099999997299
+      },
+      "B-VLM-S0": {
+        "first_public_pair": {
+          "X": 1,
+          "Y": 4
+        },
+        "decision_source": "MODEL",
+        "selected_candidate_verdict": "WRONG",
+        "first_split_pair_correct": "WRONG",
+        "recovery_delay_frames": "UNRESOLVED_OR_UNSCORABLE",
+        "recovery_rule": "first 3 consecutive frames with both physical members uniquely observed and mapped to pre-event public IDs",
+        "assessable_pair_frames_until_resolution": 282,
+        "receive_to_first_publish_seconds": 115.42099999997299
+      }
+    }
+  }
+]

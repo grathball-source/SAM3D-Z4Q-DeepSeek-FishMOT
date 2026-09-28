@@ -1,0 +1,233 @@
+{
+  "status": "SCORED_EXPOSED_VALIDATION",
+  "frames": 2888,
+  "metrics": {
+    "B0": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "B-HOLD-S0": {
+      "IDF1": 82.0707436484255,
+      "HOTA": 69.41005934097313,
+      "AssA": 60.36419794043692,
+      "DetA": 79.8339131595075,
+      "IDSW": 11,
+      "FP": 298,
+      "FN": 423
+    },
+    "B-VLM-S0": {
+      "IDF1": 82.0707436484255,
+      "HOTA": 69.41005934097313,
+      "AssA": 60.36419794043692,
+      "DetA": 79.8339131595075,
+      "IDSW": 11,
+      "FP": 298,
+      "FN": 423
+    }
+  },
+  "delta": {
+    "B-HOLD-S0": {
+      "IDF1": 1.3731568121903877,
+      "HOTA": 0.16619038131517527,
+      "AssA": 0.2898764850221056,
+      "DetA": 0.0011785148095384557,
+      "IDSW": 2,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM-S0": {
+      "IDF1": 1.3731568121903877,
+      "HOTA": 0.16619038131517527,
+      "AssA": 0.2898764850221056,
+      "DetA": 0.0011785148095384557,
+      "IDSW": 2,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM-S0_vs_B-HOLD-S0": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "changed_frames": {
+    "B0_vs_HOLD": 297,
+    "HOLD_vs_VLM": 0,
+    "B0_vs_VLM": 297
+  },
+  "physical_events": [
+    {
+      "episode": "MS1-F2586",
+      "reference_tokens": {
+        "A": "F2580:O01",
+        "B": "F2580:O02"
+      },
+      "q_tokens": {
+        "X": "F2600:O01",
+        "Y": "F2600:O02"
+      },
+      "reference_gt": {
+        "A": null,
+        "B": 2
+      },
+      "q_gt": {
+        "X": 2,
+        "Y": 6
+      },
+      "reference_public": {
+        "A": 1,
+        "B": 4
+      },
+      "q_public": {
+        "X": 1,
+        "Y": 4
+      },
+      "anchor_only_candidate_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "clean_segment_consensus_reference_gt": {
+        "A": 6,
+        "B": 2
+      },
+      "clean_segment_consensus_support": {
+        "pre": {
+          "A": {
+            "frames": [
+              2568,
+              2569,
+              2570,
+              2571,
+              2572,
+              2573,
+              2574,
+              2575,
+              2576,
+              2577,
+              2578,
+              2579,
+              2580
+            ],
+            "source_continuous": true,
+            "same_source_and_public_version": true,
+            "matched_count": 8,
+            "matched_identity_set": [
+              6
+            ]
+          },
+          "B": {
+            "frames": [
+              2568,
+              2569,
+              2570,
+              2571,
+              2572,
+              2573,
+              2574,
+              2575,
+              2576,
+              2577,
+              2578,
+              2579,
+              2580
+            ],
+            "source_continuous": true,
+            "same_source_and_public_version": true,
+            "matched_count": 13,
+            "matched_identity_set": [
+              2
+            ]
+          }
+        },
+        "post": {
+          "X": {
+            "frames": [
+              2600
+            ],
+            "source_continuous": true,
+            "same_source_and_public_version": true,
+            "matched_count": 1,
+            "matched_identity_set": [
+              2
+            ]
+          },
+          "Y": {
+            "frames": [
+              2600
+            ],
+            "source_continuous": true,
+            "same_source_and_public_version": true,
+            "matched_count": 1,
+            "matched_identity_set": [
+              6
+            ]
+          }
+        }
+      },
+      "pre_consensus_first_split_candidate_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "reference_public_global_first_matched_gt": {
+        "A": 2,
+        "B": 6
+      },
+      "q_public_global_first_matched_gt": {
+        "X": 2,
+        "Y": 6
+      },
+      "model_raw": "H1",
+      "model_anchor_only_verdict": "UNSCORABLE",
+      "model_first_split_verdict": "WRONG",
+      "numeric_choice": "H1",
+      "numeric_first_split_verdict": "WRONG",
+      "applied_choice": "H1",
+      "first_split_pair_correct": "WRONG",
+      "first_publish": {
+        "B-HOLD-S0": {
+          "episode": "MS1-F2586",
+          "evidence_cutoff_frame": 2600,
+          "post_sample_count": 1,
+          "decision_source": "NUMERIC",
+          "first_public_pair": {
+            "X": {
+              "fact_id": "F2600:O01",
+              "public_id": 1
+            },
+            "Y": {
+              "fact_id": "F2600:O02",
+              "public_id": 4
+            }
+          }
+        },
+        "B-VLM-S0": {
+          "episode": "MS1-F2586",
+          "evidence_cutoff_frame": 2600,
+          "post_sample_count": 1,
+          "decision_source": "MODEL",
+          "first_public_pair": {
+            "X": {
+              "fact_id": "F2600:O01",
+              "public_id": 1
+            },
+            "Y": {
+              "fact_id": "F2600:O02",
+              "public_id": 4
+            }
+          }
+        }
+      },
+      "restore_status": "RESOLVE_NO_ID_CHANGE"
+    }
+  ],
+  "source_prediction_sha256": "e0c5c0fe9c9558d9ed1f886787b7ef39b18c916dc1be29b16db6b7fec6953764"
+}

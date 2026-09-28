@@ -1,0 +1,47 @@
+{
+  "host": "xiongxiong@10.2.212.110",
+  "purpose": "Postseal exposed-validation scoring; metadata only",
+  "files": [
+    {
+      "path": "/home/data2/xiongxiong/d-mot/experiments/sam3_i3_validation_cpu16_20260915/run_validation_2888/assignments.jsonl.gz",
+      "bytes": 1419299,
+      "sha256": "ea468964e4b287a3879dfb83b304dd64c83f055e9649d3155fa62c41b717a0fc"
+    },
+    {
+      "path": "/home/data2/xiongxiong/d-mot/experiments/sam3_i1_validation_20260915/truth.jsonl.gz",
+      "bytes": 785076,
+      "sha256": "55d88b7edae92c993c4ed0a4340307e696bf7cdbcf853c38cd805d9ec50b6057"
+    },
+    {
+      "path": "/home/xiongxiong/dmot-experiments/sam3_depth_return_guard_20260918/experiment/offline_matches_validation.jsonl.gz",
+      "bytes": 270446,
+      "sha256": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1"
+    },
+    {
+      "path": "/home/xiongxiong/ms1r_20260928_score/original_score.py",
+      "bytes": 11034,
+      "sha256": "6cb2b7e438e2e98367b86f39e36ac220f90a6036c3f522b0558cec9123a8d811"
+    },
+    {
+      "path": "/home/xiongxiong/ms1r_20260928_score/score.py",
+      "bytes": 10339,
+      "sha256": "b96f72a5c41f53b65519ddf38e7339908556e93013b92f99da0355800dba6dbb"
+    },
+    {
+      "path": "/home/xiongxiong/ms1r_20260928_score/run_ms1r_20260928/public/predictions_validation.jsonl.gz",
+      "bytes": 27471,
+      "sha256": "9aa0cae4e63387b487a3ac1e23102a8864a4ac49f4fd5dd91248f4002080a2e9"
+    },
+    {
+      "path": "/home/xiongxiong/ms1r_20260928_score/run_ms1r_20260928/public/METRICS.json",
+      "bytes": 4688,
+      "sha256": "d8d40f75cfa747249c8ee40a0e6c2c28f67a81e6e8b22f0db02350b9568c4022"
+    },
+    {
+      "path": "/home/xiongxiong/ms1r_20260928_score/run_ms1r_20260928/private_api/MS1-F2586-S.bindings.json",
+      "bytes": 6720,
+      "sha256": "1f428e0e17e8feebfa07fd49592dc666b09a206099e15460bb861a9cfb418eff"
+    }
+  ],
+  "reproduction": "Run frozen score.py with original_score.py in lab annotation environment after prediction seal; private S token binding verifies physical mapping against actual mask order."
+}

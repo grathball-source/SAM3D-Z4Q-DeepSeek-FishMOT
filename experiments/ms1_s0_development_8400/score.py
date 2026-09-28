@@ -144,6 +144,6 @@ def full(run_name):
 
 
 if __name__=='__main__':
-    if len(sys.argv)!=2 or sys.argv[1] not in ('dry_run_corrected','dry_run_v3','dry_run_v4','dry_run_v5','dry_run_v6','run_development_corrected_paid'):
-        raise SystemExit('usage: score.py dry_run_corrected|dry_run_v3|dry_run_v4|dry_run_v5|run_development_corrected_paid')
+    if len(sys.argv)!=2 or sys.argv[1] not in ('dry_run_corrected','dry_run_v3','dry_run_v4','dry_run_v5','dry_run_v6','run_development_corrected_paid','run_development_v7_paid'):
+        raise SystemExit('usage: score.py RUN_NAME')
     full(sys.argv[1])

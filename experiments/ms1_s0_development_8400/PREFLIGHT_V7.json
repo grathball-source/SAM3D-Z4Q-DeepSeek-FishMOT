@@ -1,0 +1,150 @@
+{
+  "status": "PASS_BEFORE_PAID_SEND",
+  "fixed_model_episodes": [
+    "MS1-F1152",
+    "MS1-F3078",
+    "MS1-F3863",
+    "MS1-F4057",
+    "MS1-F4485",
+    "MS1-F4519",
+    "MS1-F5399",
+    "MS1-F5927"
+  ],
+  "max_inference_http": 16,
+  "cost_cap_usd": null,
+  "official_model": "deepseek-flash",
+  "image_transport": "official Files API",
+  "context_input_estimate_ceiling": 934464,
+  "max_estimated_dry_input_tokens": 381466,
+  "note": "S0 includes the actual bounded M hypothesis only after M returns; this dry packet has M=null.",
+  "packets": [
+    {
+      "episode": "MS1-F1152",
+      "stage": "M",
+      "cutoff": 1153,
+      "image_count": 4,
+      "estimated_input_tokens": 138211,
+      "dry_packet_sha256": "5767a66a497d4e64f8154907f38952f842e9d9d3dd039eccbba8351ec5225750"
+    },
+    {
+      "episode": "MS1-F1152",
+      "stage": "S0",
+      "cutoff": 1274,
+      "image_count": 9,
+      "estimated_input_tokens": 381466,
+      "dry_packet_sha256": "77730b6c8730b7d62de7c0ab201c1d218ddd7566646f088227cbc1bcf1652f70"
+    },
+    {
+      "episode": "MS1-F3078",
+      "stage": "M",
+      "cutoff": 3079,
+      "image_count": 5,
+      "estimated_input_tokens": 209163,
+      "dry_packet_sha256": "5676087e99756602d000299e5b21f30d0512228cfc3d8ae98fff7c1c6df37119"
+    },
+    {
+      "episode": "MS1-F3078",
+      "stage": "S0",
+      "cutoff": 3081,
+      "image_count": 7,
+      "estimated_input_tokens": 248615,
+      "dry_packet_sha256": "fd131846b3d20803be1c8c02a62c7a144a82b0a8638ba70b199fe322959194e9"
+    },
+    {
+      "episode": "MS1-F3863",
+      "stage": "M",
+      "cutoff": 3864,
+      "image_count": 5,
+      "estimated_input_tokens": 186408,
+      "dry_packet_sha256": "5b1ae5afdb0adb4685da5a79bd6f9cd42ce0b5f5b5a76b8267da0f9ee9c58750"
+    },
+    {
+      "episode": "MS1-F3863",
+      "stage": "S0",
+      "cutoff": 3902,
+      "image_count": 10,
+      "estimated_input_tokens": 324798,
+      "dry_packet_sha256": "5333dbcd391a1def6642fc190f9e47793c7f3b4ae58edc5eb1eb5e970e43fc6e"
+    },
+    {
+      "episode": "MS1-F4057",
+      "stage": "M",
+      "cutoff": 4058,
+      "image_count": 5,
+      "estimated_input_tokens": 182147,
+      "dry_packet_sha256": "e1009d6b2a6b9a94718fa6da8c11bb8c5f8c3f923ddac2a98d7a4290a435bebf"
+    },
+    {
+      "episode": "MS1-F4057",
+      "stage": "S0",
+      "cutoff": 4071,
+      "image_count": 10,
+      "estimated_input_tokens": 295918,
+      "dry_packet_sha256": "e96d526b8d2d2c0df76108fc9e2ba36f6df9c6c3f1aa884455a8eae77bd3a51e"
+    },
+    {
+      "episode": "MS1-F4485",
+      "stage": "M",
+      "cutoff": 4486,
+      "image_count": 5,
+      "estimated_input_tokens": 160405,
+      "dry_packet_sha256": "ae984ac530167da5ead1c617d111ed68bbd81e6626c97f0b7b705353a3ef3798"
+    },
+    {
+      "episode": "MS1-F4485",
+      "stage": "S0",
+      "cutoff": 4501,
+      "image_count": 10,
+      "estimated_input_tokens": 278026,
+      "dry_packet_sha256": "4c00be73f66f5dc687d4a895980739d6a37f838481cb467ec7d38445e484b995"
+    },
+    {
+      "episode": "MS1-F4519",
+      "stage": "M",
+      "cutoff": 4520,
+      "image_count": 5,
+      "estimated_input_tokens": 160512,
+      "dry_packet_sha256": "aa1f158f499fea37166dab71e7a2a5dcd443f92c72157f205ce84bfcfa1cfae2"
+    },
+    {
+      "episode": "MS1-F4519",
+      "stage": "S0",
+      "cutoff": 4524,
+      "image_count": 9,
+      "estimated_input_tokens": 236826,
+      "dry_packet_sha256": "1ed37196e2030afd43aa5e1dfb2c9f8eec7c049a715adea9c4d86bd886c2e003"
+    },
+    {
+      "episode": "MS1-F5399",
+      "stage": "M",
+      "cutoff": 5400,
+      "image_count": 5,
+      "estimated_input_tokens": 182010,
+      "dry_packet_sha256": "e71e7671f93d464308d3407f39162b74efd1e485f66798054957f624c05ae047"
+    },
+    {
+      "episode": "MS1-F5399",
+      "stage": "S0",
+      "cutoff": 5436,
+      "image_count": 10,
+      "estimated_input_tokens": 340731,
+      "dry_packet_sha256": "0ab67d2ed8a0d4e65fd4dbc9630218accea884ab544e8398ebdb6b09302b15ed"
+    },
+    {
+      "episode": "MS1-F5927",
+      "stage": "M",
+      "cutoff": 5928,
+      "image_count": 5,
+      "estimated_input_tokens": 180213,
+      "dry_packet_sha256": "bd45e8a136f738356aa1c78c17e78d2d4f48fc76e6a3df183dcb780a368a0444"
+    },
+    {
+      "episode": "MS1-F5927",
+      "stage": "S0",
+      "cutoff": 5939,
+      "image_count": 10,
+      "estimated_input_tokens": 287826,
+      "dry_packet_sha256": "7fd258730cfc7298819b482bc065546d315fa6a73ed892878e0ba36432c01623"
+    }
+  ]
+}

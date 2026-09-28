@@ -1,0 +1,250 @@
+{
+  "status": "POSTSEAL_EXPOSED_VALIDATION_PHYSICAL_REFERENCE_AUDIT",
+  "source_prediction_sha256": "bf880357f864820aba0fd719d06f31eb58d4ea71eed12b2ee08810dc2b4afbe6",
+  "matches_sha256": "5c557ab0dd833e00b4b0d3a6eeec3cdd6e0669f11da4f5e6611619fe5928cbd1",
+  "method": "GT identity at frozen A/B observation anchors compared with GT at q-local X/Y; independent of internal Bridge target-bank anchor",
+  "events": [
+    {
+      "case": "B03",
+      "q": 377,
+      "status": "KEEP",
+      "choice": "H1",
+      "reference_gt": {
+        "A": 2,
+        "B": 5
+      },
+      "q_gt": {
+        "X": 2,
+        "Y": 5
+      },
+      "hypotheses": {
+        "H1": {
+          "verdict": "CORRECT",
+          "edges": {
+            "X": {
+              "reference_role": "A",
+              "reference_gt": 2,
+              "current_gt": 2,
+              "correct": true
+            },
+            "Y": {
+              "reference_role": "B",
+              "reference_gt": 5,
+              "current_gt": 5,
+              "correct": true
+            }
+          }
+        },
+        "H2": {
+          "verdict": "WRONG",
+          "edges": {
+            "X": {
+              "reference_role": "B",
+              "reference_gt": 5,
+              "current_gt": 2,
+              "correct": false
+            },
+            "Y": {
+              "reference_role": "A",
+              "reference_gt": 2,
+              "current_gt": 5,
+              "correct": false
+            }
+          }
+        }
+      },
+      "selected_reference_verdict": "CORRECT"
+    },
+    {
+      "case": "B01",
+      "q": 1498,
+      "status": "KEEP",
+      "choice": "H2",
+      "reference_gt": {
+        "A": 2,
+        "B": 6
+      },
+      "q_gt": {
+        "X": 6,
+        "Y": 2
+      },
+      "hypotheses": {
+        "H1": {
+          "verdict": "CORRECT",
+          "edges": {
+            "X": {
+              "reference_role": "B",
+              "reference_gt": 6,
+              "current_gt": 6,
+              "correct": true
+            },
+            "Y": {
+              "reference_role": "A",
+              "reference_gt": 2,
+              "current_gt": 2,
+              "correct": true
+            }
+          }
+        },
+        "H2": {
+          "verdict": "WRONG",
+          "edges": {
+            "X": {
+              "reference_role": "A",
+              "reference_gt": 2,
+              "current_gt": 6,
+              "correct": false
+            },
+            "Y": {
+              "reference_role": "B",
+              "reference_gt": 6,
+              "current_gt": 2,
+              "correct": false
+            }
+          }
+        }
+      },
+      "selected_reference_verdict": "WRONG"
+    },
+    {
+      "case": "B05",
+      "q": 2580,
+      "status": "DEFER",
+      "choice": "DEFER",
+      "reference_gt": {
+        "A": 1,
+        "B": 2
+      },
+      "q_gt": {
+        "X": 2,
+        "Y": 1
+      },
+      "hypotheses": {
+        "H1": {
+          "verdict": "WRONG",
+          "edges": {
+            "X": {
+              "reference_role": "A",
+              "reference_gt": 1,
+              "current_gt": 2,
+              "correct": false
+            },
+            "Y": {
+              "reference_role": "B",
+              "reference_gt": 2,
+              "current_gt": 1,
+              "correct": false
+            }
+          }
+        },
+        "H2": {
+          "verdict": "CORRECT",
+          "edges": {
+            "X": {
+              "reference_role": "B",
+              "reference_gt": 2,
+              "current_gt": 2,
+              "correct": true
+            },
+            "Y": {
+              "reference_role": "A",
+              "reference_gt": 1,
+              "current_gt": 1,
+              "correct": true
+            }
+          }
+        }
+      },
+      "selected_reference_verdict": "DEFER"
+    },
+    {
+      "case": "B04",
+      "q": 2638,
+      "status": "COMMIT",
+      "choice": "H1",
+      "reference_gt": {
+        "B": 2,
+        "A": 6
+      },
+      "q_gt": {
+        "X": 6,
+        "Y": 2
+      },
+      "hypotheses": {
+        "H1": {
+          "verdict": "WRONG",
+          "edges": {
+            "X": {
+              "reference_role": "B",
+              "reference_gt": 2,
+              "current_gt": 6,
+              "correct": false
+            },
+            "Y": {
+              "reference_role": "A",
+              "reference_gt": 6,
+              "current_gt": 2,
+              "correct": false
+            }
+          }
+        },
+        "H2": {
+          "verdict": "CORRECT",
+          "edges": {
+            "X": {
+              "reference_role": "A",
+              "reference_gt": 6,
+              "current_gt": 6,
+              "correct": true
+            },
+            "Y": {
+              "reference_role": "B",
+              "reference_gt": 2,
+              "current_gt": 2,
+              "correct": true
+            }
+          }
+        }
+      },
+      "selected_reference_verdict": "WRONG"
+    }
+  ],
+  "committed_reference_counts": {
+    "CORRECT": 0,
+    "WRONG": 1,
+    "UNSCORABLE": 0
+  },
+  "frozen_scorer_bank_anchor_counts": {
+    "correct": 0,
+    "wrong": 1,
+    "unscorable": 0
+  },
+  "frozen_scorer_bank_anchor_transactions": [
+    {
+      "frame": 2638,
+      "changes": {
+        "1": 4,
+        "4": 1
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 4,
+          "current_gt": 6,
+          "anchor_gt": 2,
+          "fixed_target_gt": 6
+        },
+        {
+          "native": 4,
+          "target": 1,
+          "current_gt": 2,
+          "anchor_gt": 6,
+          "fixed_target_gt": 2
+        }
+      ],
+      "displaced_results": []
+    }
+  ],
+  "note": "Official TrackEval metrics are unchanged. Bank-anchor provenance is a distinct internal-state check, not the frozen event-reference truth label."
+}

@@ -1,0 +1,69 @@
+{
+  "status": "SCORED_EXPOSED_VALIDATION",
+  "metrics": {
+    "B0": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423
+    },
+    "B2": {
+      "IDF1": 81.63040644282859,
+      "HOTA": 69.33460127067922,
+      "AssA": 60.23234969186038,
+      "DetA": 79.8339131595075,
+      "IDSW": 11,
+      "FP": 298,
+      "FN": 423
+    }
+  },
+  "difference_frames": 251,
+  "transactions": [
+    {
+      "frame": 2638,
+      "changes": {
+        "1": 4,
+        "4": 1
+      },
+      "verdict": "wrong",
+      "edges": [
+        {
+          "native": 1,
+          "target": 4,
+          "current_gt": 6,
+          "anchor_gt": 2,
+          "fixed_target_gt": 6
+        },
+        {
+          "native": 4,
+          "target": 1,
+          "current_gt": 2,
+          "anchor_gt": 6,
+          "fixed_target_gt": 2
+        }
+      ],
+      "displaced_results": []
+    }
+  ],
+  "transaction_counts": {
+    "correct": 0,
+    "wrong": 1,
+    "unscorable": 0
+  },
+  "status_counts": {
+    "NATIVE": 2884,
+    "KEEP": 2,
+    "DEFER": 1,
+    "COMMIT": 1
+  },
+  "incremental_harm_count": 0,
+  "incremental_improvement_count": 495,
+  "exposure": "EXPOSED_VALIDATION_FEASIBILITY_NOT_BLIND",
+  "source_prediction_sha256": "bf880357f864820aba0fd719d06f31eb58d4ea71eed12b2ee08810dc2b4afbe6",
+  "score_alias_prediction_sha256": "800255257f7f981832e9df834d1bf9e3c214bd53e316baa942dbac92582733a3",
+  "score_source_sha256": "6cb2b7e438e2e98367b86f39e36ac220f90a6036c3f522b0558cec9123a8d811",
+  "arm_alias_contract": "B2 renamed B1 only in a postseal copy for unchanged official scorer"
+}

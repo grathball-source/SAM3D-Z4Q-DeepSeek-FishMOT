@@ -1,0 +1,61 @@
+{
+  "status": "POSTSEAL_ACCIDENTAL_CANONICAL_ID_CORRECTION",
+  "source_prediction_sha256": "bf880357f864820aba0fd719d06f31eb58d4ea71eed12b2ee08810dc2b4afbe6",
+  "event": "B04",
+  "q": 2638,
+  "selected_reference_verdict": "WRONG",
+  "frozen_reference_public_to_GT": {
+    "A": {
+      "anchor_frame": 2544,
+      "public_id": 1,
+      "observed_gt": 6,
+      "long_run_canonical_gt": 2,
+      "canonical_match": false
+    },
+    "B": {
+      "anchor_frame": 2525,
+      "public_id": 4,
+      "observed_gt": 2,
+      "long_run_canonical_gt": 6,
+      "canonical_match": false
+    }
+  },
+  "q_output": {
+    "X": {
+      "B0": {
+        "public_id": 1,
+        "long_run_canonical_gt": 2,
+        "current_gt": 6,
+        "canonical_match": false
+      },
+      "B2": {
+        "public_id": 4,
+        "long_run_canonical_gt": 6,
+        "current_gt": 6,
+        "canonical_match": true
+      }
+    },
+    "Y": {
+      "B0": {
+        "public_id": 4,
+        "long_run_canonical_gt": 6,
+        "current_gt": 2,
+        "canonical_match": false
+      },
+      "B2": {
+        "public_id": 1,
+        "long_run_canonical_gt": 2,
+        "current_gt": 2,
+        "canonical_match": true
+      }
+    }
+  },
+  "changed_frames": 251,
+  "object_frame_canonical_improvements": 495,
+  "object_frame_canonical_harms": 0,
+  "improvement_counts_by_native": {
+    "1": 251,
+    "4": 244
+  },
+  "interpretation": "H1 contradicts the physical A/B reference GT. The B0 public IDs were already reversed relative to long-run GT at both frozen references; the wrong event-reference swap accidentally restores canonical output labels for 495 matched object-frames. This does not validate H1 as event identity continuity."
+}

@@ -1,0 +1,82 @@
+{
+  "status": "SCORED_EXPOSED_DEVELOPMENT",
+  "frames": 8400,
+  "mode": "dry",
+  "metrics": {
+    "B0": {
+      "IDF1": 99.3334724001947,
+      "HOTA": 77.82948776478582,
+      "AssA": 77.90763828694708,
+      "DetA": 77.75663771120087,
+      "IDSW": 6,
+      "FP": 194,
+      "FN": 323
+    },
+    "B-HOLD-S0": {
+      "IDF1": 99.30963236681865,
+      "HOTA": 77.83580952661369,
+      "AssA": 77.93428686986039,
+      "DetA": 77.74422357961919,
+      "IDSW": 23,
+      "FP": 194,
+      "FN": 323
+    },
+    "B-VLM-S0": {
+      "IDF1": 99.30963236681865,
+      "HOTA": 77.83580952661369,
+      "AssA": 77.93428686986039,
+      "DetA": 77.74422357961919,
+      "IDSW": 23,
+      "FP": 194,
+      "FN": 323
+    }
+  },
+  "delta": {
+    "B-HOLD-S0": {
+      "IDF1": -0.023840033376046676,
+      "HOTA": 0.006321761827862815,
+      "AssA": 0.026648582913310292,
+      "DetA": -0.012414131581678589,
+      "IDSW": 17,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM-S0": {
+      "IDF1": -0.023840033376046676,
+      "HOTA": 0.006321761827862815,
+      "AssA": 0.026648582913310292,
+      "DetA": -0.012414131581678589,
+      "IDSW": 17,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM-S0_vs_B-HOLD-S0": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "changed_frames": {
+    "B0_vs_HOLD": 235,
+    "B0_vs_VLM": 235,
+    "HOLD_vs_VLM": 0
+  },
+  "selected_episodes": [
+    "MS1-F1152",
+    "MS1-F3078",
+    "MS1-F3863",
+    "MS1-F4057",
+    "MS1-F4485",
+    "MS1-F4519",
+    "MS1-F5399",
+    "MS1-F5927"
+  ],
+  "http_attempts": 0,
+  "interpretation": "DRY_NO_API_MODEL_UNTESTED",
+  "archived_B0_fullmetrics_exact": true,
+  "prediction_sha256": "feae41a10344eeeaed42b3a64aa2515d8faf3a388ed0be308e8a1705240025fe"
+}

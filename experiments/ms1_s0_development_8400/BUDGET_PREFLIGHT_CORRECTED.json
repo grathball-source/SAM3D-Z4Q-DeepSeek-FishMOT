@@ -1,0 +1,32 @@
+{
+  "status": "PENDING_NEW_USER_AUTHORIZATION",
+  "date": "2026-09-28",
+  "model": "deepseek-flash",
+  "official_pricing_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "peak_usd_per_1m_cache_miss_input": 0.3,
+  "peak_usd_per_1m_output": 1.2,
+  "model_context_tokens": 1000000,
+  "request_max_output_tokens": 65536,
+  "packet_estimation": {
+    "M": {
+      "images": 5,
+      "system_chars": 769,
+      "user_chars": 210696,
+      "estimated_input_tokens": 209823
+    },
+    "S0": {
+      "images": 10,
+      "system_chars": 769,
+      "user_chars": 235463,
+      "estimated_input_tokens": 306603
+    }
+  },
+  "M_hypothesis_additional_token_allowance": 30000,
+  "input_estimate_gate": 350000,
+  "eligible_episodes": 1,
+  "max_inference_http": 2,
+  "peak_upper_usd_per_http": 0.3786432,
+  "peak_upper_usd_total": 0.7572864,
+  "proposed_user_cap_usd": 4.0,
+  "prior_budget_reused": false
+}

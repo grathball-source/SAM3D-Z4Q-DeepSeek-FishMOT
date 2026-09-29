@@ -1,0 +1,63 @@
+{
+  "status": "NO_VERIFIED_SOURCE_OLD_BENEFICIAL_ACTION",
+  "definition": "physically same GT at actual anchor and current source, or a native switch occurrence eliminated",
+  "source_old": "none; F194 is unscorable, F468 has different anchor/current GT; native-only switch occurrences=0",
+  "separate_source_baseline_first_same_gt": {
+    "source": "SOURCE_BASELINE",
+    "segment": "feeding_000351_000555",
+    "original_frame": 372,
+    "native_id": 28,
+    "old_public_id": 21,
+    "birth_frame": 11,
+    "native_run_count_before": 11,
+    "first_eligible_original_frame": 366,
+    "anchor": {
+      "frame": 10,
+      "native_id": 21,
+      "mask": "n:21",
+      "canonical_id": 21
+    },
+    "anchor_gt": [
+      21
+    ],
+    "current_gt": [
+      21
+    ],
+    "physical_relation": "SAME_GT",
+    "frozen_published_public": 21,
+    "onefix_published_public": 28,
+    "frozen_alias_write": {
+      "before": null,
+      "after": {
+        "target": 21,
+        "anchor": {
+          "frame": 10,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "commit_frame": 22
+      }
+    },
+    "onefix_alias_write": null,
+    "onefix_guard_at_action": [
+      {
+        "native_id": 28,
+        "certificate": {
+          "qualified": true,
+          "failures": [],
+          "run": {
+            "start_frame": 11,
+            "count": 11,
+            "last_frame": 21,
+            "time": 1789706593.008
+          }
+        },
+        "reason": "CERTIFIED_CONTINUOUS_NATIVE_BEFORE_D1_RECONNECT"
+      }
+    ],
+    "note": "GT consulted only after all prediction seals"
+  },
+  "caveat": "F372 is physically same-GT but adds a CLEAR switch at publication; it is not proven metric-beneficial",
+  "visualization": "public/cases/SOURCE_BASELINE_372_native28.svg"
+}

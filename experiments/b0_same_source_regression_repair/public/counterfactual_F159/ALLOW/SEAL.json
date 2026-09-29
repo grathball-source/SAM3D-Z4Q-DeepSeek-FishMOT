@@ -1,0 +1,57 @@
+{
+  "status": "SEALED_BEFORE_GT",
+  "case": {
+    "source": "SOURCE_OLD",
+    "segment": "feeding_000000_000199",
+    "original_frame": 159,
+    "native_id": 26,
+    "target_id": 16
+  },
+  "arm": "ALLOW",
+  "frames": 200,
+  "decision_pre_state_sha256": "e1f8de109d49c5f702fb0785caa15588828f6d343b7021e665463899a1ad829a",
+  "decision_post_state_sha256": "cb9abc20d01204e99e9b989c8da6f0982a87237e9acc7ff2624fc6c318152d0f",
+  "prefix_frames": 159,
+  "continuation_frames": 41,
+  "input_source_manifest_sha256": "746aa6e53e6ea8deb8988ecc889afa13362c38336bd93f05690eb7208c6bd438",
+  "derived": {
+    "observations": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000000_000199\\observations.jsonl.gz",
+      "bytes": 268711,
+      "sha256": "1005cb07284f61df25f807afbc860a085e8ef48d33b202360f0e7b243adebbb6"
+    },
+    "profiles": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000000_000199\\profiles.jsonl.gz",
+      "bytes": 685790,
+      "sha256": "ba9bc73026154ad7b4842042995c264e8e5175831e11c46d4e7210fd95caef25"
+    },
+    "assignments": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000000_000199\\assignments.jsonl.gz",
+      "bytes": 243655,
+      "sha256": "b56a44b68330aee00ee18e2526293000c7efc564f07e1311b31ec54361ab4a21"
+    }
+  },
+  "prediction": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\counterfactual_F159\\ALLOW\\PREDICTIONS.jsonl.gz",
+    "bytes": 5373,
+    "sha256": "4d425db5a91e63f7826555d60c31b878e942e23c58381fcaa441883b6cc25702"
+  },
+  "action": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\counterfactual_F159\\ALLOW\\ACTION_LEDGER.jsonl",
+    "bytes": 37794,
+    "sha256": "089920b049fe2b2fcf3067277e4da3f4972489b265b8c0c91246e8522825614f"
+  },
+  "publication": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\counterfactual_F159\\ALLOW\\PUBLISH_LEDGER.jsonl",
+    "bytes": 38762,
+    "sha256": "2adeb9645160e56d5c896a7001caa6715b22a8f4523cbc1b2dc72709ae5d0101"
+  },
+  "code": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\counterfactual.py": "e7d47a3f896a8bd29b68a5c431c7b22af846b459129b0a57ecf32655f12fbf5d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\trace.py": "065257e754310d6bcf55d12413d91db30f8602eeeca34fd0c904f83331ea17c8",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af"
+  },
+  "diagnostic_only": true,
+  "gt_not_opened": true,
+  "http_attempts": 0
+}

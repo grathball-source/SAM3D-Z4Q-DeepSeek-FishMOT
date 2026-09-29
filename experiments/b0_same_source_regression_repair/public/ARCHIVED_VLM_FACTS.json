@@ -1,0 +1,72 @@
+{
+  "status": "ARCHIVED_REFERENCE_ONLY",
+  "events": [
+    {
+      "original_q": 419,
+      "arm": "B-HOLD",
+      "raw_choice": null,
+      "numeric_choice": "H1",
+      "selected_choice": "H1",
+      "selected_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "physical": "WRONG",
+      "anchor_audit_event": "MS1-F67"
+    },
+    {
+      "original_q": 419,
+      "arm": "B-VLM",
+      "raw_choice": "H2",
+      "numeric_choice": "H1",
+      "selected_choice": "H2",
+      "selected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "physical": "CORRECT",
+      "anchor_audit_event": "MS1-F67"
+    },
+    {
+      "original_q": 519,
+      "arm": "B-HOLD",
+      "raw_choice": null,
+      "numeric_choice": "H1",
+      "selected_choice": "H1",
+      "selected_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "physical": "WRONG",
+      "anchor_audit_event": "MS1-F166"
+    },
+    {
+      "original_q": 519,
+      "arm": "B-VLM",
+      "raw_choice": "H2",
+      "numeric_choice": "H1",
+      "selected_choice": "H2",
+      "selected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "physical": "CORRECT",
+      "anchor_audit_event": "MS1-F166"
+    }
+  ],
+  "old_source_pooled_B_VLM": {
+    "IDF1": 88.60922285504319,
+    "HOTA": 85.30608747349936,
+    "AssA": 81.85298059850669,
+    "DetA": 89.34201920117377,
+    "IDSW": 35,
+    "FP": 224,
+    "FN": 344,
+    "GT": 10946,
+    "predictions": 10826
+  },
+  "old_anchor_audit_sha256": "71184fbab3dc25fcf2ed9bca12f9698d0dcd8b76fb80a46a33330a631bb31480",
+  "old_metrics_sha256": "cb8245843bf12980274354a1a544fb9e55981ab07f21ddc33d97a31bc1eeb532",
+  "new_model_http": 0,
+  "new_state_reuse": false
+}

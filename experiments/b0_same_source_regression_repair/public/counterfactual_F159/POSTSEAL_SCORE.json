@@ -1,0 +1,53 @@
+{
+  "status": "SCORED_AFTER_PAIR_SEAL",
+  "case": {
+    "source": "SOURCE_OLD",
+    "segment": "feeding_000000_000199",
+    "original_frame": 159,
+    "native_id": 26,
+    "target_id": 16
+  },
+  "branch": {
+    "ALLOW": {
+      "metrics": {
+        "IDF1": 92.12561737023577,
+        "HOTA": 90.4837479885973,
+        "AssA": 86.39966385114246,
+        "DetA": 94.76188123291938,
+        "IDSW": 12,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "changed_vs_archived_frozen_frames": []
+    },
+    "VETO": {
+      "metrics": {
+        "IDF1": 92.14425496225887,
+        "HOTA": 90.49919198687239,
+        "AssA": 86.42916207029062,
+        "DetA": 94.76188123291938,
+        "IDSW": 12,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "changed_vs_archived_frozen_frames": [
+        159
+      ]
+    }
+  },
+  "delta": {
+    "IDF1": 0.018637592023097227,
+    "HOTA": 0.015443998275088688,
+    "AssA": 0.029498219148152316,
+    "DetA": 0.0,
+    "IDSW": 0,
+    "FP": 0,
+    "FN": 0
+  },
+  "pair_seal_sha256": "29aca8049efea35d04f7ba180643afe70d9b8ab84bec8b33d0002bd3b705c797",
+  "scorer_sha256": "e7d47a3f896a8bd29b68a5c431c7b22af846b459129b0a57ecf32655f12fbf5d"
+}

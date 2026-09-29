@@ -1,0 +1,67 @@
+{
+  "status": "POSTSEAL_CONFIRMED",
+  "action": {
+    "source": "SOURCE_OLD",
+    "segment": "feeding_000000_000199",
+    "original_frame": 159,
+    "native_id": 26,
+    "old_public_id": 16,
+    "birth_frame": 25,
+    "native_run_count_before": 135,
+    "first_eligible_original_frame": 137,
+    "anchor": {
+      "frame": 15,
+      "native_id": 16,
+      "mask": "n:16",
+      "canonical_id": 16
+    },
+    "anchor_gt": [
+      16
+    ],
+    "current_gt": [
+      26
+    ],
+    "physical_relation": "DIFFERENT_GT",
+    "frozen_published_public": 16,
+    "onefix_published_public": 26,
+    "frozen_alias_write": {
+      "before": null,
+      "after": {
+        "target": 16,
+        "anchor": {
+          "frame": 15,
+          "native_id": 16,
+          "mask": "n:16",
+          "canonical_id": 16
+        },
+        "commit_frame": 160
+      }
+    },
+    "onefix_alias_write": null,
+    "onefix_guard_at_action": [
+      {
+        "native_id": 26,
+        "certificate": {
+          "qualified": true,
+          "failures": [],
+          "run": {
+            "start_frame": 25,
+            "count": 135,
+            "last_frame": 159,
+            "time": 1789706585.931
+          }
+        },
+        "reason": "CERTIFIED_CONTINUOUS_NATIVE_BEFORE_D1_RECONNECT"
+      }
+    ],
+    "note": "GT consulted only after all prediction seals"
+  },
+  "first_decision_prestate_sha256": "e1f8de109d49c5f702fb0785caa15588828f6d343b7021e665463899a1ad829a",
+  "same_source_counterfactual": "public/counterfactual_F159/POSTSEAL_SCORE.json",
+  "visualization": "public/cases/SOURCE_OLD_159_native26.svg",
+  "source_old_switch_occurrence": [
+    "feeding_000000_000199",
+    159,
+    26
+  ]
+}

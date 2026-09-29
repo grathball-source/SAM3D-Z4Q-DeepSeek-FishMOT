@@ -1,0 +1,56 @@
+{
+  "status": "SEALED_BEFORE_GT",
+  "source": "SOURCE_OLD",
+  "segment": "feeding_000351_000555",
+  "frames": 205,
+  "guarded_frames": 99,
+  "accepted_reconnects": 1,
+  "model_http": 0,
+  "rule": "NEW_HYPOTHESIS_CERTIFIED_NATIVE_GUARD",
+  "source_manifest_sha256": "746aa6e53e6ea8deb8988ecc889afa13362c38336bd93f05690eb7208c6bd438",
+  "input_derived": {
+    "observations": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\observations.jsonl.gz",
+      "bytes": 293626,
+      "sha256": "49d3cf556f4fed0bc1e6c5cb30a70fda3e111493316309bddb96c2f2aadf4b07"
+    },
+    "profiles": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\profiles.jsonl.gz",
+      "bytes": 716260,
+      "sha256": "18c2c4f536b5448f84e224fe97ec800ca9bec3013797c255f8812ee4ac326710"
+    },
+    "assignments": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\assignments.jsonl.gz",
+      "bytes": 274831,
+      "sha256": "862a1ce78e198c3100892217671ff0688345e9882b7b236d395e29e808871fe3"
+    }
+  },
+  "prediction": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\SOURCE_OLD\\feeding_000351_000555\\onefix\\PREDICTIONS.jsonl.gz",
+    "bytes": 7002,
+    "sha256": "0b80f3f86184a47d883af570bae8de24ccfb06d916464906cc6da315b15a4d1c"
+  },
+  "actions": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\SOURCE_OLD\\feeding_000351_000555\\onefix\\ACTION_LEDGER.jsonl",
+    "bytes": 11987446,
+    "sha256": "e5bd9a5b33f8e261e86bac951044b07ec4076659b34a5ba649922767428b3389"
+  },
+  "publication": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\public\\SOURCE_OLD\\feeding_000351_000555\\onefix\\PUBLISH_LEDGER.jsonl",
+    "bytes": 39810,
+    "sha256": "a637347a4919287bcee8b63b7780037995306d6edfc1b29d40147f21b8676437"
+  },
+  "code": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\onefix.py": "bf8d7de078bed69e785ba91700f26dbf681db4018a1abc2e77611203fe1f4e76",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\source.py": "a14b48427eaca1442bff83295c7d33f66f4c4d424bc9194fdf4a34c3fbebd859",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\b0_same_source_regression_repair\\trace.py": "065257e754310d6bcf55d12413d91db30f8602eeeca34fd0c904f83331ea17c8",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py": "233f180ff8a6a14f43a0e133606281644f0257b4a4d303794ac007df84d563b6",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py": "73ab21fdb0cad0986c967cfc5d56f5174451ee90111c27324afee4b9fae976fc",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py": "f199d1d78b653bfdbd46b6575da4c6d77e79f1b8fc89463d929843e4ba79950b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py": "fd2e5aa648281a590c00737d90dd8099af09c8fbdd133c768a5104b965b5afb4",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py": "ec1c50d2b948968ebbe77913ddcfe323bed1e84b346ca49fdd44e4dd70a11562",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_identity_balance_20260917\\controller.py": "cd47bec3c3726a1a34b7af76be07fc7d20d4c2c049bd7822fab0ef5dd36a3b09"
+  }
+}

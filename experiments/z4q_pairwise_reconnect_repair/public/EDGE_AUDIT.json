@@ -1,0 +1,346 @@
+{
+  "status": "POSTSEAL_PHYSICAL_AUDIT",
+  "source": {
+    "SOURCE_OLD": {
+      "accepted_reconnects": [
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000000_000199",
+          "original_frame": 159,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 26,
+          "public_id": 16,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 15,
+            "native_id": 16,
+            "mask": "n:16",
+            "canonical_id": 16
+          },
+          "anchor_gt": [
+            16
+          ],
+          "current_gt": [
+            26
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000000_000199",
+          "original_frame": 190,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 30,
+          "public_id": 8,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 42,
+            "native_id": 8,
+            "mask": "n:8",
+            "canonical_id": 8
+          },
+          "anchor_gt": [
+            8
+          ],
+          "current_gt": [
+            7
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000000_000199",
+          "original_frame": 194,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 38,
+          "public_id": 7,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 163,
+            "native_id": 7,
+            "mask": "n:7",
+            "canonical_id": 7
+          },
+          "anchor_gt": [],
+          "current_gt": [],
+          "physical_relation": "UNKNOWN"
+        },
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000351_000555",
+          "original_frame": 374,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 70,
+          "public_id": 67,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 11,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "anchor_gt": [],
+          "current_gt": [
+            21
+          ],
+          "physical_relation": "UNKNOWN"
+        },
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000351_000555",
+          "original_frame": 468,
+          "origin_rule": "BIRTH_REFINE",
+          "phase": "birth",
+          "native_id": 80,
+          "public_id": 21,
+          "confirmations": 1,
+          "anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "anchor_gt": [
+            26
+          ],
+          "current_gt": [
+            21
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_OLD",
+          "segment": "feeding_000351_000555",
+          "original_frame": 522,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 83,
+          "public_id": 73,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "anchor_gt": [
+            24
+          ],
+          "current_gt": [
+            6
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        }
+      ],
+      "rejected_edges": [],
+      "origin_counts": {
+        "D1_DELAYED": 5,
+        "BIRTH_REFINE": 1
+      },
+      "relation_counts": {
+        "SAME_GT": 0,
+        "DIFFERENT_GT": 4,
+        "UNKNOWN": 2
+      }
+    },
+    "SOURCE_BASELINE": {
+      "accepted_reconnects": [
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000000_000199",
+          "original_frame": 159,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 26,
+          "public_id": 16,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 15,
+            "native_id": 16,
+            "mask": "n:16",
+            "canonical_id": 16
+          },
+          "anchor_gt": [
+            16
+          ],
+          "current_gt": [
+            26
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000000_000199",
+          "original_frame": 190,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 30,
+          "public_id": 8,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 42,
+            "native_id": 8,
+            "mask": "n:8",
+            "canonical_id": 8
+          },
+          "anchor_gt": [
+            8
+          ],
+          "current_gt": [
+            7
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000000_000199",
+          "original_frame": 194,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 38,
+          "public_id": 7,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 163,
+            "native_id": 7,
+            "mask": "n:7",
+            "canonical_id": 7
+          },
+          "anchor_gt": [],
+          "current_gt": [],
+          "physical_relation": "UNKNOWN"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000351_000555",
+          "original_frame": 372,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 28,
+          "public_id": 21,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 10,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "anchor_gt": [
+            21
+          ],
+          "current_gt": [
+            21
+          ],
+          "physical_relation": "SAME_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000351_000555",
+          "original_frame": 409,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 30,
+          "public_id": 16,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 50,
+            "native_id": 16,
+            "mask": "n:16",
+            "canonical_id": 16
+          },
+          "anchor_gt": [
+            16
+          ],
+          "current_gt": [
+            16
+          ],
+          "physical_relation": "SAME_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000351_000555",
+          "original_frame": 464,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 35,
+          "public_id": 2,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 34,
+            "native_id": 2,
+            "mask": "n:2",
+            "canonical_id": 2
+          },
+          "anchor_gt": [
+            2
+          ],
+          "current_gt": [
+            15
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000351_000555",
+          "original_frame": 506,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 41,
+          "public_id": 21,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 71,
+            "native_id": 28,
+            "mask": "n:28",
+            "canonical_id": 21
+          },
+          "anchor_gt": [
+            21
+          ],
+          "current_gt": [
+            21
+          ],
+          "physical_relation": "SAME_GT"
+        },
+        {
+          "source": "SOURCE_BASELINE",
+          "segment": "feeding_000351_000555",
+          "original_frame": 522,
+          "origin_rule": "D1_DELAYED",
+          "phase": null,
+          "native_id": 36,
+          "public_id": 19,
+          "confirmations": 5,
+          "anchor": {
+            "frame": 92,
+            "native_id": 19,
+            "mask": "n:19",
+            "canonical_id": 19
+          },
+          "anchor_gt": [
+            24
+          ],
+          "current_gt": [
+            6
+          ],
+          "physical_relation": "DIFFERENT_GT"
+        }
+      ],
+      "rejected_edges": [],
+      "origin_counts": {
+        "D1_DELAYED": 8,
+        "BIRTH_REFINE": 0
+      },
+      "relation_counts": {
+        "SAME_GT": 3,
+        "DIFFERENT_GT": 4,
+        "UNKNOWN": 1
+      }
+    }
+  },
+  "metrics_sha256": "9766c3fce674ffc527186daa434767ef938cb45a475133a5ae1d67415032f38d"
+}

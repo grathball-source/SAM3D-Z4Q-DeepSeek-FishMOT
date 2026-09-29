@@ -1,0 +1,10 @@
+# Execution log — 2026-09-29
+
+1. Inspected attached protocol, clean review base `3e4101b54e99dbf7cb246cdb673cc6e2becdfe35`, archived B0-R inputs and both controller paths. The attachment-mentioned standalone component/tests were not present among provided files; implemented the written contract in `source/`.
+2. Seven new focused checks passed, including true separate-mask evidence, duplicate-mask rejection, version break, newborn unchanged, both hook sites, and a real F159 artificial single-edge veto that left the dummy and main preview state intact. Actual research F159 slice did **not** use the artificial veto: `26→16` remained because its pairwise source/target evidence was unavailable. Saved `SLICE_F159.json` without opening GT.
+3. Created `FREEZE.json` with the rule/controller/test/scorer/config/input hashes and F159 slice hash. No further edit to those frozen files followed.
+4. Ran `run.py run` once over OLD 200+205 and BASELINE 200+205 frames. Four segment seals preceded `score.py`; each source×segment started a new Bridge. No paid API or SAM3 run.
+5. `score.py` verified all four prediction/action/publication/code/input hashes, then opened the edited reference. Official TrackEval scoring succeeded. Its import printed an optional BURST/tabulate warning; required CLEAR, Identity and HOTA computations completed. No file or dependency was changed in response.
+6. `accept.py` verified every frozen file, seal, mask token, one-to-one public mapping and 810/810 frame equivalence with archived frozen Z4Q. All 1688 candidate-edge checks were `NO_EXCLUSION_EVIDENCE`; rejected edges 0. F468 birth-origin correction verified. `visualize.py` produced two geometry-only cases. Supplementary legacy diagnostic exception test passed without changing frozen research code or old seals.
+
+Results and residual uncertainty are in `FINAL_REVIEW.md`. The older archived F159 counterfactual was a whole-source-row veto and called the F199 final state a decision-post state; that historical output is preserved and qualified in this report.

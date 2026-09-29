@@ -1,0 +1,74 @@
+{
+  "status": "PASS_ENGINEERING_NO_EFFECT_RESEARCH",
+  "full_source_comparison": {
+    "SOURCE_OLD": {
+      "feeding_000000_000199": {
+        "frames": 200,
+        "changed_vs_frozen": [],
+        "edge_checks": 168,
+        "rejected_edges": 0,
+        "reasons": {
+          "source_segment_unqualified_or_no_continuous_history": 117,
+          "target_anchor_lineage_unknown": 51
+        },
+        "origins": {
+          "D1_DELAYED": 141,
+          "BIRTH_REFINE": 27
+        }
+      },
+      "feeding_000351_000555": {
+        "frames": 205,
+        "changed_vs_frozen": [],
+        "edge_checks": 466,
+        "rejected_edges": 0,
+        "reasons": {
+          "source_segment_unqualified_or_no_continuous_history": 310,
+          "target_anchor_lineage_unknown": 156
+        },
+        "origins": {
+          "D1_DELAYED": 380,
+          "BIRTH_REFINE": 86
+        }
+      }
+    },
+    "SOURCE_BASELINE": {
+      "feeding_000000_000199": {
+        "frames": 200,
+        "changed_vs_frozen": [],
+        "edge_checks": 168,
+        "rejected_edges": 0,
+        "reasons": {
+          "source_segment_unqualified_or_no_continuous_history": 117,
+          "target_anchor_lineage_unknown": 51
+        },
+        "origins": {
+          "D1_DELAYED": 141,
+          "BIRTH_REFINE": 27
+        }
+      },
+      "feeding_000351_000555": {
+        "frames": 205,
+        "changed_vs_frozen": [],
+        "edge_checks": 886,
+        "rejected_edges": 0,
+        "reasons": {
+          "target_anchor_lineage_unknown": 315,
+          "source_segment_unqualified_or_no_continuous_history": 569,
+          "no_confirmed_pair_streak": 2
+        },
+        "origins": {
+          "D1_DELAYED": 754,
+          "BIRTH_REFINE": 132
+        }
+      }
+    }
+  },
+  "freeze_sha256": "1c8daac47b676a0365c2fd0579d79f70801010b6e1d13b9608c20d094c9b8967",
+  "run_summary_sha256": "79ad174e5721716c97fa7bc93302ba804b8e94fcb3be50f09e0f0f4a3c3a1e44",
+  "metrics_sha256": "9766c3fce674ffc527186daa434767ef938cb45a475133a5ae1d67415032f38d",
+  "zero_rejected_edges": true,
+  "pairwise_identical_to_frozen_in_all_810_frames": true,
+  "F468_birth_origin_verified": true,
+  "decision_and_final_state_distinct": true,
+  "model_http": 0
+}

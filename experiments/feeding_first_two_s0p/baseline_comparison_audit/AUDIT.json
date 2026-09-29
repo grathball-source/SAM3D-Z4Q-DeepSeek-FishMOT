@@ -1,0 +1,257 @@
+{
+  "status": "READ_ONLY_RESCORING",
+  "frames": 405,
+  "audit_script_sha256": "7fa05cf492912591346ab387a615c5a00dbc17ce705ad7c4ee71d30c09020e11",
+  "old_score_script_sha256": "862e3a188dbb67a2e34029168bc33811b17c0528d1974994efe8481521c30fb7",
+  "old_metrics_sha256": "cb8245843bf12980274354a1a544fb9e55981ab07f21ddc33d97a31bc1eeb532",
+  "old_seal_sha256": {
+    "feeding_000000_000199": "f6b78e2de04457e747827612173d0d5cae5f5d5c57508b680d729fad47f19055",
+    "feeding_000351_000555": "59b29ecf74564c3f4ff464806797ef543249f8ac8b96ac370d16a4be6b1452a9"
+  },
+  "archived_baseline_protocol_sha256": "bc5961d9fbb6a503fb4794e2cf948e7a621e64e96051b09552e02f9ea5123457",
+  "archived_baseline_script_sha256": "ae93f2abb3231c796e0be06ead8998427f82665e72b7e028be7a801fc573e770",
+  "source_mismatch": {
+    "feeding_000000_000199": {
+      "previous_source": "E:\\CAU\\D-MOT\\data\\AnnotationFeeding_20260924\\ML\\labels_raw",
+      "canonical_baseline_source": "E:\\CAU\\D-MOT\\data\\AnnotationFeeding_20260924\\ML\\labels_raw",
+      "changed_files": 0,
+      "frames_with_different_instance_count": 0,
+      "previous_detections": 5332,
+      "canonical_detections": 5332,
+      "reference_polygon_parts": 6439,
+      "previous_exact_geometry_parts": 6136,
+      "canonical_exact_geometry_parts": 6136
+    },
+    "feeding_000351_000555": {
+      "previous_source": "E:\\CAU\\D-MOT\\data\\AnnotationFeeding_20260924\\ML\\labels_raw",
+      "canonical_baseline_source": "E:\\CAU\\D-MOT\\data\\AnnotationFeeding_20260924\\ML\\segments_v2\\resegmented_000351_001906\\labels_raw",
+      "changed_files": 205,
+      "frames_with_different_instance_count": 123,
+      "previous_detections": 5494,
+      "canonical_detections": 5421,
+      "reference_polygon_parts": 6240,
+      "previous_exact_geometry_parts": 9,
+      "canonical_exact_geometry_parts": 5975
+    }
+  },
+  "segment_metrics": {
+    "feeding_000000_000199": {
+      "SAM3_same_input": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.36252204380997,
+        "AssA": 88.0858769375677,
+        "DetA": 94.76188123291938,
+        "IDSW": 10,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "B0": {
+        "IDF1": 92.12561737023577,
+        "HOTA": 90.4837479885973,
+        "AssA": 86.39966385114246,
+        "DetA": 94.76188123291938,
+        "IDSW": 12,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "B-HOLD": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.24360554703888,
+        "AssA": 87.8567216105058,
+        "DetA": 94.76188123291938,
+        "IDSW": 11,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "B-VLM": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.24360554703888,
+        "AssA": 87.8567216105058,
+        "DetA": 94.76188123291938,
+        "IDSW": 11,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "SAM3_canonical": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.36252204380997,
+        "AssA": 88.0858769375677,
+        "DetA": 94.76188123291938,
+        "IDSW": 10,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      }
+    },
+    "feeding_000351_000555": {
+      "SAM3_same_input": {
+        "IDF1": 82.92727108051807,
+        "HOTA": 78.58284442084609,
+        "AssA": 72.1826902323686,
+        "DetA": 85.59283666556213,
+        "IDSW": 22,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "B0": {
+        "IDF1": 82.89104247803641,
+        "HOTA": 78.14779790472312,
+        "AssA": 71.42993326096412,
+        "DetA": 85.5395185924718,
+        "IDSW": 24,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "B-HOLD": {
+        "IDF1": 81.07961235395345,
+        "HOTA": 76.21626351940287,
+        "AssA": 67.9303805973295,
+        "DetA": 85.5591989936481,
+        "IDSW": 28,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "B-VLM": {
+        "IDF1": 84.44887238474776,
+        "HOTA": 78.94967638874773,
+        "AssA": 72.90019592573584,
+        "DetA": 85.5395185924718,
+        "IDSW": 24,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "SAM3_canonical": {
+        "IDF1": 79.72283005105763,
+        "HOTA": 83.8346956258531,
+        "AssA": 74.48945086579246,
+        "DetA": 94.35562393965292,
+        "IDSW": 28,
+        "FP": 70,
+        "FN": 196,
+        "GT": 5547,
+        "predictions": 5421
+      }
+    }
+  },
+  "pooled_metrics": {
+    "SAM3_same_input": {
+      "IDF1": 87.83758956457835,
+      "HOTA": 85.18747904106168,
+      "AssA": 81.60937191252809,
+      "DetA": 89.36936535895427,
+      "IDSW": 32,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "B0": {
+      "IDF1": 87.44258680874518,
+      "HOTA": 84.52340158662949,
+      "AssA": 80.36273862794462,
+      "DetA": 89.34201920117377,
+      "IDSW": 36,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "B-HOLD": {
+      "IDF1": 86.90060628329965,
+      "HOTA": 83.98626955233809,
+      "AssA": 79.37316914762009,
+      "DetA": 89.35209135610197,
+      "IDSW": 39,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "B-VLM": {
+      "IDF1": 88.60922285504319,
+      "HOTA": 85.30608747349936,
+      "AssA": 81.85298059850669,
+      "DetA": 89.34201920117377,
+      "IDSW": 35,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "SAM3_canonical": {
+      "IDF1": 86.23438868150606,
+      "HOTA": 87.6344725132968,
+      "AssA": 81.22117888908079,
+      "DetA": 94.5559432215141,
+      "IDSW": 38,
+      "FP": 146,
+      "FN": 339,
+      "GT": 10946,
+      "predictions": 10753
+    }
+  },
+  "canonical_1920_archived": {
+    "feeding_000000_000199": {
+      "IDF1": 92.90839623520641,
+      "HOTA": 91.35823251010044,
+      "AssA": 88.08984225583201,
+      "DetA": 94.74862814861736,
+      "IDSW": 10,
+      "FP": 77,
+      "FN": 144,
+      "GT_detections": 5399,
+      "predicted_detections": 5332
+    },
+    "feeding_000351_000555": {
+      "IDF1": 79.68636032093363,
+      "HOTA": 83.80037129805532,
+      "AssA": 74.47155614170782,
+      "DetA": 94.30090465443625,
+      "IDSW": 28,
+      "FP": 74,
+      "FN": 200,
+      "GT_detections": 5547,
+      "predicted_detections": 5421
+    }
+  },
+  "resolution_delta": {
+    "feeding_000000_000199": {
+      "IDF1": -0.018637592023111438,
+      "HOTA": 0.004289533709538773,
+      "AssA": -0.003965318264306461,
+      "DetA": 0.013253084302021989
+    },
+    "feeding_000351_000555": {
+      "IDF1": 0.036469730123997124,
+      "HOTA": 0.03432432779777628,
+      "AssA": 0.01789472408464121,
+      "DetA": 0.05471928521666314
+    }
+  },
+  "checks": {
+    "old_seals_verified": true,
+    "old_scores_reproduced": true,
+    "segment_namespace_equals_trackeval_combine": true,
+    "gt_640_points_match_source_pixel_center_transform": true,
+    "baseline_evaluator_and_trackeval_hash_match": true,
+    "baseline_prediction_and_reference_hash_match": true,
+    "dataset_manifest_rgb_and_label_hash_match": true
+  }
+}

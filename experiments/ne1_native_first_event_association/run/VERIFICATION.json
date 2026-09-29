@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "segments": {
+    "feeding_000000_000199": {
+      "frames": 200,
+      "starts": 1,
+      "ends": 1,
+      "http_unknown": 0,
+      "unsent": 0,
+      "q_publications": 0,
+      "peak_charge_upper_usd": 0.0279042,
+      "auto": {
+        "edge_checks": {
+          "EVENT_NUM": {
+            "D1_DELAYED": 192,
+            "BIRTH_REFINE": 25
+          },
+          "EVENT_VLM": {
+            "D1_DELAYED": 192,
+            "BIRTH_REFINE": 25
+          }
+        },
+        "accepted": {
+          "Z4Q_FROZEN": {
+            "D1_DELAYED": 3,
+            "BIRTH_REFINE": 0
+          },
+          "EVENT_NUM": {
+            "D1_DELAYED": 0,
+            "BIRTH_REFINE": 0
+          },
+          "EVENT_VLM": {
+            "D1_DELAYED": 0,
+            "BIRTH_REFINE": 0
+          }
+        },
+        "no_event_native_equality_frame_checks": 308,
+        "policy": "D1_DELAYED and BIRTH_REFINE candidate edges vetoed before assignment"
+      }
+    },
+    "feeding_000351_000555": {
+      "frames": 205,
+      "starts": 11,
+      "ends": 11,
+      "http_unknown": 0,
+      "unsent": 0,
+      "q_publications": 12,
+      "peak_charge_upper_usd": 0.2469477,
+      "auto": {
+        "edge_checks": {
+          "EVENT_NUM": {
+            "D1_DELAYED": 870,
+            "BIRTH_REFINE": 89
+          },
+          "EVENT_VLM": {
+            "D1_DELAYED": 870,
+            "BIRTH_REFINE": 89
+          }
+        },
+        "accepted": {
+          "Z4Q_FROZEN": {
+            "D1_DELAYED": 2,
+            "BIRTH_REFINE": 1
+          },
+          "EVENT_NUM": {
+            "D1_DELAYED": 0,
+            "BIRTH_REFINE": 0
+          },
+          "EVENT_VLM": {
+            "D1_DELAYED": 0,
+            "BIRTH_REFINE": 0
+          }
+        },
+        "no_event_native_equality_frame_checks": 22,
+        "policy": "D1_DELAYED and BIRTH_REFINE candidate edges vetoed before assignment"
+      }
+    }
+  },
+  "actual_chat_http": 12,
+  "peak_charge_upper_usd": 0.2748519,
+  "selection": [
+    {
+      "segment": "feeding_000000_000199",
+      "episode": "MS1-F155",
+      "local_confirm": 156,
+      "global_confirm": 155
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F12",
+      "local_confirm": 13,
+      "global_confirm": 363
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F59",
+      "local_confirm": 60,
+      "global_confirm": 410
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F67",
+      "local_confirm": 68,
+      "global_confirm": 418
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F81",
+      "local_confirm": 82,
+      "global_confirm": 432
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F85",
+      "local_confirm": 86,
+      "global_confirm": 436
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F105",
+      "local_confirm": 106,
+      "global_confirm": 456
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "episode": "MS1-F166",
+      "local_confirm": 167,
+      "global_confirm": 517
+    }
+  ],
+  "same_source_z4q_frozen_exact": true,
+  "no_private_media_or_ids_in_public": true,
+  "all_start_body_response_end_bindings_valid": true,
+  "both_prediction_seals_checked_before_gt": true
+}

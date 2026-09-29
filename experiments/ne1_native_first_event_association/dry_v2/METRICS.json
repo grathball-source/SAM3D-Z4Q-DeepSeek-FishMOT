@@ -1,0 +1,237 @@
+{
+  "status": "SCORED_AFTER_BOTH_PREDICTION_SEALS",
+  "run": "dry_v2",
+  "frames": 405,
+  "input": "SOURCE_OLD saved batched SAM3 raw preannotations + aligned depth_mm; not native continuous SAM3",
+  "segment_metrics": {
+    "feeding_000000_000199": {
+      "SAM3_NATIVE": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.36252204380997,
+        "AssA": 88.0858769375677,
+        "DetA": 94.76188123291938,
+        "IDSW": 10,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 92.12561737023577,
+        "HOTA": 90.4837479885973,
+        "AssA": 86.39966385114246,
+        "DetA": 94.76188123291938,
+        "IDSW": 12,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "EVENT_NUM": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.36252204380997,
+        "AssA": 88.0858769375677,
+        "DetA": 94.76188123291938,
+        "IDSW": 10,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "EVENT_VLM": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.36252204380997,
+        "AssA": 88.0858769375677,
+        "DetA": 94.76188123291938,
+        "IDSW": 10,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      }
+    },
+    "feeding_000351_000555": {
+      "SAM3_NATIVE": {
+        "IDF1": 82.92727108051807,
+        "HOTA": 78.58284442084609,
+        "AssA": 72.1826902323686,
+        "DetA": 85.59283666556213,
+        "IDSW": 22,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 82.89104247803641,
+        "HOTA": 78.14779790472312,
+        "AssA": 71.42993326096412,
+        "DetA": 85.5395185924718,
+        "IDSW": 24,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "EVENT_NUM": {
+        "IDF1": 81.11584095643511,
+        "HOTA": 76.64445146259463,
+        "AssA": 68.65311665755293,
+        "DetA": 85.61253460878761,
+        "IDSW": 26,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "EVENT_VLM": {
+        "IDF1": 81.11584095643511,
+        "HOTA": 76.64445146259463,
+        "AssA": 68.65311665755293,
+        "DetA": 85.61253460878761,
+        "IDSW": 26,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      }
+    }
+  },
+  "pooled_metrics": {
+    "SAM3_NATIVE": {
+      "IDF1": 87.83758956457835,
+      "HOTA": 85.18747904106168,
+      "AssA": 81.60937191252809,
+      "DetA": 89.36936535895427,
+      "IDSW": 32,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "Z4Q_FROZEN": {
+      "IDF1": 87.44258680874518,
+      "HOTA": 84.52340158662949,
+      "AssA": 80.36273862794462,
+      "DetA": 89.34201920117377,
+      "IDSW": 36,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "EVENT_NUM": {
+      "IDF1": 86.9189785045012,
+      "HOTA": 84.2533660727939,
+      "AssA": 79.85022833213604,
+      "DetA": 89.37944209092329,
+      "IDSW": 36,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "EVENT_VLM": {
+      "IDF1": 86.9189785045012,
+      "HOTA": 84.2533660727939,
+      "AssA": 79.85022833213604,
+      "DetA": 89.37944209092329,
+      "IDSW": 36,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    }
+  },
+  "pooled_delta": {
+    "Z4Q_FROZEN_vs_SAM3_NATIVE": {
+      "IDF1": -0.39500275583317546,
+      "HOTA": -0.6640774544321886,
+      "AssA": -1.2466332845834671,
+      "DetA": -0.027346157780499425,
+      "IDSW": 4,
+      "FP": 0,
+      "FN": 0
+    },
+    "EVENT_NUM_vs_SAM3_NATIVE": {
+      "IDF1": -0.9186110600771542,
+      "HOTA": -0.9341129682677831,
+      "AssA": -1.759143580392049,
+      "DetA": 0.010076731969022035,
+      "IDSW": 4,
+      "FP": 0,
+      "FN": 0
+    },
+    "EVENT_VLM_vs_SAM3_NATIVE": {
+      "IDF1": -0.9186110600771542,
+      "HOTA": -0.9341129682677831,
+      "AssA": -1.759143580392049,
+      "DetA": 0.010076731969022035,
+      "IDSW": 4,
+      "FP": 0,
+      "FN": 0
+    },
+    "EVENT_VLM_vs_EVENT_NUM": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "EVENT_NUM_vs_Z4Q_FROZEN": {
+      "IDF1": -0.5236083042439788,
+      "HOTA": -0.27003551383559454,
+      "AssA": -0.5125102958085819,
+      "DetA": 0.03742288974952146,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "EVENT_VLM_vs_Z4Q_FROZEN": {
+      "IDF1": -0.5236083042439788,
+      "HOTA": -0.27003551383559454,
+      "AssA": -0.5125102958085819,
+      "DetA": 0.03742288974952146,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "changed_frames": {
+    "feeding_000000_000199": {
+      "EVENT_NUM_vs_NATIVE": 0,
+      "EVENT_VLM_vs_NATIVE": 0,
+      "EVENT_VLM_vs_NUM": 0
+    },
+    "feeding_000351_000555": {
+      "EVENT_NUM_vs_NATIVE": 137,
+      "EVENT_VLM_vs_NATIVE": 137,
+      "EVENT_VLM_vs_NUM": 0
+    }
+  },
+  "reference": {
+    "feeding_000000_000199": {
+      "label_dir": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\labels_640x360",
+      "frames": 200,
+      "ordered_file_bytes_sha256": "81a1326e6c54996107e5920912abca8e8c7cc00a9ace01c901fde1db6af7b5da",
+      "checked_field": "false_in_source; human edited, not independently certified"
+    },
+    "feeding_000351_000555": {
+      "label_dir": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\labels_640x360",
+      "frames": 205,
+      "ordered_file_bytes_sha256": "2f1e734377a53802a342bd10396d8672773b76c630b28dd7670f719247d8850f",
+      "checked_field": "false_in_source; human edited, not independently certified"
+    }
+  },
+  "seal_sha256": {
+    "feeding_000000_000199": "cee1b63e4faa7f58aa80f45fc30b07469a1c02485f66d3d444dc00ec7e39c5cb",
+    "feeding_000351_000555": "04bad05c88d91da18ca52796c12dcc5bc893950ffe771e36368566016360e643"
+  },
+  "new_model_http": 0,
+  "peak_charge_upper_usd": 0,
+  "no_negative_id_filtering": true,
+  "segment_identity_reset": true,
+  "pooled_method": "disjoint_GT_and_prediction_ID_namespaces_per_segment"
+}

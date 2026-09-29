@@ -1,0 +1,804 @@
+{
+  "system": "你是鱼类多目标跟踪系统中的事件级关联助手。你的任务不是识别鱼的颜色或纹理，而是根据空间位置、运动、群组遮挡过程和深度时序，分析一次两成员合并—分离事件。\n\n事实规则：\n1. A/B是进入本次事件之前的两个参考身份；其public ID不提供给你。X/Y只在分离后命名，是两个当前短轨迹，不预先代表A或B。\n2. 一个合并mask是一个可见群组观测，不代表只剩一条鱼。它的中心、面积和深度不能同时作为A、B的个体测量。\n3. 区分MEASURED、ESTIMATED、GROUP_MEASUREMENT、MODEL_HYPOTHESIS和UNKNOWN。模型先前的分析是可推翻的假设，不是新增传感器证据。\n4. 位置、速度、方向、时间差与深度统计由程序计算。使用输入给定的坐标约定和单位；不要编造缺失数值。运动方向不是鱼头朝向。\n5. 鱼可以转向、交叉、改变速度和深度。左右顺序、单帧轮廓、相近端点深度不能单独证明身份；不同深度也不自动排除同一个体。\n6. 匿名观测存在但没有身份标签，不等于该时刻没有观测。只有输入明确标为缺失的时间段，才可称为缺测。\n7. 不使用颜色、纹理、红眼、斑点或稳定体形假设；不根据native编号或候选位置推测答案。邻鱼用于判断事件范围，不作为身份指纹。\n8. 你只回答当前阶段的问题。尚未分离时，不提前指定X/Y；分离后比较两种完整的一对一映射。\n9. 用已有事实作相对比较，不要求绝对身份证明；有可定位依据支持某映射时可选择，证据不足以区分时回答DEFER。不要为了必须给答案而补出隐藏轨迹。\n10. 给出简短结论、最重要的可定位依据与不确定性；不要展开冗长的逐步思考过程。\n\n返回普通JSON即可。额外无关字段不会改变系统动作。只有分离阶段的choice可以改变关联；合并阶段的文字不能命令跟踪器改ID。",
+  "user": "阶段：MERGE_ANALYSIS\n事件：MS1-F85\n当前证据截止：86\n坐标/单位：预测mask网格640×360；x向右、y向下；位置/框为像素，速度px/s；深度为原生传感器投影到RGB相机的Z方向毫米中位数/MAD，0为缺失，未做补全或折射校正。非零深度不保证鱼体精度；每帧RGB/深度采集时间差来自manifest。无邻居、非零面积、同source只是预测观测属性，不证明完整鱼体或跨时身份。\n\n程序观测到以下“两个独立观测变为一个共同观测”的证据：\n{\"first_suspect\":85,\"confirm\":86,\"source_mask_coverage\":[0.1661,0.6236],\"classification\":\"two independent prediction masks to one compatible measured group mask\",\"raw_mask_policy\":\"small residual masks remain in raw set; group is not an individual\"}\n这属于预测驱动的两成员合并假设，不是GT提供的结论。\n\n进入前A的不可变历史与运动/深度摘要：\n{\"observations\":[{\"frame\":69,\"time\":1789706594.603,\"center\":[151.0,193.5],\"bbox\":[123.0,163.0,179.0,224.0],\"area\":719,\"depth\":{\"n\":681,\"valid_fraction\":0.9471488178025035,\"median\":1117.629150390625,\"mad\":54.228759765625},\"core\":{\"area\":83,\"n\":79,\"valid_fraction\":0.9518072289156626,\"median\":1021.9180297851562,\"mad\":7.6392822265625,\"q25\":1015.4001770019531,\"q75\":1036.297119140625},\"whole\":{\"area\":719,\"n\":681,\"valid_fraction\":0.9471488178025035,\"median\":1117.629150390625,\"mad\":54.228759765625,\"q25\":1043.9403076171875,\"q75\":1167.820556640625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.603,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F69:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":719,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[151.44367176634213,190.7482614742698],\"bbox_center_px\":[151.0,193.5],\"centroid_bbox_center_offset_px\":2.7872763677534573},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":681,\"valid_fraction\":0.9471488178025035,\"mad\":54.228759765625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":79,\"valid_fraction\":0.9518072289156626,\"mad\":7.6392822265625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":681,\"valid_fraction\":0.9471488178025035,\"mad\":54.228759765625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":70,\"time\":1789706594.636,\"center\":[156.0,189.5],\"bbox\":[128.0,159.0,184.0,220.0],\"area\":730,\"depth\":{\"n\":697,\"valid_fraction\":0.9547945205479452,\"median\":1098.8082275390625,\"mad\":66.200927734375},\"core\":{\"area\":112,\"n\":109,\"valid_fraction\":0.9732142857142857,\"median\":1024.95849609375,\"mad\":8.25048828125,\"q25\":1018.7413940429688,\"q75\":1035.51025390625},\"whole\":{\"area\":730,\"n\":697,\"valid_fraction\":0.9547945205479452,\"median\":1098.8082275390625,\"mad\":66.200927734375,\"q25\":1040.5931396484375,\"q75\":1170.7203369140625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.636,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F70:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":730,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[157.02191780821917,185.42876712328768],\"bbox_center_px\":[156.0,189.5],\"centroid_bbox_center_offset_px\":4.197529409447742},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":697,\"valid_fraction\":0.9547945205479452,\"mad\":66.200927734375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":109,\"valid_fraction\":0.9732142857142857,\"mad\":8.25048828125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":697,\"valid_fraction\":0.9547945205479452,\"mad\":66.200927734375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":71,\"time\":1789706594.669,\"center\":[161.0,185.5],\"bbox\":[132.0,156.0,190.0,215.0],\"area\":759,\"depth\":{\"n\":707,\"valid_fraction\":0.9314888010540184,\"median\":1087.4853515625,\"mad\":57.715576171875},\"core\":{\"area\":126,\"n\":126,\"valid_fraction\":1.0,\"median\":1031.3535766601562,\"mad\":8.26715087890625,\"q25\":1025.4586486816406,\"q75\":1041.0918884277344},\"whole\":{\"area\":759,\"n\":707,\"valid_fraction\":0.9314888010540184,\"median\":1087.4853515625,\"mad\":57.715576171875,\"q25\":1043.5558471679688,\"q75\":1171.29150390625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.669,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F71:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":759,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[161.46640316205534,182.10540184453228],\"bbox_center_px\":[161.0,185.5],\"centroid_bbox_center_offset_px\":3.426489245084546},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":707,\"valid_fraction\":0.9314888010540184,\"mad\":57.715576171875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":126,\"valid_fraction\":1.0,\"mad\":8.26715087890625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":707,\"valid_fraction\":0.9314888010540184,\"mad\":57.715576171875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":72,\"time\":1789706594.702,\"center\":[165.0,183.0],\"bbox\":[134.0,153.0,196.0,213.0],\"area\":744,\"depth\":{\"n\":573,\"valid_fraction\":0.7701612903225806,\"median\":1137.99462890625,\"mad\":41.9874267578125},\"core\":{\"area\":96,\"n\":89,\"valid_fraction\":0.9270833333333334,\"median\":1025.810791015625,\"mad\":7.04364013671875,\"q25\":1018.7671508789062,\"q75\":1032.7401123046875},\"whole\":{\"area\":744,\"n\":573,\"valid_fraction\":0.7701612903225806,\"median\":1137.99462890625,\"mad\":41.9874267578125,\"q25\":1042.1160888671875,\"q75\":1173.3287353515625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.702,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F72:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":744,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[165.64112903225808,179.65994623655914],\"bbox_center_px\":[165.0,183.0],\"centroid_bbox_center_offset_px\":3.401030076121006},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":573,\"valid_fraction\":0.7701612903225806,\"mad\":41.9874267578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":89,\"valid_fraction\":0.9270833333333334,\"mad\":7.04364013671875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":573,\"valid_fraction\":0.7701612903225806,\"mad\":41.9874267578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":73,\"time\":1789706594.736,\"center\":[168.5,179.5],\"bbox\":[138.0,151.0,199.0,208.0],\"area\":687,\"depth\":{\"n\":637,\"valid_fraction\":0.9272197962154294,\"median\":1131.9207763671875,\"mad\":45.8675537109375},\"core\":{\"area\":85,\"n\":83,\"valid_fraction\":0.9764705882352941,\"median\":1044.8914794921875,\"mad\":4.38134765625,\"q25\":1041.3916625976562,\"q75\":1050.1571655273438},\"whole\":{\"area\":687,\"n\":637,\"valid_fraction\":0.9272197962154294,\"median\":1131.9207763671875,\"mad\":45.8675537109375,\"q25\":1060.053466796875,\"q75\":1172.24658203125},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.736,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F73:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":687,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[170.60116448326056,175.6113537117904],\"bbox_center_px\":[168.5,179.5],\"centroid_bbox_center_offset_px\":4.420007029465215},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":637,\"valid_fraction\":0.9272197962154294,\"mad\":45.8675537109375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":83,\"valid_fraction\":0.9764705882352941,\"mad\":4.38134765625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":637,\"valid_fraction\":0.9272197962154294,\"mad\":45.8675537109375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":74,\"time\":1789706594.769,\"center\":[175.5,177.5],\"bbox\":[147.0,150.0,204.0,205.0],\"area\":647,\"depth\":{\"n\":597,\"valid_fraction\":0.9227202472952086,\"median\":1128.3125,\"mad\":50.1937255859375},\"core\":{\"area\":69,\"n\":65,\"valid_fraction\":0.9420289855072463,\"median\":1060.2308349609375,\"mad\":6.29150390625,\"q25\":1055.2000732421875,\"q75\":1067.52880859375},\"whole\":{\"area\":647,\"n\":597,\"valid_fraction\":0.9227202472952086,\"median\":1128.3125,\"mad\":50.1937255859375,\"q25\":1074.4036865234375,\"q75\":1177.0748291015625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.769,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F74:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":647,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[175.36012364760433,172.35857805255023],\"bbox_center_px\":[175.5,177.5],\"centroid_bbox_center_offset_px\":5.143324317567163},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":597,\"valid_fraction\":0.9227202472952086,\"mad\":50.1937255859375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":65,\"valid_fraction\":0.9420289855072463,\"mad\":6.29150390625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":597,\"valid_fraction\":0.9227202472952086,\"mad\":50.1937255859375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":75,\"time\":1789706594.802,\"center\":[180.5,173.0],\"bbox\":[152.0,148.0,209.0,198.0],\"area\":626,\"depth\":{\"n\":604,\"valid_fraction\":0.9648562300319489,\"median\":1114.9736328125,\"mad\":43.05352783203125},\"core\":{\"area\":70,\"n\":69,\"valid_fraction\":0.9857142857142858,\"median\":1068.53271484375,\"mad\":4.264404296875,\"q25\":1065.126708984375,\"q75\":1075.7376708984375},\"whole\":{\"area\":626,\"n\":604,\"valid_fraction\":0.9648562300319489,\"median\":1114.9736328125,\"mad\":43.05352783203125,\"q25\":1080.9664001464844,\"q75\":1174.1303100585938},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.802,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F75:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":626,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[179.64217252396165,167.63897763578274],\"bbox_center_px\":[180.5,173.0],\"centroid_bbox_center_offset_px\":5.429219904211283},\"depth_quality\":{\"depth\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":604,\"valid_fraction\":0.9648562300319489,\"mad\":43.05352783203125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":69,\"valid_fraction\":0.9857142857142858,\"mad\":4.264404296875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":604,\"valid_fraction\":0.9648562300319489,\"mad\":43.05352783203125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":76,\"time\":1789706594.835,\"center\":[184.0,168.0],\"bbox\":[150.0,148.0,218.0,188.0],\"area\":583,\"depth\":{\"n\":562,\"valid_fraction\":0.9639794168096055,\"median\":1135.6065673828125,\"mad\":40.42535400390625},\"core\":{\"area\":48,\"n\":48,\"valid_fraction\":1.0,\"median\":1080.2992553710938,\"mad\":4.17529296875,\"q25\":1076.4306335449219,\"q75\":1084.6222839355469},\"whole\":{\"area\":583,\"n\":562,\"valid_fraction\":0.9639794168096055,\"median\":1135.6065673828125,\"mad\":40.42535400390625,\"q25\":1095.4565734863281,\"q75\":1176.3894653320312},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.835,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F76:O07\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":583,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[184.87993138936534,164.33790737564323],\"bbox_center_px\":[184.0,168.0],\"centroid_bbox_center_offset_px\":3.7663246858653463},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":562,\"valid_fraction\":0.9639794168096055,\"mad\":40.42535400390625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":48,\"valid_fraction\":1.0,\"mad\":4.17529296875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":562,\"valid_fraction\":0.9639794168096055,\"mad\":40.42535400390625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":77,\"time\":1789706594.869,\"center\":[195.5,166.5],\"bbox\":[163.0,147.0,228.0,186.0],\"area\":588,\"depth\":{\"n\":575,\"valid_fraction\":0.9778911564625851,\"median\":1140.1947021484375,\"mad\":26.9322509765625},\"core\":{\"area\":79,\"n\":78,\"valid_fraction\":0.9873417721518988,\"median\":1097.4776000976562,\"mad\":9.188720703125,\"q25\":1088.9712219238281,\"q75\":1107.59521484375},\"whole\":{\"area\":588,\"n\":575,\"valid_fraction\":0.9778911564625851,\"median\":1140.1947021484375,\"mad\":26.9322509765625,\"q25\":1115.7803344726562,\"q75\":1170.3002319335938},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.869,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F77:O08\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":588,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[194.31462585034015,159.68027210884352],\"bbox_center_px\":[195.5,166.5],\"centroid_bbox_center_offset_px\":6.921979513412284},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":575,\"valid_fraction\":0.9778911564625851,\"mad\":26.9322509765625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":78,\"valid_fraction\":0.9873417721518988,\"mad\":9.188720703125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":575,\"valid_fraction\":0.9778911564625851,\"mad\":26.9322509765625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":78,\"time\":1789706594.902,\"center\":[201.5,156.0],\"bbox\":[165.0,141.0,238.0,171.0],\"area\":575,\"depth\":{\"n\":485,\"valid_fraction\":0.8434782608695652,\"median\":1150.5772705078125,\"mad\":22.4515380859375},\"core\":{\"area\":67,\"n\":62,\"valid_fraction\":0.9253731343283582,\"median\":1115.2940673828125,\"mad\":8.2451171875,\"q25\":1107.7061767578125,\"q75\":1123.7548522949219},\"whole\":{\"area\":575,\"n\":485,\"valid_fraction\":0.8434782608695652,\"median\":1150.5772705078125,\"mad\":22.4515380859375,\"q25\":1126.4693603515625,\"q75\":1171.2294921875},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.902,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F78:O09\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":575,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[204.24521739130435,155.2086956521739],\"bbox_center_px\":[201.5,156.0],\"centroid_bbox_center_offset_px\":2.8569881162525603},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":485,\"valid_fraction\":0.8434782608695652,\"mad\":22.4515380859375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":62,\"valid_fraction\":0.9253731343283582,\"mad\":8.2451171875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":485,\"valid_fraction\":0.8434782608695652,\"mad\":22.4515380859375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":79,\"time\":1789706594.935,\"center\":[210.0,153.0],\"bbox\":[176.0,139.0,244.0,167.0],\"area\":515,\"depth\":{\"n\":426,\"valid_fraction\":0.8271844660194175,\"median\":1157.642333984375,\"mad\":22.6883544921875},\"core\":{\"area\":35,\"n\":30,\"valid_fraction\":0.8571428571428571,\"median\":1121.453369140625,\"mad\":4.586181640625,\"q25\":1117.4932250976562,\"q75\":1126.2105712890625},\"whole\":{\"area\":515,\"n\":426,\"valid_fraction\":0.8271844660194175,\"median\":1157.642333984375,\"mad\":22.6883544921875,\"q25\":1134.7080688476562,\"q75\":1179.8353271484375},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.935,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F79:O10\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":515,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[212.60582524271845,152.28932038834952],\"bbox_center_px\":[210.0,153.0],\"centroid_bbox_center_offset_px\":2.700998094409612},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":426,\"valid_fraction\":0.8271844660194175,\"mad\":22.6883544921875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":30,\"valid_fraction\":0.8571428571428571,\"mad\":4.586181640625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":426,\"valid_fraction\":0.8271844660194175,\"mad\":22.6883544921875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":80,\"time\":1789706594.968,\"center\":[220.0,146.5],\"bbox\":[187.0,132.0,253.0,161.0],\"area\":639,\"depth\":{\"n\":536,\"valid_fraction\":0.838810641627543,\"median\":1164.871826171875,\"mad\":14.25836181640625},\"core\":{\"area\":107,\"n\":72,\"valid_fraction\":0.6728971962616822,\"median\":1156.3945922851562,\"mad\":8.41790771484375,\"q25\":1145.0867004394531,\"q75\":1162.37353515625},\"whole\":{\"area\":639,\"n\":536,\"valid_fraction\":0.838810641627543,\"median\":1164.871826171875,\"mad\":14.25836181640625,\"q25\":1151.0558471679688,\"q75\":1179.4839172363281},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706594.968,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F80:O11\",\"contact_count\":0,\"mask_diagnostic\":{\"mask_pixels\":639,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[221.77621283255087,147.2566510172144],\"bbox_center_px\":[220.0,146.5],\"centroid_bbox_center_offset_px\":1.930661230866249},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":536,\"valid_fraction\":0.838810641627543,\"mad\":14.25836181640625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":72,\"valid_fraction\":0.6728971962616822,\"mad\":8.41790771484375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":536,\"valid_fraction\":0.838810641627543,\"mad\":14.25836181640625,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}}],\"motion\":{\"status\":\"ESTIMATED_FROM_MEASURED\",\"model\":\"OLS_INTERCEPT_LINEAR_TIME\",\"samples\":10,\"sample_frames\":[71,72,73,74,75,76,77,78,79,80],\"sample_times\":[1789706594.669,1789706594.702,1789706594.736,1789706594.769,1789706594.802,1789706594.835,1789706594.869,1789706594.902,1789706594.935,1789706594.968],\"span_seconds\":0.2990000247955322,\"first_frame\":71,\"last_frame\":80,\"time_origin\":1789706594.669,\"intercept_px\":[156.82684498486918,188.40065849944727],\"px_per_second\":[195.87936817446834,-130.59886060318084],\"speed_px_per_second\":235.42469978164564,\"residual_rms_px_by_axis\":[2.8464276717693324,2.2373285658348636],\"residual_rms_2d_px\":3.620468146816772,\"residual_max_2d_px\":5.49374593576008,\"uncertainty\":\"IN_SAMPLE_RESIDUAL_ONLY_NOT_CALIBRATED_FORECAST\"},\"continuity\":\"source-and-public-version-contiguous prediction observations; identity not independently certified\"}\n进入前B的不可变历史与运动/深度摘要：\n{\"observations\":[],\"motion\":{\"status\":\"UNKNOWN\",\"model\":\"OLS_INTERCEPT_LINEAR_TIME\",\"samples\":0,\"sample_frames\":[],\"sample_times\":[],\"span_seconds\":null,\"reason\":\"TOO_FEW_OR_INVALID_TIMES\"},\"continuity\":\"source-and-public-version-contiguous prediction observations; identity not independently certified\"}\n\n当前群组观测、逐帧变化及质量：\n{\"pre_risk_anonymous\":[{\"frame\":81,\"time\":1789706595.001,\"center\":[228.5,140.5],\"bbox\":[199.0,126.0,258.0,155.0],\"area\":499,\"depth\":{\"n\":455,\"valid_fraction\":0.9118236472945892,\"median\":1167.8951416015625,\"mad\":16.61767578125},\"core\":{\"area\":32,\"n\":27,\"valid_fraction\":0.84375,\"median\":1145.66357421875,\"mad\":8.130615234375,\"q25\":1139.4305419921875,\"q75\":1153.924560546875},\"whole\":{\"area\":499,\"n\":455,\"valid_fraction\":0.9118236472945892,\"median\":1167.8951416015625,\"mad\":16.61767578125,\"q25\":1153.7686767578125,\"q75\":1185.4931640625},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706595.001,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F81:O12\",\"contact_count\":1,\"mask_diagnostic\":{\"mask_pixels\":499,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[232.90380761523045,143.75751503006012],\"bbox_center_px\":[228.5,140.5],\"centroid_bbox_center_offset_px\":5.477675207880554},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":455,\"valid_fraction\":0.9118236472945892,\"mad\":16.61767578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":27,\"valid_fraction\":0.84375,\"mad\":8.130615234375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":455,\"valid_fraction\":0.9118236472945892,\"mad\":16.61767578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_RISK_OBSERVATION\"},{\"frame\":82,\"time\":1789706595.035,\"center\":[232.5,138.5],\"bbox\":[203.0,122.0,262.0,155.0],\"area\":469,\"depth\":{\"n\":422,\"valid_fraction\":0.8997867803837953,\"median\":1178.4039916992188,\"mad\":10.8878173828125},\"core\":{\"area\":12,\"n\":11,\"valid_fraction\":0.9166666666666666,\"median\":1165.72900390625,\"mad\":8.432861328125,\"q25\":1153.1458740234375,\"q75\":1172.4833374023438},\"whole\":{\"area\":469,\"n\":422,\"valid_fraction\":0.8997867803837953,\"median\":1178.4039916992188,\"mad\":10.8878173828125,\"q25\":1161.9384765625,\"q75\":1187.1318664550781},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706595.035,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F82:O12\",\"contact_count\":1,\"mask_diagnostic\":{\"mask_pixels\":469,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[238.56716417910448,140.9360341151386],\"bbox_center_px\":[232.5,138.5],\"centroid_bbox_center_offset_px\":6.53794641965867},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":422,\"valid_fraction\":0.8997867803837953,\"mad\":10.8878173828125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":11,\"valid_fraction\":0.9166666666666666,\"mad\":8.432861328125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":422,\"valid_fraction\":0.8997867803837953,\"mad\":10.8878173828125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_RISK_OBSERVATION\"},{\"frame\":83,\"time\":1789706595.068,\"center\":[237.5,137.0],\"bbox\":[208.0,118.0,267.0,156.0],\"area\":375,\"depth\":{\"n\":327,\"valid_fraction\":0.872,\"median\":1187.38330078125,\"mad\":6.89404296875},\"core\":{\"area\":0,\"n\":0,\"valid_fraction\":0.0,\"median\":null,\"mad\":null,\"q25\":null,\"q75\":null},\"whole\":{\"area\":375,\"n\":327,\"valid_fraction\":0.872,\"median\":1187.38330078125,\"mad\":6.89404296875,\"q25\":1175.4010620117188,\"q75\":1192.8875122070312},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706595.068,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F83:O12\",\"contact_count\":1,\"mask_diagnostic\":{\"mask_pixels\":375,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[240.87733333333333,138.40533333333335],\"bbox_center_px\":[237.5,137.0],\"centroid_bbox_center_offset_px\":3.6580516975874198},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":327,\"valid_fraction\":0.872,\"mad\":6.89404296875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":0,\"valid_fraction\":0.0,\"mad\":null,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":327,\"valid_fraction\":0.872,\"mad\":6.89404296875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_RISK_OBSERVATION\"},{\"frame\":84,\"time\":1789706595.101,\"center\":[240.0,137.5],\"bbox\":[213.0,121.0,267.0,154.0],\"area\":289,\"depth\":{\"n\":212,\"valid_fraction\":0.7335640138408305,\"median\":1185.5657958984375,\"mad\":6.080078125},\"core\":{\"area\":0,\"n\":0,\"valid_fraction\":0.0,\"median\":null,\"mad\":null,\"q25\":null,\"q75\":null},\"whole\":{\"area\":289,\"n\":212,\"valid_fraction\":0.7335640138408305,\"median\":1185.5657958984375,\"mad\":6.080078125,\"q25\":1180.1256408691406,\"q75\":1191.8735961914062},\"observation_class\":\"SOURCE_OBSERVATION\",\"source_generation\":1,\"public_epoch\":1,\"measured_time\":1789706595.101,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F84:O12\",\"contact_count\":2,\"mask_diagnostic\":{\"mask_pixels\":289,\"connected_components_8\":2,\"largest_component_fraction\":0.6020761245674741,\"mask_centroid_px\":[240.61937716262975,139.2006920415225],\"bbox_center_px\":[240.0,137.5],\"centroid_bbox_center_offset_px\":1.809967262047921},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":212,\"valid_fraction\":0.7335640138408305,\"mad\":6.080078125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":0,\"valid_fraction\":0.0,\"mad\":null,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":212,\"valid_fraction\":0.7335640138408305,\"mad\":6.080078125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_RISK_OBSERVATION\"}],\"group_measured\":[{\"frame\":85,\"time\":1789706595.134,\"center\":[209.0,126.5],\"bbox\":[189.0,100.0,229.0,153.0],\"area\":591,\"depth\":{\"n\":385,\"valid_fraction\":0.6514382402707276,\"median\":894.2741088867188,\"mad\":11.02239990234375},\"core\":{\"area\":72,\"n\":70,\"valid_fraction\":0.9722222222222222,\"median\":886.5797119140625,\"mad\":7.330535888671875,\"q25\":880.7464294433594,\"q75\":896.0573272705078},\"whole\":{\"area\":591,\"n\":385,\"valid_fraction\":0.6514382402707276,\"median\":894.2741088867188,\"mad\":11.02239990234375,\"q25\":882.7936401367188,\"q75\":903.5249633789062},\"observation_class\":\"GROUP_MEASUREMENT\",\"source_generation\":1,\"public_epoch\":null,\"measured_time\":1789706595.134,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F85:O11\",\"contact_count\":3,\"mask_diagnostic\":{\"mask_pixels\":591,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[204.97123519458546,130.3502538071066],\"bbox_center_px\":[209.0,126.5],\"centroid_bbox_center_offset_px\":5.57273723016668},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":385,\"valid_fraction\":0.6514382402707276,\"mad\":11.02239990234375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":70,\"valid_fraction\":0.9722222222222222,\"mad\":7.330535888671875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":385,\"valid_fraction\":0.6514382402707276,\"mad\":11.02239990234375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}},{\"frame\":86,\"time\":1789706595.168,\"center\":[209.0,127.0],\"bbox\":[181.0,95.0,237.0,159.0],\"area\":1046,\"depth\":{\"n\":651,\"valid_fraction\":0.6223709369024857,\"median\":923.1461181640625,\"mad\":32.0423583984375},\"core\":{\"area\":258,\"n\":126,\"valid_fraction\":0.4883720930232558,\"median\":971.3519287109375,\"mad\":63.46856689453125,\"q25\":906.3283233642578,\"q75\":1021.7881927490234},\"whole\":{\"area\":1046,\"n\":651,\"valid_fraction\":0.6223709369024857,\"median\":923.1461181640625,\"mad\":32.0423583984375,\"q25\":901.3058166503906,\"q75\":1141.5828857421875},\"observation_class\":\"GROUP_MEASUREMENT\",\"source_generation\":1,\"public_epoch\":null,\"measured_time\":1789706595.168,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F86:O11\",\"contact_count\":2,\"mask_diagnostic\":{\"mask_pixels\":1046,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[202.5831739961759,124.12523900573613],\"bbox_center_px\":[209.0,127.0],\"centroid_bbox_center_offset_px\":7.031351700597413},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":651,\"valid_fraction\":0.6223709369024857,\"mad\":32.0423583984375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"INSUFFICIENT_OR_INVALID\",\"n\":126,\"valid_fraction\":0.4883720930232558,\"mad\":63.46856689453125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":651,\"valid_fraction\":0.6223709369024857,\"mad\":32.0423583984375,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}}}],\"other_anonymous\":[{\"frame\":85,\"time\":1789706595.134,\"center\":[249.5,134.5],\"bbox\":[229.0,118.0,270.0,151.0],\"area\":324,\"depth\":{\"n\":178,\"valid_fraction\":0.5493827160493827,\"median\":1177.6267700195312,\"mad\":9.9923095703125},\"core\":{\"area\":35,\"n\":21,\"valid_fraction\":0.6,\"median\":1147.134033203125,\"mad\":14.28466796875,\"q25\":1132.3328857421875,\"q75\":1158.8897705078125},\"whole\":{\"area\":324,\"n\":178,\"valid_fraction\":0.5493827160493827,\"median\":1177.6267700195312,\"mad\":9.9923095703125,\"q25\":1165.8639831542969,\"q75\":1186.2510070800781},\"observation_class\":\"ANONYMOUS_RESIDUAL\",\"source_generation\":1,\"public_epoch\":null,\"measured_time\":1789706595.134,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-2000\",\"fact_id\":\"F85:O12\",\"contact_count\":2,\"mask_diagnostic\":{\"mask_pixels\":324,\"connected_components_8\":2,\"largest_component_fraction\":0.7314814814814815,\"mask_centroid_px\":[253.929012345679,131.85185185185185],\"bbox_center_px\":[249.5,134.5],\"centroid_bbox_center_offset_px\":5.160313844401094},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":178,\"valid_fraction\":0.5493827160493827,\"mad\":9.9923095703125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":21,\"valid_fraction\":0.6,\"mad\":14.28466796875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":178,\"valid_fraction\":0.5493827160493827,\"mad\":9.9923095703125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_LOW_QUALITY_OR_EMPTY\"},{\"frame\":86,\"time\":1789706595.168,\"center\":[267.0,127.0],\"bbox\":[246.0,116.0,288.0,138.0],\"area\":350,\"depth\":{\"n\":291,\"valid_fraction\":0.8314285714285714,\"median\":1181.561279296875,\"mad\":14.21142578125},\"core\":{\"area\":29,\"n\":24,\"valid_fraction\":0.8275862068965517,\"median\":1169.7440185546875,\"mad\":6.66961669921875,\"q25\":1160.7994689941406,\"q75\":1175.2542114257812},\"whole\":{\"area\":350,\"n\":291,\"valid_fraction\":0.8314285714285714,\"median\":1181.561279296875,\"mad\":14.21142578125,\"q25\":1162.1865844726562,\"q75\":1194.70751953125},\"observation_class\":\"ANONYMOUS_RESIDUAL\",\"source_generation\":1,\"public_epoch\":null,\"measured_time\":1789706595.168,\"time_source\":\"FEEDING_MANIFEST_RGB_TIMESTAMP_US\",\"sensor_sync_status\":\"MEASURED_RGB_MINUS_DEPTH_DELTA_US=-1000\",\"fact_id\":\"F86:O14\",\"contact_count\":1,\"mask_diagnostic\":{\"mask_pixels\":350,\"connected_components_8\":1,\"largest_component_fraction\":1.0,\"mask_centroid_px\":[267.0942857142857,124.84],\"bbox_center_px\":[267.0,127.0],\"centroid_bbox_center_offset_px\":2.162056843822186},\"depth_quality\":{\"depth\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":291,\"valid_fraction\":0.8314285714285714,\"mad\":14.21142578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"core\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":24,\"valid_fraction\":0.8275862068965517,\"mad\":6.66961669921875,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"},\"whole\":{\"status\":\"SAMPLE_RULE_PASS_NOT_IDENTITY_CERT\",\"n\":291,\"valid_fraction\":0.8314285714285714,\"mad\":14.21142578125,\"mixture_status\":\"UNKNOWN_FROM_AGGREGATES\",\"rule\":\"Z4Q_CORE_MIN16_FRACTION0.2_RISK60\"}},\"status\":\"ANONYMOUS_LOW_QUALITY_OR_EMPTY\"}],\"image_local_anonymous_context\":[{\"frame\":69,\"facts\":[{\"fact_id\":\"F69:O04\",\"mask_pixels\":701,\"mask_centroid_px\":[97.63908701854494,275.69329529243936],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O02\",\"mask_pixels\":598,\"mask_centroid_px\":[86.36454849498328,118.89632107023411],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O03\",\"mask_pixels\":619,\"mask_centroid_px\":[88.5702746365105,168.51857835218092],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O01\",\"mask_pixels\":388,\"mask_centroid_px\":[89.11855670103093,203.75],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O12\",\"mask_pixels\":511,\"mask_centroid_px\":[222.3757338551859,123.5225048923679],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O06\",\"mask_pixels\":493,\"mask_centroid_px\":[114.05679513184585,230.90466531440163],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O05\",\"mask_pixels\":541,\"mask_centroid_px\":[108.27171903881701,164.79112754158965],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O10\",\"mask_pixels\":442,\"mask_centroid_px\":[221.49773755656108,96.47058823529412],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O13\",\"mask_pixels\":492,\"mask_centroid_px\":[236.4268292682927,230.6747967479675],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":75,\"facts\":[{\"fact_id\":\"F75:O08\",\"mask_pixels\":413,\"mask_centroid_px\":[192.24697336561744,66.50847457627118],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O02\",\"mask_pixels\":617,\"mask_centroid_px\":[87.79092382495948,120.15072933549433],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O04\",\"mask_pixels\":519,\"mask_centroid_px\":[96.02312138728324,175.4354527938343],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O01\",\"mask_pixels\":282,\"mask_centroid_px\":[89.06737588652483,204.20567375886526],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O10\",\"mask_pixels\":542,\"mask_centroid_px\":[206.46125461254613,122.880073800738],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O15\",\"mask_pixels\":363,\"mask_centroid_px\":[278.9807162534435,174.50964187327824],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O06\",\"mask_pixels\":420,\"mask_centroid_px\":[107.8452380952381,232.2047619047619],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O14\",\"mask_pixels\":410,\"mask_centroid_px\":[246.3048780487805,84.01951219512195],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O05\",\"mask_pixels\":501,\"mask_centroid_px\":[109.39920159680639,162.64670658682635],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O11\",\"mask_pixels\":517,\"mask_centroid_px\":[215.11992263056092,71.76402321083172],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O09\",\"mask_pixels\":415,\"mask_centroid_px\":[203.23614457831326,92.51807228915662],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O12\",\"mask_pixels\":516,\"mask_centroid_px\":[221.41666666666666,229.72286821705427],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":80,\"facts\":[{\"fact_id\":\"F80:O19\",\"mask_pixels\":264,\"mask_centroid_px\":[335.0,115.28030303030303],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O07\",\"mask_pixels\":279,\"mask_centroid_px\":[190.21863799283153,65.67025089605735],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O17\",\"mask_pixels\":405,\"mask_centroid_px\":[319.24691358024694,107.18518518518519],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O09\",\"mask_pixels\":541,\"mask_centroid_px\":[195.79482439926062,125.99075785582255],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O16\",\"mask_pixels\":461,\"mask_centroid_px\":[282.4620390455531,186.77223427331887],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O13\",\"mask_pixels\":465,\"mask_centroid_px\":[244.05376344086022,68.93978494623656],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O05\",\"mask_pixels\":492,\"mask_centroid_px\":[108.02845528455285,164.54268292682926],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O15\",\"mask_pixels\":544,\"mask_centroid_px\":[274.40808823529414,112.15625],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O10\",\"mask_pixels\":638,\"mask_centroid_px\":[207.79310344827587,89.0],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O08\",\"mask_pixels\":439,\"mask_centroid_px\":[193.20273348519362,97.99316628701594],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O12\",\"mask_pixels\":452,\"mask_centroid_px\":[215.1283185840708,224.68584070796462],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":85,\"facts\":[{\"fact_id\":\"F85:O07\",\"mask_pixels\":240,\"mask_centroid_px\":[187.4375,62.78333333333333],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O12\",\"mask_pixels\":324,\"mask_centroid_px\":[253.929012345679,131.85185185185185],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O05\",\"mask_pixels\":519,\"mask_centroid_px\":[112.21579961464354,172.7437379576108],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O17\",\"mask_pixels\":387,\"mask_centroid_px\":[305.9431524547804,103.83462532299741],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O08\",\"mask_pixels\":532,\"mask_centroid_px\":[192.31578947368422,124.73872180451127],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O16\",\"mask_pixels\":407,\"mask_centroid_px\":[291.46683046683046,194.28501228501227],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O14\",\"mask_pixels\":426,\"mask_centroid_px\":[268.7112676056338,25.88262910798122],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O15\",\"mask_pixels\":636,\"mask_centroid_px\":[276.811320754717,77.37893081761007],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O06\",\"mask_pixels\":470,\"mask_centroid_px\":[107.27446808510638,168.27234042553192],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O13\",\"mask_pixels\":518,\"mask_centroid_px\":[261.7953667953668,132.56177606177607],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O09\",\"mask_pixels\":733,\"mask_centroid_px\":[198.97407912687586,95.07366984993179],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O10\",\"mask_pixels\":436,\"mask_centroid_px\":[206.85321100917432,215.4862385321101],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":86,\"facts\":[{\"fact_id\":\"F86:O08\",\"mask_pixels\":231,\"mask_centroid_px\":[191.52813852813853,63.86147186147186],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O14\",\"mask_pixels\":350,\"mask_centroid_px\":[267.0942857142857,124.84],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O05\",\"mask_pixels\":505,\"mask_centroid_px\":[115.48712871287128,171.6059405940594],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O17\",\"mask_pixels\":393,\"mask_centroid_px\":[301.68702290076334,103.3765903307888],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O09\",\"mask_pixels\":307,\"mask_centroid_px\":[190.3159609120521,134.85342019543975],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O16\",\"mask_pixels\":425,\"mask_centroid_px\":[295.11529411764707,195.3835294117647],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O13\",\"mask_pixels\":435,\"mask_centroid_px\":[269.72183908045974,26.029885057471265],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O15\",\"mask_pixels\":594,\"mask_centroid_px\":[282.5117845117845,79.74410774410775],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O06\",\"mask_pixels\":464,\"mask_centroid_px\":[106.63362068965517,169.5581896551724],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O12\",\"mask_pixels\":402,\"mask_centroid_px\":[257.48258706467664,138.0870646766169],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O07\",\"mask_pixels\":462,\"mask_centroid_px\":[181.49134199134198,107.77272727272727],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O10\",\"mask_pixels\":441,\"mask_centroid_px\":[205.86848072562358,213.21995464852608],\"role\":\"ANONYMOUS_CONTEXT\"}]}]}\n图像/图块对应表（实际几何图另以图片内容块发送）：\n[{\"frame\":69,\"phase\":\"PRE\",\"bytes\":12265,\"sha256\":\"b033e6801fbf0d55bb2ae53844d12c0578878d1534c47b4317d7bd619b1446c1\",\"bindings\":[{\"role\":\"A\",\"fact_id\":\"F69:O07\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O04\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O02\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O03\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O01\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O12\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O06\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O05\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O10\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F69:O13\"}],\"anonymous_context\":[{\"fact_id\":\"F69:O04\",\"mask_pixels\":701,\"mask_centroid_px\":[97.63908701854494,275.69329529243936],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O02\",\"mask_pixels\":598,\"mask_centroid_px\":[86.36454849498328,118.89632107023411],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O03\",\"mask_pixels\":619,\"mask_centroid_px\":[88.5702746365105,168.51857835218092],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O01\",\"mask_pixels\":388,\"mask_centroid_px\":[89.11855670103093,203.75],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O12\",\"mask_pixels\":511,\"mask_centroid_px\":[222.3757338551859,123.5225048923679],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O06\",\"mask_pixels\":493,\"mask_centroid_px\":[114.05679513184585,230.90466531440163],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O05\",\"mask_pixels\":541,\"mask_centroid_px\":[108.27171903881701,164.79112754158965],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O10\",\"mask_pixels\":442,\"mask_centroid_px\":[221.49773755656108,96.47058823529412],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F69:O13\",\"mask_pixels\":492,\"mask_centroid_px\":[236.4268292682927,230.6747967479675],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":75,\"phase\":\"PRE\",\"bytes\":12317,\"sha256\":\"f75a1429d36d9c0b97948d0c7ffb503f298766aff9b075a97c735e2c2f21831a\",\"bindings\":[{\"role\":\"A\",\"fact_id\":\"F75:O07\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O08\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O02\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O04\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O01\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O10\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O15\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O06\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O14\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O05\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O11\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O09\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F75:O12\"}],\"anonymous_context\":[{\"fact_id\":\"F75:O08\",\"mask_pixels\":413,\"mask_centroid_px\":[192.24697336561744,66.50847457627118],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O02\",\"mask_pixels\":617,\"mask_centroid_px\":[87.79092382495948,120.15072933549433],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O04\",\"mask_pixels\":519,\"mask_centroid_px\":[96.02312138728324,175.4354527938343],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O01\",\"mask_pixels\":282,\"mask_centroid_px\":[89.06737588652483,204.20567375886526],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O10\",\"mask_pixels\":542,\"mask_centroid_px\":[206.46125461254613,122.880073800738],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O15\",\"mask_pixels\":363,\"mask_centroid_px\":[278.9807162534435,174.50964187327824],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O06\",\"mask_pixels\":420,\"mask_centroid_px\":[107.8452380952381,232.2047619047619],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O14\",\"mask_pixels\":410,\"mask_centroid_px\":[246.3048780487805,84.01951219512195],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O05\",\"mask_pixels\":501,\"mask_centroid_px\":[109.39920159680639,162.64670658682635],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O11\",\"mask_pixels\":517,\"mask_centroid_px\":[215.11992263056092,71.76402321083172],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O09\",\"mask_pixels\":415,\"mask_centroid_px\":[203.23614457831326,92.51807228915662],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F75:O12\",\"mask_pixels\":516,\"mask_centroid_px\":[221.41666666666666,229.72286821705427],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":80,\"phase\":\"PRE\",\"bytes\":11612,\"sha256\":\"1fd8779b0db61bb2990735e7a53931b084be205ee663fbf27eca77c094004a2d\",\"bindings\":[{\"role\":\"A\",\"fact_id\":\"F80:O11\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O19\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O07\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O17\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O09\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O16\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O13\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O05\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O15\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O10\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O08\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F80:O12\"}],\"anonymous_context\":[{\"fact_id\":\"F80:O19\",\"mask_pixels\":264,\"mask_centroid_px\":[335.0,115.28030303030303],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O07\",\"mask_pixels\":279,\"mask_centroid_px\":[190.21863799283153,65.67025089605735],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O17\",\"mask_pixels\":405,\"mask_centroid_px\":[319.24691358024694,107.18518518518519],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O09\",\"mask_pixels\":541,\"mask_centroid_px\":[195.79482439926062,125.99075785582255],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O16\",\"mask_pixels\":461,\"mask_centroid_px\":[282.4620390455531,186.77223427331887],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O13\",\"mask_pixels\":465,\"mask_centroid_px\":[244.05376344086022,68.93978494623656],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O05\",\"mask_pixels\":492,\"mask_centroid_px\":[108.02845528455285,164.54268292682926],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O15\",\"mask_pixels\":544,\"mask_centroid_px\":[274.40808823529414,112.15625],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O10\",\"mask_pixels\":638,\"mask_centroid_px\":[207.79310344827587,89.0],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O08\",\"mask_pixels\":439,\"mask_centroid_px\":[193.20273348519362,97.99316628701594],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F80:O12\",\"mask_pixels\":452,\"mask_centroid_px\":[215.1283185840708,224.68584070796462],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":85,\"phase\":\"GROUP\",\"bytes\":13677,\"sha256\":\"3e5fa4bdbfd92ea9a3e4020cc34ec2472174e325baefff6cfb7b1f9ab0d82856\",\"bindings\":[{\"role\":\"GROUP\",\"fact_id\":\"F85:O11\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O07\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O12\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O05\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O17\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O08\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O16\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O14\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O15\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O06\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O13\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O09\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F85:O10\"}],\"anonymous_context\":[{\"fact_id\":\"F85:O07\",\"mask_pixels\":240,\"mask_centroid_px\":[187.4375,62.78333333333333],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O12\",\"mask_pixels\":324,\"mask_centroid_px\":[253.929012345679,131.85185185185185],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O05\",\"mask_pixels\":519,\"mask_centroid_px\":[112.21579961464354,172.7437379576108],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O17\",\"mask_pixels\":387,\"mask_centroid_px\":[305.9431524547804,103.83462532299741],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O08\",\"mask_pixels\":532,\"mask_centroid_px\":[192.31578947368422,124.73872180451127],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O16\",\"mask_pixels\":407,\"mask_centroid_px\":[291.46683046683046,194.28501228501227],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O14\",\"mask_pixels\":426,\"mask_centroid_px\":[268.7112676056338,25.88262910798122],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O15\",\"mask_pixels\":636,\"mask_centroid_px\":[276.811320754717,77.37893081761007],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O06\",\"mask_pixels\":470,\"mask_centroid_px\":[107.27446808510638,168.27234042553192],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O13\",\"mask_pixels\":518,\"mask_centroid_px\":[261.7953667953668,132.56177606177607],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O09\",\"mask_pixels\":733,\"mask_centroid_px\":[198.97407912687586,95.07366984993179],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F85:O10\",\"mask_pixels\":436,\"mask_centroid_px\":[206.85321100917432,215.4862385321101],\"role\":\"ANONYMOUS_CONTEXT\"}]},{\"frame\":86,\"phase\":\"GROUP\",\"bytes\":13488,\"sha256\":\"a92e6d624edd5abbe17936ed583057f3f04acc269fd3f41aa0150862c1adf7ee\",\"bindings\":[{\"role\":\"GROUP\",\"fact_id\":\"F86:O11\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O08\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O14\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O05\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O17\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O09\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O16\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O13\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O15\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O06\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O12\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O07\"},{\"role\":\"ANONYMOUS_CONTEXT\",\"fact_id\":\"F86:O10\"}],\"anonymous_context\":[{\"fact_id\":\"F86:O08\",\"mask_pixels\":231,\"mask_centroid_px\":[191.52813852813853,63.86147186147186],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O14\",\"mask_pixels\":350,\"mask_centroid_px\":[267.0942857142857,124.84],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O05\",\"mask_pixels\":505,\"mask_centroid_px\":[115.48712871287128,171.6059405940594],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O17\",\"mask_pixels\":393,\"mask_centroid_px\":[301.68702290076334,103.3765903307888],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O09\",\"mask_pixels\":307,\"mask_centroid_px\":[190.3159609120521,134.85342019543975],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O16\",\"mask_pixels\":425,\"mask_centroid_px\":[295.11529411764707,195.3835294117647],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O13\",\"mask_pixels\":435,\"mask_centroid_px\":[269.72183908045974,26.029885057471265],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O15\",\"mask_pixels\":594,\"mask_centroid_px\":[282.5117845117845,79.74410774410775],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O06\",\"mask_pixels\":464,\"mask_centroid_px\":[106.63362068965517,169.5581896551724],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O12\",\"mask_pixels\":402,\"mask_centroid_px\":[257.48258706467664,138.0870646766169],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O07\",\"mask_pixels\":462,\"mask_centroid_px\":[181.49134199134198,107.77272727272727],\"role\":\"ANONYMOUS_CONTEXT\"},{\"fact_id\":\"F86:O10\",\"mask_pixels\":441,\"mask_centroid_px\":[205.86848072562358,213.21995464852608],\"role\":\"ANONYMOUS_CONTEXT\"}]}]\n\n请回答：\n- A/B最后可靠位置、运动趋势、相对关系是什么？哪些量未知？\n- 当前共同mask与两成员合并是否相容？是否存在漏检或第三成员等替代解释？\n- 合并内部有哪些仍可能的运动延续解释？只列可能性，不声称观察到了隐藏个体轨迹。\n- 分离后，应利用哪些可观察的运动/空间/深度差异比较对应？\n\n此时没有X/Y，不作最终身份分配，不决定是否保存旧ID；旧ID由本地系统立即保存。\n返回示意结构，示例文字不是答案：\n{\n  \"episode_id\": \"MS1-F85\",\n  \"merge_assessment\": \"简短说明当前二成员合并假设及替代解释\",\n  \"possible_continuations\": [\"仍与观测相容的解释1\", \"解释2或未知\"],\n  \"watch_for_after_split\": [\"以后可观察、能区分对应的线索\"],\n  \"uncertainty\": \"不可观测或不可靠的信息\"\n}\n不要预测一个尚未发生的具体出场位置为确定事实。",
+  "images": [
+    {
+      "frame": 69,
+      "phase": "PRE",
+      "bytes": 12265,
+      "sha256": "b033e6801fbf0d55bb2ae53844d12c0578878d1534c47b4317d7bd619b1446c1",
+      "bindings": [
+        {
+          "role": "A",
+          "fact_id": "F69:O07"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O04"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O02"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O03"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O01"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O12"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O06"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O05"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O10"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F69:O13"
+        }
+      ],
+      "anonymous_context": [
+        {
+          "fact_id": "F69:O04",
+          "mask_pixels": 701,
+          "mask_centroid_px": [
+            97.63908701854494,
+            275.69329529243936
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O02",
+          "mask_pixels": 598,
+          "mask_centroid_px": [
+            86.36454849498328,
+            118.89632107023411
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O03",
+          "mask_pixels": 619,
+          "mask_centroid_px": [
+            88.5702746365105,
+            168.51857835218092
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O01",
+          "mask_pixels": 388,
+          "mask_centroid_px": [
+            89.11855670103093,
+            203.75
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O12",
+          "mask_pixels": 511,
+          "mask_centroid_px": [
+            222.3757338551859,
+            123.5225048923679
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O06",
+          "mask_pixels": 493,
+          "mask_centroid_px": [
+            114.05679513184585,
+            230.90466531440163
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O05",
+          "mask_pixels": 541,
+          "mask_centroid_px": [
+            108.27171903881701,
+            164.79112754158965
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O10",
+          "mask_pixels": 442,
+          "mask_centroid_px": [
+            221.49773755656108,
+            96.47058823529412
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F69:O13",
+          "mask_pixels": 492,
+          "mask_centroid_px": [
+            236.4268292682927,
+            230.6747967479675
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        }
+      ]
+    },
+    {
+      "frame": 75,
+      "phase": "PRE",
+      "bytes": 12317,
+      "sha256": "f75a1429d36d9c0b97948d0c7ffb503f298766aff9b075a97c735e2c2f21831a",
+      "bindings": [
+        {
+          "role": "A",
+          "fact_id": "F75:O07"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O08"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O02"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O04"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O01"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O10"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O15"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O06"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O14"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O05"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O11"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O09"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F75:O12"
+        }
+      ],
+      "anonymous_context": [
+        {
+          "fact_id": "F75:O08",
+          "mask_pixels": 413,
+          "mask_centroid_px": [
+            192.24697336561744,
+            66.50847457627118
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O02",
+          "mask_pixels": 617,
+          "mask_centroid_px": [
+            87.79092382495948,
+            120.15072933549433
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O04",
+          "mask_pixels": 519,
+          "mask_centroid_px": [
+            96.02312138728324,
+            175.4354527938343
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O01",
+          "mask_pixels": 282,
+          "mask_centroid_px": [
+            89.06737588652483,
+            204.20567375886526
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O10",
+          "mask_pixels": 542,
+          "mask_centroid_px": [
+            206.46125461254613,
+            122.880073800738
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O15",
+          "mask_pixels": 363,
+          "mask_centroid_px": [
+            278.9807162534435,
+            174.50964187327824
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O06",
+          "mask_pixels": 420,
+          "mask_centroid_px": [
+            107.8452380952381,
+            232.2047619047619
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O14",
+          "mask_pixels": 410,
+          "mask_centroid_px": [
+            246.3048780487805,
+            84.01951219512195
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O05",
+          "mask_pixels": 501,
+          "mask_centroid_px": [
+            109.39920159680639,
+            162.64670658682635
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O11",
+          "mask_pixels": 517,
+          "mask_centroid_px": [
+            215.11992263056092,
+            71.76402321083172
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O09",
+          "mask_pixels": 415,
+          "mask_centroid_px": [
+            203.23614457831326,
+            92.51807228915662
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F75:O12",
+          "mask_pixels": 516,
+          "mask_centroid_px": [
+            221.41666666666666,
+            229.72286821705427
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        }
+      ]
+    },
+    {
+      "frame": 80,
+      "phase": "PRE",
+      "bytes": 11612,
+      "sha256": "1fd8779b0db61bb2990735e7a53931b084be205ee663fbf27eca77c094004a2d",
+      "bindings": [
+        {
+          "role": "A",
+          "fact_id": "F80:O11"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O19"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O07"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O17"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O09"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O16"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O13"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O05"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O15"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O10"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O08"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F80:O12"
+        }
+      ],
+      "anonymous_context": [
+        {
+          "fact_id": "F80:O19",
+          "mask_pixels": 264,
+          "mask_centroid_px": [
+            335.0,
+            115.28030303030303
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O07",
+          "mask_pixels": 279,
+          "mask_centroid_px": [
+            190.21863799283153,
+            65.67025089605735
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O17",
+          "mask_pixels": 405,
+          "mask_centroid_px": [
+            319.24691358024694,
+            107.18518518518519
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O09",
+          "mask_pixels": 541,
+          "mask_centroid_px": [
+            195.79482439926062,
+            125.99075785582255
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O16",
+          "mask_pixels": 461,
+          "mask_centroid_px": [
+            282.4620390455531,
+            186.77223427331887
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O13",
+          "mask_pixels": 465,
+          "mask_centroid_px": [
+            244.05376344086022,
+            68.93978494623656
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O05",
+          "mask_pixels": 492,
+          "mask_centroid_px": [
+            108.02845528455285,
+            164.54268292682926
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O15",
+          "mask_pixels": 544,
+          "mask_centroid_px": [
+            274.40808823529414,
+            112.15625
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O10",
+          "mask_pixels": 638,
+          "mask_centroid_px": [
+            207.79310344827587,
+            89.0
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O08",
+          "mask_pixels": 439,
+          "mask_centroid_px": [
+            193.20273348519362,
+            97.99316628701594
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F80:O12",
+          "mask_pixels": 452,
+          "mask_centroid_px": [
+            215.1283185840708,
+            224.68584070796462
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        }
+      ]
+    },
+    {
+      "frame": 85,
+      "phase": "GROUP",
+      "bytes": 13677,
+      "sha256": "3e5fa4bdbfd92ea9a3e4020cc34ec2472174e325baefff6cfb7b1f9ab0d82856",
+      "bindings": [
+        {
+          "role": "GROUP",
+          "fact_id": "F85:O11"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O07"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O12"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O05"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O17"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O08"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O16"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O14"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O15"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O06"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O13"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O09"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F85:O10"
+        }
+      ],
+      "anonymous_context": [
+        {
+          "fact_id": "F85:O07",
+          "mask_pixels": 240,
+          "mask_centroid_px": [
+            187.4375,
+            62.78333333333333
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O12",
+          "mask_pixels": 324,
+          "mask_centroid_px": [
+            253.929012345679,
+            131.85185185185185
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O05",
+          "mask_pixels": 519,
+          "mask_centroid_px": [
+            112.21579961464354,
+            172.7437379576108
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O17",
+          "mask_pixels": 387,
+          "mask_centroid_px": [
+            305.9431524547804,
+            103.83462532299741
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O08",
+          "mask_pixels": 532,
+          "mask_centroid_px": [
+            192.31578947368422,
+            124.73872180451127
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O16",
+          "mask_pixels": 407,
+          "mask_centroid_px": [
+            291.46683046683046,
+            194.28501228501227
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O14",
+          "mask_pixels": 426,
+          "mask_centroid_px": [
+            268.7112676056338,
+            25.88262910798122
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O15",
+          "mask_pixels": 636,
+          "mask_centroid_px": [
+            276.811320754717,
+            77.37893081761007
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O06",
+          "mask_pixels": 470,
+          "mask_centroid_px": [
+            107.27446808510638,
+            168.27234042553192
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O13",
+          "mask_pixels": 518,
+          "mask_centroid_px": [
+            261.7953667953668,
+            132.56177606177607
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O09",
+          "mask_pixels": 733,
+          "mask_centroid_px": [
+            198.97407912687586,
+            95.07366984993179
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F85:O10",
+          "mask_pixels": 436,
+          "mask_centroid_px": [
+            206.85321100917432,
+            215.4862385321101
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        }
+      ]
+    },
+    {
+      "frame": 86,
+      "phase": "GROUP",
+      "bytes": 13488,
+      "sha256": "a92e6d624edd5abbe17936ed583057f3f04acc269fd3f41aa0150862c1adf7ee",
+      "bindings": [
+        {
+          "role": "GROUP",
+          "fact_id": "F86:O11"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O08"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O14"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O05"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O17"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O09"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O16"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O13"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O15"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O06"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O12"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O07"
+        },
+        {
+          "role": "ANONYMOUS_CONTEXT",
+          "fact_id": "F86:O10"
+        }
+      ],
+      "anonymous_context": [
+        {
+          "fact_id": "F86:O08",
+          "mask_pixels": 231,
+          "mask_centroid_px": [
+            191.52813852813853,
+            63.86147186147186
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O14",
+          "mask_pixels": 350,
+          "mask_centroid_px": [
+            267.0942857142857,
+            124.84
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O05",
+          "mask_pixels": 505,
+          "mask_centroid_px": [
+            115.48712871287128,
+            171.6059405940594
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O17",
+          "mask_pixels": 393,
+          "mask_centroid_px": [
+            301.68702290076334,
+            103.3765903307888
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O09",
+          "mask_pixels": 307,
+          "mask_centroid_px": [
+            190.3159609120521,
+            134.85342019543975
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O16",
+          "mask_pixels": 425,
+          "mask_centroid_px": [
+            295.11529411764707,
+            195.3835294117647
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O13",
+          "mask_pixels": 435,
+          "mask_centroid_px": [
+            269.72183908045974,
+            26.029885057471265
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O15",
+          "mask_pixels": 594,
+          "mask_centroid_px": [
+            282.5117845117845,
+            79.74410774410775
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O06",
+          "mask_pixels": 464,
+          "mask_centroid_px": [
+            106.63362068965517,
+            169.5581896551724
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O12",
+          "mask_pixels": 402,
+          "mask_centroid_px": [
+            257.48258706467664,
+            138.0870646766169
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O07",
+          "mask_pixels": 462,
+          "mask_centroid_px": [
+            181.49134199134198,
+            107.77272727272727
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        },
+        {
+          "fact_id": "F86:O10",
+          "mask_pixels": 441,
+          "mask_centroid_px": [
+            205.86848072562358,
+            213.21995464852608
+          ],
+          "role": "ANONYMOUS_CONTEXT"
+        }
+      ]
+    }
+  ]
+}

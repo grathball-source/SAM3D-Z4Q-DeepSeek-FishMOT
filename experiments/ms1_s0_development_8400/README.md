@@ -4,6 +4,8 @@
 
 2026-09-28 新授权的 V7 使用同一固定扫描器和最早八个事件真实调用。原同步运行有 16 个 START、15 个 END，最后 F5927-S0 结果未知且原预测未封存；随后零新增 HTTP 的 8400 帧记录响应恢复回放已封存、评分。**模型相对数值分支 0 帧、0 指标增量；该结果包含未知请求的冻结回退，不能称为完整 8/8 模型判定。** 入口：[PAID_RUN_V7_FINAL_REVIEW.md](PAID_RUN_V7_FINAL_REVIEW.md)、[PAID_RUN_V7_EXECUTION_LOG.md](PAID_RUN_V7_EXECUTION_LOG.md)、[原始中断记录](run_development_v7_paid/public/INTERRUPTION_RECORD.json)、[恢复预测 seal](run_development_v7_recovery/public/PREDICTIONS_SEALED.json)、[模型逐事件核验](run_development_v7_recovery/public/MODEL_EVENT_AUDIT.json)、[V7 受限清单](RESTRICTED_INVENTORY_V7.json)。
 
+V7 事后只读诊断：[请求内容与 IDSW 原因报告](posthoc_v7/PROMPT_AND_IDSW_CAUSE_REVIEW.md)、[逐帧核验 JSON](posthoc_v7/PROMPT_AND_IDSW_AUDIT.json)。该审计复现 B0/HOLD/VLM 的 6/18/18 次切换，并定位净增 12 次来自匿名残片临时 ID 的首次发布；没有新模型请求，也没有修改旧 seal。
+
 ## 入口和分层
 
 - [FINAL_REVIEW.md](FINAL_REVIEW.md)：结论、漏检根因、F5927 证据、指标与限制。

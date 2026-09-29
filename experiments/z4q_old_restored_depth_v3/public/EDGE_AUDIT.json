@@ -1,0 +1,164 @@
+{
+  "status": "POSTSEAL_PHYSICAL_AUDIT",
+  "edge_checks": 776,
+  "edge_reasons": {
+    "source_segment_unqualified_or_no_continuous_history": 511,
+    "target_anchor_lineage_unknown": 265
+  },
+  "vetoes": [],
+  "accepted_reconnects": [
+    {
+      "arm": "frozen_events",
+      "segment": "feeding_000000_000199",
+      "original_frame": 159,
+      "origin_rule": null,
+      "phase": null,
+      "native_id": 26,
+      "public_id": 16,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 15,
+        "native_id": 16,
+        "mask": "n:16",
+        "canonical_id": 16
+      },
+      "anchor_gt": 16,
+      "current_gt": 26,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "pairwise_events",
+      "segment": "feeding_000000_000199",
+      "original_frame": 159,
+      "origin_rule": "D1_DELAYED",
+      "phase": null,
+      "native_id": 26,
+      "public_id": 16,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 15,
+        "native_id": 16,
+        "mask": "n:16",
+        "canonical_id": 16
+      },
+      "anchor_gt": 16,
+      "current_gt": 26,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "frozen_events",
+      "segment": "feeding_000000_000199",
+      "original_frame": 190,
+      "origin_rule": null,
+      "phase": null,
+      "native_id": 30,
+      "public_id": 8,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 42,
+        "native_id": 8,
+        "mask": "n:8",
+        "canonical_id": 8
+      },
+      "anchor_gt": 8,
+      "current_gt": 7,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "pairwise_events",
+      "segment": "feeding_000000_000199",
+      "original_frame": 190,
+      "origin_rule": "D1_DELAYED",
+      "phase": null,
+      "native_id": 30,
+      "public_id": 8,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 42,
+        "native_id": 8,
+        "mask": "n:8",
+        "canonical_id": 8
+      },
+      "anchor_gt": 8,
+      "current_gt": 7,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "frozen_events",
+      "segment": "feeding_000351_000555",
+      "original_frame": 468,
+      "origin_rule": null,
+      "phase": "birth",
+      "native_id": 80,
+      "public_id": 21,
+      "confirmations": 1,
+      "old_anchor": {
+        "frame": 36,
+        "native_id": 21,
+        "mask": "n:21",
+        "canonical_id": 21
+      },
+      "anchor_gt": 26,
+      "current_gt": 21,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "pairwise_events",
+      "segment": "feeding_000351_000555",
+      "original_frame": 468,
+      "origin_rule": "BIRTH_REFINE",
+      "phase": "birth",
+      "native_id": 80,
+      "public_id": 21,
+      "confirmations": 1,
+      "old_anchor": {
+        "frame": 36,
+        "native_id": 21,
+        "mask": "n:21",
+        "canonical_id": 21
+      },
+      "anchor_gt": 26,
+      "current_gt": 21,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "frozen_events",
+      "segment": "feeding_000351_000555",
+      "original_frame": 522,
+      "origin_rule": null,
+      "phase": null,
+      "native_id": 83,
+      "public_id": 73,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 92,
+        "native_id": 73,
+        "mask": "n:73",
+        "canonical_id": 73
+      },
+      "anchor_gt": 24,
+      "current_gt": 6,
+      "physical_relation": "DIFFERENT_GT"
+    },
+    {
+      "arm": "pairwise_events",
+      "segment": "feeding_000351_000555",
+      "original_frame": 522,
+      "origin_rule": "D1_DELAYED",
+      "phase": null,
+      "native_id": 83,
+      "public_id": 73,
+      "confirmations": 5,
+      "old_anchor": {
+        "frame": 92,
+        "native_id": 73,
+        "mask": "n:73",
+        "canonical_id": 73
+      },
+      "anchor_gt": 24,
+      "current_gt": 6,
+      "physical_relation": "DIFFERENT_GT"
+    }
+  ],
+  "metrics_sha256": "6181cb176b6c2d02e60bae4d8f9b85c6c9be3a6e0f99b639c187c8ed01e46efc"
+}

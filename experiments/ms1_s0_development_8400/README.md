@@ -1,6 +1,8 @@
 # MS1-S0 开发集全段事件扫描复盘
 
-本目录是对验证段 MS1-S0 的**开发集 8400 帧离线扩展和漏检修复**，基点 `101827e9fc87c393d26b10bc405d7efe4fb33c89`。原始分割、深度、参考和旧封存只读。当前权威工程检查为 `source_scan_v4.py` + `replay_v6.py` + `dry_run_v6/`。这轮未获新的付费推理额度，因此 `B-VLM-S0` 只是全 `DEFER` 的无 API 控制，不能解释为 DeepSeek 实验结果。
+本目录先完成验证段 MS1-S0 的**开发集 8400 帧离线扩展和漏检修复**，基点 `101827e9fc87c393d26b10bc405d7efe4fb33c89`。原始分割、深度、参考和旧封存只读。下面的 V6 描述属于上一轮无 API 控制，不能解释为 DeepSeek 实验结果。
+
+2026-09-28 新授权的 V7 使用同一固定扫描器和最早八个事件真实调用。原同步运行有 16 个 START、15 个 END，最后 F5927-S0 结果未知且原预测未封存；随后零新增 HTTP 的 8400 帧记录响应恢复回放已封存、评分。**模型相对数值分支 0 帧、0 指标增量；该结果包含未知请求的冻结回退，不能称为完整 8/8 模型判定。** 入口：[PAID_RUN_V7_FINAL_REVIEW.md](PAID_RUN_V7_FINAL_REVIEW.md)、[PAID_RUN_V7_EXECUTION_LOG.md](PAID_RUN_V7_EXECUTION_LOG.md)、[原始中断记录](run_development_v7_paid/public/INTERRUPTION_RECORD.json)、[恢复预测 seal](run_development_v7_recovery/public/PREDICTIONS_SEALED.json)、[模型逐事件核验](run_development_v7_recovery/public/MODEL_EVENT_AUDIT.json)、[V7 受限清单](RESTRICTED_INVENTORY_V7.json)。
 
 ## 入口和分层
 

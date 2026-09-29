@@ -1,0 +1,1075 @@
+{
+  "status": "POSTSEAL_DEVELOPMENT_AUDIT",
+  "run": "run_development_v7_recovery",
+  "total_events": 13,
+  "with_q": 9,
+  "status_counts": {
+    "RESOLVE_NO_ID_CHANGE": 7,
+    "CANCELLED": 4,
+    "UNRESOLVED_ROLLBACK_B0": 2
+  },
+  "applied_anchor_verdict_counts": {
+    "CORRECT": 7,
+    "NO_Q": 4,
+    "UNSCORABLE": 2
+  },
+  "applied_consensus_verdict_counts": {
+    "UNSCORABLE": 5,
+    "NO_Q": 4,
+    "CORRECT": 4
+  },
+  "no_gt_used_for_trigger_or_q": true,
+  "events": [
+    {
+      "episode": "MS1-F1152",
+      "suspect_frame": 1152,
+      "confirm_frame": 1153,
+      "q": 1274,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 986,
+        "B": 986
+      },
+      "pre_anchor_gt": {
+        "A": 1,
+        "B": 3
+      },
+      "pre_consensus_gt": {
+        "A": null,
+        "B": null
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            985,
+            986
+          ],
+          "known_count": 2,
+          "identity_set": [
+            1
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            985,
+            986
+          ],
+          "known_count": 2,
+          "identity_set": [
+            3
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "2",
+        "Y": "6"
+      },
+      "q_gt": {
+        "X": 3,
+        "Y": 1
+      },
+      "candidate_anchor_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "UNSCORABLE",
+      "first_public_pair": {
+        "B0": {
+          "X": 2,
+          "Y": 6
+        },
+        "B-HOLD-S0": {
+          "X": 2,
+          "Y": 0
+        },
+        "B-VLM-S0": {
+          "X": 2,
+          "Y": 0
+        }
+      },
+      "hold_changes_first_public": true,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F2145",
+      "suspect_frame": 2145,
+      "confirm_frame": null,
+      "q": null,
+      "status": "CANCELLED",
+      "scoring_status": "NO_FIRST_SPLIT_Q"
+    },
+    {
+      "episode": "MS1-F3078",
+      "suspect_frame": 3078,
+      "confirm_frame": 3079,
+      "q": 3081,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 2984,
+        "B": 2969
+      },
+      "pre_anchor_gt": {
+        "A": 2,
+        "B": 1
+      },
+      "pre_consensus_gt": {
+        "A": 2,
+        "B": 1
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            2955,
+            2956,
+            2957,
+            2958,
+            2959,
+            2960,
+            2961,
+            2962,
+            2963,
+            2964,
+            2965,
+            2966,
+            2967,
+            2968,
+            2969,
+            2970,
+            2971,
+            2972,
+            2973,
+            2974,
+            2975,
+            2976,
+            2977,
+            2978,
+            2979,
+            2980,
+            2981,
+            2982,
+            2983,
+            2984
+          ],
+          "known_count": 30,
+          "identity_set": [
+            2
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            2941,
+            2942,
+            2943,
+            2944,
+            2945,
+            2946,
+            2947,
+            2948,
+            2949,
+            2950,
+            2951,
+            2952,
+            2953,
+            2954,
+            2955,
+            2956,
+            2957,
+            2958,
+            2959,
+            2960,
+            2961,
+            2962,
+            2963,
+            2964,
+            2965,
+            2966,
+            2967,
+            2968,
+            2969
+          ],
+          "known_count": 29,
+          "identity_set": [
+            1
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "1",
+        "Y": "6"
+      },
+      "q_gt": {
+        "X": 2,
+        "Y": 1
+      },
+      "candidate_anchor_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "CORRECT",
+      "first_public_pair": {
+        "B0": {
+          "X": 1,
+          "Y": 0
+        },
+        "B-HOLD-S0": {
+          "X": 1,
+          "Y": 0
+        },
+        "B-VLM-S0": {
+          "X": 1,
+          "Y": 0
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F3863",
+      "suspect_frame": 3863,
+      "confirm_frame": 3864,
+      "q": 3902,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 3492,
+        "B": 3836
+      },
+      "pre_anchor_gt": {
+        "A": 5,
+        "B": 1
+      },
+      "pre_consensus_gt": {
+        "A": 5,
+        "B": 1
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            3484,
+            3485,
+            3486,
+            3487,
+            3488,
+            3489,
+            3490,
+            3491,
+            3492
+          ],
+          "known_count": 9,
+          "identity_set": [
+            5
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            3807,
+            3808,
+            3809,
+            3810,
+            3811,
+            3812,
+            3813,
+            3814,
+            3815,
+            3816,
+            3817,
+            3818,
+            3819,
+            3820,
+            3821,
+            3822,
+            3823,
+            3824,
+            3825,
+            3826,
+            3827,
+            3828,
+            3829,
+            3830,
+            3831,
+            3832,
+            3833,
+            3834,
+            3835,
+            3836
+          ],
+          "known_count": 30,
+          "identity_set": [
+            1
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "7",
+        "Y": "4"
+      },
+      "q_gt": {
+        "X": 1,
+        "Y": 5
+      },
+      "candidate_anchor_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "CORRECT",
+      "first_public_pair": {
+        "B0": {
+          "X": 0,
+          "Y": 4
+        },
+        "B-HOLD-S0": {
+          "X": 0,
+          "Y": 4
+        },
+        "B-VLM-S0": {
+          "X": 0,
+          "Y": 4
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F4011",
+      "suspect_frame": 4011,
+      "confirm_frame": null,
+      "q": null,
+      "status": "CANCELLED",
+      "scoring_status": "NO_FIRST_SPLIT_Q"
+    },
+    {
+      "episode": "MS1-F4057",
+      "suspect_frame": 4057,
+      "confirm_frame": 4058,
+      "q": 4071,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 3953,
+        "B": 4010
+      },
+      "pre_anchor_gt": {
+        "A": 3,
+        "B": 4
+      },
+      "pre_consensus_gt": {
+        "A": 3,
+        "B": null
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            3924,
+            3925,
+            3926,
+            3927,
+            3928,
+            3929,
+            3930,
+            3931,
+            3932,
+            3933,
+            3934,
+            3935,
+            3936,
+            3937,
+            3938,
+            3939,
+            3940,
+            3941,
+            3942,
+            3943,
+            3944,
+            3945,
+            3946,
+            3947,
+            3948,
+            3949,
+            3950,
+            3951,
+            3952,
+            3953
+          ],
+          "known_count": 30,
+          "identity_set": [
+            3
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            4010
+          ],
+          "known_count": 1,
+          "identity_set": [
+            4
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "3",
+        "Y": "2"
+      },
+      "q_gt": {
+        "X": 4,
+        "Y": 3
+      },
+      "candidate_anchor_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "UNSCORABLE",
+      "first_public_pair": {
+        "B0": {
+          "X": 3,
+          "Y": 2
+        },
+        "B-HOLD-S0": {
+          "X": 3,
+          "Y": 2
+        },
+        "B-VLM-S0": {
+          "X": 3,
+          "Y": 2
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F4485",
+      "suspect_frame": 4485,
+      "confirm_frame": 4486,
+      "q": 4501,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 4477,
+        "B": 4460
+      },
+      "pre_anchor_gt": {
+        "A": 2,
+        "B": 6
+      },
+      "pre_consensus_gt": {
+        "A": 2,
+        "B": 6
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            4469,
+            4470,
+            4471,
+            4472,
+            4473,
+            4474,
+            4475,
+            4476,
+            4477
+          ],
+          "known_count": 9,
+          "identity_set": [
+            2
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            4431,
+            4432,
+            4433,
+            4434,
+            4435,
+            4436,
+            4437,
+            4438,
+            4439,
+            4440,
+            4441,
+            4442,
+            4443,
+            4444,
+            4445,
+            4446,
+            4447,
+            4448,
+            4449,
+            4450,
+            4451,
+            4452,
+            4453,
+            4454,
+            4455,
+            4456,
+            4457,
+            4458,
+            4459,
+            4460
+          ],
+          "known_count": 30,
+          "identity_set": [
+            6
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "1",
+        "Y": "5"
+      },
+      "q_gt": {
+        "X": 2,
+        "Y": 6
+      },
+      "candidate_anchor_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "CORRECT",
+      "first_public_pair": {
+        "B0": {
+          "X": 1,
+          "Y": 5
+        },
+        "B-HOLD-S0": {
+          "X": 1,
+          "Y": 5
+        },
+        "B-VLM-S0": {
+          "X": 1,
+          "Y": 5
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F4519",
+      "suspect_frame": 4519,
+      "confirm_frame": 4520,
+      "q": 4524,
+      "status": "UNRESOLVED_ROLLBACK_B0",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": null,
+        "B": 4496
+      },
+      "pre_anchor_gt": {
+        "A": null,
+        "B": 1
+      },
+      "pre_consensus_gt": {
+        "A": null,
+        "B": 1
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [],
+          "known_count": 0,
+          "identity_set": [],
+          "contiguous": true,
+          "same_source_public_version": false
+        },
+        "B": {
+          "frames": [
+            4467,
+            4468,
+            4469,
+            4470,
+            4471,
+            4472,
+            4473,
+            4474,
+            4475,
+            4476,
+            4477,
+            4478,
+            4479,
+            4480,
+            4481,
+            4482,
+            4483,
+            4484,
+            4485,
+            4486,
+            4487,
+            4488,
+            4489,
+            4490,
+            4491,
+            4492,
+            4493,
+            4494,
+            4495,
+            4496
+          ],
+          "known_count": 30,
+          "identity_set": [
+            1
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "7",
+        "Y": "1"
+      },
+      "q_gt": {
+        "X": 1,
+        "Y": 2
+      },
+      "candidate_anchor_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "numeric_choice": "UNRESOLVED",
+      "applied_choice": "UNRESOLVED",
+      "applied_anchor_verdict": "UNSCORABLE",
+      "applied_consensus_verdict": "UNSCORABLE",
+      "first_public_pair": {
+        "B0": {
+          "X": 0,
+          "Y": 1
+        },
+        "B-HOLD-S0": {
+          "X": 0,
+          "Y": 1
+        },
+        "B-VLM-S0": {
+          "X": 0,
+          "Y": 1
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F5303",
+      "suspect_frame": 5303,
+      "confirm_frame": null,
+      "q": null,
+      "status": "CANCELLED",
+      "scoring_status": "NO_FIRST_SPLIT_Q"
+    },
+    {
+      "episode": "MS1-F5399",
+      "suspect_frame": 5399,
+      "confirm_frame": 5400,
+      "q": 5436,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 5314,
+        "B": 5347
+      },
+      "pre_anchor_gt": {
+        "A": 2,
+        "B": 3
+      },
+      "pre_consensus_gt": {
+        "A": null,
+        "B": 3
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            5314
+          ],
+          "known_count": 1,
+          "identity_set": [
+            2
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            5318,
+            5319,
+            5320,
+            5321,
+            5322,
+            5323,
+            5324,
+            5325,
+            5326,
+            5327,
+            5328,
+            5329,
+            5330,
+            5331,
+            5332,
+            5333,
+            5334,
+            5335,
+            5336,
+            5337,
+            5338,
+            5339,
+            5340,
+            5341,
+            5342,
+            5343,
+            5344,
+            5345,
+            5346,
+            5347
+          ],
+          "known_count": 30,
+          "identity_set": [
+            3
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "2",
+        "Y": "1"
+      },
+      "q_gt": {
+        "X": 3,
+        "Y": 2
+      },
+      "candidate_anchor_verdict": {
+        "H1": "WRONG",
+        "H2": "CORRECT"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "UNSCORABLE",
+      "first_public_pair": {
+        "B0": {
+          "X": 2,
+          "Y": 1
+        },
+        "B-HOLD-S0": {
+          "X": 2,
+          "Y": 1
+        },
+        "B-VLM-S0": {
+          "X": 2,
+          "Y": 1
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F5927",
+      "suspect_frame": 5927,
+      "confirm_frame": 5928,
+      "q": 5939,
+      "status": "UNRESOLVED_ROLLBACK_B0",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 5877,
+        "B": null
+      },
+      "pre_anchor_gt": {
+        "A": 2,
+        "B": null
+      },
+      "pre_consensus_gt": {
+        "A": 2,
+        "B": null
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            5848,
+            5849,
+            5850,
+            5851,
+            5852,
+            5853,
+            5854,
+            5855,
+            5856,
+            5857,
+            5858,
+            5859,
+            5860,
+            5861,
+            5862,
+            5863,
+            5864,
+            5865,
+            5866,
+            5867,
+            5868,
+            5869,
+            5870,
+            5871,
+            5872,
+            5873,
+            5874,
+            5875,
+            5876,
+            5877
+          ],
+          "known_count": 30,
+          "identity_set": [
+            2
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [],
+          "known_count": 0,
+          "identity_set": [],
+          "contiguous": true,
+          "same_source_public_version": false
+        }
+      },
+      "q_native_sources": {
+        "X": "7",
+        "Y": "1"
+      },
+      "q_gt": {
+        "X": 1,
+        "Y": 2
+      },
+      "candidate_anchor_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "UNSCORABLE",
+        "H2": "UNSCORABLE"
+      },
+      "numeric_choice": "UNRESOLVED",
+      "applied_choice": "UNRESOLVED",
+      "applied_anchor_verdict": "UNSCORABLE",
+      "applied_consensus_verdict": "UNSCORABLE",
+      "first_public_pair": {
+        "B0": {
+          "X": 0,
+          "Y": 1
+        },
+        "B-HOLD-S0": {
+          "X": 0,
+          "Y": 1
+        },
+        "B-VLM-S0": {
+          "X": 0,
+          "Y": 1
+        }
+      },
+      "hold_changes_first_public": false,
+      "model_status": "SEE_MODEL_RECORD"
+    },
+    {
+      "episode": "MS1-F6052",
+      "suspect_frame": 6052,
+      "confirm_frame": null,
+      "q": null,
+      "status": "CANCELLED",
+      "scoring_status": "NO_FIRST_SPLIT_Q"
+    },
+    {
+      "episode": "MS1-F7997",
+      "suspect_frame": 7997,
+      "confirm_frame": 7998,
+      "q": 8035,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "scoring_status": "SCORED_AFTER_SEAL",
+      "pre_last_frame": {
+        "A": 7890,
+        "B": 7881
+      },
+      "pre_anchor_gt": {
+        "A": 3,
+        "B": 6
+      },
+      "pre_consensus_gt": {
+        "A": 3,
+        "B": 6
+      },
+      "pre_consensus_support": {
+        "A": {
+          "frames": [
+            7861,
+            7862,
+            7863,
+            7864,
+            7865,
+            7866,
+            7867,
+            7868,
+            7869,
+            7870,
+            7871,
+            7872,
+            7873,
+            7874,
+            7875,
+            7876,
+            7877,
+            7878,
+            7879,
+            7880,
+            7881,
+            7882,
+            7883,
+            7884,
+            7885,
+            7886,
+            7887,
+            7888,
+            7889,
+            7890
+          ],
+          "known_count": 30,
+          "identity_set": [
+            3
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        },
+        "B": {
+          "frames": [
+            7852,
+            7853,
+            7854,
+            7855,
+            7856,
+            7857,
+            7858,
+            7859,
+            7860,
+            7861,
+            7862,
+            7863,
+            7864,
+            7865,
+            7866,
+            7867,
+            7868,
+            7869,
+            7870,
+            7871,
+            7872,
+            7873,
+            7874,
+            7875,
+            7876,
+            7877,
+            7878,
+            7879,
+            7880,
+            7881
+          ],
+          "known_count": 30,
+          "identity_set": [
+            6
+          ],
+          "contiguous": true,
+          "same_source_public_version": true
+        }
+      },
+      "q_native_sources": {
+        "X": "8",
+        "Y": "5"
+      },
+      "q_gt": {
+        "X": 3,
+        "Y": 6
+      },
+      "candidate_anchor_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "candidate_consensus_verdict": {
+        "H1": "CORRECT",
+        "H2": "WRONG"
+      },
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "applied_anchor_verdict": "CORRECT",
+      "applied_consensus_verdict": "CORRECT",
+      "first_public_pair": {
+        "B0": {
+          "X": 8,
+          "Y": 5
+        },
+        "B-HOLD-S0": {
+          "X": 2,
+          "Y": 5
+        },
+        "B-VLM-S0": {
+          "X": 2,
+          "Y": 5
+        }
+      },
+      "hold_changes_first_public": true,
+      "model_status": "SEE_MODEL_RECORD"
+    }
+  ]
+}

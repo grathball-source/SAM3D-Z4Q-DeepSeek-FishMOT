@@ -1,0 +1,66 @@
+{
+  "status": "SCORED_AFTER_NEW_PREDICTION_SEAL",
+  "exposure": "EXPOSED_DEVELOPMENT",
+  "frames": 8400,
+  "metrics": {
+    "B0": {
+      "IDF1": 99.3334724001947,
+      "HOTA": 77.82948776478582,
+      "AssA": 77.90763828694708,
+      "DetA": 77.75663771120087,
+      "IDSW": 6,
+      "FP": 194,
+      "FN": 323
+    },
+    "OLD-HOLD": {
+      "IDF1": 99.31757904461065,
+      "HOTA": 77.8484870631494,
+      "AssA": 77.94724447047608,
+      "DetA": 77.75663771120087,
+      "IDSW": 18,
+      "FP": 194,
+      "FN": 323
+    },
+    "HOLD-P": {
+      "IDF1": 99.47452593100297,
+      "HOTA": 77.95376269244065,
+      "AssA": 78.15729620503224,
+      "DetA": 77.75663771120087,
+      "IDSW": 2,
+      "FP": 194,
+      "FN": 323
+    }
+  },
+  "delta": {
+    "HOLD-P_vs_B0": {
+      "IDF1": 0.14105353080827854,
+      "HOTA": 0.12427492765482384,
+      "AssA": 0.24965791808516258,
+      "DetA": 0.0,
+      "IDSW": -4,
+      "FP": 0,
+      "FN": 0
+    },
+    "HOLD-P_vs_OLD-HOLD": {
+      "IDF1": 0.15694688639231913,
+      "HOTA": 0.10527562929124201,
+      "AssA": 0.21005173455615989,
+      "DetA": 0.0,
+      "IDSW": -16,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "changed_frames": {
+    "B0_vs_OLD-HOLD": 233,
+    "B0_vs_HOLD-P": 78,
+    "OLD-HOLD_vs_HOLD-P": 155
+  },
+  "prediction_sha256": "343c0c999440e8e9191255c16bb0ad80048e540f9b87aa6dacd0b9ee8e3baed1",
+  "old_hold_prediction_sha256": "3a5fca79a0467e4dab158df68e220dbf97ae65084595fbebea09201dd3b971b6",
+  "original_paid_run": "16_START_15_END_F5927_S0_UNKNOWN",
+  "old_hold_source": "ZERO_HTTP_RECOVERY_REPLAY",
+  "new_model_http": 0,
+  "new_vlm_result": null,
+  "b0_archived_exact": true
+}

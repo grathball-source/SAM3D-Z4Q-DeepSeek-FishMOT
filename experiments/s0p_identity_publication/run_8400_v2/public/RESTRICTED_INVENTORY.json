@@ -1,0 +1,53 @@
+{
+  "status": "PATH_SIZE_SHA_ONLY_NO_CONTENT",
+  "records": {
+    "observations": {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_failure_repair_20260917\\diagnosis_evidence\\diagnosis\\observations_development.jsonl.gz",
+      "bytes": 2548578,
+      "sha256": "92ce16dc5896e17ab80de5ae6bd6e73dfd841bcc01c8e5f53501e87a7fae903e"
+    },
+    "depth_profiles": {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_birth_inherit_20260917\\completion_evidence\\features_r2\\features_development.jsonl.gz",
+      "bytes": 7257664,
+      "sha256": "5047adf883c4d7514140a8350ed3141e5e56e51d49d13e61250b55d8a6b93660"
+    },
+    "assignment_masks": {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_occlusion_identity_20260915\\i3_evidence_20260915_complete\\identity_cpu10_20260915\\run_8400\\assignments.jsonl.gz",
+      "bytes": 4057358,
+      "sha256": "49fc127d359566da392f401a68a304cc213d8e3ac702ad93e91894309200708b"
+    },
+    "archived_baseline": {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_return_guard_20260918\\completion_evidence\\experiment\\predictions_development.jsonl.gz",
+      "bytes": 110253,
+      "sha256": "18793b53c7f751b149d0bbaa01f307b6c86a48f9c831edb761fe87e2b2a9a8cb"
+    },
+    "prediction_only_trigger_scan": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\private_source\\scan_v4.json",
+      "bytes": 9923,
+      "sha256": "9aa8e33e35d7f6ba26bab72c8af2ab4bff7e4139c98bd37be6dd8ca0ed42f62b"
+    },
+    "exposed_development_gt": {
+      "path": "E:\\CAU\\D-MOT\\Depth-Anchored Association\\sam3_training_free_association\\v03\\results\\error_audit\\gt_grid_and_native_alignment.jsonl.gz",
+      "bytes": 2877831,
+      "sha256": "ab6bc733911cc07dc4be70ef3a893c1475aca6908fc6ce8bc376923597eed5d1"
+    },
+    "exposed_native_gt_matches": {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_return_guard_20260918\\completion_evidence\\experiment\\offline_matches_development.jsonl.gz",
+      "bytes": 794098,
+      "sha256": "34091028d1e33fde29f89246a91543867d6e0c16d960775725dc4008d9d9977f"
+    },
+    "s0p_private_reference_snapshots": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\run_8400_v2\\private_source\\Q_REFERENCE_SNAPSHOTS.json",
+      "bytes": 514001,
+      "sha256": "0053a61f6426f42d72c29d6976b05f14d60f86d819196d4ba1acf9d566921f9b"
+    }
+  },
+  "reproduction_dependencies": [
+    "Same-SHA OBS, depth profiles, assignment masks, V4 scan, archived baseline",
+    "Python 3.12 with repository controller, NumPy, SciPy, pycocotools, TrackEval",
+    "GT and native-to-GT matches are needed only after prediction sealing for scoring",
+    "Old HOLD public recovery seal/predictions/metrics must remain unchanged",
+    "Archived attempt1 source is retained for exact first-attempt reproduction"
+  ],
+  "private_pixels_or_raster_in_git": false
+}

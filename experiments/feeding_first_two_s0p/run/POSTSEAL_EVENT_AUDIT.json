@@ -1,0 +1,719 @@
+{
+  "status": "POSTSEAL_DIAGNOSTIC",
+  "reference": "edited polygon labels, checked=false",
+  "mask_iou_min": 0.5,
+  "margin_min": 0.1,
+  "segment_identity_reset": true,
+  "classification_limitation": "pre-suspect source proxy is not the bank anchor; physical outcome does not certify historical anchor correctness",
+  "summary": {
+    "B-HOLD": {
+      "CORRECT": 2,
+      "WRONG": 2,
+      "NOT_STAGED": 2,
+      "NO_TWO_MEMBER_GT_BIJECTION": 0,
+      "UNSCORABLE": 0
+    },
+    "B-VLM": {
+      "CORRECT": 4,
+      "WRONG": 0,
+      "NOT_STAGED": 2,
+      "NO_TWO_MEMBER_GT_BIJECTION": 0,
+      "UNSCORABLE": 0
+    }
+  },
+  "events": [
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F12",
+      "suspect_frame": 12,
+      "pre_frame": 11,
+      "q": 48,
+      "pre_original_frame": 361,
+      "q_original_frame": 398,
+      "source_pair": [
+        50,
+        59
+      ],
+      "pre_public": {
+        "50": 50,
+        "59": 59
+      },
+      "pre_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9527687296416938,
+          "second_iou": 0.008395522388059701
+        },
+        "59": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.8821138211382114,
+          "second_iou": 0.009671179883945842
+        }
+      },
+      "post_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9617977528089887,
+          "second_iou": 0.0
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.7529691211401425,
+          "second_iou": 0.0
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "chosen_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "expected_mapping": {},
+      "physical_proxy": "NOT_STAGED",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F59",
+      "suspect_frame": 59,
+      "pre_frame": 58,
+      "q": 65,
+      "pre_original_frame": 408,
+      "q_original_frame": 415,
+      "source_pair": [
+        30,
+        70
+      ],
+      "pre_public": {
+        "30": 30,
+        "70": 67
+      },
+      "pre_gt": {
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9229390681003584,
+          "second_iou": 0.0
+        },
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9808429118773946,
+          "second_iou": 0.0
+        }
+      },
+      "post_gt": {
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8977272727272727,
+          "second_iou": 0.0049261083743842365
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9305555555555556,
+          "second_iou": 0.006896551724137931
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "NUMERIC",
+      "chosen_mapping": {
+        "70": 67,
+        "30": 30
+      },
+      "expected_mapping": {
+        "70": 67,
+        "30": 30
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F67",
+      "suspect_frame": 67,
+      "pre_frame": 66,
+      "q": 69,
+      "pre_original_frame": 416,
+      "q_original_frame": 419,
+      "source_pair": [
+        2,
+        21
+      ],
+      "pre_public": {
+        "2": 2,
+        "21": 21
+      },
+      "pre_gt": {
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9138381201044387,
+          "second_iou": 0.02040816326530612
+        },
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.92,
+          "second_iou": 0.025547445255474453
+        }
+      },
+      "post_gt": {
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9147982062780269,
+          "second_iou": 0.039030955585464336
+        },
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9181286549707602,
+          "second_iou": 0.012345679012345678
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "NUMERIC",
+      "chosen_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "expected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "physical_proxy": "WRONG",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F81",
+      "suspect_frame": 81,
+      "pre_frame": 80,
+      "q": 84,
+      "pre_original_frame": 430,
+      "q_original_frame": 434,
+      "source_pair": [
+        3,
+        69
+      ],
+      "pre_public": {
+        "3": 3,
+        "69": 69
+      },
+      "pre_gt": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.9501779359430605,
+          "second_iou": 0.003260869565217391
+        },
+        "69": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.9483282674772037,
+          "second_iou": 0.01860920666013712
+        }
+      },
+      "post_gt": {},
+      "model_raw_choice": null,
+      "numeric_choice": "UNRESOLVED",
+      "applied_choice": "UNRESOLVED",
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "chosen_mapping": {},
+      "expected_mapping": {},
+      "physical_proxy": "NOT_STAGED",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F105",
+      "suspect_frame": 105,
+      "pre_frame": 104,
+      "q": 120,
+      "pre_original_frame": 454,
+      "q_original_frame": 470,
+      "source_pair": [
+        1,
+        24
+      ],
+      "pre_public": {
+        "1": 1,
+        "24": 24
+      },
+      "pre_gt": {
+        "1": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8825396825396825,
+          "second_iou": 0.03404255319148936
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.912751677852349,
+          "second_iou": 0.009831460674157303
+        }
+      },
+      "post_gt": {
+        "82": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8489932885906041,
+          "second_iou": 0.0
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.929701230228471,
+          "second_iou": 0.014256619144602852
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "NUMERIC",
+      "chosen_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "expected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-HOLD",
+      "event": "MS1-F166",
+      "suspect_frame": 166,
+      "pre_frame": 165,
+      "q": 169,
+      "pre_original_frame": 515,
+      "q_original_frame": 519,
+      "source_pair": [
+        24,
+        50
+      ],
+      "pre_public": {
+        "24": 24,
+        "50": 50
+      },
+      "pre_gt": {
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.903448275862069,
+          "second_iou": 0.002886002886002886
+        },
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9647266313932981,
+          "second_iou": 0.00891089108910891
+        }
+      },
+      "post_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9267326732673268,
+          "second_iou": 0.006369426751592357
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9373219373219374,
+          "second_iou": 0.008393285371702638
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "NUMERIC",
+      "chosen_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "expected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "physical_proxy": "WRONG",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F12",
+      "suspect_frame": 12,
+      "pre_frame": 11,
+      "q": 48,
+      "pre_original_frame": 361,
+      "q_original_frame": 398,
+      "source_pair": [
+        50,
+        59
+      ],
+      "pre_public": {
+        "50": 50,
+        "59": 59
+      },
+      "pre_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9527687296416938,
+          "second_iou": 0.008395522388059701
+        },
+        "59": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.8821138211382114,
+          "second_iou": 0.009671179883945842
+        }
+      },
+      "post_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9617977528089887,
+          "second_iou": 0.0
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.7529691211401425,
+          "second_iou": 0.0
+        }
+      },
+      "model_raw_choice": null,
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "chosen_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "expected_mapping": {},
+      "physical_proxy": "NOT_STAGED",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F59",
+      "suspect_frame": 59,
+      "pre_frame": 58,
+      "q": 65,
+      "pre_original_frame": 408,
+      "q_original_frame": 415,
+      "source_pair": [
+        30,
+        70
+      ],
+      "pre_public": {
+        "30": 30,
+        "70": 67
+      },
+      "pre_gt": {
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9229390681003584,
+          "second_iou": 0.0
+        },
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9808429118773946,
+          "second_iou": 0.0
+        }
+      },
+      "post_gt": {
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8977272727272727,
+          "second_iou": 0.0049261083743842365
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9305555555555556,
+          "second_iou": 0.006896551724137931
+        }
+      },
+      "model_raw_choice": "H2",
+      "numeric_choice": "H2",
+      "applied_choice": "H2",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "MODEL",
+      "chosen_mapping": {
+        "70": 67,
+        "30": 30
+      },
+      "expected_mapping": {
+        "70": 67,
+        "30": 30
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F67",
+      "suspect_frame": 67,
+      "pre_frame": 66,
+      "q": 69,
+      "pre_original_frame": 416,
+      "q_original_frame": 419,
+      "source_pair": [
+        2,
+        21
+      ],
+      "pre_public": {
+        "2": 2,
+        "21": 21
+      },
+      "pre_gt": {
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9138381201044387,
+          "second_iou": 0.02040816326530612
+        },
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.92,
+          "second_iou": 0.025547445255474453
+        }
+      },
+      "post_gt": {
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9147982062780269,
+          "second_iou": 0.039030955585464336
+        },
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9181286549707602,
+          "second_iou": 0.012345679012345678
+        }
+      },
+      "model_raw_choice": "H2",
+      "numeric_choice": "H1",
+      "applied_choice": "H2",
+      "status": "COMMIT",
+      "decision_source": "MODEL",
+      "chosen_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "expected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F81",
+      "suspect_frame": 81,
+      "pre_frame": 80,
+      "q": 84,
+      "pre_original_frame": 430,
+      "q_original_frame": 434,
+      "source_pair": [
+        3,
+        69
+      ],
+      "pre_public": {
+        "3": 3,
+        "69": 69
+      },
+      "pre_gt": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.9501779359430605,
+          "second_iou": 0.003260869565217391
+        },
+        "69": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.9483282674772037,
+          "second_iou": 0.01860920666013712
+        }
+      },
+      "post_gt": {},
+      "model_raw_choice": null,
+      "numeric_choice": "UNRESOLVED",
+      "applied_choice": "UNRESOLVED",
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "chosen_mapping": {},
+      "expected_mapping": {},
+      "physical_proxy": "NOT_STAGED",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F105",
+      "suspect_frame": 105,
+      "pre_frame": 104,
+      "q": 120,
+      "pre_original_frame": 454,
+      "q_original_frame": 470,
+      "source_pair": [
+        1,
+        24
+      ],
+      "pre_public": {
+        "1": 1,
+        "24": 24
+      },
+      "pre_gt": {
+        "1": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8825396825396825,
+          "second_iou": 0.03404255319148936
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.912751677852349,
+          "second_iou": 0.009831460674157303
+        }
+      },
+      "post_gt": {
+        "82": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8489932885906041,
+          "second_iou": 0.0
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.929701230228471,
+          "second_iou": 0.014256619144602852
+        }
+      },
+      "model_raw_choice": "H1",
+      "numeric_choice": "H1",
+      "applied_choice": "H1",
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "decision_source": "MODEL",
+      "chosen_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "expected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "B-VLM",
+      "event": "MS1-F166",
+      "suspect_frame": 166,
+      "pre_frame": 165,
+      "q": 169,
+      "pre_original_frame": 515,
+      "q_original_frame": 519,
+      "source_pair": [
+        24,
+        50
+      ],
+      "pre_public": {
+        "24": 24,
+        "50": 50
+      },
+      "pre_gt": {
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.903448275862069,
+          "second_iou": 0.002886002886002886
+        },
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9647266313932981,
+          "second_iou": 0.00891089108910891
+        }
+      },
+      "post_gt": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9267326732673268,
+          "second_iou": 0.006369426751592357
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9373219373219374,
+          "second_iou": 0.008393285371702638
+        }
+      },
+      "model_raw_choice": "H2",
+      "numeric_choice": "H1",
+      "applied_choice": "H2",
+      "status": "COMMIT",
+      "decision_source": "MODEL",
+      "chosen_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "expected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "physical_proxy": "CORRECT",
+      "mapping_reference": "native sources at pre-suspect frame; actual protected bank anchor not revalidated"
+    }
+  ],
+  "metrics_sha256": "cb8245843bf12980274354a1a544fb9e55981ab07f21ddc33d97a31bc1eeb532",
+  "predictions_sha256": {
+    "feeding_000000_000199": "d82946c65bcb42dd05a9fa3867002c6d0cc19ecf2d58a00fb2e8ee5e0d2967eb",
+    "feeding_000351_000555": "f90011e44ca917eedfa7bc98796723d8141f1084116a6f11f055a054315e90b2"
+  }
+}

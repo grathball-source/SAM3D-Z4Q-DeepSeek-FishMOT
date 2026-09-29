@@ -1,0 +1,54 @@
+{
+  "status": "FROZEN_BEFORE_ANY_MODEL_CALL",
+  "mode": "real",
+  "segment": "feeding_000351_000555",
+  "original_frames": [
+    351,
+    555
+  ],
+  "frames": 205,
+  "code_sha256": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\prepare.py": "50b35914abc8681a10717d5077bcce3af4a05a7d73fc91ec58148ee0d987f877",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\scan.py": "eaecfe80fc79a21ca8f588a8da1fb2754270b3865729f7e7c56a6a26a674e955",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\replay.py": "08242f29036427f35f9d7e5e0b64e9c0aac0ea8bd298ea662e5b9c6ff6c35818",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\score.py": "862e3a188dbb67a2e34029168bc33811b17c0528d1974994efe8481521c30fb7",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan_v4.py": "b04ce22afe1117eb775b2b5b42637a5ea5d6d55ecac9d8e9f709a89307afb6b9",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\event_packet.py": "840ef6edc5cde4d6a4a322f39aec24bb11352e1a47d577f7507e2f5b44d82173",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\provider_v7.py": "77ed4d3e1fcd26e620c810217c0de6e6ad0d1cadce8464efcb0df07ab4285632",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\MS1_MODEL_PROMPTS.md": "99a2cec1224786acb87287c8d37e366cfcad6b82048c30e59e333eedb4fc5d51",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\CONFIG_V7.json": "5c833377646c90e56a40088b1093b0616a8d0b13f61f7d3f75c2f7afaeb67dbc"
+  },
+  "source_manifest_sha256": "68411dde807147fbc8f0f99c1837b165e4ffbd14df4af60c9166ecd026fb29cf",
+  "derived_inputs": {
+    "observations": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\observations.jsonl.gz",
+      "bytes": 293626,
+      "sha256": "49d3cf556f4fed0bc1e6c5cb30a70fda3e111493316309bddb96c2f2aadf4b07"
+    },
+    "profiles": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\profiles.jsonl.gz",
+      "bytes": 716260,
+      "sha256": "18c2c4f536b5448f84e224fe97ec800ca9bec3013797c255f8812ee4ac326710"
+    },
+    "assignments": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000351_000555\\assignments.jsonl.gz",
+      "bytes": 274831,
+      "sha256": "862a1ce78e198c3100892217671ff0688345e9882b7b236d395e29e808871fe3"
+    }
+  },
+  "scan_sha256": "cf6e99a6b7e9c1f07ebd164712837c9b03986690b54a02601889f006598a85f2",
+  "scanner": "frozen prediction-only V4; last candidate at duplicate frame as existing manager",
+  "scanner_suspects": 47,
+  "unique_suspect_frames": 40,
+  "model_selection": "all live two-frame confirmed episodes; M once at confirmation, S0 once at first split",
+  "max_inference_http": 80,
+  "per_request_peak_reserve_usd": 0.3786432,
+  "no_rgb_no_gt_before_seal": true,
+  "model": "deepseek-flash",
+  "decision": "S0 before first current-frame publication; invalid/DEFER uses same HOLD numeric fallback",
+  "source_limitation": "saved batched SAM3 raw polygons, not a continuous SAM3 tracking session"
+}

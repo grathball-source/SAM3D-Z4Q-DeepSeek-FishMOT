@@ -1,0 +1,177 @@
+{
+  "status": "SCORED_AFTER_BOTH_PREDICTION_SEALS",
+  "run": "run",
+  "frames": 405,
+  "input": "saved batched SAM3 raw preannotations + aligned depth_mm; Z4Q controller, not native continuous SAM3",
+  "segment_metrics": {
+    "feeding_000000_000199": {
+      "B0": {
+        "IDF1": 92.12561737023577,
+        "HOTA": 90.4837479885973,
+        "AssA": 86.39966385114246,
+        "DetA": 94.76188123291938,
+        "IDSW": 12,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "B-HOLD": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.24360554703888,
+        "AssA": 87.8567216105058,
+        "DetA": 94.76188123291938,
+        "IDSW": 11,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      },
+      "B-VLM": {
+        "IDF1": 92.8897586431833,
+        "HOTA": 91.24360554703888,
+        "AssA": 87.8567216105058,
+        "DetA": 94.76188123291938,
+        "IDSW": 11,
+        "FP": 76,
+        "FN": 143,
+        "GT": 5399,
+        "predictions": 5332
+      }
+    },
+    "feeding_000351_000555": {
+      "B0": {
+        "IDF1": 82.89104247803641,
+        "HOTA": 78.14779790472312,
+        "AssA": 71.42993326096412,
+        "DetA": 85.5395185924718,
+        "IDSW": 24,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "B-HOLD": {
+        "IDF1": 81.07961235395345,
+        "HOTA": 76.21626351940287,
+        "AssA": 67.9303805973295,
+        "DetA": 85.5591989936481,
+        "IDSW": 28,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      },
+      "B-VLM": {
+        "IDF1": 84.44887238474776,
+        "HOTA": 78.94967638874773,
+        "AssA": 72.90019592573584,
+        "DetA": 85.5395185924718,
+        "IDSW": 24,
+        "FP": 148,
+        "FN": 201,
+        "GT": 5547,
+        "predictions": 5494
+      }
+    }
+  },
+  "pooled_metrics": {
+    "B0": {
+      "IDF1": 87.44258680874518,
+      "HOTA": 84.52340158662949,
+      "AssA": 80.36273862794462,
+      "DetA": 89.34201920117377,
+      "IDSW": 36,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "B-HOLD": {
+      "IDF1": 86.90060628329965,
+      "HOTA": 83.98626955233809,
+      "AssA": 79.37316914762009,
+      "DetA": 89.35209135610197,
+      "IDSW": 39,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    },
+    "B-VLM": {
+      "IDF1": 88.60922285504319,
+      "HOTA": 85.30608747349936,
+      "AssA": 81.85298059850669,
+      "DetA": 89.34201920117377,
+      "IDSW": 35,
+      "FP": 224,
+      "FN": 344,
+      "GT": 10946,
+      "predictions": 10826
+    }
+  },
+  "pooled_delta": {
+    "B-HOLD_vs_B0": {
+      "IDF1": -0.5419805254455241,
+      "HOTA": -0.5371320342914032,
+      "AssA": -0.9895694803245334,
+      "DetA": 0.010072154928195687,
+      "IDSW": 3,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM_vs_B0": {
+      "IDF1": 1.1666360462980094,
+      "HOTA": 0.7826858868698707,
+      "AssA": 1.4902419705620673,
+      "DetA": 0.0,
+      "IDSW": -1,
+      "FP": 0,
+      "FN": 0
+    },
+    "B-VLM_vs_B-HOLD": {
+      "IDF1": 1.7086165717435335,
+      "HOTA": 1.319817921161274,
+      "AssA": 2.4798114508866007,
+      "DetA": -0.010072154928195687,
+      "IDSW": -4,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "changed_frames": {
+    "feeding_000000_000199": {
+      "B0_vs_HOLD": 41,
+      "B0_vs_VLM": 41,
+      "HOLD_vs_VLM": 0
+    },
+    "feeding_000351_000555": {
+      "B0_vs_HOLD": 137,
+      "B0_vs_VLM": 88,
+      "HOLD_vs_VLM": 137
+    }
+  },
+  "reference": {
+    "feeding_000000_000199": {
+      "label_dir": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\labels_640x360",
+      "frames": 200,
+      "ordered_file_bytes_sha256": "81a1326e6c54996107e5920912abca8e8c7cc00a9ace01c901fde1db6af7b5da",
+      "checked_field": "false_in_source; human edited, not independently certified"
+    },
+    "feeding_000351_000555": {
+      "label_dir": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\labels_640x360",
+      "frames": 205,
+      "ordered_file_bytes_sha256": "2f1e734377a53802a342bd10396d8672773b76c630b28dd7670f719247d8850f",
+      "checked_field": "false_in_source; human edited, not independently certified"
+    }
+  },
+  "seal_sha256": {
+    "feeding_000000_000199": "f6b78e2de04457e747827612173d0d5cae5f5d5c57508b680d729fad47f19055",
+    "feeding_000351_000555": "59b29ecf74564c3f4ff464806797ef543249f8ac8b96ac370d16a4be6b1452a9"
+  },
+  "new_model_http": 13,
+  "peak_charge_upper_usd": 0.296052,
+  "no_negative_id_filtering": true,
+  "segment_identity_reset": true,
+  "pooled_method": "disjoint_GT_and_prediction_ID_namespaces_per_segment"
+}

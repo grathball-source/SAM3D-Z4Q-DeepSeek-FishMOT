@@ -1,0 +1,188 @@
+{
+  "status": "FROZEN_SOURCE_AND_BYTECODE_REUSED",
+  "sources": {
+    "depth_measurement.py": {
+      "sha256": "6269c807b0c361fecc5e35061193d82754a5af067ebf3d7999637af16000787e",
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_measurement.py",
+      "numeric_literals": [
+        0,
+        0.1,
+        0.2,
+        0.25,
+        0.75,
+        0.9,
+        1,
+        1.4826,
+        2,
+        7,
+        8,
+        15.0,
+        16,
+        60.0,
+        360,
+        640
+      ],
+      "functions": [
+        {
+          "name": "decode",
+          "line": 11,
+          "source": "def decode(rle):\n    return coco.decode(dict(size=rle['size'], counts=rle['counts'].encode('ascii'))).astype(bool)"
+        },
+        {
+          "name": "statistics",
+          "line": 15,
+          "source": "def statistics(depth, region):\n    values = np.asarray(depth[region], dtype='f8')\n    finite = values[np.isfinite(values) & (values > 0)]\n    out = dict(area=int(region.sum()), n=int(finite.size),\n               valid_fraction=float(finite.size / max(1, values.size)),\n               median=None, mad=None, q10=None, q25=None, q75=None, q90=None)\n    if finite.size:\n        median = float(np.median(finite))\n        q10, q25, q75, q90 = np.quantile(finite, [.1, .25, .75, .9])\n        out.update(median=median, mad=float(np.median(np.abs(finite-median))),\n                   q10=float(q10), q25=float(q25), q75=float(q75), q90=float(q90))\n    return out"
+        },
+        {
+          "name": "usable",
+          "line": 29,
+          "source": "def usable(core):\n    return (core['n'] >= 16 and core['valid_fraction'] >= .2 and\n            core['median'] is not None and core['median'] > 0 and\n            core['mad'] is not None and np.isfinite(core['mad']) and core['mad'] >= 0 and\n            max(15., 1.4826*core['mad']) <= 60.)"
+        },
+        {
+          "name": "extract_frame",
+          "line": 36,
+          "source": "def extract_frame(depth, assignment, profiles):\n    \"\"\"Return full-frame background and independent per-mask whole/core facts.\n\n    The same eroded exclusive core and n/fraction/median/MAD convention as\n    FEEDING prepare.py is used; no annotation plane is opened here.\n    \"\"\"\n    assert depth.shape == (360, 640)\n    masks = {int(key[2:]): decode(rle) for key, rle in assignment['masks'].items()}\n    occupancy = np.zeros(depth.shape, np.uint16)\n    for region in masks.values():\n        occupancy += region\n    out = {}\n    for native, region in masks.items():\n        exclusive = region & (occupancy == 1)\n        core_region = cv2.erode(exclusive.astype('u1'), KERNEL, iterations=1).astype(bool)\n        whole, core = statistics(depth, region), statistics(depth, core_region)\n        old = profiles[native]\n        for name, current in (('whole', whole), ('core', core)):\n            for field in ('n', 'valid_fraction', 'median', 'mad'):\n                assert current[field] == old[name][field], (native, name, field, current[field], old[name][field])\n        ys, xs = np.nonzero(region)\n        components = cv2.connectedComponents(region.astype('u1'), connectivity=8)[0]-1\n        bbox_center = [(float(xs.min())+float(xs.max()))/2, (float(ys.min())+float(ys.max()))/2]\n        centroid = [float(xs.mean()), float(ys.mean())]\n        out[native] = dict(native=native, source='RAW_SENSOR_OR_ALIGNED_RAW',\n            whole=whole, core=core, core_usable=bool(usable(core)),\n            core_whole_area_ratio=core['area']/max(1, whole['area']),\n            components=int(components), centroid_bbox_delta_px=[centroid[i]-bbox_center[i] for i in (0, 1)],\n            core_whole_median_delta_mm=(core['median']-whole['median']\n                if core['median'] is not None and whole['median'] is not None else None))\n    full = statistics(depth, np.ones(depth.shape, bool))\n    return full, out, masks, occupancy"
+        }
+      ]
+    },
+    "depth_state.py": {
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453",
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "numeric_literals": [
+        0,
+        1,
+        1.4826,
+        2,
+        3,
+        4,
+        10,
+        15.0,
+        30
+      ],
+      "functions": [
+        {
+          "name": "DepthState",
+          "line": 10,
+          "source": "class DepthState:\n    def __init__(self, segment, arm):\n        self.segment, self.arm = segment, arm\n        self.live = {}\n        self.groups = []\n        self.pending = []\n        self.breaks = 0\n        self.updates = 0\n\n    def freeze(self, episode, frame, epochs=None, generations=None):\n        result = {}\n        for role, native, public in zip(('A', 'B'), episode['member_sources'], episode['public_ids']):\n            record = self.live.get(native)\n            same_version = (record and record['key'][3] == public and\n                (epochs is None or record['key'][4] == epochs.get(native)) and\n                (generations is None or record['key'][2] == generations.get(native)))\n            # A completed valid fragment survives missing/risk observations.\n            # Select that one fragment, never filter risk points then join its ends.\n            samples = ([s.copy() for s in record['latest_fragment'] if s['frame'] >= frame-30]\n                       if same_version else [])\n            acquired = [item['time'] for item in record['cache']] if same_version else []\n            intervals = [b-a for a,b in zip(acquired,acquired[1:]) if b>a]\n            result[role] = dict(key=record['key'] if samples else None, samples=samples,\n                                acquired_interval_seconds=intervals[-1] if intervals else None,\n                                cutoff_frame=frame-1, source=native, public=public)\n        return result\n\n    def break_source(self, native):\n        record = self.live.get(native)\n        if record and record['samples']:\n            record['samples'].clear()\n            self.breaks += 1\n\n    def record_pending(self,native,measurement,frame):\n        if not any(x['frame']==frame and x['native']==native for x in self.pending):\n            self.pending.append(dict(frame=frame,native=native,measurement=measurement))\n\n    def update(self, native, measurement, frame, now, public, epoch, generation, observation_class):\n        if observation_class == 'GROUP_MEASUREMENT':\n            self.groups.append(dict(frame=frame, native=native, measurement=measurement))\n            self.break_source(native)\n            return\n        if observation_class == 'POST_UNASSIGNED':\n            self.record_pending(native,measurement,frame)\n            self.break_source(native)\n            return\n        key = (self.segment, self.arm, generation, public, epoch)\n        record = self.live.get(native)\n        if record and record['key'] != key:\n            self.break_source(native)\n            record = None\n        if record is None:\n            record = dict(key=key, samples=deque(maxlen=30), cache=deque(maxlen=30),\n                          latest_fragment=[], last_frame=None, last_time=None)\n            self.live[native] = record\n        record['cache'].append(dict(frame=frame,time=now,observation_class=observation_class,\n                                    core_usable=measurement['core_usable'],measurement=measurement))\n        if record['last_frame'] is not None and (record['last_frame'] != frame-1 or now <= record['last_time']):\n            self.break_source(native)\n        record['last_frame'], record['last_time'] = frame, now\n        if observation_class not in ('SOURCE_OBSERVATION', 'RESTORED_POST') or not measurement['core_usable']:\n            self.break_source(native)\n            return\n        record['samples'].append(dict(frame=frame, time=now, z_mm=measurement['core']['median'],\n                                     mad_mm=measurement['core']['mad'], source=measurement['source'],\n                                     fact_id=measurement.get('fact_id')))\n        record['latest_fragment'] = list(record['samples'])\n        self.updates += 1"
+        },
+        {
+          "name": "predict",
+          "line": 80,
+          "source": "def predict(frozen, query_time):\n    samples = frozen['samples'][-10:]\n    base = dict(status='NO_HISTORY', mu_mm=None, slope_mm_s=None, scale_mm=None,\n                samples=len(samples), sample_frames=[s['frame'] for s in samples],\n                sample_times=[s['time'] for s in samples], residual_mm=[],\n                delta_seconds=None, time_scale_seconds=None, fallback=None)\n    base.update(query_time=query_time,sample_fact_ids=[s.get('fact_id') for s in samples])\n    if not samples:\n        return base\n    times = np.asarray([s['time'] for s in samples], float)\n    z = np.asarray([s['z_mm'] for s in samples], float)\n    if (not np.all(np.isfinite(times)) or not np.all(np.isfinite(z)) or\n            query_time < times[-1] or (len(times) > 1 and np.any(np.diff(times) <= 0))):\n        return dict(base, status='INVALID_TIME_OR_VALUE')\n    delta = float(query_time-times[-1])\n    sigma = np.maximum(15., 1.4826*np.asarray([s['mad_mm'] for s in samples], float))\n    if not np.all(np.isfinite(sigma)):\n        return dict(base, status='INVALID_SCALE')\n    positive_dt = np.diff(times)\n    acquired = frozen.get('acquired_interval_seconds')\n    nominal = acquired if acquired is not None and acquired>0 else 1/30\n    span = float(times[-1]-times[0])\n    t0 = max(span, float(np.median(positive_dt))) if len(times) > 1 else nominal\n    last_scale2 = sigma[-1]**2 + 15.**2*(1+(delta/t0)**2)\n    last = dict(base, status='NO_SLOPE_LAST_VALUE', mu_mm=float(z[-1]),\n                scale_mm=float(math.sqrt(last_scale2)), delta_seconds=delta,\n                time_scale_seconds=t0, fallback=('NOMINAL_TIME_FALLBACK' if acquired is None else\n                    'OBSERVED_ACQUISITION_INTERVAL') if len(times)==1 else None)\n    if len(samples) < 3 or span <= 0:\n        return last\n    tau = times-times[-1]\n    design = np.stack((np.ones(len(times)), tau), axis=1)\n    weighted = design/sigma[:, None]\n    gram = weighted.T@weighted\n    rhs = weighted.T@(z/sigma)\n    try:\n        beta = np.linalg.solve(gram, rhs)\n        inverse = np.linalg.solve(gram, np.eye(2))\n        residual = z-design@beta\n        gamma = max(1., float(np.sum((residual/sigma)**2)/max(len(z)-2, 1)))\n        h = np.array([1., delta])\n        scale2 = float(gamma*h@inverse@h + 15.**2*(1+(delta/t0)**2))\n        mu = float(h@beta)\n        if not all(math.isfinite(v) for v in (mu, scale2, beta[1])) or scale2 <= 0:\n            return dict(last, fallback='NONFINITE_WLS')\n        return dict(base, status='WLS_LINEAR_TIME', mu_mm=mu, slope_mm_s=float(beta[1]),\n                    scale_mm=math.sqrt(scale2), samples=len(samples),\n                    residual_mm=[float(v) for v in residual], gamma=gamma,\n                    delta_seconds=delta, time_scale_seconds=t0,\n                    beta_intercept_mm=float(beta[0]),covariance_proxy=(gamma*inverse).tolist())\n    except np.linalg.LinAlgError:\n        return dict(last, fallback='DEGENERATE_WLS')"
+        }
+      ]
+    },
+    "depth_score.py": {
+      "sha256": "c3ba489e5cac03fc7fcf33b1ebbd2599e8b6ccbb24482516961d91e5b4748199",
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_score.py",
+      "numeric_literals": [
+        0,
+        1e-09,
+        0.1,
+        0.25,
+        0.5,
+        0.9,
+        1,
+        1.4826,
+        2.0,
+        2.5,
+        4,
+        15.0,
+        60.0
+      ],
+      "functions": [
+        {
+          "name": "log_t4",
+          "line": 10,
+          "source": "def log_t4(z, mu, scale):\n    assert scale > 0 and math.isfinite(scale)\n    residual = (z-mu)/scale\n    return (math.lgamma(2.5)-math.lgamma(2.)-.5*math.log(4*math.pi)\n            -math.log(scale)-2.5*math.log1p(residual*residual/4))"
+        },
+        {
+          "name": "geometry_choice",
+          "line": 17,
+          "source": "def geometry_choice(episode):\n    _, legacy = numeric_choice(episode)\n    if 'scores' not in legacy:\n        return 'UNRESOLVED', dict(reason=legacy.get('reason'))\n    candidates = [dict(choice=item['choice'], geometry=sum(\n        edge['position']+.25*(edge['motion'] if edge['motion'] is not None else 0.)\n        for edge in item['edges'])) for item in legacy['scores']]\n    tied = abs(candidates[0]['geometry']-candidates[1]['geometry'])<=1e-9\n    choice = episode['temporary_choice'] if tied else min(candidates,key=lambda x:x['geometry'])['choice']\n    return choice, dict(candidates=candidates, tie=tied)"
+        },
+        {
+          "name": "dynamic_choice",
+          "line": 29,
+          "source": "def dynamic_choice(episode, frozen, measurements, full_frame, depth_weight=.25):\n    \"\"\"Retain numeric_choice geometry exactly; replace only its depth term.\"\"\"\n    _, legacy = numeric_choice(episode)\n    if 'scores' not in legacy:\n        return 'UNRESOLVED', dict(reason=legacy.get('reason'), legacy=legacy)\n    sources = list(episode['post_roles'])\n    predictions = {role: predict(frozen[role], episode['post_roles'][sources[0]][0]['time'])\n                   for role in ('A', 'B')}\n    full_ok = full_frame['n'] > 0 and full_frame['median'] is not None\n    baseline = (dict(mu_mm=full_frame['median'], scale_mm=max(60., 1.4826*full_frame['mad']))\n                if full_ok else None)\n    edge = {}\n    for role in ('A', 'B'):\n        for source in sources:\n            observed = measurements[source]\n            forecast = predictions[role]\n            available = (baseline is not None and observed['core_usable'] and\n                         forecast['mu_mm'] is not None and forecast['scale_mm'] is not None)\n            value = 0.\n            if available:\n                z = observed['core']['median']\n                scale = math.hypot(forecast['scale_mm'],\n                                   max(15., 1.4826*observed['core']['mad']))\n                log_signal = log_t4(z, forecast['mu_mm'], scale)\n                log_background = log_t4(z, baseline['mu_mm'], baseline['scale_mm'])\n                relative = log_signal-log_background\n                value = -_logaddexp(math.log(.9)+relative, math.log(.1))\n            edge[(role,source)] = dict(used=bool(available), cost=value,\n                measurement_fact_id=observed.get('fact_id'),\n                observation_mm=observed['core']['median'], prediction=forecast,\n                observation_scale_mm=(max(15., 1.4826*observed['core']['mad'])\n                                      if observed['core_usable'] else None))\n    candidates = []\n    for item in legacy['scores']:\n        order = (0,1) if item['choice']=='H1' else (1,0)\n        pairs = [(role, sources[index]) for role,index in zip(('A','B'), order)]\n        geometry = sum(x['position']+.25*(x['motion'] if x['motion'] is not None else 0.)\n                       for x in item['edges'])\n        depth = sum(edge[p]['cost'] for p in pairs)\n        candidates.append(dict(choice=item['choice'], geometry=geometry, depth=depth,\n                               total=geometry+depth_weight*depth,\n                               pairs=[dict(role=role, source=source, **edge[(role,source)])\n                                      for role,source in pairs]))\n    choice = (episode['temporary_choice'] if abs(candidates[0]['total']-candidates[1]['total'])<=1e-9\n              else min(candidates,key=lambda x:x['total'])['choice'])\n    return choice, dict(candidates=candidates, background=baseline,\n                        used_edges=sum(v['used'] for v in edge.values()),\n                        depth_weight=depth_weight, tie=abs(candidates[0]['total']-candidates[1]['total'])<=1e-9,\n                        legacy_scores=[dict(choice=x['choice'], total=x['score']) for x in legacy['scores']])"
+        },
+        {
+          "name": "_logaddexp",
+          "line": 80,
+          "source": "def _logaddexp(a, b):\n    high = max(a, b)\n    return high+math.log(math.exp(a-high)+math.exp(b-high))"
+        }
+      ]
+    }
+  },
+  "declared": {
+    "review_base": "2fe9e0c8eb497432ae5e4c676f09b8d67bff9474",
+    "source": "SOURCE_OLD saved batched SAM3 polygons; raw aligned depth_mm",
+    "segments": [
+      [
+        0,
+        199
+      ],
+      [
+        351,
+        555
+      ]
+    ],
+    "branches": [
+      "SAM3_NATIVE",
+      "D0_GEOMETRY",
+      "D1_STATIC_LEGACY",
+      "D2_DYNAMIC"
+    ],
+    "scanner": "frozen prediction-only V4",
+    "event_config": "experiments/ms1_s0_development_8400/CONFIG_V7.json",
+    "event_policy": "NE-1 native-first plus S0-P; first split before first publication",
+    "max_history_frames": 30,
+    "latest_valid_fit_samples": 10,
+    "depth_unit": "APPARENT_CAMERA_Z_MM",
+    "depth_quality": {
+      "min_n": 16,
+      "min_fraction": 0.2,
+      "sigma_floor_mm": 15,
+      "max_core_scale_mm": 60
+    },
+    "dynamic": {
+      "student_t_df": 4,
+      "background_floor_mm": 60,
+      "inlier_mixture_weight": 0.9,
+      "depth_weight": 0.25
+    },
+    "new_model_http": 0,
+    "model_cost_usd": 0,
+    "no_gt_before_seal": true,
+    "no_repaired_depth": true
+  },
+  "actual": {
+    "core_kernel": [
+      7,
+      7
+    ],
+    "history_cache": 30,
+    "fit_max_samples": 10,
+    "core_min_n": 16,
+    "core_min_fraction": 0.2,
+    "core_max_scale_mm": 60,
+    "scale_floor_mm": 15,
+    "background_floor_mm": 60,
+    "mad_scale": 1.4826,
+    "student_t_df": 4,
+    "inlier_weight": 0.9,
+    "depth_weight": 0.25,
+    "geometry_motion_weight": 0.25,
+    "merge_confirm": 2,
+    "split_confirm": 1,
+    "post_count": 1,
+    "max_episode_seconds": 10
+  },
+  "geometry_and_event_sources": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan_v4.py": "b04ce22afe1117eb775b2b5b42637a5ea5d6d55ecac9d8e9f709a89307afb6b9",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ne1_native_first_event_association\\ne_controller.py": "454c8adc565c8f22a4e83985d25119aeb3f4b253a5fe990ee6db7d8869a96c9c"
+  },
+  "explanation": "CONFIG describes the frozen policy; executed values come from these unchanged source functions, validated by numerical tests and actual old405 replay"
+}

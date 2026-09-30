@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "unit_tests": 12,
+  "real_prefix_replays": 3,
+  "prefix_frames_each": 65,
+  "old405_replay": "NATIVE/D0/D1/D2 exact normalized mappings, independent states, no GT",
+  "first_publication_checks": 48,
+  "group_checks": 824,
+  "group_violations": 0,
+  "deleted_masks": 0,
+  "frozen_D3_checks": [
+    "nonzero WLS mean drift removed only",
+    "scale/covariance/gamma/slope unchanged",
+    "Delta0 same mean",
+    "0/1/2 samples exact",
+    "candidate reorder physical mapping invariant",
+    "missing all depth equals geometry"
+  ],
+  "state_checks": [
+    "source/epoch discontinuity",
+    "group/pending not pre",
+    "failed restore atomic",
+    "outside local-fallback preservation",
+    "single-post restore/publication once"
+  ],
+  "real_guard_checks": [
+    "network blocked",
+    "key empty",
+    "Provider not imported",
+    "GT blocked",
+    "only depth_mm",
+    "future masks changed afterq",
+    "future raw sensor reads refused"
+  ],
+  "full_checks": [
+    "both formal seals and all source/code hashes",
+    "full mask retention and one-to-one ID",
+    "CLEAR all-switch count matches official metric",
+    "first metric recomputation exact after provenance-only path repair"
+  ],
+  "optional_dependency_warning": "BURST/tabulate unavailable; unused by Identity/HOTA/CLEAR; no dependency install",
+  "reference_grade": "manual human edits, not independently certified; reused official frozen same-source evaluator",
+  "raw_images_actually_viewed": 3,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

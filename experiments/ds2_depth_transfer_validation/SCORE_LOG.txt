@@ -1,0 +1,14 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\evaluate.py", line 199, in <module>
+    score()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\evaluate.py", line 134, in score
+    write_new(run/'SCORE_PROVENANCE.json',dict(score_sha256=digest(HERE/'score.py'),
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\feeding_first_two_s0p\prepare.py", line 34, in digest
+    with Path(path).open('rb') as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\score.py'

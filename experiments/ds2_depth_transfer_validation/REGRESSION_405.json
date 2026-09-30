@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "role": "EXPOSED_REGRESSION_REFERENCE",
+  "fresh_state_replay": true,
+  "frames": 405,
+  "checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "frames": 200,
+      "exact_branches": [
+        "SAM3_NATIVE",
+        "D0_GEOMETRY",
+        "D1_STATIC_LEGACY",
+        "D2_FROZEN"
+      ],
+      "normalized_sha256": {
+        "SAM3_NATIVE": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+        "D0_GEOMETRY": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+        "D1_STATIC_LEGACY": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+        "D2_FROZEN": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2"
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frames": 205,
+      "exact_branches": [
+        "SAM3_NATIVE",
+        "D0_GEOMETRY",
+        "D1_STATIC_LEGACY",
+        "D2_FROZEN"
+      ],
+      "normalized_sha256": {
+        "SAM3_NATIVE": "8a8b86e90259456aec1c8a40bd5450c35ced0e45dd2e2219e6ffeafcc21a2bcd",
+        "D0_GEOMETRY": "b3f763f69a9f1a69065babae757fc01898e8469a9f5360efefb022ef718003dc",
+        "D1_STATIC_LEGACY": "b3f763f69a9f1a69065babae757fc01898e8469a9f5360efefb022ef718003dc",
+        "D2_FROZEN": "0e3fbbce3cbc95d6bd598799fe98ccb7051257be77f281f2fb72646d18bb9960"
+      }
+    }
+  ],
+  "GT_reads": 0,
+  "network_enabled": false,
+  "runner_sha256": "afbdc8f67243dd6b0a2dfa06088b69d0e10dcb8c5316c0248e0769cfdfa695df",
+  "adapter_sha256": "d86f92ef59b35871723315bcc4705238c4cc77dab5936c83b1ddc2082238c42f",
+  "outputs_sha256": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\COMMON_STATE_SHADOW.json": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\DEPTH_OBSERVATIONS.jsonl.gz": "0e74bbbb24c9402668a139d5632d61f527b8cc6600f1a46ce947f12890d8d39f",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\DEPTH_STATES.jsonl.gz": "81f948fcc06b8283fa5ba7c3efb5ee1c2c08f9976fabb5b6598599a214a3dcff",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\EVENTS.json": "adaa8f6a0e2b00756461421468a5d21037c887f04f4edc2df9eb0892cf37d0ce",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\PERFORMANCE.json": "3872b026efd2796d2e9aabdf2eb6b8ee2dc4efde0e98cf6f65fa84f173e34215",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\predictions.jsonl.gz": "4652c7f95af6f988cba899594189790488059c60c0ef6b82637c6e2d6df299fd",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\PUBLISH_LEDGER.jsonl": "d938c50779cc18d49b3969b06a22ac7bd01c90244585f152251afffdb0507ba3",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\RUN_SUMMARY.json": "8a92f7728e3eb166543d4280afbbf5252d31af40cacca2bed8aa57425d5dbb2b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000000_000199\\public\\TRANSACTIONS.jsonl.gz": "38f7ed94b2261dc8b253bc3645df76bcabfcbeaefa93d9464760cdcdfd2bb620",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\COMMON_STATE_SHADOW.json": "f14718f44f04e8888becd1d8d6e48fdb61e3f80fae7791f7eff573dff883630d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\DEPTH_OBSERVATIONS.jsonl.gz": "d110e82bea9095579834f5799b5b20f2f852effbde8409add728b0da666f6670",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\DEPTH_STATES.jsonl.gz": "1e445a5aaa0d78105c30bc63ee74e17a409c2ac5b1d57652cf518f74a25ccd35",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\EVENTS.json": "0a33001820e2ce9904ecff2e81c6faf25a6c052c9919f20ac82879b7c918f3ac",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\PERFORMANCE.json": "f2773cb64afb76e7fea4ded84bade42d85d3b07a2423abec8bc2a27724ec0bb0",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\predictions.jsonl.gz": "7d145a44779e7a99ab2d009975a536e665bbf4f189f2d62398de7db35aff247b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\PUBLISH_LEDGER.jsonl": "924aa8fade23e226c2fba18703321c860f48370ff930a66ea5d99f733924d481",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\RUN_SUMMARY.json": "85df5004ad8980a2990687021d326cf0100b915f7dcc34531ae816104fc82a59",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\regression_405\\feeding_000351_000555\\public\\TRANSACTIONS.jsonl.gz": "b697c446948af53b935e8a53f587decb15eeb33df1b71a69a4c20814d25c06ca"
+  },
+  "new_model_http": 0
+}

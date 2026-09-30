@@ -1,0 +1,24 @@
+{
+  "status": "ALL_THREE_ACTUALLY_OPENED_AND_VIEWED",
+  "inspected": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\earliest_q_quality_control_raw_depth_core.png",
+      "bytes": 495198,
+      "sha256": "e6b3c2b1045f5bd971ee86dcd470bb0272e213abd6cb248addcae0c5848a19af",
+      "note": "F764: current cores have only14/15 valid samples despite fractions1.0; both post endpoints correctly remain unusable. Predicted masks cover sparse fish depth and nearby/background pixels."
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\earliest_depth_selection_change_NOT_STAGED_raw_depth_core.png",
+      "bytes": 359454,
+      "sha256": "7204706cb4cb9370239fa2f1def37d64e5c95ed6a2ba7ebd9c37443e449e9f50",
+      "note": "F1280: one qualified single-point B pre, missing A; both current cores usable. Depth choice flips to H2 but visible member residual88 forbids pair-only restore; first public mapping remains local fallback."
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\earliest_dynamic_vs_static_public_change_raw_depth_core.png",
+      "bytes": 462406,
+      "sha256": "6deff0c70ffd6f4c1ae7714ad278114f6cfdab1cfdc4fd751e3c54146d4bef0d",
+      "note": "F1390: both current cores usable but thin/sparse; whole/core medians materially differ. Dynamic and zero-drift choose H1; original static core association chooses H2. Local raw-depth shape visibility is not identity proof."
+    }
+  ],
+  "method": "local view_image; raw depth, validity and predicted whole/core contours; no RGB or GT raster"
+}

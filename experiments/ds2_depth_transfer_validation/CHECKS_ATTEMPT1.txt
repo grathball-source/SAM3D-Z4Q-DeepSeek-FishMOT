@@ -1,0 +1,25 @@
+test_candidate_reorder_preserves_physical_mapping (ds1_unit_checks.DepthTests.test_candidate_reorder_preserves_physical_mapping) ... ok
+test_failed_preview_atomic_and_local_fallback (ds1_unit_checks.DepthTests.test_failed_preview_atomic_and_local_fallback) ... ok
+test_group_and_post_do_not_change_frozen_individuals (ds1_unit_checks.DepthTests.test_group_and_post_do_not_change_frozen_individuals) ... ok
+test_missing_depth_matches_geometry_and_one_post (ds1_unit_checks.DepthTests.test_missing_depth_matches_geometry_and_one_post) ... ok
+test_positive_finite_only (ds1_unit_checks.DepthTests.test_positive_finite_only) ... ok
+test_risk_preserves_one_fragment_without_joining (ds1_unit_checks.DepthTests.test_risk_preserves_one_fragment_without_joining) ... ok
+test_short_history_and_acquisition_time (ds1_unit_checks.DepthTests.test_short_history_and_acquisition_time) ... ok
+test_single_post_atomic_first_publish (ds1_unit_checks.DepthTests.test_single_post_atomic_first_publish) ... ok
+test_student_t_scale_and_contamination_limit (ds1_unit_checks.DepthTests.test_student_t_scale_and_contamination_limit) ... ok
+test_wls_irregular_epoch_times (ds1_unit_checks.DepthTests.test_wls_irregular_epoch_times) ... ok
+test_only_wls_mean (__main__.DriftChecks.test_only_wls_mean) ... ok
+test_scores_missing_and_reordering (__main__.DriftChecks.test_scores_missing_and_reordering) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.011s
+
+OK
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\checks.py", line 157, in <module>
+    causal(); regression()
+    ^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\checks.py", line 115, in causal
+    name='feeding_000351_000555'; q=65; original_rows=runner.rows
+                                                      ^^^^^^^^^^^
+AttributeError: module 'runner' has no attribute 'rows'

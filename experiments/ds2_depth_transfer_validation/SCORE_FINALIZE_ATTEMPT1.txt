@@ -1,0 +1,20 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\finish_scoring.py", line 40, in <module>
+    evaluation.actual_anchor_audit()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\evaluate.py", line 147, in actual_anchor_audit
+    function()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds1_depth_only\postseal.py", line 78, in audit
+    assignments={item['frame']:item for item in score.records(score.FEED/'private'/name/'assignments.jsonl.gz')}
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds2_depth_transfer_validation\evaluate.py", line 30, in records
+{"pooled": {"SAM3_NATIVE": {"IDF1": 78.3626754401316, "HOTA": 77.68021093459392, "AssA": 67.1279030675929, "DetA": 89.92514979053247, "IDSW": 76, "FP": 263, "FN": 641, "GT": 28760, "predictions": 28382}, "D0_GEOMETRY": {"IDF1": 77.09915648734732, "HOTA": 76.60647002684243, "AssA": 65.29120170417657, "DetA": 89.91948095402277, "IDSW": 78, "FP": 263, "FN": 641, "GT": 28760, "predictions": 28382}, "D1_STATIC_LEGACY": {"IDF1": 76.44114661719927, "HOTA": 76.0237199969996, "AssA": 64.30317546990852, "DetA": 89.91948095402277, "IDSW": 80, "FP": 263, "FN": 641, "GT": 28760, "predictions": 28382}, "D2_FROZEN": {"IDF1": 77.09915648734732, "HOTA": 76.60647002684243, "AssA": 65.29120170417657, "DetA": 89.91948095402277, "IDSW": 78, "FP": 263, "FN": 641, "GT": 28760, "predictions": 28382}, "D3_ZERO_DRIFT_MATCHED_SCALE": {"IDF1": 77.09915648734732, "HOTA": 76.60647002684243, "AssA": 65.29120170417657, "DetA": 89.91948095402277, "IDSW": 78, "FP": 263, "FN": 641, "GT": 28760, "predictions": 28382}}, "delta": {"D2_FROZEN_vs_D0_GEOMETRY": {"IDF1": 0.0, "HOTA": 0.0, "AssA": 0.0, "DetA": 0.0, "IDSW": 0, "FP": 0, "FN": 0}, "D2_FROZEN_vs_D1_STATIC_LEGACY": {"IDF1": 0.6580098701480495, "HOTA": 0.5827500298428276, "AssA": 0.9880262342680481, "DetA": 0.0, "IDSW": -2, "FP": 0, "FN": 0}, "D2_FROZEN_vs_SAM3_NATIVE": {"IDF1": -1.2635189527842812, "HOTA": -1.0737409077514855, "AssA": -1.8367013634163243, "DetA": -0.005668836509698849, "IDSW": 2, "FP": 0, "FN": 0}, "D2_FROZEN_vs_D3_ZERO_DRIFT_MATCHED_SCALE": {"IDF1": 0.0, "HOTA": 0.0, "AssA": 0.0, "DetA": 0.0, "IDSW": 0, "FP": 0, "FN": 0}}, "changed": {"feeding_000701_001060": {"D0_GEOMETRY_vs_NATIVE": 297, "D1_STATIC_LEGACY_vs_NATIVE": 297, "D2_FROZEN_vs_NATIVE": 297, "D3_ZERO_DRIFT_MATCHED_SCALE_vs_NATIVE": 297, "D2_vs_D0": 0, "D2_vs_D1": 0, "D2_vs_D3": 0}, "feeding_001201_001906": {"D0_GEOMETRY_vs_NATIVE": 668, "D1_STATIC_LEGACY_vs_NATIVE": 668, "D2_FROZEN_vs_NATIVE": 668, "D3_ZERO_DRIFT_MATCHED_SCALE_vs_NATIVE": 668, "D2_vs_D0": 0, "D2_vs_D1": 517, "D2_vs_D3": 0}}}
+    with gzip.open(path,'rt',encoding='utf-8') as handle:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\gzip.py", line 65, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\gzip.py", line 201, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000701_001060\\assignments.jsonl.gz'

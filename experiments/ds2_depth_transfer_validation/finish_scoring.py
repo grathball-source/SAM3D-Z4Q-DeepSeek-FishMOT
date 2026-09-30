@@ -1,0 +1,54 @@
+"""Metadata-only repair of the frozen scorer's inherited provenance filename.
+
+The original evaluate.py and all prediction seals remain unchanged. Its metric
+calculation already completed; the failure occurred hashing nonexistent score.py.
+Recompute identical metrics and compare to the first output, without rewriting it.
+"""
+import importlib.util
+import json
+import sys
+import types
+from pathlib import Path
+
+HERE=Path(__file__).resolve().parent
+spec=importlib.util.spec_from_file_location('ds2_evaluate_repaired_metadata',HERE/'evaluate.py')
+evaluation=importlib.util.module_from_spec(spec); sys.modules[spec.name]=evaluation
+spec.loader.exec_module(evaluation)
+
+
+def source_digest(path):
+    path=Path(path)
+    if path==HERE/'score.py': path=HERE/'evaluate.py'
+    return evaluation.digest(path)
+
+
+def compare_or_write(path,value):
+    if path.name in ('METRICS.json','SCORE_PROVENANCE.json') and path.exists():
+        assert json.loads(path.read_text(encoding='utf-8'))==value,'metric recomputation differs'
+    else:
+        evaluation.write_new(path,value)
+
+
+if __name__=='__main__':
+    for name,bounds in evaluation.SEGMENTS.items():
+        evaluation.verify_seal(HERE/'run',name,*bounds)
+    if not (HERE/'run/VERIFICATION.json').exists(): evaluation.verify_publication()
+    function=types.FunctionType(evaluation.score.__code__,
+        dict(evaluation.score.__globals__,digest=source_digest,write_new=compare_or_write),
+        'score_with_correct_provenance_filename',evaluation.score.__defaults__)
+    function()
+    sys.path.insert(0,str(HERE.parent/'ds1_depth_only'))
+    import postseal as frozen_audit
+    context=types.SimpleNamespace(**dict(evaluation.__dict__,FEED=HERE))
+    audit=types.FunctionType(frozen_audit.audit.__code__,
+        dict(frozen_audit.audit.__globals__,HERE=HERE,score=context,ARMS=evaluation.ARMS),
+        'actual_anchor_audit_on_new_source',frozen_audit.audit.__defaults__)
+    audit()
+    evaluation.write_new(HERE/'run/SCORER_METADATA_REPAIR.json',dict(
+        status='METRICS_RECOMPUTED_EXACTLY_EQUAL; ORIGINAL_CODE_AND_OUTPUT_PRESERVED',
+        fix='provenance source filename score.py -> evaluate.py; audit FEED root -> DS2; no metric/control changes',
+        original_scorer_sha256=evaluation.digest(HERE/'evaluate.py'),
+        repair_sha256=evaluation.digest(Path(__file__)),
+        first_attempt_log_sha256=evaluation.digest(HERE/'SCORE_LOG.txt'),
+        metrics_sha256=evaluation.digest(HERE/'run/METRICS.json'),
+        method_parameters_changed=False,predictions_rerun=False))

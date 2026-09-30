@@ -1,0 +1,46 @@
+{
+  "review_base": "fb1234bf7210a9a5e97f6d1b01d8b2cc7bd395f4",
+  "source": "SOURCE_OLD saved batched SAM3 polygons; raw aligned depth_mm",
+  "segments": [
+    [
+      701,
+      1060
+    ],
+    [
+      1201,
+      1906
+    ]
+  ],
+  "branches": [
+    "SAM3_NATIVE",
+    "D0_GEOMETRY",
+    "D1_STATIC_LEGACY",
+    "D2_FROZEN",
+    "D3_ZERO_DRIFT_MATCHED_SCALE"
+  ],
+  "scanner": "frozen prediction-only V4",
+  "event_config": "experiments/ms1_s0_development_8400/CONFIG_V7.json",
+  "event_policy": "NE-1 native-first plus S0-P; first split before first publication",
+  "max_history_frames": 30,
+  "latest_valid_fit_samples": 10,
+  "depth_unit": "APPARENT_CAMERA_Z_MM",
+  "depth_quality": {
+    "min_n": 16,
+    "min_fraction": 0.2,
+    "sigma_floor_mm": 15,
+    "max_core_scale_mm": 60
+  },
+  "dynamic": {
+    "student_t_df": 4,
+    "background_floor_mm": 60,
+    "inlier_mixture_weight": 0.9,
+    "depth_weight": 0.25
+  },
+  "new_model_http": 0,
+  "model_cost_usd": 0,
+  "no_gt_before_seal": true,
+  "no_repaired_depth": true,
+  "d3": "WLS scoring mean beta_intercept_mm; all scale/quality/background/weights identical",
+  "cohort": "TEMPORAL_NONOVERLAP_SAME_RECORDING",
+  "model_http_limit": 0
+}

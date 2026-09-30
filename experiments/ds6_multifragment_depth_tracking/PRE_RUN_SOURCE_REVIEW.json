@@ -1,0 +1,258 @@
+{
+  "status": "PASS_STATIC_SOURCE_AND_CAUSAL_BOUNDARY_READY_FOR_FROZEN_REAL_REPLAY",
+  "base": "ced663d97cadc23138c538f5784df7ed4e835fe2",
+  "scope": "Independent read-only review of actual source and exact existing cache/raw sources; no reference pixels, new image pixels, replay or score executed by this reviewer.",
+  "input_review": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\INPUT_REVIEW.json",
+    "bytes": 1348453,
+    "sha256": "24490a133e824781eb6f0b427eb0107c7a028e169cc1794e04bd79c5d4ade51c"
+  },
+  "unit_checks": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\UNIT_CHECKS.json",
+    "bytes": 2486,
+    "sha256": "812b6ed0a5eeaa7c1eee93d23c749f5af2e4248bfc43b51ef7b8b9006540e36b"
+  },
+  "old_readonly_lock": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\OLD_READONLY_LOCK.json",
+    "bytes": 84533,
+    "sha256": "e3eaadb6d1b59f07034dd9907a84ecc52f4e3d4d30953fe70264af5065bcbd4e"
+  },
+  "reviewed_code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\common.py",
+      "bytes": 2212,
+      "sha256": "3d2e1a44a53b18ca856585f0d3a81a1cc432e7b08ddf89d8deed187ade0a092a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\measurement.py",
+      "bytes": 5428,
+      "sha256": "95538a0f9b2af1e8b6490f4e6f7294a080d621ca3ac5021d914801bb8876a567"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\association.py",
+      "bytes": 3808,
+      "sha256": "7a3cb6a40cc4f23c4d6c155335640cc53c01fc8ee2e7a973c56d29ef09f1c4e0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "bytes": 19417,
+      "sha256": "85254b97daa3c602b0a2292197d2a9eeeb145fba3202625f12e51a6f48b0c581"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+      "bytes": 2180,
+      "sha256": "84a48e7c73a0815822b385802b7f578c90e35de07546d6ee90acd072602d74b6"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\preflight.py",
+      "bytes": 3024,
+      "sha256": "98aceebfaa50fdaf7a832fadf61cb136fc40fc516aa958632a926d38868b9944"
+    }
+  ],
+  "reviewed_config": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\CONFIG.json",
+      "bytes": 1640,
+      "sha256": "46e3390921fcb897457c153af766d8ef92846e5853e04ee0e83e9f8b12e66f4c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\PLAN.md",
+      "bytes": 5460,
+      "sha256": "1275caca4bd5dcdfba6c2eca09ea143497ffa09f5d0bd63b1b53f43b2e9bad2d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\DESIGN_REVIEW.json",
+      "bytes": 25787,
+      "sha256": "67bf3a074151d5808e459fa51fe5c08db63d80d77ba8f9300c8693a0fc824a9c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\EFFECTIVE_SETTINGS.json",
+      "bytes": 4015,
+      "sha256": "dc562cb6e349631891342900a03c95795c9bb0a802463b38e9a4988985852445"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\ENVIRONMENT.json",
+      "bytes": 4989,
+      "sha256": "fb3b1612e88567e94e0972f4c9ecc95baf79f00eec158e39eceb54b8bf37704e"
+    }
+  ],
+  "input_binding": {
+    "full_frames": 1471,
+    "complete_inclusive_ranges": [
+      [
+        0,
+        199
+      ],
+      [
+        351,
+        555
+      ],
+      [
+        701,
+        1060
+      ],
+      [
+        1201,
+        1906
+      ]
+    ],
+    "raw_native_objects": 39208,
+    "current_source_artifacts_reverified": 4413,
+    "old_cache_artifacts_reverified": 28,
+    "old_tracked_files_reverified": 347,
+    "input_or_cache_hash_mismatches": 0,
+    "legacy_metadata_drift_records_retained": 2,
+    "fresh_manifest_frozen_separately": true,
+    "full_raw_polygon_RLE_and_camera_z_evidence": "INPUT_REVIEW full1471 raster equality and235190496 valid native-source camera-Z float32 equality; no new pixel re-read in this static review."
+  },
+  "checks": [
+    {
+      "topic": "Local/global acquisition mapping",
+      "finding": "PASS",
+      "detail": "Each segment independent localframe1..N; run asserts local=index+1 and global=start+index. Original raw NPZ path is sources[index]. Admission separately uses exactly row.global_frame for same NPZ source_index and native NPY; cached identities/time/source bytes independently reverified."
+    },
+    {
+      "topic": "Working copy and frozen body isolation",
+      "finding": "PASS",
+      "detail": "Original raw depth remains in measured/full legacy facts. SUSPECT admission edits clean=depth.copy only. Original DS3/DS4 function AST executes in fresh dictionaries with freshly loaded FILTER_CFG; old modules/globals/config bytes are not mutated. Original mask/occupancy inputs stay unchanged."
+    },
+    {
+      "topic": "Native depth source quality",
+      "finding": "PASS_WITH_PHYSICAL_UNKNOWN",
+      "detail": "Valid aligned plane exactly matches nonnegative source_index, bounds checked, mapped native values finite>0. SUSPECT cutoff is native>5000 rather than aligned camera-Z cutoff; 5000 is policy, sensor max UNKNOWN. Recorded calibration is retained and no SO3 shadow correction used."
+    },
+    {
+      "topic": "Same-version pre/group/post history",
+      "finding": "PASS",
+      "detail": "Original per-arm DepthState remains keyed segment/arm/generation/public/epoch. First suspect freezes prior latest contiguous fragment at f-1 before current update; risk/group/pending breaks active history. F6 history only one qualified graph piece, multiple/missing piece values UNKNOWN. Own D4/D5 states remain independent after committed mappings diverge."
+    },
+    {
+      "topic": "S0 first publication",
+      "finding": "PASS_STATIC_PENDING_REAL_LEDGER_CHECK",
+      "detail": "First q has exactly one current post observation/source. Record pending before scoring, choose from frozen prior state/current facts, stage or own local fallback, commit_once before state update and output; publisher receives first q mapping after commit. All detections/masks retained, public IDs bijective per emit assertion."
+    },
+    {
+      "topic": "Anonymous fragments and paired likelihood",
+      "finding": "PASS",
+      "detail": "Graph only uses actual F6 selected measured raw points; holes not filled, all pieces logged anonymous. Qualification fixed before role/candidate score. D5 uses all qualified pieces with equal normalized1/K weights, D4 uses fullselected scalar; common joint unavailable gate zeroes all four edges; candidate H1/H2 geometry term and0.25 depth weight unchanged."
+    },
+    {
+      "topic": "Actual access guard",
+      "finding": "PASS_CONFIGURED_PENDING_REAL_LOG",
+      "detail": "Latest launch blocks reference/restoration/sealedtest/RGB paths and socket.connect. Actual NpzFile.__getitem__ wrapper permits only depth_mm/source_index and logs every unique path/key pair; no instance_id access permitted. Actual completed execution access-log verification remains postrun."
+    },
+    {
+      "topic": "Reuse and performance timing",
+      "finding": "PASS_WITH_MEASURED_SCOPE",
+      "detail": "Stream unchanged obs/profiles/assignments/scan rather than reprepare; raw/core/F6 graph facts measured once per acquisition and reused across four own controller states. RUN_SUMMARY.elapsed starts after cache/metadata/scan setup and includes the frame loop plus stream output; extraction excludes initial rawNPZ load, but loop elapsed includes raw/native loads and native hash. Report this boundary, not SAM3 frontend or all-setup speed."
+    },
+    {
+      "topic": "Freeze inclusion",
+      "finding": "PASS",
+      "detail": "Actual runner.CODE includes this PRE_RUN_SOURCE_REVIEW and SCORE_CHECKS. Persegment FREEZE binds source/cache/code/current manifest/calibration/native NPY; postrun must compare source inventory and all frozen hashes again."
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\common.py",
+      "line": 31,
+      "marker": "def input_dir(name):"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 133,
+      "marker": "assert frame==index+1 and row['global_frame']==start+index"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 136,
+      "marker": "depth_path=Path(original[index]['depth_path'])"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\measurement.py",
+      "line": 68,
+      "marker": "native_path=DATA/'depth_native_mm'/f'{global_frame:06d}.npy'"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\measurement.py",
+      "line": 79,
+      "marker": "clean=depth.copy()"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\measurement.py",
+      "line": 22,
+      "marker": "_fg=frozen_body"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\measurement.py",
+      "line": 103,
+      "marker": "out['history_usable']=fact['status']=='AVAILABLE' and len(qualified)==1"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 161,
+      "marker": "episode['depth_frozen']=state.freeze(episode,frame,branch.epochs,manager.source_generation)"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 168,
+      "marker": "assert all(len(items)==1 for items in episode['post_roles'].values())"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 170,
+      "marker": "state.record_pending(native,state_measured[native],frame)"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 207,
+      "marker": "ids,trace=branch.commit_once(view,transaction)"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 257,
+      "marker": "publisher.write(json.dumps(dict(frame=frame"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py",
+      "line": 187,
+      "marker": "multi=detail,scalar=scalar_detail,submitted=False"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+      "line": 28,
+      "marker": "original_getitem=np.lib.npyio.NpzFile.__getitem__"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+      "line": 30,
+      "marker": "if key not in ('depth_mm','source_index'):"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+      "line": 16,
+      "marker": "if event=='socket.connect':"
+    }
+  ],
+  "remaining_postrun_checks": [
+    "Check all four per-segment prediction seals and all-arm1471 aggregate seal/hash.",
+    "Verify immutable source/cache/currentmanifest/native/calibration/DS1-5 bytes versus INPUT_REVIEW and FREEZE.",
+    "Check exact SAM3_NATIVE row masks/IDs versus old native rows and all frame/time/global identifiers.",
+    "Check actual access log contains only allowed source/cache rawpaths and NPZ depth_mm/source_index keys; no RGB/manual labels/v3 before seal.",
+    "Compare acquisition observation native_sha256/depth_path/depth_sha256/timestamptriplets with source inventory, and sourcequality totals3400 SUSPECT points.",
+    "Check actual event first-q ledger and frozen sameversion cutoff; no GROUP/POST_UNASSIGNED writes to individual fitted sample history."
+  ],
+  "limitations": [
+    "Static review establishes implemented boundary, not successful completed replay or tracking benefit.",
+    "Source SAM3 batch lookahead UNKNOWN and all1471 are exposed same-recording development frames.",
+    "Physical underwater surface ownership, true distance, valid sensor range and calibration accuracy UNKNOWN.",
+    "D4/D5 matched history policy does not guarantee identical actual histories after prior committed outputs diverge; use D5 COMMON_STATE_SHADOW for same-state q representation contrast.",
+    "Access guard audits Python file/socket events and NumPy NPZ field access; source/native invariance relies on full hashes before and after."
+  ],
+  "own_write": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\PRE_RUN_SOURCE_REVIEW.json",
+  "old_files_modified": 0,
+  "new_pixel_reads": 0,
+  "reference_pixels_read": 0,
+  "model_api": 0,
+  "server_calls": 0
+}

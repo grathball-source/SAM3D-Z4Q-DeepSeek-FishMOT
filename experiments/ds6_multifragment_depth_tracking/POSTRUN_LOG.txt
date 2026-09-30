@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\postrun.py", line 146, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\postrun.py", line 61, in main
+    same_state_shadow=dict(events=len(shadow),joint_available=sum(x['multi']['joint_available'] for x in shadow),
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\postrun.py", line 61, in <genexpr>
+    same_state_shadow=dict(events=len(shadow),joint_available=sum(x['multi']['joint_available'] for x in shadow),
+                                                                  ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'joint_available'

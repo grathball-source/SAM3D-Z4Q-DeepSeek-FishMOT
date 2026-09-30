@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\launch.py", line 36, in <module>
+    runner.main(mode)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\runner.py", line 301, in main
+    freeze_inputs(output)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\runner.py", line 85, in freeze_inputs
+    assert path.stat().st_size==item[prefix+'_bytes'] and sha(path)==item[prefix+'_sha256'],path
+                                                          ^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\common.py", line 44, in sha
+    with Path(path).open('rb') as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds6_multifragment_depth_tracking\launch.py", line 22, in guard
+    raise RuntimeError('forbidden reference/restoration input before prediction seal: '+path)
+RuntimeError: forbidden reference/restoration input before prediction seal: e:/cau/d-mot/data/alignedfeeding_v1/depth_rgb_640x360/000000.npz

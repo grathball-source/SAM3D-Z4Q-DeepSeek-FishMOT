@@ -1,0 +1,57 @@
+{
+  "base": "ced663d97cadc23138c538f5784df7ed4e835fe2",
+  "arms": [
+    "SAM3_NATIVE",
+    "D0_GEOMETRY",
+    "D2_CORE_FROZEN",
+    "D4_F6_SCALAR",
+    "D5_MULTIFRAGMENT"
+  ],
+  "segments": [
+    [
+      0,
+      199
+    ],
+    [
+      351,
+      555
+    ],
+    [
+      701,
+      1060
+    ],
+    [
+      1201,
+      1906
+    ]
+  ],
+  "frames": 1471,
+  "depth_edge_gap_mm": 30,
+  "piece_min_n": 16,
+  "piece_min_fraction": 0.2,
+  "piece_max_scale_mm": 60,
+  "native_suspect_above_mm": 5000,
+  "background_floor_mm": 1,
+  "depth_weight": 0.25,
+  "history_policy": "same DS1 versioned latest contiguous fragment; max30 acquisitions and last10 samples; only exactly one qualified F6 depth graph piece enters pre",
+  "current_policy": "F6 selected raw points only; D4 scalar median/MAD; D5 equal-weight normalized Student-t4 likelihood ratios over qualified anonymous pieces",
+  "missing_policy": "if any of A/B forecasts, X/Y qualified pieces or common raw background unavailable, all four depth edge costs are zero",
+  "surface_identity": "UNKNOWN; neither connectivity nor history certifies physical surface ownership",
+  "unchanged": [
+    "trigger",
+    "q",
+    "old references",
+    "original masks",
+    "2D motion",
+    "depth weight",
+    "bank/state transactions",
+    "S0-P publication",
+    "source scan"
+  ],
+  "success_rule": "report full metrics and event changes; positive depth increment needs D5>D0 and same-source native without IDSW increase; D5-D4 isolates q representation on matched history; no rolling tuning",
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "training": 0,
+  "sam3_inference": 0,
+  "completion_service": 0
+}

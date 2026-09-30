@@ -1,0 +1,406 @@
+{
+  "status": "READ_ONLY_REVIEW_OF_ROOT_FROZEN_MINIMUM_CONTRACT_COMPLETE",
+  "base": "ced663d97cadc23138c538f5784df7ed4e835fe2",
+  "scope": "minimum independent DS6 measurement/history/scoring adapter on existing saved-source replay; no DS1–DS5 mutation",
+  "reviewed_sources": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\replay.py",
+      "bytes": 17083,
+      "sha256": "861f362eadb3fe4444f23ce4236616747957d548cc405be2868269b6b51ffc3a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_measurement.py",
+      "bytes": 3198,
+      "sha256": "6269c807b0c361fecc5e35061193d82754a5af067ebf3d7999637af16000787e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "bytes": 6837,
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_score.py",
+      "bytes": 4288,
+      "sha256": "c3ba489e5cac03fc7fcf33b1ebbd2599e8b6ccbb24482516961d91e5b4748199"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\tests.py",
+      "bytes": 10991,
+      "sha256": "9346640d1c7ea30b4c86b79bc190e047afdc540de5042b0b291e8d5bc6b67f12"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\runner.py",
+      "bytes": 18993,
+      "sha256": "afbdc8f67243dd6b0a2dfa06088b69d0e10dcb8c5316c0248e0769cfdfa695df"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\adapter.py",
+      "bytes": 1150,
+      "sha256": "d86f92ef59b35871723315bcc4705238c4cc77dab5936c83b1ddc2082238c42f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\checks.py",
+      "bytes": 8606,
+      "sha256": "a31f9631fe6ee4b4ac0d33712e427563d162d2af7648c8e11fd04742ed7e8eb6"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\bootstrap.py",
+      "bytes": 2551,
+      "sha256": "cacb72023c3ae24b94b693953f30e0724046683c4415bb279376514fdc7896de"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\selector.py",
+      "bytes": 5652,
+      "sha256": "9cfed824a1d1368511ff5f3ab6ad12c3c359875685ed072f1211fee7bc87ced3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\runner.py",
+      "bytes": 10727,
+      "sha256": "3a1874ddb92ac231eaff79e295b4513ec825a92ede64e6f5134f8c98959e8445"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py",
+      "bytes": 27497,
+      "sha256": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py",
+      "bytes": 8442,
+      "sha256": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ne1_native_first_event_association\\ne_controller.py",
+      "bytes": 4088,
+      "sha256": "454c8adc565c8f22a4e83985d25119aeb3f4b253a5fe990ee6db7d8869a96c9c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py",
+      "bytes": 5882,
+      "sha256": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed"
+    }
+  ],
+  "full_same_source_run": {
+    "frames": 1471,
+    "segments": [
+      {
+        "name": "feeding_000000_000199",
+        "global_start": 0,
+        "global_stop": 199,
+        "frames": 200,
+        "source_owner": "experiments/feeding_first_two_s0p/private"
+      },
+      {
+        "name": "feeding_000351_000555",
+        "global_start": 351,
+        "global_stop": 555,
+        "frames": 205,
+        "source_owner": "experiments/feeding_first_two_s0p/private"
+      },
+      {
+        "name": "feeding_000701_001060",
+        "global_start": 701,
+        "global_stop": 1060,
+        "frames": 360,
+        "source_owner": "experiments/ds2_depth_transfer_validation/private"
+      },
+      {
+        "name": "feeding_001201_001906",
+        "global_start": 1201,
+        "global_stop": 1906,
+        "frames": 706,
+        "source_owner": "experiments/ds2_depth_transfer_validation/private"
+      }
+    ],
+    "state_reset_each_segment": true,
+    "score_identity_namespaces": "disjoint across all four segments",
+    "cohort_status": "EXPOSED_SAME_RECORDING_DEVELOPMENT; DS1 405 and DS2 1066 reported separately as well as pooled",
+    "new_qualification_platform": false
+  },
+  "observed_call_flow": [
+    {
+      "stage": 1,
+      "call": "extract_frame(original_depth, assignments[local_frame], original_profile_by_native)",
+      "contract": "raw whole/core reproduced and checked against original profiles; original masks/occupancy returned"
+    },
+    {
+      "stage": 2,
+      "call": "manager.before(row, original_profiles)",
+      "contract": "frozen scanner, group protection, q and 2D episode geometry use original source observations/profiles"
+    },
+    {
+      "stage": 3,
+      "call": "if suspect_frame==local_frame: state.freeze(episode, frame, branch.epochs, manager.source_generation); break_source(member)",
+      "contract": "freeze prior evidence before suspect measurement enters DepthState"
+    },
+    {
+      "stage": 4,
+      "call": "branch.preview(...)",
+      "contract": "internal mapping only; no publication"
+    },
+    {
+      "stage": 5,
+      "call": "at first q: record_pending; scorer(episode, depth_frozen, arm_measurements, original_full)",
+      "contract": "two complete H1/H2 pairings with frozen same-state evidence; exactly one q observation per post source; no later post frames"
+    },
+    {
+      "stage": 6,
+      "call": "stage_group_restore or own-branch local_fallback; commit_once",
+      "contract": "atomic, one-to-one, outside mapping unchanged, preserve all masks/residuals"
+    },
+    {
+      "stage": 7,
+      "call": "classify SOURCE/RESTORED_POST/risks; state.update(..., committed public id/epoch/generation, class)",
+      "contract": "q enters restored individual once after legal accepted restore as a new active fragment; group/unassigned/risk never fitted"
+    },
+    {
+      "stage": 8,
+      "call": "manager.after(row, original_profiles); emit; publish",
+      "contract": "own branch continues independently; no copied winner state, one first publication"
+    }
+  ],
+  "minimum_interfaces": {
+    "frame_measurements": {
+      "signature": "extract_ds6(global_frame, original_depth, assignment, original_profiles) -> original_full, raw_by_native, f6_by_native, masks, occupancy, private_regions",
+      "requirements": [
+        "Call existing DS1 extract_frame for raw facts and controller compatibility.",
+        "Use DS4 source_depth(global_frame) for original depth, source_index/native lineage, native>5000 clean plane; compare returned original depth to original_depth.",
+        "For F6 call existing selector.measure(clean, region, other=(occupancy-region.astype(uint16))>0, background_floor=1.0). Original whole mask, minor fragments and holes remain unchanged.",
+        "DS4 runner.methods computes five arms and main geometry; use only its verified F6 equivalent invocation for production to avoid unnecessary five-arm work.",
+        "Foreground sigma floor15mm, max60mm, contrast floor30mm, contrast_sigma3, original 3px closing and dominance0.7 stay unchanged. No valid range inferred beyond frozen native>5000 SUSPECT policy.",
+        "Do not mutate raw_by_native, original_profiles, assignments, depth, masks or controller quality gates."
+      ]
+    },
+    "F6_legacy_score_adapter": {
+      "signature": "adapt_f6(raw_fact, selector_fact) -> new measurement dict",
+      "fields": {
+        "measurement_kind": "F6_FOREGROUND_SELECTED",
+        "fact_id": "segment/localframe/native + selector identifier; retain global_frame separately",
+        "source": "RAW_SENSOR_OR_ALIGNED_RAW_F6_NATIVE_ADMISSION",
+        "raw_core": "original raw fact core copy/reference immutable",
+        "raw_core_usable": "original raw fact boolean",
+        "core": "selector.selected statistics, explicitly a compatibility alias for old scorer",
+        "core_usable": "selector.status == AVAILABLE; never re-run erosion or silently substitute raw core"
+      },
+      "warning": "core alias is an interface adapter, not a claim that F6 uses the old eroded core; append explicit lineage fields in observations"
+    },
+    "anonymous_spatial_pieces": {
+      "signature": "pieces30(original_depth_crop, F6_selected_mask) -> list of anonymous summary dicts",
+      "vertices": "only actual selected positive finite raw measurements; no support-closing vertices, filling or nearest surface expansion",
+      "edges": "8-neighbor aligned-grid adjacency with absolute raw Z difference<=30mm, frozen DS5 existing edge constant",
+      "summary_fields": [
+        "piece_id anonymous",
+        "n",
+        "fraction_of_original_selected",
+        "median_mm",
+        "mad_mm",
+        "qualified"
+      ],
+      "qualification": "reuse frozen DS5 descriptive n>=16 and fraction>=0.20; not identity/body certification; preserve every unqualified piece in diagnostics",
+      "ownership": "UNKNOWN; largest/closest/lowest-Z piece cannot be declared fish",
+      "measurement_dependency": "pieces depend only on current raw selected region, no candidate H1/H2, role, GT, reference silhouette, future or history"
+    },
+    "same_version_temporal_fragments": {
+      "signature": "original DepthState.freeze(episode, local_frame, branch.epochs, manager.source_generation) -> A/B frozen latest continuous fragment",
+      "implementation": "Reuse original DepthState and predict exactly; no all-temporal-fragment pooling or new history database in approved DS6. Make a separate state_measurement per arm whose core/core_usable are explicit interface aliases for single-qualified-piece summary/eligibility.",
+      "version": "existing (segment,arm,generation,public,epoch), plus native implicit in live[native]; verify current public/epoch/generation. Each segment starts empty.",
+      "scalar_policy": "Only exactly one qualified spatial piece can contribute median/MAD to scalar history; >=2 or0 qualified means unusable history observation, cuts active fitted fragment under original update. Preserve anonymous spatial facts even when unusable.",
+      "classes": "existing SOURCE_OBSERVATION/RESTORED_POST only; group/POST_UNASSIGNED/risk/invalid/skip/non-increasing time cut history; previous completed fragment may remain within original30-frame freeze window.",
+      "freeze_order": "before first-suspect measurement; immutable snapshot cutoff<=suspect_frame-1; q admitted only once after accepted restore as new active fragment",
+      "history_sharing": "D4/D5 share raw selection facts and history eligibility policy. They must have separate live DepthState objects keyed to their own committed public/epoch/generation after decisions diverge; common frozen-state shadow may be a diagnostic only.",
+      "temporal_vs_spatial": "MULTIFRAGMENT denotes anonymous spatial pieces at q, not a mixture of multiple temporal fitted fragments."
+    },
+    "minimum_multifragment_score": {
+      "signature": "multifragment_choice(episode, original_latest_frozen, current_F6_scalar_and_qualified_pieces, original_full, depth_weight=.25) -> choice, all4 edge detail",
+      "approved_history": "one original latest continuous fragment per A/B role, forecast by original predict; D4/D5 use same eligibility policy, no linking/stacking histories across risk",
+      "piece_weights": "for source with K qualified pieces: each weight1/K; qualification itself depends only current raw descriptors, no roles/candidates/history/GT. All unqualified pieces remain logged and explicitly excluded from q likelihood.",
+      "formula": "D5 role/source ratio R=(1/K)*sum_j exp(log_t4(z_j, mu_role, hypot(prediction_scale_role,max(15,1.4826*MAD_j)))-log_t4(z_j,shared_background_mu,shared_background_scale)); cost=-log(0.9*R+0.1), in log space. D4 uses original F6 selected scalar median/MAD in same Student-t expression.",
+      "joint_availability": "a single role/source availability gate shared by D4/D5 includes valid shared raw background; valid forecast for both A/B roles; valid full F6 selected scalar for both post sources; at least one qualified current piece for both post sources. If any of4 edges fails, all4 depth costs0.",
+      "geometry": "same original position+0.25 motion term, same pairings, depth coefficient0.25, total tie<=1e-9 temporary_choice",
+      "background": "original raw full-frame median and max(60,1.4826*full MAD) unchanged; no clean-plane full-background intervention",
+      "singleton_oracle": "If selected contains exactly one piece with all selected points, D4 and D5 edge likelihoods/scores/choice exactly coincide. If one qualified piece plus unqualified residues, they may differ intentionally: D4 scalar includes residues, D5 excludes them.",
+      "no_identity_claim": "equal mixture is a measurement likelihood; neither largest, nearest, lowest-depth nor highest-weight piece is certified fish",
+      "implementation_minimum": "reuse original log_t4/predict/geometry; one local DS6 score helper and explicit joint gate, avoid patching old module globals"
+    }
+  },
+  "necessary_control_ladder": [
+    {
+      "label": "SAM3_NATIVE",
+      "change": "same-source mapping unchanged"
+    },
+    {
+      "label": "D0_GEOMETRY",
+      "change": "original geometry scorer and controller; depth term omitted only at event decision"
+    },
+    {
+      "label": "D2_CORE_FROZEN",
+      "change": "original DS1/DS2 core/latest fragment dynamic_choice unchanged, including original edgewise missing behavior"
+    },
+    {
+      "label": "D4_F6_SCALAR",
+      "change": "F6 current selected scalar, single-qualified-spatial-piece history gate, original latest forecast and new joint-all4 missing gate"
+    },
+    {
+      "label": "D5_MULTIFRAGMENT",
+      "change": "same F6/spatial-qualification/history/missing policy as D4; q observed scalar likelihood replaced by equal mixture of qualified spatial pieces"
+    }
+  ],
+  "control_ladder_note": "Approved fixed five-arm minimal ladder; no D1/static, separate temporal-pooling or separate spatial-only arm added. Old D1 can be checked only as inherited controller/regression reference, not claimed as a DS6 scored arm.",
+  "necessary_unit_and_regression_checks": [
+    {
+      "id": "BASELINE_EXACT1471",
+      "oracle": "fresh SAM3_NATIVE/D0_GEOMETRY/D2_CORE_FROZEN reproduce all sealed DS1 405 and DS2 1066 normalized predictions/event decisions; D2 keeps original edgewise gate so it remains original comparator"
+    },
+    {
+      "id": "F6_EQUIVALENCE_AND_RAW",
+      "oracle": "direct F6 facts/regions reproduce sealed DS4 at747/766/1821 and shared1066 in formal measurement; source_depth global indexing; native>5000 admitted0;合法FARTHER retained; original depth/masks/holes/controller profiles unchanged"
+    },
+    {
+      "id": "PIECES_REAL_FAILURES",
+      "oracle": "F1821 20low+66high bothqualified and anonymous; F747320 points retained; F104412+7 nonequalified; F138553+6 onequalified. n/frac/MAD/scale gate inherited exactly; no ownership/deletion"
+    },
+    {
+      "id": "SCALAR_HISTORY_GATE",
+      "oracle": "0 or2+qualified pieces -> history unusable and active fragment cut; exactly1 -> its median/MAD; all spatial facts preserved; q D4 still fullselected scalar"
+    },
+    {
+      "id": "SAME_VERSION_AND_RISK",
+      "oracle": "original group/pending/contact/invalid/version/time/frame gaps/30window rules retained; old valid1,2 andnewvalid4,5 never fitted together; public/epoch/generation divergence isolates D4/D5 states"
+    },
+    {
+      "id": "FREEZE_Q_SINGLE_WRITE",
+      "oracle": "suspect snapshot contains no current/future frame and is immutable; group/unassigned fitted writes0; accepted restoredq update1 after commit; no old/new fragment joining"
+    },
+    {
+      "id": "JOINT_MISSING_GATE",
+      "oracle": "any one of4 edges unavailable -> all4 costs0 for bothD4/D5 and exact geometry fallback; D2 original partial-edge behavior remains unchanged"
+    },
+    {
+      "id": "SINGLETON_AND_MIXTURE",
+      "oracle": "one fullmass piece -> D4=D5 exact; two equal qualified pieces use normalized equal mixture, reorder invariant; scalar and piece scales correctly separated; unqualified residue exclusion disclosed"
+    },
+    {
+      "id": "HISTORY_FORECAST",
+      "oracle": "reuse original1/2sample last-value and3+WLS, actualtime/fullgap uncertainties; no invented slope, no artificial per-piece correspondence tracks"
+    },
+    {
+      "id": "LOGSPACE_AND_PAIRINGS",
+      "oracle": "all4 independent edge logs same frozen inputs, finite with large separation/uncertainty; complete H1/H2 sums; piece/role/source dictionary reorder preserves mapping; tie temporary_choice"
+    },
+    {
+      "id": "CAUSAL_PUBLICATION_GUARDS",
+      "oracle": "future perturbation unchanged legal prefix; depth/source_index/native only; instance_id/v3/GT/provider/network blocked; all1471frames and masks/residuals retained, each IDs bijective, q firstpublished once"
+    }
+  ],
+  "material_risks": [
+    {
+      "risk": "Temporal cache versus latest_fragment semantics",
+      "cause": "old freeze selects one completed valid fragment; pooling all cache fragments is a real algorithm change and can recover older stale/misassigned depth",
+      "handling": "separate control; original version/window/risk gates; one forecast per fragment and published mixture weights"
+    },
+    {
+      "risk": "Space/identity conflation",
+      "cause": "DS5 F1821 largest66 high layer remains proxy conflict; F1385 coherent53 same-depth points stillother RGB fish; F747 largest314 remains beyond45mm tolerance",
+      "handling": "anonymous likelihood only; cannot declare surface ownership; report tracking outcome independent of proxy"
+    },
+    {
+      "risk": "Selected-grid fragmentation",
+      "cause": "closing and native missing/projection raster adjacency differ; graph30 pieces do not necessarily correspond to physical surfaces",
+      "handling": "retain support versus selected versus source topology diagnostics and all small pieces; no filling"
+    },
+    {
+      "risk": "Measurement/qualification alias contamination",
+      "cause": "old scorer/state expects core/core_usable while F6 uses dominant foreground selection",
+      "handling": "explicit adapter metadata and immutable raw facts; controller original profiles untouched"
+    },
+    {
+      "risk": "Background/admission extra changes",
+      "cause": "cleaning full background or changing common controller quality would introduce another intervention",
+      "handling": "keep original full baseline/controller; if changed add separately frozen arm"
+    },
+    {
+      "risk": "Import/global leakage",
+      "cause": "old modules use generic replay/runner/adapter/common/bootstrap names and sys.path; patching globals can accidentally modify baseline/shared state",
+      "handling": "use isolated module names/context and per-arm states; inspect actual __file__ bindings and hash original source after run"
+    },
+    {
+      "risk": "Physical validity and upstream causality",
+      "cause": "RGB silhouette/raw core reference is not physical depth GT; saved batched SAM3 lookahead unknown",
+      "handling": "report apparent camera-Z, exposed same recording performance; no independent sensor accuracy or zero-lookahead claim"
+    },
+    {
+      "risk": "GT winner tuning",
+      "cause": "all four segments already exposed in DS1–DS5",
+      "handling": "freeze protocol/code/inputs then seal all predictions before scoring; fixed full1471 denominator; no postscore threshold or arm changes"
+    }
+  ],
+  "performance_and_scoring_contract": {
+    "scores": [
+      "official TrackEval IDF1",
+      "HOTA",
+      "AssA",
+      "CLEAR IDSW",
+      "ID precision/recall",
+      "per-segment and pooled disjoint identity namespaces"
+    ],
+    "event_evidence": [
+      "every q selected pairing and actual published pair",
+      "staging failure/fallback",
+      "all four depth edge facts and neutral/missing reasons",
+      "frozen version/fragments/piece weights and used source fact ids",
+      "continued own mapping and physical/public switch audit"
+    ],
+    "timing": [
+      "raw NPZ/native I/O",
+      "F6 extraction",
+      "spatial graph descriptors",
+      "state update/freeze",
+      "q scoring",
+      "transaction/controller",
+      "receive-to-publish and total frames/s"
+    ],
+    "resource": "local CPU using existing installed dependencies and explicit thread limits; no GPU/API/SAM3/repair/GT before seal; quantify actual runtime rather than add a cache framework",
+    "visibility": "public summary/anonymous stats/mappings/paths+SHA only; depth/RLE/RGB/GT raster/pointxy/sourceindex arrays private"
+  },
+  "implementation_recommendation": "Approved five-arm DS6 with existing loop/classes/DepthState/predict and minimal F6 current-piece/scoring adapters. Original temporal latest-fragment semantics preserved. D4/D5 share measurement/history/gating policy, maintain separate own-version live states. No additional control arm or temporal pool required by this review.",
+  "checks_executed_in_this_review": "READ_ONLY_SOURCE_INSPECTION_ONLY; proposed tests not executed",
+  "network_api": 0,
+  "training": 0,
+  "sam3_rerun": 0,
+  "new_GT_reads": 0,
+  "new_threshold_tuned": false,
+  "old_files_modified": false,
+  "approved_contract_received": {
+    "arms": [
+      "SAM3_NATIVE",
+      "D0_GEOMETRY",
+      "D2_CORE_FROZEN",
+      "D4_F6_SCALAR",
+      "D5_MULTIFRAGMENT"
+    ],
+    "spatial_graph": "F6 actual selected raw points; 30mm 8-neighbor Z graph; every fragment retained",
+    "piece_qualification": "n>=16, fraction>=0.20, max(15,1.4826*MAD)<=60mm; descriptive eligibility, physical ownership UNKNOWN",
+    "pre_history": "Only exactly one qualified spatial fragment establishes a scalar continuous history; multiple qualified fragments UNKNOWN. Original same-version/latest fragment/30-frame window/last10 WLS unchanged.",
+    "q_D4": "F6 full-selected scalar observation",
+    "q_D5": "equal normalized mixture over qualified current depth pieces",
+    "shared_missing_gate": "all A/B x two post edges jointly available or all receive uninformative depth cost0 and revert to geometry",
+    "hard_piece_selection": false,
+    "history_support": "q likelihood only, no surface identity assertion"
+  },
+  "isolated_and_unisolated_factors": {
+    "D5_minus_D4": "At a common identical event/state, isolates current q observation likelihood aggregation (full F6 selected scalar vs equal mixture of qualified pieces), including excluded unqualified pieces and per-piece scale differences. Actual continued separate branch outcomes also include feedback from their earlier decisions; common-state shadow may show the local contrast.",
+    "D4_minus_D2": "joint change of original-core->F6 measurement, graph/single-qualified-piece history eligibility and breaks, observed scalar versus historical unique-piece summaries, and edgewise->joint-all4 missing handling. Cannot call this contrast pure F6 foreground gain.",
+    "D5_minus_D2": "combined new measurement/history eligibility/joint missing/mixture intervention, measured as complete tracker increment only.",
+    "F6_native_admission": "F6 inherently includes native>5000 cleaning and bg-floor1 vs prior raw core; these are not separately isolated in DS6.",
+    "common_controller": "unchanged original quality/profile/event scanner/q/2D/publication machinery still uses raw original facts. D0 is not a wholly depth-free tracker.",
+    "spatial_fragmentation": "30mm aligned-grid connectivity includes sparse projection/missing holes; same-depth pieces need not be distinct physical layers. Equal mixture gives each eligible fragment equal weight, which can overweight spatially broken copies of one surface.",
+    "history_readout": "history is unique qualified piece scalar; q D4 is full-selected scalar. This asymmetric readout is intentional in contract, must be disclosed and logged.",
+    "physical_boundary": "track identity metrics can measure actual publication changes; no physical camera-Z/surface/underwater calibration accuracy is measured."
+  },
+  "approval_notes": [
+    "No new temporal multi-fragment pool, no hard closest/largest selector and no independent qualification platform.",
+    "If “share prestate” was intended as one literal live state for D4/D5 after their publications diverge, that violates same-version own-branch contract; use identical prestate policy in separate objects.",
+    "Shared joint gate must include qualified current post-piece availability for D4 as well as D5; otherwise their missing-evidence policies differ.",
+    "History scalar and q scalar are distinct objects; do not mutate shared measured dict or controller profiles.",
+    "No added performance thresholds or scientific effect claim in this review; root seals actual implementation then runs full1471."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "status": "ALL_FOUR_RAW_DEPTH_QA_IMAGES_ACTUALLY_VIEWED_BY_ROOT",
+  "files": [
+    {
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\private\\visualizations\\F000398.png",
+        "bytes": 143883,
+        "sha256": "4b487a01e1f54042d6e2635c0db5bee155a91c36831fca24022331fdae76007d"
+      },
+      "segment": "feeding_000351_000555",
+      "frame": 398,
+      "source_masks": "original saved SAM3",
+      "pixel_source": "raw depth only; no RGB/GT",
+      "selection": "first actual first-split post pair per segment plus fixed prior F1821"
+    },
+    {
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\private\\visualizations\\F000764.png",
+        "bytes": 140389,
+        "sha256": "43d3cdf083ae01070227a46f4e67f6c498cad80a27b99988cd332da738e1bb23"
+      },
+      "segment": "feeding_000701_001060",
+      "frame": 764,
+      "source_masks": "original saved SAM3",
+      "pixel_source": "raw depth only; no RGB/GT",
+      "selection": "first actual first-split post pair per segment plus fixed prior F1821"
+    },
+    {
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\private\\visualizations\\F001239.png",
+        "bytes": 131469,
+        "sha256": "ac261ec20c20aa5cc76a4b9a28c0099a3ca9863d828e8cf3abdaf3e6ad5f1dad"
+      },
+      "segment": "feeding_001201_001906",
+      "frame": 1239,
+      "source_masks": "original saved SAM3",
+      "pixel_source": "raw depth only; no RGB/GT",
+      "selection": "first actual first-split post pair per segment plus fixed prior F1821"
+    },
+    {
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\private\\visualizations\\F001821.png",
+        "bytes": 63339,
+        "sha256": "584c232eb2e4998a0257bd6436051448164924e17ce2b85d09b3e2bd10461e3a"
+      },
+      "segment": "feeding_001201_001906",
+      "frame": 1821,
+      "source_masks": "original saved SAM3",
+      "pixel_source": "raw depth only; no RGB/GT",
+      "selection": "first actual first-split post pair per segment plus fixed prior F1821"
+    }
+  ],
+  "observations": [
+    "F398 actual source masks/public IDs and selected samples visible; empty holes remain empty",
+    "F764 residual native118 public100 and disjoint source regions retained; single qualified graph piece is not ownership truth",
+    "F1239 second source no qualified samples; blank histogram explicitly has zero qualified pieces",
+    "F1821 two qualified raw-value modes near823/1138mm retained, not replaced by largest mode"
+  ],
+  "private_pixels_uploaded": false,
+  "no_rgb_used": true,
+  "no_gt_raster_used": true
+}

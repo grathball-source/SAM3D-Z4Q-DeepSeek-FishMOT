@@ -1,4 +1,19 @@
-# Active handoff — DS5 surface/spatial observational audit,2026-09-30
+# Active handoff — DS6 full performance trial,2026-09-30
+
+Read experiments/ds6_multifragment_depth_tracking/RESULTS.md/PLAN/CONFIG,
+INPUT_REVIEW/old lock/effective settings,16unit+11scoring checks, all four segment
+FREEZE/PREDICTIONS_SEALED and ALL_PREDICTIONS_SEALED/access audit,
+METRICS/actual EVENT_AUDIT/SWITCH_LEDGER/FRAGMENT_REFERENCE_AUDIT,
+SUMMARY/postrun reviews, private QA inspection/restricted inventory/remote proof.
+Baseced663d97cadc23138c538f5784df7ed4e835fe2; complete1471 exposed frames/five branches/39208 masks.
+Engineering/source PASS; depth increment FROZEN_SUPPORT_RULE_NOT_MET. Surface identity UNKNOWN.
+Scalar vs multi shared-history same-state q choices changed0/18.
+Old three controls fully exact; all prediction seals precede GT scoring.
+No model/API/training/SAM3/completion/cost. No private pixel or old seal change.
+One next step: 在固定四段上只消融“必须四边全部可用”的缺测门，验证候选一致的缺测边际化能否保留有效单身份深度证据；触发、历史资格、权重与事务保持冻结。
+Not started automatically; do not retune this frozen version or add models.
+
+# Historical handoff — DS5 surface/spatial observational audit,2026-09-30
 
 Read experiments/ds5_surface_registration_audit/RESULTS.md, PLAN/CONFIG/FREEZE,
 COHORT/SOURCE_INVENTORY/OLD_READONLY_LOCK, three initial independent reviews,

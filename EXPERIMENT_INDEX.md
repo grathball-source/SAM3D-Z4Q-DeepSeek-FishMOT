@@ -1,3 +1,7 @@
+# DS6 complete multi-fragment tracking trial
+
+Current result,2026-09-30: [DS6 complete multi-fragment depth tracking trial](experiments/ds6_multifragment_depth_tracking/RESULTS.md) completed all1471 exposed SOURCE_OLD frames and39208 masks, five independent branches. **FROZEN_SUPPORT_RULE_NOT_MET.** D5 IDF1/HOTA/AssA=79.8084/78.9334/69.7167, IDSW114; normalized multi-piece q representation changes0/18 same-state choices. Old native/geometry/core controls exact; all seals precede GT scoring. 27necessary synthetic checks pass; physical depth/surface ownership UNKNOWN. NoAPI/training/SAM3/completion/cost. Private QA stays local. [Current handoff](research/HANDOFF.md) provides one next step.
+
 # Experiment record
 
 ## DS5: sealed depth-piece/spatial audit - AUDIT_COMPLETE / physical UNKNOWN

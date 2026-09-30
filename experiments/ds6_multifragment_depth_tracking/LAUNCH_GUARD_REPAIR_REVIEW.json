@@ -1,0 +1,125 @@
+{
+  "status": "PASS_MINIMAL_GUARD_REPAIR_SOURCE_ALGORITHMS_UNCHANGED",
+  "original_pre_run_review": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\PRE_RUN_SOURCE_REVIEW.json",
+    "bytes": 13455,
+    "sha256": "9dc0fcd49f8e683c1b986e8c1443c0ef59575ba2c5d1cdba38d86c45fa55533a"
+  },
+  "old_launch_binding": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+    "bytes": 2180,
+    "sha256": "84a48e7c73a0815822b385802b7f578c90e35de07546d6ee90acd072602d74b6"
+  },
+  "repaired_launch": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+    "bytes": 2184,
+    "sha256": "bad9312f51bb9ad80f68945fe022fd70b689c25a3b97a305683f0dec4d8a05c9"
+  },
+  "failed_attempt_log": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\SLICE_LOG.txt",
+    "bytes": 1390,
+    "sha256": "835ba29dd189344fb4c58c1754f620ac8a5ae3ee73cb36e7688c08f3d7efa681"
+  },
+  "failed_attempt_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\private\\engineering_attempts\\slice_guard_empty",
+  "failed_attempt_files": 0,
+  "failure_phase": "freeze_inputs raw F0 NPZ byte-hash validation; before per-segment FREEZE and measurement",
+  "measurement_frames_before_failure": 0,
+  "cause": "Original RGB substring token rgb_640x360 also matches allowed depth_rgb_640x360 directory. PRE_RUN_SOURCE_REVIEW static access-guard PASS missed this collision.",
+  "repair": "Use /rgb_640x360/ and /rgb_original/ exact directory-segment tokens; source/config/numeric/history/trigger/identity/publication algorithms unchanged.",
+  "independent_actual_function_ast_checks": {
+    "path_checks": [
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_rgb_640x360/000000.npz",
+        "allowed": true,
+        "expected": true
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/000701.npy",
+        "allowed": true,
+        "expected": true
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AnnotationFeeding_20260924/ML/labels_raw/000766.json",
+        "allowed": true,
+        "expected": true
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/rgb_640x360/000000.png",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/rgb_original/000000.jpg",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/labels_640x360/000000.json",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/labels_original/000000.json",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/labels_source/000000.json",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/000000.npz",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restored_v3/000000.npz",
+        "allowed": false,
+        "expected": false
+      },
+      {
+        "path": "E:/CAU/D-MOT/data/sealed_test/000000.json",
+        "allowed": false,
+        "expected": false
+      }
+    ],
+    "path_check_n": 11,
+    "passed": 11,
+    "socket_connect_blocked": true,
+    "allowed_npz_keys": [
+      "depth_mm",
+      "source_index"
+    ],
+    "rejected_npz_keys": [
+      "instance_id",
+      "rgb",
+      "depth_restored"
+    ],
+    "actual_getitem_recorded_keys": [
+      "depth_mm",
+      "source_index"
+    ],
+    "real_pixels_or_replay_read": 0
+  },
+  "observed_reviewed_code_byte_differences": [
+    {
+      "original": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+        "bytes": 2180,
+        "sha256": "84a48e7c73a0815822b385802b7f578c90e35de07546d6ee90acd072602d74b6"
+      },
+      "current": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\launch.py",
+        "bytes": 2184,
+        "sha256": "bad9312f51bb9ad80f68945fe022fd70b689c25a3b97a305683f0dec4d8a05c9"
+      }
+    }
+  ],
+  "scope": "Preserve pre-run review and failed attempt; formal slice/full bind final launch bytes. Postrun must verify actual runtime NPZ keys/path audit and all source seals.",
+  "new_output_only": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\LAUNCH_GUARD_REPAIR_REVIEW.json",
+  "reference_pixel_reads": 0,
+  "RGB_pixel_reads": 0,
+  "API_calls": 0,
+  "old_files_changed": 0
+}

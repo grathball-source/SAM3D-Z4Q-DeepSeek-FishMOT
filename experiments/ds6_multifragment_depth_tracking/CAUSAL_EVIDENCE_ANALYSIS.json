@@ -1,0 +1,2141 @@
+{
+  "status": "POSTSEAL_FROZEN_TRIAL_ANALYSIS",
+  "counts": {
+    "q": 18,
+    "joint_available": 5,
+    "multi_surface_q": 2,
+    "multi_surface_joint_available": 0,
+    "representation_choice_change": 0,
+    "POST_NO_SIGNIFICANT_DEPTH_CONTRAST": 2,
+    "NO_PRE_HISTORY_B": 4,
+    "POST_AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 3,
+    "NO_NUMERIC_PAIR": 2,
+    "NO_PRE_HISTORY_A": 5,
+    "POST_NO_QUALIFIED_CONNECTED_COMPONENT": 3
+  },
+  "events": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "q": 48,
+      "global_q": 398,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 4,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            50,
+            1
+          ],
+          "latest_frame": 10,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 325.5654342635149,
+          "mu_mm": 1074.420169182876,
+          "slope_mm_s": 131.71335615218737
+        },
+        "B": {
+          "samples": 10,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            59,
+            1
+          ],
+          "latest_frame": 10,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 95.62661657502048,
+          "mu_mm": 1175.4493257097834,
+          "slope_mm_s": 191.40740030610252
+        }
+      },
+      "post": {
+        "50": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 326,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1013.6644897460938
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "30": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 202,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1121.2006225585938
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "50": 59,
+          "30": 50
+        },
+        "unassigned_member_residual": [
+          59
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F12",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            30,
+            50,
+            59
+          ],
+          "event_public_write_set": [
+            30,
+            50,
+            59
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F59",
+      "q": 65,
+      "global_q": 415,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 3,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            30,
+            1
+          ],
+          "latest_frame": 56,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 325.86504700101557,
+          "mu_mm": 943.0925260984852,
+          "slope_mm_s": -391.649227116554
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            70,
+            1
+          ],
+          "latest_frame": 38,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 409.7204169950161,
+          "mu_mm": 1078.2147216796875,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "70": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 131,
+          "qualified_pieces": 2,
+          "piece_medians": [
+            1120.7421875,
+            1106.0875244140625
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "30": {
+          "status": "UNKNOWN",
+          "reason": "NO_SIGNIFICANT_DEPTH_CONTRAST",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": true,
+      "bank_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "70": 70,
+          "30": 30
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "POST_NO_SIGNIFICANT_DEPTH_CONTRAST"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F67",
+      "q": 69,
+      "global_q": 419,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            2,
+            1
+          ],
+          "latest_frame": 52,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 257.69277581048505,
+          "mu_mm": 1145.4364013671875,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "21": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 266,
+          "qualified_pieces": 2,
+          "piece_medians": [
+            1114.5663452148438,
+            1129.4464111328125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "2": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": true,
+      "bank_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "21": 2,
+          "2": 21
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_B",
+        "POST_AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 1
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F81",
+      "q": 84,
+      "global_q": 434,
+      "multi_choice": "UNRESOLVED",
+      "same_state_scalar_choice": "UNRESOLVED",
+      "joint_available": false,
+      "reason": "NO_NUMERIC_PAIR",
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            3,
+            1
+          ],
+          "latest_frame": 55,
+          "status": "NO_NUMERIC_PAIR",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_NUMERIC_PAIR",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "72": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 216,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1122.61669921875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "69": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 317,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            877.2133178710938
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": null,
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "UNRESOLVED",
+        "numeric_choice": "UNRESOLVED",
+        "mapping": null,
+        "unassigned_member_residual": [
+          3
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F81",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            3,
+            69,
+            72
+          ],
+          "event_public_write_set": [
+            3,
+            69,
+            72
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [
+        "NO_NUMERIC_PAIR"
+      ],
+      "old_core_choice": "UNRESOLVED",
+      "old_core_used_edges": 0
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F105",
+      "q": 120,
+      "global_q": 470,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 7,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            24,
+            1
+          ],
+          "latest_frame": 92,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 605.1474502117264,
+          "mu_mm": 2161.054517073296,
+          "slope_mm_s": 1062.3749013903082
+        }
+      },
+      "post": {
+        "82": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        },
+        "24": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 138,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1140.4614868164062
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "82": 1,
+          "24": 24
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A",
+        "POST_NO_QUALIFIED_CONNECTED_COMPONENT"
+      ],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 1
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F166",
+      "q": 169,
+      "global_q": 519,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            50,
+            1
+          ],
+          "latest_frame": 158,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 162.42104235663055,
+          "mu_mm": 938.5939331054688,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "50": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 257,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            938.356201171875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "24": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 19,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1117.173583984375
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "50": 24,
+          "24": 50
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F55",
+      "q": 64,
+      "global_q": 764,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 10,
+          "key": [
+            "feeding_000701_001060",
+            "D5_MULTIFRAGMENT",
+            1,
+            95,
+            1
+          ],
+          "latest_frame": 36,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 73.13635342274594,
+          "mu_mm": 939.321836545717,
+          "slope_mm_s": -129.52809261332212
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_000701_001060",
+            "D5_MULTIFRAGMENT",
+            1,
+            100,
+            1
+          ],
+          "latest_frame": 27,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 542.6220120965212,
+          "mu_mm": 1166.3234252929688,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "95": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 199,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1001.692626953125
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        },
+        "118": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 68,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1159.7034301757812
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "95": 95,
+        "118": 100
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "95": 95,
+          "118": 100
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 0
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F85",
+      "q": 87,
+      "global_q": 787,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "108": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        },
+        "101": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 344,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1086.88525390625
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "108": 108,
+        "101": 101
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "108": 108,
+          "101": 101
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A",
+        "NO_PRE_HISTORY_B",
+        "POST_NO_QUALIFIED_CONNECTED_COMPONENT"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 0
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F325",
+      "q": 327,
+      "global_q": 1027,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 14,
+          "key": [
+            "feeding_000701_001060",
+            "D5_MULTIFRAGMENT",
+            1,
+            95,
+            1
+          ],
+          "latest_frame": 313,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 44.55223067702221,
+          "mu_mm": 938.8453114978346,
+          "slope_mm_s": -47.462944475847465
+        },
+        "B": {
+          "samples": 3,
+          "key": [
+            "feeding_000701_001060",
+            "D5_MULTIFRAGMENT",
+            1,
+            137,
+            1
+          ],
+          "latest_frame": 314,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 177.12169462039589,
+          "mu_mm": 877.8610507146676,
+          "slope_mm_s": -320.9598150771231
+        }
+      },
+      "post": {
+        "137": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 66,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1086.1856079101562
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        },
+        "95": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": true,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "137": 95,
+        "95": 137
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "137": 95,
+          "95": 137
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "POST_AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS"
+      ],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F328",
+      "q": 339,
+      "global_q": 1039,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 12,
+          "key": [
+            "feeding_000701_001060",
+            "D5_MULTIFRAGMENT",
+            1,
+            119,
+            1
+          ],
+          "latest_frame": 309,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 99.45840517658289,
+          "mu_mm": 956.1723279690403,
+          "slope_mm_s": -74.22482157363208
+        }
+      },
+      "post": {
+        "119": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 336,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1083.6552734375
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "108": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "119": 119,
+        "108": 108
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "119": 119,
+          "108": 108
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A",
+        "POST_AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "q": 39,
+      "global_q": 1239,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            128,
+            1
+          ],
+          "latest_frame": 19,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 302.5628305277736,
+          "mu_mm": 1137.4208984375,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 2,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            136,
+            1
+          ],
+          "latest_frame": 22,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 257.69288381477344,
+          "mu_mm": 1134.734130859375,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "167": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 37,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1094.1650390625
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "128": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "167": 136,
+        "128": 128
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "167": 136,
+          "128": 128
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "POST_NO_QUALIFIED_CONNECTED_COMPONENT"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 1
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F55",
+      "q": 63,
+      "global_q": 1263,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 2,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            162,
+            1
+          ],
+          "latest_frame": 26,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 559.4933412086791,
+          "mu_mm": 1142.5401611328125,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 2,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            164,
+            1
+          ],
+          "latest_frame": 26,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 559.4933412086791,
+          "mu_mm": 1142.804443359375,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "164": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 264,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1034.17626953125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "162": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 29,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1144.539306640625
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "164": 162,
+        "162": 164
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "164": 162,
+          "162": 164
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 4
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F71",
+      "q": 80,
+      "global_q": 1280,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            88,
+            1
+          ],
+          "latest_frame": 41,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 589.637708306138,
+          "mu_mm": 1073.0238647460938,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            148,
+            1
+          ],
+          "latest_frame": 52,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 423.8326653613901,
+          "mu_mm": 1016.8702087402344,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "148": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 224,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1010.6384887695312
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "168": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 41,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1143.4921875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "148": 88,
+        "168": 148
+      },
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "148": 88,
+          "168": 148
+        },
+        "unassigned_member_residual": [
+          88
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F71",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            88,
+            148,
+            168
+          ],
+          "event_public_write_set": [
+            88,
+            148,
+            168
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F152",
+      "q": 159,
+      "global_q": 1359,
+      "multi_choice": "UNRESOLVED",
+      "same_state_scalar_choice": "UNRESOLVED",
+      "joint_available": false,
+      "reason": "NO_NUMERIC_PAIR",
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_NUMERIC_PAIR",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_NUMERIC_PAIR",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "88": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 72,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1151.3408203125
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        },
+        "163": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 238,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1116.0711059570312
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": null,
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "UNRESOLVED",
+        "numeric_choice": "UNRESOLVED",
+        "mapping": null,
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": "numeric_unresolved",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F152",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            88,
+            163
+          ],
+          "event_public_write_set": [
+            88,
+            163
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [
+        "NO_NUMERIC_PAIR"
+      ],
+      "old_core_choice": "UNRESOLVED",
+      "old_core_used_edges": 0
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F185",
+      "q": 190,
+      "global_q": 1390,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 8,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            157,
+            1
+          ],
+          "latest_frame": 162,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 126.35738641009287,
+          "mu_mm": 1165.8852802089125,
+          "slope_mm_s": 50.60316147535401
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "157": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 29,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1140.401123046875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "172": {
+          "status": "UNKNOWN",
+          "reason": "NO_SIGNIFICANT_DEPTH_CONTRAST",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": true,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "157": 157,
+        "172": 170
+      },
+      "restore": {
+        "status": "COMMIT",
+        "selected_choice": "H1",
+        "numeric_choice": "H2",
+        "mapping": {
+          "157": 157,
+          "172": 170
+        },
+        "unassigned_member_residual": [],
+        "changes": {
+          "157": 157,
+          "172": 170
+        },
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_B",
+        "POST_NO_SIGNIFICANT_DEPTH_CONTRAST"
+      ],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 4
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F191",
+      "q": 304,
+      "global_q": 1504,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            132,
+            1
+          ],
+          "latest_frame": 181,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 1857.8487654317728,
+          "mu_mm": 1150.7958984375,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "180": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 55,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1124.771728515625
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        },
+        "159": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 148,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1015.8804626464844
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "180": 132,
+        "159": 159
+      },
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "180": 132,
+          "159": 159
+        },
+        "unassigned_member_residual": [
+          132
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F191",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            132,
+            159,
+            180
+          ],
+          "event_public_write_set": [
+            132,
+            159,
+            180
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_B"
+      ],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 1
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F515",
+      "q": 519,
+      "global_q": 1719,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 4,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            177,
+            1
+          ],
+          "latest_frame": 495,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 211.140411147452,
+          "mu_mm": 1150.7934093345502,
+          "slope_mm_s": -12.299326647988323
+        }
+      },
+      "post": {
+        "177": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 58,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1152.4882202148438
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        },
+        "159": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 356,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1061.4727783203125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "177": 159,
+        "159": 177
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "177": 159,
+          "159": 177
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A"
+      ],
+      "old_core_choice": "H1",
+      "old_core_used_edges": 1
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F530",
+      "q": 545,
+      "global_q": 1745,
+      "multi_choice": "H2",
+      "same_state_scalar_choice": "H2",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 22,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            9,
+            1
+          ],
+          "latest_frame": 521,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 66.47743504601789,
+          "mu_mm": 858.2797489872604,
+          "slope_mm_s": -3.599362578038877
+        },
+        "B": {
+          "samples": 4,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            188,
+            1
+          ],
+          "latest_frame": 515,
+          "status": "WLS_LINEAR_TIME",
+          "scale_mm": 259.05215374202953,
+          "mu_mm": 995.8897403312369,
+          "slope_mm_s": -116.95401404345905
+        }
+      },
+      "post": {
+        "190": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 109,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            912.274658203125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "9": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 374,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            857.9708251953125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "190": 188,
+        "9": 9
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H2",
+        "numeric_choice": "H2",
+        "mapping": {
+          "190": 188,
+          "9": 9
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 4
+    }
+  ],
+  "depth_choice_differences_from_core": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F67",
+      "q": 69,
+      "global_q": 419,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            2,
+            1
+          ],
+          "latest_frame": 52,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 257.69277581048505,
+          "mu_mm": 1145.4364013671875,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "21": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 266,
+          "qualified_pieces": 2,
+          "piece_medians": [
+            1114.5663452148438,
+            1129.4464111328125
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "2": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "n": 0,
+          "qualified_pieces": 0,
+          "piece_medians": [],
+          "raw_core_available": false,
+          "f6_q_available": false
+        }
+      },
+      "multiple_qualified_current": true,
+      "bank_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "21": 2,
+          "2": 21
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_B",
+        "POST_AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 1,
+      "old_core_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "old_core_restore": {
+        "status": "COMMIT",
+        "selected_choice": "H2",
+        "numeric_choice": "H1",
+        "mapping": {
+          "21": 21,
+          "2": 2
+        },
+        "unassigned_member_residual": [],
+        "changes": {
+          "21": 21,
+          "2": 2
+        },
+        "stage_error": null,
+        "decision_source": "D2_CORE_FROZEN",
+        "fallback": null
+      },
+      "old_core_frozen": {
+        "A": {
+          "key": [
+            "feeding_000351_000555",
+            "D2_CORE_FROZEN",
+            1,
+            2,
+            1
+          ],
+          "samples": [
+            {
+              "frame": 52,
+              "time": 1789706594.038,
+              "z_mm": 1156.9896240234375,
+              "mad_mm": 6.799072265625,
+              "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+              "fact_id": "feeding_000351_000555/F52/n:2"
+            }
+          ],
+          "acquired_interval_seconds": 0.03299999237060547,
+          "cutoff_frame": 66,
+          "source": 2,
+          "public": 2
+        },
+        "B": {
+          "key": null,
+          "samples": [],
+          "acquired_interval_seconds": 0.03299999237060547,
+          "cutoff_frame": 66,
+          "source": 21,
+          "public": 21
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F166",
+      "q": 169,
+      "global_q": 519,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": false,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 0,
+          "key": null,
+          "latest_frame": null,
+          "status": "NO_HISTORY",
+          "scale_mm": null,
+          "mu_mm": null,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_000351_000555",
+            "D5_MULTIFRAGMENT",
+            1,
+            50,
+            1
+          ],
+          "latest_frame": 158,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 162.42104235663055,
+          "mu_mm": 938.5939331054688,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "50": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 257,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            938.356201171875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "24": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 19,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1117.173583984375
+          ],
+          "raw_core_available": false,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "restore": {
+        "status": "RESOLVE_NO_ID_CHANGE",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "50": 24,
+          "24": 50
+        },
+        "unassigned_member_residual": [],
+        "changes": {},
+        "stage_error": null,
+        "decision_source": "D5_MULTIFRAGMENT",
+        "fallback": null
+      },
+      "missing_reasons": [
+        "NO_PRE_HISTORY_A"
+      ],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2,
+      "old_core_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "old_core_restore": {
+        "status": "COMMIT",
+        "selected_choice": "H2",
+        "numeric_choice": "H1",
+        "mapping": {
+          "50": 50,
+          "24": 24
+        },
+        "unassigned_member_residual": [],
+        "changes": {
+          "50": 50,
+          "24": 24
+        },
+        "stage_error": null,
+        "decision_source": "D2_CORE_FROZEN",
+        "fallback": null
+      },
+      "old_core_frozen": {
+        "A": {
+          "key": [
+            "feeding_000351_000555",
+            "D2_CORE_FROZEN",
+            1,
+            24,
+            1
+          ],
+          "samples": [
+            {
+              "frame": 158,
+              "time": 1789706597.56,
+              "z_mm": 1157.7332153320312,
+              "mad_mm": 5.6025390625,
+              "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+              "fact_id": "feeding_000351_000555/F158/n:24"
+            }
+          ],
+          "acquired_interval_seconds": 0.03399991989135742,
+          "cutoff_frame": 165,
+          "source": 24,
+          "public": 24
+        },
+        "B": {
+          "key": [
+            "feeding_000351_000555",
+            "D2_CORE_FROZEN",
+            1,
+            50,
+            1
+          ],
+          "samples": [
+            {
+              "frame": 158,
+              "time": 1789706597.56,
+              "z_mm": 931.1502380371094,
+              "mad_mm": 2.447998046875,
+              "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+              "fact_id": "feeding_000351_000555/F158/n:50"
+            }
+          ],
+          "acquired_interval_seconds": 0.03399991989135742,
+          "cutoff_frame": 165,
+          "source": 50,
+          "public": 50
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F71",
+      "q": 80,
+      "global_q": 1280,
+      "multi_choice": "H1",
+      "same_state_scalar_choice": "H1",
+      "joint_available": true,
+      "reason": null,
+      "history": {
+        "A": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            88,
+            1
+          ],
+          "latest_frame": 41,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 589.637708306138,
+          "mu_mm": 1073.0238647460938,
+          "slope_mm_s": null
+        },
+        "B": {
+          "samples": 1,
+          "key": [
+            "feeding_001201_001906",
+            "D5_MULTIFRAGMENT",
+            1,
+            148,
+            1
+          ],
+          "latest_frame": 52,
+          "status": "NO_SLOPE_LAST_VALUE",
+          "scale_mm": 423.8326653613901,
+          "mu_mm": 1016.8702087402344,
+          "slope_mm_s": null
+        }
+      },
+      "post": {
+        "148": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 224,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1010.6384887695312
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        },
+        "168": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "n": 41,
+          "qualified_pieces": 1,
+          "piece_medians": [
+            1143.4921875
+          ],
+          "raw_core_available": true,
+          "f6_q_available": true
+        }
+      },
+      "multiple_qualified_current": false,
+      "bank_mapping": {
+        "148": 88,
+        "168": 148
+      },
+      "restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "H1",
+        "numeric_choice": "H1",
+        "mapping": {
+          "148": 88,
+          "168": 148
+        },
+        "unassigned_member_residual": [
+          88
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F71",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            88,
+            148,
+            168
+          ],
+          "event_public_write_set": [
+            88,
+            148,
+            168
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "missing_reasons": [],
+      "old_core_choice": "H2",
+      "old_core_used_edges": 2,
+      "old_core_mapping": {
+        "148": 148,
+        "168": 88
+      },
+      "old_core_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "selected_choice": "H2",
+        "numeric_choice": "H1",
+        "mapping": {
+          "148": 148,
+          "168": 88
+        },
+        "unassigned_member_residual": [
+          88
+        ],
+        "changes": {},
+        "stage_error": "visible_member_residual_outside_two_member_restore",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "fallback": {
+          "episode": "MS1-F71",
+          "status": "LOCAL_FALLBACK_COMMITTED",
+          "candidate_source": "OWN_BRANCH_PRE_FRAME",
+          "event_native_write_set": [
+            88,
+            148,
+            168
+          ],
+          "event_public_write_set": [
+            88,
+            148,
+            168
+          ],
+          "outside_mapping_and_ownership_equal": true,
+          "unresolved_publication": null,
+          "candidate_trace_events": 0
+        }
+      },
+      "old_core_frozen": {
+        "A": {
+          "key": null,
+          "samples": [],
+          "acquired_interval_seconds": 0.03299999237060547,
+          "cutoff_frame": 70,
+          "source": 88,
+          "public": 88
+        },
+        "B": {
+          "key": [
+            "feeding_001201_001906",
+            "D2_CORE_FROZEN",
+            1,
+            148,
+            1
+          ],
+          "samples": [
+            {
+              "frame": 52,
+              "time": 1789706622.281,
+              "z_mm": 1004.6946411132812,
+              "mad_mm": 8.8446044921875,
+              "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+              "fact_id": "feeding_001201_001906/F52/n:148"
+            }
+          ],
+          "acquired_interval_seconds": 0.03299999237060547,
+          "cutoff_frame": 70,
+          "source": 148,
+          "public": 148
+        }
+      }
+    }
+  ],
+  "real_state_actions": {
+    "D0_GEOMETRY": {
+      "LOCAL_FALLBACK_COMMITTED": 5,
+      "changed_sources": 2,
+      "RESOLVE_NO_ID_CHANGE": 12,
+      "COMMIT": 1
+    },
+    "D2_CORE_FROZEN": {
+      "LOCAL_FALLBACK_COMMITTED": 5,
+      "changed_sources": 6,
+      "RESOLVE_NO_ID_CHANGE": 10,
+      "COMMIT": 3
+    },
+    "D4_F6_SCALAR": {
+      "LOCAL_FALLBACK_COMMITTED": 5,
+      "changed_sources": 2,
+      "RESOLVE_NO_ID_CHANGE": 12,
+      "COMMIT": 1
+    },
+    "D5_MULTIFRAGMENT": {
+      "LOCAL_FALLBACK_COMMITTED": 5,
+      "changed_sources": 2,
+      "RESOLVE_NO_ID_CHANGE": 12,
+      "COMMIT": 1
+    }
+  },
+  "interpretation": "availability is a source/measurement condition, not a model competency verdict; no certified physical surfaces; no thresholds or state output altered",
+  "dependencies": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\run\\SCORING_SEALED.json",
+      "bytes": 746,
+      "sha256": "74b1e97c4c47dcb598f7d19fda1c1e2c7ba8c2df1a49887f9f67a12b4b4e5f61"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\failure_analysis.py",
+      "bytes": 5040,
+      "sha256": "83a5573d2d3b3c7d05158e09b1e0eed9ca8c89a7be4450ef88c3fff58fa424cb"
+    }
+  ],
+  "model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,36 @@
+{
+  "trial": "DS7",
+  "frames": 1471,
+  "source": "SOURCE_OLD",
+  "arms": [
+    "SAM3_NATIVE",
+    "D2_CORE_FROZEN",
+    "P0_NATIVE_PRESERVE",
+    "P1_RAW_DEPTH",
+    "P2_RESTORED_DEPTH"
+  ],
+  "depth_weight": 0.25,
+  "minimum_depth_odds": 9,
+  "inferred_scale_floor_mm": 60,
+  "raw_scale_floor_mm": 15,
+  "history_frames": 30,
+  "fit_observations": 10,
+  "core_kernel": 7,
+  "min_points": 16,
+  "min_fraction": 0.2,
+  "max_raw_scale_mm": 60,
+  "restored_fields": [
+    "native_v2.depth_mm",
+    "original_depth_mm",
+    "filled_mask",
+    "invalidated_reason"
+  ],
+  "excluded_provenance": [
+    0
+  ],
+  "inferred_policy": "Use retained-measurement cohort if usable; otherwise inferred-only cohort, never mix medians. Inferred uncertainty floor 60 mm is an assumption, not calibrated accuracy.",
+  "fallback": "Own-branch native/committed alias; no temporary H1",
+  "scope": "EXPOSED_OFFLINE_V2_REPROJECTED; no annotation assistance; upstream RGB and future cleaning",
+  "new_model_http": 0,
+  "cost_usd": 0
+}

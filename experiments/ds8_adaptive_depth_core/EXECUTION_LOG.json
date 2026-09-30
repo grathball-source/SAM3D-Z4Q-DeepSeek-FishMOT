@@ -1,0 +1,127 @@
+{
+  "entries": [
+    {
+      "step": "adaptive_tests",
+      "exit_code": 0,
+      "tests": 10,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\ADAPTIVE_CHECKS.json",
+        "bytes": 201,
+        "sha256": "8f388cc0d87c2d4553bdeeea772e1127318b91620b2bd0086da63ef79548112d"
+      }
+    },
+    {
+      "step": "measurement_tests",
+      "exit_code": 0,
+      "tests": 5,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\MEASUREMENT_CHECKS.json",
+        "bytes": 192,
+        "sha256": "b614f440bde6bbe10d8bd35676bd5e9ea47ae0180cd0dbf1460ab55109b545eb"
+      }
+    },
+    {
+      "step": "controller_tests",
+      "exit_code": 0,
+      "tests": 13,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\CONTROLLER_CHECKS.json",
+        "bytes": 2070,
+        "sha256": "b2e276a14153e3882757625d97021bea4fe30dd6daf5d06dd86b545e586a22b5"
+      }
+    },
+    {
+      "step": "score_checks",
+      "exit_code": 0,
+      "tests": 5,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\SCORE_CHECKS.json",
+        "bytes": 471,
+        "sha256": "e6ef8aa62c656e6e8f34ac5d327807b9e4fb2ebb04741b1a630f5414011abcae"
+      }
+    },
+    {
+      "step": "preflight",
+      "exit_code": 0,
+      "lock": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\OLD_READONLY_LOCK.json",
+        "bytes": 76535,
+        "sha256": "86e74ac2086974a6d53d1ec9ba2a50e993ddc1945854f3fecf12fec20bf5ef9d"
+      }
+    },
+    {
+      "step": "slice_attempt1",
+      "exit_code": 1,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\SLICE_LOG.txt",
+        "bytes": 1146,
+        "sha256": "0dab2352631a72423677f57d50ec21c8f462049c49fcbcca295bffb37d264bdb"
+      },
+      "reason": "Missing CONTROLLER_CHECKS.json: first test invocation lacked --write-new. Failed while hashing CODE, before any FREEZE/input prediction. Empty output kept separately. Tests rerun with report option, no semantic code change or research result reuse."
+    },
+    {
+      "step": "SLICE_ATTEMPT2",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\SLICE_ATTEMPT2_LOG.txt",
+        "bytes": 253,
+        "sha256": "46d74c5be3afb6ecbce0913e4b52228f71fe514f8218e2dc03e2f9e8715f0ba0"
+      }
+    },
+    {
+      "step": "FULL",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\FULL_LOG.txt",
+        "bytes": 1482,
+        "sha256": "a1428e701ca35bcabd0cc6fd7ea8da74e471bf603ff9c53642134374fc93805a"
+      }
+    },
+    {
+      "step": "SCORE",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\SCORE_LOG.txt",
+        "bytes": 2091,
+        "sha256": "ffaf5c09bb3781451c5e793d97e2e8e1c9993306bdc23d569da1b3d5fa237e6c"
+      }
+    },
+    {
+      "step": "REPORT",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\REPORT_LOG.txt",
+        "bytes": 48,
+        "sha256": "d940ad058d394dd8584c6a0f66fc8ca36ff0d0f633d99eb7997ae8407c98331b"
+      }
+    },
+    {
+      "step": "POSTRUN",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\POSTRUN_LOG.txt",
+        "bytes": 426,
+        "sha256": "3eb1c94a581518b1d91335d23fa7f513c42561dd2a99aff6bb9641134fe2ca5e"
+      }
+    },
+    {
+      "step": "POSTRUN",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\POSTRUN_LOG.txt",
+        "bytes": 426,
+        "sha256": "3eb1c94a581518b1d91335d23fa7f513c42561dd2a99aff6bb9641134fe2ca5e"
+      },
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\POSTRUN_REVIEW.json",
+        "bytes": 1794655,
+        "sha256": "508865ea3e7a311b2de495bff6ce8bb0dc046793023d82e071c138e97be54eea"
+      }
+    }
+  ],
+  "UTC": "2026-09-30T16:25:00.179224+00:00",
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "no_semantic_tuning_after_full_freeze": true,
+  "all_research_predictions_new": true
+}

@@ -1,3 +1,7 @@
+# Latest: DS7/DS8 depth failure audit and adaptive-core trial (2026-10-01)
+
+See experiments/ds8_adaptive_depth_core/RESULTS.md / PLAN.md and experiments/ds7_depth_native_recovery/RESULTS.md. Two complete 1471-frame five-branch SOURCE_OLD replays; no model/API/SMOKE/training/SAM3/completion calls or cost. DS7 fixes lawful own-branch native publication and source-separated depth; DS8 changes only current-mask core geometry. P2 IDF1/HOTA/AssA 80.976760/79.964056/71.530499, IDSW 108; same-source native 80.976760/79.964056/71.530499, IDSW 108. Frozen full depth support=False. P0 native exact, old D2 exact, all masks preserved; sealed then independent official scoring and switch accounting. Restored native v2 has no annotation fill but upstream RGB+future cleaning: exposed offline diagnostic. No physical-mm truth or independent video validation; private artifacts inventoried by actual path/bytes/SHA. One next step is defined in latest RESULTS.md; no automatic model addition.
+
 # Active handoff — DS6 full performance trial,2026-09-30
 
 Read experiments/ds6_multifragment_depth_tracking/RESULTS.md/PLAN/CONFIG,

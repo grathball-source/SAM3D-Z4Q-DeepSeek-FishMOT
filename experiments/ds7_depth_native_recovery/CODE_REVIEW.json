@@ -1,0 +1,51 @@
+{
+  "status": "PASS_CODE_REVIEW_BEFORE_SLICE",
+  "scope": "DS7 association, measurement, controller publication contract, evaluator, event audit and PLAN; synthetic only; no dataset label opened; no actual GT scoring",
+  "blocking_bugs_remaining": [],
+  "repairs": [
+    "Evaluator gates all four five-arm prediction seals, required artifacts, source bytes/SHA, old DS6 sealed predictions, code and matching helper hashes, and bound prediction access audit before reference opens.",
+    "Evaluator checks frame/global/time/mask order/integer unique IDs; SAM3 source exact, P0 native exact and D2 DS6 exact; negative IDs remain scored.",
+    "q prediction row, first-public ledger, event selection, restore transaction and actual mapping are cross-bound; fallback is compared with lawful preview, and staged changes are compared with that preview.",
+    "Frozen depth history fact_id/source/key/time/z/MAD is checked against actual raw or restored observations and live versions; group samples are excluded from individual history.",
+    "Explicit score layers distinguish P1 raw-vs-native, P2 offline-vs-native, P2 increment-vs-P1 and full predeclared P2 rule. Generator evaluator header matches byte-for-byte in memory."
+  ],
+  "synthetic_checks": {
+    "status": "PASS",
+    "tests": 5,
+    "scope": "synthetic memory fixtures only; no dataset reference access or GT scoring",
+    "failures": 0,
+    "errors": 0,
+    "new_model_http": 0,
+    "code_sha256": {
+      "evaluate.py": "1b313f2dad23616454b0f4262e0e4845962d434b4ddb1c852f72d32ba62176c6",
+      "event_audit.py": "326b55448154a3b8314701339a1d31507870fef4020e1efdea5623cb46353d05",
+      "build_evaluation.py": "fc02626479bba6c8406ac5ebfaebb4f481ea2873bdc41332f361ee09d845fad9",
+      "score_checks.py": "cc594198c54a74f8cc62dc79f51b649688ef98ee2f6185a7eecf95f5f14b3378"
+    }
+  },
+  "model_review": {
+    "missing_model": "Both post observations must be usable. Each available pre forecast contributes its complete two-post row; an unavailable pre row contributes common zero to both hypotheses. This permits 0, 2 or 4 used edges without asymmetric missing-edge reward.",
+    "inferred_observation_uncertainty": "60 mm is assumed single-observation sigma via MAD=60/1.4826. It is not calibrated depth accuracy and no extra floor is added to WLS forecast uncertainty.",
+    "uncertainty_limit": "WLS fitting may shrink forecast uncertainty below 60 mm; source samples can be correlated, and this correlation is uncalibrated.",
+    "odds_limit": "9:1 compares the two candidate depth hypotheses under the frozen model. It is not calibrated posterior confidence, physical truth, or odds against no attachment."
+  },
+  "reporting_constraints": [
+    "Event physical/CORRECT is legacy naming for RGB identity correspondence at actual bank anchors. Report staged CORRECT separately from first-public CORRECT; a correct unchanged mapping is not a newly corrected native error.",
+    "NOT_STAGED and UNSCORABLE_OR_NO_BIJECTION remain separate. UNKNOWN surface identity and null physical_depth_reference_mm are retained.",
+    "P2 consumes previously generated native v2 depth with RGB and next-frame support. P2 improvement would be exposed-set offline evidence; P1 raw evidence is separate.",
+    "The event audit depth_joint_available is a legacy field and may be null for the DS7 row model; use used_edges for evidence count. Null is not false or zero."
+  ],
+  "runtime_gates_pending": "Slice and full prediction verification have not been executed by this review. Full metrics and event audit must wait for ALL_PREDICTIONS_SEALED plus ACCESS_SEALED.",
+  "code_sha256": {
+    "association.py": "91dc482d314bd8c99ef58d86bba9431c5b3d0d80d59b390011f2711bd44e65e2",
+    "measurement.py": "3e7c0ef7f66e4fa1505e864b121085af619715a97cc1baaf5d162b84928d286f",
+    "evaluate.py": "1b313f2dad23616454b0f4262e0e4845962d434b4ddb1c852f72d32ba62176c6",
+    "build_evaluation.py": "fc02626479bba6c8406ac5ebfaebb4f481ea2873bdc41332f361ee09d845fad9",
+    "event_audit.py": "326b55448154a3b8314701339a1d31507870fef4020e1efdea5623cb46353d05",
+    "score_checks.py": "cc594198c54a74f8cc62dc79f51b649688ef98ee2f6185a7eecf95f5f14b3378",
+    "PLAN.md": "0819c67d3214eb15228a8501e9ebd1c172f0dcecca0203cea391454fb59380bc"
+  },
+  "new_model_http": 0,
+  "training_runs": 0,
+  "dataset_reference_opens": 0
+}

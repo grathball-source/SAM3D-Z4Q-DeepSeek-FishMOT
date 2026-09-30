@@ -1,0 +1,756 @@
+{
+  "schema": "DS7_RESTORED_SOURCE_REVIEW_V1",
+  "created_utc": "2026-09-30T15:01:42.901687+00:00",
+  "passed": true,
+  "scope": "Read-only saved-restoration source audit; no model, service, API, RGB pixels, annotation content, GT plane or experiment scoring. Six numeric image slices only; all 1471 packaged indices/time rows and file inventory checked.",
+  "reader": {
+    "path": "E:/CAU/SAM3D-Z4Q-DeepSeek-FishMOT/experiments/ds7_depth_native_recovery/restored_source.py",
+    "bytes": 6205,
+    "sha256": "384bf38e3c5d8671ae2b888e4dd66319bbcc5804c1e09c81eecec7a22a681937"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "h5py": "3.14.0",
+    "opencv": "5.0.0",
+    "device": "CPU",
+    "network_calls": 0
+  },
+  "native_v2_files": [
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_01.h5",
+      "bytes": 454302078,
+      "sha256": "1476b8e7ab97ebea085e91cc9c1331a5daa54ec4c1084f7a12c4170cb620fd52",
+      "attributes": {
+        "complete": true,
+        "coordinates": "original distorted depth camera",
+        "model": "robbyant/lingbot-depth-pretrain-vitl-14-v0.5",
+        "policy_revision": "2.1",
+        "reason_bits": "{\"1\": \"above_scene_review_range_2000mm\", \"2\": \"isolated_depth_jump_with_stable_neighbors_and_RGB\", \"4\": \"central_low_depth_reflection_candidate\", \"8\": \"uncorroborated_measurement_in_severely_degraded_frame\"}",
+        "unit": "millimeter",
+        "version": "v2"
+      },
+      "shape": [
+        900,
+        576,
+        640
+      ],
+      "fields": [
+        "color_index",
+        "color_timestamp_us",
+        "delta_us",
+        "depth_mm",
+        "depth_timestamp_us",
+        "filled_mask",
+        "frame_review_required",
+        "index",
+        "invalidated_reason",
+        "original_depth_mm",
+        "support_mask"
+      ],
+      "index_begin": 0,
+      "index_end": 899
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_02.h5",
+      "bytes": 447218898,
+      "sha256": "63c48b95d5eb01e44baf48b23cd3abf043cd2abe61682d2e7d6000d6d105bf38",
+      "attributes": {
+        "complete": true,
+        "coordinates": "original distorted depth camera",
+        "model": "robbyant/lingbot-depth-pretrain-vitl-14-v0.5",
+        "policy_revision": "2.1",
+        "reason_bits": "{\"1\": \"above_scene_review_range_2000mm\", \"2\": \"isolated_depth_jump_with_stable_neighbors_and_RGB\", \"4\": \"central_low_depth_reflection_candidate\", \"8\": \"uncorroborated_measurement_in_severely_degraded_frame\"}",
+        "unit": "millimeter",
+        "version": "v2"
+      },
+      "shape": [
+        900,
+        576,
+        640
+      ],
+      "fields": [
+        "color_index",
+        "color_timestamp_us",
+        "delta_us",
+        "depth_mm",
+        "depth_timestamp_us",
+        "filled_mask",
+        "frame_review_required",
+        "index",
+        "invalidated_reason",
+        "original_depth_mm",
+        "support_mask"
+      ],
+      "index_begin": 900,
+      "index_end": 1799
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_03.h5",
+      "bytes": 52394247,
+      "sha256": "571ab176bb33a45480fd2e0a55de7717390728e48a1ccdf92e401c506185a92e",
+      "attributes": {
+        "complete": true,
+        "coordinates": "original distorted depth camera",
+        "model": "robbyant/lingbot-depth-pretrain-vitl-14-v0.5",
+        "policy_revision": "2.1",
+        "reason_bits": "{\"1\": \"above_scene_review_range_2000mm\", \"2\": \"isolated_depth_jump_with_stable_neighbors_and_RGB\", \"4\": \"central_low_depth_reflection_candidate\", \"8\": \"uncorroborated_measurement_in_severely_degraded_frame\"}",
+        "unit": "millimeter",
+        "version": "v2"
+      },
+      "shape": [
+        107,
+        576,
+        640
+      ],
+      "fields": [
+        "color_index",
+        "color_timestamp_us",
+        "delta_us",
+        "depth_mm",
+        "depth_timestamp_us",
+        "filled_mask",
+        "frame_review_required",
+        "index",
+        "invalidated_reason",
+        "original_depth_mm",
+        "support_mask"
+      ],
+      "index_begin": 1800,
+      "index_end": 1906
+    }
+  ],
+  "v3_native_file_hash_verification": [
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/depth_restored_v3_01.h5",
+      "bytes": 471104903,
+      "sha256": "fb61c827778292cc2e382536d40d3c368128d7be03138c1679689ed119cd4d72"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/depth_restored_v3_02.h5",
+      "bytes": 461220980,
+      "sha256": "c9a9b69a4685ef0a11133eb94da3ea39c96b877ae509dcb3103159e054424833"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/depth_restored_v3_03.h5",
+      "bytes": 56460779,
+      "sha256": "395a664759d3b8ebb988cbc5b01e3f0a22e645c54bd928eaab87981cf03fae08"
+    }
+  ],
+  "inputs_and_records": [
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/run_config.json",
+      "bytes": 405797,
+      "sha256": "62fb8250301899d42b1f00382b412d29110e89dc193cfd6cad60abe15c9332a7"
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/verification.json",
+      "bytes": 881,
+      "sha256": "e23b3a65171f16526bdb09df45e1ea5933b639c8b92a6274406f5e06fe5e255a"
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/frames.jsonl",
+      "bytes": 782335,
+      "sha256": "b22d8ecc700124bdbd47105d692aae59534d1dac50fe2ab23aaf61ac597863b8"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/manifest.jsonl",
+      "bytes": 1478966,
+      "sha256": "f3ee6ce88594dbea4711b18919917b2c510abbd4a1d4896a7066c5360d33d944"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/run_config.json",
+      "bytes": 783,
+      "sha256": "0961b065e5af174328cbfcdc81fabf16a4b7a98141c853c0e9521083ee846599"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/verification.json",
+      "bytes": 866,
+      "sha256": "41882a268ebc3fe6dcc6205ce2d1a0e1eb008645405b10de8de3881350fe32ab"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/report.json",
+      "bytes": 93,
+      "sha256": "a8ce52679aa65cabfca1a457c1c34177958b1c3a8ca48076a82cdf5c7183b5b3"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/v3/frames.jsonl",
+      "bytes": 571737,
+      "sha256": "7514b14d33cd5b5502888607da266b858cdb8b8ee1d2725a319c7c8717aaa58b"
+    },
+    {
+      "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/verification.json",
+      "bytes": 989,
+      "sha256": "0617e3a4cf9034043002801f70c8835480a1fc8f923e6c52b064677ad7586503"
+    }
+  ],
+  "source_code": [
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/run_v2.py",
+      "bytes": 9018,
+      "sha256": "14e6ce4fe6227363f7eab7de1a7b0bed9d6e20a44b9e086cf0d4aefdb397626d",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/run_v2.py",
+        "bytes": 9018,
+        "sha256": "14e6ce4fe6227363f7eab7de1a7b0bed9d6e20a44b9e086cf0d4aefdb397626d"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/clean_v2.py",
+      "bytes": 3499,
+      "sha256": "cfc53af01cd61a620413726e1be6357074035f26129d69a6aac3890c323d4592",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/clean_v2.py",
+        "bytes": 3499,
+        "sha256": "cfc53af01cd61a620413726e1be6357074035f26129d69a6aac3890c323d4592"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/geometry.py",
+        "bytes": 4887,
+        "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/postfill.py",
+      "bytes": 7538,
+      "sha256": "286b5f8d5f77f7310f15a421e0608a883db17e0a76a8ecbf77c33721d3aaa1ef",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/postfill.py",
+        "bytes": 7538,
+        "sha256": "286b5f8d5f77f7310f15a421e0608a883db17e0a76a8ecbf77c33721d3aaa1ef"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/publish.py",
+      "bytes": 8520,
+      "sha256": "b2030db0d5a8d7b431572e477f2ee10b0436e99d37f5fb30980e3b2ff0b8a0cf",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/publish.py",
+        "bytes": 8520,
+        "sha256": "b2030db0d5a8d7b431572e477f2ee10b0436e99d37f5fb30980e3b2ff0b8a0cf"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/verify_v2.py",
+      "bytes": 2912,
+      "sha256": "2e24b21c4369e4ef20bbd9fc7dc7682d919ac4d600def1c8d470c69cffcdeaa1",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/verify_v2.py",
+        "bytes": 2912,
+        "sha256": "2e24b21c4369e4ef20bbd9fc7dc7682d919ac4d600def1c8d470c69cffcdeaa1"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/verify_v3.py",
+      "bytes": 3865,
+      "sha256": "fb6a6c8935c4b5823b3f51a8ec113cfe287909639cec2bb48366d73dcdd18fe0",
+      "provenance_copy": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/restoration/provenance/verify_v3.py",
+        "bytes": 3865,
+        "sha256": "fb6a6c8935c4b5823b3f51a8ec113cfe287909639cec2bb48366d73dcdd18fe0"
+      }
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration/geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+    },
+    {
+      "path": "E:/CAU/D-MOT/tools/depth_restoration/build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+    },
+    {
+      "path": "E:/CAU/SAM3D-Z4Q-DeepSeek-FishMOT/experiments/ds7_depth_native_recovery/restored_source.py",
+      "bytes": 6205,
+      "sha256": "384bf38e3c5d8671ae2b888e4dd66319bbcc5804c1e09c81eecec7a22a681937"
+    }
+  ],
+  "packaged_metadata": {
+    "frames": 1471,
+    "segments": {
+      "FEEDING_000000_000199": 200,
+      "FEEDING_000351_000555": 205,
+      "FEEDING_000701_001060": 360,
+      "FEEDING_001201_001906": 706
+    },
+    "all_native_v2_index_rows_found_and_exact_color_index_and_time_bound": true,
+    "restored_npz_inventory_exists": true,
+    "original_native_inventory_exists": true,
+    "recorded_profiles_match_v2_run_config": true
+  },
+  "reader_access_probe": {
+    "initialized_metadata_getitem": [
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/color_index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/color_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/depth_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/delta_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_02.h5",
+        "field": "/index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_02.h5",
+        "field": "/color_index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_02.h5",
+        "field": "/color_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_02.h5",
+        "field": "/depth_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_02.h5",
+        "field": "/delta_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/color_index",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/color_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/depth_timestamp_us",
+        "selection": "slice(None, None, None)"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/delta_us",
+        "selection": "slice(None, None, None)"
+      }
+    ],
+    "initialized_image_reads": 0,
+    "image_getitem": [
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/depth_mm",
+        "selection": "0"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/original_depth_mm",
+        "selection": "0"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/filled_mask",
+        "selection": "0"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/invalidated_reason",
+        "selection": "0"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/depth_mm",
+        "selection": "766"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/original_depth_mm",
+        "selection": "766"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/filled_mask",
+        "selection": "766"
+      },
+      {
+        "file": "depth_restored_v2_01.h5",
+        "field": "/invalidated_reason",
+        "selection": "766"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/depth_mm",
+        "selection": "106"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/original_depth_mm",
+        "selection": "106"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/filled_mask",
+        "selection": "106"
+      },
+      {
+        "file": "depth_restored_v2_03.h5",
+        "field": "/invalidated_reason",
+        "selection": "106"
+      }
+    ],
+    "frames": [
+      0,
+      766,
+      1906
+    ],
+    "current_native_row_only": true,
+    "future_image_reads": 0,
+    "fields_exclude_support_or_gt_arrays": true,
+    "paths_static_and_freezeable": [
+      "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_01.h5",
+      "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_02.h5",
+      "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_03.h5",
+      "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/run_config.json",
+      "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/verification.json",
+      "E:/CAU/D-MOT/data/AlignedFeeding_v1/calibration.json",
+      "E:/CAU/D-MOT/data/AlignedFeeding_v1/manifest.jsonl",
+      "E:/CAU/D-MOT/tools/depth_restoration/geometry.py",
+      "E:/CAU/D-MOT/tools/depth_restoration/build_aligned_dataset.py"
+    ],
+    "returned_shapes": [
+      360,
+      640
+    ],
+    "returned_dtypes": [
+      "float32",
+      "uint8",
+      "int32"
+    ],
+    "metadata_contains_no_arrays_or_pixel_coordinates": true
+  },
+  "projection": {
+    "implementation": "E:/CAU/D-MOT/tools/depth_restoration/build_aligned_dataset.py:71 rasterize and :98 gather; E:/CAU/D-MOT/tools/depth_restoration/geometry.py:6 Geometry and :43 project_xyz",
+    "xyz": "(depth-undistorted native ray @ recorded_R.T) * native_mm + recorded_t_mm",
+    "RGB_pixel_center_scaling": "Kc scaled640/1920,360/1080 then principal correction (scale-1)/2",
+    "raster": "finite uv and finite positive camera-Z; clip[-.5,W-.5)/[-.5,H-.5); np.rint; nearest camera-Z; equal-Z minimum native linear index",
+    "R_kept_recorded": true,
+    "physical_accuracy": "UNKNOWN; exact recorded reprojection is not independently calibrated physical accuracy",
+    "import_does_not_execute_Context_or_color_label_or_make_frame": true,
+    "top_level_types": [
+      "Assign",
+      "ClassDef",
+      "Expr",
+      "FunctionDef",
+      "If",
+      "Import",
+      "ImportFrom"
+    ]
+  },
+  "v2_upstream": {
+    "saved_model_name": "robbyant/lingbot-depth-pretrain-vitl-14-v0.5",
+    "saved_model_sha256": "b60cf27ddbd0e51e9b59b03475c0d39d02d2e48ecf8dbb5866f04d46802b3c23",
+    "model_weights_not_opened_now": true,
+    "uses_RGB": true,
+    "uses_next_native_depth_and_RGB_in_clean": true,
+    "uses_annotation_masks_in_recorded_run_v2_or_clean_v2_code": false,
+    "clean_call": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/run_v2.py:67 clean(original,dep(i-1),dep(i+1),rgb,rgb_at(i-1),rgb_at(i+1),g) then :68 infer(rgb,filtered)",
+    "future_flags": [
+      2,
+      8
+    ],
+    "why_masking_flags_or_p3_is_not_causal_equivalent": "The future-dependent clean changes the sparse depth presented to LingBot before whole-frame prediction; original-zero p2 estimates can also depend on that input. Saved outputs contain no counterfactual causal prediction.",
+    "scene_policy_max_2000mm_is_not_sensor_max": true,
+    "historical_verification": {
+      "checked_frames": 1907,
+      "inferred_pixel_observations": 37005051,
+      "replaced_nonzero_pixel_observations": 22928,
+      "invalidated_nonzero_pixel_observations": 23728,
+      "scope": "Source fidelity, trusted-value preservation, masks, timestamps, ranges and completeness. Not ground-truth depth accuracy."
+    },
+    "report_metadata_statistics": {
+      "all_1907": {
+        "frames": 1907,
+        "invalidated_pixel_observations": 23728,
+        "invalidated_frames": 1037,
+        "extreme_pixel_observations": 19493,
+        "extreme_frames": 939,
+        "temporal_pixel_observations": 6495,
+        "temporal_frames": 684,
+        "central_pixel_observations": 38,
+        "central_frames": 1,
+        "severe_frame_pixel_observations": 0,
+        "severe_frame_frames": 0,
+        "filled_original_missing_pixel_observations": 36982123,
+        "filled_original_missing_frames": 1907,
+        "replaced_nonzero_pixel_observations": 22928,
+        "replaced_nonzero_frames": 1028,
+        "remaining_invalidated_pixel_observations": 800,
+        "remaining_invalidated_frames": 164,
+        "interior_frames_whose_clean_can_use_i_plus_1": 1905
+      },
+      "packaged_1471": {
+        "frames": 1471,
+        "invalidated_pixel_observations": 12322,
+        "invalidated_frames": 667,
+        "extreme_pixel_observations": 9883,
+        "extreme_frames": 597,
+        "temporal_pixel_observations": 3612,
+        "temporal_frames": 405,
+        "central_pixel_observations": 38,
+        "central_frames": 1,
+        "severe_frame_pixel_observations": 0,
+        "severe_frame_frames": 0,
+        "filled_original_missing_pixel_observations": 26212748,
+        "filled_original_missing_frames": 1471,
+        "replaced_nonzero_pixel_observations": 11931,
+        "replaced_nonzero_frames": 658,
+        "remaining_invalidated_pixel_observations": 391,
+        "remaining_invalidated_frames": 84,
+        "interior_frames_whose_clean_can_use_i_plus_1": 1469
+      }
+    }
+  },
+  "v3_upstream": {
+    "uses_human_instance_labels": true,
+    "uses_RGB": true,
+    "upstream_v2_parent_path": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2",
+    "postfill_only_original_v2_zero_cells": true,
+    "causal_GT_free_primary_eligible": false,
+    "code_evidence": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/postfill.py:42 inputs reads label_source and rgb_original, builds ids; :81 fill delegates to existing native_fill",
+    "aligned_drop_p4_equals_true_v2": "FALSE; F0 and F1858 each lose 5 valid v2 runner-up values under p4 nearest-Z winners",
+    "native_drop_postfill_then_rerasterize_equals_v2": "Observed exact native equality on six slices; use existing saved native v2 instead and avoid GT-derived postfill masks."
+  },
+  "numeric_samples": [
+    {
+      "frame": 0,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_01.h5",
+      "native_row": 0,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 59999,
+        "1": 159657,
+        "2": 10744,
+        "3": 0
+      },
+      "p4_winners": 25,
+      "p4_hiding_v2_winner": 5,
+      "p4_on_v2_hole": 20,
+      "aligned_drop_p4_depth_differences_vs_v2": 5,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/000000.npz",
+        "bytes": 1596749,
+        "sha256": "d71fe9170f30afbad2a60eb57553dd9e722a5b86d0f2107cf5b5b3cd6b0c4336"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/000000.npy",
+        "bytes": 1474688,
+        "sha256": "7cca6fb4772f970753317dd55f0bbbfc804926b629efffdcaf9ba06bc1f4dfce"
+      }
+    },
+    {
+      "frame": 351,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_01.h5",
+      "native_row": 351,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 61044,
+        "1": 149779,
+        "2": 19563,
+        "3": 14
+      },
+      "p4_winners": 0,
+      "p4_hiding_v2_winner": 0,
+      "p4_on_v2_hole": 0,
+      "aligned_drop_p4_depth_differences_vs_v2": 0,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/000351.npz",
+        "bytes": 1559077,
+        "sha256": "de4470aee670bfcb52a351877cfd3146e88bbda56aa179f12a7bfc1305e4fd53"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/000351.npy",
+        "bytes": 1474688,
+        "sha256": "f51e24900415c4ae6fd8b7b24e5848a488f1080052935425292366b6afee31f0"
+      }
+    },
+    {
+      "frame": 766,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_01.h5",
+      "native_row": 766,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 58969,
+        "1": 159330,
+        "2": 11990,
+        "3": 111
+      },
+      "p4_winners": 0,
+      "p4_hiding_v2_winner": 0,
+      "p4_on_v2_hole": 0,
+      "aligned_drop_p4_depth_differences_vs_v2": 0,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/000766.npz",
+        "bytes": 1602502,
+        "sha256": "6384fce673ed7fb73a1535f4c01f735a9708e082295999b19dcc632a55ccccf9"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/000766.npy",
+        "bytes": 1474688,
+        "sha256": "8adb5c3e49ba55b1572581532cdb43d0c67dc04442fbdab8d54acdf5a09943db"
+      }
+    },
+    {
+      "frame": 1201,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_02.h5",
+      "native_row": 301,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 59552,
+        "1": 157400,
+        "2": 13441,
+        "3": 7
+      },
+      "p4_winners": 0,
+      "p4_hiding_v2_winner": 0,
+      "p4_on_v2_hole": 0,
+      "aligned_drop_p4_depth_differences_vs_v2": 0,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/001201.npz",
+        "bytes": 1595864,
+        "sha256": "ba24aaeaa8f9876e14ac9f97045a4572b403db55be9c74c9c8c7a2a569bc33c2"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/001201.npy",
+        "bytes": 1474688,
+        "sha256": "d9861370f6463e7185509434851c171f794b657dd5b3fadd32f81a428029c789"
+      }
+    },
+    {
+      "frame": 1858,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_03.h5",
+      "native_row": 58,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 59597,
+        "1": 158932,
+        "2": 11871,
+        "3": 0
+      },
+      "p4_winners": 29,
+      "p4_hiding_v2_winner": 5,
+      "p4_on_v2_hole": 24,
+      "aligned_drop_p4_depth_differences_vs_v2": 5,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/001858.npz",
+        "bytes": 1596335,
+        "sha256": "875a59a8478cc5d722c3d383e07c89f93e3d92aae1eb62d0d9c4fc975ff23a72"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/001858.npy",
+        "bytes": 1474688,
+        "sha256": "30e01610d3c4813c9eca2c1ad39cda2cb70092c0fd476f113fa6eb2594a9d7b7"
+      }
+    },
+    {
+      "frame": 1906,
+      "native_v2_source": "E:/CAU/D-MOT/tools/depth_restoration_feeding_20260929/full_v2/depth_restored_v2_03.h5",
+      "native_row": 106,
+      "native_original_equal_current_raw": true,
+      "recorded_raw_projection_depth_and_index_equal": true,
+      "native_v3_drop_postfill_equals_v2": true,
+      "published_v3_equal_v2_outside_p4": true,
+      "provenance_counts": {
+        "0": 59658,
+        "1": 162777,
+        "2": 7965,
+        "3": 0
+      },
+      "p4_winners": 0,
+      "p4_hiding_v2_winner": 0,
+      "p4_on_v2_hole": 0,
+      "aligned_drop_p4_depth_differences_vs_v2": 0,
+      "published_npz": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_restored_rgb_640x360/001906.npz",
+        "bytes": 1607168,
+        "sha256": "d167ee0618fc93734ed6780f9ab10ee5fd4a5c534080f8196affd82786217567"
+      },
+      "raw_native": {
+        "path": "E:/CAU/D-MOT/data/AlignedFeeding_v1/depth_native_mm/001906.npy",
+        "bytes": 1474688,
+        "sha256": "3ef79272b2b24383ca37bc5dd82fc0e56776e17599a2e3bd9beab49219301afb"
+      }
+    }
+  ],
+  "source_names": {
+    "RAW_SENSOR_CURRENT": "current same-source native measurements; causal temporal qualification; physical accuracy still UNKNOWN",
+    "SAVED_NATIVE_V2_REPROJECTED_OFFLINE_RGB_FUTURE_SUPPORTED": "existing annotation-free v2 upstream code; RGB and i+1 offline support; no sensor-accuracy or online-causal claim",
+    "PUBLISHED_V3_GT_ASSISTED_POSTFILL_OFFLINE": "human-label-conditioned p4; diagnostic only",
+    "ALIGNED_V3_DROP_P4_LOSSY_DIAGNOSTIC": "not equivalent to v2 because z-buffer discards hidden v2 runner-up",
+    "NATIVE_V3_DROP_POSTFILL_REPROJECTED": "potentially exact v2 reconstruction if zero-only additions and parent binding hold, but unnecessary GT-descendant dependency when true v2 files exist"
+  },
+  "minimal_use": {
+    "selected": "Read only three true native-v2 H5 files. Bind their hash/metadata/calibration/projection code; per requested global frame read 4 native fields, construct provenance1/2/3, rasterize once to full RGB grid. Keep original/native and old caches read-only.",
+    "controller_qualification": "May trial as saved repair depth source with explicit RGB/future-supported offline diagnostic label. Candidate masks remain current frozen non-GT observations. Do not present saved-v2 branch as sensor-only or online-causal.",
+    "online_causal_equivalent": "Requires a new no-future cleaning plus inference run with its own frozen provenance; not performed or scheduled in this audit."
+  },
+  "UNKNOWN": [
+    "True metric depth at fish and missing pixels",
+    "Physical sensor error mechanism behind stored >5000mm values",
+    "Independent physical RGB-depth calibration accuracy",
+    "Online-causal model output under removal of future conditioning",
+    "Whether saved repair improves tracking; requires sealed experiment comparison"
+  ],
+  "writes": [
+    "experiments/ds7_depth_native_recovery/restored_source.py",
+    "experiments/ds7_depth_native_recovery/RESTORED_SOURCE_REVIEW.json",
+    "experiments/ds7_depth_native_recovery/RESTORED_SOURCE_REVIEW.md"
+  ],
+  "public_payload": "Only paths, SHA256, sizes, metadata/time rows, provenance counts and scalar sample statistics. No RGB/GT/raw pixel payload, coordinates, RLE, or source_index arrays."
+}

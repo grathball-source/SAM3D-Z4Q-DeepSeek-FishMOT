@@ -1,0 +1,271 @@
+{
+  "status": "PASS_SINGLE_VARIABLE_CODE_ISOLATION_WITH_LIMITS",
+  "experiment": "DS8",
+  "reviewed_at_utc": "2026-09-30T16:22:04.099696+00:00",
+  "scope": "Read-only DS7/DS8 code comparison, all four freeze records and completed 1471-frame numeric observations/predictions/events plus full access seal. No prediction/scoring/test rerun, no raw GT/RGB/depth pixel open, no frozen file modification.",
+  "outcome_assessed": false,
+  "blocking_implementation_bugs_found": [],
+  "unchanged_code_bytes": {
+    "association.py": true,
+    "controller.py": true,
+    "restored_source.py": true,
+    "launch.py": true
+  },
+  "unchanged_config_fields": {
+    "depth_weight": 0.25,
+    "minimum_depth_odds": 9,
+    "inferred_scale_floor_mm": 60,
+    "raw_scale_floor_mm": 15,
+    "history_frames": 30,
+    "fit_observations": 10,
+    "min_points": 16,
+    "min_fraction": 0.2,
+    "max_raw_scale_mm": 60,
+    "restored_fields": [
+      "native_v2.depth_mm",
+      "original_depth_mm",
+      "filled_mask",
+      "invalidated_reason"
+    ],
+    "excluded_provenance": [
+      0
+    ],
+    "inferred_policy": "Use retained-measurement cohort if usable; otherwise inferred-only cohort, never mix medians. Inferred uncertainty floor 60 mm is an assumption, not calibrated accuracy.",
+    "fallback": "Own-branch native/committed alias; no temporary H1",
+    "scope": "EXPOSED_OFFLINE_V2_REPROJECTED; no annotation assistance; upstream RGB and future cleaning"
+  },
+  "changed_variable": {
+    "roi": "Per exclusive 8-connected mask component, true L2 center-to-nearest-zero distance with zero-padded crop; select d>=max(1.5,min(3,0.5*dmax)); union every selected component.",
+    "inputs": "Current prediction mask and overlap occupancy only; no depth, reference, answer or future mask determines threshold.",
+    "metadata": "component pieces are original mask geometry, not depth surfaces; samples means geometric ROI pixels, not valid measurements.",
+    "downstream": "P1 adaptive raw and P2 adaptive retained/inferred observations feed each own DepthState and depth likelihood. Scalar aggregation, controller, geometry costs, quality gates, missing-row model and log9 are unchanged.",
+    "audit_additions": "Explicit actual_selected_mad_mm and core_mad_semantics plus ROI geometry/fact IDs do not change the inference policy."
+  },
+  "background_and_controls": {
+    "completed_observation_rows_compared": {
+      "feeding_000000_000199": 200,
+      "feeding_000351_000555": 205,
+      "feeding_000701_001060": 360,
+      "feeding_001201_001906": 706
+    },
+    "total": 1471,
+    "equal_to_DS7_fields": [
+      "frame",
+      "global_frame",
+      "time",
+      "depth_sha256",
+      "objects",
+      "full",
+      "restored_full",
+      "restored_source"
+    ],
+    "adaptive_full_equal_original_full": true,
+    "runner": "extract_frame uses original profiles and validates old n/fraction/median/MAD; original row/profiles drive triggers, masks, bank quality and 2D geometry. P0/D2 use original objects; P1 uses adaptive_raw; P2 uses restored.",
+    "four_segment_source_freezes_equal_DS7": {
+      "feeding_000000_000199": {
+        "source_manifest_sha256": true,
+        "source_list_sha256": true,
+        "derived_inputs": true,
+        "scan_sha256": true,
+        "restored_sources": true,
+        "current_metadata": true,
+        "native_depth_sources": true
+      },
+      "feeding_000351_000555": {
+        "source_manifest_sha256": true,
+        "source_list_sha256": true,
+        "derived_inputs": true,
+        "scan_sha256": true,
+        "restored_sources": true,
+        "current_metadata": true,
+        "native_depth_sources": true
+      },
+      "feeding_000701_001060": {
+        "source_manifest_sha256": true,
+        "source_list_sha256": true,
+        "derived_inputs": true,
+        "scan_sha256": true,
+        "restored_sources": true,
+        "current_metadata": true,
+        "native_depth_sources": true
+      },
+      "feeding_001201_001906": {
+        "source_manifest_sha256": true,
+        "source_list_sha256": true,
+        "derived_inputs": true,
+        "scan_sha256": true,
+        "restored_sources": true,
+        "current_metadata": true,
+        "native_depth_sources": true
+      }
+    },
+    "last_segment_observation_comparison": "COMPLETE_AFTER_SEGMENT_SEAL",
+    "all_prediction_control_comparisons": {
+      "feeding_000000_000199": {
+        "frames": 200,
+        "native_exact": 200,
+        "D2_DS7_exact": 200,
+        "P0_native_exact": 200
+      },
+      "feeding_000351_000555": {
+        "frames": 205,
+        "native_exact": 205,
+        "D2_DS7_exact": 205,
+        "P0_native_exact": 205
+      },
+      "feeding_000701_001060": {
+        "frames": 360,
+        "native_exact": 360,
+        "D2_DS7_exact": 360,
+        "P0_native_exact": 360
+      },
+      "feeding_001201_001906": {
+        "frames": 706,
+        "native_exact": 706,
+        "D2_DS7_exact": 706,
+        "P0_native_exact": 706
+      }
+    }
+  },
+  "temporal_contract": {
+    "decision_evidence": "Runner computes current-frame observations, freezes legal pre history before suspect, requires first post only at q and cutoff=q; association forecasts from frozen pre and current q measurements. Manager mask accesses are current or last group frame, not future indices.",
+    "source_reader": "RestoredDepth image arrays are indexed only by requested current global frame. All-frame H5 timestamps/index/shape metadata are loaded at initialization.",
+    "preloading": "Sources, scanner/assignments, time metadata and source hashes cover the full selected segment before replay. This is not a claim of zero future file bytes read.",
+    "restored_boundary": "Unchanged existing v2 used upstream RGB and future cleaning. Direct reader behavior does not establish causal online equivalence.",
+    "actual_sealed_event_checks": {
+      "q_checks": 75,
+      "frozen_samples_before_suspect_checked": 728,
+      "current_q_first_posts_checked": true
+    }
+  },
+  "inferred_mad_contract": {
+    "actual": "cohorts.inferred.mad and actual_selected_mad_mm retain actual median absolute deviation.",
+    "effective": "For selected inferred only, core.mad=max(actualMAD,60/1.4826) adapts the old estimator to an assumed single-observation sigma floor 60mm; retained and inferred median cohorts are not mixed.",
+    "qualification": "Eligibility still uses pre-inflation actual cohort statistics and old 16/.2/60 rule. Empty/invalid measurements remain unavailable.",
+    "uncertainty_limit": "The sigma is assumed, not calibrated accuracy. WLS can reduce fitted forecast uncertainty; provenance/sample correlation is not calibrated. UNKNOWN surface identity and no physical-mm GT remain."
+  },
+  "freezing": {
+    "project_code_items_per_segment": 56,
+    "all_four_code_dicts_equal": true,
+    "current_code_hash_checks": 224,
+    "project_execution_and_scorer_coverage": "Current runner, preparation, launch, controller, association, measurement, adaptive core, scorer, event audit/checks, old depth/state/manager/Bridge, legacy official helpers and DS1 postseal are frozen.",
+    "external_projection_code": "Geometry and aligned projection sources are separately in restored_sources artifact seals.",
+    "dependency_scope": "ROOT-external library implementations are not all individually file-hashed in code_sha256. ENVIRONMENT records Python, NumPy/OpenCV/h5py/SciPy versions; do not claim complete binary/environment byte sealing.",
+    "score_gate": "Actual evaluate/event_audit/score_checks paths required, no nonexistent build_evaluation. Gate checks all prediction/source/code seals and access audit before direct label opens, then native/D2/P0 equivalence and history/first-public bindings.",
+    "v3_guard_detail": "Frozen launch forbids restoration/v3/ and recorded slice audit includes it; REQUIRED_ACCESS_TOKENS omits this particular token, so the scorer does not independently require that token in the submitted audit. Current frozen guard is unchanged and this is a validation-scope limitation, not an observed v3 read."
+  },
+  "recorded_preflight_only": {
+    "ADAPTIVE_CHECKS.json": {
+      "status": "PASS",
+      "tests": 10,
+      "actual_exit_code": 0,
+      "elapsed_seconds": 0.103,
+      "source": "adaptive_tests.py local unittest execution",
+      "gt_read": false,
+      "new_model_http": 0
+    },
+    "MEASUREMENT_CHECKS.json": {
+      "status": "PASS",
+      "checks": 5,
+      "cases": [
+        "actual raw median",
+        "retained exact",
+        "inferred actual MAD vs noise proxy",
+        "no provenance UNKNOWN",
+        "NaN UNKNOWN"
+      ]
+    },
+    "CONTROLLER_CHECKS.json": {
+      "status": "PASS",
+      "tests": 13,
+      "assertions": [
+        "__main__.ControllerTests.test_continuous_swap_is_real_change_not_nochange",
+        "__main__.ControllerTests.test_fallback_keeps_outside_committed_alias",
+        "__main__.ControllerTests.test_invalid_stage_is_atomic_and_fallback_is_own_causal_state",
+        "__main__.ControllerTests.test_low_quality_co_visible_native_keeps_incumbent_alias_and_mask",
+        "__main__.ControllerTests.test_member_alias_qualified_native_return_uses_full_legal_lifecycle",
+        "__main__.ControllerTests.test_new_group_carrier_does_not_borrow_member_public",
+        "__main__.ControllerTests.test_no_event_native_equivalence_and_all_masks",
+        "__main__.ControllerTests.test_occupied_outside_native_target_is_rejected_atomically",
+        "__main__.ControllerTests.test_preview_is_pure_and_frozen_keys_keep_separate_domains",
+        "__main__.ControllerTests.test_q_preview_is_lawful_then_h2_first_publish_once",
+        "__main__.ControllerTests.test_real_manager_protects_banks_and_noaction_matches_native",
+        "__main__.ControllerTests.test_stale_stage_and_fallback_rejected",
+        "__main__.ControllerTests.test_true_nochange_is_separate_from_new_source_publication"
+      ],
+      "elapsed_seconds": 0.033686500042676926,
+      "real_controller_functions": true,
+      "synthetic_observations": true,
+      "old_files_changed": false,
+      "new_tracker_performance_run": false,
+      "gt_or_rgb_read": false,
+      "new_model_http": 0,
+      "native_math_threads": 1,
+      "opencv_threads": 1,
+      "modules": {
+        "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\controller.py": "9862e0e17a7cf9708ec964552291d8b1de9e84d97558317d2dd4619f96653cdb",
+        "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\controller_tests.py": "1ea0eb7e0e7bb53c71c6708f8d8c5c4aab61cebaf868dabd43417d86787452cc"
+      },
+      "provenance_note": "New accepted transaction provenance is DS7_DEPTH_NUMERIC; inherited old sources remain unchanged.",
+      "interpretation": "Engineering invariants only; no proof of correct depth-surface identity or tracking benefit."
+    },
+    "SCORE_CHECKS.json": {
+      "status": "PASS",
+      "tests": 5,
+      "scope": "synthetic memory fixtures only; no dataset reference access or GT scoring",
+      "failures": 0,
+      "errors": 0,
+      "new_model_http": 0,
+      "code_sha256": {
+        "evaluate.py": "6ce9fda8ce6b30606d59501adeee7504f9131c3b13f0c472a6f25c2b800c4af7",
+        "event_audit.py": "2de8ab851442b5125f22e058c304010d73270470910d24c6a3bc3c83e469a5cf",
+        "score_checks.py": "5c19ffe0e823b728878fc4fe2319e6c3da4f62f835e3f3f27ca39c73d3c5bfa0"
+      }
+    },
+    "REAL_INPUT_CHECKS.json": {
+      "status": "PASS_SOURCE_REUSE",
+      "raw_masks_scanner_and_v2_sources": "DS7 source seals unchanged; runtime revalidates actual bytes",
+      "first_q_selection": "earliest actual automatic event, no GT",
+      "reference_scope": "OFFLINE_EXPOSED_V2_FUTURE_RGB_SUPPORTED",
+      "new_http": 0
+    }
+  },
+  "reporting_limits": [
+    "Changing to L2 threshold>=3 also changes broad/irregular ROI boundary pixels compared with old 7x7 square erosion; the intervention is an ROI rule across all source masks, not only a handpicked thin-fish repair.",
+    "Union core statistics still pool mask components into one scalar median; geometric components do not certify physical fish surfaces.",
+    "Legacy q_qualified_piece_count may be null and q_piece_references empty because adaptive ROI pieces live under roi_geometry and are not qualified depth-surface pieces.",
+    "Inherited DS7_DEPTH_NUMERIC provenance label in controller identifies the reused mechanism, not the trial version; source/read/arm/segment facts identify actual DS8.",
+    "Raw native support, offline P2 native support and P2-vs-raw increment are separate score_support_layers. Failure of the strict P2 increment rule does not erase a separately observed raw or offline native comparison.",
+    "Recorded synthetic PASS and first-three-segment invariants establish engineering checks only. No tracking gain or surface/physical accuracy conclusion is drawn here."
+  ],
+  "full_seal_snapshot": {
+    "all_predictions_sealed_present": true,
+    "access_sealed_present": true,
+    "final_full_gate": "Official evaluator VERIFICATION is separately present; this review independently verifies output/control/background/event timing and access seals, and does not invoke scoring.",
+    "independently_checked_prediction_artifacts": true,
+    "independently_checked_full_access_binding": true,
+    "actual_v3_forbidden_token_present": true,
+    "all_predictions_seal_sha256": "52909ad9821b9ed5ff0b918648196174677455d2372b782af4f42c79330f0658",
+    "access_seal_sha256": "62f2f47cfb1714d0dfbec98f00403bab7adeaff3a365d70f612bcac36fb3f5e6"
+  },
+  "inspected_code_sha256": {
+    "adaptive_core.py": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b",
+    "measurement.py": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861",
+    "runner.py": "19d18a8e7fae829e0f5aecbd170f072d35ffeaa186288a557ee49684602af29f",
+    "association.py": "91dc482d314bd8c99ef58d86bba9431c5b3d0d80d59b390011f2711bd44e65e2",
+    "controller.py": "9862e0e17a7cf9708ec964552291d8b1de9e84d97558317d2dd4619f96653cdb",
+    "restored_source.py": "384bf38e3c5d8671ae2b888e4dd66319bbcc5804c1e09c81eecec7a22a681937",
+    "launch.py": "d64e7910cd56b3a8c72325dbd59c4866b12f591e96b7ec568b97e8e08166404c",
+    "evaluate.py": "6ce9fda8ce6b30606d59501adeee7504f9131c3b13f0c472a6f25c2b800c4af7",
+    "event_audit.py": "2de8ab851442b5125f22e058c304010d73270470910d24c6a3bc3c83e469a5cf",
+    "score_checks.py": "5c19ffe0e823b728878fc4fe2319e6c3da4f62f835e3f3f27ca39c73d3c5bfa0",
+    "CONFIG.json": "5315a1667c0e877dfefd67606733d01dd03d3998c4367411fe8ca780da2e1b7a",
+    "PLAN.md": "9a54c847eacc50bab17b50dadeb190670b0fe13d46fb836b734910cb1e35b60e"
+  },
+  "new_model_http": 0,
+  "new_replays": 0,
+  "new_scoring_runs": 0,
+  "new_tests_run": 0,
+  "new_gt_label_opens": 0,
+  "full_seal_amendment_at_utc": "2026-09-30T16:24:42.784642+00:00"
+}

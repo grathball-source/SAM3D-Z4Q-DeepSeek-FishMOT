@@ -1,0 +1,92 @@
+{
+  "entries": [
+    {
+      "step": "preflight",
+      "exit_code": 0,
+      "old_byte_locks": 456
+    },
+    {
+      "step": "unit_fixture_attempt1",
+      "exit_code": 1,
+      "reason": "inferred-only fixture mistakenly kept two physical depths; quality gate correctly rejected it; fixture changed to one uniform inferred cohort"
+    },
+    {
+      "step": "unit_fixture_attempt2",
+      "exit_code": 1,
+      "reason": "synthetic post fixture lacked mandatory frame field; supplied frame=2"
+    },
+    {
+      "step": "runner_import_attempt1",
+      "exit_code": 1,
+      "reason": "generated CODE list referenced DS6 missing from explicit common import; fixed before any prediction output"
+    },
+    {
+      "step": "unit_checks",
+      "exit_code": 0,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\UNIT_CHECKS.json",
+        "bytes": 255,
+        "sha256": "4baa29be35348135415934832a64c142d90231a8ce4c2af3ba94876e1c7e8ab7"
+      }
+    },
+    {
+      "step": "controller_checks",
+      "exit_code": 0,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\CONTROLLER_CHECKS.json",
+        "bytes": 2074,
+        "sha256": "ad75f72fc490df53136c2134becaf702b50eb31ddf4dff557d6d6bba284bd8b4"
+      }
+    },
+    {
+      "step": "score_checks",
+      "exit_code": 0,
+      "result": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\SCORE_CHECKS.json",
+        "bytes": 566,
+        "sha256": "3fea1115623cf98befd042d873241139fd197720f859b45d6ef06e34575a1f33"
+      }
+    },
+    {
+      "step": "slice",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\SLICE_LOG.txt",
+        "bytes": 253,
+        "sha256": "46d74c5be3afb6ecbce0913e4b52228f71fe514f8218e2dc03e2f9e8715f0ba0"
+      }
+    },
+    {
+      "step": "full",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\FULL_LOG.txt",
+        "bytes": 1482,
+        "sha256": "a1428e701ca35bcabd0cc6fd7ea8da74e471bf603ff9c53642134374fc93805a"
+      }
+    },
+    {
+      "step": "score",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\SCORE_LOG.txt",
+        "bytes": 2091,
+        "sha256": "ffaf5c09bb3781451c5e793d97e2e8e1c9993306bdc23d569da1b3d5fa237e6c"
+      }
+    },
+    {
+      "step": "report",
+      "exit_code": 0,
+      "log": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds7_depth_native_recovery\\REPORT_LOG.txt",
+        "bytes": 356,
+        "sha256": "6e4de5187e70edcc19031b8f11c13dce5ad4217d8dd66481a3509dc5e3e8d951"
+      }
+    }
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "UTC": "2026-09-30T16:11:42.858168+00:00",
+  "predictions_sealed_before_reference_scoring": true,
+  "no_semantic_tuning_after_full_freeze": true
+}

@@ -1,0 +1,1961 @@
+{
+  "status": "FROZEN_BEFORE_PREDICTION",
+  "segment": "feeding_000701_001060",
+  "original_frames": [
+    701,
+    1060
+  ],
+  "frames": 360,
+  "code_sha256": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\runner.py": "19d18a8e7fae829e0f5aecbd170f072d35ffeaa186288a557ee49684602af29f",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\MEASUREMENT_CHECKS.json": "b614f440bde6bbe10d8bd35676bd5e9ea47ae0180cd0dbf1460ab55109b545eb",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\score_checks.py": "5c19ffe0e823b728878fc4fe2319e6c3da4f62f835e3f3f27ca39c73d3c5bfa0",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\event_audit.py": "2de8ab851442b5125f22e058c304010d73270470910d24c6a3bc3c83e469a5cf",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\evaluate.py": "c962c56f058c3541d58b461d6b463a31420bb5cf9c6f0177c67614636bf4b697",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py": "fd2e5aa648281a590c00737d90dd8099af09c8fbdd133c768a5104b965b5afb4",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py": "73ab21fdb0cad0986c967cfc5d56f5174451ee90111c27324afee4b9fae976fc",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\PLAN.md": "9a54c847eacc50bab17b50dadeb190670b0fe13d46fb836b734910cb1e35b60e",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\prepare_trial.py": "1bb722f29ca3c6433cad4ea14647751e1bbce56c615f06fd80c7cf84502cf624",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\runner.py": "85254b97daa3c602b0a2292197d2a9eeeb145fba3202625f12e51a6f48b0c581",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\adaptive_tests.py": "4a697ef772b7c982157f69b52a5d25e400fb3126da496dada3ac7c9ee9d0241c",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py": "233f180ff8a6a14f43a0e133606281644f0257b4a4d303794ac007df84d563b6",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_measurement.py": "6269c807b0c361fecc5e35061193d82754a5af067ebf3d7999637af16000787e",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_identity_balance_20260917\\controller.py": "cd47bec3c3726a1a34b7af76be07fc7d20d4c2c049bd7822fab0ef5dd36a3b09",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan_v4.py": "b04ce22afe1117eb775b2b5b42637a5ea5d6d55ecac9d8e9f709a89307afb6b9",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\postseal.py": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\score.py": "7a596967f82980d2ea2f8a487cab7af7101a5f85d646ca3eba4f08b07588da02",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z2.py": "ca82363da166aaad2b601255bcd5d15608dcebe0e80506f27c70d45410259c26",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\prepare.py": "50b35914abc8681a10717d5077bcce3af4a05a7d73fc91ec58148ee0d987f877",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ne1_native_first_event_association\\score.py": "3930ae7bd34914f555c05f92b3b44ae99e62d945e437fc41abb257fe61081fd6",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\launch.py": "d64e7910cd56b3a8c72325dbd59c4866b12f591e96b7ec568b97e8e08166404c",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\REAL_INPUT_CHECKS.json": "302174ff042478089539d94801859f86709ec074068247cc751aa2e6eb4d5402",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\README.md": "d5f29ef36175780c1552be4f09f508e9784eb01c98e34df7b1746d161a2287fd",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\CONFIG.json": "5315a1667c0e877dfefd67606733d01dd03d3998c4367411fe8ca780da2e1b7a",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\controller.py": "9862e0e17a7cf9708ec964552291d8b1de9e84d97558317d2dd4619f96653cdb",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\ENVIRONMENT.json": "f888239f614aed4793e32aae6b7e1eba593769648425f9dc7c49b2261d4d542e",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ne1_native_first_event_association\\ne_controller.py": "454c8adc565c8f22a4e83985d25119aeb3f4b253a5fe990ee6db7d8869a96c9c",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_d1.py": "62df18fae499b56fc7a117b6cd00fc7e8aac079f71d586ad4f028529a7b0f298",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py": "f199d1d78b653bfdbd46b6575da4c6d77e79f1b8fc89463d929843e4ba79950b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\SCORE_CHECKS.json": "e6ef8aa62c656e6e8f34ac5d327807b9e4fb2ebb04741b1a630f5414011abcae",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z4.py": "3e2f9ce1b00cc90136d987037bbffe5d6e5964382a9f67b763b7b1ed075a731a",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds6_multifragment_depth_tracking\\event_audit.py": "42aafcd2342f8844a62137d596d0e8c9b73d45b7de3d47643caf6e0eda3a8ffb",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\CONFIG_V7.json": "5c833377646c90e56a40088b1093b0616a8d0b13f61f7d3f75c2f7afaeb67dbc",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\ADAPTIVE_CHECKS.json": "8f388cc0d87c2d4553bdeeea772e1127318b91620b2bd0086da63ef79548112d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\measurement_tests.py": "d655035ec25463a4d3209a4811778ccbad225128300928885f613be41a80fe92",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\CONFIG.json": "8d59907c8869717320820d5169c1e64d2398246de8da06c162e7e68013019d54",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z3.py": "ccf845bc455d0c67200a19e214c4c0c4da9d6458c054f1504b3e99444033c4cd",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\OLD_READONLY_LOCK.json": "86e74ac2086974a6d53d1ec9ba2a50e993ddc1945854f3fecf12fec20bf5ef9d",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\evaluate.py": "6ce9fda8ce6b30606d59501adeee7504f9131c3b13f0c472a6f25c2b800c4af7",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py": "ec1c50d2b948968ebbe77913ddcfe323bed1e84b346ca49fdd44e4dd70a11562",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\CONTROLLER_CHECKS.json": "b2e276a14153e3882757625d97021bea4fe30dd6daf5d06dd86b545e586a22b5",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\controller_tests.py": "1ea0eb7e0e7bb53c71c6708f8d8c5c4aab61cebaf868dabd43417d86787452cc",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_return.py": "384bddcc35746cddb7249e5e56a2260212308afd555ee0cbd7a965d49da67818",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\measurement.py": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\adaptive_core.py": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\common.py": "ec75c98b792ec873097f039309b602300c95050e622fdb96591ab72f80c42caf",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\mask_geometry.py": "ed732fc4433f2c4ab55d7b0f6ca8c3ce6ec837b1fa3e09ac6b36520dfe511a14",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\association.py": "91dc482d314bd8c99ef58d86bba9431c5b3d0d80d59b390011f2711bd44e65e2",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_score.py": "c3ba489e5cac03fc7fcf33b1ebbd2599e8b6ccbb24482516961d91e5b4748199",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\restored_source.py": "384bf38e3c5d8671ae2b888e4dd66319bbcc5804c1e09c81eecec7a22a681937",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan.py": "1a6dfa6e91799b8d422f69ae2572b147db3cde62b807c90de2115ba02d68b5e2"
+  },
+  "source_manifest_sha256": "68075071845ad8d6ce2358ed53c9f30700ec5fd11b91d1103f7cd571011aac48",
+  "source_list_sha256": "3d030eb556701e051122c0f040213633996e20db7809a54de80001ddd1b4b556",
+  "derived_inputs": {
+    "observations": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\observations.jsonl.gz",
+      "bytes": 511143,
+      "sha256": "d437456767cb52b792b377066cc59030621571a76f6d0087293217d11a455382"
+    },
+    "profiles": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\profiles.jsonl.gz",
+      "bytes": 1253705,
+      "sha256": "7946b81b25918c8bbca8f2b118a29e76e7444021a71d20b91c7cceb972cfcf07"
+    },
+    "assignments": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\assignments.jsonl.gz",
+      "bytes": 478869,
+      "sha256": "76c037a39e116fd808d242a6c69b45d4ddc8dd58c268f0e4303437c7ab206b68"
+    }
+  },
+  "scan_sha256": "7277ccf3c2a0bd8ee0570f6df2df45cdf5ed9bb9ecba0d2416b4173d976cc39c",
+  "no_gt_before_seal": true,
+  "sensor_fields": [
+    "depth_mm",
+    "source_index",
+    "v2_h5_current_depth_mm",
+    "filled_mask",
+    "invalidated_reason",
+    "original_depth_mm"
+  ],
+  "restored_sources": {
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_01.h5": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_01.h5",
+      "bytes": 454302078,
+      "sha256": "1476b8e7ab97ebea085e91cc9c1331a5daa54ec4c1084f7a12c4170cb620fd52"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_02.h5": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_02.h5",
+      "bytes": 447218898,
+      "sha256": "63c48b95d5eb01e44baf48b23cd3abf043cd2abe61682d2e7d6000d6d105bf38"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_03.h5": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_03.h5",
+      "bytes": 52394247,
+      "sha256": "571ab176bb33a45480fd2e0a55de7717390728e48a1ccdf92e401c506185a92e"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\run_config.json": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\run_config.json",
+      "bytes": 405797,
+      "sha256": "62fb8250301899d42b1f00382b412d29110e89dc193cfd6cad60abe15c9332a7"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\verification.json": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\verification.json",
+      "bytes": 881,
+      "sha256": "e23b3a65171f16526bdb09df45e1ea5933b639c8b92a6274406f5e06fe5e255a"
+    },
+    "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    },
+    "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl",
+      "bytes": 1478966,
+      "sha256": "f3ee6ce88594dbea4711b18919917b2c510abbd4a1d4896a7066c5360d33d944"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration\\geometry.py": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+    },
+    "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py": {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+    }
+  },
+  "restored_scope": "NO_ANNOTATION_V2_OFFLINE_RGB_FUTURE_SUPPORTED",
+  "new_model_http": 0,
+  "model_cost_usd": 0,
+  "current_metadata": {
+    "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl",
+      "bytes": 1478966,
+      "sha256": "f3ee6ce88594dbea4711b18919917b2c510abbd4a1d4896a7066c5360d33d944"
+    },
+    "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    }
+  },
+  "native_depth_sources": [
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000701.npy",
+      "bytes": 1474688,
+      "sha256": "c7205c14af26b5d18384fa87d8c3bba1257f8f08bb7dcb2a994cadfbb1e5136a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000702.npy",
+      "bytes": 1474688,
+      "sha256": "1aac4a6ace14ec6edac64ca085f585e5c78dad1c0b6854b2bbfe691957762088"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000703.npy",
+      "bytes": 1474688,
+      "sha256": "9c76ff5c181314cd6f8adb06a29db8c27d7545c5c86d2dba3c94163a5fb6b1c2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000704.npy",
+      "bytes": 1474688,
+      "sha256": "1888bf797dde7aa61a2049f10f7db1b6fb2ceebc78d3da1899ec83744dc8be18"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000705.npy",
+      "bytes": 1474688,
+      "sha256": "f32c5489eaa5cf8446fa9a9c01b7698939082f42a3ef7a6094388268f7aa6ee9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000706.npy",
+      "bytes": 1474688,
+      "sha256": "ce5d006ca0d9f557708f64da127e0f3ecfbdd50054dad734fe5a5eabe5fea401"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000707.npy",
+      "bytes": 1474688,
+      "sha256": "352303d4636b09c52b57d8e1cc5406cf54ef654ded726d163a3ce7c6747198c5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000708.npy",
+      "bytes": 1474688,
+      "sha256": "ad8e0e51167e23898a69a6bf07453f3f9fce2c81c520c617f5794aae2d56c482"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000709.npy",
+      "bytes": 1474688,
+      "sha256": "d8ad7c7e75bb5a3f800f3c0b596a58d3812404fa06150a18d2a58deb3ae61e7e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000710.npy",
+      "bytes": 1474688,
+      "sha256": "a02cdde42a27cd180f39281b82f709c6c0c4beb5cdc7678f84f2e293a618cf46"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000711.npy",
+      "bytes": 1474688,
+      "sha256": "2ffbc2aca979b6542e641b27cda6eeeefc3944ebc30809d45957003bf81c11be"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000712.npy",
+      "bytes": 1474688,
+      "sha256": "a7fd3f28392e78b8350ef8747295b8b8df204b79b9d5d53fafe0f4de063678a3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000713.npy",
+      "bytes": 1474688,
+      "sha256": "caa9798c177f7281c78ad64e960b1296f1b78800d557529d8354e4db8b4f297d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000714.npy",
+      "bytes": 1474688,
+      "sha256": "08af536e69cbcc9ba185efd02688d6a5944490175c61b00cee9c0ba21776f60d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000715.npy",
+      "bytes": 1474688,
+      "sha256": "9f58281dc02b8e34b4ef1275b7e1fa8e6fba8ce7082ba41e4cdf1042ad7b6d21"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000716.npy",
+      "bytes": 1474688,
+      "sha256": "274ceb9e9f910031b778e9d3e8120294abcd0af0d1ab7bbc9f5d3db4a29bda9d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000717.npy",
+      "bytes": 1474688,
+      "sha256": "93d6c6941db881652d1105f6ff059c8384296ef2f18dc74a42cfef0b5e96d5d2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000718.npy",
+      "bytes": 1474688,
+      "sha256": "1280af78a85628ba733919b3e30e750d84595378d16e788e7ef86541eb9a7fa3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000719.npy",
+      "bytes": 1474688,
+      "sha256": "0e73c487a619bf829f773d22e4ad0ec0066d43b2807b625ab42bc58bf21439fc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000720.npy",
+      "bytes": 1474688,
+      "sha256": "989d99f736ccc12e19b58bbe78efdbe68fe969d8bcfdfde19e470f24a85f8ac3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000721.npy",
+      "bytes": 1474688,
+      "sha256": "88aad057b6e0ca40fda61b037e7618c208f1d50408bbaac5b9e7a4d058a65caf"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000722.npy",
+      "bytes": 1474688,
+      "sha256": "d892bb2c352247ceef3b13374249aeb1ca8c189d3c97a98ed578974039bdb5c1"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000723.npy",
+      "bytes": 1474688,
+      "sha256": "41da3992620fa72eeb435eaaa75e6ef341a1e3f6a3366091aba345a16a386d55"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000724.npy",
+      "bytes": 1474688,
+      "sha256": "a8c6341910eac3a70320935bf81250c82982106f421159574df29d4986cd8af4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000725.npy",
+      "bytes": 1474688,
+      "sha256": "38502ae873bfaa8b910f013b6f97d46fa6b0279eeb58a2ac0673aec13e6dc74b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000726.npy",
+      "bytes": 1474688,
+      "sha256": "0b38565f6ae62df01abfe60b80bee195697846ab06557bc9fc8f31f142e4217f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000727.npy",
+      "bytes": 1474688,
+      "sha256": "ae04b647cd43219a5fa531f7178614df9ba3f66d6784c14081d13ef011155b9b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000728.npy",
+      "bytes": 1474688,
+      "sha256": "f53f4e143955955bf93e34f47e009b1cc266347daef5c8cb727194c7678541e9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000729.npy",
+      "bytes": 1474688,
+      "sha256": "a5715cf210a5902b555a6db11ecaeae041fc21416d4216192ebaa734e6f742b3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000730.npy",
+      "bytes": 1474688,
+      "sha256": "932f3059ed0d2ac91f957a44a9b3fa9b3b1d3a3a46e6ca6fd8a69b6d8e301bcc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000731.npy",
+      "bytes": 1474688,
+      "sha256": "da52e1b989ad48b623eaa82b755b471d55821aeaeae28f68a09e9e7d461ae9ab"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000732.npy",
+      "bytes": 1474688,
+      "sha256": "4167ee0ab21869443eb45e58d266a5f5b9d8a30767b591c835386c60617d5724"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000733.npy",
+      "bytes": 1474688,
+      "sha256": "9ff3981454d10bba4ad5bfb7ecb35fc58de8a2b79469e40ab7bf4692dd9206bc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000734.npy",
+      "bytes": 1474688,
+      "sha256": "615cfab43bf3add78bcdc4659485abaf8877b47dd6249f4551e1ad0dae2479fb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000735.npy",
+      "bytes": 1474688,
+      "sha256": "19b67968c05b04bf6196cf12b787dff2f0f1818c12d47e4ccc792a2e11d5cb81"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000736.npy",
+      "bytes": 1474688,
+      "sha256": "d344fb2dcb1b03dd06f1e8889c1cf7f11b788ac6d1744c0e70a14ad535c73d40"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000737.npy",
+      "bytes": 1474688,
+      "sha256": "fb6b8e7f0978419117134243bf052b3ab9da4879e1d160a2fa395436bbf00620"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000738.npy",
+      "bytes": 1474688,
+      "sha256": "a52f9a773e6351686aa39133fbebab40dbcddaa9b2a2e035ea7d27411c9b41f0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000739.npy",
+      "bytes": 1474688,
+      "sha256": "2019b4e277381adb07ee2be53410ef79a5b13d424817cea9c118af4583ec6591"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000740.npy",
+      "bytes": 1474688,
+      "sha256": "78acb481020f93ce3460df65595787cdb64b18056b92b55b6d53ad0c0f5efaac"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000741.npy",
+      "bytes": 1474688,
+      "sha256": "a59ef91766952125f16e350aff755000ed1b52bd895751c5ea3362f3e9153a6c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000742.npy",
+      "bytes": 1474688,
+      "sha256": "d3a9a862f3b87412089d331a0e32cabc37999fa2491d863ccfa804b21c488366"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000743.npy",
+      "bytes": 1474688,
+      "sha256": "3e04dfac2ddf5e388254df358ba1157cf2270c3ca0f3c9a404f1e1f9ea45b0ff"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000744.npy",
+      "bytes": 1474688,
+      "sha256": "404ab9e5840ea87a1a02bed484dc8edb3d3b8d7ca0960a57656f0c7b651573d6"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000745.npy",
+      "bytes": 1474688,
+      "sha256": "0c5a3ae6d30385ac27fed3ab4df15eb37b1f92df3a70a508dbc3b4eaa529e6d4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000746.npy",
+      "bytes": 1474688,
+      "sha256": "7778d75fbd5b05b27b68bec181d664fea48895465f291117b4422a9b797215b5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000747.npy",
+      "bytes": 1474688,
+      "sha256": "295fc15c60fefb252fa9173976c07a6a118dd77073eccfdc8a8e9bd10199cb56"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000748.npy",
+      "bytes": 1474688,
+      "sha256": "6e85a12e796758fd0ffcb948f649779d3f6b4d435adcc1ca0ea0428ac14b3cb5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000749.npy",
+      "bytes": 1474688,
+      "sha256": "f6aafa736f5b134cbd72c5e040c4410e85d09d0a4afa3929aea7559d407ed812"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000750.npy",
+      "bytes": 1474688,
+      "sha256": "89245abd78179f7544f85e3edfc6c852e1ef5f53583357f171a88c9654773b88"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000751.npy",
+      "bytes": 1474688,
+      "sha256": "e4952b3ac8d6a78dbd67be712e3ffd06ec394cd58a5d80b8404c4be86509ccb1"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000752.npy",
+      "bytes": 1474688,
+      "sha256": "2c5f9bdffc0943f2ba7662053ede8313b2c2f98a42445e3f9bde532cab9d4bee"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000753.npy",
+      "bytes": 1474688,
+      "sha256": "1e80cd51960a0524c0133d641925dc69a28e47276e8f56b9a4f0e8392a36f071"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000754.npy",
+      "bytes": 1474688,
+      "sha256": "b8054a283e7389ea3886f3f054d19806bd4bb88d9a21b04d5a05468e96a7f072"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000755.npy",
+      "bytes": 1474688,
+      "sha256": "421b07224fd84bedb84249b709f7bfe05fc71a92c6799892501154fd2fcc3029"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000756.npy",
+      "bytes": 1474688,
+      "sha256": "e3be6b79c1e15cbd5c0af7288519d86da12bf6f8273927b1b411a619b2533036"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000757.npy",
+      "bytes": 1474688,
+      "sha256": "c2efb56e318f2cd31bada86160585124a7c3f230b01baed7374c6cedd3f17f80"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000758.npy",
+      "bytes": 1474688,
+      "sha256": "277c15e57d7e599ef4af68ad61aaeed381334c269be2e2a5540f8c5203af0790"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000759.npy",
+      "bytes": 1474688,
+      "sha256": "b79c2ccd9634dea1f8d603c1a3e4f3adc16bab839a4da678356d7dec39ab7bf5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000760.npy",
+      "bytes": 1474688,
+      "sha256": "b15f10b1282f4dc6a563a838a3ab443dd0e79757ef2297958fc90b68060fb830"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000761.npy",
+      "bytes": 1474688,
+      "sha256": "499c77322a536fd3e1c2ecc004f5a5a54f6615dfe616fe1d497867126c272d96"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000762.npy",
+      "bytes": 1474688,
+      "sha256": "381eec54ec2abc96704ef633627ff4523a3843706b54b6d68990cd6c2df9b320"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000763.npy",
+      "bytes": 1474688,
+      "sha256": "df217851badc5c51bf459e0cf81e6465de9d3cd976b6688ffdb070f66fc0fcbf"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000764.npy",
+      "bytes": 1474688,
+      "sha256": "53e7ed6a5e01fbcb214970b9393c38a18bb765cbdaf17c4ea347f2b59dde2282"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000765.npy",
+      "bytes": 1474688,
+      "sha256": "5481e36c88e6363ed0f57e7307d75f267f8114cdedc50558f48dfe4af3d7dd2d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000766.npy",
+      "bytes": 1474688,
+      "sha256": "8adb5c3e49ba55b1572581532cdb43d0c67dc04442fbdab8d54acdf5a09943db"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000767.npy",
+      "bytes": 1474688,
+      "sha256": "bbd7fbe984b5d06bf360fb66fb5fbd2699c4e58ce4b1deea9b51be7377faf8af"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000768.npy",
+      "bytes": 1474688,
+      "sha256": "a226eaa6f9ff0cf256e2b90e6c415cb239d17c0ac13b0adb6c726116efaf70fd"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000769.npy",
+      "bytes": 1474688,
+      "sha256": "94803a9b17579418a3f8739392e551c5b42ff05b4cdade998aba60f1ca9f5881"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000770.npy",
+      "bytes": 1474688,
+      "sha256": "dacd27f20b6e0a16a560cf61a7142d04a4dcb2166eeeff3d4b1ef087d5705a36"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000771.npy",
+      "bytes": 1474688,
+      "sha256": "bc356ebf6dd51928e08a743c6cdcea7b8863bb8c9dfa712c1d5f210b2b2c4eac"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000772.npy",
+      "bytes": 1474688,
+      "sha256": "6a2018e7834a3d41a0f92786e08230ff6b5b7bbba6636ae97bd142a748c4025d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000773.npy",
+      "bytes": 1474688,
+      "sha256": "c8459deb15a36b0e567526984298b8a861003e972f6953773c561203f0e7e735"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000774.npy",
+      "bytes": 1474688,
+      "sha256": "9fb699c25f9df69dda3cc915fee91d900194d4a2796b97d87a4432284202e5e9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000775.npy",
+      "bytes": 1474688,
+      "sha256": "e3b676364f00b9fda2b4fba40a48cc9d7fbb290074f823b45ff25efe3380c1ea"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000776.npy",
+      "bytes": 1474688,
+      "sha256": "000a357308dc9c8f73301db7b9e1b19134e458f1078202b0bb06a02ffcf8b7e8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000777.npy",
+      "bytes": 1474688,
+      "sha256": "8e453a7edc86eccb8ba22a07d08be57bc1551155f3b3463ac61c9762f5e9703b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000778.npy",
+      "bytes": 1474688,
+      "sha256": "563cbb76641429eea730036206373564752bf1a13538e45a9a9e1b00afd00319"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000779.npy",
+      "bytes": 1474688,
+      "sha256": "0d13d0492de87c3a5a534e2da2cd119c8905eddc6a4b6c7cd4fbdaf83fe78d82"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000780.npy",
+      "bytes": 1474688,
+      "sha256": "1e307b3f829c866895d2b893a745c981f35a1b7ae8776ab09057891202190351"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000781.npy",
+      "bytes": 1474688,
+      "sha256": "8b79d77358f7b7a682b53a8447f34b9d16527c37ac1c35b94a17435bbb1a4a31"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000782.npy",
+      "bytes": 1474688,
+      "sha256": "914b9793c638d642ffd58209be1805327e0de5044e672b9aa25cc07e270cbf2b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000783.npy",
+      "bytes": 1474688,
+      "sha256": "fb79110ecde99624067269e0a74bcdfb011369eec458385b48001086530716e0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000784.npy",
+      "bytes": 1474688,
+      "sha256": "74349297fa25b1e784988d171bf1ec4540fc67e370e80fed21efba7d28f97dfb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000785.npy",
+      "bytes": 1474688,
+      "sha256": "dc403c14fa3d3fec5e229e1c3d16c874c9c7832d5092bf5dfed6782413acfa17"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000786.npy",
+      "bytes": 1474688,
+      "sha256": "a90b223b82aba1a55527aa4943d6ed3a4123e7955ab0f606eafd13bd1f6bd6cf"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000787.npy",
+      "bytes": 1474688,
+      "sha256": "5b05214fc396a77a409ed4821aa66de0815d72597ce1d8db8f1b716897d3873f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000788.npy",
+      "bytes": 1474688,
+      "sha256": "fb190f6c73c69cfff2859ef31108750c9851632694216d11886b58cd920c8c1f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000789.npy",
+      "bytes": 1474688,
+      "sha256": "ada269b49a2db9754042c5058dc6715453ce658f22e31569106d25373b823837"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000790.npy",
+      "bytes": 1474688,
+      "sha256": "b058aa010e3595210729202d665bc8047ba6f03abe4198a43ac49a589fed9b5d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000791.npy",
+      "bytes": 1474688,
+      "sha256": "605d56a8f48c00de748c57de9ad1977088a84b7c0e11e1b03a4048376db57bab"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000792.npy",
+      "bytes": 1474688,
+      "sha256": "9a046e37e92987a7264bd8d88e201475bce4164b835ca8c6b71e00ff97722205"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000793.npy",
+      "bytes": 1474688,
+      "sha256": "89b14defadd310c9de266ff38bc059c5b95efa3bea0397b171cdffbdac06596b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000794.npy",
+      "bytes": 1474688,
+      "sha256": "5e0bb10b241a051c9b6cd6928daff2606af4e3e7c5a22c9afb7102a0f2bb7d76"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000795.npy",
+      "bytes": 1474688,
+      "sha256": "56a7190a2d3d76f5ac5265dfdea3735ae33153ad13dbe7ea76b83fb07bd9b585"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000796.npy",
+      "bytes": 1474688,
+      "sha256": "35df74f9c2cff682e59d0888838fd66be4c136d7a4f9e04a56fbf2627b48e196"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000797.npy",
+      "bytes": 1474688,
+      "sha256": "3edf0354119760bc0d0a73033b12df54188e92f56218a88db147c0f444f3c829"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000798.npy",
+      "bytes": 1474688,
+      "sha256": "5cb99acaa14138a09b7ed930b3668529d2ba450fc9044babac9fab6e2a931af0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000799.npy",
+      "bytes": 1474688,
+      "sha256": "7b21579cd5009333b23c733fe627674b288e8b72d4e835242b7f3202fb1ff9cd"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000800.npy",
+      "bytes": 1474688,
+      "sha256": "a31e03f1a41fc6d5d7ed7e24fa9f65fcafda6b207042729298f316bf528e95e3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000801.npy",
+      "bytes": 1474688,
+      "sha256": "b78b5ca9982a35e5ca7f37e7c995e9efa1669f052e194d9c5bdaaa2220a2f259"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000802.npy",
+      "bytes": 1474688,
+      "sha256": "5626973a34f5728787ea8195567a3e0788793c91f71441ca2eaf8041b304b943"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000803.npy",
+      "bytes": 1474688,
+      "sha256": "e054616089f3027f1d6d2ddf0a9b0635561b5a437365e9785da8c745e14206d9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000804.npy",
+      "bytes": 1474688,
+      "sha256": "bed2cae1ce9827d389f184b86ec8e1404107ec08824e770229c91030faaad9a5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000805.npy",
+      "bytes": 1474688,
+      "sha256": "4abfa2531b5342373de9336c27ad84e41172f4d5e27aa68c1d835146c0b1157b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000806.npy",
+      "bytes": 1474688,
+      "sha256": "ce600a96a597590c8e1e0731438e149923814be9fe1cc8dee92d70c78a3b2f48"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000807.npy",
+      "bytes": 1474688,
+      "sha256": "b7e63726d49d43a878e6c4ac43c5520f5469961b029e5e10bcec79491306610a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000808.npy",
+      "bytes": 1474688,
+      "sha256": "bbfe799257faf0f0c312486a4adbaa438f711d00ccd8a52138b2fc75f317738b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000809.npy",
+      "bytes": 1474688,
+      "sha256": "95351c5dfc6643d7879eef6e222acb9c355abcacdbc7df6d9dc5572eabb03b00"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000810.npy",
+      "bytes": 1474688,
+      "sha256": "5e1c57f16c15a407f8e793a928556368b044ed2eea843de89ea5b13b00378c83"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000811.npy",
+      "bytes": 1474688,
+      "sha256": "a6271864adf885a8923576a9462dc92057480a096ded6bf8db2d077e46b3b253"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000812.npy",
+      "bytes": 1474688,
+      "sha256": "f94ee4486911e83de194218d0dbad86ee913f11317eba2ddc04d82aed2bd9436"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000813.npy",
+      "bytes": 1474688,
+      "sha256": "bd45d649410ad8ff8b324ce83c48b23c509269af1e7d4b16fbf76c492de93e7e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000814.npy",
+      "bytes": 1474688,
+      "sha256": "858fc1c95fa9082f5eeb0dbbfd224c55cf5eced847e25275ab4483225b2a85fb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000815.npy",
+      "bytes": 1474688,
+      "sha256": "d1e0ddff556eefce593a692a5e19b59f411fbf72e7667a309b8555e6b26075c8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000816.npy",
+      "bytes": 1474688,
+      "sha256": "215e1ca10b1b283df640f2d5ada94af83ba154b7d671a94e53e3cc4a48a82fe0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000817.npy",
+      "bytes": 1474688,
+      "sha256": "d627bea616555496ecd8344f0aacafaadb50a622bc9484e78d79d98c98eafd0a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000818.npy",
+      "bytes": 1474688,
+      "sha256": "ad93959614e64c5312071e25b610b25da94780ce180dff4307bb400d02c15024"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000819.npy",
+      "bytes": 1474688,
+      "sha256": "507daf98aea131bf48e353d397481107762f233fb86449036aa63c54609b4e65"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000820.npy",
+      "bytes": 1474688,
+      "sha256": "82ccea114a747aad59811635f4c225a14d3af921392806f6193c1f8b01959eaa"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000821.npy",
+      "bytes": 1474688,
+      "sha256": "690390704cf1e31bd82e84b370cbb28e1a5bc2d3f49ec49004a41af61af96ed2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000822.npy",
+      "bytes": 1474688,
+      "sha256": "20c989e07490ac7bf71d5796fd9f0f4aeab766bf7d8a3b77afda260f4494620d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000823.npy",
+      "bytes": 1474688,
+      "sha256": "ebd2421a2dc69349d6b6824ae46d77dbb6d5cfe7493de3c05a1909bf4de0eafe"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000824.npy",
+      "bytes": 1474688,
+      "sha256": "aae2bec5f49fe8713caace9811c99d962a1ffe662df6163fc8f8c84d0ec9f227"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000825.npy",
+      "bytes": 1474688,
+      "sha256": "8ef2321add28e88e1af902f8114e6b0f6c8e71bb846a143ce90fd12a419daeb4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000826.npy",
+      "bytes": 1474688,
+      "sha256": "b8b511e8391e5f662030324a5948f388246eb9aff6bc3b2eff10795b8982626c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000827.npy",
+      "bytes": 1474688,
+      "sha256": "76f1e7a301b6b469e9cbc2a52e584afa1d83935e8ab936c567a925afa29c6ba3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000828.npy",
+      "bytes": 1474688,
+      "sha256": "3c370c7af98501cecfb30956b2276f6ebc976237abb6950cc6c45da9a7a8ab36"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000829.npy",
+      "bytes": 1474688,
+      "sha256": "27bf4ffcba0999b00d3b865cccf153127dd3742be99fc7ad16cfb70d9ff0a4ab"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000830.npy",
+      "bytes": 1474688,
+      "sha256": "e75992d9aba667d65667ac39003f053e606d5198d0be7f98cf5bf51a827d0e3a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000831.npy",
+      "bytes": 1474688,
+      "sha256": "bcca9673aeab36ed10b736bfcb2a08b899e92f576f244cdce82450fe440e47df"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000832.npy",
+      "bytes": 1474688,
+      "sha256": "bd49573736d8b45fa656cce6950176c57b07687d7bda392a3ba0791c6d78b30e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000833.npy",
+      "bytes": 1474688,
+      "sha256": "66f1dfe18c85404a00d829d67594c7fc3c3f9d1087b26c0c788cb617969d78ad"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000834.npy",
+      "bytes": 1474688,
+      "sha256": "cdfb44f201fca7179c7ec6b5bf3d9480bd413395487cc5d050e131cb769e0d8a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000835.npy",
+      "bytes": 1474688,
+      "sha256": "4c486925c3a2c877dce45fc3bffa90992333180043b71ca0dde21a3a58dd162d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000836.npy",
+      "bytes": 1474688,
+      "sha256": "25781c9924162550e6ecf83d0dacdf52575e7707c5ff03eefca4898af7feff07"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000837.npy",
+      "bytes": 1474688,
+      "sha256": "a5e94315c1440aff447c586c95264515e4bc08ecaf45d6a9a028aedc96c1c522"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000838.npy",
+      "bytes": 1474688,
+      "sha256": "9c2421ce8ff7aca259d33517a69ea82594cb25413a691f52224f7fc78b507dda"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000839.npy",
+      "bytes": 1474688,
+      "sha256": "37e89a417676fe33e37ed111000cd4e1dcd0c4dc3c8ea47785fbe8e46f0bc074"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000840.npy",
+      "bytes": 1474688,
+      "sha256": "e8251204a7cd0361d169f8784008c180d547a4cee9dc6c4381837c386c510ce7"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000841.npy",
+      "bytes": 1474688,
+      "sha256": "eb4979cb2eba9f7b6cd7ac662084a49a57548390c3c460b46bc5fc23ca50228e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000842.npy",
+      "bytes": 1474688,
+      "sha256": "cd567620bb7922b05489dcf39f8e3b952a72dde8c2cf1144c329881f4c012cc0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000843.npy",
+      "bytes": 1474688,
+      "sha256": "070ebb34f16d6083e3fee7fe205a18c2cdbe2b0d0c68914677548d6250561fc8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000844.npy",
+      "bytes": 1474688,
+      "sha256": "1708e0dbc27ac7645b37d86204940a3f322d66fb109750eac6374a81d07563e9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000845.npy",
+      "bytes": 1474688,
+      "sha256": "d098241979471a03d78f4049b1ad481decf9d9142309ce335dbc832089dbea0d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000846.npy",
+      "bytes": 1474688,
+      "sha256": "24ab984d2d086dce08b90807f831dbd365eb5a5e1a1d14876f15a18e22b6f21a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000847.npy",
+      "bytes": 1474688,
+      "sha256": "463afa2bda7efa2c6d9d31b7cca043fe2d7b36a5916babb3c7b0be8dff1be0a4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000848.npy",
+      "bytes": 1474688,
+      "sha256": "a55647af401d39612210696a8b34883da2b04245555efc03ffe8cf245f91390a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000849.npy",
+      "bytes": 1474688,
+      "sha256": "10cc592f138d21fc34e5f12ebd11af03ccefcd51249f6dcdf75b22dc72f92509"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000850.npy",
+      "bytes": 1474688,
+      "sha256": "33e9dab4e6c3ceb26ed34b7ff80594b717574170217be8043efe6c920ab41b40"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000851.npy",
+      "bytes": 1474688,
+      "sha256": "40502e784ee3174bc468da338429814eaa793ad9cc85c8579fa081ba5b5fd626"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000852.npy",
+      "bytes": 1474688,
+      "sha256": "244808be7c78a44879fdefc6cc4bc0d18f40bffa39c75a1c08160496e2688d46"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000853.npy",
+      "bytes": 1474688,
+      "sha256": "c8ca8065d4ff5bf6ade7ae6dfebc6250d61bea7f19fb140df2274d182abddb0e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000854.npy",
+      "bytes": 1474688,
+      "sha256": "b553eb006cd94419c804ba5db4ed264f2dfbfdc1b97a6a352967ab8f63ababe9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000855.npy",
+      "bytes": 1474688,
+      "sha256": "782a3e736babc424df0d4e03e435adfb0a18a73f710353318bf60cbfe706d686"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000856.npy",
+      "bytes": 1474688,
+      "sha256": "e218311a4ca5368742253c32b4c3874b22d8abcd3196cefa774df931ba7de752"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000857.npy",
+      "bytes": 1474688,
+      "sha256": "e26b5dddb3265f8ac86eb55b01adb1a10f5e52175d3abfd7c25142703f515185"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000858.npy",
+      "bytes": 1474688,
+      "sha256": "0af4ff69dd67ee89ef2eab817dc3f105d3b3a36e8f2b9ffaf52f8370a1adfd46"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000859.npy",
+      "bytes": 1474688,
+      "sha256": "91b59d1a0ad74716ad9dcdc717a39f87095fa0fa8b4924a067b98cd537f6e14c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000860.npy",
+      "bytes": 1474688,
+      "sha256": "26d3fd166b0a2c80510d7d07f97926db9f92543584d3a22c7e1348789d20027c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000861.npy",
+      "bytes": 1474688,
+      "sha256": "c193b4ba18d4dce271ee7947b4a1fb802370bc2eb0a32bf98bb9b021b4ddba34"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000862.npy",
+      "bytes": 1474688,
+      "sha256": "1c871e9433e4b20ae338cd94cf6676d4481ce3140a357776e12544d4a1fdc95d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000863.npy",
+      "bytes": 1474688,
+      "sha256": "2326b9c4c1c1a8fb0b3f200103fc5851279672ad9698ecb72176d547e4d4ae4a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000864.npy",
+      "bytes": 1474688,
+      "sha256": "85c28487c3e65e8c4a19d1ceb059acb1f2835b7806000813fa1794bfe3fe1fe9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000865.npy",
+      "bytes": 1474688,
+      "sha256": "0b80d6a2e1f37730ea90fdbebf6570c2b9d97f5f8cf8d313d2a06ad68e635b0a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000866.npy",
+      "bytes": 1474688,
+      "sha256": "01afd1d1b8b1eba293382f6593049d423410ea4a9a46fab42c2dc86c45af1cb4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000867.npy",
+      "bytes": 1474688,
+      "sha256": "c5e9ae49a09193979cbdfcdebabe7b84511d1004f9d49374877927b173887535"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000868.npy",
+      "bytes": 1474688,
+      "sha256": "1bffa4587cd312436049d5794a339811eabd9d9364e9bd9cf457e336ef8a9d0c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000869.npy",
+      "bytes": 1474688,
+      "sha256": "807126996e127ddc199e1c9ca1de5de3ae46f4d2f20782339a2ce623eb437698"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000870.npy",
+      "bytes": 1474688,
+      "sha256": "3a969057ceb38ebfb38ed36b28bb7de7cd5b83f9ee7aaea7fa3a2370de936660"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000871.npy",
+      "bytes": 1474688,
+      "sha256": "e0f2817a4b0d8ee88ed5655009adb1c792df653933254bbbb80d6b073af39bba"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000872.npy",
+      "bytes": 1474688,
+      "sha256": "0ec32f8b40e645895fc620b9cd63fb7411bf7e679b6301929b83995b0c3b2f95"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000873.npy",
+      "bytes": 1474688,
+      "sha256": "e96fa4b634a99019201a70896183013a690d68e05cd44c02e337e936519fd573"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000874.npy",
+      "bytes": 1474688,
+      "sha256": "49fc2d625c1d288c3d65ba06f776d1855d337c628e1cf7f4cfe9a6e3cbbb738a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000875.npy",
+      "bytes": 1474688,
+      "sha256": "5ec7c8f18001eb38895f7641fb29497ccc612a4d4cf9ae4b2c8de0f04d62711a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000876.npy",
+      "bytes": 1474688,
+      "sha256": "817750ab0954d7c45456b9cbee3c0dc13afab3cff591d72393943046e978a010"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000877.npy",
+      "bytes": 1474688,
+      "sha256": "5b2eec94d5bb8182cf5f62f14e319fd65f9c590b9f60139e93d4387711db2731"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000878.npy",
+      "bytes": 1474688,
+      "sha256": "5eefeb98a4c75fc2fd40aee5157101ebb5173641c3ecb0957acd0361b2c9ca2e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000879.npy",
+      "bytes": 1474688,
+      "sha256": "1406dd809bd55b04b85f3437836f2933d7f4cbdba219008c63836183bb04e62f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000880.npy",
+      "bytes": 1474688,
+      "sha256": "c6d7ce05e7be15098bef1a952733351197614207944efa5192512275130859bc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000881.npy",
+      "bytes": 1474688,
+      "sha256": "5bde2ab7ae363bf93be0ed5f19799d69221de9e8273753fdcbb4cc51642254ec"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000882.npy",
+      "bytes": 1474688,
+      "sha256": "dd47f2621315ac7d6bf3c2aaa06d76b14cfbd37e56d7218e59bfcd0d16b75b0f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000883.npy",
+      "bytes": 1474688,
+      "sha256": "c3035f62081705fed0d2838bbdf327ec7cada9e29dd76904010a1f48331497d3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000884.npy",
+      "bytes": 1474688,
+      "sha256": "7af7318d465d6e90fd89912106627ebadf627d43c17be0b74f198b5bc09bf123"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000885.npy",
+      "bytes": 1474688,
+      "sha256": "037acefdf10779e71efffc5cb0ffcac239ea0a1eef961986b44f36ec2817733d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000886.npy",
+      "bytes": 1474688,
+      "sha256": "e99fdd575fa1a150081f054bf51f855e429b5fd8d8c7309226c1613e3187f155"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000887.npy",
+      "bytes": 1474688,
+      "sha256": "a3f5c470db4a4f73893a7292d23ca61b7fbf098b19d1342d5b65249d37a681d0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000888.npy",
+      "bytes": 1474688,
+      "sha256": "c682d1bc07def31c82204cb75f7bc92938f8c0cd2d08d41a15a8bc0b4395ff85"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000889.npy",
+      "bytes": 1474688,
+      "sha256": "e8a60f7e019f99aa11561b642ea2d7a2346e4046046d6106ec43290ffaf67413"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000890.npy",
+      "bytes": 1474688,
+      "sha256": "2a13c507017814cb8ef7a51caabfcd5e5236bb06816ddcd1d90e4d9b10eb31bf"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000891.npy",
+      "bytes": 1474688,
+      "sha256": "778b7319cef5d4d9ef91ddb4d3099e55686fe89d6c7b402ed292616f8040aba9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000892.npy",
+      "bytes": 1474688,
+      "sha256": "a29d9d424dd74d4ad15539219334991f2b33789e90ebb2f0dc057422932e7d76"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000893.npy",
+      "bytes": 1474688,
+      "sha256": "272b83e9cab4fe17b84ec2b748e2b088ad7dc3acdcbe2880d18aa4208ae0314b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000894.npy",
+      "bytes": 1474688,
+      "sha256": "72fb5be41c294e364abad4fdabd0fd4dba79dfa40077c8e61966402714c873d3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000895.npy",
+      "bytes": 1474688,
+      "sha256": "cebfe838837f8cdc7dfcba46dd8e2de88a661494c3e9a863b9942e7d0af45c32"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000896.npy",
+      "bytes": 1474688,
+      "sha256": "c15c9a84ce1cbb53f5939afa1fcae004d8113fbe496b994b20e736c140d4b26f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000897.npy",
+      "bytes": 1474688,
+      "sha256": "33e9d3488ad0ac14e1ce760545dc28725c3a449e5aee96a2d1562c898caf83d7"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000898.npy",
+      "bytes": 1474688,
+      "sha256": "93251a4ef7b4bda0ed8ff1bdee51342099effd4b4657686716b4360908b97f73"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000899.npy",
+      "bytes": 1474688,
+      "sha256": "76fbff8361fc4c34a66fa7f9bea2841e8f18f0713da47cf80a59fa51559b199e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000900.npy",
+      "bytes": 1474688,
+      "sha256": "abbd19ced07ab02d79d33d4b5b5886a7a76efa8c55452af72c7d355b5ca7b76a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000901.npy",
+      "bytes": 1474688,
+      "sha256": "ce0c8b0dcd1d6a40150b507e88fc31174d4a2a7994e671eb3b8e401ed6af9bfa"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000902.npy",
+      "bytes": 1474688,
+      "sha256": "797cc734488865b0a2fc57795fe28e7b33dab4bc108b344ef36b30600cdf9bc3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000903.npy",
+      "bytes": 1474688,
+      "sha256": "0d9043525378f1fe341006b15b2fa50203b0d5647c689b6fb082961061fab490"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000904.npy",
+      "bytes": 1474688,
+      "sha256": "f29c047d49655d2990613341ffaaa3358160963dcf50a31bde9a5060a74a14ce"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000905.npy",
+      "bytes": 1474688,
+      "sha256": "8c88d00e0aa273ed167e77e1cbe8705f126c43b9c97177c553040172df25292a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000906.npy",
+      "bytes": 1474688,
+      "sha256": "1e520d7f751d4e6af3842d9550fe726706627588efac6de9d32e86a5444d505e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000907.npy",
+      "bytes": 1474688,
+      "sha256": "d35991f61ae0a7801753cf1e445037393353c7af29d28f3a2f82f18f890b0101"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000908.npy",
+      "bytes": 1474688,
+      "sha256": "cc76b078d9eb1c5cd0b16ec453c4cbe11295494a22b87527dd1189483a636c9c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000909.npy",
+      "bytes": 1474688,
+      "sha256": "9628877e49c3b569eda66f55fb428839b10abdfb2483ac8fc5f83d4eb2142b4d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000910.npy",
+      "bytes": 1474688,
+      "sha256": "ea8fd063824f329dd0ad1a536833c6daf795624fdbc227522c7c2ffa75c03b9d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000911.npy",
+      "bytes": 1474688,
+      "sha256": "7b997550b523079145d5841ff4f7a970bc7e49d10586da40ee8e892225724c72"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000912.npy",
+      "bytes": 1474688,
+      "sha256": "b37acf43a99f006ab4a38d55b44cf82f7d3bb9ce2e8ed0e26a7b256426ee686a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000913.npy",
+      "bytes": 1474688,
+      "sha256": "039dff5a8213a056d979eca3951bc73d7fb60967ee612b8019ff500e57d8be2d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000914.npy",
+      "bytes": 1474688,
+      "sha256": "d7667783b394da4a0c71216e236280b58ebf4cc093949420cfd131a1c5c984e3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000915.npy",
+      "bytes": 1474688,
+      "sha256": "ade9372b60d6ae031c27452d1cd9b2e39962bdf9d28d4d0d2a9495c64eccdfe9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000916.npy",
+      "bytes": 1474688,
+      "sha256": "45fd31f97b661cf43e49fe2383a37c43199a935b3b5bd756e779b0b2e02fd0e9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000917.npy",
+      "bytes": 1474688,
+      "sha256": "04d6d03ecbc6885924d4f9a9cbdabd7cac4b9c28991681323c5cabe29104733d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000918.npy",
+      "bytes": 1474688,
+      "sha256": "772799e4d413106073122181b86f3bd7cc0fcb945cf742cb5595ff5603b443d8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000919.npy",
+      "bytes": 1474688,
+      "sha256": "ad5f58f03a68c6189f233e83c41812ac1f2779c54df582a79dcc7ce04e79f49b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000920.npy",
+      "bytes": 1474688,
+      "sha256": "86b96189a3469ee669630ec2e71b6d5819ff445dcf9488204986d398321b9f9c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000921.npy",
+      "bytes": 1474688,
+      "sha256": "8c21d261b13b3e13584e2f03e561ec21b98189f8e705c8b1c835fe99ec5675bb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000922.npy",
+      "bytes": 1474688,
+      "sha256": "b46adcbccc59ad1fb0597ff1545dd347c9e718d6323692920bcb9c2f4de16b46"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000923.npy",
+      "bytes": 1474688,
+      "sha256": "d5c672136ef8cdc46090157d584ad0ff6b76ba4654f5350879d4001e066326ff"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000924.npy",
+      "bytes": 1474688,
+      "sha256": "ddcfaaae35ac2591be463b8256eac17921198b9dbbf52b55d35d4263f2f05fc1"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000925.npy",
+      "bytes": 1474688,
+      "sha256": "de55b61102688f372932d7e8ec38cd07cf56828d48f901684390959d540374ac"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000926.npy",
+      "bytes": 1474688,
+      "sha256": "8185084f736f0f9a1e88646e54c852f7c5f0f64be4221b74115745b9badd43c8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000927.npy",
+      "bytes": 1474688,
+      "sha256": "9eb3b328590e960e17ba2ab34afa05e9514e8e106d606622b9d793ca0bbcc99b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000928.npy",
+      "bytes": 1474688,
+      "sha256": "89605eff5af95b177b01bb65b32ae5b22dda86b87e24ab4e2cca04553cb16033"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000929.npy",
+      "bytes": 1474688,
+      "sha256": "b70b17937f84266f20812c5ee1b0aad461b23246d80505a0476b3336593913d0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000930.npy",
+      "bytes": 1474688,
+      "sha256": "a067d3efb234749935edee2b0674856c274ff2f754627294ecfc79a3c281113b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000931.npy",
+      "bytes": 1474688,
+      "sha256": "fce2ffb9d8c02c94d5eeb90505ac7e10817f62530e584c3066d29d10a1b34c3d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000932.npy",
+      "bytes": 1474688,
+      "sha256": "53362addb2995921eb9282b5e3ed44f95169ef01c50e52a36332ad88d8e37615"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000933.npy",
+      "bytes": 1474688,
+      "sha256": "25580753420bc91e0ec1c245c3a01ffbf4aa858f9acde51b86369459c426edb3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000934.npy",
+      "bytes": 1474688,
+      "sha256": "a0d1a0193aeb5658150472bb3f61417ab7f1d290dce535980b051d7b4260f0cf"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000935.npy",
+      "bytes": 1474688,
+      "sha256": "32fd704abb83830e3a3bd63b2c7ee860610eba5cd9f8997ab46bee08f1ef1c26"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000936.npy",
+      "bytes": 1474688,
+      "sha256": "a929258ab2007ed8fae781736c21eaf72df0db63be5e96a43e5c53c8417c8909"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000937.npy",
+      "bytes": 1474688,
+      "sha256": "dcbfc540bf7b72e5e6294097bcf75742a777d029e161f21706402c3a9d4381b3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000938.npy",
+      "bytes": 1474688,
+      "sha256": "1f1d9a9341fc9fdb0b75d97adc6ffc96db0bbc3f64d53fdde83c5021a7679eda"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000939.npy",
+      "bytes": 1474688,
+      "sha256": "e9c2b46ed8cdc626cb58a0414985284793f3ca856baf1b410309430164e28882"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000940.npy",
+      "bytes": 1474688,
+      "sha256": "c3dd197af38b6e804ced9cbd2be941c2d1a7b91eaf0b86742b6cfd5b6fb7f848"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000941.npy",
+      "bytes": 1474688,
+      "sha256": "94c6ca5496d6a3ed3d15b9fcd5cc2310845b97632d928073ed95aef290e2a355"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000942.npy",
+      "bytes": 1474688,
+      "sha256": "c1556da8b0cfb820b457c3dd91cfb505c71bf5aa08a04f0be964a85aabc7e59c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000943.npy",
+      "bytes": 1474688,
+      "sha256": "f1d9cb93896a1e5460b9c8e65bedb2ec407550f18dfb607eed279aa6aa58e4c3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000944.npy",
+      "bytes": 1474688,
+      "sha256": "7d5fa5ebfe63a35bc85bf5260eac085f68da3dccce3da952b8207842717159ac"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000945.npy",
+      "bytes": 1474688,
+      "sha256": "b7cc5190cf0fa8eaa7826fb34a0478c77d2969a030db710b29c936a79a908773"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000946.npy",
+      "bytes": 1474688,
+      "sha256": "1f1388f2969a8565810bd57b6577affac7911d119d5b864cdd31dcfa4e1e57aa"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000947.npy",
+      "bytes": 1474688,
+      "sha256": "b809c861a6618c1274d862744bea3a856ddbf4fe2c0e3d1454eea00b793680e3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000948.npy",
+      "bytes": 1474688,
+      "sha256": "c32bb19366898d1569bbb59861249ede94f98366514dcd5c295503d3d4e0c0f2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000949.npy",
+      "bytes": 1474688,
+      "sha256": "99fd46607b8709418e9a6ccb30d7325ae1fb56ad4562a82222b4391b8f567b86"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000950.npy",
+      "bytes": 1474688,
+      "sha256": "08d4e268a1b88d521c90b031cc31a8f5f7c62736f565bf9f39fac33d44f3fc3f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000951.npy",
+      "bytes": 1474688,
+      "sha256": "b29133802839749fdcb56925dcfd177a9fecf49633534c057f72a6a2c30e7f05"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000952.npy",
+      "bytes": 1474688,
+      "sha256": "2d5053ee6f7b9298b5997c0c0982516edfa9a25dc46d8c35388f784ae2da753f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000953.npy",
+      "bytes": 1474688,
+      "sha256": "e359a4b5edd1ef43a6f99fe1d345f1b893c27e04e0c4b23d42f408a0104058a5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000954.npy",
+      "bytes": 1474688,
+      "sha256": "956097f1b689692b3142d721d0b52227bae9375dcc949a80618c3277253bce0b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000955.npy",
+      "bytes": 1474688,
+      "sha256": "ee8d3d0321e0f5fbf1899525f2c47d272de63398995bc8132ff1d6f9db3d8653"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000956.npy",
+      "bytes": 1474688,
+      "sha256": "493b5dea49f35ac332e598df42efa782285de0131ff0a525018d4460d4115fe7"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000957.npy",
+      "bytes": 1474688,
+      "sha256": "55a464cd1271f5a2aac8e05db45b9f80a1d9529fa13e984c02ed2e839e534150"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000958.npy",
+      "bytes": 1474688,
+      "sha256": "3beb308d93cad4f34dd5c93c3065d1e31d0b8ce1d1a96eb8a97a649e1df792b3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000959.npy",
+      "bytes": 1474688,
+      "sha256": "07797e6595812f8cf082bf3b6803d04160271543a00bfad70f7d14faf1763099"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000960.npy",
+      "bytes": 1474688,
+      "sha256": "adbaf20546b55e550dc7b7eb00926d41b705719beb700fb584e9fd5b889bab4a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000961.npy",
+      "bytes": 1474688,
+      "sha256": "a4d7d90bf8a19b2247ebf7bdf829d7a0fed755dc752ae443325d28ffe095fc6e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000962.npy",
+      "bytes": 1474688,
+      "sha256": "03db43e4b3dc3179ce95b9815213e5376b4ec8956af81fc56b4589c9d0cd0cb4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000963.npy",
+      "bytes": 1474688,
+      "sha256": "1fd9519f2e860cded5c6e95e58e6bebfceae584d26d26d03d01c8ad0711b7a63"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000964.npy",
+      "bytes": 1474688,
+      "sha256": "5da784032f574592192b1ee435774c2309cecb87532b0f7865ba906e48774bed"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000965.npy",
+      "bytes": 1474688,
+      "sha256": "684eaef84b775c8205d0614e82f8611bb3b2c16c14b7bc30fafd98320b7076a6"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000966.npy",
+      "bytes": 1474688,
+      "sha256": "00d027a59bc007f8db287577cc598169a614c743203866a0afe0c7208e8a6df2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000967.npy",
+      "bytes": 1474688,
+      "sha256": "ea6c7181e2b65931fad09f5079247e5c9a0ab8344b5b662ae4b1c3ab6cd76f9c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000968.npy",
+      "bytes": 1474688,
+      "sha256": "724e802ed38d4c94af2b449b97e4c7ca3aa32927e6a9ab60fc25291ef687faf8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000969.npy",
+      "bytes": 1474688,
+      "sha256": "6e9f5207a68f298d28bd0959dc7b11a19a8f744f9da8944a5464c2ced2d6f758"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000970.npy",
+      "bytes": 1474688,
+      "sha256": "9d574b0426386412a7fd0f4f1ff0ecd5c408fe12caae8c596605dbcba0d5d9f4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000971.npy",
+      "bytes": 1474688,
+      "sha256": "cecf4503a61e39253787f16251a80478c4248ff8e277282c6333acb4700c787b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000972.npy",
+      "bytes": 1474688,
+      "sha256": "fdaf4bef34a30c9273024f093bfd562236fc19878077b35f37c5a0a1b6ec8f62"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000973.npy",
+      "bytes": 1474688,
+      "sha256": "7c37c875f4e3cb7abffe9c45fb05f6923a92acec1540bad02d1199a28fa099d8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000974.npy",
+      "bytes": 1474688,
+      "sha256": "61744995947223d1508478d4d3636883da6f995fc7b158e7bd97623f3241c15c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000975.npy",
+      "bytes": 1474688,
+      "sha256": "ed0e2cd91078200d44e2b950de3fbfded8cdbc7ce6d723872d904b62f6f583a9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000976.npy",
+      "bytes": 1474688,
+      "sha256": "ef8b70449da136912efe9a7d5dc5c4837f71f53e745f0ac2ae3ba64e0335db48"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000977.npy",
+      "bytes": 1474688,
+      "sha256": "482bf601225a9bc1169626dd179168798a0123d0c7f8800957361efd9d052d23"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000978.npy",
+      "bytes": 1474688,
+      "sha256": "cc9aad56f63bd3b5591b82d721a6e47844b7695ebe46e6e2c53e05092782d428"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000979.npy",
+      "bytes": 1474688,
+      "sha256": "3e67eca0a81afbf041b0239a7b2a603136597a5550ce89935f38f7e4aeeb79d8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000980.npy",
+      "bytes": 1474688,
+      "sha256": "99ded631aa4093d25e3e3a444b341e02a7209ed901a835e0b1635f2ee0874375"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000981.npy",
+      "bytes": 1474688,
+      "sha256": "99798f2b8ac18288ec4244d479dc69deb817305d3285760698762c42b33ef745"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000982.npy",
+      "bytes": 1474688,
+      "sha256": "7744f497550f427c9e5a7db64f991eccba6a9e13da2b4462bc41290f4aaa9332"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000983.npy",
+      "bytes": 1474688,
+      "sha256": "acb11a7ab91ca7819cf65b797c444870e5e032f7b104d7cb74dbe595cdd5003f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000984.npy",
+      "bytes": 1474688,
+      "sha256": "36fb9471fd4e2db43d49029157161ce4ae30e599fa64f52c3f725695bec623b2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000985.npy",
+      "bytes": 1474688,
+      "sha256": "0f315f8bcdfd8c4ef7f50242bc6150b6462e2866f622421db71f7834e41f28f9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000986.npy",
+      "bytes": 1474688,
+      "sha256": "bb0f48ca88061fd3ee5a4efd7810793598c88d75bd58a6770953ece8c485ad7e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000987.npy",
+      "bytes": 1474688,
+      "sha256": "67f4b72a4a10bb2b8542c7f27c4785cdb20da1033c2d52e95fbc1d803b26e603"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000988.npy",
+      "bytes": 1474688,
+      "sha256": "aa9581566f61bd0a9b5b1f101254f8aa328985cdfe9777704235b3bb9ccb9d76"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000989.npy",
+      "bytes": 1474688,
+      "sha256": "fd5cfb2bfa51c1cfeea05c22dbe2fcf24e6bed25906902a4bdea7dc772e564d9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000990.npy",
+      "bytes": 1474688,
+      "sha256": "6d14f4eb912413c48068ed2653dcb631ac8a23c741b30a42c8d761e9a03ccc6c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000991.npy",
+      "bytes": 1474688,
+      "sha256": "8c1c3eefa35a6f8199fe264d18fde763248fb0712234276642b9cdf589556f4d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000992.npy",
+      "bytes": 1474688,
+      "sha256": "0157d81c92ff8c825ef3e0b303d2b8b8aaab98a5e86006a7520df5660712eec0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000993.npy",
+      "bytes": 1474688,
+      "sha256": "8c419cde8064c3c869c7191c3581df747c283f884ecdb08145fe5786d2e98f12"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000994.npy",
+      "bytes": 1474688,
+      "sha256": "9d9e05d90ff5a8851f1d0f486001e3bfef2e6837ba83f667d95a0e1bfd96315b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000995.npy",
+      "bytes": 1474688,
+      "sha256": "6001d3aefbb880661f4d694e2e7ef7c8abe6dbe2437c8729cac9ce8019607836"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000996.npy",
+      "bytes": 1474688,
+      "sha256": "298ff0297e24466add91f00cd3feeaf93f55aec9cebbc2ba162993be9fa6fa11"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000997.npy",
+      "bytes": 1474688,
+      "sha256": "fb3f64ed4067a17eacac7179335453f4009acb65457a3dd7926cd2ba44f87ac6"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000998.npy",
+      "bytes": 1474688,
+      "sha256": "ab7e1e83e2a7a05ecb4e3ffe51f1fc4e6add5aff4c380a1708964b3478950409"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000999.npy",
+      "bytes": 1474688,
+      "sha256": "82107cd1ecf23446ac505299dbc5a0cd3fa6cf2c0a1df7a45c1eefc50d1395bc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001000.npy",
+      "bytes": 1474688,
+      "sha256": "29c126b1b45e86c0fec76a3592202fb2ccf2351a9a8b795ac7f81e89bc35b8c8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001001.npy",
+      "bytes": 1474688,
+      "sha256": "86d3e5ba526293424c4cf79a3e17861491b445053dd3f393bf7d745ed5565755"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001002.npy",
+      "bytes": 1474688,
+      "sha256": "ac436093a2ff834f33ccc004b2f6305a7c687af4adef1684116373b0d31761ee"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001003.npy",
+      "bytes": 1474688,
+      "sha256": "79dc7222af24915e6e48a14b98d7e54e3f519addf824986cfae1fe356cc13ad4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001004.npy",
+      "bytes": 1474688,
+      "sha256": "19f30179b998ff327b8c2eaf8e0a850fccdf8310a4a7c2c8188167ca14424718"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001005.npy",
+      "bytes": 1474688,
+      "sha256": "1f41261eea9421453b4ffd271bf8d7f0b0aaad51ec7e16ee997ed5a2c55e3987"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001006.npy",
+      "bytes": 1474688,
+      "sha256": "846ed04d6fa5675ce71745f840cc5485140ff1020a22fb3a1bf03d0a713100e4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001007.npy",
+      "bytes": 1474688,
+      "sha256": "2a138fa1cd256c33651754ec2c1e102cdb2d7af70de8b918976aca8c4598ba0d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001008.npy",
+      "bytes": 1474688,
+      "sha256": "de2b10d6e08193acd1628b225b625d8c6de6870a9d284a55a0f4defe04113139"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001009.npy",
+      "bytes": 1474688,
+      "sha256": "612bf3bbd5a31248ecd64d7f6590ab1aee3e66f6b7a25c598098f1667714df63"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001010.npy",
+      "bytes": 1474688,
+      "sha256": "e9b1b625695801e3e6883a5c02646f42911726e2aa41b8781e913a9f9a7f4765"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001011.npy",
+      "bytes": 1474688,
+      "sha256": "b0e68015777e57006f51333665da5148e97cf76a7edf48342096526ae6541df8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001012.npy",
+      "bytes": 1474688,
+      "sha256": "7e356d3112e6c6fa939d68952f6ce709ec29ce81c6127abc349743f7dcd821b8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001013.npy",
+      "bytes": 1474688,
+      "sha256": "a992f42ebd7f65c597c12e6f280e5137929c7f4f14304f39dfb24149bb2dccf8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001014.npy",
+      "bytes": 1474688,
+      "sha256": "492c72cc03f8011a199778c028210ded6756df5e4e98c1af0473984e71410c5b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001015.npy",
+      "bytes": 1474688,
+      "sha256": "400d7c73d1c82eedb36b9646670a4ca623ee0803b468d950c278e2c5f6eb882a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001016.npy",
+      "bytes": 1474688,
+      "sha256": "41841b81460471f332f40763f21c1982258b7ee246c1dee0113bec4f2c7371f8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001017.npy",
+      "bytes": 1474688,
+      "sha256": "31f05b518d7f249d85c515e0c17c1a68c1bb4a3ea311b20beb2f22c5195605d0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001018.npy",
+      "bytes": 1474688,
+      "sha256": "4bc342684c85548eb4d718ef3ef49147f7f83e0b7d2f931bc6d85a9ba402f55f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001019.npy",
+      "bytes": 1474688,
+      "sha256": "7210a3150f5f3c3b4fe5ed3f7badef466dfee70ba4b374ca7b675242d2b4b432"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001020.npy",
+      "bytes": 1474688,
+      "sha256": "6a7f8059aa959660eab1793b1d34634c1ec069c63b985cd0894de0463e0624ff"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001021.npy",
+      "bytes": 1474688,
+      "sha256": "74ec0e93f2c8f7bc249647e30ea7a4a6823c31a6099d6791c4a1c36fc7c2cbb2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001022.npy",
+      "bytes": 1474688,
+      "sha256": "d98096f3b8a0078ce60da5b59fabf0137fdf8becb6c5fe08d0b82be84b95660b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001023.npy",
+      "bytes": 1474688,
+      "sha256": "b1da11bd8a809c3ee31ddc5edbaea0184aebb9f12f798e3668b90151bdfd315b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001024.npy",
+      "bytes": 1474688,
+      "sha256": "21c17352914f7a50268354157dcb6772e63c60a93348a4d913974f17131b6187"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001025.npy",
+      "bytes": 1474688,
+      "sha256": "92ccfa041e8097be510a15f92c74c3e204c59da2104771cd106da322908114f7"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001026.npy",
+      "bytes": 1474688,
+      "sha256": "4a77a27d6e03c703e4e17dbb87370f7d7579da085169a9ea6fcfdff73c71b746"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001027.npy",
+      "bytes": 1474688,
+      "sha256": "dbc25d71910a6bd8d42f053bae6dc761a8810710c71b95727ed10257c945e2a6"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001028.npy",
+      "bytes": 1474688,
+      "sha256": "a6b9104240dc7c8b4bf8173d3f3539e322286af3d43de99f2916c61157612653"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001029.npy",
+      "bytes": 1474688,
+      "sha256": "c507cc5a441ff695e1a87a857172c3b1dd5594bb61e6d47509fd6b7ef7838632"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001030.npy",
+      "bytes": 1474688,
+      "sha256": "cfbee12d351175678ba4a077b4687fa2973128fdfd0f0b37d5a1c3d5551a56ab"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001031.npy",
+      "bytes": 1474688,
+      "sha256": "762ba759f95e6c62493ba764108d21be05bc06eea92d32b5f92fb86b87e653e0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001032.npy",
+      "bytes": 1474688,
+      "sha256": "570b2d6da90fffd5784dbde01421e86949b205dca2a8149f402d34519a296a4a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001033.npy",
+      "bytes": 1474688,
+      "sha256": "012eb20dc95a2f45b8044dcb264a55175ef76b95a959a0b30b9ee640d4161001"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001034.npy",
+      "bytes": 1474688,
+      "sha256": "d5415706f10c0dd740f03d0a6b5b1f224ab17eb04ec37d4ec69b57484836d669"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001035.npy",
+      "bytes": 1474688,
+      "sha256": "d1a4d3450cf23abf7abf609bb708ab0f19bbd9513c2ed756a52c1de1a8f78dae"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001036.npy",
+      "bytes": 1474688,
+      "sha256": "2e53ad3b74d0796a425d54d74828db0ac0490250ded792e3c8f8fdc259821036"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001037.npy",
+      "bytes": 1474688,
+      "sha256": "5f3e6eac593b1189f367afabad4c97c2ac51e435d25a23ded2048cca0c8a55a2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001038.npy",
+      "bytes": 1474688,
+      "sha256": "3770bf3d0f14612ae1760d7e64a1ac46f188a8ce7c4099d95dca2725da56006d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001039.npy",
+      "bytes": 1474688,
+      "sha256": "de49dec8fa8398e10ac8b78f305156e78581b94146025a7c57af948309a62dd9"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001040.npy",
+      "bytes": 1474688,
+      "sha256": "7007996af58284df3ce7f62ee6e2912bcbff13e0215fe847bbba1c1128fa5e96"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001041.npy",
+      "bytes": 1474688,
+      "sha256": "31dd41fa9c235e7be040482ca6a1ce15cbf9a45a7652eb314bdf8ed386833c75"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001042.npy",
+      "bytes": 1474688,
+      "sha256": "410e8478890b43a13f43f5aefd6d8ac1c5d41ed3217dd5493d1e0820fc1cb445"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001043.npy",
+      "bytes": 1474688,
+      "sha256": "edf084d96863323a2d35c441f7b6d77e108bcae50cc7b6ba4d9be2100402eec8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001044.npy",
+      "bytes": 1474688,
+      "sha256": "22fa4624279e65e62e895e464395c49bc5d0d368e3b2c3ffa669decb35c88c97"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001045.npy",
+      "bytes": 1474688,
+      "sha256": "26a53b4d40e1061e80840d55d878b0ff9c1724e6eccdb131a30cc0ec74fc497e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001046.npy",
+      "bytes": 1474688,
+      "sha256": "d9f2a14360e00229c41a52e5fc6d6dab732a256ef663adb54dc1a91c341ba3e2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001047.npy",
+      "bytes": 1474688,
+      "sha256": "61dc4b7a0036cd52e13230a599a070b14f31a0ecac361bbe8d82355b2f543163"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001048.npy",
+      "bytes": 1474688,
+      "sha256": "1a7206250e176454574ec421f41245e0245a9e02239a25d77c0d3c12587d1813"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001049.npy",
+      "bytes": 1474688,
+      "sha256": "9f807e28de345fa116af1db018c8319da47a8d47f9ee52114844f8142853dea1"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001050.npy",
+      "bytes": 1474688,
+      "sha256": "c58a0a616c99b6d306e1ba0efa34e5d51c5b5ebdc53d56ab13adc5de3bf26308"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001051.npy",
+      "bytes": 1474688,
+      "sha256": "86789ffb04edd59510a7aabae2f90cdd0da3842431f8113095262ceedc09ce17"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001052.npy",
+      "bytes": 1474688,
+      "sha256": "a4c8fcc2f7a73b91870dad7c1cde61c16b9337ae0770cb6d92fd1ae7fbed5a27"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001053.npy",
+      "bytes": 1474688,
+      "sha256": "551a3f255ed05666a7283555f765fa8a5d1985b6645a8ccbb713a4d033187cf8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001054.npy",
+      "bytes": 1474688,
+      "sha256": "7d0b4b750c5cd800bdab71e3ff288608f72eeb7f0bb0e5ba3536a71b3e7fb8b1"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001055.npy",
+      "bytes": 1474688,
+      "sha256": "e1e3c69375308d72c98fd6c1880651a09390594d6770c0c6b36c3a7a5f48a358"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001056.npy",
+      "bytes": 1474688,
+      "sha256": "de82a6e5bc63183c0e476cad280d2617ac90929fe056090052a257da867accdb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001057.npy",
+      "bytes": 1474688,
+      "sha256": "d00be5912a6a5b2992be4d9204196c6ab31dbe1dac74c862bb933b7c58cc09ca"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001058.npy",
+      "bytes": 1474688,
+      "sha256": "6051b9bcacaca5ac41afefea77a7ccb8ec1c296b16ff19152ee72fa91422eaa8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001059.npy",
+      "bytes": 1474688,
+      "sha256": "5ce7dd17bfd6185d83e4ac1e70cde0232e03aad8a081e1888d2e39e06ad10ef4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001060.npy",
+      "bytes": 1474688,
+      "sha256": "53bf603cb6b227ddda0842cd19e7c9b2f2c1f43194544999157c2a0abb3e3b26"
+    }
+  ],
+  "branch_policy": "separate state; native-first, S0-P, same frozen scanner and 2D term"
+}

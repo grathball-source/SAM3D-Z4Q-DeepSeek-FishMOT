@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds8_adaptive_depth_core\launch.py", line 25, in <module>
+    runner.main(mode)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds8_adaptive_depth_core\runner.py", line 313, in main
+    freeze_inputs(output)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds8_adaptive_depth_core\runner.py", line 76, in freeze_inputs
+    code_hashes={str(path):sha(path) for path in set(CODE)|dependencies}
+                           ^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds8_adaptive_depth_core\common.py", line 28, in sha
+    with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds8_adaptive_depth_core\\CONTROLLER_CHECKS.json'

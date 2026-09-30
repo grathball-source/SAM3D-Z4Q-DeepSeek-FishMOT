@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds4_depth_quality_repair\runner.py", line 161, in <module>
+    if __name__=='__main__': run()
+                             ^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds4_depth_quality_repair\runner.py", line 93, in run
+    sources=freeze(); tick=time.perf_counter(); timing=[]; totals={a:Counter() for a in ARMS}
+            ^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds4_depth_quality_repair\runner.py", line 51, in freeze
+    assert json.loads((HERE/'READONLY_ACCEPTANCE.json').read_text())['passed']
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+KeyError: 'passed'

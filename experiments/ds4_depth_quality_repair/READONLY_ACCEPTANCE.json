@@ -1,0 +1,93 @@
+{
+  "status": "READONLY_ACCEPTANCE_PASS_READY_TO_FREEZE",
+  "scope": "score.py and runner.py protocol review plus bounded synthetic checks",
+  "new_source_pixel_reads": 0,
+  "new_gt_reads": 0,
+  "network_calls": 0,
+  "code_modifications_by_reviewer": 0,
+  "matching": {
+    "cases": 68,
+    "source_objects": 341,
+    "exact_equal_to_ds3_integer_iou": true,
+    "cases_include": [
+      "empty truth",
+      "empty masks",
+      "duplicate claims",
+      "equal IoU identity tie",
+      "IoU 0.5 boundary",
+      "0.6 minus 0.5 margin"
+    ]
+  },
+  "raw_selected_binding": {
+    "synthetic_scenes": 3,
+    "arm_checks": 15,
+    "all_statistics_exact": true,
+    "input_nonmutation": true,
+    "admission_excludes_suspect_samples": true
+  },
+  "fixed_population": {
+    "synthetic_rows": 4,
+    "groups_checked": 2,
+    "q_n": 3,
+    "r_n": 3,
+    "arms": 5,
+    "unscorable_quality_null": true,
+    "all_unknown_keeps_R": true,
+    "all_unknown_cannot_gain": true
+  },
+  "repaired_findings": [
+    {
+      "file": "score.py",
+      "function": "group_summary",
+      "issue": "empty common pair previously reported purity 0 instead of None",
+      "reverification": "PASS: empty common pair micro_purity None for both compared arms"
+    },
+    {
+      "file": "score.py",
+      "function": "group_summary",
+      "issue": "UNSCORABLE reference.suspect_n=None previously caused TypeError in range_suspect_reference_objects",
+      "reproduced_before_repair": true,
+      "reverification": "PASS: mixed and all-UNKNOWN four-row groups both complete with suspect_n=None"
+    }
+  ],
+  "remaining_blocking_bugs": [],
+  "physical_depth_accuracy": "UNKNOWN_NOT_TESTED",
+  "full_source_run": "NOT_EXECUTED_BY_REVIEWER",
+  "reviewed_code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\runner.py",
+      "bytes": 10683,
+      "sha256": "d63aecd8a3b33a4a36ca3e852aac5a9276958fbc31cadc91a4b823fcd274a677"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\score.py",
+      "bytes": 13833,
+      "sha256": "93c32cf5ba062bd51a07a9658f2bc7a2aa1bf214391e83c2495f56a76e4468e8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\score_helpers.py",
+      "bytes": 6667,
+      "sha256": "7dff56e51d9493438cedd9448cf477370e5f2baa8421ea2c3445f172c1cbe182"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\bootstrap.py",
+      "bytes": 2551,
+      "sha256": "cacb72023c3ae24b94b693953f30e0724046683c4415bb279376514fdc7896de"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\selector.py",
+      "bytes": 5652,
+      "sha256": "9cfed824a1d1368511ff5f3ab6ad12c3c359875685ed072f1211fee7bc87ced3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\CONFIG.json",
+      "bytes": 1159,
+      "sha256": "f95fd274d8ced2d34283b543ac38c1d1414380bf8c430d0b767d52cb62133109"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\PLAN.md",
+      "bytes": 8308,
+      "sha256": "aad2c2b5ea42ca5fd97dc323e61006439358ca31a59b97b0e92949f4e14b7d6c"
+    }
+  ]
+}

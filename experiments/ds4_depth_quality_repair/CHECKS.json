@@ -1,0 +1,75 @@
+{
+  "tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "real_frames": [
+    701,
+    704,
+    766
+  ],
+  "real_cases": [
+    "F701_ALL_OBJECTS",
+    "F704:o013",
+    "F766:o012"
+  ],
+  "allowed_npz_keys": [
+    "depth_mm",
+    "source_index"
+  ],
+  "blocked": [
+    "network connect",
+    "manual/test references",
+    "RGB",
+    "v3/restored planes",
+    "all other NPZ keys"
+  ],
+  "config": {
+    "native_suspect_above_mm": 5000.0,
+    "range_policy_source": "AlignedFeeding_v1 README prior anomaly-candidate threshold; not a calibrated device range",
+    "background_noise_floor_mm": 1.0,
+    "background_floor_source": "recorded SDK depth scale/quantization 1mm; diagnostic noise-floor hypothesis",
+    "main_component_rule": "unique largest 8-connected original source-mask component; tie gives no eligible pixels",
+    "component_measurement_scale_floor_mm": 15.0,
+    "contrast_floor_mm": 30.0,
+    "reference_iou_min": 0.5,
+    "reference_margin_min": 0.1,
+    "reference_min_n": 16,
+    "reference_min_fraction": 0.2,
+    "reference_max_scale_mm": 60.0,
+    "reference_scale_floor_mm": 15.0,
+    "reference_tolerance_floor_mm": 30.0,
+    "reference_tolerance_scale_factor": 3.0,
+    "primary_arm": "F6_BG_NOISE",
+    "primary_policy": "source-quality admission and separate background floor; main-component restriction is diagnostic only",
+    "primary_rule": "proxy discordant yield decreases and compatible yield does not decrease on fixed R; otherwise TRADEOFF/NO_GAIN",
+    "population": "all original DS2 SOURCE_OLD1066 frames and28382 masks, exposed development diagnosis"
+  },
+  "arms": {
+    "F2_DS3": [
+      false,
+      false,
+      15.0
+    ],
+    "F3_RANGE": [
+      true,
+      false,
+      15.0
+    ],
+    "F4_MAIN": [
+      false,
+      true,
+      15.0
+    ],
+    "F5_RANGE_MAIN": [
+      true,
+      true,
+      15.0
+    ],
+    "F6_BG_NOISE": [
+      true,
+      false,
+      1.0
+    ]
+  }
+}

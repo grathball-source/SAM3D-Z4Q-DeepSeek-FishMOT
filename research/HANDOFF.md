@@ -1,4 +1,46 @@
-# Active handoff — DS3 foreground depth measurement,2026-09-30
+# Active handoff — DS4 frozen depth-quality measurement,2026-09-30
+
+Read experiments/ds4_depth_quality_repair/RESULTS.md, PLAN/CONFIG/FREEZE,
+SOURCE_AUDIT/COMPONENT_AUDIT/EVALUATION_REVIEW, CHECKS/SCORE_CHECKS/READONLY_ACCEPTANCE,
+MEASUREMENTS_SEALED/SCORING_SEALED/SUMMARY, both per-object occupancy streams,
+POSTSCORE_REVIEW/POSTSCORE_DIAGNOSTICS, CASES_POSTSEAL, source/restricted/public
+inventories, all logs, original and caption-repaired QA metadata/actual inspection,
+and REMOTE_VERIFICATION. Base ace9a37b1c6a2a59d3d5397f335d081f1a5a8ae8.
+
+All1066 exposed SOURCE_OLD frames701–1060/1201–1906 and28382 masks completed.
+Engineering/input PASS; PROXY_GAIN_ONLY; physical depth/registration/tracking UNKNOWN.
+Q28088+294unscorable exact to DS3; fixed raw-silhouette R21817.
+F2→F6 compatible15766→17655, discordant202→143, UNKNOWN5849→4019.
+44new discordances (39old-compatible,5old-UNKNOWN), fish yield35.3371→41.2397%,
+nonmatched samples41620→58240; conditional purity98.9106→98.6966%.
+F6 is frozen native>5m SUSPECT admission plus separate1mm background floor;
+foregound floor15mm, contrast floor30mm and other DS3 rules unchanged.
+F3 range-only/F4 main-only/F5 combination are controls, no postscore winner.
+F4 actually reselects:272restored/137rejected, matched pixels net+9012;
+do not substitute the earlier static164old-component veto cost for real results.
+
+F76657 native12m points verified in original BAG, decoding and reprojection exact;
+F6 selects91 raw1.1425m points. Sensor range/hardware cause UNKNOWN.
+F704 primary refuses ambiguous side branch. F1821 mixes two depth modes in one
+connected component, with lower MAD but shifted median; F1044 selects other fish;
+F1385wrong-fish selection still proxy-compatible; F1319raw reference shares anomaly.
+Low-depth strips not fully covered by RGB source contours need physical spatial
+audit; byte/code reprojection equality does not prove calibrated surface alignment.
+Raw-silhouette consensus and occupancy are not physical distance/surface GT.
+
+18unit checks + bounded read-only scorer acceptance + exact every-object DS3
+reproduction pass. A launcher review-field mismatch was fixed before FREEZE;
+attempt log retained. All outputs sealed before new manual reference reads.
+Postscore caption rerenders only fix clipped text; original figures preserved.
+Eight latest QA figures actually opened. All pixels private. Old DS1/2/3 untouched.
+HTTP/smoke/training/SAM3/completion/cost0, no tracker/DepthState/q/trigger changes,
+no new IDF1/HOTA/AssA. Main/ref delivery follows actual REMOTE_VERIFICATION.
+
+One next step: independently audit fish/background/anomalous surfaces and spatial
+registration on sealed new-conflict/low-retention cases before background-fit or
+DepthState decisions. Do not retune DS4 or automatically add VLM/tracking.
+
+# Historical handoff — DS3 foreground depth measurement,2026-09-30
 
 Read experiments/ds3_depth_foreground_filter/RESULTS.md, PLAN/CONFIG/SOURCE_CONTRACT,
 CHECKS/FREEZE/SOURCE_INVENTORY/OLD_READONLY_LOCK, MEASUREMENTS_SEALED/SCORING_SEALED,

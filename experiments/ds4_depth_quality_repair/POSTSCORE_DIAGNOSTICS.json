@@ -1,0 +1,130 @@
+{
+  "method_changes": {
+    "F2_DS3": {
+      "status_changed": 0,
+      "median_changed": 0,
+      "selected_n_changed": 0,
+      "actual_selected_pixel_set_changed": 0,
+      "fitted_background_changed": 0
+    },
+    "F3_RANGE": {
+      "status_changed": 5,
+      "median_changed": 14,
+      "selected_n_changed": 14,
+      "actual_selected_pixel_set_changed": 14,
+      "fitted_background_changed": 237
+    },
+    "F4_MAIN": {
+      "status_changed": 409,
+      "median_changed": 436,
+      "selected_n_changed": 436,
+      "actual_selected_pixel_set_changed": 436,
+      "fitted_background_changed": 0
+    },
+    "F5_RANGE_MAIN": {
+      "status_changed": 414,
+      "median_changed": 450,
+      "selected_n_changed": 450,
+      "actual_selected_pixel_set_changed": 450,
+      "fitted_background_changed": 237
+    },
+    "F6_BG_NOISE": {
+      "status_changed": 3370,
+      "median_changed": 17924,
+      "selected_n_changed": 17951,
+      "actual_selected_pixel_set_changed": 17951,
+      "fitted_background_changed": 24034
+    }
+  },
+  "reasons": {
+    "F2_DS3": {
+      "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 18862,
+      "NO_QUALIFIED_CONNECTED_COMPONENT": 3596,
+      "NO_SIGNIFICANT_DEPTH_CONTRAST": 4442,
+      "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 1114,
+      "BACKGROUND_NOT_LOCALLY_SEPARABLE": 366,
+      "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+    },
+    "F3_RANGE": {
+      "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 18861,
+      "NO_QUALIFIED_CONNECTED_COMPONENT": 3598,
+      "NO_SIGNIFICANT_DEPTH_CONTRAST": 4443,
+      "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 1112,
+      "BACKGROUND_NOT_LOCALLY_SEPARABLE": 366,
+      "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+    },
+    "F4_MAIN": {
+      "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 18997,
+      "NO_QUALIFIED_CONNECTED_COMPONENT": 3488,
+      "NO_SIGNIFICANT_DEPTH_CONTRAST": 4712,
+      "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 817,
+      "BACKGROUND_NOT_LOCALLY_SEPARABLE": 366,
+      "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+    },
+    "F5_RANGE_MAIN": {
+      "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 18996,
+      "NO_QUALIFIED_CONNECTED_COMPONENT": 3489,
+      "NO_SIGNIFICANT_DEPTH_CONTRAST": 4714,
+      "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 815,
+      "BACKGROUND_NOT_LOCALLY_SEPARABLE": 366,
+      "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+    },
+    "F6_BG_NOISE": {
+      "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 21586,
+      "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 1650,
+      "NO_QUALIFIED_CONNECTED_COMPONENT": 2305,
+      "NO_SIGNIFICANT_DEPTH_CONTRAST": 2481,
+      "BACKGROUND_NOT_LOCALLY_SEPARABLE": 358,
+      "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+    }
+  },
+  "fixed_R_transitions_from_DS3": {
+    "F2_DS3": {
+      "COMPATIBLE->COMPATIBLE": 15766,
+      "UNKNOWN->UNKNOWN": 5849,
+      "DISCORDANT->DISCORDANT": 202
+    },
+    "F3_RANGE": {
+      "COMPATIBLE->COMPATIBLE": 15765,
+      "UNKNOWN->UNKNOWN": 5849,
+      "DISCORDANT->DISCORDANT": 200,
+      "DISCORDANT->UNKNOWN": 2,
+      "COMPATIBLE->UNKNOWN": 1
+    },
+    "F4_MAIN": {
+      "COMPATIBLE->COMPATIBLE": 15729,
+      "UNKNOWN->UNKNOWN": 5746,
+      "DISCORDANT->DISCORDANT": 191,
+      "UNKNOWN->COMPATIBLE": 102,
+      "COMPATIBLE->UNKNOWN": 35,
+      "DISCORDANT->UNKNOWN": 10,
+      "UNKNOWN->DISCORDANT": 1,
+      "DISCORDANT->COMPATIBLE": 1,
+      "COMPATIBLE->DISCORDANT": 2
+    },
+    "F5_RANGE_MAIN": {
+      "COMPATIBLE->COMPATIBLE": 15728,
+      "UNKNOWN->UNKNOWN": 5746,
+      "DISCORDANT->DISCORDANT": 189,
+      "UNKNOWN->COMPATIBLE": 102,
+      "COMPATIBLE->UNKNOWN": 36,
+      "DISCORDANT->UNKNOWN": 12,
+      "UNKNOWN->DISCORDANT": 1,
+      "DISCORDANT->COMPATIBLE": 1,
+      "COMPATIBLE->DISCORDANT": 2
+    },
+    "F6_BG_NOISE": {
+      "COMPATIBLE->COMPATIBLE": 15595,
+      "UNKNOWN->UNKNOWN": 3851,
+      "UNKNOWN->COMPATIBLE": 1993,
+      "DISCORDANT->COMPATIBLE": 67,
+      "COMPATIBLE->UNKNOWN": 132,
+      "DISCORDANT->UNKNOWN": 36,
+      "DISCORDANT->DISCORDANT": 99,
+      "COMPATIBLE->DISCORDANT": 39,
+      "UNKNOWN->DISCORDANT": 5
+    }
+  },
+  "native_suspect_aligned_pixel_occurrences": 1615,
+  "scope": "POSTSCORE_DESCRIPTIVE_NO_RULE_CHANGE_NO_TRACKER_INTEGRATION"
+}

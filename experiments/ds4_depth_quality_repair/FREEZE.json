@@ -1,0 +1,292 @@
+{
+  "status": "FROZEN_BEFORE_NEW_MEASUREMENTS_OR_REFERENCE_SCORING",
+  "base": "ace9a37b1c6a2a59d3d5397f335d081f1a5a8ae8",
+  "arms": {
+    "F2_DS3": [
+      false,
+      false,
+      15.0
+    ],
+    "F3_RANGE": [
+      true,
+      false,
+      15.0
+    ],
+    "F4_MAIN": [
+      false,
+      true,
+      15.0
+    ],
+    "F5_RANGE_MAIN": [
+      true,
+      true,
+      15.0
+    ],
+    "F6_BG_NOISE": [
+      true,
+      false,
+      1.0
+    ]
+  },
+  "config": {
+    "native_suspect_above_mm": 5000.0,
+    "range_policy_source": "AlignedFeeding_v1 README prior anomaly-candidate threshold; not a calibrated device range",
+    "background_noise_floor_mm": 1.0,
+    "background_floor_source": "recorded SDK depth scale/quantization 1mm; diagnostic noise-floor hypothesis",
+    "main_component_rule": "unique largest 8-connected original source-mask component; tie gives no eligible pixels",
+    "component_measurement_scale_floor_mm": 15.0,
+    "contrast_floor_mm": 30.0,
+    "reference_iou_min": 0.5,
+    "reference_margin_min": 0.1,
+    "reference_min_n": 16,
+    "reference_min_fraction": 0.2,
+    "reference_max_scale_mm": 60.0,
+    "reference_scale_floor_mm": 15.0,
+    "reference_tolerance_floor_mm": 30.0,
+    "reference_tolerance_scale_factor": 3.0,
+    "primary_arm": "F6_BG_NOISE",
+    "primary_policy": "source-quality admission and separate background floor; main-component restriction is diagnostic only",
+    "primary_rule": "proxy discordant yield decreases and compatible yield does not decrease on fixed R; otherwise TRADEOFF/NO_GAIN",
+    "population": "all original DS2 SOURCE_OLD1066 frames and28382 masks, exposed development diagnosis"
+  },
+  "inherited_settings": {
+    "annulus_inner_px": 5,
+    "annulus_outer_px": 20,
+    "neighbor_margin_px": 3,
+    "background_min_n": 64,
+    "background_min_fraction": 0.2,
+    "background_max_condition": 100.0,
+    "irls_steps": 5,
+    "huber_c": 1.5,
+    "scale_floor_mm": 15.0,
+    "max_scale_mm": 60.0,
+    "contrast_floor_mm": 30.0,
+    "contrast_sigma": 3.0,
+    "closing_size_px": 3,
+    "foreground_min_n": 16,
+    "foreground_min_support_fraction": 0.2,
+    "dominant_fraction": 0.7,
+    "reference_iou_min": 0.5,
+    "reference_margin_min": 0.1,
+    "primary_purity_gain_pp": 10.0,
+    "primary_min_retention": 0.5,
+    "primary_min_core_usable_coverage": 0.5
+  },
+  "code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\bootstrap.py",
+      "bytes": 2551,
+      "sha256": "cacb72023c3ae24b94b693953f30e0724046683c4415bb279376514fdc7896de"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\CHECKS.json",
+      "bytes": 2009,
+      "sha256": "a1d3f4f834cf6df679e0af768dda049333e634692122f23be26e1c8ffc8f681e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\checks.py",
+      "bytes": 16898,
+      "sha256": "f069a4c10a08bcec584dfaf660686c355d1ba6df9f6915d75cf7ec1e49c0a494"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\component_audit.py",
+      "bytes": 24261,
+      "sha256": "d2c8bee1bce99b7e53e0353b16e5fa677aeaca9ad1f7e39556e4aaed308a929a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\CONFIG.json",
+      "bytes": 1159,
+      "sha256": "f95fd274d8ced2d34283b543ac38c1d1414380bf8c430d0b767d52cb62133109"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\PLAN.md",
+      "bytes": 8308,
+      "sha256": "aad2c2b5ea42ca5fd97dc323e61006439358ca31a59b97b0e92949f4e14b7d6c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\report_artifacts.py",
+      "bytes": 15883,
+      "sha256": "f5a6b7760ed25621ab92c9d7e300cfac21a1dee85bcb7ce6e1f8ad3f75834258"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\runner.py",
+      "bytes": 10727,
+      "sha256": "3a1874ddb92ac231eaff79e295b4513ec825a92ede64e6f5134f8c98959e8445"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\score.py",
+      "bytes": 13833,
+      "sha256": "93c32cf5ba062bd51a07a9658f2bc7a2aa1bf214391e83c2495f56a76e4468e8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\SCORE_CHECKS.json",
+      "bytes": 363,
+      "sha256": "0810b577f8bc908482aea15ae8b9587a8132115abc592266dbc6c4c726f313ca"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\score_checks.py",
+      "bytes": 7174,
+      "sha256": "2486444c02e808bcfb4b5fd71560bc7801e8e3b2b8c17736ba4330103f015725"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\score_helpers.py",
+      "bytes": 6667,
+      "sha256": "7dff56e51d9493438cedd9448cf477370e5f2baa8421ea2c3445f172c1cbe182"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\selector.py",
+      "bytes": 5652,
+      "sha256": "9cfed824a1d1368511ff5f3ab6ad12c3c359875685ed072f1211fee7bc87ced3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\source_audit.py",
+      "bytes": 14367,
+      "sha256": "c6a534f9dc76d1cd40bf0f15d1f660777f1de4255fefdec34e369b85c635d29f"
+    }
+  ],
+  "locked": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\MEASUREMENTS_SEALED.json",
+      "bytes": 1694,
+      "sha256": "245330a2133114f7af38c48673f222c1018c57c3d1ae4d248c2b10d21993f435"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\FREEZE.json",
+      "bytes": 6877,
+      "sha256": "6e31843aee03b55718a1dfe4890d1c0f6c483175a02f86ef3bf243cadd9876d5"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\OCCUPANCY_AUDIT.jsonl.gz",
+      "bytes": 2057933,
+      "sha256": "9b8c2645f579c88c26ae1305e25d27d50fea17ce0bb1d950b677334e1671ab52"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\feeding_000701_001060_measurements.jsonl.gz",
+      "bytes": 3730595,
+      "sha256": "ced191fa0677b703b40498ebde36e1b3261ab30aeff7e419a22e8c6b7783aa83"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\private\\feeding_000701_001060_pixels.jsonl.gz",
+      "bytes": 3326468,
+      "sha256": "fee5980517b499645d22069ad76a7883d7facfc5076df702bfd6ea9e48731172"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\profiles.jsonl.gz",
+      "bytes": 1253705,
+      "sha256": "7946b81b25918c8bbca8f2b118a29e76e7444021a71d20b91c7cceb972cfcf07"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\feeding_001201_001906_measurements.jsonl.gz",
+      "bytes": 7240292,
+      "sha256": "7f7c17ccc39f42a339237b1635628931a2ce12916b95fe1bfb16c8f0e2ee70f9"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\private\\feeding_001201_001906_pixels.jsonl.gz",
+      "bytes": 6297802,
+      "sha256": "6a103c366d5f17d79c78bc3b41c96d9fb4420cc877055d91494c18428fcedb92"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_001201_001906\\profiles.jsonl.gz",
+      "bytes": 2421817,
+      "sha256": "388a14a74b8f0820e4c54192a662e063de8c5b713942a419939802b3fa02dcfc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\SOURCE_AUDIT.json",
+      "bytes": 16358,
+      "sha256": "29d2f27d0a1792b4bfed4139b745d0fccf34bb21a26ef9764c41af51ebb316fb"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\COMPONENT_AUDIT.json",
+      "bytes": 158781,
+      "sha256": "6e71ec6f1db465cd8d3c53a74bf6384d104bc714f271c9402f36c677b1440349"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\EVALUATION_REVIEW.md",
+      "bytes": 13422,
+      "sha256": "cfc7b4ad31ccc2306d6681eed4a90b28c93a879206b31fd37bd200d1d90f5866"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\READONLY_ACCEPTANCE.json",
+      "bytes": 3384,
+      "sha256": "1a00557813653cbbe6ab9b235250862d8b259216dc15f9cf44b774b62ea11b87"
+    }
+  ],
+  "legacy_code": [
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_birth_inherit_20260917\\features.py",
+      "bytes": 15614,
+      "sha256": "ff2ab3af280963d67cc0b33875793ccd15f6d47da7ac0290cc893952df26a43e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_measurement.py",
+      "bytes": 3198,
+      "sha256": "6269c807b0c361fecc5e35061193d82754a5af067ebf3d7999637af16000787e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\CHECKS.json",
+      "bytes": 899,
+      "sha256": "13bdabd21b12f565a1612de18aaa3faeeac011aa1de8ea4702647969abf893fa"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\checks.py",
+      "bytes": 5848,
+      "sha256": "d16a51e813f0a6dc9d557a0c8ef58d5ea3d20eb34950ffb85bf21bd5b6dc69d0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\common.py",
+      "bytes": 1605,
+      "sha256": "f3ac38c298fef45f32ba719f27686bd69d241f3374cc257a3cacae1c06f1b4a6"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\CONFIG.json",
+      "bytes": 607,
+      "sha256": "540c7baac1b35e9d1a58ce94a654c228d6091c3422a792e9347926eb14ac661a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\evaluate.py",
+      "bytes": 12884,
+      "sha256": "c3cc4ee9522f391b48ba03fc8aeaf3240234caeb3d421adba1827ab5b17000ff"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\foreground.py",
+      "bytes": 6162,
+      "sha256": "991023b088371d08135dc3576fdd5821cb4b07b7d019d0e1d6cddf1f1c5c3642"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\PLAN.md",
+      "bytes": 5573,
+      "sha256": "c16d6829c864283655b60d69ab596e80d41b31fa3f1260ee760195989ebd042b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\runner.py",
+      "bytes": 7902,
+      "sha256": "6df5b237e5d78e14732c23dea7460a35b4ea8a7a3bc288358603896aa9a0e07b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\prepare.py",
+      "bytes": 7296,
+      "sha256": "50b35914abc8681a10717d5077bcce3af4a05a7d73fc91ec58148ee0d987f877"
+    }
+  ],
+  "source_inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\SOURCE_INVENTORY.json",
+    "bytes": 819682,
+    "sha256": "4721e43ec62916373037a3da795d4fe91675b948f03c88d0a9785d4c91b31d12"
+  },
+  "old_readonly": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\OLD_READONLY_LOCK.json",
+    "bytes": 46427,
+    "sha256": "30103651f89c89fbee14f8b42783b4b166771bffbde38dc09a7e1f598c27b08c"
+  },
+  "clock_utc": "2026-09-30T10:12:05Z",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "opencv": "5.0.0",
+    "opencv_threads": 1,
+    "native_math_threads_requested": 1,
+    "device": "LOCAL_CPU"
+  },
+  "inference_http": 0,
+  "cost_usd": 0
+}

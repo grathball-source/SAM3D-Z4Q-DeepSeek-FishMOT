@@ -1,0 +1,621 @@
+{
+  "status": "READONLY_SOURCE_LINEAGE_VERIFIED_PHYSICAL_DEPTH_UNKNOWN",
+  "frame": 766,
+  "token": "o012",
+  "boundary": {
+    "npz_keys_read": [
+      "depth_mm",
+      "source_index"
+    ],
+    "annotation_pixels_read": 0,
+    "v3_reads": 0,
+    "sealed_test_reads": 0,
+    "old_model_response_reads": 0,
+    "network_connections": 0,
+    "server_jobs": 0,
+    "training": 0
+  },
+  "lineage": {
+    "source_bag": "E:\\CAU\\D-MOT\\data\\RawData\\FEEDING Orbbec Femto Bolt_CL8654103ML_20260918124300.bag",
+    "recorded_bag_sha256": "cef5ed67f82b38d7026bf379bce4f56af74b270bae99c68be1e4b2504c26719f",
+    "source_bag_current_size_matches_inventory": true,
+    "native": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000766.npy",
+      "bytes": 1474688,
+      "sha256": "8adb5c3e49ba55b1572581532cdb43d0c67dc04442fbdab8d54acdf5a09943db"
+    },
+    "aligned": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000766.npz",
+      "bytes": 780012,
+      "sha256": "f52aed43a9e696120afa1b04ff02d6aebdf7a97f197db2cdc2d6e738d1f56d7d"
+    },
+    "calibration": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    },
+    "manifest": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl",
+      "bytes": 1478966,
+      "sha256": "f3ee6ce88594dbea4711b18919917b2c510abbd4a1d4896a7066c5360d33d944"
+    },
+    "sealed_ds3_pixels": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\private\\feeding_000701_001060_pixels.jsonl.gz",
+      "bytes": 3326468,
+      "sha256": "fee5980517b499645d22069ad76a7883d7facfc5076df702bfd6ea9e48731172"
+    },
+    "sdk_depth_scale_mm": 1.0,
+    "sdk_scale_verification_record": {
+      "path": "E:\\CAU\\D-MOT\\logs\\bag_extract_20260924\\sdk_depth_scale.json",
+      "bytes": 105,
+      "sha256": "5534aaea20ff79ad325675a5d887bac4cbca90d6fff327111fb2cefb6441cb24"
+    },
+    "extraction_code": {
+      "path": "E:\\CAU\\D-MOT\\FishSA-main\\data_collect\\3_run_Bag2HDF5.py",
+      "bytes": 29284,
+      "sha256": "2c4921a842ec9595b602ea9cd9b7fd796bdaf30b0ebca1b5736a3249818b7b5e"
+    }
+  },
+  "old_ds3_binding": {
+    "measurement_seal": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\MEASUREMENTS_SEALED.json",
+      "bytes": 1694,
+      "sha256": "245330a2133114f7af38c48673f222c1018c57c3d1ae4d248c2b10d21993f435"
+    },
+    "freeze": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds3_depth_foreground_filter\\FREEZE.json",
+      "bytes": 6877,
+      "sha256": "6e31843aee03b55718a1dfe4890d1c0f6c483175a02f86ef3bf243cadd9876d5"
+    },
+    "sealed_artifacts_verified": 6,
+    "frozen_code_artifacts_verified": 11,
+    "source_inventory_verified": true,
+    "source_depth_sha256_matches": true,
+    "selected_stats_match_sealed_ds3": true
+  },
+  "device_records": [
+    {
+      "header": {
+        "seq": 0,
+        "stamp": {
+          "sec": 1789706580,
+          "nanosec": 683000088
+        },
+        "frame_id": ""
+      },
+      "name": "Femto Bolt",
+      "fullName": "Orbbec Femto Bolt",
+      "asicName": "",
+      "vid": 11205,
+      "pid": 1643,
+      "fwVersion": "1.0.9",
+      "hwVersion": "1.2",
+      "supportedSdkVersion": "1.0.9",
+      "connectionType": "USB3.1",
+      "type": 2,
+      "backendType": 3,
+      "ipAddress": "",
+      "localMac": ""
+    }
+  ],
+  "recorded_stream_profiles": [
+    {
+      "header": {
+        "seq": 0,
+        "stamp": {
+          "sec": 1789706580,
+          "nanosec": 683000088
+        },
+        "frame_id": ""
+      },
+      "streamType": 2,
+      "format": 5,
+      "rotationMatrix": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translationMatrix": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "cameraIntrinsic": [
+        1126.65380859375,
+        1126.1988525390625,
+        950.72802734375,
+        534.7152709960938
+      ],
+      "cameraDistortion": [
+        0.07117239385843277,
+        -0.10096266865730286,
+        0.04138239473104477,
+        0.0,
+        0.0,
+        0.0,
+        -0.0005094190128147602,
+        -0.00016039414913393557
+      ],
+      "distortionModel": 4
+    },
+    {
+      "header": {
+        "seq": 0,
+        "stamp": {
+          "sec": 1789706580,
+          "nanosec": 683000088
+        },
+        "frame_id": ""
+      },
+      "streamType": 3,
+      "format": 8,
+      "rotationMatrix": [
+        0.9938738346099854,
+        -0.004906213376671076,
+        -0.0002515602682251483,
+        0.004903958644717932,
+        0.9938616156578064,
+        0.11052165925502777,
+        -0.0002922266721725464,
+        -0.11052155494689941,
+        0.993873655796051
+      ],
+      "translationMatrix": [
+        -32.54729080200195,
+        -0.8485051989555359,
+        2.4000723361968994
+      ],
+      "width": 640,
+      "height": 576,
+      "fps": 30,
+      "cameraIntrinsic": [
+        504.990234375,
+        505.0413818359375,
+        318.2530822753906,
+        333.609375
+      ],
+      "cameraDistortion": [
+        13.777594566345215,
+        7.679274559020996,
+        0.32537323236465454,
+        14.087517738342285,
+        12.341582298278809,
+        1.8937216997146606,
+        5.05779025843367e-05,
+        -3.474443656159565e-05
+      ],
+      "distortionModel": 4
+    }
+  ],
+  "recorded_depth_related_properties": [
+    {
+      "propertyId": 15,
+      "name": "OB_PROP_DEPTH_FLIP_BOOL",
+      "decoded_value": false
+    },
+    {
+      "propertyId": 65550,
+      "name": "OB_PROP_DEPTH_FLIP_BOOL_RANGE",
+      "decoded_value": {
+        "current": false,
+        "max": true,
+        "min": false,
+        "step": true,
+        "default": false
+      }
+    },
+    {
+      "propertyId": 14,
+      "name": "OB_PROP_DEPTH_MIRROR_BOOL",
+      "decoded_value": false
+    },
+    {
+      "propertyId": 65549,
+      "name": "OB_PROP_DEPTH_MIRROR_BOOL_RANGE",
+      "decoded_value": {
+        "current": false,
+        "max": true,
+        "min": false,
+        "step": true,
+        "default": false
+      }
+    },
+    {
+      "propertyId": 118,
+      "name": "OB_PROP_DEPTH_ROTATE_INT",
+      "decoded_value": 0
+    },
+    {
+      "propertyId": 65653,
+      "name": "OB_PROP_DEPTH_ROTATE_INT_RANGE",
+      "decoded_value": {
+        "current": 0,
+        "max": 270,
+        "min": 0,
+        "step": 90,
+        "default": 0
+      }
+    },
+    {
+      "propertyId": 2017,
+      "name": "OB_PROP_DEPTH_EXPOSURE_INT",
+      "decoded_value": 125
+    },
+    {
+      "propertyId": 67552,
+      "name": "OB_PROP_DEPTH_EXPOSURE_INT_RANGE",
+      "decoded_value": {
+        "current": 125,
+        "max": 125,
+        "min": 20,
+        "step": 1,
+        "default": 125
+      }
+    }
+  ],
+  "recorded_property_inventory": [
+    {
+      "propertyId": 0,
+      "name": "OB_BOOL_PROPERTY"
+    },
+    {
+      "propertyId": 82,
+      "name": "OB_PROP_COLOR_FLIP_BOOL"
+    },
+    {
+      "propertyId": 65617,
+      "name": "OB_PROP_COLOR_FLIP_BOOL_RANGE"
+    },
+    {
+      "propertyId": 81,
+      "name": "OB_PROP_COLOR_MIRROR_BOOL"
+    },
+    {
+      "propertyId": 65616,
+      "name": "OB_PROP_COLOR_MIRROR_BOOL_RANGE"
+    },
+    {
+      "propertyId": 115,
+      "name": "OB_PROP_COLOR_ROTATE_INT"
+    },
+    {
+      "propertyId": 65650,
+      "name": "OB_PROP_COLOR_ROTATE_INT_RANGE"
+    },
+    {
+      "propertyId": 15,
+      "name": "OB_PROP_DEPTH_FLIP_BOOL"
+    },
+    {
+      "propertyId": 65550,
+      "name": "OB_PROP_DEPTH_FLIP_BOOL_RANGE"
+    },
+    {
+      "propertyId": 14,
+      "name": "OB_PROP_DEPTH_MIRROR_BOOL"
+    },
+    {
+      "propertyId": 65549,
+      "name": "OB_PROP_DEPTH_MIRROR_BOOL_RANGE"
+    },
+    {
+      "propertyId": 118,
+      "name": "OB_PROP_DEPTH_ROTATE_INT"
+    },
+    {
+      "propertyId": 65653,
+      "name": "OB_PROP_DEPTH_ROTATE_INT_RANGE"
+    },
+    {
+      "propertyId": 19,
+      "name": "OB_PROP_IR_FLIP_BOOL"
+    },
+    {
+      "propertyId": 65554,
+      "name": "OB_PROP_IR_FLIP_BOOL_RANGE"
+    },
+    {
+      "propertyId": 18,
+      "name": "OB_PROP_IR_MIRROR_BOOL"
+    },
+    {
+      "propertyId": 65553,
+      "name": "OB_PROP_IR_MIRROR_BOOL_RANGE"
+    },
+    {
+      "propertyId": 116,
+      "name": "OB_PROP_IR_ROTATE_INT"
+    },
+    {
+      "propertyId": 65651,
+      "name": "OB_PROP_IR_ROTATE_INT_RANGE"
+    },
+    {
+      "propertyId": 1037,
+      "name": "OB_STRUCT_DEVICE_TIME"
+    },
+    {
+      "propertyId": 2017,
+      "name": "OB_PROP_DEPTH_EXPOSURE_INT"
+    },
+    {
+      "propertyId": 67552,
+      "name": "OB_PROP_DEPTH_EXPOSURE_INT_RANGE"
+    },
+    {
+      "propertyId": 2000,
+      "name": "OB_PROP_COLOR_AUTO_EXPOSURE_BOOL"
+    },
+    {
+      "propertyId": 67535,
+      "name": "OB_PROP_COLOR_AUTO_EXPOSURE_BOOL_RANGE"
+    },
+    {
+      "propertyId": 2003,
+      "name": "OB_PROP_COLOR_AUTO_WHITE_BALANCE_BOOL"
+    },
+    {
+      "propertyId": 67538,
+      "name": "OB_PROP_COLOR_AUTO_WHITE_BALANCE_BOOL_RANGE"
+    },
+    {
+      "propertyId": 2015,
+      "name": "OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT"
+    },
+    {
+      "propertyId": 67550,
+      "name": "OB_PROP_COLOR_POWER_LINE_FREQUENCY_INT_RANGE"
+    },
+    {
+      "propertyId": 2001,
+      "name": "OB_PROP_COLOR_EXPOSURE_INT"
+    },
+    {
+      "propertyId": 67536,
+      "name": "OB_PROP_COLOR_EXPOSURE_INT_RANGE"
+    },
+    {
+      "propertyId": 2002,
+      "name": "OB_PROP_COLOR_GAIN_INT"
+    },
+    {
+      "propertyId": 67537,
+      "name": "OB_PROP_COLOR_GAIN_INT_RANGE"
+    },
+    {
+      "propertyId": 2004,
+      "name": "OB_PROP_COLOR_WHITE_BALANCE_INT"
+    },
+    {
+      "propertyId": 67539,
+      "name": "OB_PROP_COLOR_WHITE_BALANCE_INT_RANGE"
+    },
+    {
+      "propertyId": 2005,
+      "name": "OB_PROP_COLOR_BRIGHTNESS_INT"
+    },
+    {
+      "propertyId": 67540,
+      "name": "OB_PROP_COLOR_BRIGHTNESS_INT_RANGE"
+    },
+    {
+      "propertyId": 2006,
+      "name": "OB_PROP_COLOR_SHARPNESS_INT"
+    },
+    {
+      "propertyId": 67541,
+      "name": "OB_PROP_COLOR_SHARPNESS_INT_RANGE"
+    },
+    {
+      "propertyId": 2008,
+      "name": "OB_PROP_COLOR_SATURATION_INT"
+    },
+    {
+      "propertyId": 67543,
+      "name": "OB_PROP_COLOR_SATURATION_INT_RANGE"
+    },
+    {
+      "propertyId": 2009,
+      "name": "OB_PROP_COLOR_CONTRAST_INT"
+    },
+    {
+      "propertyId": 67544,
+      "name": "OB_PROP_COLOR_CONTRAST_INT_RANGE"
+    },
+    {
+      "propertyId": 2026,
+      "name": "OB_PROP_IR_EXPOSURE_INT"
+    },
+    {
+      "propertyId": 67561,
+      "name": "OB_PROP_IR_EXPOSURE_INT_RANGE"
+    },
+    {
+      "propertyId": 4024,
+      "name": "OB_RAW_DATA_D2C_ALIGN_SUPPORT_PROFILE_LIST"
+    },
+    {
+      "propertyId": 4027,
+      "name": "OB_RAW_DATA_ALIGN_CALIB_PARAM"
+    },
+    {
+      "propertyId": 4036,
+      "name": "OB_RAW_DATA_IMU_CALIB_PARAM"
+    },
+    {
+      "propertyId": 1038,
+      "name": "OB_STRUCT_MULTI_DEVICE_SYNC_CONFIG"
+    }
+  ],
+  "physical_range_evidence": {
+    "status": "UNKNOWN",
+    "recorded_property_count": 48,
+    "min_depth_property_22_recorded": false,
+    "max_depth_property_23_recorded": false,
+    "note": "No certified usable depth range or water calibration is supplied by these source records. The pre-existing dataset >5000 mm flag is an anomaly-candidate policy, not a sensor limit. Do not apply a bit mask, divide the component, or infer a multipath/noise cause from its integer values."
+  },
+  "raw_message": {
+    "encoding": "mono16",
+    "is_bigendian": 0,
+    "width": 640,
+    "height": 576,
+    "step": 1280,
+    "pixel_bit_size": 16,
+    "depth_units_recorded": 0.0,
+    "number": 41403,
+    "timestamp_usec": 1789706606134000,
+    "data_sha256": "72162f757393167dc7b3e30aaec7d229d1b050d12a3b5386c9c6b62f2007eaae",
+    "selected_raw_uint16": {
+      "n": 57,
+      "finite_positive_n": 57,
+      "zero_n": 0,
+      "min_mm": 12228.0,
+      "max_mm": 12288.0,
+      "median_mm": 12254.0,
+      "mad_mm": 11.0,
+      "q10_q25_q75_q90_mm": [
+        12232.6,
+        12241.0,
+        12261.0,
+        12272.8
+      ],
+      "above_5000_mm_n": 57,
+      "above_10000_mm_n": 57
+    },
+    "raw_uint16_hex_min_max": [
+      "0x2fc4",
+      "0x3000"
+    ],
+    "full_native_equals_raw_times_sdk_scale": true,
+    "selected_native_equals_raw_times_sdk_scale": true,
+    "selected_unique_raw_value_n": 35
+  },
+  "whole_raw_aligned": {
+    "area": 471,
+    "n": 306,
+    "valid_fraction": 0.6496815286624203,
+    "median": 1168.5010986328125,
+    "mad": 17.41387939453125,
+    "q10": 1140.286376953125,
+    "q25": 1149.2664794921875,
+    "q75": 1184.1915588378906,
+    "q90": 12243.23486328125
+  },
+  "core_raw_aligned": {
+    "area": 68,
+    "n": 66,
+    "valid_fraction": 0.9705882352941176,
+    "median": 1141.786865234375,
+    "mad": 2.74481201171875,
+    "q10": 1134.0542602539062,
+    "q25": 1139.1009826660156,
+    "q75": 1144.5279541015625,
+    "q90": 1147.1476440429688
+  },
+  "selected_aligned": {
+    "n": 57,
+    "finite_positive_n": 57,
+    "zero_n": 0,
+    "min_mm": 12202.072265625,
+    "max_mm": 12297.4462890625,
+    "median_mm": 12254.619140625,
+    "mad_mm": 20.7900390625,
+    "q10_q25_q75_q90_mm": [
+      12209.493359375,
+      12224.1796875,
+      12269.4228515625,
+      12282.0669921875
+    ],
+    "above_5000_mm_n": 57,
+    "above_10000_mm_n": 57
+  },
+  "selected_native": {
+    "n": 57,
+    "finite_positive_n": 57,
+    "zero_n": 0,
+    "min_mm": 12228.0,
+    "max_mm": 12288.0,
+    "median_mm": 12254.0,
+    "mad_mm": 11.0,
+    "q10_q25_q75_q90_mm": [
+      12232.6,
+      12241.0,
+      12261.0,
+      12272.8
+    ],
+    "above_5000_mm_n": 57,
+    "above_10000_mm_n": 57
+  },
+  "source_index": {
+    "selected_n": 57,
+    "unique_native_sources": 57,
+    "native_bbox_xyxy": [
+      331,
+      302,
+      356,
+      319
+    ]
+  },
+  "projection": {
+    "full_depth_bit_exact": true,
+    "full_source_index_exact": true,
+    "selected_camera_z_bit_exact": true,
+    "selected_projection_rounding_max_error_px": 0.6963434293642089,
+    "selected_camera_z_minus_native_mm": {
+      "min": -30.962021301958885,
+      "median": -1.385397727613963,
+      "max": 12.127771207009573
+    }
+  },
+  "frame_native": {
+    "n": 368640,
+    "finite_positive_n": 281152,
+    "zero_n": 87488,
+    "min_mm": 476.0,
+    "max_mm": 12320.0,
+    "median_mm": 1116.0,
+    "mad_mm": 69.0,
+    "q10_q25_q75_q90_mm": [
+      612.0,
+      807.0,
+      1166.0,
+      1180.0
+    ],
+    "above_5000_mm_n": 215,
+    "above_10000_mm_n": 207
+  },
+  "frame_aligned": {
+    "n": 230400,
+    "finite_positive_n": 160900,
+    "zero_n": 69500,
+    "min_mm": 584.0698852539062,
+    "max_mm": 12297.4462890625,
+    "median_mm": 1161.6575927734375,
+    "mad_mm": 32.68267822265625,
+    "q10_q25_q75_q90_mm": [
+      778.4230529785157,
+      976.8225708007812,
+      1183.2546081542969,
+      1193.6750366210938
+    ],
+    "above_5000_mm_n": 109,
+    "above_10000_mm_n": 107
+  },
+  "conclusions": [
+    "The 57-point component already exists in the original mono16 BAG payload and native NPY.",
+    "Its aligned values and all source indices exactly reproduce the recorded calibration and nearest-Z rasterizer.",
+    "No evidence here attributes the component to restoration, interpolation, byte order or aligned-source substitution.",
+    "Finite positive and compact stable support do not establish a reliable physical distance.",
+    "Recorded device properties must be distinguished from certified physical range and water calibration.",
+    "Hardware failure mode and actual physical distance remain UNKNOWN; no bit correction is justified."
+  ]
+}

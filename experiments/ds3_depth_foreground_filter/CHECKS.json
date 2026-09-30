@@ -1,0 +1,35 @@
+{
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "real_frame": 701,
+  "blocked": [
+    "network connect",
+    "manual/test references",
+    "NPZ keys other than depth_mm"
+  ],
+  "constants": {
+    "annulus_inner_px": 5,
+    "annulus_outer_px": 20,
+    "neighbor_margin_px": 3,
+    "background_min_n": 64,
+    "background_min_fraction": 0.2,
+    "background_max_condition": 100.0,
+    "irls_steps": 5,
+    "huber_c": 1.5,
+    "scale_floor_mm": 15.0,
+    "max_scale_mm": 60.0,
+    "contrast_floor_mm": 30.0,
+    "contrast_sigma": 3.0,
+    "closing_size_px": 3,
+    "foreground_min_n": 16,
+    "foreground_min_support_fraction": 0.2,
+    "dominant_fraction": 0.7,
+    "reference_iou_min": 0.5,
+    "reference_margin_min": 0.1,
+    "primary_purity_gain_pp": 10.0,
+    "primary_min_retention": 0.5,
+    "primary_min_core_usable_coverage": 0.5
+  }
+}

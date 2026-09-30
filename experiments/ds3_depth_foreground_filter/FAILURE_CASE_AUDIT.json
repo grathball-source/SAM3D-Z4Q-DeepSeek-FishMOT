@@ -1,0 +1,726 @@
+{
+  "postscore_only": true,
+  "changes_to_frozen_rule": 0,
+  "new_requests": 0,
+  "cases": [
+    {
+      "selection": "POSTHOC_FAILURE_DIAGNOSIS_NOT_TUNING",
+      "reason": "MAXIMUM_PAIRED_PURITY_DECREASE",
+      "score": {
+        "segment": "feeding_000701_001060",
+        "frame": 704,
+        "token": "o013",
+        "fact_id": "feeding_000701_001060:F704:o013",
+        "reference_status": "SCORABLE",
+        "best_iou": 0.6223404255319149,
+        "iou_margin": 0.6054526088853528,
+        "core_usable": false,
+        "filter_status": "AVAILABLE",
+        "filter_reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+        "significant_n": 27,
+        "whole": {
+          "n": 348,
+          "fish": 215,
+          "other_fish": 6,
+          "background": 127,
+          "purity": 0.617816091954023
+        },
+        "core": {
+          "n": 7,
+          "fish": 7,
+          "other_fish": 0,
+          "background": 0,
+          "purity": 1.0
+        },
+        "foreground": {
+          "n": 20,
+          "fish": 0,
+          "other_fish": 0,
+          "background": 20,
+          "purity": 0.0
+        },
+        "original_missing_n": 23,
+        "median_delta_core_mm": -35.47430419921875,
+        "signed_contrast_mm": 69.17731633032656
+      },
+      "measurement": {
+        "fact_id": "feeding_000701_001060:F704:o013",
+        "whole": {
+          "area": 371,
+          "n": 348,
+          "valid_fraction": 0.9380053908355795,
+          "median": 1185.88525390625,
+          "mad": 11.8658447265625,
+          "q10": 1154.31845703125,
+          "q25": 1170.9826354980469,
+          "q75": 1196.43017578125,
+          "q90": 1199.7927734375
+        },
+        "core": {
+          "area": 7,
+          "n": 7,
+          "valid_fraction": 1.0,
+          "median": 1165.7506103515625,
+          "mad": 4.386962890625,
+          "q10": 1160.1360107421874,
+          "q25": 1161.7625122070312,
+          "q75": 1169.1146850585938,
+          "q90": 1171.996484375
+        },
+        "core_usable": false,
+        "foreground": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "crop": [
+            204,
+            68,
+            305,
+            135
+          ],
+          "annulus": {
+            "area": 1377,
+            "n": 1331,
+            "valid_fraction": 0.9665940450254176,
+            "median": 1200.143798828125,
+            "mad": 2.95654296875,
+            "q10": 1192.654541015625,
+            "q25": 1196.745849609375,
+            "q75": 1202.7626342773438,
+            "q90": 1205.068603515625
+          },
+          "exclusive_area": 357,
+          "exclusive_valid_n": 336,
+          "plane": {
+            "origin_px": [
+              254.0,
+              101.0
+            ],
+            "coordinate_scale_px": 20,
+            "beta_mm": [
+              1198.4518462579547,
+              0.5073838679575857,
+              -3.2967674837218635
+            ],
+            "residual_scale_mm": 15.0,
+            "residual_median_mm": 0.42826108809117613,
+            "condition": 2.084272764668331,
+            "contrast_threshold_mm": 45.0,
+            "sample_n": 1331
+          },
+          "components": [
+            {
+              "sign": "NEARER",
+              "label": 1,
+              "n": 20,
+              "support_area": 22,
+              "raw_scale_mm": 29.44568115234375,
+              "qualified": true
+            },
+            {
+              "sign": "NEARER",
+              "label": 2,
+              "n": 7,
+              "support_area": 7,
+              "raw_scale_mm": 15.0,
+              "qualified": false
+            }
+          ],
+          "significant_n": 27,
+          "selected": {
+            "area": 20,
+            "n": 20,
+            "valid_fraction": 1.0,
+            "median": 1130.2763061523438,
+            "mad": 19.86083984375,
+            "q10": 1066.6942504882813,
+            "q25": 1079.8244018554688,
+            "q75": 1138.3406066894531,
+            "q90": 1149.5115112304688
+          },
+          "support_raw_valid_fraction": 0.9090909090909091,
+          "selected_support_fraction": 0.9090909090909091,
+          "dominance": 0.7407407407407407,
+          "raw_valid_retention": 0.05952380952380952,
+          "signed_contrast_median_mm": 69.17731633032656,
+          "selected_sign": "NEARER",
+          "selected_component_label": 1,
+          "support_area": 22
+        }
+      }
+    },
+    {
+      "selection": "POSTHOC_FAILURE_DIAGNOSIS_NOT_TUNING",
+      "reason": "MAXIMUM_POSITIVE_RAW_MEDIAN_DELTA",
+      "score": {
+        "segment": "feeding_000701_001060",
+        "frame": 766,
+        "token": "o012",
+        "fact_id": "feeding_000701_001060:F766:o012",
+        "reference_status": "SCORABLE",
+        "best_iou": 0.8849372384937239,
+        "iou_margin": 0.8849372384937239,
+        "core_usable": true,
+        "filter_status": "AVAILABLE",
+        "filter_reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+        "significant_n": 75,
+        "whole": {
+          "n": 306,
+          "fish": 291,
+          "other_fish": 0,
+          "background": 15,
+          "purity": 0.9509803921568627
+        },
+        "core": {
+          "n": 66,
+          "fish": 66,
+          "other_fish": 0,
+          "background": 0,
+          "purity": 1.0
+        },
+        "foreground": {
+          "n": 57,
+          "fish": 55,
+          "other_fish": 0,
+          "background": 2,
+          "purity": 0.9649122807017544
+        },
+        "original_missing_n": 165,
+        "median_delta_core_mm": 11112.832275390625,
+        "signed_contrast_mm": -11073.181879003627
+      },
+      "measurement": {
+        "fact_id": "feeding_000701_001060:F766:o012",
+        "whole": {
+          "area": 471,
+          "n": 306,
+          "valid_fraction": 0.6496815286624203,
+          "median": 1168.5010986328125,
+          "mad": 17.41387939453125,
+          "q10": 1140.286376953125,
+          "q25": 1149.2664794921875,
+          "q75": 1184.1915588378906,
+          "q90": 12243.23486328125
+        },
+        "core": {
+          "area": 68,
+          "n": 66,
+          "valid_fraction": 0.9705882352941176,
+          "median": 1141.786865234375,
+          "mad": 2.74481201171875,
+          "q10": 1134.0542602539062,
+          "q25": 1139.1009826660156,
+          "q75": 1144.5279541015625,
+          "q90": 1147.1476440429688
+        },
+        "core_usable": true,
+        "foreground": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "crop": [
+            288,
+            160,
+            393,
+            237
+          ],
+          "annulus": {
+            "area": 4201,
+            "n": 3075,
+            "valid_fraction": 0.7319685789097834,
+            "median": 1183.8045654296875,
+            "mad": 3.480224609375,
+            "q10": 1176.100439453125,
+            "q25": 1180.3552856445312,
+            "q75": 1187.3508911132812,
+            "q90": 1190.710791015625
+          },
+          "exclusive_area": 471,
+          "exclusive_valid_n": 306,
+          "plane": {
+            "origin_px": [
+              340.0,
+              198.0
+            ],
+            "coordinate_scale_px": 20,
+            "beta_mm": [
+              1182.2162231883647,
+              1.7820658205419004,
+              -3.334451118563714
+            ],
+            "residual_scale_mm": 15.0,
+            "residual_median_mm": 0.45748808899270443,
+            "condition": 2.041374705679361,
+            "contrast_threshold_mm": 45.0,
+            "sample_n": 3075
+          },
+          "components": [
+            {
+              "sign": "NEARER",
+              "label": 1,
+              "n": 11,
+              "support_area": 11,
+              "raw_scale_mm": 15.0,
+              "qualified": false
+            },
+            {
+              "sign": "NEARER",
+              "label": 2,
+              "n": 6,
+              "support_area": 6,
+              "raw_scale_mm": 15.0,
+              "qualified": false
+            },
+            {
+              "sign": "NEARER",
+              "label": 3,
+              "n": 1,
+              "support_area": 1,
+              "raw_scale_mm": 15.0,
+              "qualified": false
+            },
+            {
+              "sign": "FARTHER",
+              "label": 1,
+              "n": 57,
+              "support_area": 58,
+              "raw_scale_mm": 30.823311914062497,
+              "qualified": true
+            }
+          ],
+          "significant_n": 75,
+          "selected": {
+            "area": 57,
+            "n": 57,
+            "valid_fraction": 1.0,
+            "median": 12254.619140625,
+            "mad": 20.7900390625,
+            "q10": 12209.493359375,
+            "q25": 12224.1796875,
+            "q75": 12269.4228515625,
+            "q90": 12282.0669921875
+          },
+          "support_raw_valid_fraction": 0.9827586206896551,
+          "selected_support_fraction": 0.9827586206896551,
+          "dominance": 0.76,
+          "raw_valid_retention": 0.18627450980392157,
+          "signed_contrast_median_mm": -11073.181879003627,
+          "selected_sign": "FARTHER",
+          "selected_component_label": 1,
+          "support_area": 58
+        }
+      }
+    }
+  ],
+  "all_farther_selections": [
+    {
+      "frame": 766,
+      "segment": "feeding_000701_001060",
+      "token": "o012",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 57,
+        "fish": 55,
+        "other_fish": 0,
+        "background": 2,
+        "purity": 0.9649122807017544
+      },
+      "median_mm": 12254.619140625,
+      "contrast_mm": -11073.181879003627
+    },
+    {
+      "frame": 930,
+      "segment": "feeding_000701_001060",
+      "token": "o013",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 23,
+        "fish": 19,
+        "other_fish": 0,
+        "background": 4,
+        "purity": 0.8260869565217391
+      },
+      "median_mm": 1155.948486328125,
+      "contrast_mm": -51.6008052288546
+    },
+    {
+      "frame": 933,
+      "segment": "feeding_000701_001060",
+      "token": "o013",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 23,
+        "fish": 23,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1153.2657470703125,
+      "contrast_mm": -55.501770528039515
+    },
+    {
+      "frame": 1255,
+      "segment": "feeding_001201_001906",
+      "token": "o008",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 40,
+        "fish": 36,
+        "other_fish": 0,
+        "background": 4,
+        "purity": 0.9
+      },
+      "median_mm": 1153.6190185546875,
+      "contrast_mm": -93.75070085880452
+    },
+    {
+      "frame": 1256,
+      "segment": "feeding_001201_001906",
+      "token": "o008",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 18,
+        "fish": 18,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1156.8209228515625,
+      "contrast_mm": -89.65232034086796
+    },
+    {
+      "frame": 1319,
+      "segment": "feeding_001201_001906",
+      "token": "o007",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 67,
+        "fish": 67,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 11863.9404296875,
+      "contrast_mm": -10768.890479505166
+    },
+    {
+      "frame": 1353,
+      "segment": "feeding_001201_001906",
+      "token": "o024",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 23,
+        "fish": 23,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 12224.79296875,
+      "contrast_mm": -11045.451843847173
+    },
+    {
+      "frame": 1772,
+      "segment": "feeding_001201_001906",
+      "token": "o003",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 23,
+        "fish": 20,
+        "other_fish": 0,
+        "background": 3,
+        "purity": 0.8695652173913043
+      },
+      "median_mm": 1163.522216796875,
+      "contrast_mm": -116.74746433672476
+    },
+    {
+      "frame": 1773,
+      "segment": "feeding_001201_001906",
+      "token": "o026",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 40,
+        "fish": 30,
+        "other_fish": 0,
+        "background": 10,
+        "purity": 0.75
+      },
+      "median_mm": 1111.6052856445312,
+      "contrast_mm": -126.58201028919683
+    },
+    {
+      "frame": 1779,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 16,
+        "fish": 14,
+        "other_fish": 0,
+        "background": 2,
+        "purity": 0.875
+      },
+      "median_mm": 1160.564208984375,
+      "contrast_mm": -108.90877018340382
+    },
+    {
+      "frame": 1780,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 17,
+        "fish": 17,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1160.8594970703125,
+      "contrast_mm": -102.41995589418275
+    },
+    {
+      "frame": 1781,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 32,
+        "fish": 32,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1160.7664184570312,
+      "contrast_mm": -98.65080928112695
+    },
+    {
+      "frame": 1782,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 34,
+        "fish": 33,
+        "other_fish": 0,
+        "background": 1,
+        "purity": 0.9705882352941176
+      },
+      "median_mm": 1155.5498046875,
+      "contrast_mm": -104.8839788910143
+    },
+    {
+      "frame": 1783,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 35,
+        "fish": 29,
+        "other_fish": 0,
+        "background": 6,
+        "purity": 0.8285714285714286
+      },
+      "median_mm": 1158.101318359375,
+      "contrast_mm": -113.47879122524023
+    },
+    {
+      "frame": 1784,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 19,
+        "fish": 18,
+        "other_fish": 0,
+        "background": 1,
+        "purity": 0.9473684210526315
+      },
+      "median_mm": 1152.212646484375,
+      "contrast_mm": -120.89254638518105
+    },
+    {
+      "frame": 1786,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 25,
+        "fish": 22,
+        "other_fish": 0,
+        "background": 3,
+        "purity": 0.88
+      },
+      "median_mm": 1149.9345703125,
+      "contrast_mm": -129.0797991386164
+    },
+    {
+      "frame": 1787,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 16,
+        "fish": 16,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1151.6312866210938,
+      "contrast_mm": -135.01958710714632
+    },
+    {
+      "frame": 1788,
+      "segment": "feeding_001201_001906",
+      "token": "o025",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 33,
+        "fish": 32,
+        "other_fish": 0,
+        "background": 1,
+        "purity": 0.9696969696969697
+      },
+      "median_mm": 1137.9383544921875,
+      "contrast_mm": -125.6475396856672
+    },
+    {
+      "frame": 1793,
+      "segment": "feeding_001201_001906",
+      "token": "o003",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 32,
+        "fish": 32,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1164.5137329101562,
+      "contrast_mm": -90.35132211579241
+    },
+    {
+      "frame": 1794,
+      "segment": "feeding_001201_001906",
+      "token": "o003",
+      "reference_status": "SCORABLE",
+      "occupancy": {
+        "n": 61,
+        "fish": 61,
+        "other_fish": 0,
+        "background": 0,
+        "purity": 1.0
+      },
+      "median_mm": 1149.2025146484375,
+      "contrast_mm": -98.77384909596685
+    }
+  ],
+  "zero_matched_fish_accepted": [
+    {
+      "frame": 704,
+      "segment": "feeding_000701_001060",
+      "token": "o013",
+      "samples": 20
+    },
+    {
+      "frame": 755,
+      "segment": "feeding_000701_001060",
+      "token": "o023",
+      "samples": 25
+    },
+    {
+      "frame": 758,
+      "segment": "feeding_000701_001060",
+      "token": "o021",
+      "samples": 19
+    },
+    {
+      "frame": 830,
+      "segment": "feeding_000701_001060",
+      "token": "o024",
+      "samples": 90
+    },
+    {
+      "frame": 836,
+      "segment": "feeding_000701_001060",
+      "token": "o006",
+      "samples": 16
+    },
+    {
+      "frame": 943,
+      "segment": "feeding_000701_001060",
+      "token": "o009",
+      "samples": 16
+    },
+    {
+      "frame": 960,
+      "segment": "feeding_000701_001060",
+      "token": "o014",
+      "samples": 35
+    },
+    {
+      "frame": 1039,
+      "segment": "feeding_000701_001060",
+      "token": "o009",
+      "samples": 50
+    },
+    {
+      "frame": 1046,
+      "segment": "feeding_000701_001060",
+      "token": "o016",
+      "samples": 45
+    },
+    {
+      "frame": 1248,
+      "segment": "feeding_001201_001906",
+      "token": "o018",
+      "samples": 33
+    },
+    {
+      "frame": 1385,
+      "segment": "feeding_001201_001906",
+      "token": "o015",
+      "samples": 50
+    },
+    {
+      "frame": 1386,
+      "segment": "feeding_001201_001906",
+      "token": "o015",
+      "samples": 57
+    },
+    {
+      "frame": 1387,
+      "segment": "feeding_001201_001906",
+      "token": "o015",
+      "samples": 52
+    },
+    {
+      "frame": 1388,
+      "segment": "feeding_001201_001906",
+      "token": "o015",
+      "samples": 50
+    },
+    {
+      "frame": 1389,
+      "segment": "feeding_001201_001906",
+      "token": "o015",
+      "samples": 61
+    },
+    {
+      "frame": 1673,
+      "segment": "feeding_001201_001906",
+      "token": "o022",
+      "samples": 82
+    },
+    {
+      "frame": 1674,
+      "segment": "feeding_001201_001906",
+      "token": "o022",
+      "samples": 81
+    }
+  ],
+  "conclusions": [
+    "Significant coherent contrast does not certify fish depth.",
+    "F704 selected20 pixels all outside manual fish despite20 samples and74% dominance.",
+    "F766 selected57 raw positive samples at12254.619mm, core1141.787mm; occupancy purity96.49% misses this conflict.",
+    "The two-sided rule permits a dense distant component; dispersion, n and valid_fraction cannot reject it.",
+    "No physical per-pixel foreground truth or device-range calibration is available here; do not assert repaired depth."
+  ]
+}

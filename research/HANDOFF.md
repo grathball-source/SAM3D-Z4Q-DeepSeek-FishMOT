@@ -1,4 +1,31 @@
-# Active handoff — DS2 frozen temporal depth validation, 2026-09-30
+# Active handoff — DS3 foreground depth measurement,2026-09-30
+
+Read experiments/ds3_depth_foreground_filter/RESULTS.md, PLAN/CONFIG/SOURCE_CONTRACT,
+CHECKS/FREEZE/SOURCE_INVENTORY/OLD_READONLY_LOCK, MEASUREMENTS_SEALED/SCORING_SEALED,
+SUMMARY/OCCUPANCY_AUDIT, FAILURE_CASE_AUDIT, restricted/visualization/public inventories,
+execution/timing/logs and actual remote proof. Base:b43a4ca62229e878b62ed81ea6c7327128636564.
+Measurement development on reused, exposed DS2 frames701–1060/1201–1906; not new validation.
+
+Engineering/input PASS; fixed silhouette proxy FAIL; physical depth and tracking
+increment UNKNOWN.28,382 masks:18,862 AVAILABLE/9,520 UNKNOWN;28,088 scorable/294
+unscorable.18,441 paired objects:99.6213% core→98.9165% F2 (−0.7049pp), retention
+50.5329%, core-usable coverage72.9140%. Core proxy ceiling makes the frozen10pp
+target unattainable; FAIL unchanged. This does not prove background inside a
+fish silhouette absent. F704 picks20 wrong-side pixels; F766 selects57 raw pixels
+at12254.619mm versus1141.787mm core, despite96.49% silhouette purity.
+
+All original masks and whole/core exact;10 tests pass; extraction blocks network,
+manual references and non-depth_mm keys; sealing precedes human labels. The
+new stateless filter retains uncertainty/pixel provenance. DS1/DS2, tracking,
+triggers/q/references/candidates/weights/publication unchanged. Three QA images
+actually viewed; pixels private. API/smoke/training/SAM3/completion/cost0.
+No new tracking score. Reporting/failure/inventory scripts are postscore only.
+
+One next step: independent foreground/background/anomalous-depth per-pixel audit
+on these sealed selections before deciding on DepthState integration.
+Do not retune this frozen run or automatically add VLM.
+
+# Historical handoff — DS2 frozen temporal depth validation, 2026-09-30
 
 Read `experiments/ds2_depth_transfer_validation/RESULTS.md`, `README.md`, `SOURCE_CONTRACT.md`, `EXECUTION_LOG.md`, `VALIDATION_COHORT.json`, `EFFECTIVE_SETTINGS.json`, `REGRESSION_405.json`, `CAUSAL_CHECKS.json`, `run/ALL_PREDICTIONS_SEALED.json`, `METRICS.json`, `EVENT_AUDIT.json`, `COMPLETE_AUDIT.json`, `DEPTH_DIAGNOSTICS.json`, `FORECAST_DIAGNOSTICS_VERSIONED.json`, `SCORER_METADATA_REPAIR.json`, `LEGACY_DEPTH_STATUS_CORRECTION.json`, restricted/visualization/public inventories and `run/REMOTE_VERIFICATION.json`. Actual review/fetched main was `fb1234bf7210a9a5e97f6d1b01d8b2cc7bd395f4`. The earliest remaining complete original SOURCE_OLD work ranges701–1060/1201–1906 were fixed by metadata/existence/producer support, before features/GT. Same recording, previously exposed native baseline, upstream lookahead UNKNOWN; no sealed test or repaired depth. This is temporal nonoverlap rather than independent dataset validation.
 

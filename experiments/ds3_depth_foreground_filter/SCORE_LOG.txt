@@ -1,0 +1,91 @@
+postseal occupancy scored feeding_000701_001060
+postseal occupancy scored feeding_001201_001906
+{
+  "objects": 28382,
+  "scorable": 28088,
+  "unscorable": 294,
+  "accepted": 18862,
+  "unknown": 9520,
+  "accepted_scorable": 18791,
+  "paired_accepted": 18441,
+  "core_usable": 21908,
+  "core_usable_acceptance": 0.7291400401679752,
+  "all_scorable": {
+    "whole": {
+      "n": 11137632,
+      "fish": 10693823,
+      "other_fish": 86372,
+      "background": 357437,
+      "purity": 0.96015230167418,
+      "objects_with_samples": 28083,
+      "mean_object_purity": 0.9618112770776107
+    },
+    "core": {
+      "n": 1382742,
+      "fish": 1376397,
+      "other_fish": 5871,
+      "background": 474,
+      "purity": 0.9954112914773688,
+      "objects_with_samples": 26850,
+      "mean_object_purity": 0.9975242176244539
+    },
+    "foreground": {
+      "n": 3820509,
+      "fish": 3778889,
+      "other_fish": 7213,
+      "background": 34407,
+      "purity": 0.9891061636028079,
+      "objects_with_samples": 18791,
+      "mean_object_purity": 0.9883162146664737
+    }
+  },
+  "paired_accepted_metrics": {
+    "whole": {
+      "n": 7717439,
+      "fish": 7430169,
+      "other_fish": 56405,
+      "background": 230865,
+      "purity": 0.9627765117417838,
+      "objects_with_samples": 18441,
+      "mean_object_purity": 0.964609055190127
+    },
+    "core": {
+      "n": 1088029,
+      "fish": 1083909,
+      "other_fish": 3821,
+      "background": 299,
+      "purity": 0.9962133362254131,
+      "objects_with_samples": 18441,
+      "mean_object_purity": 0.997849185012709
+    },
+    "foreground": {
+      "n": 3795807,
+      "fish": 3754678,
+      "other_fish": 6911,
+      "background": 34218,
+      "purity": 0.9891646229642339,
+      "objects_with_samples": 18441,
+      "mean_object_purity": 0.9885818342635248
+    }
+  },
+  "purity_gain_pp": -0.7048713261179174,
+  "matched_foreground_retention": 0.5053287482424693,
+  "paired_objects_improved": 139,
+  "paired_objects_worsened": 8886,
+  "paired_objects_equal": 9416,
+  "mean_paired_purity_delta_pp": -0.9267350749184194,
+  "median_paired_retention": 0.5169491525423728,
+  "reference_reasons": {
+    "SCORABLE": 28088,
+    "LOW_OR_AMBIGUOUS_IOU": 294
+  },
+  "filter_reasons": {
+    "QUALIFIED_DOMINANT_DEPTH_COMPONENT": 18862,
+    "NO_QUALIFIED_CONNECTED_COMPONENT": 3596,
+    "NO_SIGNIFICANT_DEPTH_CONTRAST": 4442,
+    "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS": 1114,
+    "BACKGROUND_NOT_LOCALLY_SEPARABLE": 366,
+    "INSUFFICIENT_BACKGROUND_COVERAGE": 2
+  },
+  "decision": "FAIL_FROZEN_MEASUREMENT_HYPOTHESIS"
+}

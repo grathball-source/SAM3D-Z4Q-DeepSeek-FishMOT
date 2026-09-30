@@ -1,0 +1,31 @@
+{
+  "review_base": "b43a4ca62229e878b62ed81ea6c7327128636564",
+  "checks": "10/10 real F701",
+  "frozen_utc": "2026-09-30T08:34:10Z",
+  "measurements_sealed_utc": "2026-09-30T08:38:08Z",
+  "scoring_ended_utc": "2026-09-30T08:49:29Z",
+  "frames": 1066,
+  "masks": 28382,
+  "source_and_baseline_equivalence": "ALL_EXACT",
+  "inference_http": 0,
+  "smoke": 0,
+  "cost_usd": 0,
+  "rule_changes_after_freeze": 0,
+  "postscore_only": [
+    "report.py",
+    "failure_audit.py",
+    "finalize.py",
+    "verify_remote.py"
+  ],
+  "commands": [
+    "python checks.py",
+    "python runner.py",
+    "python evaluate.py",
+    "python report.py",
+    "python failure_audit.py",
+    "python finalize.py"
+  ],
+  "measurement_or_scoring_failures": 0,
+  "status": "COMPLETE_PROXY_FAIL_PHYSICAL_UNKNOWN",
+  "documentation_tool_note": "One final documentation patch was rejected for patch syntax before file creation; corrected patch applied; measurement/scoring unchanged."
+}

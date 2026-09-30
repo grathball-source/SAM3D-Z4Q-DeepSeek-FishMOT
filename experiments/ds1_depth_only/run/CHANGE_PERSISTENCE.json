@@ -1,0 +1,324 @@
+{
+  "status": "POSTSEAL_ACTUAL_PUBLISHED_DIFFERENCES",
+  "comparisons": [
+    {
+      "segment": "feeding_000351_000555",
+      "comparison": "D2_DYNAMIC_vs_D0_GEOMETRY",
+      "sources": [
+        {
+          "native_mask": "n:2",
+          "published_object_frames": 137,
+          "actual_frame_spans": [
+            [
+              419,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:21",
+          "published_object_frames": 36,
+          "actual_frame_spans": [
+            [
+              419,
+              454
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:24",
+          "published_object_frames": 37,
+          "actual_frame_spans": [
+            [
+              519,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:50",
+          "published_object_frames": 37,
+          "actual_frame_spans": [
+            [
+              519,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:79",
+          "published_object_frames": 2,
+          "actual_frame_spans": [
+            [
+              534,
+              535
+            ]
+          ]
+        }
+      ],
+      "interpretation": "actual sealed ID differences, not continuous visibility or independent event gains"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "comparison": "D2_DYNAMIC_vs_D1_STATIC_LEGACY",
+      "sources": [
+        {
+          "native_mask": "n:2",
+          "published_object_frames": 137,
+          "actual_frame_spans": [
+            [
+              419,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:21",
+          "published_object_frames": 36,
+          "actual_frame_spans": [
+            [
+              419,
+              454
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:24",
+          "published_object_frames": 37,
+          "actual_frame_spans": [
+            [
+              519,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:50",
+          "published_object_frames": 37,
+          "actual_frame_spans": [
+            [
+              519,
+              555
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:79",
+          "published_object_frames": 2,
+          "actual_frame_spans": [
+            [
+              534,
+              535
+            ]
+          ]
+        }
+      ],
+      "interpretation": "actual sealed ID differences, not continuous visibility or independent event gains"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "comparison": "D2_DYNAMIC_vs_SAM3_NATIVE",
+      "sources": [
+        {
+          "native_mask": "n:79",
+          "published_object_frames": 2,
+          "actual_frame_spans": [
+            [
+              534,
+              535
+            ]
+          ]
+        },
+        {
+          "native_mask": "n:82",
+          "published_object_frames": 86,
+          "actual_frame_spans": [
+            [
+              470,
+              555
+            ]
+          ]
+        }
+      ],
+      "interpretation": "actual sealed ID differences, not continuous visibility or independent event gains"
+    }
+  ],
+  "clear_switch_differences": {
+    "SAM3_NATIVE": {
+      "removed": [
+        {
+          "frame": 470,
+          "gt_id": 9,
+          "native_mask": "n:82",
+          "native_id": 82,
+          "public_id": 82,
+          "matched_iou": 0.8489932885906041,
+          "from_public_id": 24,
+          "to_public_id": 82,
+          "segment": "feeding_000351_000555"
+        }
+      ],
+      "added": [
+        {
+          "frame": 470,
+          "gt_id": 9,
+          "native_mask": "n:82",
+          "native_id": 82,
+          "public_id": 1,
+          "matched_iou": 0.8489932885906041,
+          "from_public_id": 24,
+          "to_public_id": 1,
+          "segment": "feeding_000351_000555"
+        }
+      ]
+    },
+    "D0_GEOMETRY": {
+      "removed": [
+        {
+          "frame": 419,
+          "gt_id": 26,
+          "native_mask": "n:21",
+          "native_id": 21,
+          "public_id": 2,
+          "matched_iou": 0.9147982062780269,
+          "from_public_id": 21,
+          "to_public_id": 2,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 419,
+          "gt_id": 27,
+          "native_mask": "n:2",
+          "native_id": 2,
+          "public_id": 21,
+          "matched_iou": 0.9181286549707602,
+          "from_public_id": 2,
+          "to_public_id": 21,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 464,
+          "gt_id": 26,
+          "native_mask": "n:10",
+          "native_id": 10,
+          "public_id": 10,
+          "matched_iou": 0.7814029363784666,
+          "from_public_id": 2,
+          "to_public_id": 10,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 519,
+          "gt_id": 7,
+          "native_mask": "n:24",
+          "native_id": 24,
+          "public_id": 50,
+          "matched_iou": 0.9373219373219374,
+          "from_public_id": 24,
+          "to_public_id": 50,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 519,
+          "gt_id": 20,
+          "native_mask": "n:50",
+          "native_id": 50,
+          "public_id": 24,
+          "matched_iou": 0.9267326732673268,
+          "from_public_id": 50,
+          "to_public_id": 24,
+          "segment": "feeding_000351_000555"
+        }
+      ],
+      "added": [
+        {
+          "frame": 464,
+          "gt_id": 26,
+          "native_mask": "n:10",
+          "native_id": 10,
+          "public_id": 10,
+          "matched_iou": 0.7814029363784666,
+          "from_public_id": 21,
+          "to_public_id": 10,
+          "segment": "feeding_000351_000555"
+        }
+      ]
+    },
+    "D1_STATIC_LEGACY": {
+      "removed": [
+        {
+          "frame": 419,
+          "gt_id": 26,
+          "native_mask": "n:21",
+          "native_id": 21,
+          "public_id": 2,
+          "matched_iou": 0.9147982062780269,
+          "from_public_id": 21,
+          "to_public_id": 2,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 419,
+          "gt_id": 27,
+          "native_mask": "n:2",
+          "native_id": 2,
+          "public_id": 21,
+          "matched_iou": 0.9181286549707602,
+          "from_public_id": 2,
+          "to_public_id": 21,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 464,
+          "gt_id": 26,
+          "native_mask": "n:10",
+          "native_id": 10,
+          "public_id": 10,
+          "matched_iou": 0.7814029363784666,
+          "from_public_id": 2,
+          "to_public_id": 10,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 519,
+          "gt_id": 7,
+          "native_mask": "n:24",
+          "native_id": 24,
+          "public_id": 50,
+          "matched_iou": 0.9373219373219374,
+          "from_public_id": 24,
+          "to_public_id": 50,
+          "segment": "feeding_000351_000555"
+        },
+        {
+          "frame": 519,
+          "gt_id": 20,
+          "native_mask": "n:50",
+          "native_id": 50,
+          "public_id": 24,
+          "matched_iou": 0.9267326732673268,
+          "from_public_id": 50,
+          "to_public_id": 24,
+          "segment": "feeding_000351_000555"
+        }
+      ],
+      "added": [
+        {
+          "frame": 464,
+          "gt_id": 26,
+          "native_mask": "n:10",
+          "native_id": 10,
+          "public_id": 10,
+          "matched_iou": 0.7814029363784666,
+          "from_public_id": 21,
+          "to_public_id": 10,
+          "segment": "feeding_000351_000555"
+        }
+      ]
+    }
+  },
+  "prediction_seals": {
+    "feeding_000000_000199": "e74b85898f915b5b78c57cd6aae65008f49fd91c58b17e468882ba310df530fc",
+    "feeding_000351_000555": "9e683e88f5213d6128f57e1c69cbf9c69a5c4b7c3fabb222844acb46794995d4"
+  }
+}

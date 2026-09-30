@@ -1,0 +1,87 @@
+{
+  "status": "ACTUALLY_OPENED_AND_INSPECTED",
+  "date": "2026-09-30T03:03:56.218942+00:00",
+  "artifacts": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\private_visualizations\\first_complete_depth_qa.png",
+      "bytes": 1201322,
+      "sha256": "4a34147b3ee576ef483d891850fe777db1b416cf2acdfc1a44d8b85799c5a096",
+      "segment": "feeding_000351_000555",
+      "local_frames": [
+        56,
+        38,
+        59,
+        65
+      ],
+      "selected_sources": [
+        [
+          30
+        ],
+        [
+          70
+        ],
+        [
+          30
+        ],
+        [
+          70,
+          30
+        ]
+      ],
+      "crop_rgb_grid": [
+        225,
+        0,
+        396,
+        250
+      ],
+      "display_depth_range_mm": [
+        882.85025390625,
+        1204.2770166015625
+      ],
+      "transform": "crop only in shared640x360 RGB grid; axes preserve original pixel coordinates",
+      "data": "only raw depth_mm and predicted masks; no RGB or GT raster"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\private_visualizations\\maximum_quality_conflict_qa.png",
+      "bytes": 124530,
+      "sha256": "398691c6f587168753880b233320af64328d35183acfc7791bf7730d3d491419",
+      "segment": "feeding_000351_000555",
+      "local_frames": [
+        65
+      ],
+      "selected_sources": [
+        [
+          62
+        ]
+      ],
+      "crop_rgb_grid": [
+        301,
+        135,
+        380,
+        259
+      ],
+      "display_depth_range_mm": [
+        1051.9139379882813,
+        1197.2148852539062
+      ],
+      "transform": "crop only in shared640x360 RGB grid; axes preserve original pixel coordinates",
+      "data": "only raw depth_mm and predicted masks; no RGB or GT raster"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\private_visualizations\\first_complete_numeric_qa.png",
+      "bytes": 101270,
+      "sha256": "24b3c38c7650840437f317e71fbff7acf30416f0e6f6069efc066d5f9d503da8",
+      "data": "numeric measurement/forecast plot; matches public SVG"
+    }
+  ],
+  "findings": [
+    "First complete automatic MS1-F59 showed separate pre fragments, group-only depth and q415 before first publication.",
+    "Maximum candidate-independent conflict was a different mask n:62 at F415: 9 core points, fraction0.18, median12198.369 versus whole1175.375 mm; frozen core gate rejected it.",
+    "Numeric plot distinguished measured points, full-gap weak forecasts, group surface and q cutoff; proxy widths are not calibrated confidence intervals."
+  ],
+  "private_pixels_not_published": true,
+  "formal_prediction_seals": {
+    "feeding_000000_000199": "e74b85898f915b5b78c57cd6aae65008f49fd91c58b17e468882ba310df530fc",
+    "feeding_000351_000555": "9e683e88f5213d6128f57e1c69cbf9c69a5c4b7c3fabb222844acb46794995d4"
+  }
+}

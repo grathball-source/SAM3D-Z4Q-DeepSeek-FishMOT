@@ -1,0 +1,335 @@
+{
+  "first_complete_event": {
+    "segment": "feeding_000351_000555",
+    "event": "MS1-F59",
+    "q": 65,
+    "original_q": 415,
+    "restore": {
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "selected_choice": "H2",
+      "numeric_choice": "H2",
+      "mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "unassigned_member_residual": [],
+      "changes": {},
+      "stage_error": null,
+      "decision_source": "D2_DYNAMIC",
+      "fallback": null
+    },
+    "frozen_depth": {
+      "A": {
+        "key": [
+          "feeding_000351_000555",
+          "D2_DYNAMIC",
+          1,
+          30,
+          1
+        ],
+        "samples": [
+          {
+            "frame": 55,
+            "time": 1789706594.138,
+            "z_mm": 1117.5408325195312,
+            "mad_mm": 35.14227294921875,
+            "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+            "fact_id": "feeding_000351_000555/F55/n:30"
+          },
+          {
+            "frame": 56,
+            "time": 1789706594.171,
+            "z_mm": 1060.49267578125,
+            "mad_mm": 19.3614501953125,
+            "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+            "fact_id": "feeding_000351_000555/F56/n:30"
+          }
+        ],
+        "acquired_interval_seconds": 0.03299999237060547,
+        "cutoff_frame": 58,
+        "source": 30,
+        "public": 30
+      },
+      "B": {
+        "key": [
+          "feeding_000351_000555",
+          "D2_DYNAMIC",
+          1,
+          70,
+          1
+        ],
+        "samples": [
+          {
+            "frame": 38,
+            "time": 1789706593.573,
+            "z_mm": 1063.376220703125,
+            "mad_mm": 7.03265380859375,
+            "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+            "fact_id": "feeding_000351_000555/F38/n:70"
+          }
+        ],
+        "acquired_interval_seconds": 0.03299999237060547,
+        "cutoff_frame": 58,
+        "source": 70,
+        "public": 70
+      }
+    },
+    "score": {
+      "choice": "H2",
+      "detail": {
+        "candidates": [
+          {
+            "choice": "H1",
+            "geometry": 2.0520679571362175,
+            "depth": 0.7249096850802368,
+            "total": 2.2332953784062766,
+            "pairs": [
+              {
+                "role": "A",
+                "source": 70,
+                "used": true,
+                "cost": 0.7249096850802368,
+                "measurement_fact_id": "feeding_000351_000555/F65/n:70",
+                "observation_mm": 1127.9715576171875,
+                "prediction": {
+                  "status": "NO_SLOPE_LAST_VALUE",
+                  "mu_mm": 1060.49267578125,
+                  "slope_mm_s": null,
+                  "scale_mm": 139.71501724572178,
+                  "samples": 2,
+                  "sample_frames": [
+                    55,
+                    56
+                  ],
+                  "sample_times": [
+                    1789706594.138,
+                    1789706594.171
+                  ],
+                  "residual_mm": [],
+                  "delta_seconds": 0.2990000247955322,
+                  "time_scale_seconds": 0.03299999237060547,
+                  "fallback": null,
+                  "query_time": 1789706594.47,
+                  "sample_fact_ids": [
+                    "feeding_000351_000555/F55/n:30",
+                    "feeding_000351_000555/F56/n:30"
+                  ]
+                },
+                "observation_scale_mm": 29.90148292236328
+              },
+              {
+                "role": "B",
+                "source": 30,
+                "used": false,
+                "cost": 0.0,
+                "measurement_fact_id": "feeding_000351_000555/F65/n:30",
+                "observation_mm": 1013.4803466796875,
+                "prediction": {
+                  "status": "NO_SLOPE_LAST_VALUE",
+                  "mu_mm": 1063.376220703125,
+                  "slope_mm_s": null,
+                  "scale_mm": 408.27886715564307,
+                  "samples": 1,
+                  "sample_frames": [
+                    38
+                  ],
+                  "sample_times": [
+                    1789706593.573
+                  ],
+                  "residual_mm": [],
+                  "delta_seconds": 0.8970000743865967,
+                  "time_scale_seconds": 0.03299999237060547,
+                  "fallback": "OBSERVED_ACQUISITION_INTERVAL",
+                  "query_time": 1789706594.47,
+                  "sample_fact_ids": [
+                    "feeding_000351_000555/F38/n:70"
+                  ]
+                },
+                "observation_scale_mm": null
+              }
+            ]
+          },
+          {
+            "choice": "H2",
+            "geometry": 1.6276931157276686,
+            "depth": 1.3811961963781312,
+            "total": 1.9729921648222013,
+            "pairs": [
+              {
+                "role": "A",
+                "source": 30,
+                "used": false,
+                "cost": 0.0,
+                "measurement_fact_id": "feeding_000351_000555/F65/n:30",
+                "observation_mm": 1013.4803466796875,
+                "prediction": {
+                  "status": "NO_SLOPE_LAST_VALUE",
+                  "mu_mm": 1060.49267578125,
+                  "slope_mm_s": null,
+                  "scale_mm": 139.71501724572178,
+                  "samples": 2,
+                  "sample_frames": [
+                    55,
+                    56
+                  ],
+                  "sample_times": [
+                    1789706594.138,
+                    1789706594.171
+                  ],
+                  "residual_mm": [],
+                  "delta_seconds": 0.2990000247955322,
+                  "time_scale_seconds": 0.03299999237060547,
+                  "fallback": null,
+                  "query_time": 1789706594.47,
+                  "sample_fact_ids": [
+                    "feeding_000351_000555/F55/n:30",
+                    "feeding_000351_000555/F56/n:30"
+                  ]
+                },
+                "observation_scale_mm": null
+              },
+              {
+                "role": "B",
+                "source": 70,
+                "used": true,
+                "cost": 1.3811961963781312,
+                "measurement_fact_id": "feeding_000351_000555/F65/n:70",
+                "observation_mm": 1127.9715576171875,
+                "prediction": {
+                  "status": "NO_SLOPE_LAST_VALUE",
+                  "mu_mm": 1063.376220703125,
+                  "slope_mm_s": null,
+                  "scale_mm": 408.27886715564307,
+                  "samples": 1,
+                  "sample_frames": [
+                    38
+                  ],
+                  "sample_times": [
+                    1789706593.573
+                  ],
+                  "residual_mm": [],
+                  "delta_seconds": 0.8970000743865967,
+                  "time_scale_seconds": 0.03299999237060547,
+                  "fallback": "OBSERVED_ACQUISITION_INTERVAL",
+                  "query_time": 1789706594.47,
+                  "sample_fact_ids": [
+                    "feeding_000351_000555/F38/n:70"
+                  ]
+                },
+                "observation_scale_mm": 29.90148292236328
+              }
+            ]
+          }
+        ],
+        "background": {
+          "mu_mm": 1158.06884765625,
+          "scale_mm": 60.0
+        },
+        "used_edges": 2,
+        "depth_weight": 0.25,
+        "tie": false,
+        "legacy_scores": [
+          {
+            "choice": "H1",
+            "total": 2.0520679571362175
+          },
+          {
+            "choice": "H2",
+            "total": 1.6276931157276686
+          }
+        ]
+      },
+      "legacy_choice": "H2"
+    },
+    "measured": {
+      "70": {
+        "native": 70,
+        "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+        "whole": {
+          "area": 262,
+          "n": 196,
+          "valid_fraction": 0.7480916030534351,
+          "median": 1133.902587890625,
+          "mad": 28.26220703125,
+          "q10": 1102.3670654296875,
+          "q25": 1112.1603088378906,
+          "q75": 1178.7003784179688,
+          "q90": 1192.060791015625
+        },
+        "core": {
+          "area": 18,
+          "n": 18,
+          "valid_fraction": 1.0,
+          "median": 1127.9715576171875,
+          "mad": 20.16827392578125,
+          "q10": 1107.298095703125,
+          "q25": 1112.9917907714844,
+          "q75": 1156.1699829101562,
+          "q90": 1174.9537719726563
+        },
+        "core_usable": true,
+        "core_whole_area_ratio": 0.06870229007633588,
+        "components": 1,
+        "centroid_bbox_delta_px": [
+          0.091603053435108,
+          0.408396946564892
+        ],
+        "core_whole_median_delta_mm": -5.9310302734375,
+        "fact_id": "feeding_000351_000555/F65/n:70"
+      },
+      "30": {
+        "native": 30,
+        "source": "RAW_SENSOR_OR_ALIGNED_RAW",
+        "whole": {
+          "area": 345,
+          "n": 236,
+          "valid_fraction": 0.6840579710144927,
+          "median": 1153.4473266601562,
+          "mad": 40.245361328125,
+          "q10": 1018.2569885253906,
+          "q25": 1026.2334899902344,
+          "q75": 1176.7011108398438,
+          "q90": 1192.0469970703125
+        },
+        "core": {
+          "area": 9,
+          "n": 9,
+          "valid_fraction": 1.0,
+          "median": 1013.4803466796875,
+          "mad": 3.64154052734375,
+          "q10": 1011.2955444335937,
+          "q25": 1012.9733276367188,
+          "q75": 1025.0653076171875,
+          "q90": 1030.1716552734374
+        },
+        "core_usable": false,
+        "core_whole_area_ratio": 0.02608695652173913,
+        "components": 1,
+        "centroid_bbox_delta_px": [
+          -0.45217391304345256,
+          -2.8536231884057983
+        ],
+        "core_whole_median_delta_mm": -139.96697998046875,
+        "fact_id": "feeding_000351_000555/F65/n:30"
+      }
+    },
+    "full_frame": {
+      "area": 230400,
+      "n": 156051,
+      "valid_fraction": 0.6773046875,
+      "median": 1158.06884765625,
+      "mad": 33.024658203125,
+      "q10": 772.299072265625,
+      "q25": 966.5615844726562,
+      "q75": 1181.1229248046875,
+      "q90": 1189.9681396484375
+    },
+    "first_public_pair": {
+      "70": 70,
+      "30": 30
+    }
+  },
+  "policy": "earliest prediction-triggered q with two post sources and no visible member residual",
+  "new_model_http": 0,
+  "model_cost_usd": 0
+}

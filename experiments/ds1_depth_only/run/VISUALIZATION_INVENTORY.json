@@ -1,0 +1,88 @@
+{
+  "private": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\private_visualizations\\first_complete_depth.png",
+      "bytes": 1333637,
+      "sha256": "f946a319da695f2215cd23bac7ee0b7f4b787b1af31b8675a6c809e55e7eb081",
+      "segment": "feeding_000351_000555",
+      "local_frames": [
+        56,
+        38,
+        59,
+        65
+      ],
+      "selected_sources": [
+        [
+          30
+        ],
+        [
+          70
+        ],
+        [
+          30
+        ],
+        [
+          70,
+          30
+        ]
+      ],
+      "crop_rgb_grid": [
+        225,
+        0,
+        396,
+        250
+      ],
+      "display_depth_range_mm": [
+        882.85025390625,
+        1204.2770166015625
+      ],
+      "transform": "crop only in shared640x360 RGB grid; axes preserve original pixel coordinates",
+      "data": "only raw depth_mm and predicted masks; no RGB or GT raster"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\private_visualizations\\maximum_quality_conflict.png",
+      "bytes": 119703,
+      "sha256": "d1abbab09d0b3ab4def6cecbf7c7b770d0db5dda12a5f5564bad3f6482421d9f",
+      "segment": "feeding_000351_000555",
+      "local_frames": [
+        65
+      ],
+      "selected_sources": [
+        [
+          62
+        ]
+      ],
+      "crop_rgb_grid": [
+        301,
+        135,
+        380,
+        259
+      ],
+      "display_depth_range_mm": [
+        1051.9139379882813,
+        1197.2148852539062
+      ],
+      "transform": "crop only in shared640x360 RGB grid; axes preserve original pixel coordinates",
+      "data": "only raw depth_mm and predicted masks; no RGB or GT raster"
+    }
+  ],
+  "public": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\run\\visualizations\\feeding_000351_000555_MS1-F166.svg",
+      "bytes": 128167,
+      "sha256": "9bc17ce1525e5c84e755aa194805cb0914294e82f9d8e1957f766dff6736a9e1"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\run\\visualizations\\feeding_000351_000555_MS1-F59.svg",
+      "bytes": 129933,
+      "sha256": "35e41366d1ec29fc27aa1eb29d1e7cf081e1150af2443dea6970ac569a036fca"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\run\\visualizations\\feeding_000351_000555_MS1-F67.svg",
+      "bytes": 111112,
+      "sha256": "a5a6c0c7cc77c97b88e2411e63f921abff51762dc83bbf031539340b802967df"
+    }
+  ],
+  "reproduction": "python experiments/ds1_depth_only/analyze.py; requires original raw depth, prepared prediction RLE, matplotlib/cv2/numpy/pycocotools; fresh output directories",
+  "no_private_raster_committed": true
+}

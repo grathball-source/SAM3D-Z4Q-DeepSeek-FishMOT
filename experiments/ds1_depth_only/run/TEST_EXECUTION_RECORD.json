@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "record_type": "observed_preformal_tool_output_summary",
+  "unit_tests": {
+    "pass": 10,
+    "fail": 0,
+    "reported_seconds": 0.007
+  },
+  "real_prefixes": {
+    "passes": 3,
+    "frames_each": 65,
+    "max_original_sensor_frame": 415,
+    "future_sensor_accesses": 0,
+    "provider_infer_throwing_stub": true,
+    "key_blank": true,
+    "socket_and_GT_paths_blocked": true,
+    "npz_fields_accessed": [
+      "depth_mm"
+    ],
+    "archived_legacy_native_exact": true,
+    "all_missing_D2_equal_D0": true
+  },
+  "formal": {
+    "status": "PASS_BEFORE_GT_SCORING",
+    "frames": 405,
+    "segments": [
+      {
+        "segment": "feeding_000000_000199",
+        "frames": 200,
+        "native_exact": true,
+        "legacy_exact": true,
+        "normalized_predictions_sha256": {
+          "SAM3_NATIVE": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+          "D0_GEOMETRY": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+          "D1_STATIC_LEGACY": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2",
+          "D2_DYNAMIC": "800a5b6627434d863846ff06b48933233757d84c8bf6df5342ba1412b49f9fa2"
+        }
+      },
+      {
+        "segment": "feeding_000351_000555",
+        "frames": 205,
+        "native_exact": true,
+        "legacy_exact": true,
+        "normalized_predictions_sha256": {
+          "SAM3_NATIVE": "8a8b86e90259456aec1c8a40bd5450c35ced0e45dd2e2219e6ffeafcc21a2bcd",
+          "D0_GEOMETRY": "b3f763f69a9f1a69065babae757fc01898e8469a9f5360efefb022ef718003dc",
+          "D1_STATIC_LEGACY": "b3f763f69a9f1a69065babae757fc01898e8469a9f5360efefb022ef718003dc",
+          "D2_DYNAMIC": "0e3fbbce3cbc95d6bd598799fe98ccb7051257be77f281f2fb72646d18bb9960"
+        }
+      }
+    ],
+    "first_publication_checks": 18,
+    "group_observation_checks": 384,
+    "group_to_individual_write_violations": 0,
+    "invalid_depth_detection_deletions": 0,
+    "new_model_http": 0,
+    "model_cost_usd": 0
+  },
+  "note": "Summary of actual observed earlier tool outputs; not a fabricated full console transcript or another test run."
+}

@@ -1,0 +1,312 @@
+{
+  "status": "POSTHOC_UNIQUE_SAME_PHYSICAL_FRAGMENT_ONLY",
+  "interpretation": "residual against later raw observations, not physical depth GT or calibrated coverage",
+  "selection": "first certified contiguous same-version post fragment within 30 frames; stop at risk/nonunique match/version change",
+  "static_absolute_mm": {
+    "n": 7,
+    "median": 43.8812255859375,
+    "p90": 100.52927856445314
+  },
+  "dynamic_absolute_mm": {
+    "n": 7,
+    "median": 43.8812255859375,
+    "p90": 171.82520773833184
+  },
+  "within_proxy_scale": 7,
+  "fitted_WLS_comparisons": 3,
+  "bins": [
+    {
+      "interval_seconds": [
+        0.0,
+        0.1
+      ],
+      "static_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "dynamic_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "within_proxy_scale": 0
+    },
+    {
+      "interval_seconds": [
+        0.1,
+        0.5
+      ],
+      "static_absolute_mm": {
+        "n": 1,
+        "median": 24.79998779296875,
+        "p90": 24.79998779296875
+      },
+      "dynamic_absolute_mm": {
+        "n": 1,
+        "median": 24.79998779296875,
+        "p90": 24.79998779296875
+      },
+      "within_proxy_scale": 1
+    },
+    {
+      "interval_seconds": [
+        0.5,
+        1.0
+      ],
+      "static_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "dynamic_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "within_proxy_scale": 0
+    },
+    {
+      "interval_seconds": [
+        1.0,
+        2.0
+      ],
+      "static_absolute_mm": {
+        "n": 6,
+        "median": 66.93994140625,
+        "p90": 102.73652648925781
+      },
+      "dynamic_absolute_mm": {
+        "n": 6,
+        "median": 93.20775230002278,
+        "p90": 172.0977213239628
+      },
+      "within_proxy_scale": 6
+    },
+    {
+      "interval_seconds": [
+        2.0,
+        null
+      ],
+      "static_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "dynamic_absolute_mm": {
+        "n": 0,
+        "median": null,
+        "p90": null
+      },
+      "within_proxy_scale": 0
+    }
+  ],
+  "observations": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "role": "A",
+      "frame": 68,
+      "original_frame": 418,
+      "target_source": 50,
+      "gt_id": 20,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        50,
+        1
+      ],
+      "static_abs_mm": 113.77276611328125,
+      "dynamic_abs_mm": 142.53427901410805,
+      "delta_seconds": 1.9270000457763672,
+      "status": "WLS_LINEAR_TIME",
+      "proxy_scale_mm": 492.41813291601517,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "role": "A",
+      "frame": 69,
+      "original_frame": 419,
+      "target_source": 50,
+      "gt_id": 20,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        50,
+        1
+      ],
+      "static_abs_mm": 89.9986572265625,
+      "dynamic_abs_mm": 170.73515339580808,
+      "delta_seconds": 1.9600000381469727,
+      "status": "WLS_LINEAR_TIME",
+      "proxy_scale_mm": 500.7009163301857,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "role": "A",
+      "frame": 70,
+      "original_frame": 420,
+      "target_source": 50,
+      "gt_id": 20,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        50,
+        1
+      ],
+      "static_abs_mm": 91.70028686523438,
+      "dynamic_abs_mm": 173.4602892521175,
+      "delta_seconds": 1.9930000305175781,
+      "status": "WLS_LINEAR_TIME",
+      "proxy_scale_mm": 508.983873703951,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F59",
+      "role": "B",
+      "frame": 92,
+      "original_frame": 442,
+      "target_source": 70,
+      "gt_id": 21,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        70,
+        1
+      ],
+      "static_abs_mm": 43.8812255859375,
+      "dynamic_abs_mm": 43.8812255859375,
+      "delta_seconds": 1.7940001487731934,
+      "status": "NO_SLOPE_LAST_VALUE",
+      "proxy_scale_mm": 815.7306745878697,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F67",
+      "role": "A",
+      "frame": 97,
+      "original_frame": 447,
+      "target_source": 2,
+      "gt_id": 27,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        2,
+        1
+      ],
+      "static_abs_mm": 1.8614501953125,
+      "dynamic_abs_mm": 1.8614501953125,
+      "delta_seconds": 1.494999885559082,
+      "status": "NO_SLOPE_LAST_VALUE",
+      "proxy_scale_mm": 679.8765826366468,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F67",
+      "role": "A",
+      "frame": 98,
+      "original_frame": 448,
+      "target_source": 2,
+      "gt_id": 27,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        2,
+        1
+      ],
+      "static_abs_mm": 19.14599609375,
+      "dynamic_abs_mm": 19.14599609375,
+      "delta_seconds": 1.5279998779296875,
+      "status": "NO_SLOPE_LAST_VALUE",
+      "proxy_scale_mm": 694.8694369496272,
+      "within_proxy_scale": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F166",
+      "role": "A",
+      "frame": 173,
+      "original_frame": 523,
+      "target_source": 24,
+      "gt_id": 7,
+      "version": [
+        "feeding_000351_000555",
+        "D2_DYNAMIC",
+        1,
+        24,
+        1
+      ],
+      "static_abs_mm": 24.79998779296875,
+      "dynamic_abs_mm": 24.79998779296875,
+      "delta_seconds": 0.4980001449584961,
+      "status": "NO_SLOPE_LAST_VALUE",
+      "proxy_scale_mm": 220.72818195103633,
+      "within_proxy_scale": true
+    }
+  ],
+  "excluded_roles": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "role": "B",
+      "reason": "NO_UNIQUE_Q_SOURCE_FOR_REFERENCE"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F59",
+      "role": "A",
+      "reason": "NO_CONTIGUOUS_CERTIFIED_POST_FRAGMENT_WITHIN_30_FRAMES"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F67",
+      "role": "B",
+      "reason": "NO_HISTORY_OR_UNSCORABLE_REFERENCE"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F81",
+      "role": "A",
+      "reason": "NO_HISTORY_OR_UNSCORABLE_REFERENCE"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F81",
+      "role": "B",
+      "reason": "NO_HISTORY_OR_UNSCORABLE_REFERENCE"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F105",
+      "role": "A",
+      "reason": "NO_HISTORY_OR_UNSCORABLE_REFERENCE"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F105",
+      "role": "B",
+      "reason": "NO_CONTIGUOUS_CERTIFIED_POST_FRAGMENT_WITHIN_30_FRAMES"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F166",
+      "role": "B",
+      "reason": "NO_CONTIGUOUS_CERTIFIED_POST_FRAGMENT_WITHIN_30_FRAMES"
+    }
+  ],
+  "q_source_version_required": true,
+  "review_note": "Initial residual audit allowed the first later clean fragment after q even if its source generation changed. This append-only audit binds the actual q version and excludes that case; no input, prediction, choice or TrackEval score changed."
+}

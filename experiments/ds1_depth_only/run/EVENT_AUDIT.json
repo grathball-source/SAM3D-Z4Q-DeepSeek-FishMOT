@@ -1,0 +1,1540 @@
+{
+  "status": "POSTSEAL_ACTUAL_ANCHOR",
+  "summary": {
+    "D0_GEOMETRY": {
+      "CORRECT": 2,
+      "WRONG": 2,
+      "NOT_STAGED": 2,
+      "UNSCORABLE_OR_NO_BIJECTION": 0,
+      "NO_SPLIT": 2
+    },
+    "D1_STATIC_LEGACY": {
+      "CORRECT": 2,
+      "WRONG": 2,
+      "NOT_STAGED": 2,
+      "UNSCORABLE_OR_NO_BIJECTION": 0,
+      "NO_SPLIT": 2
+    },
+    "D2_DYNAMIC": {
+      "CORRECT": 4,
+      "WRONG": 0,
+      "NOT_STAGED": 2,
+      "UNSCORABLE_OR_NO_BIJECTION": 0,
+      "NO_SPLIT": 3
+    }
+  },
+  "events": [
+    {
+      "segment": "feeding_000000_000199",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F155",
+      "suspect": 155,
+      "confirm": 156,
+      "original_confirm": 155,
+      "q": null,
+      "original_q": null,
+      "status": "MERGED",
+      "reference_anchors": {
+        "2": {
+          "frame": 11,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "16": {
+          "frame": 15,
+          "native_id": 16,
+          "mask": "n:16",
+          "canonical_id": 16
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000000_000199",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F155",
+      "suspect": 155,
+      "confirm": 156,
+      "original_confirm": 155,
+      "q": null,
+      "original_q": null,
+      "status": "MERGED",
+      "reference_anchors": {
+        "2": {
+          "frame": 11,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "16": {
+          "frame": 15,
+          "native_id": 16,
+          "mask": "n:16",
+          "canonical_id": 16
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000000_000199",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F155",
+      "suspect": 155,
+      "confirm": 156,
+      "original_confirm": 155,
+      "q": null,
+      "original_q": null,
+      "status": "MERGED",
+      "reference_anchors": {
+        "2": {
+          "frame": 11,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "16": {
+          "frame": 15,
+          "native_id": 16,
+          "mask": "n:16",
+          "canonical_id": 16
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F12",
+      "suspect": 12,
+      "confirm": 13,
+      "original_confirm": 363,
+      "q": 48,
+      "original_q": 398,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "50": {
+          "frame": 10,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        },
+        "59": {
+          "frame": 10,
+          "native_id": 59,
+          "mask": "n:59",
+          "canonical_id": 59
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "H2",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "first_public_mapping": {
+        "50": 50,
+        "30": 30
+      },
+      "expected_mapping": {},
+      "residual": [
+        59
+      ],
+      "anchor_matches": {
+        "50": {
+          "original_frame": 360,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9499192245557351,
+          "second_iou": 0.0
+        },
+        "59": {
+          "original_frame": 360,
+          "native_source": 59,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.9038076152304609,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9617977528089887,
+          "second_iou": 0.0
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.7529691211401425,
+          "second_iou": 0.0
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F59",
+      "suspect": 59,
+      "confirm": 60,
+      "original_confirm": 410,
+      "q": 65,
+      "original_q": 415,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "30": {
+          "frame": 22,
+          "native_id": 30,
+          "mask": "n:30",
+          "canonical_id": 30
+        },
+        "70": {
+          "frame": 20,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H2",
+      "decision_source": "D0_GEOMETRY",
+      "selected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "first_public_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "expected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "residual": [],
+      "anchor_matches": {
+        "30": {
+          "original_frame": 372,
+          "native_source": 30,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9684542586750788,
+          "second_iou": 0.0
+        },
+        "70": {
+          "original_frame": 370,
+          "native_source": 70,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.875,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8977272727272727,
+          "second_iou": 0.0049261083743842365
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9305555555555556,
+          "second_iou": 0.006896551724137931
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F67",
+      "suspect": 67,
+      "confirm": 68,
+      "original_confirm": 418,
+      "q": 69,
+      "original_q": 419,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "2": {
+          "frame": 52,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "21": {
+          "frame": 7,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        }
+      },
+      "physical": "WRONG",
+      "first_public_physical": "WRONG",
+      "selected_choice": "H1",
+      "decision_source": "D0_GEOMETRY",
+      "selected_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "first_public_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "expected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "residual": [],
+      "anchor_matches": {
+        "2": {
+          "original_frame": 402,
+          "native_source": 2,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9257028112449799,
+          "second_iou": 0.0
+        },
+        "21": {
+          "original_frame": 357,
+          "native_source": 21,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.8911111111111111,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9147982062780269,
+          "second_iou": 0.039030955585464336
+        },
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9181286549707602,
+          "second_iou": 0.012345679012345678
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F81",
+      "suspect": 81,
+      "confirm": 82,
+      "original_confirm": 432,
+      "q": 84,
+      "original_q": 434,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "3": {
+          "frame": 55,
+          "native_id": 3,
+          "mask": "n:3",
+          "canonical_id": 3
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "UNRESOLVED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {},
+      "first_public_mapping": {
+        "72": 72,
+        "69": 69
+      },
+      "expected_mapping": {},
+      "residual": [
+        3
+      ],
+      "anchor_matches": {
+        "3": {
+          "original_frame": 405,
+          "native_source": 3,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.8868613138686131,
+          "second_iou": 0.0
+        },
+        "69": {
+          "original_frame": 368,
+          "native_source": 69,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8943396226415095,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "72": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 19,
+          "iou": 0.5094086021505376,
+          "second_iou": 0.06521739130434782
+        },
+        "69": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8238636363636364,
+          "second_iou": 0.011194029850746268
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F85",
+      "suspect": 85,
+      "confirm": 86,
+      "original_confirm": 436,
+      "q": null,
+      "original_q": null,
+      "status": "OUT_OF_SCOPE",
+      "reference_anchors": {
+        "10": {
+          "frame": 80,
+          "native_id": 10,
+          "mask": "n:10",
+          "canonical_id": 10
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F105",
+      "suspect": 105,
+      "confirm": 106,
+      "original_confirm": 456,
+      "q": 120,
+      "original_q": 470,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "1": {
+          "frame": 73,
+          "native_id": 1,
+          "mask": "n:1",
+          "canonical_id": 1
+        },
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H1",
+      "decision_source": "D0_GEOMETRY",
+      "selected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "first_public_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "expected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "1": {
+          "original_frame": 423,
+          "native_source": 1,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.9005376344086021,
+          "second_iou": 0.0
+        },
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "82": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8489932885906041,
+          "second_iou": 0.0
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.929701230228471,
+          "second_iou": 0.014256619144602852
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D0_GEOMETRY",
+      "event": "MS1-F166",
+      "suspect": 166,
+      "confirm": 167,
+      "original_confirm": 517,
+      "q": 169,
+      "original_q": 519,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        },
+        "50": {
+          "frame": 103,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        }
+      },
+      "physical": "WRONG",
+      "first_public_physical": "WRONG",
+      "selected_choice": "H1",
+      "decision_source": "D0_GEOMETRY",
+      "selected_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "first_public_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "expected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        },
+        "50": {
+          "original_frame": 453,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9076655052264808,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9267326732673268,
+          "second_iou": 0.006369426751592357
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9373219373219374,
+          "second_iou": 0.008393285371702638
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F12",
+      "suspect": 12,
+      "confirm": 13,
+      "original_confirm": 363,
+      "q": 48,
+      "original_q": 398,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "50": {
+          "frame": 10,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        },
+        "59": {
+          "frame": 10,
+          "native_id": 59,
+          "mask": "n:59",
+          "canonical_id": 59
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "H2",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "first_public_mapping": {
+        "50": 50,
+        "30": 30
+      },
+      "expected_mapping": {},
+      "residual": [
+        59
+      ],
+      "anchor_matches": {
+        "50": {
+          "original_frame": 360,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9499192245557351,
+          "second_iou": 0.0
+        },
+        "59": {
+          "original_frame": 360,
+          "native_source": 59,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.9038076152304609,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9617977528089887,
+          "second_iou": 0.0
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.7529691211401425,
+          "second_iou": 0.0
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F59",
+      "suspect": 59,
+      "confirm": 60,
+      "original_confirm": 410,
+      "q": 65,
+      "original_q": 415,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "30": {
+          "frame": 22,
+          "native_id": 30,
+          "mask": "n:30",
+          "canonical_id": 30
+        },
+        "70": {
+          "frame": 20,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H2",
+      "decision_source": "D1_STATIC_LEGACY",
+      "selected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "first_public_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "expected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "residual": [],
+      "anchor_matches": {
+        "30": {
+          "original_frame": 372,
+          "native_source": 30,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9684542586750788,
+          "second_iou": 0.0
+        },
+        "70": {
+          "original_frame": 370,
+          "native_source": 70,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.875,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8977272727272727,
+          "second_iou": 0.0049261083743842365
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9305555555555556,
+          "second_iou": 0.006896551724137931
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F67",
+      "suspect": 67,
+      "confirm": 68,
+      "original_confirm": 418,
+      "q": 69,
+      "original_q": 419,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "2": {
+          "frame": 52,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "21": {
+          "frame": 7,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        }
+      },
+      "physical": "WRONG",
+      "first_public_physical": "WRONG",
+      "selected_choice": "H1",
+      "decision_source": "D1_STATIC_LEGACY",
+      "selected_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "first_public_mapping": {
+        "21": 2,
+        "2": 21
+      },
+      "expected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "residual": [],
+      "anchor_matches": {
+        "2": {
+          "original_frame": 402,
+          "native_source": 2,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9257028112449799,
+          "second_iou": 0.0
+        },
+        "21": {
+          "original_frame": 357,
+          "native_source": 21,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.8911111111111111,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9147982062780269,
+          "second_iou": 0.039030955585464336
+        },
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9181286549707602,
+          "second_iou": 0.012345679012345678
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F81",
+      "suspect": 81,
+      "confirm": 82,
+      "original_confirm": 432,
+      "q": 84,
+      "original_q": 434,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "3": {
+          "frame": 55,
+          "native_id": 3,
+          "mask": "n:3",
+          "canonical_id": 3
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "UNRESOLVED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {},
+      "first_public_mapping": {
+        "72": 72,
+        "69": 69
+      },
+      "expected_mapping": {},
+      "residual": [
+        3
+      ],
+      "anchor_matches": {
+        "3": {
+          "original_frame": 405,
+          "native_source": 3,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.8868613138686131,
+          "second_iou": 0.0
+        },
+        "69": {
+          "original_frame": 368,
+          "native_source": 69,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8943396226415095,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "72": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 19,
+          "iou": 0.5094086021505376,
+          "second_iou": 0.06521739130434782
+        },
+        "69": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8238636363636364,
+          "second_iou": 0.011194029850746268
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F85",
+      "suspect": 85,
+      "confirm": 86,
+      "original_confirm": 436,
+      "q": null,
+      "original_q": null,
+      "status": "OUT_OF_SCOPE",
+      "reference_anchors": {
+        "10": {
+          "frame": 80,
+          "native_id": 10,
+          "mask": "n:10",
+          "canonical_id": 10
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F105",
+      "suspect": 105,
+      "confirm": 106,
+      "original_confirm": 456,
+      "q": 120,
+      "original_q": 470,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "1": {
+          "frame": 73,
+          "native_id": 1,
+          "mask": "n:1",
+          "canonical_id": 1
+        },
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H1",
+      "decision_source": "D1_STATIC_LEGACY",
+      "selected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "first_public_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "expected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "1": {
+          "original_frame": 423,
+          "native_source": 1,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.9005376344086021,
+          "second_iou": 0.0
+        },
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "82": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8489932885906041,
+          "second_iou": 0.0
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.929701230228471,
+          "second_iou": 0.014256619144602852
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D1_STATIC_LEGACY",
+      "event": "MS1-F166",
+      "suspect": 166,
+      "confirm": 167,
+      "original_confirm": 517,
+      "q": 169,
+      "original_q": 519,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        },
+        "50": {
+          "frame": 103,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        }
+      },
+      "physical": "WRONG",
+      "first_public_physical": "WRONG",
+      "selected_choice": "H1",
+      "decision_source": "D1_STATIC_LEGACY",
+      "selected_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "first_public_mapping": {
+        "50": 24,
+        "24": 50
+      },
+      "expected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        },
+        "50": {
+          "original_frame": 453,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9076655052264808,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9267326732673268,
+          "second_iou": 0.006369426751592357
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9373219373219374,
+          "second_iou": 0.008393285371702638
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F12",
+      "suspect": 12,
+      "confirm": 13,
+      "original_confirm": 363,
+      "q": 48,
+      "original_q": 398,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "50": {
+          "frame": 10,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        },
+        "59": {
+          "frame": 10,
+          "native_id": 59,
+          "mask": "n:59",
+          "canonical_id": 59
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "H2",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {
+        "50": 59,
+        "30": 50
+      },
+      "first_public_mapping": {
+        "50": 50,
+        "30": 30
+      },
+      "expected_mapping": {},
+      "residual": [
+        59
+      ],
+      "anchor_matches": {
+        "50": {
+          "original_frame": 360,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9499192245557351,
+          "second_iou": 0.0
+        },
+        "59": {
+          "original_frame": 360,
+          "native_source": 59,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.9038076152304609,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9617977528089887,
+          "second_iou": 0.0
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.7529691211401425,
+          "second_iou": 0.0
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F59",
+      "suspect": 59,
+      "confirm": 60,
+      "original_confirm": 410,
+      "q": 65,
+      "original_q": 415,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "30": {
+          "frame": 22,
+          "native_id": 30,
+          "mask": "n:30",
+          "canonical_id": 30
+        },
+        "70": {
+          "frame": 20,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H2",
+      "decision_source": "D2_DYNAMIC",
+      "selected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "first_public_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "expected_mapping": {
+        "70": 70,
+        "30": 30
+      },
+      "residual": [],
+      "anchor_matches": {
+        "30": {
+          "original_frame": 372,
+          "native_source": 30,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9684542586750788,
+          "second_iou": 0.0
+        },
+        "70": {
+          "original_frame": 370,
+          "native_source": 70,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.875,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "70": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8977272727272727,
+          "second_iou": 0.0049261083743842365
+        },
+        "30": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9305555555555556,
+          "second_iou": 0.006896551724137931
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F67",
+      "suspect": 67,
+      "confirm": 68,
+      "original_confirm": 418,
+      "q": 69,
+      "original_q": 419,
+      "status": "COMMIT",
+      "reference_anchors": {
+        "2": {
+          "frame": 52,
+          "native_id": 2,
+          "mask": "n:2",
+          "canonical_id": 2
+        },
+        "21": {
+          "frame": 7,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H2",
+      "decision_source": "D2_DYNAMIC",
+      "selected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "first_public_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "expected_mapping": {
+        "21": 21,
+        "2": 2
+      },
+      "residual": [],
+      "anchor_matches": {
+        "2": {
+          "original_frame": 402,
+          "native_source": 2,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9257028112449799,
+          "second_iou": 0.0
+        },
+        "21": {
+          "original_frame": 357,
+          "native_source": 21,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.8911111111111111,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "21": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9147982062780269,
+          "second_iou": 0.039030955585464336
+        },
+        "2": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 27,
+          "iou": 0.9181286549707602,
+          "second_iou": 0.012345679012345678
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F81",
+      "suspect": 81,
+      "confirm": 82,
+      "original_confirm": 432,
+      "q": 84,
+      "original_q": 434,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "reference_anchors": {
+        "3": {
+          "frame": 55,
+          "native_id": 3,
+          "mask": "n:3",
+          "canonical_id": 3
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NOT_STAGED",
+      "first_public_physical": "UNSCORABLE_OR_NO_BIJECTION",
+      "selected_choice": "UNRESOLVED",
+      "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+      "selected_mapping": {},
+      "first_public_mapping": {
+        "72": 72,
+        "69": 69
+      },
+      "expected_mapping": {},
+      "residual": [
+        3
+      ],
+      "anchor_matches": {
+        "3": {
+          "original_frame": 405,
+          "native_source": 3,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.8868613138686131,
+          "second_iou": 0.0
+        },
+        "69": {
+          "original_frame": 368,
+          "native_source": 69,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8943396226415095,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "72": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 19,
+          "iou": 0.5094086021505376,
+          "second_iou": 0.06521739130434782
+        },
+        "69": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 23,
+          "iou": 0.8238636363636364,
+          "second_iou": 0.011194029850746268
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F85",
+      "suspect": 85,
+      "confirm": 86,
+      "original_confirm": 436,
+      "q": null,
+      "original_q": null,
+      "status": "OUT_OF_SCOPE",
+      "reference_anchors": {
+        "10": {
+          "frame": 80,
+          "native_id": 10,
+          "mask": "n:10",
+          "canonical_id": 10
+        },
+        "69": {
+          "frame": 18,
+          "native_id": 69,
+          "mask": "n:69",
+          "canonical_id": 69
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F105",
+      "suspect": 105,
+      "confirm": 106,
+      "original_confirm": 456,
+      "q": 120,
+      "original_q": 470,
+      "status": "RESOLVE_NO_ID_CHANGE",
+      "reference_anchors": {
+        "1": {
+          "frame": 73,
+          "native_id": 1,
+          "mask": "n:1",
+          "canonical_id": 1
+        },
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H1",
+      "decision_source": "D2_DYNAMIC",
+      "selected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "first_public_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "expected_mapping": {
+        "82": 1,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "1": {
+          "original_frame": 423,
+          "native_source": 1,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.9005376344086021,
+          "second_iou": 0.0
+        },
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "82": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.8489932885906041,
+          "second_iou": 0.0
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.929701230228471,
+          "second_iou": 0.014256619144602852
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F166",
+      "suspect": 166,
+      "confirm": 167,
+      "original_confirm": 517,
+      "q": 169,
+      "original_q": 519,
+      "status": "COMMIT",
+      "reference_anchors": {
+        "24": {
+          "frame": 23,
+          "native_id": 24,
+          "mask": "n:24",
+          "canonical_id": 24
+        },
+        "50": {
+          "frame": 103,
+          "native_id": 50,
+          "mask": "n:50",
+          "canonical_id": 50
+        }
+      },
+      "physical": "CORRECT",
+      "first_public_physical": "CORRECT",
+      "selected_choice": "H2",
+      "decision_source": "D2_DYNAMIC",
+      "selected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "first_public_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "expected_mapping": {
+        "50": 50,
+        "24": 24
+      },
+      "residual": [],
+      "anchor_matches": {
+        "24": {
+          "original_frame": 373,
+          "native_source": 24,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9339622641509434,
+          "second_iou": 0.0
+        },
+        "50": {
+          "original_frame": 453,
+          "native_source": 50,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9076655052264808,
+          "second_iou": 0.0
+        }
+      },
+      "post_matches": {
+        "50": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 20,
+          "iou": 0.9267326732673268,
+          "second_iou": 0.006369426751592357
+        },
+        "24": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9373219373219374,
+          "second_iou": 0.008393285371702638
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "arm": "D2_DYNAMIC",
+      "event": "MS1-F180",
+      "suspect": 180,
+      "confirm": 181,
+      "original_confirm": 531,
+      "q": null,
+      "original_q": null,
+      "status": "MERGED",
+      "reference_anchors": {
+        "79": {
+          "frame": 163,
+          "native_id": 79,
+          "mask": "n:79",
+          "canonical_id": 79
+        },
+        "1": {
+          "frame": 73,
+          "native_id": 1,
+          "mask": "n:1",
+          "canonical_id": 1
+        }
+      },
+      "physical": "NO_SPLIT",
+      "first_public_physical": "NO_SPLIT"
+    }
+  ],
+  "mask_iou_min": 0.5,
+  "margin_min": 0.1,
+  "prediction_seals": {
+    "feeding_000000_000199": "e74b85898f915b5b78c57cd6aae65008f49fd91c58b17e468882ba310df530fc",
+    "feeding_000351_000555": "9e683e88f5213d6128f57e1c69cbf9c69a5c4b7c3fabb222844acb46794995d4"
+  }
+}

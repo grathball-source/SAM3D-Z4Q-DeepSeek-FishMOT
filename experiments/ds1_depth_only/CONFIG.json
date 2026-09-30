@@ -1,0 +1,18 @@
+{
+  "review_base": "2fe9e0c8eb497432ae5e4c676f09b8d67bff9474",
+  "source": "SOURCE_OLD saved batched SAM3 polygons; raw aligned depth_mm",
+  "segments": [[0, 199], [351, 555]],
+  "branches": ["SAM3_NATIVE", "D0_GEOMETRY", "D1_STATIC_LEGACY", "D2_DYNAMIC"],
+  "scanner": "frozen prediction-only V4",
+  "event_config": "experiments/ms1_s0_development_8400/CONFIG_V7.json",
+  "event_policy": "NE-1 native-first plus S0-P; first split before first publication",
+  "max_history_frames": 30,
+  "latest_valid_fit_samples": 10,
+  "depth_unit": "APPARENT_CAMERA_Z_MM",
+  "depth_quality": {"min_n": 16, "min_fraction": 0.2, "sigma_floor_mm": 15, "max_core_scale_mm": 60},
+  "dynamic": {"student_t_df": 4, "background_floor_mm": 60, "inlier_mixture_weight": 0.9, "depth_weight": 0.25},
+  "new_model_http": 0,
+  "model_cost_usd": 0,
+  "no_gt_before_seal": true,
+  "no_repaired_depth": true
+}

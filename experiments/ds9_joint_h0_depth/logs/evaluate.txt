@@ -1,0 +1,14 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds9_joint_h0_depth\evaluate.py", line 442, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds9_joint_h0_depth\evaluate.py", line 437, in main
+    verify_publication()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds9_joint_h0_depth\evaluate.py", line 297, in verify_publication
+    for newfact,oldfact in zip(measure_rows,old_measure_rows,strict=True):check_source_extraction(newfact,oldfact)
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds9_joint_h0_depth\evaluate.py", line 117, in check_source_extraction
+    assert new==old,'DS9 extraction differs from sealed DS8 facts'
+           ^^^^^^^^
+AssertionError: DS9 extraction differs from sealed DS8 facts

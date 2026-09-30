@@ -1,0 +1,131 @@
+{
+  "frames": 1471,
+  "branches": 6,
+  "actual_changed_v2_events": [
+    {
+      "original_q": 1239,
+      "first_public": {
+        "167": 136,
+        "128": 128
+      },
+      "expected": {
+        "167": 136,
+        "128": 128
+      },
+      "physical": "CORRECT",
+      "pre_entry_reference": {
+        "A": {
+          "frame": 34,
+          "anchor_public": 128,
+          "native_source": 128,
+          "match": {
+            "status": "UNIQUE_IOU_MATCH",
+            "gt_id": 25,
+            "iou": 0.9533678756476683,
+            "second_iou": 0.006230529595015576
+          },
+          "identity_reference": "SAME_AS_ANCHOR"
+        },
+        "B": {
+          "frame": 34,
+          "anchor_public": 136,
+          "native_source": 136,
+          "match": {
+            "status": "UNIQUE_IOU_MATCH",
+            "gt_id": 4,
+            "iou": 0.9538834951456311,
+            "second_iou": 0.002072538860103627
+          },
+          "identity_reference": "SAME_AS_ANCHOR"
+        }
+      }
+    },
+    {
+      "original_q": 1745,
+      "first_public": {
+        "190": 188,
+        "9": 9
+      },
+      "expected": {
+        "190": 188,
+        "9": 9
+      },
+      "physical": "CORRECT",
+      "pre_entry_reference": {
+        "A": {
+          "frame": 529,
+          "anchor_public": 9,
+          "native_source": 9,
+          "match": {
+            "status": "UNIQUE_IOU_MATCH",
+            "gt_id": 3,
+            "iou": 0.9610062893081761,
+            "second_iou": 0.0032546786004882017
+          },
+          "identity_reference": "SAME_AS_ANCHOR"
+        },
+        "B": {
+          "frame": 529,
+          "anchor_public": 188,
+          "native_source": 188,
+          "match": {
+            "status": "UNIQUE_IOU_MATCH",
+            "gt_id": 2,
+            "iou": 0.918859649122807,
+            "second_iou": 0.0016680567139282735
+          },
+          "identity_reference": "SAME_AS_ANCHOR"
+        }
+      }
+    }
+  ],
+  "private_images_actually_viewed": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\private\\visualizations\\feeding_000351_000555_q169.png",
+      "bytes": 534041,
+      "sha256": "1a22fe355fdb7d7e6fe30e5a77ce0d9cfbff1a714e906ccc2e9cca3d82191705"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\private\\visualizations\\feeding_000701_001060_q327.png",
+      "bytes": 544273,
+      "sha256": "1d873215319acb8ce2bab434f2c756c9a401fc1e4607d873b8c9b6f66b430da5"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\private\\visualizations\\feeding_001201_001906_q39.png",
+      "bytes": 548144,
+      "sha256": "6cf666ea08c94adadef1be5880c371953ac2261618a858c91d36067464c1e4fc"
+    }
+  ],
+  "bindings": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\run\\SCORING_SEALED.json",
+      "bytes": 746,
+      "sha256": "ab8bf81c8f3200c81f8227af79c06cf0ece34b55995af36204bf4e9e181a2675"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\APPENDED_SCORE_PROVENANCE_SEALED.json",
+      "bytes": 976,
+      "sha256": "241a53ac6768faddda8e3bfd61a1d7c3d599898cfaf0e3ab8e10256e0a643222"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\ASSOCIATION_POSTRUN.json",
+      "bytes": 1511070,
+      "sha256": "a6d6651310c83a40940e995e74b4baf6f44e81f6fc4926bece34114c55bc92d6"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\POSTRUN_REVIEW.md",
+      "bytes": 8262,
+      "sha256": "e5bccddf2c64ebbf2a911dab32b1bdd9d71755bff497ab453fda48fe0628e798"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\NEXT_STEP_PLAN.md",
+      "bytes": 7236,
+      "sha256": "9a9a9d64ab8c2db20995252036641a27e7ce1d5425f5f20eedfc322e7b901e25"
+    }
+  ],
+  "original_strict_source_comparison": "FAILED_INERT_FLOAT32_DIAGNOSTICS",
+  "appendix": "281 one-ULP DT maximum diagnostics, all actual used facts/thresholds exact",
+  "depth_target_met": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

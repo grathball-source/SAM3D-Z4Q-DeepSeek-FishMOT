@@ -1,0 +1,41 @@
+{
+  "status": "APPEND_ONLY_BEFORE_ANY_GT_SCORING",
+  "original_evaluate": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\evaluate.py",
+    "bytes": 30686,
+    "sha256": "775bf24dab0e1568e82c0aa18c74808cd5ed66660cedc4afd6a813407769813a"
+  },
+  "adapter": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\score_float_adapter.py",
+    "bytes": 4409,
+    "sha256": "c3b2fdceec55b751cb9ee77d95bc96876cfcfe88c86dd1fd2e320418b6e82863"
+  },
+  "original_failed_execution": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\logs\\evaluate.txt",
+    "bytes": 1066,
+    "sha256": "26b0aef7c77838d0e90d436c0f51321a6dbab98631f173327073b51545a12a8a"
+  },
+  "checks": {
+    "status": "PASS",
+    "checks": 5,
+    "scope": "inert <=one float32 ULP DT max only; no GT"
+  },
+  "predictions": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\run\\ALL_PREDICTIONS_SEALED.json",
+    "bytes": 669,
+    "sha256": "4f7d545df4a6eaae9d46ddd0ff683978cd42fce4af3e0315c9c74c14ebb4cf33"
+  },
+  "access": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\run\\ACCESS_SEALED.json",
+    "bytes": 494,
+    "sha256": "3ea122935c182ee6ff60c607d6aafdc6e5efffd3b43a08e3f75a77965b26be5b"
+  },
+  "source_diff_audit": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds9_joint_h0_depth\\SOURCE_FLOAT_AUDIT.json",
+    "bytes": 162321,
+    "sha256": "de56783cc06c1e004fe275e9525664ca8a3443de3ff82af86318170c8e979ea1"
+  },
+  "allowed": "dt_max_px only; <=one float32 ULP and <=1e-6 px; both>=6, same operative 3px threshold; all remaining fields exact",
+  "scientific_thresholds_changed": false,
+  "predictions_or_sources_changed": false
+}

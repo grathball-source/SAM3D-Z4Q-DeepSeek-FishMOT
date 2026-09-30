@@ -1,0 +1,5034 @@
+{
+  "status": "DS5_READONLY_FAILURE_REVIEW_AND_FROZEN_DESIGN_RECOMMENDATIONS",
+  "base": "56c2ea61682edea71328976c4fed27230f334c2a",
+  "scope": {
+    "old_ds4_modified": false,
+    "old_GT_threshold_tuning": false,
+    "new_gt_reads": 0,
+    "new_instance_id_reads": 0,
+    "new_model_or_tracker_runs": 0,
+    "new_API_calls": 0,
+    "full_census_graph_run_by_this_reviewer": false,
+    "newly_opened_raw_npz_keys": [
+      "depth_mm"
+    ],
+    "physical_surface_truth": "ABSENT",
+    "blind_validation": false
+  },
+  "source_binding": {
+    "scoring_seal": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\SCORING_SEALED.json",
+      "bytes": 1577,
+      "sha256": "9242fbb2db8e81f32f028f472f75706194a8147eec64f824d446af417d1278cc"
+    },
+    "summary": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\SUMMARY.json",
+      "bytes": 36305,
+      "sha256": "a4eac57fd2849734b0216a0b27ef7dbd59f67f2b1e48d1e528f229c4271220a1"
+    },
+    "occupancy": [
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\feeding_000701_001060_occupancy.jsonl.gz",
+        "bytes": 1998691,
+        "sha256": "cbadbae28ac884210165f7caf9c0d861d80bcce0a0fb954af87e251af768f9e6"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\feeding_001201_001906_occupancy.jsonl.gz",
+        "bytes": 3885915,
+        "sha256": "64026b14513e06ba3b5bab8e2f6ff1b15cbf57a1ce6c554fb9109b8f86e786a0"
+      }
+    ],
+    "measurements": [
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\feeding_000701_001060_measurements.jsonl.gz",
+        "bytes": 6513550,
+        "sha256": "a4ac6d6bdda08fe6ed89dad52a174f7e64a1f15242674caaf9d31a61d506a0bd"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\feeding_001201_001906_measurements.jsonl.gz",
+        "bytes": 12709870,
+        "sha256": "7006209548ec92e2f38b42d478ec1b6b45e02ff8c8cbb2dc8f6199424386056d"
+      }
+    ],
+    "pixels": [
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\private\\feeding_000701_001060_pixels.jsonl.gz",
+        "bytes": 4592054,
+        "sha256": "93edaefa59453bbeb05b96556dd79de09bca2303343b41aec35ff7489ca3d488"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds4_depth_quality_repair\\private\\feeding_001201_001906_pixels.jsonl.gz",
+        "bytes": 8883468,
+        "sha256": "3739dff33a8c437d4b27e6f575e82bb246020d9a15d0941ba50a715ee5ab7dac"
+      }
+    ],
+    "F1821_depth": {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001821.npz",
+      "bytes": 773564,
+      "sha256": "88e0396c85799ef02b242a9a6a77ccde42a884a09cb190c40c12e87d84efe9f8"
+    },
+    "seal_artifacts_verified": true
+  },
+  "complete_new_conflict_cohort": {
+    "n": 44,
+    "distinct_frames": 43,
+    "segments": {
+      "feeding_000701_001060": 18,
+      "feeding_001201_001906": 26
+    },
+    "old_compatible": 39,
+    "old_unknown": 5,
+    "all_39_available_pairs_expand_selected": true,
+    "all_39_selected_medians_increase": true,
+    "median_shift_mm": {
+      "min": 1.97113037109375,
+      "q10": 5.2179931640625,
+      "median": 11.53509521484375,
+      "q90": 23.435620117187522,
+      "max": 298.34698486328125
+    },
+    "perfect_silhouette_occupancy": 13,
+    "matched_fish_zero": 0,
+    "source_component_counts": {
+      "1": 43,
+      "2": 1
+    },
+    "selected_q90_q10_over_robust_scale": {
+      "min": 1.5825419805550465,
+      "q10": 1.9218244729208096,
+      "median": 2.048586212417562,
+      "q90": 2.2497031827245286,
+      "max": 20.439292844715833
+    },
+    "dominance": {
+      "min": 0.7414634146341463,
+      "q10": 0.9208250825082509,
+      "median": 1.0,
+      "q90": 1.0,
+      "max": 1.0
+    },
+    "caveat": "44 object-frame conflicts are 43 frames, with repeated adjacent-frame tokens; not 44 independent events.",
+    "records": [
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 747,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F747:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1017.6623840332031,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 290,
+          "median_mm": 1056.1930541992188,
+          "occupancy": {
+            "n": 290,
+            "fish": 290,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 38.530670166015625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 122.2379221491916,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 320,
+          "median_mm": 1064.3858642578125,
+          "occupancy": {
+            "n": 320,
+            "fish": 320,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 46.723480224609375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 115.47367991598435,
+          "background_noise_mm": 3.418556966147263
+        },
+        "F2_selected_statistics": {
+          "area": 290,
+          "n": 290,
+          "valid_fraction": 1.0,
+          "median": 1056.1930541992188,
+          "mad": 31.4219970703125,
+          "q10": 1014.762451171875,
+          "q25": 1029.7478332519531,
+          "q75": 1094.8403015136719,
+          "q90": 1119.4601196289063
+        },
+        "F6_selected_statistics": {
+          "area": 320,
+          "n": 320,
+          "valid_fraction": 1.0,
+          "median": 1064.3858642578125,
+          "mad": 37.46685791015625,
+          "q10": 1015.4954650878906,
+          "q25": 1032.4440002441406,
+          "q75": 1107.3842163085938,
+          "q90": 1132.139306640625
+        },
+        "source_whole_area": 531,
+        "source_components": 1,
+        "original_exclusive_valid_n": 435,
+        "F6_original_raw_retention": 0.735632183908046,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 116.64384155273433,
+        "F6_selected_robust_scale_mm": 55.54836353759765
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 750,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F750:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1023.3963012695312,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 193,
+          "median_mm": 1053.8861083984375,
+          "occupancy": {
+            "n": 193,
+            "fish": 193,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 30.48980712890625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 123.45337829933305,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 253,
+          "median_mm": 1069.35791015625,
+          "occupancy": {
+            "n": 253,
+            "fish": 252,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 45.96160888671875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 106.98130150992074,
+          "background_noise_mm": 3.306757078120927
+        },
+        "F2_selected_statistics": {
+          "area": 193,
+          "n": 193,
+          "valid_fraction": 1.0,
+          "median": 1053.8861083984375,
+          "mad": 26.1131591796875,
+          "q10": 1019.73408203125,
+          "q25": 1031.4127197265625,
+          "q75": 1091.4517822265625,
+          "q90": 1119.1755859375
+        },
+        "F6_selected_statistics": {
+          "area": 253,
+          "n": 253,
+          "valid_fraction": 1.0,
+          "median": 1069.35791015625,
+          "mad": 37.9451904296875,
+          "q10": 1023.4581298828125,
+          "q25": 1039.515380859375,
+          "q75": 1116.9970703125,
+          "q90": 1135.643408203125
+        },
+        "source_whole_area": 463,
+        "source_components": 1,
+        "original_exclusive_valid_n": 372,
+        "F6_original_raw_retention": 0.6801075268817204,
+        "F2_dominance": 0.8733031674208145,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 112.18527832031259,
+        "F6_selected_robust_scale_mm": 56.25753933105469
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 751,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F751:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1026.6815185546875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 206,
+          "median_mm": 1066.2205810546875,
+          "occupancy": {
+            "n": 206,
+            "fish": 204,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 39.5390625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 110.49426146732515,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 253,
+          "median_mm": 1088.18408203125,
+          "occupancy": {
+            "n": 253,
+            "fish": 251,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 61.5025634765625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 89.66026104350885,
+          "background_noise_mm": 3.6140441355025597
+        },
+        "F2_selected_statistics": {
+          "area": 206,
+          "n": 206,
+          "valid_fraction": 1.0,
+          "median": 1066.2205810546875,
+          "mad": 35.4736328125,
+          "q10": 1022.9412536621094,
+          "q25": 1038.0041809082031,
+          "q75": 1107.94091796875,
+          "q90": 1121.7047729492188
+        },
+        "F6_selected_statistics": {
+          "area": 253,
+          "n": 253,
+          "valid_fraction": 1.0,
+          "median": 1088.18408203125,
+          "mad": 40.1942138671875,
+          "q10": 1024.6971923828125,
+          "q25": 1045.01904296875,
+          "q75": 1124.6865234375,
+          "q90": 1138.8814697265625
+        },
+        "source_whole_area": 507,
+        "source_components": 1,
+        "original_exclusive_valid_n": 385,
+        "F6_original_raw_retention": 0.6571428571428571,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 114.18427734374995,
+        "F6_selected_robust_scale_mm": 59.591941479492185
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 752,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F752:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1032.2574462890625,
+        "reference_tolerance_mm": 46.526121771240234,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 220,
+          "median_mm": 1074.540283203125,
+          "occupancy": {
+            "n": 220,
+            "fish": 218,
+            "other_fish": 2,
+            "background": 0
+          },
+          "reference_abs_error_mm": 42.2828369140625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 102.10676660372621,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 276,
+          "median_mm": 1093.526123046875,
+          "occupancy": {
+            "n": 276,
+            "fish": 271,
+            "other_fish": 5,
+            "background": 0
+          },
+          "reference_abs_error_mm": 61.2686767578125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 83.58660339058395,
+          "background_noise_mm": 3.4615673395805895
+        },
+        "F2_selected_statistics": {
+          "area": 220,
+          "n": 220,
+          "valid_fraction": 1.0,
+          "median": 1074.540283203125,
+          "mad": 35.005859375,
+          "q10": 1026.7846069335938,
+          "q25": 1044.6776123046875,
+          "q75": 1111.0394897460938,
+          "q90": 1121.7670776367188
+        },
+        "F6_selected_statistics": {
+          "area": 276,
+          "n": 276,
+          "valid_fraction": 1.0,
+          "median": 1093.526123046875,
+          "mad": 36.62652587890625,
+          "q10": 1029.6221313476562,
+          "q25": 1050.6776733398438,
+          "q75": 1125.1211242675781,
+          "q90": 1138.7432250976562
+        },
+        "source_whole_area": 525,
+        "source_components": 1,
+        "original_exclusive_valid_n": 410,
+        "F6_original_raw_retention": 0.6731707317073171,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 109.12109375,
+        "F6_selected_robust_scale_mm": 54.3024872680664
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 753,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F753:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1025.920654296875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 235,
+          "median_mm": 1069.3145751953125,
+          "occupancy": {
+            "n": 235,
+            "fish": 235,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 43.3939208984375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 106.22034249388116,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 270,
+          "median_mm": 1081.3521728515625,
+          "occupancy": {
+            "n": 270,
+            "fish": 269,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 55.4315185546875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 95.3361996756638,
+          "background_noise_mm": 3.664601628932499
+        },
+        "F2_selected_statistics": {
+          "area": 235,
+          "n": 235,
+          "valid_fraction": 1.0,
+          "median": 1069.3145751953125,
+          "mad": 33.4686279296875,
+          "q10": 1024.3972900390625,
+          "q25": 1038.0618286132812,
+          "q75": 1105.7081909179688,
+          "q90": 1122.1132080078125
+        },
+        "F6_selected_statistics": {
+          "area": 270,
+          "n": 270,
+          "valid_fraction": 1.0,
+          "median": 1081.3521728515625,
+          "mad": 38.23504638671875,
+          "q10": 1025.3901733398438,
+          "q25": 1041.0176696777344,
+          "q75": 1117.9233703613281,
+          "q90": 1133.2796264648437
+        },
+        "source_whole_area": 479,
+        "source_components": 1,
+        "original_exclusive_valid_n": 372,
+        "F6_original_raw_retention": 0.7258064516129032,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 107.88945312499982,
+        "F6_selected_robust_scale_mm": 56.68727977294922
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 755,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F755:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1032.3347778320312,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 258,
+          "median_mm": 1076.2684326171875,
+          "occupancy": {
+            "n": 258,
+            "fish": 257,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 43.93365478515625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 100.60907969360744,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 293,
+          "median_mm": 1089.1806640625,
+          "occupancy": {
+            "n": 293,
+            "fish": 292,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 56.84588623046875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 87.16748756070592,
+          "background_noise_mm": 3.2921976842061382
+        },
+        "F2_selected_statistics": {
+          "area": 258,
+          "n": 258,
+          "valid_fraction": 1.0,
+          "median": 1076.2684326171875,
+          "mad": 34.142822265625,
+          "q10": 1026.3612670898438,
+          "q25": 1044.7364501953125,
+          "q75": 1111.22021484375,
+          "q90": 1125.67890625
+        },
+        "F6_selected_statistics": {
+          "area": 293,
+          "n": 293,
+          "valid_fraction": 1.0,
+          "median": 1089.1806640625,
+          "mad": 35.7537841796875,
+          "q10": 1027.09189453125,
+          "q25": 1050.965576171875,
+          "q75": 1121.7076416015625,
+          "q90": 1134.97236328125
+        },
+        "source_whole_area": 484,
+        "source_components": 1,
+        "original_exclusive_valid_n": 394,
+        "F6_original_raw_retention": 0.7436548223350253,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 107.88046874999986,
+        "F6_selected_robust_scale_mm": 53.008560424804685
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 758,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F758:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1040.2308959960938,
+        "reference_tolerance_mm": 49.28495767822265,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 216,
+          "median_mm": 1079.769775390625,
+          "occupancy": {
+            "n": 216,
+            "fish": 216,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 39.53887939453125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 96.42105977235462,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 248,
+          "median_mm": 1091.3048706054688,
+          "occupancy": {
+            "n": 248,
+            "fish": 248,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 51.073974609375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 85.34024730094995,
+          "background_noise_mm": 3.5721623531106355
+        },
+        "F2_selected_statistics": {
+          "area": 216,
+          "n": 216,
+          "valid_fraction": 1.0,
+          "median": 1079.769775390625,
+          "mad": 27.683837890625,
+          "q10": 1034.8804321289062,
+          "q25": 1051.8966979980469,
+          "q75": 1107.1550598144531,
+          "q90": 1120.719482421875
+        },
+        "F6_selected_statistics": {
+          "area": 248,
+          "n": 248,
+          "valid_fraction": 1.0,
+          "median": 1091.3048706054688,
+          "mad": 32.03338623046875,
+          "q10": 1036.7018310546875,
+          "q25": 1055.6534118652344,
+          "q75": 1118.25146484375,
+          "q90": 1134.1876831054688
+        },
+        "source_whole_area": 456,
+        "source_components": 1,
+        "original_exclusive_valid_n": 366,
+        "F6_original_raw_retention": 0.6775956284153005,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 97.4858520507812,
+        "F6_selected_robust_scale_mm": 47.492698425292964
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 759,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F759:o010",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1040.4705810546875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 231,
+          "median_mm": 1089.667724609375,
+          "occupancy": {
+            "n": 231,
+            "fish": 230,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 49.1971435546875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 86.9321024445801,
+          "background_noise_mm": 3.494086931216766
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 231,
+          "n": 231,
+          "valid_fraction": 1.0,
+          "median": 1089.667724609375,
+          "mad": 36.003662109375,
+          "q10": 1034.7379150390625,
+          "q25": 1054.8984985351562,
+          "q75": 1125.9397583007812,
+          "q90": 1140.8101806640625
+        },
+        "source_whole_area": 455,
+        "source_components": 1,
+        "original_exclusive_valid_n": 348,
+        "F6_original_raw_retention": 0.6637931034482759,
+        "F2_dominance": 0.5135135135135135,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 106.072265625,
+        "F6_selected_robust_scale_mm": 53.37902944335937
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 859,
+        "token": "o009",
+        "fact_id": "feeding_000701_001060:F859:o009",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1050.5235595703125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 72,
+          "median_mm": 1072.0511474609375,
+          "occupancy": {
+            "n": 72,
+            "fish": 71,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 21.527587890625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 87.74737307087014,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 112,
+          "median_mm": 1103.5924682617188,
+          "occupancy": {
+            "n": 112,
+            "fish": 105,
+            "other_fish": 0,
+            "background": 7
+          },
+          "reference_abs_error_mm": 53.06890869140625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 62.08531666083388,
+          "background_noise_mm": 7.423610955459324
+        },
+        "F2_selected_statistics": {
+          "area": 72,
+          "n": 72,
+          "valid_fraction": 1.0,
+          "median": 1072.0511474609375,
+          "mad": 22.52069091796875,
+          "q10": 1044.6499755859375,
+          "q25": 1051.9583740234375,
+          "q75": 1100.0577087402344,
+          "q90": 1113.7081298828125
+        },
+        "F6_selected_statistics": {
+          "area": 112,
+          "n": 112,
+          "valid_fraction": 1.0,
+          "median": 1103.5924682617188,
+          "mad": 26.40032958984375,
+          "q10": 1048.7984252929687,
+          "q25": 1058.978515625,
+          "q75": 1122.4752807617188,
+          "q90": 1131.6185424804687
+        },
+        "source_whole_area": 433,
+        "source_components": 1,
+        "original_exclusive_valid_n": 212,
+        "F6_original_raw_retention": 0.5283018867924528,
+        "F2_dominance": 0.9473684210526315,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 82.82011718750005,
+        "F6_selected_robust_scale_mm": 39.14112864990234
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 870,
+        "token": "o013",
+        "fact_id": "feeding_000701_001060:F870:o013",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1164.7137451171875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 21,
+          "median_mm": 1116.434814453125,
+          "occupancy": {
+            "n": 21,
+            "fish": 21,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 48.2789306640625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 53.46512628319624,
+          "background_noise_mm": 3.4887183110397864
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 21,
+          "n": 21,
+          "valid_fraction": 1.0,
+          "median": 1116.434814453125,
+          "mad": 24.0758056640625,
+          "q10": 1010.242919921875,
+          "q25": 1027.3087158203125,
+          "q75": 1132.0211181640625,
+          "q90": 1136.2410888671875
+        },
+        "source_whole_area": 319,
+        "source_components": 1,
+        "original_exclusive_valid_n": 289,
+        "F6_original_raw_retention": 0.0726643598615917,
+        "F2_dominance": null,
+        "F6_dominance": 0.75,
+        "F6_selected_q90_q10_mm": 125.9981689453125,
+        "F6_selected_robust_scale_mm": 35.69478947753906
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 871,
+        "token": "o009",
+        "fact_id": "feeding_000701_001060:F871:o009",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1025.869140625,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 80,
+          "median_mm": 1043.0509643554688,
+          "occupancy": {
+            "n": 80,
+            "fish": 77,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 17.18182373046875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 108.34888560914021,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 148,
+          "median_mm": 1088.6666259765625,
+          "occupancy": {
+            "n": 148,
+            "fish": 143,
+            "other_fish": 0,
+            "background": 5
+          },
+          "reference_abs_error_mm": 62.7974853515625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 72.5465587611393,
+          "background_noise_mm": 9.277715846998767
+        },
+        "F2_selected_statistics": {
+          "area": 80,
+          "n": 80,
+          "valid_fraction": 1.0,
+          "median": 1043.0509643554688,
+          "mad": 18.67974853515625,
+          "q10": 1020.3575317382813,
+          "q25": 1025.7398376464844,
+          "q75": 1067.4057006835938,
+          "q90": 1089.6740844726562
+        },
+        "F6_selected_statistics": {
+          "area": 148,
+          "n": 148,
+          "valid_fraction": 1.0,
+          "median": 1088.6666259765625,
+          "mad": 29.4638671875,
+          "q10": 1024.049053955078,
+          "q25": 1040.1424560546875,
+          "q75": 1108.6097106933594,
+          "q90": 1120.9609497070312
+        },
+        "source_whole_area": 564,
+        "source_components": 1,
+        "original_exclusive_valid_n": 341,
+        "F6_original_raw_retention": 0.4340175953079179,
+        "F2_dominance": 0.7766990291262136,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 96.91189575195312,
+        "F6_selected_robust_scale_mm": 43.6831294921875
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 896,
+        "token": "o014",
+        "fact_id": "feeding_000701_001060:F896:o014",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1036.0109252929688,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "AMBIGUOUS_MULTIPLE_DEPTH_COMPONENTS",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 183,
+          "median_mm": 1095.3994140625,
+          "occupancy": {
+            "n": 183,
+            "fish": 170,
+            "other_fish": 0,
+            "background": 13
+          },
+          "reference_abs_error_mm": 59.38848876953125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 67.72046879121217,
+          "background_noise_mm": 6.235489694691238
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 183,
+          "n": 183,
+          "valid_fraction": 1.0,
+          "median": 1095.3994140625,
+          "mad": 29.9530029296875,
+          "q10": 1032.1278564453125,
+          "q25": 1044.3338623046875,
+          "q75": 1117.99267578125,
+          "q90": 1127.875048828125
+        },
+        "source_whole_area": 528,
+        "source_components": 1,
+        "original_exclusive_valid_n": 363,
+        "F6_original_raw_retention": 0.5041322314049587,
+        "F2_dominance": 0.6066666666666667,
+        "F6_dominance": 0.905940594059406,
+        "F6_selected_q90_q10_mm": 95.7471923828125,
+        "F6_selected_robust_scale_mm": 44.408322143554685
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 951,
+        "token": "o004",
+        "fact_id": "feeding_000701_001060:F951:o004",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1067.2156982421875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 167,
+          "median_mm": 1103.0899658203125,
+          "occupancy": {
+            "n": 167,
+            "fish": 126,
+            "other_fish": 25,
+            "background": 16
+          },
+          "reference_abs_error_mm": 35.874267578125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 95.54006894240797,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 204,
+          "median_mm": 1116.3713989257812,
+          "occupancy": {
+            "n": 204,
+            "fish": 135,
+            "other_fish": 50,
+            "background": 19
+          },
+          "reference_abs_error_mm": 49.15570068359375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 82.83200582741563,
+          "background_noise_mm": 3.999600649963007
+        },
+        "F2_selected_statistics": {
+          "area": 167,
+          "n": 167,
+          "valid_fraction": 1.0,
+          "median": 1103.0899658203125,
+          "mad": 27.5299072265625,
+          "q10": 1065.8705322265625,
+          "q25": 1084.10205078125,
+          "q75": 1139.2625732421875,
+          "q90": 1148.934130859375
+        },
+        "F6_selected_statistics": {
+          "area": 204,
+          "n": 204,
+          "valid_fraction": 1.0,
+          "median": 1116.3713989257812,
+          "mad": 31.01019287109375,
+          "q10": 1067.2908813476563,
+          "q25": 1089.0901489257812,
+          "q75": 1149.0811462402344,
+          "q90": 1162.2464477539063
+        },
+        "source_whole_area": 395,
+        "source_components": 1,
+        "original_exclusive_valid_n": 366,
+        "F6_original_raw_retention": 0.5573770491803278,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 94.95556640625,
+        "F6_selected_robust_scale_mm": 45.97571195068359
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 960,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F960:o002",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1070.033935546875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 193,
+          "median_mm": 1102.260986328125,
+          "occupancy": {
+            "n": 193,
+            "fish": 193,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 32.22705078125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 90.21283829185154,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 233,
+          "median_mm": 1115.474853515625,
+          "occupancy": {
+            "n": 233,
+            "fish": 233,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 45.44091796875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 77.21770669278499,
+          "background_noise_mm": 3.6604423066717477
+        },
+        "F2_selected_statistics": {
+          "area": 193,
+          "n": 193,
+          "valid_fraction": 1.0,
+          "median": 1102.260986328125,
+          "mad": 25.5574951171875,
+          "q10": 1070.2224609375,
+          "q25": 1079.5877685546875,
+          "q75": 1131.595458984375,
+          "q90": 1142.6233642578125
+        },
+        "F6_selected_statistics": {
+          "area": 233,
+          "n": 233,
+          "valid_fraction": 1.0,
+          "median": 1115.474853515625,
+          "mad": 29.157470703125,
+          "q10": 1070.93720703125,
+          "q25": 1083.5164794921875,
+          "q75": 1143.0325927734375,
+          "q90": 1156.2420654296875
+        },
+        "source_whole_area": 409,
+        "source_components": 2,
+        "original_exclusive_valid_n": 363,
+        "F6_original_raw_retention": 0.6418732782369146,
+        "F2_dominance": 0.8693693693693694,
+        "F6_dominance": 0.8694029850746269,
+        "F6_selected_q90_q10_mm": 85.30485839843755,
+        "F6_selected_robust_scale_mm": 43.22886606445312
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 967,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F967:o002",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1059.389892578125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 267,
+          "median_mm": 1097.0330810546875,
+          "occupancy": {
+            "n": 267,
+            "fish": 267,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 37.6431884765625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 94.74003327658329,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 334,
+          "median_mm": 1111.048583984375,
+          "occupancy": {
+            "n": 334,
+            "fish": 334,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 51.65869140625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 80.76546060821283,
+          "background_noise_mm": 3.8325639508167333
+        },
+        "F2_selected_statistics": {
+          "area": 267,
+          "n": 267,
+          "valid_fraction": 1.0,
+          "median": 1097.0330810546875,
+          "mad": 25.9337158203125,
+          "q10": 1059.2257568359375,
+          "q25": 1070.7122802734375,
+          "q75": 1121.8790893554688,
+          "q90": 1136.7136962890625
+        },
+        "F6_selected_statistics": {
+          "area": 334,
+          "n": 334,
+          "valid_fraction": 1.0,
+          "median": 1111.048583984375,
+          "mad": 31.94549560546875,
+          "q10": 1060.2484252929687,
+          "q25": 1077.9822082519531,
+          "q75": 1142.2767944335938,
+          "q90": 1154.5416137695313
+        },
+        "source_whole_area": 440,
+        "source_components": 1,
+        "original_exclusive_valid_n": 432,
+        "F6_original_raw_retention": 0.7731481481481481,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 94.29318847656259,
+        "F6_selected_robust_scale_mm": 47.36239178466796
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 968,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F968:o002",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1061.8838500976562,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 276,
+          "median_mm": 1101.7230224609375,
+          "occupancy": {
+            "n": 276,
+            "fish": 273,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 39.83917236328125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 91.32627596249836,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 325,
+          "median_mm": 1111.7723388671875,
+          "occupancy": {
+            "n": 325,
+            "fish": 322,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 49.88848876953125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 81.12643249428788,
+          "background_noise_mm": 3.8790010291431987
+        },
+        "F2_selected_statistics": {
+          "area": 276,
+          "n": 276,
+          "valid_fraction": 1.0,
+          "median": 1101.7230224609375,
+          "mad": 27.04400634765625,
+          "q10": 1058.5177001953125,
+          "q25": 1073.0578002929688,
+          "q75": 1127.1821594238281,
+          "q90": 1140.6151733398438
+        },
+        "F6_selected_statistics": {
+          "area": 325,
+          "n": 325,
+          "valid_fraction": 1.0,
+          "median": 1111.7723388671875,
+          "mad": 30.196044921875,
+          "q10": 1060.917529296875,
+          "q25": 1077.84326171875,
+          "q75": 1139.6380615234375,
+          "q90": 1153.6798095703125
+        },
+        "source_whole_area": 424,
+        "source_components": 1,
+        "original_exclusive_valid_n": 413,
+        "F6_original_raw_retention": 0.7869249394673123,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 92.76228027343745,
+        "F6_selected_robust_scale_mm": 44.76865620117187
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 978,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F978:o002",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1063.2750854492188,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 304,
+          "median_mm": 1099.9600219726562,
+          "occupancy": {
+            "n": 304,
+            "fish": 301,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 36.6849365234375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 90.5831049395614,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 360,
+          "median_mm": 1110.6129760742188,
+          "occupancy": {
+            "n": 360,
+            "fish": 347,
+            "other_fish": 0,
+            "background": 13
+          },
+          "reference_abs_error_mm": 47.337890625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 80.65129147657433,
+          "background_noise_mm": 3.5599752334240247
+        },
+        "F2_selected_statistics": {
+          "area": 304,
+          "n": 304,
+          "valid_fraction": 1.0,
+          "median": 1099.9600219726562,
+          "mad": 23.5902099609375,
+          "q10": 1064.2158325195312,
+          "q25": 1075.6678161621094,
+          "q75": 1123.0697937011719,
+          "q90": 1137.5612182617188
+        },
+        "F6_selected_statistics": {
+          "area": 360,
+          "n": 360,
+          "valid_fraction": 1.0,
+          "median": 1110.6129760742188,
+          "mad": 29.7215576171875,
+          "q10": 1065.4805786132813,
+          "q25": 1077.9833374023438,
+          "q75": 1136.5409545898438,
+          "q90": 1151.8181274414062
+        },
+        "source_whole_area": 541,
+        "source_components": 1,
+        "original_exclusive_valid_n": 525,
+        "F6_original_raw_retention": 0.6857142857142857,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 86.33754882812491,
+        "F6_selected_robust_scale_mm": 44.065181323242186
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1016,
+        "token": "o005",
+        "fact_id": "feeding_000701_001060:F1016:o005",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1015.016357421875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 220,
+          "median_mm": 1052.8377075195312,
+          "occupancy": {
+            "n": 220,
+            "fish": 219,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 37.82135009765625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 135.9935731466203,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 241,
+          "median_mm": 1062.7979736328125,
+          "occupancy": {
+            "n": 241,
+            "fish": 240,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 47.7816162109375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 127.88469948898614,
+          "background_noise_mm": 3.8414807411499896
+        },
+        "F2_selected_statistics": {
+          "area": 220,
+          "n": 220,
+          "valid_fraction": 1.0,
+          "median": 1052.8377075195312,
+          "mad": 28.45098876953125,
+          "q10": 1014.7814758300781,
+          "q25": 1028.4808349609375,
+          "q75": 1088.1659851074219,
+          "q90": 1115.2991943359375
+        },
+        "F6_selected_statistics": {
+          "area": 241,
+          "n": 241,
+          "valid_fraction": 1.0,
+          "median": 1062.7979736328125,
+          "mad": 33.046630859375,
+          "q10": 1014.9503173828125,
+          "q25": 1031.5035400390625,
+          "q75": 1099.1954345703125,
+          "q90": 1144.098388671875
+        },
+        "source_whole_area": 531,
+        "source_components": 1,
+        "original_exclusive_valid_n": 396,
+        "F6_original_raw_retention": 0.6085858585858586,
+        "F2_dominance": 1.0,
+        "F6_dominance": 0.9958677685950413,
+        "F6_selected_q90_q10_mm": 129.1480712890625,
+        "F6_selected_robust_scale_mm": 48.99493491210937
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1231,
+        "token": "o023",
+        "fact_id": "feeding_001201_001906:F1231:o023",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1018.3230285644531,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 269,
+          "median_mm": 1054.76171875,
+          "occupancy": {
+            "n": 269,
+            "fish": 269,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 36.438690185546875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 121.66043030796004,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 315,
+          "median_mm": 1066.626220703125,
+          "occupancy": {
+            "n": 315,
+            "fish": 314,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 48.303192138671875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 109.27289441280482,
+          "background_noise_mm": 4.059480960776799
+        },
+        "F2_selected_statistics": {
+          "area": 269,
+          "n": 269,
+          "valid_fraction": 1.0,
+          "median": 1054.76171875,
+          "mad": 30.452880859375,
+          "q10": 1017.8692138671875,
+          "q25": 1027.0697021484375,
+          "q75": 1098.5260009765625,
+          "q90": 1116.126025390625
+        },
+        "F6_selected_statistics": {
+          "area": 315,
+          "n": 315,
+          "valid_fraction": 1.0,
+          "median": 1066.626220703125,
+          "mad": 40.1329345703125,
+          "q10": 1019.5247192382812,
+          "q25": 1029.8008422851562,
+          "q75": 1113.32177734375,
+          "q90": 1137.0069580078125
+        },
+        "source_whole_area": 481,
+        "source_components": 1,
+        "original_exclusive_valid_n": 421,
+        "F6_original_raw_retention": 0.7482185273159145,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 117.48223876953125,
+        "F6_selected_robust_scale_mm": 59.50108879394531
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1234,
+        "token": "o027",
+        "fact_id": "feeding_001201_001906:F1234:o027",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1042.14599609375,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 330,
+          "median_mm": 1079.595947265625,
+          "occupancy": {
+            "n": 330,
+            "fish": 328,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 37.449951171875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 114.47244171116324,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 370,
+          "median_mm": 1088.624755859375,
+          "occupancy": {
+            "n": 370,
+            "fish": 366,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 46.478759765625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 105.27998934370987,
+          "background_noise_mm": 3.8435065290148622
+        },
+        "F2_selected_statistics": {
+          "area": 330,
+          "n": 330,
+          "valid_fraction": 1.0,
+          "median": 1079.595947265625,
+          "mad": 32.77813720703125,
+          "q10": 1037.152490234375,
+          "q25": 1049.4730529785156,
+          "q75": 1117.3006896972656,
+          "q90": 1133.9117797851563
+        },
+        "F6_selected_statistics": {
+          "area": 370,
+          "n": 370,
+          "valid_fraction": 1.0,
+          "median": 1088.624755859375,
+          "mad": 36.77703857421875,
+          "q10": 1038.26767578125,
+          "q25": 1052.0903930664062,
+          "q75": 1125.9169616699219,
+          "q90": 1150.3232055664062
+        },
+        "source_whole_area": 516,
+        "source_components": 1,
+        "original_exclusive_valid_n": 501,
+        "F6_original_raw_retention": 0.7385229540918163,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 112.05552978515607,
+        "F6_selected_robust_scale_mm": 54.525637390136716
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1235,
+        "token": "o004",
+        "fact_id": "feeding_001201_001906:F1235:o004",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1065.656005859375,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 150,
+          "median_mm": 1104.5978393554688,
+          "occupancy": {
+            "n": 150,
+            "fish": 147,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 38.94183349609375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 92.98825457937721,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 183,
+          "median_mm": 1118.146240234375,
+          "occupancy": {
+            "n": 183,
+            "fish": 179,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 52.490234375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 78.1677907439182,
+          "background_noise_mm": 3.7470467933545653
+        },
+        "F2_selected_statistics": {
+          "area": 150,
+          "n": 150,
+          "valid_fraction": 1.0,
+          "median": 1104.5978393554688,
+          "mad": 30.1905517578125,
+          "q10": 1062.754443359375,
+          "q25": 1071.8332824707031,
+          "q75": 1130.8341674804688,
+          "q90": 1145.010791015625
+        },
+        "F6_selected_statistics": {
+          "area": 183,
+          "n": 183,
+          "valid_fraction": 1.0,
+          "median": 1118.146240234375,
+          "mad": 31.3370361328125,
+          "q10": 1063.92587890625,
+          "q25": 1078.834228515625,
+          "q75": 1146.4120483398438,
+          "q90": 1159.8516357421875
+        },
+        "source_whole_area": 515,
+        "source_components": 1,
+        "original_exclusive_valid_n": 389,
+        "F6_original_raw_retention": 0.4704370179948586,
+        "F2_dominance": 0.9868421052631579,
+        "F6_dominance": 0.9838709677419355,
+        "F6_selected_q90_q10_mm": 95.92575683593736,
+        "F6_selected_robust_scale_mm": 46.460289770507806
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1235,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1235:o025",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1041.4132080078125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 338,
+          "median_mm": 1079.4153442382812,
+          "occupancy": {
+            "n": 338,
+            "fish": 332,
+            "other_fish": 0,
+            "background": 6
+          },
+          "reference_abs_error_mm": 38.00213623046875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 114.02195687607139,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 374,
+          "median_mm": 1089.1879272460938,
+          "occupancy": {
+            "n": 374,
+            "fish": 366,
+            "other_fish": 0,
+            "background": 8
+          },
+          "reference_abs_error_mm": 47.77471923828125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 104.82751435932096,
+          "background_noise_mm": 3.9935254151764266
+        },
+        "F2_selected_statistics": {
+          "area": 338,
+          "n": 338,
+          "valid_fraction": 1.0,
+          "median": 1079.4153442382812,
+          "mad": 32.74005126953125,
+          "q10": 1039.218505859375,
+          "q25": 1051.0464782714844,
+          "q75": 1116.5484924316406,
+          "q90": 1135.4484375
+        },
+        "F6_selected_statistics": {
+          "area": 374,
+          "n": 374,
+          "valid_fraction": 1.0,
+          "median": 1089.1879272460938,
+          "mad": 36.6435546875,
+          "q10": 1039.8774658203124,
+          "q25": 1053.1253662109375,
+          "q75": 1126.3554077148438,
+          "q90": 1146.5512084960938
+        },
+        "source_whole_area": 531,
+        "source_components": 1,
+        "original_exclusive_valid_n": 512,
+        "F6_original_raw_retention": 0.73046875,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 106.67374267578134,
+        "F6_selected_robust_scale_mm": 54.327734179687496
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1237,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1237:o025",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1031.5662231445312,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 372,
+          "median_mm": 1071.8721313476562,
+          "occupancy": {
+            "n": 372,
+            "fish": 371,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 40.305908203125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 122.00103504536821,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 405,
+          "median_mm": 1078.67236328125,
+          "occupancy": {
+            "n": 405,
+            "fish": 402,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 47.10614013671875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 115.39839808314923,
+          "background_noise_mm": 3.466898764280972
+        },
+        "F2_selected_statistics": {
+          "area": 372,
+          "n": 372,
+          "valid_fraction": 1.0,
+          "median": 1071.8721313476562,
+          "mad": 35.2825927734375,
+          "q10": 1026.4692016601562,
+          "q25": 1041.8620300292969,
+          "q75": 1112.995361328125,
+          "q90": 1135.810693359375
+        },
+        "F6_selected_statistics": {
+          "area": 405,
+          "n": 405,
+          "valid_fraction": 1.0,
+          "median": 1078.67236328125,
+          "mad": 38.630859375,
+          "q10": 1027.907958984375,
+          "q25": 1044.12451171875,
+          "q75": 1123.2818603515625,
+          "q90": 1145.1893310546875
+        },
+        "source_whole_area": 543,
+        "source_components": 1,
+        "original_exclusive_valid_n": 525,
+        "F6_original_raw_retention": 0.7714285714285715,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 117.2813720703125,
+        "F6_selected_robust_scale_mm": 57.274112109375
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1242,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1242:o025",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1035.100341796875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 322,
+          "median_mm": 1071.096923828125,
+          "occupancy": {
+            "n": 322,
+            "fish": 322,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 35.99658203125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 119.4824108023663,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 362,
+          "median_mm": 1082.1187744140625,
+          "occupancy": {
+            "n": 362,
+            "fish": 362,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 47.0184326171875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 109.29551851240706,
+          "background_noise_mm": 3.736569564800033
+        },
+        "F2_selected_statistics": {
+          "area": 322,
+          "n": 322,
+          "valid_fraction": 1.0,
+          "median": 1071.096923828125,
+          "mad": 33.12640380859375,
+          "q10": 1032.4942260742187,
+          "q25": 1042.8544921875,
+          "q75": 1112.9173278808594,
+          "q90": 1135.1265502929687
+        },
+        "F6_selected_statistics": {
+          "area": 362,
+          "n": 362,
+          "valid_fraction": 1.0,
+          "median": 1082.1187744140625,
+          "mad": 39.32476806640625,
+          "q10": 1033.1598876953126,
+          "q25": 1045.4277648925781,
+          "q75": 1127.7673034667969,
+          "q90": 1149.1170898437501
+        },
+        "source_whole_area": 513,
+        "source_components": 1,
+        "original_exclusive_valid_n": 476,
+        "F6_original_raw_retention": 0.7605042016806722,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 115.95720214843755,
+        "F6_selected_robust_scale_mm": 58.302901135253904
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1251,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1251:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1034.7897338867188,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 293,
+          "median_mm": 1078.3997802734375,
+          "occupancy": {
+            "n": 293,
+            "fish": 281,
+            "other_fish": 0,
+            "background": 12
+          },
+          "reference_abs_error_mm": 43.61004638671875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 101.03062267230439,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 311,
+          "median_mm": 1080.576171875,
+          "occupancy": {
+            "n": 311,
+            "fish": 299,
+            "other_fish": 0,
+            "background": 12
+          },
+          "reference_abs_error_mm": 45.78643798828125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 99.0389257201125,
+          "background_noise_mm": 3.4857317244129673
+        },
+        "F2_selected_statistics": {
+          "area": 293,
+          "n": 293,
+          "valid_fraction": 1.0,
+          "median": 1078.3997802734375,
+          "mad": 30.3916015625,
+          "q10": 1034.5666015625,
+          "q25": 1043.2606201171875,
+          "q75": 1100.263671875,
+          "q90": 1123.1390625
+        },
+        "F6_selected_statistics": {
+          "area": 311,
+          "n": 311,
+          "valid_fraction": 1.0,
+          "median": 1080.576171875,
+          "mad": 32.883056640625,
+          "q10": 1034.8138427734375,
+          "q25": 1044.358642578125,
+          "q75": 1104.8912353515625,
+          "q90": 1129.1583251953125
+        },
+        "source_whole_area": 440,
+        "source_components": 1,
+        "original_exclusive_valid_n": 421,
+        "F6_original_raw_retention": 0.7387173396674585,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 94.344482421875,
+        "F6_selected_robust_scale_mm": 48.75241977539062
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1254,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1254:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1037.2701416015625,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 301,
+          "median_mm": 1079.148681640625,
+          "occupancy": {
+            "n": 301,
+            "fish": 300,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 41.8785400390625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 101.17393635915278,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 329,
+          "median_mm": 1084.373046875,
+          "occupancy": {
+            "n": 329,
+            "fish": 328,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 47.1029052734375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 95.53283030368425,
+          "background_noise_mm": 3.4731274589928454
+        },
+        "F2_selected_statistics": {
+          "area": 301,
+          "n": 301,
+          "valid_fraction": 1.0,
+          "median": 1079.148681640625,
+          "mad": 27.6136474609375,
+          "q10": 1033.0611572265625,
+          "q25": 1049.665283203125,
+          "q75": 1105.762939453125,
+          "q90": 1124.9365234375
+        },
+        "F6_selected_statistics": {
+          "area": 329,
+          "n": 329,
+          "valid_fraction": 1.0,
+          "median": 1084.373046875,
+          "mad": 30.161376953125,
+          "q10": 1035.0412109375,
+          "q25": 1052.2218017578125,
+          "q75": 1111.741455078125,
+          "q90": 1133.9678955078125
+        },
+        "source_whole_area": 465,
+        "source_components": 1,
+        "original_exclusive_valid_n": 457,
+        "F6_original_raw_retention": 0.7199124726477024,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 98.92668457031255,
+        "F6_selected_robust_scale_mm": 44.717257470703125
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1255,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1255:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1036.2688598632812,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 297,
+          "median_mm": 1080.345947265625,
+          "occupancy": {
+            "n": 297,
+            "fish": 292,
+            "other_fish": 0,
+            "background": 5
+          },
+          "reference_abs_error_mm": 44.07708740234375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 100.44151152916425,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 323,
+          "median_mm": 1085.116943359375,
+          "occupancy": {
+            "n": 323,
+            "fish": 316,
+            "other_fish": 0,
+            "background": 7
+          },
+          "reference_abs_error_mm": 48.84808349609375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 94.9917954260311,
+          "background_noise_mm": 3.4295630984238348
+        },
+        "F2_selected_statistics": {
+          "area": 297,
+          "n": 297,
+          "valid_fraction": 1.0,
+          "median": 1080.345947265625,
+          "mad": 26.093505859375,
+          "q10": 1035.90966796875,
+          "q25": 1051.6737060546875,
+          "q75": 1105.0303955078125,
+          "q90": 1119.3264404296874
+        },
+        "F6_selected_statistics": {
+          "area": 323,
+          "n": 323,
+          "valid_fraction": 1.0,
+          "median": 1085.116943359375,
+          "mad": 27.6304931640625,
+          "q10": 1036.25849609375,
+          "q25": 1056.4486083984375,
+          "q75": 1111.1112670898438,
+          "q90": 1128.5001953125
+        },
+        "source_whole_area": 463,
+        "source_components": 1,
+        "original_exclusive_valid_n": 463,
+        "F6_original_raw_retention": 0.6976241900647948,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 92.24169921875,
+        "F6_selected_robust_scale_mm": 40.96496916503906
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1256,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1256:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1040.026611328125,
+        "reference_tolerance_mm": 45.02800261230468,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 290,
+          "median_mm": 1078.1319580078125,
+          "occupancy": {
+            "n": 290,
+            "fish": 289,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 38.1053466796875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 102.54017099499549,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 330,
+          "median_mm": 1088.2217407226562,
+          "occupancy": {
+            "n": 330,
+            "fish": 329,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 48.19512939453125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 93.24225245603225,
+          "background_noise_mm": 3.3173827491753825
+        },
+        "F2_selected_statistics": {
+          "area": 290,
+          "n": 290,
+          "valid_fraction": 1.0,
+          "median": 1078.1319580078125,
+          "mad": 30.89239501953125,
+          "q10": 1034.4885620117188,
+          "q25": 1047.1573181152344,
+          "q75": 1108.805908203125,
+          "q90": 1125.1898315429687
+        },
+        "F6_selected_statistics": {
+          "area": 330,
+          "n": 330,
+          "valid_fraction": 1.0,
+          "median": 1088.2217407226562,
+          "mad": 33.4986572265625,
+          "q10": 1035.1733642578124,
+          "q25": 1051.3773803710938,
+          "q75": 1119.5263061523438,
+          "q90": 1136.959619140625
+        },
+        "source_whole_area": 462,
+        "source_components": 1,
+        "original_exclusive_valid_n": 461,
+        "F6_original_raw_retention": 0.7158351409978309,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 101.7862548828125,
+        "F6_selected_robust_scale_mm": 49.66510920410156
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1258,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1258:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1036.6463623046875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 289,
+          "median_mm": 1077.9156494140625,
+          "occupancy": {
+            "n": 289,
+            "fish": 287,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 41.269287109375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 103.48193345246773,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 318,
+          "median_mm": 1083.689697265625,
+          "occupancy": {
+            "n": 318,
+            "fish": 316,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 47.0433349609375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 98.0806256721246,
+          "background_noise_mm": 3.4222262281799405
+        },
+        "F2_selected_statistics": {
+          "area": 289,
+          "n": 289,
+          "valid_fraction": 1.0,
+          "median": 1077.9156494140625,
+          "mad": 29.837158203125,
+          "q10": 1033.6360595703125,
+          "q25": 1044.9862060546875,
+          "q75": 1106.439453125,
+          "q90": 1122.9633544921876
+        },
+        "F6_selected_statistics": {
+          "area": 318,
+          "n": 318,
+          "valid_fraction": 1.0,
+          "median": 1083.689697265625,
+          "mad": 31.9886474609375,
+          "q10": 1034.2643432617188,
+          "q25": 1049.4442138671875,
+          "q75": 1113.8247375488281,
+          "q90": 1133.8851806640625
+        },
+        "source_whole_area": 412,
+        "source_components": 1,
+        "original_exclusive_valid_n": 410,
+        "F6_original_raw_retention": 0.775609756097561,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 99.6208374023438,
+        "F6_selected_robust_scale_mm": 47.42636872558594
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1259,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1259:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1034.044189453125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 295,
+          "median_mm": 1066.615478515625,
+          "occupancy": {
+            "n": 295,
+            "fish": 291,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 32.5712890625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 114.99716566660732,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 345,
+          "median_mm": 1081.1451416015625,
+          "occupancy": {
+            "n": 345,
+            "fish": 341,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 47.1009521484375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 99.52821457331311,
+          "background_noise_mm": 3.3204317607586855
+        },
+        "F2_selected_statistics": {
+          "area": 295,
+          "n": 295,
+          "valid_fraction": 1.0,
+          "median": 1066.615478515625,
+          "mad": 30.576171875,
+          "q10": 1029.0541259765625,
+          "q25": 1039.7035522460938,
+          "q75": 1101.1159057617188,
+          "q90": 1124.1845703125
+        },
+        "F6_selected_statistics": {
+          "area": 345,
+          "n": 345,
+          "valid_fraction": 1.0,
+          "median": 1081.1451416015625,
+          "mad": 37.546142578125,
+          "q10": 1030.284521484375,
+          "q25": 1047.5257568359375,
+          "q75": 1119.68701171875,
+          "q90": 1141.253125
+        },
+        "source_whole_area": 486,
+        "source_components": 1,
+        "original_exclusive_valid_n": 475,
+        "F6_original_raw_retention": 0.7263157894736842,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 110.96860351562486,
+        "F6_selected_robust_scale_mm": 55.66591098632812
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1260,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1260:o012",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1030.0580444335938,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 282,
+          "median_mm": 1067.8181762695312,
+          "occupancy": {
+            "n": 282,
+            "fish": 278,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 37.7601318359375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 113.66590987138807,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 329,
+          "median_mm": 1080.56591796875,
+          "occupancy": {
+            "n": 329,
+            "fish": 325,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 50.50787353515625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 101.68575421315563,
+          "background_noise_mm": 3.145967398762972
+        },
+        "F2_selected_statistics": {
+          "area": 282,
+          "n": 282,
+          "valid_fraction": 1.0,
+          "median": 1067.8181762695312,
+          "mad": 34.74761962890625,
+          "q10": 1021.7588745117188,
+          "q25": 1034.0635986328125,
+          "q75": 1105.9606018066406,
+          "q90": 1121.0836303710937
+        },
+        "F6_selected_statistics": {
+          "area": 329,
+          "n": 329,
+          "valid_fraction": 1.0,
+          "median": 1080.56591796875,
+          "mad": 38.6424560546875,
+          "q10": 1022.3085205078125,
+          "q25": 1040.15234375,
+          "q75": 1118.213134765625,
+          "q90": 1139.843310546875
+        },
+        "source_whole_area": 479,
+        "source_components": 1,
+        "original_exclusive_valid_n": 462,
+        "F6_original_raw_retention": 0.7121212121212122,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 117.5347900390625,
+        "F6_selected_robust_scale_mm": 57.291305346679685
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1421,
+        "token": "o003",
+        "fact_id": "feeding_001201_001906:F1421:o003",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1060.558349609375,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 151,
+          "median_mm": 1081.4283447265625,
+          "occupancy": {
+            "n": 151,
+            "fish": 151,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 20.8699951171875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 97.8246617410091,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 203,
+          "median_mm": 1110.75244140625,
+          "occupancy": {
+            "n": 203,
+            "fish": 200,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 50.194091796875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 68.81236554332372,
+          "background_noise_mm": 3.6924690839590086
+        },
+        "F2_selected_statistics": {
+          "area": 151,
+          "n": 151,
+          "valid_fraction": 1.0,
+          "median": 1081.4283447265625,
+          "mad": 29.8155517578125,
+          "q10": 1048.3221435546875,
+          "q25": 1056.04736328125,
+          "q75": 1119.9332885742188,
+          "q90": 1130.1258544921875
+        },
+        "F6_selected_statistics": {
+          "area": 203,
+          "n": 203,
+          "valid_fraction": 1.0,
+          "median": 1110.75244140625,
+          "mad": 30.3717041015625,
+          "q10": 1050.022607421875,
+          "q25": 1060.2070922851562,
+          "q75": 1134.8222045898438,
+          "q90": 1142.82001953125
+        },
+        "source_whole_area": 475,
+        "source_components": 1,
+        "original_exclusive_valid_n": 389,
+        "F6_original_raw_retention": 0.5218508997429306,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 92.79741210937505,
+        "F6_selected_robust_scale_mm": 45.02908850097656
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1447,
+        "token": "o011",
+        "fact_id": "feeding_001201_001906:F1447:o011",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1024.1121826171875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 192,
+          "median_mm": 1059.2361450195312,
+          "occupancy": {
+            "n": 192,
+            "fish": 192,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 35.12396240234375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 127.57213066360669,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 222,
+          "median_mm": 1070.833251953125,
+          "occupancy": {
+            "n": 222,
+            "fish": 222,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 46.7210693359375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 116.48694828333623,
+          "background_noise_mm": 5.486694379100849
+        },
+        "F2_selected_statistics": {
+          "area": 192,
+          "n": 192,
+          "valid_fraction": 1.0,
+          "median": 1059.2361450195312,
+          "mad": 29.08245849609375,
+          "q10": 1024.1217529296875,
+          "q25": 1036.4447937011719,
+          "q75": 1102.6771545410156,
+          "q90": 1129.736474609375
+        },
+        "F6_selected_statistics": {
+          "area": 222,
+          "n": 222,
+          "valid_fraction": 1.0,
+          "median": 1070.833251953125,
+          "mad": 37.57574462890625,
+          "q10": 1025.0002075195312,
+          "q25": 1037.9667053222656,
+          "q75": 1121.5808715820312,
+          "q90": 1142.2194213867188
+        },
+        "source_whole_area": 412,
+        "source_components": 1,
+        "original_exclusive_valid_n": 290,
+        "F6_original_raw_retention": 0.7655172413793103,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 117.21921386718759,
+        "F6_selected_robust_scale_mm": 55.7097989868164
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1462,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1462:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1030.9711303710938,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 224,
+          "median_mm": 1065.0972290039062,
+          "occupancy": {
+            "n": 224,
+            "fish": 224,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 34.1260986328125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 100.33754553114602,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 261,
+          "median_mm": 1077.0870361328125,
+          "occupancy": {
+            "n": 261,
+            "fish": 261,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 46.11590576171875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 88.02953428156479,
+          "background_noise_mm": 4.112148630785147
+        },
+        "F2_selected_statistics": {
+          "area": 224,
+          "n": 224,
+          "valid_fraction": 1.0,
+          "median": 1065.0972290039062,
+          "mad": 25.60546875,
+          "q10": 1027.1001831054687,
+          "q25": 1042.2918090820312,
+          "q75": 1096.1067199707031,
+          "q90": 1109.5874633789062
+        },
+        "F6_selected_statistics": {
+          "area": 261,
+          "n": 261,
+          "valid_fraction": 1.0,
+          "median": 1077.0870361328125,
+          "mad": 31.37158203125,
+          "q10": 1028.02880859375,
+          "q25": 1044.7310791015625,
+          "q75": 1105.676513671875,
+          "q90": 1125.30029296875
+        },
+        "source_whole_area": 536,
+        "source_components": 1,
+        "original_exclusive_valid_n": 353,
+        "F6_original_raw_retention": 0.7393767705382436,
+        "F2_dominance": 0.9911504424778761,
+        "F6_dominance": 0.9923954372623575,
+        "F6_selected_q90_q10_mm": 97.271484375,
+        "F6_selected_robust_scale_mm": 46.51150751953125
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1463,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1463:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1033.91796875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 179,
+          "median_mm": 1068.8955078125,
+          "occupancy": {
+            "n": 179,
+            "fish": 178,
+            "other_fish": 0,
+            "background": 1
+          },
+          "reference_abs_error_mm": 34.9775390625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 96.29738856556355,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 213,
+          "median_mm": 1079.0506591796875,
+          "occupancy": {
+            "n": 213,
+            "fish": 209,
+            "other_fish": 0,
+            "background": 4
+          },
+          "reference_abs_error_mm": 45.1326904296875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 86.18301445609973,
+          "background_noise_mm": 4.654623586565532
+        },
+        "F2_selected_statistics": {
+          "area": 179,
+          "n": 179,
+          "valid_fraction": 1.0,
+          "median": 1068.8955078125,
+          "mad": 25.429443359375,
+          "q10": 1027.222021484375,
+          "q25": 1041.5488891601562,
+          "q75": 1094.1080932617188,
+          "q90": 1110.7650634765625
+        },
+        "F6_selected_statistics": {
+          "area": 213,
+          "n": 213,
+          "valid_fraction": 1.0,
+          "median": 1079.0506591796875,
+          "mad": 32.0989990234375,
+          "q10": 1030.4364501953125,
+          "q25": 1046.2401123046875,
+          "q75": 1110.6463623046875,
+          "q90": 1125.1666259765625
+        },
+        "source_whole_area": 557,
+        "source_components": 1,
+        "original_exclusive_valid_n": 320,
+        "F6_original_raw_retention": 0.665625,
+        "F2_dominance": 0.988950276243094,
+        "F6_dominance": 0.9861111111111112,
+        "F6_selected_q90_q10_mm": 94.73017578124995,
+        "F6_selected_robust_scale_mm": 47.589975952148436
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1466,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1466:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1028.2645263671875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 340,
+          "median_mm": 1064.3793334960938,
+          "occupancy": {
+            "n": 340,
+            "fish": 338,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 36.11480712890625,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 101.34339405966148,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 399,
+          "median_mm": 1074.370849609375,
+          "occupancy": {
+            "n": 399,
+            "fish": 390,
+            "other_fish": 0,
+            "background": 9
+          },
+          "reference_abs_error_mm": 46.1063232421875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 90.57288906235522,
+          "background_noise_mm": 4.057082737785434
+        },
+        "F2_selected_statistics": {
+          "area": 340,
+          "n": 340,
+          "valid_fraction": 1.0,
+          "median": 1064.3793334960938,
+          "mad": 27.92401123046875,
+          "q10": 1027.299560546875,
+          "q25": 1037.0180053710938,
+          "q75": 1092.6813659667969,
+          "q90": 1111.3761474609375
+        },
+        "F6_selected_statistics": {
+          "area": 399,
+          "n": 399,
+          "valid_fraction": 1.0,
+          "median": 1074.370849609375,
+          "mad": 34.8514404296875,
+          "q10": 1028.0518310546875,
+          "q25": 1040.1494750976562,
+          "q75": 1109.6696166992188,
+          "q90": 1126.198486328125
+        },
+        "source_whole_area": 542,
+        "source_components": 1,
+        "original_exclusive_valid_n": 505,
+        "F6_original_raw_retention": 0.7900990099009901,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 98.14665527343755,
+        "F6_selected_robust_scale_mm": 51.67074558105468
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1467,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1467:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1026.10693359375,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 348,
+          "median_mm": 1067.8598022460938,
+          "occupancy": {
+            "n": 348,
+            "fish": 346,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 41.75286865234375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 98.8560998429565,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 392,
+          "median_mm": 1074.2002563476562,
+          "occupancy": {
+            "n": 392,
+            "fish": 385,
+            "other_fish": 0,
+            "background": 7
+          },
+          "reference_abs_error_mm": 48.09332275390625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 92.14021907527047,
+          "background_noise_mm": 3.895137905180703
+        },
+        "F2_selected_statistics": {
+          "area": 348,
+          "n": 348,
+          "valid_fraction": 1.0,
+          "median": 1067.8598022460938,
+          "mad": 28.798828125,
+          "q10": 1026.0611572265625,
+          "q25": 1036.0414733886719,
+          "q75": 1093.4404602050781,
+          "q90": 1108.237548828125
+        },
+        "F6_selected_statistics": {
+          "area": 392,
+          "n": 392,
+          "valid_fraction": 1.0,
+          "median": 1074.2002563476562,
+          "mad": 32.3406982421875,
+          "q10": 1026.1387329101562,
+          "q25": 1039.1884765625,
+          "q75": 1102.5585327148438,
+          "q90": 1122.824072265625
+        },
+        "source_whole_area": 549,
+        "source_components": 1,
+        "original_exclusive_valid_n": 526,
+        "F6_original_raw_retention": 0.7452471482889734,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 96.68533935546884,
+        "F6_selected_robust_scale_mm": 47.94831921386719
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1488,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1488:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 995.5184936523438,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 142,
+          "median_mm": 1039.2831420898438,
+          "occupancy": {
+            "n": 142,
+            "fish": 142,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 43.7646484375,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 107.58358658262625,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 152,
+          "median_mm": 1041.2542724609375,
+          "occupancy": {
+            "n": 152,
+            "fish": 152,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 45.73577880859375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 105.54385245115202,
+          "background_noise_mm": 11.917081897152334
+        },
+        "F2_selected_statistics": {
+          "area": 142,
+          "n": 142,
+          "valid_fraction": 1.0,
+          "median": 1039.2831420898438,
+          "mad": 22.022796630859375,
+          "q10": 1003.7232971191406,
+          "q25": 1015.9699096679688,
+          "q75": 1056.4418029785156,
+          "q90": 1084.0994506835937
+        },
+        "F6_selected_statistics": {
+          "area": 152,
+          "n": 152,
+          "valid_fraction": 1.0,
+          "median": 1041.2542724609375,
+          "mad": 24.257720947265625,
+          "q10": 1003.8021057128906,
+          "q25": 1017.4838256835938,
+          "q75": 1066.1803588867188,
+          "q90": 1094.133203125
+        },
+        "source_whole_area": 529,
+        "source_components": 1,
+        "original_exclusive_valid_n": 376,
+        "F6_original_raw_retention": 0.40425531914893614,
+        "F2_dominance": 0.7282051282051282,
+        "F6_dominance": 0.7414634146341463,
+        "F6_selected_q90_q10_mm": 90.33109741210933,
+        "F6_selected_robust_scale_mm": 35.964497076416016
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1552,
+        "token": "o024",
+        "fact_id": "feeding_001201_001906:F1552:o024",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1157.7638549804688,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 16,
+          "median_mm": 1098.9982299804688,
+          "occupancy": {
+            "n": 16,
+            "fish": 16,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 58.765625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 80.98927493941392,
+          "background_noise_mm": 4.22136115394585
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 16,
+          "n": 16,
+          "valid_fraction": 1.0,
+          "median": 1098.9982299804688,
+          "mad": 33.44732666015625,
+          "q10": 1065.5509033203125,
+          "q25": 1078.6838684082031,
+          "q75": 1136.8392944335938,
+          "q90": 1144.027587890625
+        },
+        "source_whole_area": 281,
+        "source_components": 1,
+        "original_exclusive_valid_n": 243,
+        "F6_original_raw_retention": 0.06584362139917696,
+        "F2_dominance": null,
+        "F6_dominance": 0.8421052631578947,
+        "F6_selected_q90_q10_mm": 78.4766845703125,
+        "F6_selected_robust_scale_mm": 49.58900650634765
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1648,
+        "token": "o006",
+        "fact_id": "feeding_001201_001906:F1648:o006",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1061.610107421875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 266,
+          "median_mm": 1097.2730712890625,
+          "occupancy": {
+            "n": 266,
+            "fish": 266,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 35.6629638671875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 99.49200594829676,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 311,
+          "median_mm": 1107.947265625,
+          "occupancy": {
+            "n": 311,
+            "fish": 308,
+            "other_fish": 0,
+            "background": 3
+          },
+          "reference_abs_error_mm": 46.337158203125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 88.60953197822278,
+          "background_noise_mm": 3.6758789574466246
+        },
+        "F2_selected_statistics": {
+          "area": 266,
+          "n": 266,
+          "valid_fraction": 1.0,
+          "median": 1097.2730712890625,
+          "mad": 26.37030029296875,
+          "q10": 1062.28564453125,
+          "q25": 1072.1374816894531,
+          "q75": 1125.21337890625,
+          "q90": 1144.0548706054688
+        },
+        "F6_selected_statistics": {
+          "area": 311,
+          "n": 311,
+          "valid_fraction": 1.0,
+          "median": 1107.947265625,
+          "mad": 34.0792236328125,
+          "q10": 1063.1011962890625,
+          "q25": 1074.519287109375,
+          "q75": 1142.5647583007812,
+          "q90": 1156.5076904296875
+        },
+        "source_whole_area": 476,
+        "source_components": 1,
+        "original_exclusive_valid_n": 436,
+        "F6_original_raw_retention": 0.713302752293578,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 93.406494140625,
+        "F6_selected_robust_scale_mm": 50.52585695800781
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1716,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1716:o025",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1172.8804321289062,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 22,
+          "median_mm": 1126.1430053710938,
+          "occupancy": {
+            "n": 22,
+            "fish": 22,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 46.7374267578125,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 66.69890241038445,
+          "background_noise_mm": 3.8923114566634434
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 22,
+          "n": 22,
+          "valid_fraction": 1.0,
+          "median": 1126.1430053710938,
+          "mad": 29.50054931640625,
+          "q10": 1057.7659912109375,
+          "q25": 1074.1355590820312,
+          "q75": 1148.0148620605469,
+          "q90": 1155.9564453125
+        },
+        "source_whole_area": 313,
+        "source_components": 1,
+        "original_exclusive_valid_n": 258,
+        "F6_original_raw_retention": 0.08527131782945736,
+        "F2_dominance": null,
+        "F6_dominance": 0.9565217391304348,
+        "F6_selected_q90_q10_mm": 98.19045410156241,
+        "F6_selected_robust_scale_mm": 43.737514416503906
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1821,
+        "token": "o008",
+        "fact_id": "feeding_001201_001906:F1821:o008",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 840.76123046875,
+        "reference_tolerance_mm": 88.669325390625,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 34,
+          "median_mm": 838.1392822265625,
+          "occupancy": {
+            "n": 34,
+            "fish": 34,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 2.6219482421875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 339.5294140110208,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 86,
+          "median_mm": 1136.4862670898438,
+          "occupancy": {
+            "n": 86,
+            "fish": 86,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 295.72503662109375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 44.121129601297525,
+          "background_noise_mm": 4.253747499240356
+        },
+        "F2_selected_statistics": {
+          "area": 34,
+          "n": 34,
+          "valid_fraction": 1.0,
+          "median": 838.1392822265625,
+          "mad": 17.67327880859375,
+          "q10": 820.6993896484375,
+          "q25": 822.1173248291016,
+          "q75": 1112.9109191894531,
+          "q90": 1125.2672729492188
+        },
+        "F6_selected_statistics": {
+          "area": 86,
+          "n": 86,
+          "valid_fraction": 1.0,
+          "median": 1136.4862670898438,
+          "mad": 10.72698974609375,
+          "q10": 822.4114685058594,
+          "q25": 1105.4854431152344,
+          "q75": 1143.3572387695312,
+          "q90": 1147.474609375
+        },
+        "source_whole_area": 406,
+        "source_components": 1,
+        "original_exclusive_valid_n": 237,
+        "F6_original_raw_retention": 0.3628691983122363,
+        "F2_dominance": 0.7906976744186046,
+        "F6_dominance": 0.9555555555555556,
+        "F6_selected_q90_q10_mm": 325.0631408691406,
+        "F6_selected_robust_scale_mm": 15.903834997558594
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1847,
+        "token": "o007",
+        "fact_id": "feeding_001201_001906:F1847:o007",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1042.4716796875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 270,
+          "median_mm": 1083.04931640625,
+          "occupancy": {
+            "n": 270,
+            "fish": 270,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 40.57763671875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 114.26433809378057,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 287,
+          "median_mm": 1088.2418212890625,
+          "occupancy": {
+            "n": 287,
+            "fish": 287,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 45.7701416015625,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 110.55651224050234,
+          "background_noise_mm": 3.799503731983509
+        },
+        "F2_selected_statistics": {
+          "area": 270,
+          "n": 270,
+          "valid_fraction": 1.0,
+          "median": 1083.04931640625,
+          "mad": 32.9794921875,
+          "q10": 1039.24453125,
+          "q25": 1050.3215026855469,
+          "q75": 1115.5952453613281,
+          "q90": 1133.6847778320312
+        },
+        "F6_selected_statistics": {
+          "area": 287,
+          "n": 287,
+          "valid_fraction": 1.0,
+          "median": 1088.2418212890625,
+          "mad": 35.3310546875,
+          "q10": 1039.2935546875,
+          "q25": 1051.9678955078125,
+          "q75": 1121.9864501953125,
+          "q90": 1141.7255615234376
+        },
+        "source_whole_area": 429,
+        "source_components": 1,
+        "original_exclusive_valid_n": 347,
+        "F6_original_raw_retention": 0.8270893371757925,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 102.4320068359375,
+        "F6_selected_robust_scale_mm": 52.3818216796875
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1885,
+        "token": "o013",
+        "fact_id": "feeding_001201_001906:F1885:o013",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1060.96533203125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 317,
+          "median_mm": 1094.6412353515625,
+          "occupancy": {
+            "n": 317,
+            "fish": 317,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": 33.6759033203125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 107.53077804703958,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 382,
+          "median_mm": 1110.528564453125,
+          "occupancy": {
+            "n": 382,
+            "fish": 380,
+            "other_fish": 0,
+            "background": 2
+          },
+          "reference_abs_error_mm": 49.563232421875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 91.84185499682326,
+          "background_noise_mm": 4.148476372213241
+        },
+        "F2_selected_statistics": {
+          "area": 317,
+          "n": 317,
+          "valid_fraction": 1.0,
+          "median": 1094.6412353515625,
+          "mad": 27.2318115234375,
+          "q10": 1059.0822021484375,
+          "q25": 1070.515380859375,
+          "q75": 1124.55078125,
+          "q90": 1146.580615234375
+        },
+        "F6_selected_statistics": {
+          "area": 382,
+          "n": 382,
+          "valid_fraction": 1.0,
+          "median": 1110.528564453125,
+          "mad": 36.0035400390625,
+          "q10": 1059.9211303710938,
+          "q25": 1075.3481140136719,
+          "q75": 1147.046142578125,
+          "q90": 1164.4456665039063
+        },
+        "source_whole_area": 508,
+        "source_components": 1,
+        "original_exclusive_valid_n": 479,
+        "F6_original_raw_retention": 0.7974947807933194,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 104.5245361328125,
+        "F6_selected_robust_scale_mm": 53.37884846191406
+      }
+    ]
+  },
+  "F1821_two_depth_clusters": {
+    "F2_DS3": {
+      "n": 34,
+      "largest_sorted_gap_mm": 254.87530517578125,
+      "gap_bounds_mm": [
+        843.5669555664062,
+        1098.4422607421875
+      ],
+      "lower_n": 20,
+      "higher_n": 14,
+      "lower_median_mm": 823.0000610351562,
+      "higher_median_mm": 1117.6466064453125,
+      "lower_fraction": 0.5882352941176471,
+      "higher_fraction": 0.4117647058823529,
+      "selected_statistics": {
+        "area": 34,
+        "n": 34,
+        "valid_fraction": 1.0,
+        "median": 838.1392822265625,
+        "mad": 17.67327880859375,
+        "q10": 820.6993896484375,
+        "q25": 822.1173248291016,
+        "q75": 1112.9109191894531,
+        "q90": 1125.2672729492188
+      }
+    },
+    "F6_BG_NOISE": {
+      "n": 86,
+      "largest_sorted_gap_mm": 254.87530517578125,
+      "gap_bounds_mm": [
+        843.5669555664062,
+        1098.4422607421875
+      ],
+      "lower_n": 20,
+      "higher_n": 66,
+      "lower_median_mm": 823.0000610351562,
+      "higher_median_mm": 1138.8495483398438,
+      "lower_fraction": 0.23255813953488372,
+      "higher_fraction": 0.7674418604651163,
+      "selected_statistics": {
+        "area": 86,
+        "n": 86,
+        "valid_fraction": 1.0,
+        "median": 1136.4862670898438,
+        "mad": 10.72698974609375,
+        "q10": 822.4114685058594,
+        "q25": 1105.4854431152344,
+        "q75": 1143.3572387695312,
+        "q90": 1147.474609375
+      }
+    },
+    "actual_selection_overlap_n": 34,
+    "new_selected_n": 52,
+    "mechanism": "The old F2 selected component already contained both clusters. All 52 added points join the higher cluster: lower count stays20; higher count14→66. Median changes cluster, while MAD falls17.6733→10.7270mm.",
+    "interpretation": "Largest sorted gap is a deterministic descriptive partition, not physical fish/background labeling. Lower cluster is not automatically the fish.",
+    "graph_execution": "Formal DS5 whole-census selected/support/30mm/60mm graph diagnostics are assigned to root and not run here."
+  },
+  "wrong_fish": {
+    "n": 9,
+    "selected_samples": 400,
+    "reference_usable": 5,
+    "reference_unavailable": 4,
+    "old_zero_persisting": 8,
+    "new_zero": 1,
+    "new_case": "feeding_000701_001060:F1044:o016",
+    "compatible_but_zero_matched": "feeding_001201_001906:F1385:o015",
+    "records": [
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 755,
+        "token": "o023",
+        "fact_id": "feeding_000701_001060:F755:o023",
+        "reference_status": "SCORABLE",
+        "reference_usable": false,
+        "reference_median_mm": 1152.267822265625,
+        "reference_tolerance_mm": null,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 25,
+          "median_mm": 1106.6201171875,
+          "occupancy": {
+            "n": 25,
+            "fish": 0,
+            "other_fish": 1,
+            "background": 24
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 54.64554481846244,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 30,
+          "median_mm": 1108.2100830078125,
+          "occupancy": {
+            "n": 30,
+            "fish": 0,
+            "other_fish": 1,
+            "background": 29
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 53.57849016430123,
+          "background_noise_mm": 14.328757101463227
+        },
+        "F2_selected_statistics": {
+          "area": 25,
+          "n": 25,
+          "valid_fraction": 1.0,
+          "median": 1106.6201171875,
+          "mad": 4.0047607421875,
+          "q10": 1090.1089111328124,
+          "q25": 1100.424072265625,
+          "q75": 1110.1453857421875,
+          "q90": 1113.140380859375
+        },
+        "F6_selected_statistics": {
+          "area": 30,
+          "n": 30,
+          "valid_fraction": 1.0,
+          "median": 1108.2100830078125,
+          "mad": 5.4696044921875,
+          "q10": 1090.2378784179687,
+          "q25": 1102.8124389648438,
+          "q75": 1113.3414306640625,
+          "q90": 1117.8768432617187
+        },
+        "source_whole_area": 333,
+        "source_components": 2,
+        "original_exclusive_valid_n": 241,
+        "F6_original_raw_retention": 0.12448132780082988,
+        "F2_dominance": 0.8620689655172413,
+        "F6_dominance": 0.8333333333333334,
+        "F6_selected_q90_q10_mm": 27.638964843750045,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 758,
+        "token": "o021",
+        "fact_id": "feeding_000701_001060:F758:o021",
+        "reference_status": "SCORABLE",
+        "reference_usable": false,
+        "reference_median_mm": null,
+        "reference_tolerance_mm": null,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 19,
+          "median_mm": 957.0098876953125,
+          "occupancy": {
+            "n": 19,
+            "fish": 0,
+            "other_fish": 19,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 113.14654566674608,
+          "background_noise_mm": 31.48397859674936
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 19,
+          "median_mm": 957.0098876953125,
+          "occupancy": {
+            "n": 19,
+            "fish": 0,
+            "other_fish": 19,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 113.14654566674608,
+          "background_noise_mm": 31.48397859674936
+        },
+        "F2_selected_statistics": {
+          "area": 19,
+          "n": 19,
+          "valid_fraction": 1.0,
+          "median": 957.0098876953125,
+          "mad": 8.80181884765625,
+          "q10": 946.042626953125,
+          "q25": 949.074951171875,
+          "q75": 963.3143005371094,
+          "q90": 971.3227416992188
+        },
+        "F6_selected_statistics": {
+          "area": 19,
+          "n": 19,
+          "valid_fraction": 1.0,
+          "median": 957.0098876953125,
+          "mad": 8.80181884765625,
+          "q10": 946.042626953125,
+          "q25": 949.074951171875,
+          "q75": 963.3143005371094,
+          "q90": 971.3227416992188
+        },
+        "source_whole_area": 224,
+        "source_components": 3,
+        "original_exclusive_valid_n": 145,
+        "F6_original_raw_retention": 0.1310344827586207,
+        "F2_dominance": 0.9047619047619048,
+        "F6_dominance": 0.9047619047619048,
+        "F6_selected_q90_q10_mm": 25.280114746093773,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1044,
+        "token": "o016",
+        "fact_id": "feeding_000701_001060:F1044:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": false,
+        "reference_median_mm": 1186.9781494140625,
+        "reference_tolerance_mm": null,
+        "F2": {
+          "status": "UNKNOWN",
+          "reason": "NO_QUALIFIED_CONNECTED_COMPONENT",
+          "selected_n": 0,
+          "median_mm": null,
+          "occupancy": {
+            "n": 0,
+            "fish": 0,
+            "other_fish": 0,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": null,
+          "contrast_mm": null,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 19,
+          "median_mm": 1124.101806640625,
+          "occupancy": {
+            "n": 19,
+            "fish": 0,
+            "other_fish": 19,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 67.40201468202963,
+          "background_noise_mm": 3.7790101614907194
+        },
+        "F2_selected_statistics": {
+          "area": 0,
+          "n": 0,
+          "valid_fraction": 0.0,
+          "median": null,
+          "mad": null,
+          "q10": null,
+          "q25": null,
+          "q75": null,
+          "q90": null
+        },
+        "F6_selected_statistics": {
+          "area": 19,
+          "n": 19,
+          "valid_fraction": 1.0,
+          "median": 1124.101806640625,
+          "mad": 9.12109375,
+          "q10": 1114.42177734375,
+          "q25": 1119.162353515625,
+          "q75": 1139.3139038085938,
+          "q90": 1157.5545654296875
+        },
+        "source_whole_area": 284,
+        "source_components": 2,
+        "original_exclusive_valid_n": 223,
+        "F6_original_raw_retention": 0.08520179372197309,
+        "F2_dominance": null,
+        "F6_dominance": 0.7037037037037037,
+        "F6_selected_q90_q10_mm": 43.13278808593759,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1046,
+        "token": "o016",
+        "fact_id": "feeding_000701_001060:F1046:o016",
+        "reference_status": "SCORABLE",
+        "reference_usable": false,
+        "reference_median_mm": 1171.189208984375,
+        "reference_tolerance_mm": null,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 45,
+          "median_mm": 1127.8839111328125,
+          "occupancy": {
+            "n": 45,
+            "fish": 0,
+            "other_fish": 45,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 61.47923621911582,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 52,
+          "median_mm": 1131.0599365234375,
+          "occupancy": {
+            "n": 52,
+            "fish": 0,
+            "other_fish": 52,
+            "background": 0
+          },
+          "reference_abs_error_mm": null,
+          "reference_compatible": null,
+          "selected_sign": "NEARER",
+          "contrast_mm": 60.07825994471682,
+          "background_noise_mm": 4.081832619610745
+        },
+        "F2_selected_statistics": {
+          "area": 45,
+          "n": 45,
+          "valid_fraction": 1.0,
+          "median": 1127.8839111328125,
+          "mad": 6.072021484375,
+          "q10": 1118.4215576171875,
+          "q25": 1123.3411865234375,
+          "q75": 1134.982421875,
+          "q90": 1141.25791015625
+        },
+        "F6_selected_statistics": {
+          "area": 52,
+          "n": 52,
+          "valid_fraction": 1.0,
+          "median": 1131.0599365234375,
+          "mad": 7.3359375,
+          "q10": 1119.0546264648438,
+          "q25": 1124.6039428710938,
+          "q75": 1138.9026794433594,
+          "q90": 1148.7840454101563
+        },
+        "source_whole_area": 488,
+        "source_components": 2,
+        "original_exclusive_valid_n": 335,
+        "F6_original_raw_retention": 0.15522388059701492,
+        "F2_dominance": 1.0,
+        "F6_dominance": 0.896551724137931,
+        "F6_selected_q90_q10_mm": 29.729418945312545,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1385,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1385:o015",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1159.5527954101562,
+        "reference_tolerance_mm": 58.525055859375,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 50,
+          "median_mm": 1115.009521484375,
+          "occupancy": {
+            "n": 50,
+            "fish": 0,
+            "other_fish": 50,
+            "background": 0
+          },
+          "reference_abs_error_mm": 44.54327392578125,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 49.778210887445766,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 59,
+          "median_mm": 1115.8865966796875,
+          "occupancy": {
+            "n": 59,
+            "fish": 0,
+            "other_fish": 59,
+            "background": 0
+          },
+          "reference_abs_error_mm": 43.66619873046875,
+          "reference_compatible": true,
+          "selected_sign": "NEARER",
+          "contrast_mm": 49.54685714531638,
+          "background_noise_mm": 14.303953317113956
+        },
+        "F2_selected_statistics": {
+          "area": 50,
+          "n": 50,
+          "valid_fraction": 1.0,
+          "median": 1115.009521484375,
+          "mad": 3.503662109375,
+          "q10": 1106.3529663085938,
+          "q25": 1110.1233520507812,
+          "q75": 1117.9057922363281,
+          "q90": 1119.03125
+        },
+        "F6_selected_statistics": {
+          "area": 59,
+          "n": 59,
+          "valid_fraction": 1.0,
+          "median": 1115.8865966796875,
+          "mad": 3.20068359375,
+          "q10": 1106.58193359375,
+          "q25": 1111.4583740234375,
+          "q75": 1118.6514892578125,
+          "q90": 1119.828857421875
+        },
+        "source_whole_area": 946,
+        "source_components": 1,
+        "original_exclusive_valid_n": 628,
+        "F6_original_raw_retention": 0.09394904458598727,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 13.246923828125091,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1386,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1386:o015",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1153.538330078125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 57,
+          "median_mm": 1108.36962890625,
+          "occupancy": {
+            "n": 57,
+            "fish": 0,
+            "other_fish": 57,
+            "background": 0
+          },
+          "reference_abs_error_mm": 45.168701171875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 55.12595723403433,
+          "background_noise_mm": 15.0
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 58,
+          "median_mm": 1108.4038696289062,
+          "occupancy": {
+            "n": 58,
+            "fish": 0,
+            "other_fish": 58,
+            "background": 0
+          },
+          "reference_abs_error_mm": 45.13446044921875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 55.12088463095847,
+          "background_noise_mm": 14.747498432313991
+        },
+        "F2_selected_statistics": {
+          "area": 57,
+          "n": 57,
+          "valid_fraction": 1.0,
+          "median": 1108.36962890625,
+          "mad": 5.5618896484375,
+          "q10": 1100.4864990234375,
+          "q25": 1105.49755859375,
+          "q75": 1114.614990234375,
+          "q90": 1116.8750244140624
+        },
+        "F6_selected_statistics": {
+          "area": 58,
+          "n": 58,
+          "valid_fraction": 1.0,
+          "median": 1108.4038696289062,
+          "mad": 5.60748291015625,
+          "q10": 1100.4897827148438,
+          "q25": 1105.6146240234375,
+          "q75": 1114.6571960449219,
+          "q90": 1117.0495239257812
+        },
+        "source_whole_area": 948,
+        "source_components": 1,
+        "original_exclusive_valid_n": 633,
+        "F6_original_raw_retention": 0.09162717219589257,
+        "F2_dominance": 0.890625,
+        "F6_dominance": 0.8923076923076924,
+        "F6_selected_q90_q10_mm": 16.559741210937318,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1387,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1387:o015",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1151.6062622070312,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 52,
+          "median_mm": 1101.7610473632812,
+          "occupancy": {
+            "n": 52,
+            "fish": 0,
+            "other_fish": 52,
+            "background": 0
+          },
+          "reference_abs_error_mm": 49.84521484375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 60.247438833619185,
+          "background_noise_mm": 15.01802618799267
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 52,
+          "median_mm": 1101.7610473632812,
+          "occupancy": {
+            "n": 52,
+            "fish": 0,
+            "other_fish": 52,
+            "background": 0
+          },
+          "reference_abs_error_mm": 49.84521484375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 60.50536107338951,
+          "background_noise_mm": 14.854204388740861
+        },
+        "F2_selected_statistics": {
+          "area": 52,
+          "n": 52,
+          "valid_fraction": 1.0,
+          "median": 1101.7610473632812,
+          "mad": 5.71929931640625,
+          "q10": 1093.1668823242187,
+          "q25": 1096.5135498046875,
+          "q75": 1108.6113586425781,
+          "q90": 1114.9115356445313
+        },
+        "F6_selected_statistics": {
+          "area": 52,
+          "n": 52,
+          "valid_fraction": 1.0,
+          "median": 1101.7610473632812,
+          "mad": 5.71929931640625,
+          "q10": 1093.1668823242187,
+          "q25": 1096.5135498046875,
+          "q75": 1108.6113586425781,
+          "q90": 1114.9115356445313
+        },
+        "source_whole_area": 945,
+        "source_components": 1,
+        "original_exclusive_valid_n": 616,
+        "F6_original_raw_retention": 0.08441558441558442,
+        "F2_dominance": 0.9629629629629629,
+        "F6_dominance": 0.9629629629629629,
+        "F6_selected_q90_q10_mm": 21.744653320312636,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1388,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1388:o015",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1148.83935546875,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 50,
+          "median_mm": 1097.7151489257812,
+          "occupancy": {
+            "n": 50,
+            "fish": 0,
+            "other_fish": 50,
+            "background": 0
+          },
+          "reference_abs_error_mm": 51.12420654296875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 60.62678521651162,
+          "background_noise_mm": 16.50470585853382
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 50,
+          "median_mm": 1097.7151489257812,
+          "occupancy": {
+            "n": 50,
+            "fish": 0,
+            "other_fish": 50,
+            "background": 0
+          },
+          "reference_abs_error_mm": 51.12420654296875,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 60.747582127023065,
+          "background_noise_mm": 16.425471664108198
+        },
+        "F2_selected_statistics": {
+          "area": 50,
+          "n": 50,
+          "valid_fraction": 1.0,
+          "median": 1097.7151489257812,
+          "mad": 3.187255859375,
+          "q10": 1088.7356323242188,
+          "q25": 1094.2488708496094,
+          "q75": 1100.2554321289062,
+          "q90": 1104.9892578125
+        },
+        "F6_selected_statistics": {
+          "area": 50,
+          "n": 50,
+          "valid_fraction": 1.0,
+          "median": 1097.7151489257812,
+          "mad": 3.187255859375,
+          "q10": 1088.7356323242188,
+          "q25": 1094.2488708496094,
+          "q75": 1100.2554321289062,
+          "q90": 1104.9892578125
+        },
+        "source_whole_area": 1028,
+        "source_components": 1,
+        "original_exclusive_valid_n": 691,
+        "F6_original_raw_retention": 0.0723589001447178,
+        "F2_dominance": 1.0,
+        "F6_dominance": 1.0,
+        "F6_selected_q90_q10_mm": 16.25362548828116,
+        "F6_selected_robust_scale_mm": 15.0
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1389,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1389:o015",
+        "reference_status": "SCORABLE",
+        "reference_usable": true,
+        "reference_median_mm": 1151.282470703125,
+        "reference_tolerance_mm": 45.0,
+        "F2": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 61,
+          "median_mm": 1096.058349609375,
+          "occupancy": {
+            "n": 61,
+            "fish": 0,
+            "other_fish": 61,
+            "background": 0
+          },
+          "reference_abs_error_mm": 55.22412109375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 59.656990773193,
+          "background_noise_mm": 15.845494857555845
+        },
+        "F6": {
+          "status": "AVAILABLE",
+          "reason": "QUALIFIED_DOMINANT_DEPTH_COMPONENT",
+          "selected_n": 61,
+          "median_mm": 1096.058349609375,
+          "occupancy": {
+            "n": 61,
+            "fish": 0,
+            "other_fish": 61,
+            "background": 0
+          },
+          "reference_abs_error_mm": 55.22412109375,
+          "reference_compatible": false,
+          "selected_sign": "NEARER",
+          "contrast_mm": 59.865761019808815,
+          "background_noise_mm": 15.758714466404903
+        },
+        "F2_selected_statistics": {
+          "area": 61,
+          "n": 61,
+          "valid_fraction": 1.0,
+          "median": 1096.058349609375,
+          "mad": 5.3125,
+          "q10": 1087.2271728515625,
+          "q25": 1090.570556640625,
+          "q75": 1100.4578857421875,
+          "q90": 1105.714111328125
+        },
+        "F6_selected_statistics": {
+          "area": 61,
+          "n": 61,
+          "valid_fraction": 1.0,
+          "median": 1096.058349609375,
+          "mad": 5.3125,
+          "q10": 1087.2271728515625,
+          "q25": 1090.570556640625,
+          "q75": 1100.4578857421875,
+          "q90": 1105.714111328125
+        },
+        "source_whole_area": 961,
+        "source_components": 1,
+        "original_exclusive_valid_n": 678,
+        "F6_original_raw_retention": 0.08997050147492626,
+        "F2_dominance": 0.9104477611940298,
+        "F6_dominance": 0.9104477611940298,
+        "F6_selected_q90_q10_mm": 18.4869384765625,
+        "F6_selected_robust_scale_mm": 15.0
+      }
+    ]
+  },
+  "low_retention": {
+    "definition": "F6 selected_n / F2 original raw exclusive_valid_n <0.25 on all S available objects; no reference qualification or outcome filtering.",
+    "counts": {
+      "feeding_000701_001060": 1251,
+      "feeding_001201_001906": 2911
+    },
+    "total": 4162,
+    "count_membership_difference_if_using_F6_admitted_denominator": 0,
+    "earliest8_per_segment": {
+      "feeding_000701_001060": [
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 701,
+          "token": "o005",
+          "selected_n": 16,
+          "original_exclusive_valid_n": 340,
+          "raw_valid_retention": 0.047058823529411764,
+          "admitted_retention": 0.047058823529411764,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 701,
+          "token": "o007",
+          "selected_n": 31,
+          "original_exclusive_valid_n": 294,
+          "raw_valid_retention": 0.1054421768707483,
+          "admitted_retention": 0.1054421768707483,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 701,
+          "token": "o018",
+          "selected_n": 16,
+          "original_exclusive_valid_n": 445,
+          "raw_valid_retention": 0.035955056179775284,
+          "admitted_retention": 0.035955056179775284,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 702,
+          "token": "o012",
+          "selected_n": 22,
+          "original_exclusive_valid_n": 330,
+          "raw_valid_retention": 0.06666666666666667,
+          "admitted_retention": 0.06666666666666667,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 702,
+          "token": "o018",
+          "selected_n": 20,
+          "original_exclusive_valid_n": 418,
+          "raw_valid_retention": 0.04784688995215311,
+          "admitted_retention": 0.04784688995215311,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 702,
+          "token": "o023",
+          "selected_n": 77,
+          "original_exclusive_valid_n": 328,
+          "raw_valid_retention": 0.2347560975609756,
+          "admitted_retention": 0.2347560975609756,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 703,
+          "token": "o003",
+          "selected_n": 57,
+          "original_exclusive_valid_n": 276,
+          "raw_valid_retention": 0.20652173913043478,
+          "admitted_retention": 0.20652173913043478,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_000701_001060",
+          "frame": 703,
+          "token": "o014",
+          "selected_n": 16,
+          "original_exclusive_valid_n": 325,
+          "raw_valid_retention": 0.04923076923076923,
+          "admitted_retention": 0.04923076923076923,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        }
+      ],
+      "feeding_001201_001906": [
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1201,
+          "token": "o012",
+          "selected_n": 56,
+          "original_exclusive_valid_n": 457,
+          "raw_valid_retention": 0.12253829321663019,
+          "admitted_retention": 0.12253829321663019,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1201,
+          "token": "o013",
+          "selected_n": 74,
+          "original_exclusive_valid_n": 325,
+          "raw_valid_retention": 0.2276923076923077,
+          "admitted_retention": 0.2276923076923077,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1201,
+          "token": "o027",
+          "selected_n": 84,
+          "original_exclusive_valid_n": 440,
+          "raw_valid_retention": 0.19090909090909092,
+          "admitted_retention": 0.19090909090909092,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1202,
+          "token": "o012",
+          "selected_n": 58,
+          "original_exclusive_valid_n": 402,
+          "raw_valid_retention": 0.14427860696517414,
+          "admitted_retention": 0.14427860696517414,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1202,
+          "token": "o013",
+          "selected_n": 64,
+          "original_exclusive_valid_n": 286,
+          "raw_valid_retention": 0.22377622377622378,
+          "admitted_retention": 0.22377622377622378,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1202,
+          "token": "o014",
+          "selected_n": 51,
+          "original_exclusive_valid_n": 450,
+          "raw_valid_retention": 0.11333333333333333,
+          "admitted_retention": 0.11333333333333333,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1202,
+          "token": "o027",
+          "selected_n": 66,
+          "original_exclusive_valid_n": 453,
+          "raw_valid_retention": 0.1456953642384106,
+          "admitted_retention": 0.1456953642384106,
+          "reference_status": "SCORABLE",
+          "reference_usable": true
+        },
+        {
+          "segment": "feeding_001201_001906",
+          "frame": 1203,
+          "token": "o011",
+          "selected_n": 55,
+          "original_exclusive_valid_n": 227,
+          "raw_valid_retention": 0.2422907488986784,
+          "admitted_retention": 0.2422907488986784,
+          "reference_status": "SCORABLE",
+          "reference_usable": false
+        }
+      ]
+    },
+    "caveat": "raw_valid_retention alone does not identify background; original valid fish outside the source mask and missing raw values are outside this denominator."
+  },
+  "proposed_diagnostic_sample": {
+    "status": "REVIEWED_PROPOSAL_FOR_ROOT_FREEZE_NOT_A_NEW_MEASUREMENT_SEAL",
+    "selection_policy": "Complete44 new conflicts + complete9 zero-fish + earliest8 raw-retention<.25 per segment +9 named known regressions, deduplicated with all stratum tags retained.",
+    "unique_base_objects": 73,
+    "base_cohort": [
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 701,
+        "token": "o005",
+        "fact_id": "feeding_000701_001060:F701:o005",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT",
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 701,
+        "token": "o007",
+        "fact_id": "feeding_000701_001060:F701:o007",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 701,
+        "token": "o018",
+        "fact_id": "feeding_000701_001060:F701:o018",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 702,
+        "token": "o012",
+        "fact_id": "feeding_000701_001060:F702:o012",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 702,
+        "token": "o018",
+        "fact_id": "feeding_000701_001060:F702:o018",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 702,
+        "token": "o023",
+        "fact_id": "feeding_000701_001060:F702:o023",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 703,
+        "token": "o003",
+        "fact_id": "feeding_000701_001060:F703:o003",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 703,
+        "token": "o014",
+        "fact_id": "feeding_000701_001060:F703:o014",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 704,
+        "token": "o013",
+        "fact_id": "feeding_000701_001060:F704:o013",
+        "strata": [
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 747,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F747:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44",
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 750,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F750:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 751,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F751:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 752,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F752:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 753,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F753:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 755,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F755:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 755,
+        "token": "o023",
+        "fact_id": "feeding_000701_001060:F755:o023",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 758,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F758:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 758,
+        "token": "o021",
+        "fact_id": "feeding_000701_001060:F758:o021",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 759,
+        "token": "o010",
+        "fact_id": "feeding_000701_001060:F759:o010",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 766,
+        "token": "o012",
+        "fact_id": "feeding_000701_001060:F766:o012",
+        "strata": [
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 859,
+        "token": "o009",
+        "fact_id": "feeding_000701_001060:F859:o009",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 870,
+        "token": "o013",
+        "fact_id": "feeding_000701_001060:F870:o013",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 871,
+        "token": "o009",
+        "fact_id": "feeding_000701_001060:F871:o009",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 896,
+        "token": "o014",
+        "fact_id": "feeding_000701_001060:F896:o014",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 951,
+        "token": "o004",
+        "fact_id": "feeding_000701_001060:F951:o004",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 960,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F960:o002",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 967,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F967:o002",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 968,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F968:o002",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 978,
+        "token": "o002",
+        "fact_id": "feeding_000701_001060:F978:o002",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1016,
+        "token": "o005",
+        "fact_id": "feeding_000701_001060:F1016:o005",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1044,
+        "token": "o016",
+        "fact_id": "feeding_000701_001060:F1044:o016",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9",
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frame": 1046,
+        "token": "o016",
+        "fact_id": "feeding_000701_001060:F1046:o016",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1201,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1201:o012",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1201,
+        "token": "o013",
+        "fact_id": "feeding_001201_001906:F1201:o013",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1201,
+        "token": "o027",
+        "fact_id": "feeding_001201_001906:F1201:o027",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1202,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1202:o012",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1202,
+        "token": "o013",
+        "fact_id": "feeding_001201_001906:F1202:o013",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1202,
+        "token": "o014",
+        "fact_id": "feeding_001201_001906:F1202:o014",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1202,
+        "token": "o027",
+        "fact_id": "feeding_001201_001906:F1202:o027",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1203,
+        "token": "o011",
+        "fact_id": "feeding_001201_001906:F1203:o011",
+        "strata": [
+          "LOW_RETENTION_EARLIEST8_PER_SEGMENT"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1231,
+        "token": "o023",
+        "fact_id": "feeding_001201_001906:F1231:o023",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1234,
+        "token": "o027",
+        "fact_id": "feeding_001201_001906:F1234:o027",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1235,
+        "token": "o004",
+        "fact_id": "feeding_001201_001906:F1235:o004",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1235,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1235:o025",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1237,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1237:o025",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1242,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1242:o025",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1251,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1251:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1254,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1254:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1255,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1255:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1256,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1256:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1258,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1258:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1259,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1259:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1260,
+        "token": "o012",
+        "fact_id": "feeding_001201_001906:F1260:o012",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1319,
+        "token": "o007",
+        "fact_id": "feeding_001201_001906:F1319:o007",
+        "strata": [
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1385,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1385:o015",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9",
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1386,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1386:o015",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1387,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1387:o015",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1388,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1388:o015",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1389,
+        "token": "o015",
+        "fact_id": "feeding_001201_001906:F1389:o015",
+        "strata": [
+          "ALL_ZERO_MATCHED_FISH_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1421,
+        "token": "o003",
+        "fact_id": "feeding_001201_001906:F1421:o003",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1447,
+        "token": "o011",
+        "fact_id": "feeding_001201_001906:F1447:o011",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1462,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1462:o016",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1463,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1463:o016",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1466,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1466:o016",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1467,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1467:o016",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1488,
+        "token": "o016",
+        "fact_id": "feeding_001201_001906:F1488:o016",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1552,
+        "token": "o024",
+        "fact_id": "feeding_001201_001906:F1552:o024",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1648,
+        "token": "o006",
+        "fact_id": "feeding_001201_001906:F1648:o006",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1673,
+        "token": "o022",
+        "fact_id": "feeding_001201_001906:F1673:o022",
+        "strata": [
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1716,
+        "token": "o025",
+        "fact_id": "feeding_001201_001906:F1716:o025",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1821,
+        "token": "o008",
+        "fact_id": "feeding_001201_001906:F1821:o008",
+        "strata": [
+          "ALL_NEW_CONFLICT_44",
+          "KNOWN_9"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1847,
+        "token": "o007",
+        "fact_id": "feeding_001201_001906:F1847:o007",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frame": 1885,
+        "token": "o013",
+        "fact_id": "feeding_001201_001906:F1885:o013",
+        "strata": [
+          "ALL_NEW_CONFLICT_44"
+        ]
+      }
+    ],
+    "controls": "For every base object choose a deterministic nearest same-segment stable F2/F6 both-compatible control; record source area and reference-state differences, deduplicate control IDs.",
+    "control_status_rule": "Use explicit reference_status equality. If exact reference_usable equality is required, four zero-fish cases with unusable references cannot have both-compatible controls: record NO_MATCH, never interpret null as compatible.",
+    "area_rule": "Use continuous source area distance in the frozen deterministic ordering; do not add a tuned area tolerance.",
+    "outcome_boundary": "This is a deliberately enriched exposed diagnostic cohort, not a new blind validation sample or a population prevalence estimator."
+  },
+  "reviewed_minimal_formal_diagnostics": {
+    "census": "All original28382 masks and frozen F2/F6 selections, not just successful repairs or wide-mode cases.",
+    "baseline": "Original selected8-connected components and original closing-support8-connected components; keep their actual sample/missing counts separate.",
+    "single_variable_shadow_graphs": [
+      {
+        "max_adjacent_raw_Z_difference_mm": 30,
+        "neighborhood": 8,
+        "vertices": "Only actual finite positive selected raw pixels",
+        "edges": "Both endpoints selected and absolute aligned-camera raw depth_mm difference <= threshold",
+        "reason": "Existing30mm contrast floor and60mm component-scale limit; fixed two-level diagnostic, no fit to GT"
+      },
+      {
+        "max_adjacent_raw_Z_difference_mm": 60,
+        "neighborhood": 8,
+        "vertices": "Only actual finite positive selected raw pixels",
+        "edges": "Both endpoints selected and absolute aligned-camera raw depth_mm difference <= threshold",
+        "reason": "Existing30mm contrast floor and60mm component-scale limit; fixed two-level diagnostic, no fit to GT"
+      }
+    ],
+    "gap_features": [
+      "sorted-depth largest gap and partition sizes",
+      "q10/q25/median/q75/q90",
+      "MAD with existing15mm measurement scale floor",
+      "cluster pixel mass and image-coordinate occupancy",
+      "closed support area vs actual selected count",
+      "selected8CC vs depth-edge30/60CC counts"
+    ],
+    "report": "Show all thresholds/transform-grid outputs and raw counts. A depth graph split indicates lack of continuity at the chosen Z difference, not a physical fish surface boundary.",
+    "rejection_cost": "Any future abstention proposal must first show coverage and lost original samples on the full fixed census; no rejection or mode selection is authorized by this review.",
+    "avoid": [
+      "nearest-depth-mode-as-fish",
+      "largest-mode-as-fish",
+      "GT/reference-median-driven extraction thresholds",
+      "pick-best-registration-transform",
+      "hide small modes or fill closing holes"
+    ],
+    "synthetic_controls": "Known same-depth component with missing bridge; known adjacent two-depth blocks with30/60mm boundary crossings; connected depth gradient; unchanged identity transform and explicitly shifted copies. These validate diagnostics, not physical calibration.",
+    "runtime": "Existing local NumPy/OpenCV and stdlib, no new dependency/GPU/API; root measures actual whole-census runtime."
+  },
+  "falsifiable_questions": [
+    {
+      "question": "Does closing support combine raw selected subgraphs separated by gaps or depth discontinuities?",
+      "evidence": "Full selected/support/depth-edge census comparisons; F1821 preserves a254.875mm distribution gap while counts change20/14→20/66.",
+      "failure_to_support": "Broad-support connectivity and mode counts may remain unchanged in most conflicts; do not universalize F1821."
+    },
+    {
+      "question": "Are general new conflicts driven by expanding sampling into higher-Z locations rather than isolated multimodality?",
+      "evidence": "All39 originally compatible available cases expand; all medians increase, median displacement11.535mm.",
+      "failure_to_support": "A depth increase can reflect a valid slanted/curved fish surface; physical per-pixel identity remains unknown."
+    },
+    {
+      "question": "Do image-coordinate surface features fail to overlap the supplied source silhouette under the recorded transform?",
+      "evidence": "Fixed full transform grid and raw spatial displays without choosing a best offset from masks or proxy scores.",
+      "failure_to_support": "Visual or contour overlap cannot by itself establish underwater extrinsics, true registration or physical surface identity."
+    }
+  ],
+  "independent_physical_label_boundary": {
+    "current_reference": "Postseal RGB manual-silhouette raw-depth core consensus; can contain background, other fish, alignment error or same-sensor anomalies.",
+    "decisive_missing": "Independent pixel-level fish/background/other-surface correspondence and calibrated spatial registration are absent.",
+    "required_for_physical_claim": "Independent surface anchors or annotations with uncertainty/UNKNOWN preserved; evidence beyond the same RGB silhouette projected into the same depth plane.",
+    "raw_lineage": "BAG/native byte equality and exact source-index reprojection validate provenance and recorded equations, not actual underwater physical alignment.",
+    "mask_scope": "Mask-contained filtering cannot recover a physically corresponding depth surface lying outside that mask.",
+    "followup": "Review frozen diagnostic images/graph outputs, then plan independent surface/registration labeling; do not fabricate physical labels or automatically insert a selected mode into tracking."
+  }
+}

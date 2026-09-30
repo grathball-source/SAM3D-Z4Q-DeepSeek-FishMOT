@@ -1,0 +1,138 @@
+{
+  "review": "DS5 independent evaluation and experimental-design review",
+  "date": "2026-09-30",
+  "review_base": "56c2ea61682edea71328976c4fed27230f334c2a",
+  "status": "DESIGN_REVIEW_READY_FOR_PARENT_FREEZE_NOT_AN_EXPERIMENT_RESULT",
+  "scope": {
+    "written_file": "experiments/ds5_surface_registration_audit/EVALUATION_REVIEW.json",
+    "old_files_modified": 0,
+    "new_annotation_or_source_pixels_opened_by_reviewer": 0,
+    "new_model_calls": 0,
+    "training": 0,
+    "tracker_changes": 0,
+    "repaired_v3_reads": 0
+  },
+  "reviewed_evidence": [
+    "experiments/ds4_depth_quality_repair/RESULTS.md",
+    "experiments/ds4_depth_quality_repair/SUMMARY.json",
+    "experiments/ds4_depth_quality_repair/CASES_POSTSEAL.json",
+    "experiments/ds4_depth_quality_repair/POSTSCORE_REVIEW.md"
+  ],
+  "ds4_findings": {
+    "decision_to_preserve": "PROXY_GAIN_ONLY",
+    "source_objects": 28382,
+    "frames": 1066,
+    "Q": 28088,
+    "R": 21817,
+    "F2_fixed_R": {"compatible": 15766, "discordant": 202, "unknown": 5849},
+    "F6_fixed_R": {"compatible": 17655, "discordant": 143, "unknown": 4019},
+    "new_F6_discordant_objects": 44,
+    "compatible_to_unknown_objects": 132,
+    "F2_unconditional_matched_silhouette_retention_percent": 35.3371,
+    "F6_unconditional_matched_silhouette_retention_percent": 41.2397,
+    "additional_nonmatched_pixels": 16620,
+    "conditional_purity_percent": {"F2": 98.9106, "F6": 98.6966},
+    "interpretation": "DS4 increased fixed-population raw-silhouette-consensus-compatible output and reduced proxy conflicts. It also introduced conflicts and sampling costs. The result does not establish physical surface ownership, underwater registration accuracy, or tracking benefit.",
+    "specific_counterexamples": [
+      {"fact": "F1821/o008", "observation": "A connected support merged two separated depth distributions; median changed from about 838 to 1136 mm while MAD decreased. Image connectivity and low MAD do not certify a single physical surface."},
+      {"fact": "F1385/o015", "observation": "All 59 selected pixels occupied another manual fish silhouette, yet the raw-depth consensus proxy judged the output compatible. Close depth does not certify fish identity."},
+      {"fact": "F1319/o007", "observation": "The reference itself contained 19 native-SUSPECT points near 11.86 m. Same-sensor agreement can share an anomaly."},
+      {"fact": "F704/o013 and F701", "observation": "Existing QA suggested spatially uncovered or displaced low-depth structure. This motivates a spatial correspondence audit, not a confirmed registration failure."}
+    ]
+  },
+  "minimum_executable_experiment": {
+    "purpose": "Separate geometric correspondence sensitivity, anonymous depth-distribution structure, and unsupported physical-surface claims without changing extraction or calibration.",
+    "fixed_source_cohort": {
+      "frame_ranges_inclusive": [[701, 1060], [1201, 1906]],
+      "frames": 1066,
+      "objects": 28382,
+      "selection_rule": "Use every original DS4 source mask, including UNKNOWN and UNSCORABLE. Bind inventory and old seals before audit. Do not select the main cohort from visible failures or method survivors.",
+      "Q_rule": "Retain the original unique IoU/margin matching and Q=28088 at zero shift. Do not rematch for any shifted condition.",
+      "R_rule": "If raw-reference consistency is carried forward, retain the original fixed R=21817, original reference statistics, and original tolerance. Do not recompute eligibility using shifts, native admission, or method acceptance.",
+      "exposure": "Previously exposed development evidence from the same recording; not blind validation or independent-video generalization."
+    },
+    "controls": [
+      {"name": "ZERO_SHIFT_F2", "description": "The sealed original DS3/F2 selected raw points at their original aligned coordinates."},
+      {"name": "ZERO_SHIFT_F6", "description": "The sealed DS4 primary selected raw points at their original aligned coordinates."},
+      {"name": "DECLARED_SHIFT_GRID", "description": "Apply the same preregistered integer translations to each fixed point set solely for geometric overlap diagnosis; retain the original point values and selection."}
+    ],
+    "proposed_small_shift_grid": {
+      "dx_px": [-8, -4, 0, 4, 8],
+      "dy_px": [-8, -4, 0, 4, 8],
+      "conditions_per_point_set": 25,
+      "coordinate_convention": "x_prime=x+dx, y_prime=y+dy; x increases rightward, y increases downward. The chosen grid is a bounded diagnostic range, not a calibration fit or a new success threshold.",
+      "freeze_requirement": "The parent implementation may declare another bounded grid before execution. Publish the complete declared grid and include zero; do not widen or refine around an observed maximum after scoring."
+    },
+    "operation_order": [
+      "Read and verify the existing measurement/scoring seals, raw/native/source_index inventory, and fixed source cohort.",
+      "Freeze audit code, effective grid, synthetic tests, cohort, reference namespaces, and counting definitions before any new reference analysis.",
+      "Read sealed F2/F6 point regions and original raw depth; verify raw statistics and source_index linkage. Construct only method-independent anonymous depth and topology descriptors. Seal these descriptors before new reference scoring.",
+      "Open the authorized RGB-derived polygons only for postfreeze geometric occupancy analysis. Reproduce zero-shift DS4 matches and counts exactly, then score every declared shift using those same matches and point sets.",
+      "Publish zero-shift metrics, full shift response curves, per-segment summaries, out-of-view counts, unknown/unscorable cross tables, and deterministic diagnostic examples. Preserve raw files and all old outputs."
+    ],
+    "minimum_runtime_plan": "Local CPU with existing NumPy/OpenCV/pycocotools; process one frame at a time and reuse its rasterized polygon labels. Sparse selected-point coordinate lookups across the bounded grid avoid repeated extraction and resampling. No GPU, model call, training, new server job, or tracker replay is required. Record actual runtime and complete-frame/object coverage rather than claim deployment speed."
+  },
+  "statistical_definitions": {
+    "point_set": "P_ij is the original selected raw point set for method j and object i. UNKNOWN has an empty point set. Its source coordinates, values, native source indices, and cardinality remain fixed across shifts.",
+    "shifted_occupancy_partition": "For each declared shift, classify each original point coordinate into matched RGB silhouette, another RGB silhouette excluding matched, outside all RGB silhouettes but inside image, or out of image. These four counts must sum to the original selected count.",
+    "constant_pixel_denominator": "The conditional shift overlap denominator is sum over fixed Q of the original selected count for that method, including points that move out of image. Never divide by only surviving in-image points.",
+    "unconditional_population_denominator": "Any matched-pixel yield uses the same original zero-shift valid matched-silhouette source-mask pixel denominator as DS4. UNKNOWN remains in the fixed population. An apparent yield change under translation is a geometric correspondence change, not recovered or newly measured depth.",
+    "no_sample_fields": "A zero selected-count denominator gives null overlap/purity/error, not zero or a safe result. UNSCORABLE matched quality is null and remains outside Q; source counts and engineering coverage still include it.",
+    "fixed_R_invariance": "Because neither raw selected values nor raw reference values change in this point-translation audit, their medians, absolute errors, and fixed-R consistency decisions must be invariant across shifts. A change indicates protocol drift or a bug, not a depth improvement.",
+    "aggregation": "Report zero-shift, every grid cell, both original segments, pooled counts, and per-object changes separately. Report macro object summaries alongside pixel-pooled summaries; do not treat pixels or adjacent-frame masks as independent physical events.",
+    "argmax_reporting": "An argmax may appear only as a clearly labeled exploratory summary of the complete fixed curve. Preserve ties and the full curve. Do not adopt the maximizing shift, rename its overlap a validated gain, re-estimate matching, or use it to alter calibration, masks, depth images, or reference qualification."
+  },
+  "physical_truth_boundary": {
+    "reference_kind": "RGB_SILHOUETTE_GEOMETRIC_OCCUPANCY_ONLY",
+    "physical_surface_labels": "UNKNOWN_NOT_COLLECTED",
+    "physical_distance_truth": "UNKNOWN_NOT_COLLECTED",
+    "allowed_description": "Pixels may be inside the matched RGB silhouette, inside another RGB silhouette, or outside RGB silhouettes; anonymous raw-depth regions may have separate numerical modes.",
+    "unsupported_description": [
+      "Inside a RGB polygon proves that the depth sample originated on that fish surface.",
+      "Outside a RGB polygon proves that the depth point is physical background.",
+      "The best shift proves broken extrinsics, a true global RGB-D offset, multipath, refraction, or a specific hardware fault.",
+      "A depth mode or spatial component is a certified fish instance or identity.",
+      "An RGB polygon or same-sensor raw median is independent physical depth ground truth."
+    ],
+    "distinctions_to_preserve": "A curve can reflect SAM3 mask error, RGB polygon error, correspondence error, occlusion/penetration, mixed depths, several nearby fish, or water-related projection effects. Existing calibrated code reproduction confirms implementation lineage, not real physical alignment.",
+    "human_audit_status": "Preparing pixel/coordinate QA for an independent reviewer is useful, but the agent must not invent human depth-surface annotations. Even visual inspection of RGB plus depth does not by itself certify each depth sample's physical origin."
+  },
+  "anonymous_surface_structure_secondary_audit": {
+    "input": "Only fixed original raw values, source_index, original source masks, and sealed F2/F6 selections; no RGB/reference label participates in building depth descriptors.",
+    "minimum_descriptors": [
+      "Raw selected n, median, MAD, q10/q25/q75/q90, and full numerical range.",
+      "Raw-selected connected components before closing versus the stored closed support connectivity.",
+      "Number of unique native source indices and the distribution of selected coordinates, with missing and SUSPECT source values preserved as separate evidence.",
+      "For fixed known witnesses, exact old/new point intersections and raw-value histograms. Any diagnostic mode grouping must declare its rule before execution and must not remove or replace samples."
+    ],
+    "interpretation": "A connected support with a broad or multimodal raw-value distribution can be described as mixed-depth evidence. This is not a physical surface label or a new picker. Keep this evidence orthogonal to the shift curve so that a displacement is not used to conceal a mixed-depth selection.",
+    "do_not_add": "Do not fit a warp, retrain a model, tune a depth-mode gate, alter F6 admission/selection, or create a platform for unspecified later calibration."
+  },
+  "known_synthetic_admission_checks": [
+    {"case": "Known integer displacement", "oracle": "Construct a nonambiguous silhouette and sampled surface at a known translation. The complete overlap curve must use the declared sign convention; undoing that translation restores exact correspondence. No real-data threshold is tuned from this test."},
+    {"case": "Correct alignment", "oracle": "A correctly aligned, nonambiguous constructed scene has its expected zero-shift response; the algorithm must not create a displacement by changing labels or extracting a different point set."},
+    {"case": "Ambiguous/repeated shapes", "oracle": "Repeated equal shapes or equal maximum responses retain ties/ambiguity. No arbitrary best shift or fish identity is certified."},
+    {"case": "Image border", "oracle": "Known points translated outside all four image edges are counted out_of_view without wraparound. Original sample cardinality remains the denominator. Negative indices must not silently index the opposite edge."},
+    {"case": "Empty/missing samples", "oracle": "UNKNOWN, all-invalid depth, no polygon, and an unusable raw reference remain in their fixed populations with the appropriate null quality fields. No empty sample is correct or safe."},
+    {"case": "Two plateaus joined by support", "oracle": "Construct separate known depth plateaus whose closed image support connects. Raw-value descriptors must retain both distributions instead of letting connectivity or MAD certify one surface."},
+    {"case": "Smooth sloped surface", "oracle": "A constructed continuous depth slope distinguishes broad legitimate variation from a manufactured discontinuity; report the descriptors without relabeling real pixels from the synthetic oracle."},
+    {"case": "Native source linkage and nonmutation", "oracle": "Coordinate translation preserves the original raw values/native indices, creates no interpolation or imputed depth, and leaves all input arrays unchanged. Synthetic source_index duplicates are counted explicitly instead of claimed independent sensor points."},
+    {"case": "Zero-shift and population accounting", "oracle": "The four occupancy categories sum to original n, zero shift reproduces baseline counts, and every shift shares identical S/Q/R/acceptance and original denominators."
+    }
+  ],
+  "primary_and_secondary_conclusion_standards": {
+    "primary_engineering_pass": "AUDIT_COMPLETE only after code/config/source binding, all declared synthetic checks, complete fixed-source coverage, exact zero-shift reproduction, fixed-population invariants, and sealed artifact verification pass. A complete audit can report negative, ambiguous, or sensitive geometric results.",
+    "primary_scientific_conclusion": "PHYSICAL_SURFACE_OWNERSHIP_UNRESOLVED unless a separate, genuinely independent physical reference is actually available. This experiment alone cannot turn a shift-response curve or RGB occupancy into physical truth.",
+    "secondary_shift_result": "Report GEOMETRIC_CORRESPONDENCE_SENSITIVITY_OBSERVED when predeclared translations change occupancy, or NO_CHANGE_IN_DECLARED_GRID when they do not; retain null/ambiguous cases. Neither is a validated calibration repair. Present the response magnitude and per-segment directions without a retrospectively chosen improvement threshold.",
+    "secondary_depth_structure_result": "Report exact mixed-depth/topology descriptors and known counterexamples, or state that the declared descriptor found no such evidence. This does not establish which numerical mode belongs to the fish.",
+    "cross_segment_consistency": "A similar directional response in both exposed segments is evidence compatible with a spatial correspondence issue, but it is still the same recording and can share errors. Inconsistent directions weaken a single-global-shift explanation. Do not promote either observation to physical calibration accuracy.",
+    "tracking_conclusion": "NOT_TESTED: no DepthState/identity/motion modification and no new IDF1/HOTA/AssA.",
+    "stop_condition": "After the declared audit, preserve the complete result and stop. Any adopted calibration, new selection gate, physical-reference collection, or tracker integration requires a separately defined experiment."
+  },
+  "deterministic_diagnostic_views": {
+    "known_witnesses": ["F701", "F704/o013", "F766/o012", "F1319/o007", "F1673/o022", "F747/o010", "F1821/o008", "F1044/o016", "F1385/o015"],
+    "status": "Already exposed mechanistic witnesses; not a replacement for the fixed full cohort and not independent validation.",
+    "selection_rule": "Retain all declared witnesses, including no-change/UNKNOWN and newly adverse cases. Additional examples must use a frozen deterministic rule and retain the full numerical result. Never choose only the largest positive shift improvement.",
+    "private_pixels": "Keep original RGB, raw depth pixels, polygons, RLE, and detailed coordinates private with an actual restricted inventory. Public numerical curves and claim boundaries may be published."
+  }
+}

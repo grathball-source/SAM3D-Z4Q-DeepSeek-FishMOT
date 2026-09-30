@@ -1,0 +1,611 @@
+{
+  "status": "READONLY_SOURCE_REVIEW_WITH_REGISTRATION_DIAGNOSTIC_FEASIBILITY",
+  "base_requested": "56c2ea6",
+  "boundaries": {
+    "old_files_modified": 0,
+    "npz_keys_read": [
+      "depth_mm",
+      "source_index"
+    ],
+    "rgb_pixels_read_for_resize_verification_only": true,
+    "manual_labels_read": 0,
+    "instance_id_read": 0,
+    "v3_reads": 0,
+    "model_api_calls": 0,
+    "server_jobs": 0
+  },
+  "sources": [
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\manifest.jsonl",
+      "bytes": 1478966,
+      "sha256": "f3ee6ce88594dbea4711b18919917b2c510abbd4a1d4896a7066c5360d33d944"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\Metadata\\FEEDING Orbbec Femto Bolt_CL8654103ML_20260918124300_frame_timestamps.json",
+      "bytes": 681821,
+      "sha256": "1264016f96c02c8e93330b6df88612c0a5d038420de827151c9d00c33ec53d11"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AnnotationFeeding_20260924\\ML\\manifest.json",
+      "bytes": 1034499,
+      "sha256": "b014927b5ae13b3229fb943dfdd2421ab040ef01e5ffff0af838fcaebc9679be"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\prelabel_feeding_20260924\\prepare.py",
+      "bytes": 2376,
+      "sha256": "0e11a83d2e75d9d8fbd71971df9edaf0d75d7a00d16b63124158b666ee64a3e4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\prelabel_feeding_20260924\\build_aligned_feeding.py",
+      "bytes": 11356,
+      "sha256": "76dc17da6bde353f82e23284085c43d937719caccab181e46282b57862be2416"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\FishSA-main\\data_collect\\3_run_Bag2HDF5.py",
+      "bytes": 29284,
+      "sha256": "2c4921a842ec9595b602ea9cd9b7fd796bdaf30b0ebca1b5736a3249818b7b5e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\logs\\bag_extract_20260924\\sdk_depth_scale.json",
+      "bytes": 105,
+      "sha256": "5534aaea20ff79ad325675a5d887bac4cbca90d6fff327111fb2cefb6441cb24"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\logs\\bag_extract_20260924\\FEEDING Orbbec Femto Bolt_CL8654103ML_20260918124300_verification.json",
+      "bytes": 1122,
+      "sha256": "62e816ef95b6983e46494a6047fcd3cecbddabb09769254df8c0da3ed394912e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\logs\\sdk_reference\\RosbagWriter.cpp",
+      "bytes": 24239,
+      "sha256": "c20594a4a4d9b8dd232bc8df53f42d92ebd4c07a730f8487f304646ff75d4afe"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\logs\\sdk_reference\\RosbagReader.cpp",
+      "bytes": 25465,
+      "sha256": "817ffeee3330d7cacf5f2a8fae45d77a90edc23728bec1db7c5e662c6d0cbdb2"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\logs\\sdk_reference\\ObTypes.h",
+      "bytes": 92127,
+      "sha256": "a68cc091061c7dd79f1b9156f37557e185363a2c1f0444d3fbc6985905e9811a"
+    }
+  ],
+  "time_lineage": {
+    "total_original_rgb_frames": 1907,
+    "total_original_depth_frames": 1907,
+    "packaged_frames": 1471,
+    "all_original_index_pairs_are_unique_nearest_timestamp": true,
+    "all_original_manifest_times_match_metadata": true,
+    "all_package_times_match_original_manifest": true,
+    "original_color_minus_depth_us": {
+      "-2000": 857,
+      "-1000": 1050
+    },
+    "package_color_minus_depth_us": {
+      "-2000": 659,
+      "-1000": 812
+    },
+    "color_frame_interval_us": {
+      "n": 1906,
+      "min": 33000.0,
+      "median": 33000.0,
+      "q90": 34000.0,
+      "max": 34000.0
+    },
+    "depth_frame_interval_us": {
+      "n": 1906,
+      "min": 33000.0,
+      "median": 33000.0,
+      "q90": 34000.0,
+      "max": 34000.0
+    },
+    "frame_index_contract": "Original zero-based sorted RGB ordinal; preserved package gaps. Callback frame_number is not a cross-stream pairing key.",
+    "motion_registration_accuracy": "UNKNOWN: 1–2 ms timestamp difference does not measure exposure midpoint synchronization or moving-surface displacement."
+  },
+  "projection_contract": {
+    "native_grid": [
+      640,
+      576
+    ],
+    "rgb_original_grid": [
+      1920,
+      1080
+    ],
+    "rgb_output_grid": [
+      640,
+      360
+    ],
+    "source_index": "-1 missing; otherwise native y=index//640, x=index%640",
+    "original_depth_unit": "float32 native camera-Z in mm; SDK raw uint16 scale 1.0 mm",
+    "aligned_depth_unit": "float32 RGB-camera Z in mm; nearest positive finite point wins; equal-Z tie uses smallest native index",
+    "distortion_order_original": [
+      "k1",
+      "k2",
+      "k3",
+      "k4",
+      "k5",
+      "k6",
+      "p1",
+      "p2"
+    ],
+    "opencv_index_order": [
+      0,
+      1,
+      6,
+      7,
+      2,
+      3,
+      4,
+      5
+    ],
+    "intrinsic_contract": "cameraIntrinsic=[fx,fy,cx,cy]; pixel centers resized by (u+0.5)/3-0.5",
+    "depth_to_color_direction_evidence": "RosbagWriter.cpp357 getExtrinsicTo(color); indices copied at359/362; Geometry reshapes in row order and uses rays @ R.T.",
+    "current_K_depth": [
+      [
+        504.990234375,
+        0.0,
+        318.2530822753906
+      ],
+      [
+        0.0,
+        505.0413818359375,
+        333.609375
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "current_K_rgb_output": [
+      [
+        375.55126953125,
+        0.0,
+        316.5760091145833
+      ],
+      [
+        0.0,
+        375.3996175130208,
+        177.90509033203122
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "current_R": [
+      [
+        0.9938738346099854,
+        -0.004906213376671076,
+        -0.0002515602682251483
+      ],
+      [
+        0.004903958644717932,
+        0.9938616156578064,
+        0.11052165925502777
+      ],
+      [
+        -0.0002922266721725464,
+        -0.11052155494689941,
+        0.993873655796051
+      ]
+    ],
+    "current_translation_mm": [
+      -32.54729080200195,
+      -0.8485051989555359,
+      2.4000723361968994
+    ],
+    "inverse_distortion_roundtrip_max_px": 1.815154934550657e-05,
+    "roundtrip_scope": "Self-consistency of the same recorded lens model; not an independent surface match or physical calibration measurement."
+  },
+  "rotation_structure": {
+    "determinant": 0.9938859458727737,
+    "RtR_minus_identity_max_abs": 0.012190666670826467,
+    "singular_values": [
+      1.0000000354375613,
+      0.9999999716881318,
+      0.9938859387906485
+    ],
+    "nearest_SO3_candidate": [
+      [
+        0.9999878587032363,
+        -0.0049212574466108916,
+        -0.0002523316498949542
+      ],
+      [
+        0.004918996355420206,
+        0.9938615433018056,
+        0.11052165498493496
+      ],
+      [
+        -0.0002931227946178807,
+        -0.11052155432718906,
+        0.9938736841813097
+      ]
+    ],
+    "nearest_SO3_frobenius_delta": 0.006114061209520305,
+    "nearest_SO3_max_element_delta": 0.006114024093250903,
+    "nearest_SO3_determinant": 1.0000000000000009,
+    "nearest_SO3_orthogonality_max_abs": 8.881784197001252e-16,
+    "recorded_equals_saved_sdk_playback_extrinsic": true,
+    "sdk_independence": "Not independent: RosbagReader.cpp229/230 memcpy the recorded rotation/translation into playback extrinsics.",
+    "interpretation": "Recorded matrix has a structural non-rigid component. Cause and physically correct extrinsics UNKNOWN; transpose also preserves the singular-value deviation. Do not normalize or replace old data."
+  },
+  "fixed_sample_frame_verification": [
+    {
+      "frame": 701,
+      "rgb_timestamp_us": 1789706603973000,
+      "depth_timestamp_us": 1789706603974000,
+      "delta_us": -1000,
+      "rgb_original": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000701.jpg",
+        "bytes": 185968,
+        "sha256": "2d0e1b89b4fe16af0dd6346f6e8103aa5a577fb30205f9c610d2b1739bad0ff8"
+      },
+      "rgb_small": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000701.png",
+        "bytes": 239594,
+        "sha256": "1f8e2b1af6e0eec8964fe373239e7a602c26cf5f387313a6b8f0b4d18d3b73f9"
+      },
+      "rgb_original_equals_source_bytes": true,
+      "rgb_small_equals_area_resize": true,
+      "native": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000701.npy",
+        "bytes": 1474688,
+        "sha256": "c7205c14af26b5d18384fa87d8c3bba1257f8f08bb7dcb2a994cadfbb1e5136a"
+      },
+      "native_equals_source_bytes": true,
+      "aligned": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000701.npz",
+        "bytes": 773698,
+        "sha256": "08dcc6b139283f53ed59f7088cf9ad54ec11fade3eaab77eb5a2bbdd6f3a1861"
+      },
+      "full_aligned_depth_bit_exact": true,
+      "full_source_index_exact": true,
+      "shadow_projection_continuous_shift_all_winner_sources_px": {
+        "n": 160305,
+        "min": 4.165175491641172e-06,
+        "median": 0.7445210243358819,
+        "q90": 1.3795440678942459,
+        "max": 1.73740950342833
+      },
+      "shadow_projection_continuous_shift_native_at_most_5000_mm_px": {
+        "n": 160305,
+        "min": 4.165175491641172e-06,
+        "median": 0.7445210243358819,
+        "q90": 1.3795440678942459,
+        "max": 1.73740950342833
+      },
+      "shadow_x_shift_px": {
+        "n": 160305,
+        "min": -1.7097689647829952,
+        "median": 0.011915988134830968,
+        "q90": 1.178369340104939,
+        "max": 1.7374066088856353
+      },
+      "shadow_y_shift_px": {
+        "n": 160305,
+        "min": -0.008973504867441306,
+        "median": -2.394654939052998e-05,
+        "q90": 0.005198477338012708,
+        "max": 0.009060380492087461
+      },
+      "shadow_z_delta_mm": {
+        "n": 160305,
+        "min": -0.0005779721916496783,
+        "median": 2.4218075168391806e-05,
+        "q90": 0.0005385679092796636,
+        "max": 0.0006242056601877266
+      }
+    },
+    {
+      "frame": 704,
+      "rgb_timestamp_us": 1789706604072000,
+      "depth_timestamp_us": 1789706604074000,
+      "delta_us": -2000,
+      "rgb_original": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000704.jpg",
+        "bytes": 183809,
+        "sha256": "baf8eb822e527c9ee8179df78e1388d9a05debcabf36ce95008463b40a0647de"
+      },
+      "rgb_small": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000704.png",
+        "bytes": 237792,
+        "sha256": "03e98f456aa8812c0b93ba0ba8aa09a09fee0e3716ce68663afa05f2a88e0d9a"
+      },
+      "rgb_original_equals_source_bytes": true,
+      "rgb_small_equals_area_resize": true,
+      "native": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000704.npy",
+        "bytes": 1474688,
+        "sha256": "1888bf797dde7aa61a2049f10f7db1b6fb2ceebc78d3da1899ec83744dc8be18"
+      },
+      "native_equals_source_bytes": true,
+      "aligned": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000704.npz",
+        "bytes": 770993,
+        "sha256": "030ef240f3f9f12ce522a1a2f0fa14e6cfdb33e859b336994a742b3e80051402"
+      },
+      "full_aligned_depth_bit_exact": true,
+      "full_source_index_exact": true,
+      "shadow_projection_continuous_shift_all_winner_sources_px": {
+        "n": 159587,
+        "min": 1.3133106751371683e-05,
+        "median": 0.751405232491641,
+        "q90": 1.3832560884074234,
+        "max": 1.7374037572076213
+      },
+      "shadow_projection_continuous_shift_native_at_most_5000_mm_px": {
+        "n": 159587,
+        "min": 1.3133106751371683e-05,
+        "median": 0.751405232491641,
+        "q90": 1.3832560884074234,
+        "max": 1.7374037572076213
+      },
+      "shadow_x_shift_px": {
+        "n": 159587,
+        "min": -1.7097080768058959,
+        "median": -0.00786228728571814,
+        "q90": 1.1844634878829992,
+        "max": 1.7374008686830393
+      },
+      "shadow_y_shift_px": {
+        "n": 159587,
+        "min": -0.008970553019409522,
+        "median": -3.539960488296856e-05,
+        "q90": 0.005160589807519497,
+        "max": 0.009053566107297684
+      },
+      "shadow_z_delta_mm": {
+        "n": 159587,
+        "min": -0.000589601027286335,
+        "median": 3.191759628862201e-05,
+        "q90": 0.000538345797531292,
+        "max": 0.0006223224995665078
+      }
+    },
+    {
+      "frame": 766,
+      "rgb_timestamp_us": 1789706606132000,
+      "depth_timestamp_us": 1789706606134000,
+      "delta_us": -2000,
+      "rgb_original": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000766.jpg",
+        "bytes": 187860,
+        "sha256": "fa4427e59b12effa6f57832a3fcca7ab46a463685863e88ad1d395b32c12b1c9"
+      },
+      "rgb_small": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000766.png",
+        "bytes": 245018,
+        "sha256": "9c4329def8b3b721150ca27a1f77490903422e45f491787d9b83d84dca6e1150"
+      },
+      "rgb_original_equals_source_bytes": true,
+      "rgb_small_equals_area_resize": true,
+      "native": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000766.npy",
+        "bytes": 1474688,
+        "sha256": "8adb5c3e49ba55b1572581532cdb43d0c67dc04442fbdab8d54acdf5a09943db"
+      },
+      "native_equals_source_bytes": true,
+      "aligned": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000766.npz",
+        "bytes": 780012,
+        "sha256": "f52aed43a9e696120afa1b04ff02d6aebdf7a97f197db2cdc2d6e738d1f56d7d"
+      },
+      "full_aligned_depth_bit_exact": true,
+      "full_source_index_exact": true,
+      "shadow_projection_continuous_shift_all_winner_sources_px": {
+        "n": 160900,
+        "min": 4.162082102421814e-06,
+        "median": 0.7543343839287073,
+        "q90": 1.3801833328823283,
+        "max": 1.7373980313511672
+      },
+      "shadow_projection_continuous_shift_native_at_most_5000_mm_px": {
+        "n": 160791,
+        "min": 4.162082102421814e-06,
+        "median": 0.7546353227780306,
+        "q90": 1.380359441599481,
+        "max": 1.7373980313511672
+      },
+      "shadow_x_shift_px": {
+        "n": 160791,
+        "min": -1.7097385946332224,
+        "median": -0.013199286853705416,
+        "q90": 1.1776126701522571,
+        "max": 1.7373951488095827
+      },
+      "shadow_y_shift_px": {
+        "n": 160791,
+        "min": -0.008977790275821462,
+        "median": -3.647483140412078e-05,
+        "q90": 0.0050829596121957366,
+        "max": 0.009050157378510448
+      },
+      "shadow_z_delta_mm": {
+        "n": 160791,
+        "min": -0.0005884086167498026,
+        "median": 3.395598082533979e-05,
+        "q90": 0.0005423256845915603,
+        "max": 0.0006228712384199753
+      }
+    },
+    {
+      "frame": 1319,
+      "rgb_timestamp_us": 1789706624508000,
+      "depth_timestamp_us": 1789706624509000,
+      "delta_us": -1000,
+      "rgb_original": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\001319.jpg",
+        "bytes": 169199,
+        "sha256": "5ae9506d76dfea035903d659ad11949d7c18c5d9340d32923b6b7302bae557a0"
+      },
+      "rgb_small": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\001319.png",
+        "bytes": 227911,
+        "sha256": "0a6e786c7df0d2eb4795dfbdcba9d839daa09efa6b444630f00014013cc1af76"
+      },
+      "rgb_original_equals_source_bytes": true,
+      "rgb_small_equals_area_resize": true,
+      "native": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001319.npy",
+        "bytes": 1474688,
+        "sha256": "cd31423e5c315ad0b9ee5d2ac0a3a3716d4b85f9f1bec1b69ce8eff82eade145"
+      },
+      "native_equals_source_bytes": true,
+      "aligned": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001319.npz",
+        "bytes": 767605,
+        "sha256": "bdef9952442b23d2e62dd68c50b87a9cecfa36d2727ecc08433aa41e7bd6242b"
+      },
+      "full_aligned_depth_bit_exact": true,
+      "full_source_index_exact": true,
+      "shadow_projection_continuous_shift_all_winner_sources_px": {
+        "n": 158658,
+        "min": 3.5433451952472935e-05,
+        "median": 0.756981799933013,
+        "q90": 1.378537836509429,
+        "max": 1.7373809750942364
+      },
+      "shadow_projection_continuous_shift_native_at_most_5000_mm_px": {
+        "n": 158576,
+        "min": 3.5433451952472935e-05,
+        "median": 0.7574691554285018,
+        "q90": 1.3786082946468077,
+        "max": 1.7373809750942364
+      },
+      "shadow_x_shift_px": {
+        "n": 158576,
+        "min": -1.7097385946332224,
+        "median": -0.04101044383079966,
+        "q90": 1.1714474144750397,
+        "max": 1.7373781102938892
+      },
+      "shadow_y_shift_px": {
+        "n": 158576,
+        "min": -0.008957901748274821,
+        "median": -6.974877335608198e-05,
+        "q90": 0.005235052256381323,
+        "max": 0.009064542585235813
+      },
+      "shadow_z_delta_mm": {
+        "n": 158576,
+        "min": -0.00058462654737923,
+        "median": 4.502167308828575e-05,
+        "q90": 0.0005574096556983932,
+        "max": 0.0006254769891711476
+      }
+    },
+    {
+      "frame": 1673,
+      "rgb_timestamp_us": 1789706636271000,
+      "depth_timestamp_us": 1789706636273000,
+      "delta_us": -2000,
+      "rgb_original": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\001673.jpg",
+        "bytes": 166198,
+        "sha256": "3494e351fd683175b5d158b11401e7f9783673a9de3089a7f9b6a076505db63f"
+      },
+      "rgb_small": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\001673.png",
+        "bytes": 227617,
+        "sha256": "eebd1db20e1b65f51eda080e473f767d3d4714dfffc47f07ea2991b7ef2f4a90"
+      },
+      "rgb_original_equals_source_bytes": true,
+      "rgb_small_equals_area_resize": true,
+      "native": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001673.npy",
+        "bytes": 1474688,
+        "sha256": "d9b1e09a91870bbea6ccb7b6eef36870bc7d915b95184bfe06191eee7074daf0"
+      },
+      "native_equals_source_bytes": true,
+      "aligned": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001673.npz",
+        "bytes": 779935,
+        "sha256": "fef08ab2820f4ea99ff4c376258632c0605dd4c78eb064e6601908044596d2d5"
+      },
+      "full_aligned_depth_bit_exact": true,
+      "full_source_index_exact": true,
+      "shadow_projection_continuous_shift_all_winner_sources_px": {
+        "n": 161597,
+        "min": 3.318969353138592e-05,
+        "median": 0.7491913701847767,
+        "q90": 1.3693731202013875,
+        "max": 1.73740950342833
+      },
+      "shadow_projection_continuous_shift_native_at_most_5000_mm_px": {
+        "n": 161597,
+        "min": 3.318969353138592e-05,
+        "median": 0.7491913701847767,
+        "q90": 1.3693731202013875,
+        "max": 1.73740950342833
+      },
+      "shadow_x_shift_px": {
+        "n": 161597,
+        "min": -1.7097689647829952,
+        "median": -0.027408818321646322,
+        "q90": 1.17259648926987,
+        "max": 1.7374066088856353
+      },
+      "shadow_y_shift_px": {
+        "n": 161597,
+        "min": -0.008970794771087753,
+        "median": -4.0411253451111406e-05,
+        "q90": 0.005123253848432792,
+        "max": 0.00905967227004112
+      },
+      "shadow_z_delta_mm": {
+        "n": 161597,
+        "min": -0.0005747302780036989,
+        "median": 4.0287749925482785e-05,
+        "q90": 0.0005449999649044911,
+        "max": 0.0006224121989362175
+      }
+    }
+  ],
+  "minimal_shadow_projection_usage": [
+    "geom = Geometry(calibration['recorded_profiles'], 640, 360)",
+    "geom.kc[0,2] += (640/geom.color['width'] - 1)/2; geom.kc[1,2] += (360/geom.color['height'] - 1)/2",
+    "indices = source_index[selected]; d = native_depth_mm.ravel()[indices]; rays = geom.rays.reshape(-1,3)[indices]",
+    "R = geom.r; U,s,Vh = np.linalg.svd(R); R_shadow = U @ np.diag([1,1,np.linalg.det(U @ Vh)]) @ Vh",
+    "xyz_recorded = (rays * d[:,None]) @ R.T + geom.t; xyz_shadow = (rays * d[:,None]) @ R_shadow.T + geom.t",
+    "uv_recorded = geom.project_xyz(xyz_recorded); uv_shadow = geom.project_xyz(xyz_shadow)",
+    "shift_px = uv_shadow - uv_recorded; z_shift_mm = xyz_shadow[:,2] - xyz_recorded[:,2]"
+  ],
+  "shadow_conventions": [
+    "Freeze the recorded calibration and same original source indices/native values; use selected samples from the same frozen cohort.",
+    "Compare continuous uv to continuous uv; separate integer rasterization error. Keep per-sample source provenance private.",
+    "Shadow displacement is diagnostic only: no re-rasterization, z-buffer reselection, new admission, median replacement or tracker transaction.",
+    "Report n, finite/censored/behind-camera counts, signed dx/dy and norm distributions per segment/arm; keep SUSPECT strata separate without calling them certified invalid.",
+    "If querying depth at shadow RGB locations, that is a different sampling/occlusion experiment and requires a new frozen protocol; do not present it as the same indexed sample."
+  ],
+  "minimal_registration_diagnostic": {
+    "hypothesis": "Existing raw-surface support may be geometrically displaced within RGB silhouettes even though reprojection is exact.",
+    "frozen_baseline": "Unchanged recorded transform, raw native values, current same-frame source selection and fixed original cohort.",
+    "numeric_control": "The precomputed nearest-SO(3) candidate gives geometric sensitivity for exactly the same native source samples; it does not identify the correct transform.",
+    "independent_correspondence": "Inspect predeclared private RGB/raw-depth/native-source overlays and source-mask boundaries; label correspondence as surface/background/occlusion/uncertain independently of method choice. RGB contours alone are not depth-surface truth.",
+    "falsification_controls": "A small preregistered set of artificial RGB-grid shifts can test whether an edge-alignment proxy detects injected displacement. Report unmatched depth edges, holes and textured RGB-only edges as censoring; never tune a correction on these exposed cases.",
+    "identifiable": "Wrong source/time/resize chain, numerical reconstruction errors, non-rigid matrix structure, and magnitude/direction of sensitivity displacement.",
+    "not_identifiable": "Physically correct R/t, refraction model, true fish distance, hardware anomaly cause, or fish-surface ownership from the same lens model and silhouette medians alone.",
+    "resources": "Existing local CPU NumPy/OpenCV; no new model or dependencies; original RGB/native/NPZ are read-only."
+  },
+  "physical_calibration_accuracy": "UNKNOWN",
+  "underwater_surface_depth_accuracy": "UNKNOWN"
+}

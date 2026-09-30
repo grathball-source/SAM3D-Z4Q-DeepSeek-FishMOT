@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds5_surface_registration_audit\public_manifest.py", line 43, in <module>
+    if __name__=='__main__': run()
+                             ^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds5_surface_registration_audit\public_manifest.py", line 33, in run
+    inspect(json.loads(p.read_text(encoding='utf-8-sig')),str(p))
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds5_surface_registration_audit\public_manifest.py", line 15, in inspect
+    inspect(item,path)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds5_surface_registration_audit\public_manifest.py", line 14, in inspect
+    assert not isinstance(item,list),(path,key,'pixel/point array')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds5_surface_registration_audit\\FAILURE_REVIEW.json', 'pixels', 'pixel/point array')

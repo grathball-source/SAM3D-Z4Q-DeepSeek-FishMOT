@@ -1,4 +1,25 @@
-# Active handoff — DS4 frozen depth-quality measurement,2026-09-30
+# Active handoff — DS5 surface/spatial observational audit,2026-09-30
+
+Read experiments/ds5_surface_registration_audit/RESULTS.md, PLAN/CONFIG/FREEZE,
+COHORT/SOURCE_INVENTORY/OLD_READONLY_LOCK, three initial independent reviews,
+CHECKS/AUDIT_SEALED/REPORT_SEALED, CENSUS/REGISTRATION, SUMMARY/KNOWN_CASES,
+three POSTAUDIT reviews, actual caption-v2 QA inspection, restricted inventory,
+EXECUTION_LOG and REMOTE_VERIFICATION. Base56c2ea61682edea71328976c4fed27230f334c2a.
+All1066frames/28382objects,73cases+59uniquecontrols;14missingcontrols retained.
+Engineering/source-contract PASS; physical surfaces/water calibration UNKNOWN.
+No extractor/tracker/model/DepthState intervention; HTTP/training/SAM3/completion/cost0.
+Largest30mm depth-piece shadow not promoted: C−92/D−14/U+106 vs original F6;
+multiple pieces may be spatial fragments at same depth, not different surfaces.
+F1821 old20/14 depth clusters become20/66; median flips while MAD falls.
+No uniform nonzero shift improves either fixed aggregate queue; local/subpixel
+misregistration/refraction/physical ownership unresolved.
+recordedR nonorthogonal; SO3 shadow is no certified correction/data substitution.
+DS1–DS4 files/seals and source hashes preserved; pixels private.
+One next step: multiple provenance-bound depth pieces and causal same-version
+history disambiguation; uncertain choice staysUNKNOWN. Not yet implemented.
+Do not retune DS5, select GT warps or automatically add VLM/tracking.
+
+# Historical handoff — DS4 frozen depth-quality measurement,2026-09-30
 
 Read experiments/ds4_depth_quality_repair/RESULTS.md, PLAN/CONFIG/FREEZE,
 SOURCE_AUDIT/COMPONENT_AUDIT/EVALUATION_REVIEW, CHECKS/SCORE_CHECKS/READONLY_ACCEPTANCE,

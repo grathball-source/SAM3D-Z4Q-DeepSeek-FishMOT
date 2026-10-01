@@ -1,0 +1,1605 @@
+{
+  "status": "PASS",
+  "input": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\diagnosis\\CASE_STATS.json",
+    "bytes": 1004262,
+    "sha256": "d84285fe7a371de36ca917809dab56de683374cae97ac85238fbf099cc7c3a8d"
+  },
+  "code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\diagnosis\\summarize_depth_diagnosis.py",
+    "bytes": 17190,
+    "sha256": "d7441e2256bd903d16b949ac7f6822bfadd1af113d628101cf40233ef0e1a3a0"
+  },
+  "queries": 19,
+  "old_private_purple_semantics": "UNCONVOLVED_STATISTICAL_KDE_WITH_MAX_15_1.4826_CORE_MAD; NOT_ACTUAL_DS10_SELECTOR_DENSITY",
+  "public_solid_semantics": "COMPONENT_BASE_DIAGNOSTIC_KDE_HYPOT_COMPONENT_SIGMA_15; NO_QUERY_CONVOLUTION",
+  "actual_planned_selector_semantics": "base=hypot(component_sigma,15); query_scale=hypot(base,query_sigma); all candidates share query-specific background density",
+  "component_selection": "ALL_CURRENT_CORE_USABLE_OBJECTS_ONCE_EQUAL_WEIGHT_INCLUDES_QUERY_NO_GT_OR_IDENTITY_FILTER",
+  "interpretation": "NORMALIZED_CURRENT_OBSERVATION_PLUGIN_CONTRAST_NOT_CALIBRATED_POSTERIOR",
+  "plots": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\diagnosis\\BACKGROUND_DENSITY.svg",
+      "bytes": 496820,
+      "sha256": "50be7761d8f757daa10c715b922d9b41fd4eb458b098124d88f78d51ac6597f1"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\diagnosis\\BACKGROUND_DENSITY.png",
+      "bytes": 800520,
+      "sha256": "a7d0548ba46ebc074f74d807014cffdd0590b6083583548e1c820ca8d53bb52f"
+    }
+  ],
+  "rows": [
+    {
+      "global_q": 398,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 152913,
+        "valid_fraction": 0.6636848958333333,
+        "median": 1157.794921875,
+        "mad": 34.19189453125,
+        "q10": 769.36923828125,
+        "q25": 959.0570678710938,
+        "q75": 1180.2803955078125,
+        "q90": 1190.3595947265626
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 26,
+        "minimum": 846.4520263671875,
+        "maximum": 1184.747314453125,
+        "median": 998.1810760498047,
+        "q25": 936.4623794555664,
+        "q75": 1110.1940002441406,
+        "IQR": 173.73162078857422
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 846.4520263671875,
+        "maximum": 1184.747314453125,
+        "median": 998.1810760498047,
+        "q25": 936.4623794555664,
+        "q75": 1110.1940002441406,
+        "IQR": 173.73162078857422
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 398,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 169840,
+        "valid_fraction": 0.7371527777777778,
+        "median": 1156.9843139648438,
+        "mad": 34.2718505859375,
+        "q10": 788.2376770019531,
+        "q25": 971.9710540771484,
+        "q75": 1179.1979675292969,
+        "q90": 1189.5191040039062
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 846.4520263671875,
+        "maximum": 1184.6277465820312,
+        "median": 988.7173156738281,
+        "q25": 928.2431945800781,
+        "q75": 1106.9756164550781,
+        "IQR": 178.732421875
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 846.4520263671875,
+        "maximum": 1184.6277465820312,
+        "median": 988.7173156738281,
+        "q25": 928.2431945800781,
+        "q75": 1106.9756164550781,
+        "IQR": 178.732421875
+      },
+      "usable_cohorts": {
+        "retained": 26,
+        "inferred": 1
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 415,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 156051,
+        "valid_fraction": 0.6773046875,
+        "median": 1158.06884765625,
+        "mad": 33.024658203125,
+        "q10": 772.299072265625,
+        "q25": 966.5615844726562,
+        "q75": 1181.1229248046875,
+        "q90": 1189.9681396484375
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 852.7142333984375,
+        "maximum": 1180.4069213867188,
+        "median": 1072.0298461914062,
+        "q25": 990.0957946777344,
+        "q75": 1134.914794921875,
+        "IQR": 144.81900024414062
+      },
+      "usable": {
+        "count": 24,
+        "minimum": 852.7142333984375,
+        "maximum": 1180.4069213867188,
+        "median": 1055.6280517578125,
+        "q25": 976.7987976074219,
+        "q75": 1131.5830688476562,
+        "IQR": 154.78427124023438
+      },
+      "usable_cohorts": {
+        "RAW": 24
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 24
+    },
+    {
+      "global_q": 415,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170204,
+        "valid_fraction": 0.7387326388888888,
+        "median": 1157.3072509765625,
+        "mad": 33.01824951171875,
+        "q10": 788.9835632324218,
+        "q25": 981.1648712158203,
+        "q75": 1180.391845703125,
+        "q90": 1189.3605224609375
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 852.7142333984375,
+        "maximum": 1180.4069213867188,
+        "median": 1068.2420654296875,
+        "q25": 989.3065795898438,
+        "q75": 1155.7723999023438,
+        "IQR": 166.4658203125
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 852.7142333984375,
+        "maximum": 1180.4069213867188,
+        "median": 1068.2420654296875,
+        "q25": 989.3065795898438,
+        "q75": 1155.7723999023438,
+        "IQR": 166.4658203125
+      },
+      "usable_cohorts": {
+        "retained": 24,
+        "inferred": 3
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 419,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 159070,
+        "valid_fraction": 0.6904079861111111,
+        "median": 1159.328857421875,
+        "mad": 32.823486328125,
+        "q10": 775.5298889160157,
+        "q25": 976.7915802001953,
+        "q75": 1181.5813293457031,
+        "q90": 1190.7898071289062
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 854.0087890625,
+        "maximum": 1189.2698364257812,
+        "median": 1030.7674560546875,
+        "q25": 997.9703063964844,
+        "q75": 1124.0791320800781,
+        "IQR": 126.10882568359375
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 854.0087890625,
+        "maximum": 1189.2698364257812,
+        "median": 1030.7674560546875,
+        "q25": 997.9703063964844,
+        "q75": 1124.0791320800781,
+        "IQR": 126.10882568359375
+      },
+      "usable_cohorts": {
+        "RAW": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 419,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170750,
+        "valid_fraction": 0.7411024305555556,
+        "median": 1157.8963623046875,
+        "mad": 33.97528076171875,
+        "q10": 788.8409484863281,
+        "q25": 986.5391998291016,
+        "q75": 1180.9902038574219,
+        "q90": 1190.356884765625
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 854.0087890625,
+        "maximum": 1189.5469970703125,
+        "median": 1030.7674560546875,
+        "q25": 989.9069671630859,
+        "q75": 1125.1592102050781,
+        "IQR": 135.2522430419922
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 854.0087890625,
+        "maximum": 1189.5469970703125,
+        "median": 1030.7674560546875,
+        "q25": 989.9069671630859,
+        "q75": 1125.1592102050781,
+        "IQR": 135.2522430419922
+      },
+      "usable_cohorts": {
+        "retained": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 434,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 157285,
+        "valid_fraction": 0.6826605902777778,
+        "median": 1160.2813720703125,
+        "mad": 32.1832275390625,
+        "q10": 773.9133544921875,
+        "q25": 969.5800170898438,
+        "q75": 1181.446533203125,
+        "q90": 1191.3785400390625
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 26,
+        "minimum": 860.4706726074219,
+        "maximum": 1190.2030029296875,
+        "median": 1070.5880126953125,
+        "q25": 984.9111633300781,
+        "q75": 1157.4510955810547,
+        "IQR": 172.53993225097656
+      },
+      "usable": {
+        "count": 23,
+        "minimum": 860.4706726074219,
+        "maximum": 1190.2030029296875,
+        "median": 1067.9088134765625,
+        "q25": 980.6006469726562,
+        "q75": 1156.8151550292969,
+        "IQR": 176.21450805664062
+      },
+      "usable_cohorts": {
+        "RAW": 23
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 23
+    },
+    {
+      "global_q": 434,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 169817,
+        "valid_fraction": 0.7370529513888889,
+        "median": 1158.228759765625,
+        "mad": 33.923583984375,
+        "q10": 788.2209106445313,
+        "q25": 975.3513793945312,
+        "q75": 1180.8424072265625,
+        "q90": 1190.8478515625
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 26,
+        "minimum": 845.0181274414062,
+        "maximum": 1190.4208374023438,
+        "median": 1062.40087890625,
+        "q25": 977.7032623291016,
+        "q75": 1154.6610260009766,
+        "IQR": 176.957763671875
+      },
+      "usable": {
+        "count": 24,
+        "minimum": 845.0181274414062,
+        "maximum": 1190.4208374023438,
+        "median": 1060.023681640625,
+        "q25": 952.5925827026367,
+        "q75": 1157.0745697021484,
+        "IQR": 204.48198699951172
+      },
+      "usable_cohorts": {
+        "retained": 20,
+        "inferred": 4
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 24
+    },
+    {
+      "global_q": 470,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 161754,
+        "valid_fraction": 0.7020572916666666,
+        "median": 1163.67724609375,
+        "mad": 29.66107177734375,
+        "q10": 780.0861145019531,
+        "q25": 979.0098571777344,
+        "q75": 1183.0287170410156,
+        "q90": 1193.5953125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 875.0643310546875,
+        "maximum": 1185.69970703125,
+        "median": 1137.135009765625,
+        "q25": 1008.2909851074219,
+        "q75": 1164.2113952636719,
+        "IQR": 155.92041015625
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 875.0643310546875,
+        "maximum": 1185.69970703125,
+        "median": 1144.6502075195312,
+        "q25": 1005.4681549072266,
+        "q75": 1164.7552947998047,
+        "IQR": 159.28713989257812
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 470,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 171504,
+        "valid_fraction": 0.744375,
+        "median": 1161.0675659179688,
+        "mad": 32.4190673828125,
+        "q10": 790.7528869628907,
+        "q25": 983.4664001464844,
+        "q75": 1182.1795043945312,
+        "q90": 1193.092578125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 874.8068542480469,
+        "maximum": 1185.53564453125,
+        "median": 1134.8642578125,
+        "q25": 1007.6578216552734,
+        "q75": 1163.2324523925781,
+        "IQR": 155.5746307373047
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 874.8068542480469,
+        "maximum": 1185.53564453125,
+        "median": 1134.8642578125,
+        "q25": 1007.6578216552734,
+        "q75": 1163.2324523925781,
+        "IQR": 155.5746307373047
+      },
+      "usable_cohorts": {
+        "retained": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 519,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 159746,
+        "valid_fraction": 0.6933420138888889,
+        "median": 1162.3120727539062,
+        "mad": 32.4698486328125,
+        "q10": 777.336669921875,
+        "q25": 979.8812866210938,
+        "q75": 1183.5863952636719,
+        "q90": 1194.8082885742188
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 867.5224609375,
+        "maximum": 1194.8182373046875,
+        "median": 1117.0802001953125,
+        "q25": 997.6419525146484,
+        "q75": 1157.9694213867188,
+        "IQR": 160.3274688720703
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 867.5224609375,
+        "maximum": 1194.8182373046875,
+        "median": 1118.5501098632812,
+        "q25": 1010.1303482055664,
+        "q75": 1158.8359069824219,
+        "IQR": 148.70555877685547
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 519,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170951,
+        "valid_fraction": 0.7419748263888889,
+        "median": 1160.4234619140625,
+        "mad": 34.126220703125,
+        "q10": 789.646728515625,
+        "q25": 987.7352905273438,
+        "q75": 1182.4244995117188,
+        "q90": 1194.20068359375
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 867.5224609375,
+        "maximum": 1194.6297607421875,
+        "median": 1117.0802001953125,
+        "q25": 997.6964721679688,
+        "q75": 1157.4235229492188,
+        "IQR": 159.72705078125
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 867.5224609375,
+        "maximum": 1194.6297607421875,
+        "median": 1117.609375,
+        "q25": 1010.1211700439453,
+        "q75": 1158.1548156738281,
+        "IQR": 148.0336456298828
+      },
+      "usable_cohorts": {
+        "retained": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 764,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 162416,
+        "valid_fraction": 0.7049305555555555,
+        "median": 1161.8161010742188,
+        "mad": 32.81341552734375,
+        "q10": 779.672119140625,
+        "q25": 978.5578765869141,
+        "q75": 1183.0572204589844,
+        "q90": 1194.175537109375
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 873.358154296875,
+        "maximum": 1189.7247314453125,
+        "median": 1137.1570434570312,
+        "q25": 1003.0923309326172,
+        "q75": 1162.7458801269531,
+        "IQR": 159.65354919433594
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 873.358154296875,
+        "maximum": 1189.7247314453125,
+        "median": 1137.1570434570312,
+        "q25": 1003.0923309326172,
+        "q75": 1162.7458801269531,
+        "IQR": 159.65354919433594
+      },
+      "usable_cohorts": {
+        "RAW": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 764,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 171636,
+        "valid_fraction": 0.7449479166666667,
+        "median": 1159.3989868164062,
+        "mad": 35.18292236328125,
+        "q10": 790.3412780761719,
+        "q25": 984.566650390625,
+        "q75": 1182.3464050292969,
+        "q90": 1193.724853515625
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 873.358154296875,
+        "maximum": 1189.7247314453125,
+        "median": 1134.6732177734375,
+        "q25": 999.1193542480469,
+        "q75": 1162.3778991699219,
+        "IQR": 163.258544921875
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 873.358154296875,
+        "maximum": 1189.7247314453125,
+        "median": 1134.6732177734375,
+        "q25": 999.1193542480469,
+        "q75": 1162.3778991699219,
+        "IQR": 163.258544921875
+      },
+      "usable_cohorts": {
+        "retained": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 787,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 159791,
+        "valid_fraction": 0.6935373263888889,
+        "median": 1160.70263671875,
+        "mad": 35.01318359375,
+        "q10": 777.0203247070312,
+        "q25": 977.15283203125,
+        "q75": 1182.9393310546875,
+        "q90": 1194.861572265625
+      },
+      "current_objects": 25,
+      "nonmissing": {
+        "count": 25,
+        "minimum": 810.7489624023438,
+        "maximum": 1183.8436279296875,
+        "median": 1105.208984375,
+        "q25": 997.935302734375,
+        "q75": 1163.63818359375,
+        "IQR": 165.702880859375
+      },
+      "usable": {
+        "count": 22,
+        "minimum": 882.656494140625,
+        "maximum": 1183.8436279296875,
+        "median": 1110.7001953125,
+        "q25": 1006.4512023925781,
+        "q75": 1164.2097930908203,
+        "IQR": 157.7585906982422
+      },
+      "usable_cohorts": {
+        "RAW": 22
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 22
+    },
+    {
+      "global_q": 787,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 171632,
+        "valid_fraction": 0.7449305555555555,
+        "median": 1159.0296020507812,
+        "mad": 36.08367919921875,
+        "q10": 789.4905822753906,
+        "q25": 984.9790496826172,
+        "q75": 1181.8943481445312,
+        "q90": 1194.207958984375
+      },
+      "current_objects": 25,
+      "nonmissing": {
+        "count": 25,
+        "minimum": 801.4013061523438,
+        "maximum": 1184.1156005859375,
+        "median": 1105.353759765625,
+        "q25": 997.4615173339844,
+        "q75": 1164.4003295898438,
+        "IQR": 166.93881225585938
+      },
+      "usable": {
+        "count": 24,
+        "minimum": 801.4013061523438,
+        "maximum": 1184.1156005859375,
+        "median": 1110.7725830078125,
+        "q25": 991.8394088745117,
+        "q75": 1164.8779754638672,
+        "IQR": 173.03856658935547
+      },
+      "usable_cohorts": {
+        "retained": 22,
+        "inferred": 2
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 24
+    },
+    {
+      "global_q": 1027,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 151583,
+        "valid_fraction": 0.6579123263888889,
+        "median": 1158.7001953125,
+        "mad": 36.6810302734375,
+        "q10": 767.2278564453125,
+        "q25": 957.4800720214844,
+        "q75": 1181.518798828125,
+        "q90": 1194.0102294921876
+      },
+      "current_objects": 28,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 860.1941528320312,
+        "maximum": 1187.0626831054688,
+        "median": 1079.925048828125,
+        "q25": 999.7198638916016,
+        "q75": 1122.4098205566406,
+        "IQR": 122.68995666503906
+      },
+      "usable": {
+        "count": 25,
+        "minimum": 860.1941528320312,
+        "maximum": 1187.0626831054688,
+        "median": 1075.0264892578125,
+        "q25": 999.4411010742188,
+        "q75": 1118.8208618164062,
+        "IQR": 119.3797607421875
+      },
+      "usable_cohorts": {
+        "RAW": 25
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 25
+    },
+    {
+      "global_q": 1027,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170219,
+        "valid_fraction": 0.7387977430555556,
+        "median": 1155.54931640625,
+        "mad": 38.7705078125,
+        "q10": 788.4466186523438,
+        "q25": 974.9464111328125,
+        "q75": 1179.7538452148438,
+        "q90": 1192.74443359375
+      },
+      "current_objects": 28,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 855.3890075683594,
+        "maximum": 1187.1981201171875,
+        "median": 1078.860595703125,
+        "q25": 999.1815338134766,
+        "q75": 1125.7149963378906,
+        "IQR": 126.53346252441406
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 855.3890075683594,
+        "maximum": 1187.1981201171875,
+        "median": 1078.860595703125,
+        "q25": 999.1815338134766,
+        "q75": 1125.7149963378906,
+        "IQR": 126.53346252441406
+      },
+      "usable_cohorts": {
+        "retained": 24,
+        "inferred": 3
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1039,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 155713,
+        "valid_fraction": 0.6758376736111111,
+        "median": 1158.753662109375,
+        "mad": 36.723388671875,
+        "q10": 771.5811889648437,
+        "q25": 965.3820190429688,
+        "q75": 1181.322998046875,
+        "q90": 1193.883740234375
+      },
+      "current_objects": 29,
+      "nonmissing": {
+        "count": 28,
+        "minimum": 881.3212890625,
+        "maximum": 1179.875244140625,
+        "median": 1066.7965698242188,
+        "q25": 990.0592575073242,
+        "q75": 1141.668212890625,
+        "IQR": 151.60895538330078
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 881.3212890625,
+        "maximum": 1174.2090454101562,
+        "median": 1066.7965698242188,
+        "q25": 984.7492446899414,
+        "q75": 1135.8580169677734,
+        "IQR": 151.10877227783203
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1039,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170610,
+        "valid_fraction": 0.7404947916666667,
+        "median": 1155.5460815429688,
+        "mad": 39.123046875,
+        "q10": 788.4209106445312,
+        "q25": 972.6622619628906,
+        "q75": 1179.9893798828125,
+        "q90": 1192.9115112304687
+      },
+      "current_objects": 29,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 903.667236328125,
+        "maximum": 1173.4492797851562,
+        "median": 1058.841796875,
+        "q25": 977.9684143066406,
+        "q75": 1131.3191528320312,
+        "IQR": 153.35073852539062
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 903.667236328125,
+        "maximum": 1173.4492797851562,
+        "median": 1058.841796875,
+        "q25": 977.9684143066406,
+        "q75": 1131.3191528320312,
+        "IQR": 153.35073852539062
+      },
+      "usable_cohorts": {
+        "retained": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1239,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 163433,
+        "valid_fraction": 0.7093446180555556,
+        "median": 1161.2349853515625,
+        "mad": 33.5531005859375,
+        "q10": 779.884228515625,
+        "q25": 983.5296020507812,
+        "q75": 1183.5137939453125,
+        "q90": 1194.054296875
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 831.9810791015625,
+        "maximum": 1180.35595703125,
+        "median": 1112.733642578125,
+        "q25": 1037.661865234375,
+        "q75": 1150.321533203125,
+        "IQR": 112.65966796875
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 831.9810791015625,
+        "maximum": 1180.35595703125,
+        "median": 1115.907958984375,
+        "q25": 1034.796875,
+        "q75": 1151.152587890625,
+        "IQR": 116.355712890625
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1239,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 171053,
+        "valid_fraction": 0.7424175347222223,
+        "median": 1159.2611083984375,
+        "mad": 35.3953857421875,
+        "q10": 788.738818359375,
+        "q25": 990.4510498046875,
+        "q75": 1182.9415283203125,
+        "q90": 1193.76357421875
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 831.9810791015625,
+        "maximum": 1179.9742431640625,
+        "median": 1112.733642578125,
+        "q25": 1037.2330322265625,
+        "q75": 1150.9185180664062,
+        "IQR": 113.68548583984375
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 831.9810791015625,
+        "maximum": 1179.9742431640625,
+        "median": 1115.907958984375,
+        "q25": 1034.3662719726562,
+        "q75": 1151.4510803222656,
+        "IQR": 117.08480834960938
+      },
+      "usable_cohorts": {
+        "retained": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1263,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 162444,
+        "valid_fraction": 0.7050520833333334,
+        "median": 1161.27197265625,
+        "mad": 33.762939453125,
+        "q10": 779.3206726074219,
+        "q25": 979.1233062744141,
+        "q75": 1183.9174194335938,
+        "q90": 1194.5878173828125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 827.3687744140625,
+        "maximum": 1188.2951049804688,
+        "median": 1104.5320434570312,
+        "q25": 1029.6090698242188,
+        "q75": 1159.4110412597656,
+        "IQR": 129.80197143554688
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 827.3687744140625,
+        "maximum": 1188.2951049804688,
+        "median": 1104.5320434570312,
+        "q25": 1029.6090698242188,
+        "q75": 1159.4110412597656,
+        "IQR": 129.80197143554688
+      },
+      "usable_cohorts": {
+        "RAW": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1263,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170569,
+        "valid_fraction": 0.7403168402777778,
+        "median": 1159.0421142578125,
+        "mad": 35.83154296875,
+        "q10": 788.8649047851562,
+        "q25": 985.79296875,
+        "q75": 1183.220703125,
+        "q90": 1194.1618896484374
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 827.3687744140625,
+        "maximum": 1188.2951049804688,
+        "median": 1104.5320434570312,
+        "q25": 1029.2784118652344,
+        "q75": 1158.8507690429688,
+        "IQR": 129.57235717773438
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 827.3687744140625,
+        "maximum": 1188.2951049804688,
+        "median": 1104.5320434570312,
+        "q25": 1029.2784118652344,
+        "q75": 1158.8507690429688,
+        "IQR": 129.57235717773438
+      },
+      "usable_cohorts": {
+        "retained": 27
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1280,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 162860,
+        "valid_fraction": 0.7068576388888889,
+        "median": 1161.1192626953125,
+        "mad": 34.064697265625,
+        "q10": 780.3081481933594,
+        "q25": 983.3476409912109,
+        "q75": 1182.5181274414062,
+        "q90": 1194.6214965820313
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 828.9223022460938,
+        "maximum": 1177.803955078125,
+        "median": 1069.6981811523438,
+        "q25": 1007.9602966308594,
+        "q75": 1148.6337890625,
+        "IQR": 140.67349243164062
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 828.9223022460938,
+        "maximum": 1177.803955078125,
+        "median": 1080.3100280761719,
+        "q25": 1011.2015075683594,
+        "q75": 1148.6655883789062,
+        "IQR": 137.46408081054688
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1280,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 169832,
+        "valid_fraction": 0.7371180555555555,
+        "median": 1159.2830810546875,
+        "mad": 35.65130615234375,
+        "q10": 788.1995300292969,
+        "q25": 989.7181396484375,
+        "q75": 1181.9403686523438,
+        "q90": 1194.2376586914063
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 828.9223022460938,
+        "maximum": 1177.4672241210938,
+        "median": 1068.111083984375,
+        "q25": 1007.6016845703125,
+        "q75": 1147.070556640625,
+        "IQR": 139.4688720703125
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 828.9223022460938,
+        "maximum": 1177.4672241210938,
+        "median": 1068.111083984375,
+        "q25": 1007.6016845703125,
+        "q75": 1147.070556640625,
+        "IQR": 139.4688720703125
+      },
+      "usable_cohorts": {
+        "retained": 26,
+        "inferred": 1
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1359,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 161426,
+        "valid_fraction": 0.7006336805555555,
+        "median": 1163.8732299804688,
+        "mad": 30.27911376953125,
+        "q10": 778.4692687988281,
+        "q25": 981.0194396972656,
+        "q75": 1183.3528442382812,
+        "q90": 1194.6534423828125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 846.0816955566406,
+        "maximum": 1178.6417846679688,
+        "median": 1140.9532470703125,
+        "q25": 1085.0031433105469,
+        "q75": 1158.3562622070312,
+        "IQR": 73.35311889648438
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 846.0816955566406,
+        "maximum": 1178.6417846679688,
+        "median": 1140.5259399414062,
+        "q25": 1081.4333038330078,
+        "q75": 1158.6741027832031,
+        "IQR": 77.24079895019531
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1359,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170229,
+        "valid_fraction": 0.7388411458333334,
+        "median": 1161.63330078125,
+        "mad": 32.6658935546875,
+        "q10": 788.3861938476563,
+        "q25": 988.1422729492188,
+        "q75": 1182.5328369140625,
+        "q90": 1194.1556640625
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 846.0816955566406,
+        "maximum": 1178.6415405273438,
+        "median": 1140.7171630859375,
+        "q25": 1084.0043334960938,
+        "q75": 1158.2326049804688,
+        "IQR": 74.228271484375
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 846.0816955566406,
+        "maximum": 1178.6415405273438,
+        "median": 1139.646728515625,
+        "q25": 1079.9350891113281,
+        "q75": 1158.6122741699219,
+        "IQR": 78.67718505859375
+      },
+      "usable_cohorts": {
+        "retained": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1390,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 162853,
+        "valid_fraction": 0.7068272569444445,
+        "median": 1163.169677734375,
+        "mad": 31.0595703125,
+        "q10": 779.7261474609376,
+        "q25": 985.8198852539062,
+        "q75": 1183.0892333984375,
+        "q90": 1193.9068603515625
+      },
+      "current_objects": 26,
+      "nonmissing": {
+        "count": 26,
+        "minimum": 848.8303833007812,
+        "maximum": 1200.9090576171875,
+        "median": 1133.1016845703125,
+        "q25": 1043.1088256835938,
+        "q75": 1158.8458251953125,
+        "IQR": 115.73699951171875
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 848.8303833007812,
+        "maximum": 1200.9090576171875,
+        "median": 1133.1016845703125,
+        "q25": 1043.1088256835938,
+        "q75": 1158.8458251953125,
+        "IQR": 115.73699951171875
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1390,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170704,
+        "valid_fraction": 0.7409027777777778,
+        "median": 1161.4326782226562,
+        "mad": 32.83251953125,
+        "q10": 789.16376953125,
+        "q25": 992.63671875,
+        "q75": 1182.4286804199219,
+        "q90": 1193.510302734375
+      },
+      "current_objects": 26,
+      "nonmissing": {
+        "count": 26,
+        "minimum": 848.8272705078125,
+        "maximum": 1200.9090576171875,
+        "median": 1133.1016845703125,
+        "q25": 1042.0257415771484,
+        "q75": 1158.4100646972656,
+        "IQR": 116.38432312011719
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 848.8272705078125,
+        "maximum": 1200.9090576171875,
+        "median": 1133.1016845703125,
+        "q25": 1042.0257415771484,
+        "q75": 1158.4100646972656,
+        "IQR": 116.38432312011719
+      },
+      "usable_cohorts": {
+        "retained": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1504,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 163033,
+        "valid_fraction": 0.7076085069444444,
+        "median": 1162.261474609375,
+        "mad": 32.7320556640625,
+        "q10": 780.477978515625,
+        "q25": 977.8362426757812,
+        "q75": 1183.57421875,
+        "q90": 1194.6085205078125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 842.2914733886719,
+        "maximum": 1192.1844482421875,
+        "median": 1097.6593017578125,
+        "q25": 958.5580139160156,
+        "q75": 1151.6047668457031,
+        "IQR": 193.0467529296875
+      },
+      "usable": {
+        "count": 24,
+        "minimum": 842.2914733886719,
+        "maximum": 1192.1844482421875,
+        "median": 1111.928955078125,
+        "q25": 1003.9902648925781,
+        "q75": 1155.707778930664,
+        "IQR": 151.71751403808594
+      },
+      "usable_cohorts": {
+        "RAW": 24
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 24
+    },
+    {
+      "global_q": 1504,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170821,
+        "valid_fraction": 0.7414105902777778,
+        "median": 1160.489990234375,
+        "mad": 34.5989990234375,
+        "q10": 789.5531005859375,
+        "q25": 981.6693725585938,
+        "q75": 1182.8807373046875,
+        "q90": 1194.159423828125
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 838.2061157226562,
+        "maximum": 1192.1844482421875,
+        "median": 1097.3640747070312,
+        "q25": 954.0998229980469,
+        "q75": 1151.6047668457031,
+        "IQR": 197.50494384765625
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 838.2061157226562,
+        "maximum": 1192.1844482421875,
+        "median": 1100.2448425292969,
+        "q25": 953.2034454345703,
+        "q75": 1152.7535552978516,
+        "IQR": 199.55010986328125
+      },
+      "usable_cohorts": {
+        "retained": 24,
+        "inferred": 2
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1719,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 160758,
+        "valid_fraction": 0.697734375,
+        "median": 1162.9439697265625,
+        "mad": 31.96533203125,
+        "q10": 777.80712890625,
+        "q25": 975.7855072021484,
+        "q75": 1183.6629028320312,
+        "q90": 1194.5087768554688
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 814.8224487304688,
+        "maximum": 1182.40576171875,
+        "median": 1091.389892578125,
+        "q25": 1034.0299072265625,
+        "q75": 1146.5718688964844,
+        "IQR": 112.54196166992188
+      },
+      "usable": {
+        "count": 26,
+        "minimum": 814.8224487304688,
+        "maximum": 1182.40576171875,
+        "median": 1090.5237426757812,
+        "q25": 1027.7865905761719,
+        "q75": 1152.2554473876953,
+        "IQR": 124.46885681152344
+      },
+      "usable_cohorts": {
+        "RAW": 26
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 26
+    },
+    {
+      "global_q": 1719,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170606,
+        "valid_fraction": 0.7404774305555556,
+        "median": 1160.2725830078125,
+        "mad": 34.43096923828125,
+        "q10": 789.2203979492188,
+        "q25": 984.5932464599609,
+        "q75": 1182.7542114257812,
+        "q90": 1194.021484375
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 814.8224487304688,
+        "maximum": 1182.9745483398438,
+        "median": 1089.468505859375,
+        "q25": 1017.2717437744141,
+        "q75": 1146.0709838867188,
+        "IQR": 128.7992401123047
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 814.8224487304688,
+        "maximum": 1182.9745483398438,
+        "median": 1089.468505859375,
+        "q25": 1017.2717437744141,
+        "q75": 1146.0709838867188,
+        "IQR": 128.7992401123047
+      },
+      "usable_cohorts": {
+        "retained": 26,
+        "inferred": 1
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    },
+    {
+      "global_q": 1745,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 161152,
+        "valid_fraction": 0.6994444444444444,
+        "median": 1162.0545043945312,
+        "mad": 32.90765380859375,
+        "q10": 778.6088989257812,
+        "q25": 974.2765655517578,
+        "q75": 1184.1707458496094,
+        "q90": 1195.0398315429688
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 816.6768188476562,
+        "maximum": 1178.4566040039062,
+        "median": 1081.0555419921875,
+        "q25": 963.2125549316406,
+        "q75": 1154.7802734375,
+        "IQR": 191.56771850585938
+      },
+      "usable": {
+        "count": 25,
+        "minimum": 816.6768188476562,
+        "maximum": 1178.4566040039062,
+        "median": 1081.0555419921875,
+        "q25": 970.0274658203125,
+        "q75": 1155.2437744140625,
+        "IQR": 185.21630859375
+      },
+      "usable_cohorts": {
+        "RAW": 25
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 25
+    },
+    {
+      "global_q": 1745,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170152,
+        "valid_fraction": 0.7385069444444444,
+        "median": 1159.671142578125,
+        "mad": 35.4090576171875,
+        "q10": 788.965740966797,
+        "q25": 982.0635070800781,
+        "q75": 1183.2678527832031,
+        "q90": 1194.654638671875
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 816.6768188476562,
+        "maximum": 1178.7852172851562,
+        "median": 1081.0555419921875,
+        "q25": 961.8053131103516,
+        "q75": 1152.576416015625,
+        "IQR": 190.77110290527344
+      },
+      "usable": {
+        "count": 25,
+        "minimum": 816.6768188476562,
+        "maximum": 1178.7852172851562,
+        "median": 1081.0555419921875,
+        "q25": 969.3765563964844,
+        "q75": 1154.4906616210938,
+        "IQR": 185.11410522460938
+      },
+      "usable_cohorts": {
+        "retained": 25
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 25
+    },
+    {
+      "global_q": 1805,
+      "modality": "raw",
+      "full_frame": {
+        "area": 230400,
+        "n": 162829,
+        "valid_fraction": 0.7067230902777778,
+        "median": 1161.8519287109375,
+        "mad": 31.9713134765625,
+        "q10": 778.795703125,
+        "q25": 979.4863891601562,
+        "q75": 1183.4461669921875,
+        "q90": 1193.9189697265624
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 819.7793579101562,
+        "maximum": 1166.6226806640625,
+        "median": 1072.5242919921875,
+        "q25": 1000.2008361816406,
+        "q75": 1142.3048095703125,
+        "IQR": 142.10397338867188
+      },
+      "usable": {
+        "count": 25,
+        "minimum": 819.7793579101562,
+        "maximum": 1166.6226806640625,
+        "median": 1072.5242919921875,
+        "q25": 1011.7772216796875,
+        "q75": 1140.28466796875,
+        "IQR": 128.5074462890625
+      },
+      "usable_cohorts": {
+        "RAW": 25
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 25
+    },
+    {
+      "global_q": 1805,
+      "modality": "v2",
+      "full_frame": {
+        "area": 230400,
+        "n": 170390,
+        "valid_fraction": 0.7395399305555556,
+        "median": 1159.8864135742188,
+        "mad": 33.9996337890625,
+        "q10": 787.2543701171875,
+        "q25": 986.5342864990234,
+        "q75": 1182.8284912109375,
+        "q90": 1193.6012573242188
+      },
+      "current_objects": 27,
+      "nonmissing": {
+        "count": 27,
+        "minimum": 819.7793579101562,
+        "maximum": 1166.444091796875,
+        "median": 1103.9263916015625,
+        "q25": 1013.4076232910156,
+        "q75": 1142.3048095703125,
+        "IQR": 128.89718627929688
+      },
+      "usable": {
+        "count": 27,
+        "minimum": 819.7793579101562,
+        "maximum": 1166.444091796875,
+        "median": 1103.9263916015625,
+        "q25": 1013.4076232910156,
+        "q75": 1142.3048095703125,
+        "IQR": 128.89718627929688
+      },
+      "usable_cohorts": {
+        "retained": 25,
+        "inferred": 2
+      },
+      "component_sigma_floor_mm": 15.0,
+      "component_additional_floor_mm": 15.0,
+      "query_convolution": false,
+      "kernel_count": 27
+    }
+  ],
+  "RGB_reads": 0,
+  "GT_raster_reads": 0,
+  "depth_pixel_reads": 0,
+  "new_replays": 0,
+  "new_model_calls": 0
+}

@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds10_depth_failure_repair\controller_tests.py", line 20, in <module>
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds10_depth_failure_repair\controller.py", line 22, in <module>
+    from ne_controller import NativeFirstGroupBridgeP
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ne1_native_first_event_association\ne_controller.py", line 20, in <module>
+    from px_return import StableReturn  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_return.py", line 10, in <module>
+    from px_z4 import QualityBirth
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z4.py", line 11, in <module>
+    from px_z3 import NativePrior, DepthRepair
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z3.py", line 6, in <module>
+    from px_z2 import BirthRefine, DepthRepair
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z2.py", line 6, in <module>
+    from scipy.optimize import linear_sum_assignment
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\site-packages\scipy\optimize\__init__.py", line 435, in <module>
+    from ._linprog import linprog, linprog_verbose_callback
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\site-packages\scipy\optimize\_linprog.py", line 24, in <module>
+    from ._linprog_rs import _linprog_rs
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\site-packages\scipy\optimize\_linprog_rs.py", line 25, in <module>
+    from ._bglu_dense import LU
+ImportError: DLL load failed while importing _bglu_dense: 应用程序控制策略已阻止此文件。

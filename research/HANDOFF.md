@@ -1,3 +1,11 @@
+# Latest: DS13 frozen validation source audit (2026-10-01)
+
+User authorized start of DS12 NEXT_STEP_PLAN. Read experiments/ds13_frozen_validation/RESULTS.md, PLAN.md, INPUT_AVAILABILITY.json, source/use inventories and frozen/old byte locks. Status DS13_INPUT_BLOCKED; no new prediction/scoring/restore or scientific outcome. Feeding only old1471 used frames;1907 saved SAM3 includes436 gaps outside complete aligned-reference package. L3/LW have complete raw sources and fixed earlier evaluation, no DS tuning record found; do not falsely classify baseline exposure as tuning. Their reference is dependent preannotation; F9 native-v2 chain absent in inspected entries, explicit fresh-dev scope/external tuning history UNKNOWN. The two camera acquisition intervals overlap97.882s, not two disjoint time segments.
+
+DS12 formal76 bindings and DS1-12 tracked1314 files verified unchanged. Five source-lineage checks PASS only; new source pixel/state/equivalence checks NOT_RUN. New metrics/success null; historical DS12 micro-gain stays old exposed development evidence, not DS13 validation. No HTTP/smoke/train/SAM3/completion/server/cost. Do not drop F9, substitute raw for v2, open sealed test or auto-tune R12. Questions about a new path or alternative L3/LW two-arm diagnosis await user reply; no dependent run started.
+
+One next step: provide complete approved untuned saved cohort with reference and three-arm depth inputs, then execute unchanged frozen validation. All older handoff bytes preserved below.
+
 # Latest: DS12 current-contact depth admission (2026-10-01)
 
 Completed four SOURCE_OLD segments / 1471 exposed frames / four independent real-state branches. Read experiments/ds12_contact_depth_admission/RESULTS.md, PLAN.md, CONFIG.json, ENDPOINT_CONTRACT.json, checks/source/numerical reviews, all prediction/scoring seals, METRICS/BIRTH_AUDIT/SWITCH_LEDGER, three postrun reviews, actual visualization QA, restricted inventory and remote proof. Engineering/input/publication/scoring PASS; predeclared full birth-and-native target=True. R12_RAW/RESTORED IDF1/HOTA/AssA=81.029982/80.047159/71.677872, IDSW105 vs same-source SAM3=80.976760/79.964056/71.530499/108. Compared with F9, new birth adds +0.053222/+0.035110/+0.062108 percentage points and removes 1 switch. F9 shared group effect removes the other 2, not new depth credit.

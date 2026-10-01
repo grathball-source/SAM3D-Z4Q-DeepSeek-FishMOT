@@ -1,0 +1,149 @@
+{
+  "status": "DS13_INPUT_BLOCKED",
+  "metadata_review": "COMPLETED",
+  "selection_rule": "EARLIEST_COMPLETE_APPROVED_UNTUNED_SAVED_COHORT; NO_OUTCOME_SELECTION",
+  "planned_arms": [
+    "SAM3_NATIVE",
+    "F9_RESTORED",
+    "R12_RAW"
+  ],
+  "feeding": {
+    "recording": "FEEDING_20260918124300",
+    "aligned_frames": 1471,
+    "saved_prediction_frames": 1907,
+    "old_used_intervals": [
+      [
+        0,
+        199
+      ],
+      [
+        351,
+        555
+      ],
+      [
+        701,
+        1060
+      ],
+      [
+        1201,
+        1906
+      ]
+    ],
+    "old_producer_support": [
+      [
+        0,
+        199
+      ],
+      [
+        345,
+        559
+      ],
+      [
+        690,
+        1069
+      ],
+      [
+        1185,
+        1906
+      ]
+    ],
+    "remaining_saved_intervals": [
+      [
+        200,
+        350
+      ],
+      [
+        556,
+        700
+      ],
+      [
+        1061,
+        1200
+      ]
+    ],
+    "remaining_saved_frames": 436,
+    "approved_fresh_complete_segments": 0,
+    "blocker": "ALL_COMPLETE_ALIGNED_SEGMENTS_USED_IN_DEVELOPMENT",
+    "gaps": "SAVED_PREDICTIONS_ONLY_NOT_IN_COMPLETE_ALIGNED_REFERENCE_PACKAGE"
+  },
+  "alternative_raw_candidates": [
+    {
+      "recording": "20260816_132923_CL8654103L3",
+      "camera": "L3",
+      "original_frames": [
+        0,
+        3709
+      ],
+      "frames": 3710,
+      "prediction_dir": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\labels_raw",
+      "reference_dir": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\labels_recovered_after2888_20260919_200202",
+      "prediction_names_complete": true,
+      "reference_names_complete": true,
+      "reference_content_opened": false,
+      "depth_source_paths_present": 3710,
+      "depth_usable_declared": 3705,
+      "first_timestamp_us": 1786858173056000,
+      "last_timestamp_us": 1786858296655000,
+      "saved_v2_source": "NOT_FOUND_IN_INSPECTED_INPUT_ENTRIES; report.depth_restored=false",
+      "prior_use": "SOURCE_PRODUCTION_NATIVE_BASELINE_FROZEN_Z4Q_EVALUATION_POSTHOC_CASE_DIAGNOSIS",
+      "ds_tuning_evidence": "NOT_FOUND_IN_BOUNDED_REPOSITORY_AND_TOOL_RECORD_SEARCH",
+      "exhaustive_external_tuning_history": "UNKNOWN",
+      "explicit_DS13_development_split": "UNKNOWN",
+      "reference_status": "DEPENDENT_PREANNOTATION_NOT_INDEPENDENT_GT",
+      "reference_manual_acceptance": "NOT_ESTABLISHED",
+      "blockers": [
+        "MISSING_F9_NATIVE_V2_SOURCE_CHAIN",
+        "FRESH_DEVELOPMENT_PURPOSE_NOT_EXPLICIT_IN_METADATA"
+      ]
+    },
+    {
+      "recording": "20260816_132950_CL8654103LW",
+      "camera": "LW",
+      "original_frames": [
+        0,
+        3628
+      ],
+      "frames": 3629,
+      "prediction_dir": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\labels_raw",
+      "reference_dir": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\labels_recovered_after1459_20260919_201837",
+      "prediction_names_complete": true,
+      "reference_names_complete": true,
+      "reference_content_opened": false,
+      "depth_source_paths_present": 3629,
+      "depth_usable_declared": 3606,
+      "first_timestamp_us": 1786858198773000,
+      "last_timestamp_us": 1786858319171000,
+      "saved_v2_source": "NOT_FOUND_IN_INSPECTED_INPUT_ENTRIES; report.depth_restored=false",
+      "prior_use": "SOURCE_PRODUCTION_NATIVE_BASELINE_FROZEN_Z4Q_EVALUATION_POSTHOC_CASE_DIAGNOSIS",
+      "ds_tuning_evidence": "NOT_FOUND_IN_BOUNDED_REPOSITORY_AND_TOOL_RECORD_SEARCH",
+      "exhaustive_external_tuning_history": "UNKNOWN",
+      "explicit_DS13_development_split": "UNKNOWN",
+      "reference_status": "DEPENDENT_PREANNOTATION_NOT_INDEPENDENT_GT",
+      "reference_manual_acceptance": "NOT_ESTABLISHED",
+      "blockers": [
+        "MISSING_F9_NATIVE_V2_SOURCE_CHAIN",
+        "FRESH_DEVELOPMENT_PURPOSE_NOT_EXPLICIT_IN_METADATA"
+      ]
+    }
+  ],
+  "candidate_camera_time_overlap_seconds": 97.882,
+  "selected": [],
+  "selected_frames": 0,
+  "other_sources": {
+    "FishSA": "OLD8400_DEVELOPMENT_AND2888_EXPOSED_VALIDATION; NO_FRESH_APPROVED_COHORT_ESTABLISHED",
+    "G10": "RAW_SOURCE_METADATA_ONLY; NO_COMPATIBLE_SAVED_COHORT_ESTABLISHED",
+    "explicitly_test_named_inputs": "EXCLUDED_WITHOUT_OPENING_CONTENTS"
+  },
+  "prediction_execution": "NOT_STARTED",
+  "source_pixel_semantic_checks": "NOT_RUN",
+  "scientific_outcome": "NOT_EVALUATED",
+  "metrics": null,
+  "target_success": null,
+  "new_model_http": 0,
+  "api_smoke": 0,
+  "training": 0,
+  "sam3_inference": 0,
+  "depth_service_calls": 0,
+  "server_jobs": 0,
+  "cost_usd": 0
+}

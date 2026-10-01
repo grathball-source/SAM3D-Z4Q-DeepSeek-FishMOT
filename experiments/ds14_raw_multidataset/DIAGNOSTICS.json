@@ -1,0 +1,681 @@
+{
+  "actual_group_commits": [
+    {
+      "segment": "feeding_001201_001906",
+      "q": 39,
+      "original_q": 1239,
+      "physical": "CORRECT",
+      "selected": "H2",
+      "mapping": {
+        "167": 136,
+        "128": 128
+      },
+      "baseline": {
+        "167": 167,
+        "128": 128
+      },
+      "geometry_delta_vs_native": 3.423893272050397,
+      "depth_delta_vs_native": -0.1450699870141816,
+      "combined_margin": 2.8168651395257016,
+      "minimum_log_odds": 2.1972245773362196,
+      "post_depth": {
+        "167": {
+          "observation_post_source": 167,
+          "assigned_depth_source": 167,
+          "measurement_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "original_post_measurement_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 1128.603515625,
+          "observation_mad_mm": 15.7529296875,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 167,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw"
+        },
+        "128": {
+          "observation_post_source": 128,
+          "assigned_depth_source": 128,
+          "measurement_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "original_post_measurement_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 1119.082275390625,
+          "observation_mad_mm": 26.693603515625,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 128,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw"
+        }
+      },
+      "depth_forecasts": {
+        "A": {
+          "status": "NO_SLOPE_LAST_VALUE",
+          "samples": 1,
+          "mu_mm": 1163.5712280273438,
+          "scale_mm": 303.2640185474182,
+          "slope_mm_s": null,
+          "delta_seconds": 0.6640000343322754,
+          "sample_frames": [
+            19
+          ]
+        },
+        "B": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 7,
+          "mu_mm": 1111.5889201609718,
+          "scale_mm": 78.7642972265654,
+          "slope_mm_s": -77.72031508169668,
+          "delta_seconds": 0.565000057220459,
+          "sample_frames": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        }
+      },
+      "geometric_available": {
+        "A": true,
+        "B": true
+      },
+      "candidate_components": {
+        "H0": {
+          "geometry_log_lr": 1.1137203133168276,
+          "depth_log_lr": -1.099370829213907,
+          "posterior": 0.03432686982481864
+        },
+        "H1": {
+          "geometry_log_lr": 1.7340444234181114,
+          "depth_log_lr": -1.2577367938046775,
+          "posterior": 0.05448288250292473
+        },
+        "H2": {
+          "geometry_log_lr": 4.537613585367224,
+          "depth_log_lr": -1.2444408162280887,
+          "posterior": 0.9111902476722565
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "q": 545,
+      "original_q": 1745,
+      "physical": "CORRECT",
+      "selected": "H2",
+      "mapping": {
+        "190": 188,
+        "9": 9
+      },
+      "baseline": {
+        "190": 190,
+        "9": 9
+      },
+      "geometry_delta_vs_native": 2.2712789349188895,
+      "depth_delta_vs_native": 0.0,
+      "combined_margin": 2.2712789349188895,
+      "minimum_log_odds": 2.1972245773362196,
+      "post_depth": {
+        "190": {
+          "observation_post_source": 190,
+          "assigned_depth_source": 190,
+          "measurement_fact_id": "feeding_001201_001906/F545/n:190/adaptive/raw",
+          "original_post_measurement_fact_id": "feeding_001201_001906/F545/n:190/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 956.3976440429688,
+          "observation_mad_mm": 41.070556640625,
+          "core_usable": false,
+          "original_cohort": "RAW",
+          "actual_state_source": 190,
+          "actual_state_fact_id": "feeding_001201_001906/F545/n:190/adaptive/raw"
+        },
+        "9": {
+          "observation_post_source": 9,
+          "assigned_depth_source": 9,
+          "measurement_fact_id": "feeding_001201_001906/F545/n:9/adaptive/raw",
+          "original_post_measurement_fact_id": "feeding_001201_001906/F545/n:9/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 852.0200805664062,
+          "observation_mad_mm": 6.445709228515625,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 9,
+          "actual_state_fact_id": "feeding_001201_001906/F545/n:9/adaptive/raw"
+        }
+      },
+      "depth_forecasts": {
+        "A": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 10,
+          "mu_mm": 853.8694483996768,
+          "scale_mm": 63.79710650878667,
+          "slope_mm_s": -2.772560363340998,
+          "delta_seconds": 0.7980000972747803,
+          "sample_frames": [
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521
+          ]
+        },
+        "B": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 10,
+          "mu_mm": 1026.7704322275774,
+          "scale_mm": 94.95437429827855,
+          "slope_mm_s": -104.58809360581301,
+          "delta_seconds": 0.7980000972747803,
+          "sample_frames": [
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521
+          ]
+        }
+      },
+      "geometric_available": {
+        "A": true,
+        "B": true
+      },
+      "candidate_components": {
+        "H0": {
+          "geometry_log_lr": 4.330848488704336,
+          "depth_log_lr": 0.0,
+          "posterior": 0.09347171147460821
+        },
+        "H1": {
+          "geometry_log_lr": -0.6844082497153193,
+          "depth_log_lr": 0.0,
+          "posterior": 0.0006202715586729088
+        },
+        "H2": {
+          "geometry_log_lr": 6.602127423623226,
+          "depth_log_lr": 0.0,
+          "posterior": 0.9059080169667189
+        }
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "q": 4524,
+      "original_q": 4524,
+      "physical": "WRONG",
+      "selected": "H1",
+      "mapping": {
+        "7": 1,
+        "1": 7
+      },
+      "baseline": {
+        "7": 7,
+        "1": 1
+      },
+      "geometry_delta_vs_native": 4.18390958395459,
+      "depth_delta_vs_native": -0.0714578854756101,
+      "combined_margin": 4.1124516984789805,
+      "minimum_log_odds": 2.1972245773362196,
+      "post_depth": {
+        "7": {
+          "observation_post_source": 7,
+          "assigned_depth_source": 7,
+          "measurement_fact_id": "fishsa_development_8400/F4524/n:7/adaptive/raw",
+          "original_post_measurement_fact_id": "fishsa_development_8400/F4524/n:7/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 657.80419921875,
+          "observation_mad_mm": 9.86334228515625,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 7,
+          "actual_state_fact_id": "fishsa_development_8400/F4524/n:7/adaptive/raw"
+        },
+        "1": {
+          "observation_post_source": 1,
+          "assigned_depth_source": 1,
+          "measurement_fact_id": "fishsa_development_8400/F4524/n:1/adaptive/raw",
+          "original_post_measurement_fact_id": "fishsa_development_8400/F4524/n:1/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 570.1736450195312,
+          "observation_mad_mm": 4.6976318359375,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_development_8400/F4524/n:1/adaptive/raw"
+        }
+      },
+      "depth_forecasts": {
+        "A": {
+          "status": "NO_HISTORY",
+          "samples": 0,
+          "mu_mm": null,
+          "scale_mm": null,
+          "slope_mm_s": null,
+          "delta_seconds": null,
+          "sample_frames": []
+        },
+        "B": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 8,
+          "mu_mm": 590.6499203759107,
+          "scale_mm": 117.50667672261997,
+          "slope_mm_s": -70.98626674207806,
+          "delta_seconds": 0.9330000877380371,
+          "sample_frames": [
+            4489,
+            4490,
+            4491,
+            4492,
+            4493,
+            4494,
+            4495,
+            4496
+          ]
+        }
+      },
+      "geometric_available": {
+        "A": false,
+        "B": true
+      },
+      "candidate_components": {
+        "H0": {
+          "geometry_log_lr": -0.8467216173565454,
+          "depth_log_lr": 0.46536512362220456,
+          "posterior": 0.016104012891113333
+        },
+        "H1": {
+          "geometry_log_lr": 3.3371879665980453,
+          "depth_log_lr": 0.39390723814659445,
+          "posterior": 0.9838959871088867
+        }
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "q": 2600,
+      "original_q": 11900,
+      "physical": "UNSCORABLE",
+      "selected": "H1",
+      "mapping": {
+        "4": 1,
+        "1": 4
+      },
+      "baseline": {
+        "4": 4,
+        "1": 1
+      },
+      "geometry_delta_vs_native": 3.2985735552476534,
+      "depth_delta_vs_native": -0.29077176376423575,
+      "combined_margin": 3.0078017914834176,
+      "minimum_log_odds": 2.1972245773362196,
+      "post_depth": {
+        "4": {
+          "observation_post_source": 4,
+          "assigned_depth_source": 4,
+          "measurement_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "original_post_measurement_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 814.5136108398438,
+          "observation_mad_mm": 8.13128662109375,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 4,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw"
+        },
+        "1": {
+          "observation_post_source": 1,
+          "assigned_depth_source": 1,
+          "measurement_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "original_post_measurement_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 803.66259765625,
+          "observation_mad_mm": 9.3790283203125,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw"
+        }
+      },
+      "depth_forecasts": {
+        "A": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 10,
+          "mu_mm": 758.4590226113153,
+          "scale_mm": 61.2165135689103,
+          "slope_mm_s": -68.95236654844682,
+          "delta_seconds": 0.6659998893737793,
+          "sample_frames": [
+            2571,
+            2572,
+            2573,
+            2574,
+            2575,
+            2576,
+            2577,
+            2578,
+            2579,
+            2580
+          ]
+        },
+        "B": {
+          "status": "WLS_LINEAR_TIME",
+          "samples": 10,
+          "mu_mm": 930.1149149631415,
+          "scale_mm": 81.71298602486902,
+          "slope_mm_s": 146.08482602192373,
+          "delta_seconds": 0.6659998893737793,
+          "sample_frames": [
+            2571,
+            2572,
+            2573,
+            2574,
+            2575,
+            2576,
+            2577,
+            2578,
+            2579,
+            2580
+          ]
+        }
+      },
+      "geometric_available": {
+        "A": true,
+        "B": true
+      },
+      "candidate_components": {
+        "H0": {
+          "geometry_log_lr": -2.7069197714076223,
+          "depth_log_lr": 2.344962490019988,
+          "posterior": 0.04707465618810881
+        },
+        "H1": {
+          "geometry_log_lr": 0.5916537838400311,
+          "depth_log_lr": 2.054190726255752,
+          "posterior": 0.9529253438118911
+        }
+      }
+    },
+    {
+      "segment": "L3",
+      "q": 1421,
+      "original_q": 1420,
+      "physical": "WRONG",
+      "selected": "H1",
+      "mapping": {
+        "9": 6,
+        "6": 9
+      },
+      "baseline": {
+        "9": 9,
+        "6": 6
+      },
+      "geometry_delta_vs_native": 2.3219744100669324,
+      "depth_delta_vs_native": 0.0,
+      "combined_margin": 2.3219744100669324,
+      "minimum_log_odds": 2.1972245773362196,
+      "post_depth": {
+        "9": {
+          "observation_post_source": 9,
+          "assigned_depth_source": 9,
+          "measurement_fact_id": "L3/F1421/n:9/adaptive/raw",
+          "original_post_measurement_fact_id": "L3/F1421/n:9/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 624.3437805175781,
+          "observation_mad_mm": 18.710113525390625,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 9,
+          "actual_state_fact_id": "L3/F1421/n:9/adaptive/raw"
+        },
+        "6": {
+          "observation_post_source": 6,
+          "assigned_depth_source": 6,
+          "measurement_fact_id": "L3/F1421/n:6/adaptive/raw",
+          "original_post_measurement_fact_id": "L3/F1421/n:6/adaptive/raw",
+          "cohort": "RAW",
+          "observation_mm": 672.9636840820312,
+          "observation_mad_mm": 15.250244140625,
+          "core_usable": true,
+          "original_cohort": "RAW",
+          "actual_state_source": 6,
+          "actual_state_fact_id": "L3/F1421/n:6/adaptive/raw"
+        }
+      },
+      "depth_forecasts": {
+        "A": {
+          "status": "NO_HISTORY",
+          "samples": 0,
+          "mu_mm": null,
+          "scale_mm": null,
+          "slope_mm_s": null,
+          "delta_seconds": null,
+          "sample_frames": []
+        },
+        "B": {
+          "status": "NO_HISTORY",
+          "samples": 0,
+          "mu_mm": null,
+          "scale_mm": null,
+          "slope_mm_s": null,
+          "delta_seconds": null,
+          "sample_frames": []
+        }
+      },
+      "geometric_available": {
+        "A": true,
+        "B": true
+      },
+      "candidate_components": {
+        "H0": {
+          "geometry_log_lr": 4.894146375596275,
+          "depth_log_lr": 0.0,
+          "posterior": 0.08931932780592489
+        },
+        "H1": {
+          "geometry_log_lr": 7.2161207856632075,
+          "depth_log_lr": 0.0,
+          "posterior": 0.9106806721940752
+        }
+      }
+    }
+  ],
+  "raw_coverage": [
+    {
+      "segment": "feeding_000000_000199",
+      "frames": 200,
+      "sensor_available_frames": 200,
+      "objects": 5332,
+      "usable_cores": 5016,
+      "valid_pixels": 31961424,
+      "old_raw_cache_equal_frames": 200,
+      "opencv_max_distance_last_bit_differences": 20,
+      "core_usable_fraction": 0.940735183795949
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frames": 205,
+      "sensor_available_frames": 205,
+      "objects": 5494,
+      "usable_cores": 5165,
+      "valid_pixels": 32164337,
+      "old_raw_cache_equal_frames": 205,
+      "opencv_max_distance_last_bit_differences": 41,
+      "core_usable_fraction": 0.940116490717146
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frames": 360,
+      "sensor_available_frames": 360,
+      "objects": 9596,
+      "usable_cores": 8998,
+      "valid_pixels": 57201712,
+      "old_raw_cache_equal_frames": 360,
+      "opencv_max_distance_last_bit_differences": 42,
+      "core_usable_fraction": 0.9376823676531888
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frames": 706,
+      "sensor_available_frames": 706,
+      "objects": 18786,
+      "usable_cores": 17947,
+      "valid_pixels": 113863023,
+      "old_raw_cache_equal_frames": 706,
+      "opencv_max_distance_last_bit_differences": 36,
+      "core_usable_fraction": 0.9553390822953263
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "frames": 8400,
+      "sensor_available_frames": 8399,
+      "objects": 50271,
+      "usable_cores": 46967,
+      "valid_pixels": 1364780312,
+      "old_raw_cache_equal_frames": 0,
+      "opencv_max_distance_last_bit_differences": 0,
+      "core_usable_fraction": 0.9342762228720336
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "frames": 2888,
+      "sensor_available_frames": 2888,
+      "objects": 17197,
+      "usable_cores": 16248,
+      "valid_pixels": 469072348,
+      "old_raw_cache_equal_frames": 0,
+      "opencv_max_distance_last_bit_differences": 0,
+      "core_usable_fraction": 0.9448159562714427
+    },
+    {
+      "segment": "L3",
+      "frames": 3710,
+      "sensor_available_frames": 3705,
+      "objects": 36927,
+      "usable_cores": 35834,
+      "valid_pixels": 649831171,
+      "old_raw_cache_equal_frames": 0,
+      "core_usable_fraction": 0.9704010615538766
+    },
+    {
+      "segment": "LW",
+      "frames": 3629,
+      "sensor_available_frames": 3606,
+      "objects": 38239,
+      "usable_cores": 33910,
+      "valid_pixels": 606798664,
+      "old_raw_cache_equal_frames": 0,
+      "core_usable_fraction": 0.8867909725672742
+    }
+  ],
+  "noninitial_birth_status": {
+    "feeding_000000_000199": {
+      "KEEP_NATIVE": 6,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 10
+    },
+    "feeding_000351_000555": {
+      "KEEP_NATIVE": 4,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 16
+    },
+    "feeding_000701_001060": {
+      "KEEP_NATIVE": 30,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 5
+    },
+    "feeding_001201_001906": {
+      "KEEP_NATIVE": 17,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 16,
+      "COMMIT": 1
+    },
+    "fishsa_development_8400": {
+      "ACTIVE_GROUP_FRAME_BLOCKED": 3
+    },
+    "fishsa_validation_2888": {
+      "KEEP_NATIVE": 6,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 1
+    },
+    "L3": {
+      "KEEP_NATIVE": 35,
+      "COMMIT": 2,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 12
+    },
+    "LW": {
+      "KEEP_NATIVE": 80,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 67
+    }
+  },
+  "physical_commit_counts": {
+    "group_CORRECT": 2,
+    "birth_CORRECT": 1,
+    "group_WRONG": 2,
+    "birth_WRONG": 0,
+    "group_UNSCORABLE": 1,
+    "birth_UNSCORABLE": 2
+  },
+  "timing": {
+    "feeding_000000_000199": {
+      "preparation_seconds": 50.57381480000913,
+      "replay_seconds": 11.880206599947996,
+      "publish_mean_seconds": 0.05795271300303284,
+      "publish_p95_seconds": 0.48941117992508143
+    },
+    "feeding_000351_000555": {
+      "preparation_seconds": 56.728080999921076,
+      "replay_seconds": 19.183168500079773,
+      "publish_mean_seconds": 0.09128812342405138,
+      "publish_p95_seconds": 0.5646689999848604
+    },
+    "feeding_000701_001060": {
+      "preparation_seconds": 100.69005969993304,
+      "replay_seconds": 27.786169899976812,
+      "publish_mean_seconds": 0.07546587000672136,
+      "publish_p95_seconds": 0.5132574400049635
+    },
+    "feeding_001201_001906": {
+      "preparation_seconds": 191.52425729995593,
+      "replay_seconds": 42.61632130004,
+      "publish_mean_seconds": 0.05872092790332446,
+      "publish_p95_seconds": 0.07920119998743758
+    },
+    "fishsa_development_8400": {
+      "preparation_seconds": 640.1844564999919,
+      "replay_seconds": 118.60539749998134,
+      "publish_mean_seconds": 0.013558171250749313,
+      "publish_p95_seconds": 0.02107920496491714
+    },
+    "fishsa_validation_2888": {
+      "preparation_seconds": 272.4602961000055,
+      "replay_seconds": 41.46876910002902,
+      "publish_mean_seconds": 0.013762067312462102,
+      "publish_p95_seconds": 0.018033260025549683
+    },
+    "L3": {
+      "preparation_seconds": 928.3041366999969,
+      "replay_seconds": 146.36399179999717,
+      "publish_mean_seconds": 0.03866185978493676,
+      "publish_p95_seconds": 0.05936833501909859
+    },
+    "LW": {
+      "preparation_seconds": 915.8011713000014,
+      "replay_seconds": 210.03782510000747,
+      "publish_mean_seconds": 0.05716182019957514,
+      "publish_p95_seconds": 0.08666173999663442
+    }
+  },
+  "source_prediction_masks": 181842,
+  "depth_sensor_frames": 20069,
+  "model_http": 0,
+  "smoke": 0,
+  "fees_usd": 0,
+  "prediction_workers_max": 3,
+  "preparation_peak_workers": 6,
+  "local_single_thread_per_worker": true
+}

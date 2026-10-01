@@ -1,0 +1,39 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+feeding_000000_000199 {"metrics": {"SAM3_NATIVE": {"IDF1": 92.8897586431833, "HOTA": 91.36252204380997, "AssA": 88.0858769375677, "DetA": 94.76188123291938, "IDSW": 10, "FP": 76, "FN": 143, "GT": 5399, "predictions": 5332}, "R12_RAW": {"IDF1": 92.8897586431833, "HOTA": 91.36252204380997, "AssA": 88.0858769375677, "DetA": 94.76188123291938, "IDSW": 10, "FP": 76, "FN": 143, "GT": 5399, "predictions": 5332}}, "delta": {"IDF1": 0.0, "HOTA": 0.0, "AssA": 0.0, "DetA": 0.0, "IDSW": 0, "FP": 0, "FN": 0}, "changed": 0}
+feeding_000351_000555 {"metrics": {"SAM3_NATIVE": {"IDF1": 82.92727108051807, "HOTA": 78.58284442084609, "AssA": 72.1826902323686, "DetA": 85.59283666556213, "IDSW": 22, "FP": 148, "FN": 201, "GT": 5547, "predictions": 5494}, "R12_RAW": {"IDF1": 82.92727108051807, "HOTA": 78.58284442084609, "AssA": 72.1826902323686, "DetA": 85.59283666556213, "IDSW": 22, "FP": 148, "FN": 201, "GT": 5547, "predictions": 5494}}, "delta": {"IDF1": 0.0, "HOTA": 0.0, "AssA": 0.0, "DetA": 0.0, "IDSW": 0, "FP": 0, "FN": 0}, "changed": 0}
+feeding_000701_001060 {"metrics": {"SAM3_NATIVE": {"IDF1": 77.42803893145579, "HOTA": 75.54502220156733, "AssA": 65.0065795312991, "DetA": 87.8023382533061, "IDSW": 36, "FP": 154, "FN": 278, "GT": 9720, "predictions": 9596}, "R12_RAW": {"IDF1": 77.42803893145579, "HOTA": 75.54502220156733, "AssA": 65.0065795312991, "DetA": 87.8023382533061, "IDSW": 36, "FP": 154, "FN": 278, "GT": 9720, "predictions": 9596}}, "delta": {"IDF1": 0.0, "HOTA": 0.0, "AssA": 0.0, "DetA": 0.0, "IDSW": 0, "FP": 0, "FN": 0}, "changed": 0}
+feeding_001201_001906 SCORE 500
+feeding_001201_001906 {"metrics": {"SAM3_NATIVE": {"IDF1": 78.83995135621001, "HOTA": 78.72724758681133, "AssA": 68.0893224800032, "DetA": 91.05347483143902, "IDSW": 40, "FP": 109, "FN": 363, "GT": 19040, "predictions": 18786}, "R12_RAW": {"IDF1": 78.95098609422091, "HOTA": 78.90362160059807, "AssA": 68.39428991671917, "DetA": 91.05347483143902, "IDSW": 37, "FP": 109, "FN": 363, "GT": 19040, "predictions": 18786}}, "delta": {"IDF1": 0.11103473801090047, "HOTA": 0.17637401378674156, "AssA": 0.3049674367159696, "DetA": 0.0, "IDSW": -3, "FP": 0, "FN": 0}, "changed": 263}
+fishsa_development_8400 SCORE 500
+fishsa_development_8400 SCORE 1000
+fishsa_development_8400 SCORE 1500
+fishsa_development_8400 SCORE 2000
+fishsa_development_8400 SCORE 2500
+fishsa_development_8400 SCORE 3000
+fishsa_development_8400 SCORE 3500
+fishsa_development_8400 SCORE 4000
+fishsa_development_8400 SCORE 4500
+fishsa_development_8400 SCORE 5000
+fishsa_development_8400 SCORE 5500
+fishsa_development_8400 SCORE 6000
+fishsa_development_8400 SCORE 6500
+fishsa_development_8400 SCORE 7000
+fishsa_development_8400 SCORE 7500
+fishsa_development_8400 SCORE 8000
+fishsa_development_8400 {"metrics": {"SAM3_NATIVE": {"IDF1": 91.31328783860297, "HOTA": 73.3461431977153, "AssA": 69.18676765844471, "DetA": 77.75663771120087, "IDSW": 5, "FP": 194, "FN": 323, "GT": 50400, "predictions": 50271}, "R12_RAW": {"IDF1": 81.10180687586296, "HOTA": 67.8940667278219, "AssA": 59.28435020130346, "DetA": 77.75663771120087, "IDSW": 7, "FP": 194, "FN": 323, "GT": 50400, "predictions": 50271}}, "delta": {"IDF1": -10.211480962740012, "HOTA": -5.452076469893413, "AssA": -9.902417457141247, "DetA": 0.0, "IDSW": 2, "FP": 0, "FN": 0}, "changed": 3877}
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\score_frozen_outputs.py", line 20, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\score_frozen_outputs.py", line 19, in main
+    evaluate.main()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\evaluate.py", line 211, in main
+    result,(gt,pred,sims),audit=score_segment(name);results[name]=result;audits[name]=audit
+                                ^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\evaluate.py", line 163, in score_segment
+    for index,(a,p,t) in enumerate(zip(rows(input_dir(name)/'assignments.jsonl.gz'),rows(public/'predictions.jsonl.gz'),reference_rows(name),strict=True),1):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\evaluate.py", line 84, in reference_rows
+    assert sha(path)==row['annotation_sha256'],path
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: E:\CAU\D-MOT\data\AlignedDataset_v1\labels_original\009300.json

@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "native_baseline_parity": {
+    "fishsa_development_8400": {
+      "original_same_source_native_all_metric_fields_exact": true,
+      "expected": {
+        "IDF1": 91.31328783860297,
+        "HOTA": 73.3461431977153,
+        "AssA": 69.18676765844471,
+        "IDSW": 5,
+        "FP": 194,
+        "FN": 323
+      }
+    },
+    "fishsa_validation_2888": {
+      "original_same_source_native_all_metric_fields_exact": true,
+      "expected": {
+        "IDF1": 76.4564442770648,
+        "HOTA": 66.43552909955413,
+        "AssA": 55.19605907649384,
+        "IDSW": 8,
+        "FP": 298,
+        "FN": 423
+      }
+    },
+    "L3": {
+      "original_same_source_native_all_metric_fields_exact": true,
+      "reference_independence": false
+    },
+    "LW": {
+      "original_same_source_native_all_metric_fields_exact": true,
+      "reference_independence": false
+    },
+    "Feeding": {
+      "old_frozen_native_and_R12_RAW_pooled_metrics_exact": true,
+      "all1471_frame_mappings_exact": true
+    }
+  },
+  "old_unchanged_files": 1334,
+  "all_source_native_masks_retained": true,
+  "one_to_one_and_transaction_publisher_verified": true,
+  "q_is_first_split_and_one_post_sample": true,
+  "all_predictions_sealed_before_scoring": true,
+  "scientific_frozen_bytes_unchanged": true,
+  "scoring_reference_errata_append_only": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

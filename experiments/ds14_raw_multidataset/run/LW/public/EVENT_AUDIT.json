@@ -1,0 +1,519 @@
+{
+  "segment": "LW",
+  "group_events": [
+    {
+      "segment": "LW",
+      "event": "MS1-F218",
+      "suspect": 218,
+      "confirm": 219,
+      "q": 223,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "6": 6,
+        "4": 4
+      },
+      "actual_first_public_mapping": {
+        "4": 4,
+        "6": 6
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "4": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 3,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0008011964533703664
+        },
+        "4": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 3,
+          "iou": 1.0,
+          "second_iou": 0.0008011964533703664
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F375",
+      "suspect": 375,
+      "confirm": 376,
+      "q": 388,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "3": 3,
+        "6": 6
+      },
+      "actual_first_public_mapping": {
+        "3": 3,
+        "6": 6
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0009440034327397554
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0008968107168880668
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F430",
+      "suspect": 430,
+      "confirm": 431,
+      "q": null,
+      "status": "TIMEOUT",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F932",
+      "suspect": 932,
+      "confirm": 933,
+      "q": 1156,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {},
+      "actual_first_public_mapping": {
+        "3": 3,
+        "5": 5
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "19": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "5": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.1588686481303931,
+          "second_iou": 0.0006782880010852608
+        },
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.6076664556037212,
+          "second_iou": 0.36979683972911964
+        }
+      },
+      "changes": {},
+      "first_public_physical": "UNSCORABLE"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1247",
+      "suspect": 1247,
+      "confirm": 1248,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1269",
+      "suspect": 1269,
+      "confirm": null,
+      "q": null,
+      "status": "CANCELLED",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1274",
+      "suspect": 1274,
+      "confirm": 1275,
+      "q": 1276,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "5": 5,
+        "6": 6
+      },
+      "actual_first_public_mapping": {
+        "5": 5,
+        "6": 6
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "5": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "5": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 1.0,
+          "second_iou": 0.0030193780982424516
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0030193780982424516
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1277",
+      "suspect": 1277,
+      "confirm": 1278,
+      "q": 1281,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "3": 3,
+        "6": 6
+      },
+      "actual_first_public_mapping": {
+        "3": 3,
+        "6": 6
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.001628599801390268
+        },
+        "6": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 1.0,
+          "second_iou": 0.001628599801390268
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1295",
+      "suspect": 1295,
+      "confirm": 1296,
+      "q": null,
+      "status": "TIMEOUT",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1636",
+      "suspect": 1636,
+      "confirm": 1637,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1828",
+      "suspect": 1828,
+      "confirm": 1829,
+      "q": null,
+      "status": "TIMEOUT",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2157",
+      "suspect": 2157,
+      "confirm": 2158,
+      "q": 2161,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "3": 3,
+        "60": 60
+      },
+      "actual_first_public_mapping": {
+        "3": 3,
+        "60": 60
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "60": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 3,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.00021788391145197839
+        },
+        "60": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 3,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2293",
+      "suspect": 2293,
+      "confirm": 2294,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2365",
+      "suspect": 2365,
+      "confirm": null,
+      "q": null,
+      "status": "CANCELLED",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2404",
+      "suspect": 2404,
+      "confirm": 2405,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2850",
+      "suspect": 2850,
+      "confirm": 2851,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2896",
+      "suspect": 2896,
+      "confirm": 2897,
+      "q": 2909,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {
+        "106": 106,
+        "3": 3
+      },
+      "actual_first_public_mapping": {
+        "3": 3,
+        "106": 106
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "106": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "106": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "3": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "changes": {},
+      "first_public_physical": "CORRECT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2979",
+      "suspect": 2979,
+      "confirm": 2980,
+      "q": 3052,
+      "status": "LOCAL_FALLBACK_COMMITTED",
+      "physical": "NOT_COMMITTED",
+      "choice": "H0",
+      "restore_status": "LOCAL_FALLBACK_COMMITTED",
+      "expected_mapping": {},
+      "actual_first_public_mapping": {
+        "60": 60,
+        "128": 128
+      },
+      "selected_mapping": {},
+      "anchors": {
+        "128": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "129": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0,
+          "second_iou": 0.0
+        }
+      },
+      "posts": {
+        "60": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 3,
+          "iou": 1.0,
+          "second_iou": 0.0009262557890986819
+        },
+        "128": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 1.0,
+          "second_iou": 0.0009262557890986819
+        }
+      },
+      "changes": {},
+      "first_public_physical": "UNSCORABLE"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F3070",
+      "suspect": 3070,
+      "confirm": 3071,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F3222",
+      "suspect": 3222,
+      "confirm": 3223,
+      "q": null,
+      "status": "OUT_OF_SCOPE",
+      "physical": "NO_SPLIT"
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F3578",
+      "suspect": 3578,
+      "confirm": 3579,
+      "q": null,
+      "status": "MERGED",
+      "physical": "NO_SPLIT"
+    }
+  ],
+  "birth_commits": [],
+  "group_physical_counts": {
+    "NOT_COMMITTED": 8,
+    "NO_SPLIT": 13
+  },
+  "birth_physical_counts": {}
+}

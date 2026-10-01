@@ -1,0 +1,9 @@
+# Frozen performance protocol
+
+Run all20098 frames, no GT-based selection, no added geometric baseline gate. Freeze before prediction; all eight prediction/access seals precede scoring. Native and R12_RAW share observed masks, source times and reference rasterization. Each segment resets; within each segment committed aliases continue real branch state. Joint restore/birth commit precedes current frame's first publication. No q+1 image, future return or retrospective rewrite is used.
+
+Main outcomes: complete mask IDF1/HOTA/AssA/IDSW/FP/FN and absolute R12−native changes per segment and dataset, official pooled segment combination. FishSA8400 and2888 remain separate; Feeding pooled alone; L3/LW diagnostic reference limits explicit. Preserve all masks, UNKNOWN, missing raw depth, no event and zero effect. Report raw core coverage, completed/cancelled episodes, selected choice, commits, changed frames, publication timing and source-consistent physical recovery after sealing.
+
+Necessary adapter checks: byte-identical frozen kernels; real raw field whitelist; global1 missing/global2 alignedframe1 and validation9301 time binding; L3/LW raw projection equality with recorded geometry; current source/index/depth binding. First four formal Feeding outputs must reproduce all old frozen R12_RAW frame mappings; these are full formal runs, not tuned slices. Scorer verifies hashes, native/mask conservation, one-to-one publication, q cutoff, transaction/first-publication equality and score sanity. No manual or numerical method-success prerequisite.
+
+All outcomes and engineering failures are committed and normally pushed main, with actual remote ref/key-file verification. No old seal modification, no force push, no private pixels or credentials. One next step is chosen after results; no automatic model addition or threshold search.

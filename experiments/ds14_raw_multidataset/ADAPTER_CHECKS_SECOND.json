@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "checks": [
+    "FishSA first source remains missing",
+    "FishSA global2 matches aligned1",
+    "Validation source time and row binding",
+    "Archive auxiliary proposals never enter native occupancy; all N0 masks retained",
+    "Recorded original camera projection exact",
+    "Missing timestamp common no-information",
+    "Official scoring detects actual public ID switches"
+  ],
+  "kernel_byte_equality": {
+    "CONFIG.json": {
+      "new": "866fbbea5698e4f3ef6a40cfc619e3ca2126ced34ee7d64f94676cd83ddcd528",
+      "old": "866fbbea5698e4f3ef6a40cfc619e3ca2126ced34ee7d64f94676cd83ddcd528"
+    },
+    "controller.py": {
+      "new": "29c0f4b03e5e54cb88ec25d8126a0b5be4756665a049ea43cb0b8eab6253331e",
+      "old": "29c0f4b03e5e54cb88ec25d8126a0b5be4756665a049ea43cb0b8eab6253331e"
+    },
+    "birth_memory.py": {
+      "new": "b413d4510c3b0a11d0aecd103a10845937302051788e53f5a92bfc5cb5b4d345",
+      "old": "b413d4510c3b0a11d0aecd103a10845937302051788e53f5a92bfc5cb5b4d345"
+    },
+    "forecast.py": {
+      "new": "2a67b111b1c54a2271b7d60e4dce7392c67b74f60203a2d303e72a2c6543f777",
+      "old": "2a67b111b1c54a2271b7d60e4dce7392c67b74f60203a2d303e72a2c6543f777"
+    },
+    "reconnect.py": {
+      "new": "90e431bdac3ef66de0e627ab1d7fc488ba11a8268c088b2c24d06e9181f32519",
+      "old": "90e431bdac3ef66de0e627ab1d7fc488ba11a8268c088b2c24d06e9181f32519"
+    },
+    "contact_measurement.py": {
+      "new": "abe2b7a3d1d00182e6042bfab85ae4a5d16f0d66bbbe423325e89161a4d9dc7d",
+      "old": "abe2b7a3d1d00182e6042bfab85ae4a5d16f0d66bbbe423325e89161a4d9dc7d"
+    },
+    "measurement.py": {
+      "new": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861",
+      "old": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861"
+    },
+    "adaptive_core.py": {
+      "new": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b",
+      "old": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b"
+    }
+  },
+  "cameras": {
+    "L3": {
+      "first_frame_exact_original_projection": true,
+      "missing_frame": 1,
+      "missing_common_zero": true
+    },
+    "LW": {
+      "first_frame_exact_original_projection": true,
+      "missing_frame": 3606,
+      "missing_common_zero": true
+    }
+  },
+  "score_sanity": {
+    "IDF1": 100.0,
+    "HOTA": 100.0,
+    "AssA": 100.0,
+    "DetA": 100.0,
+    "IDSW": 0,
+    "FP": 0,
+    "FN": 0,
+    "GT": 8,
+    "predictions": 8
+  },
+  "switch_sanity": {
+    "IDF1": 75.0,
+    "HOTA": 69.69320524371696,
+    "AssA": 48.57142857142856,
+    "DetA": 100.0,
+    "IDSW": 4,
+    "FP": 0,
+    "FN": 0,
+    "GT": 8,
+    "predictions": 8
+  },
+  "actual_array_field_reads": [
+    {
+      "segment": "fishsa_development_8400",
+      "frame": 2,
+      "h5_row": 0,
+      "fields": [
+        "frame_id",
+        "aligned/raw_depth_mm",
+        "aligned/raw_source_index",
+        "native/original_depth_mm"
+      ]
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "frame": 9301,
+      "h5_row": 299,
+      "fields": [
+        "frame_id",
+        "aligned/raw_depth_mm",
+        "aligned/raw_source_index",
+        "native/original_depth_mm"
+      ]
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.3",
+    "opencv-python": "5.0.0.93",
+    "scipy": "1.18.1",
+    "h5py": "3.14.0",
+    "pycocotools": "2.0.11"
+  },
+  "python": "3.12.14 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:37:13) [MSC v.1942 64 bit (AMD64)]",
+  "passed_engineering_only": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

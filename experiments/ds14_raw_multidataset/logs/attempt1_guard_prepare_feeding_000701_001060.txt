@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\guard.py", line 27, in <module>
+    prepare(name);target=HERE/'inputs'/f'{name}_access.json'
+    ^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\prepare_inputs.py", line 57, in prepare
+    assert previous['adaptive_full']==full and previous['adaptive_raw']=={str(n):m for n,m in facts.items()},(name,index,'raw cache changed')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('feeding_000701_001060', 15, 'raw cache changed')

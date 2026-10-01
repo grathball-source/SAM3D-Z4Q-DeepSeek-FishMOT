@@ -1,0 +1,15 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\score_remaining.py", line 55, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\score_remaining.py", line 37, in main
+    if n not in results:results[n]=score.score_segment(n)[0]
+                                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\evaluate.py", line 163, in score_segment
+    for index,(a,p,t) in enumerate(zip(rows(input_dir(name)/'assignments.jsonl.gz'),rows(public/'predictions.jsonl.gz'),reference_rows(name),strict=True),1):
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\score_remaining.py", line 19, in validation_reference
+    assert row['sha256']==metadata[g]['annotation_sha256'],g
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 9398

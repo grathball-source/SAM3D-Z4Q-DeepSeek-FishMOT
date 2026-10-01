@@ -1,0 +1,87 @@
+{
+  "status": "ORIGINAL_RAW_ONLY_CAUSAL_INPUTS_PREPARED",
+  "segment": "feeding_000701_001060",
+  "original_frames": [
+    701,
+    1060
+  ],
+  "frames": 360,
+  "original_inputs": {
+    "observations": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\observations.jsonl.gz",
+      "bytes": 511143,
+      "sha256": "d437456767cb52b792b377066cc59030621571a76f6d0087293217d11a455382"
+    },
+    "profiles": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\profiles.jsonl.gz",
+      "bytes": 1253705,
+      "sha256": "7946b81b25918c8bbca8f2b118a29e76e7444021a71d20b91c7cceb972cfcf07"
+    },
+    "assignments": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds2_depth_transfer_validation\\private\\feeding_000701_001060\\assignments.jsonl.gz",
+      "bytes": 478869,
+      "sha256": "76c037a39e116fd808d242a6c69b45d4ddc8dd58c268f0e4303437c7ab206b68"
+    },
+    "raw_measurements": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\run\\feeding_000701_001060\\public\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 5604068,
+      "sha256": "1f269695ffe63b9cacb8323cf9a4ba9bd3174db0f6c9eeb0bb61f5008e3aedd6"
+    }
+  },
+  "raw_sources": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\RAW_SOURCES.json",
+    "bytes": 552878,
+    "sha256": "1f77b8e039301df0d228101e3b2727aae1741ca6e423fe20c6476c4f75300ae3"
+  },
+  "derived_inputs": {
+    "observations.jsonl.gz": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\observations.jsonl.gz",
+      "bytes": 511143,
+      "sha256": "8c7e0795810531a81cd33e678b4415e47ee6e552e81e90af1dbf6b5318f9f03d"
+    },
+    "profiles.jsonl.gz": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\profiles.jsonl.gz",
+      "bytes": 1253705,
+      "sha256": "a0f5a02ed36d40db8963903eb90ef530b31c64b6d70252f4a6ed03236992d4a5"
+    },
+    "assignments.jsonl.gz": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\assignments.jsonl.gz",
+      "bytes": 478869,
+      "sha256": "548a645d6e03aa74cb6fa6a5389caad17c087e1248dffcc2d0c2069a7cfa3f33"
+    },
+    "DEPTH_OBSERVATIONS.jsonl.gz": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 2096516,
+      "sha256": "3842cd9c7d9bc19936ea39edd6c4dadce061d458889140068e026e83b304de60"
+    }
+  },
+  "scan": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\scan_v4.json",
+    "bytes": 27737,
+    "sha256": "7277ccf3c2a0bd8ee0570f6df2df45cdf5ed9bb9ecba0d2416b4173d976cc39c"
+  },
+  "field_access": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\FIELD_ACCESS.json",
+    "bytes": 46144,
+    "sha256": "a9c525f761d66235a27cb76a3fe24ed8e45eb0927b7b6876f297a1e455f5253c"
+  },
+  "coverage": {
+    "frames": 360,
+    "sensor_available_frames": 360,
+    "objects": 9596,
+    "usable_cores": 8998,
+    "valid_pixels": 57201712,
+    "old_raw_cache_equal_frames": 360,
+    "opencv_max_distance_last_bit_differences": 42
+  },
+  "raw_profile_changed_objects": 0,
+  "geometry_policy": "EXACT_SAVED_SOURCE_2D_GEOMETRY_OR_RECORDED_CAMERA_PIXEL_CENTER_PROJECTION",
+  "old_cache_policy": "ONLY_RAW_COLUMNS_ACCEPTED_AFTER_ALL_FRAME_ACTUAL_RAW_EQUALITY",
+  "preparation_seconds": 100.69005969993304,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "no_GT": true,
+  "no_RGB": true,
+  "no_restored_values": true,
+  "source_time_nonoverlap_independence": "NOT_CLAIMED"
+}

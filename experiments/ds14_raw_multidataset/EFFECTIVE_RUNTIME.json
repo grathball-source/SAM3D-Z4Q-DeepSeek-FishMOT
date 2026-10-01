@@ -1,0 +1,275 @@
+{
+  "trial": "DS14",
+  "arms": [
+    "SAM3_NATIVE",
+    "R12_RAW"
+  ],
+  "segments": {
+    "feeding_000000_000199": [
+      0,
+      199
+    ],
+    "feeding_000351_000555": [
+      351,
+      555
+    ],
+    "feeding_000701_001060": [
+      701,
+      1060
+    ],
+    "feeding_001201_001906": [
+      1201,
+      1906
+    ],
+    "fishsa_development_8400": [
+      1,
+      8400
+    ],
+    "fishsa_validation_2888": [
+      9301,
+      12188
+    ],
+    "L3": [
+      0,
+      3709
+    ],
+    "LW": [
+      0,
+      3628
+    ]
+  },
+  "frames": 20098,
+  "scientific_constants": {
+    "trial": "DS12",
+    "frames": 1471,
+    "source": "SOURCE_OLD",
+    "arms": [
+      "SAM3_NATIVE",
+      "F9_RESTORED",
+      "R12_RAW",
+      "R12_RESTORED"
+    ],
+    "inferred_scale_floor_mm": 60,
+    "raw_scale_floor_mm": 15,
+    "history_frames": 30,
+    "fit_observations": 10,
+    "core_kernel": "NOT_USED_BY_P1_P2",
+    "min_points": 16,
+    "min_fraction": 0.2,
+    "max_raw_scale_mm": 60,
+    "restored_fields": [
+      "native_v2.depth_mm",
+      "original_depth_mm",
+      "filled_mask",
+      "invalidated_reason"
+    ],
+    "excluded_provenance": [
+      0
+    ],
+    "inferred_policy": "Birth query inferred-only is retained as evidence with common uninformative depth and NO_COMMIT; frozen group policy unchanged",
+    "fallback": "Own-branch native/committed alias; no temporary H1",
+    "scope": "EXPOSED_OFFLINE_V2_REPROJECTED; no annotation assistance; upstream RGB and future cleaning",
+    "new_model_http": 0,
+    "cost_usd": 0,
+    "core_roi": "exclusive 8-connected components; distance >= max(1.5,min(3,0.5*component_max_distance))",
+    "single_change": "Current contact exclusive measurement certificate admission; past history and frozen F9 unchanged",
+    "minimum_joint_odds": 9,
+    "student_df": 4,
+    "signal_fraction": 0.9,
+    "geometry_background_area_px": 230400,
+    "geometry_residual_min": 3,
+    "geometry_covariance_shrinkage": 0.5,
+    "geometry_covariance_floor_px2": 16,
+    "geometry_fallback_sigma_px": 4,
+    "geometry_fallback_bbox_fraction": 0.1,
+    "geometry_scale_note": "Student-t shape = covariance/2 for df=4; past next-point residual proxy only",
+    "joint_independence": "conditional geometry/depth factorization assumption; no unnormalized .25 weight",
+    "unique_mapping_prior": "uniform over physically distinct mappings; H0 representative on duplicate",
+    "target": "At least one source-consistent physical birth restore and pooled IDF1/HOTA/AssA greater than same-source native; IDSW not increased",
+    "depth_background_min_components": 3,
+    "depth_background_component_floor_mm": 15,
+    "depth_diffusion_min_increments": 3,
+    "depth_forecast": "ROBUST_LOCAL_LEVEL_WITH_ORIGINAL_GAP_PRIOR_AND_NONNEGATIVE_PAST_DIFFUSION_PROXY",
+    "depth_background": "BIRTH_EQUAL_CURRENT_QUALIFIED_T4_MIXTURE_INCLUDING_QUERY; GROUP_FROZEN_DS9",
+    "geometry_and_identity_policy": "DS9_FROZEN_GROUP; ADD_FIRST_EVER_SOURCE_DEPTH_RECONNECT_BEFORE_PUBLICATION",
+    "foreground_background_odds": "CONDITIONAL_PLUGIN_UNCALIBRATED_IDENTITY_CONTRAST",
+    "birth_max_gap_seconds": 12.0,
+    "birth_min_history_samples": 3,
+    "birth_min_area": 64,
+    "birth_trigger": "FIRST_EVER_NATIVE_IN_SEGMENT; INITIAL_FRAME_RECORDED_NOT_ASSOCIATED",
+    "birth_depth_support": "RAW_SAME_VERSION_CONTIGUOUS_JOINT_CLEAN_PRE_RISK_FRAGMENT",
+    "birth_restored_query_policy": "RETAINED_ONLY; INFERRED_RECORDED_COMMON_UNINFORMATIVE_NO_COMMIT",
+    "birth_prior": "UNIFORM_UNIQUE_OLD_PUBLIC_AND_NEW_FISH_DUMMY",
+    "birth_positive_depth_lr_required": true,
+    "birth_max_transaction_edits": 2,
+    "birth_target_claim_policy": "REJECT_CURRENT_OCCUPIED_ANY_ALIAS_OR_GROUP_RESERVED_TARGET",
+    "birth_collision_policy": "REJECT_ALL_QUERIES_SHARING_BEST_TARGET; IF_MORE_THAN_TWO_REJECT_BATCH",
+    "birth_group_policy": "NO_BIRTH_STAGE_ON_ANY_ACTIVE_GROUP_FRAME_INCLUDING_Q",
+    "birth_history_policy": "LATEST_JOINT_FRAGMENT_EVEN_IF_TOO_SHORT; FREEZE_ON_DISAPPEARANCE; KEEP_ANONYMOUS_RISK; NO_STITCHING",
+    "birth_gap_policy": "FULL_QUERY_MINUS_LAST_JOINT_CLEAN_TIME_INCLUDING_OBSERVED_RISK_AND_MISSING_INTERVAL",
+    "birth_reference_policy": "PHYSICAL_REFERENCE_IS_JOINT_FRAGMENT_ENDPOINT; ACTUAL_BANK_ANCHOR_BOUND_SEPARATELY_TO_REGISTERED_VERSION",
+    "birth_geometry_policy": "ONE_OBJECT_LAST_TEN_REAL_OBSERVATIONS_OLS_WITH_SAME_WINDOW_PAST_RESIDUALS; ONE_SECOND_MEAN_CAP",
+    "contact_component_policy": "ALL_ACTUAL_ADAPTIVE_CORE_8_CONNECTED_PIECES_REPORTED; EQUAL_WEIGHT_QUALIFIED_COMPONENTS",
+    "contact_measured_support": "RAW_SENSOR_OR_V2_RETAINED_ONLY; UNIQUE_SENSOR_SOURCES_AND_EXCLUSIVE_MASK_CORE",
+    "contact_identity_qualification": "MEASUREMENT_PROVENANCE_ONLY; PHYSICAL_SURFACE_AND_BACKGROUND_UNKNOWN",
+    "contact_missing_policy": "COMMON_QUERY_UNINFORMATIVE; NO_COMMIT",
+    "contact_stage_policy": "KEEP_REAL_NEIGHBORS_RISK_CLASS; ATOMIC_RECHECK_CERTIFICATE_AND_BANK; NO_GROUP_BYPASS",
+    "physical_restore_scoring": "POSTSEAL_QUERY_CLEAN_BANK_ORIGIN_ALL_SAME; ENDPOINT_CORRECT_SEPARATE; DIFFERENT_UNKNOWN_NOT_SAFE"
+  },
+  "scientific_kernel_equality": {
+    "CONFIG.json": {
+      "new": "866fbbea5698e4f3ef6a40cfc619e3ca2126ced34ee7d64f94676cd83ddcd528",
+      "old": "866fbbea5698e4f3ef6a40cfc619e3ca2126ced34ee7d64f94676cd83ddcd528"
+    },
+    "controller.py": {
+      "new": "29c0f4b03e5e54cb88ec25d8126a0b5be4756665a049ea43cb0b8eab6253331e",
+      "old": "29c0f4b03e5e54cb88ec25d8126a0b5be4756665a049ea43cb0b8eab6253331e"
+    },
+    "birth_memory.py": {
+      "new": "b413d4510c3b0a11d0aecd103a10845937302051788e53f5a92bfc5cb5b4d345",
+      "old": "b413d4510c3b0a11d0aecd103a10845937302051788e53f5a92bfc5cb5b4d345"
+    },
+    "forecast.py": {
+      "new": "2a67b111b1c54a2271b7d60e4dce7392c67b74f60203a2d303e72a2c6543f777",
+      "old": "2a67b111b1c54a2271b7d60e4dce7392c67b74f60203a2d303e72a2c6543f777"
+    },
+    "reconnect.py": {
+      "new": "90e431bdac3ef66de0e627ab1d7fc488ba11a8268c088b2c24d06e9181f32519",
+      "old": "90e431bdac3ef66de0e627ab1d7fc488ba11a8268c088b2c24d06e9181f32519"
+    },
+    "contact_measurement.py": {
+      "new": "abe2b7a3d1d00182e6042bfab85ae4a5d16f0d66bbbe423325e89161a4d9dc7d",
+      "old": "abe2b7a3d1d00182e6042bfab85ae4a5d16f0d66bbbe423325e89161a4d9dc7d"
+    },
+    "measurement.py": {
+      "new": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861",
+      "old": "d559242ce7ba513b721dc5ce51a7bd44c2b5e42528effedcaa7aed811d4ab861"
+    },
+    "adaptive_core.py": {
+      "new": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b",
+      "old": "83a0cceb0646f2835fcf879764f0b11e10e2af9d9e4983ec9718f7399b0f213b"
+    }
+  },
+  "prepared": {
+    "feeding_000000_000199": {
+      "frames": 200,
+      "coverage": {
+        "frames": 200,
+        "sensor_available_frames": 200,
+        "objects": 5332,
+        "usable_cores": 5016,
+        "valid_pixels": 31961424,
+        "old_raw_cache_equal_frames": 200,
+        "opencv_max_distance_last_bit_differences": 20
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 8
+    },
+    "feeding_000351_000555": {
+      "frames": 205,
+      "coverage": {
+        "frames": 205,
+        "sensor_available_frames": 205,
+        "objects": 5494,
+        "usable_cores": 5165,
+        "valid_pixels": 32164337,
+        "old_raw_cache_equal_frames": 205,
+        "opencv_max_distance_last_bit_differences": 41
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 47
+    },
+    "feeding_000701_001060": {
+      "frames": 360,
+      "coverage": {
+        "frames": 360,
+        "sensor_available_frames": 360,
+        "objects": 9596,
+        "usable_cores": 8998,
+        "valid_pixels": 57201712,
+        "old_raw_cache_equal_frames": 360,
+        "opencv_max_distance_last_bit_differences": 42
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 41
+    },
+    "feeding_001201_001906": {
+      "frames": 706,
+      "coverage": {
+        "frames": 706,
+        "sensor_available_frames": 706,
+        "objects": 18786,
+        "usable_cores": 17947,
+        "valid_pixels": 113863023,
+        "old_raw_cache_equal_frames": 706,
+        "opencv_max_distance_last_bit_differences": 36
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 45
+    },
+    "fishsa_development_8400": {
+      "frames": 8400,
+      "coverage": {
+        "frames": 8400,
+        "sensor_available_frames": 8399,
+        "objects": 50271,
+        "usable_cores": 46967,
+        "valid_pixels": 1364780312,
+        "old_raw_cache_equal_frames": 0,
+        "opencv_max_distance_last_bit_differences": 0
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 15
+    },
+    "fishsa_validation_2888": {
+      "frames": 2888,
+      "coverage": {
+        "frames": 2888,
+        "sensor_available_frames": 2888,
+        "objects": 17197,
+        "usable_cores": 16248,
+        "valid_pixels": 469072348,
+        "old_raw_cache_equal_frames": 0,
+        "opencv_max_distance_last_bit_differences": 0
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 16
+    },
+    "L3": {
+      "frames": 3710,
+      "coverage": {
+        "frames": 3710,
+        "sensor_available_frames": 3705,
+        "objects": 36927,
+        "usable_cores": 35834,
+        "valid_pixels": 649831171,
+        "old_raw_cache_equal_frames": 0
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 22
+    },
+    "LW": {
+      "frames": 3629,
+      "coverage": {
+        "frames": 3629,
+        "sensor_available_frames": 3606,
+        "objects": 38239,
+        "usable_cores": 33910,
+        "valid_pixels": 606798664,
+        "old_raw_cache_equal_frames": 0
+      },
+      "raw_profile_changed_objects": 0,
+      "suspects": 70
+    }
+  },
+  "shared_group_policy": "FROZEN_DS9",
+  "new_birth_policy": "FROZEN_DS12",
+  "actual_max_local_parallel_processes": 3,
+  "threads_per_process": 1,
+  "GPU": false,
+  "server": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "reference_policy": "ALL_EIGHT_SEALS_BEFORE_REFERENCE_ACCESS",
+  "prior_exposure": "ALL_REQUESTED_DATA_PREVIOUSLY_EXPOSED; NOT_BLIND_GENERALIZATION"
+}

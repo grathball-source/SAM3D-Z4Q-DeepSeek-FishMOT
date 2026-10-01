@@ -1,0 +1,41 @@
+{
+  "status": "ORIGINAL_BASELINE_REFERENCE_SOURCE_RESUMPTION",
+  "all_predictions_seal": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\run\\ALL_PREDICTIONS_SEALED.json",
+    "bytes": 4647,
+    "sha256": "fb343c745f4b9467caca53e505e82271a43e6395aea534f03193caacbade0767"
+  },
+  "scorer": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\evaluate.py",
+    "bytes": 15885,
+    "sha256": "d7a6a323688a67631dc258e22100b84db2a9ad2d5c589ebf906fa5937e4d6513"
+  },
+  "wrapper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\score_remaining.py",
+    "bytes": 4245,
+    "sha256": "e046156300f91af7afbb1e115095140f5280417acbc993f6b6f4ceb76d081393"
+  },
+  "original_GT_archive": {
+    "path": "E:\\CAU\\D-MOT\\output\\evaluation\\sam3_trackeval_20260912_1705\\inputs.zip",
+    "bytes": 37544730,
+    "sha256": "169b9875102d62345958a077d5ebcc1f433044bd380da470b953dc88d53b0631"
+  },
+  "authoritative_protocol": {
+    "path": "E:\\CAU\\D-MOT\\tools\\sam3_i1_validation_20260915\\prepare_truth.py",
+    "bytes": 1943,
+    "sha256": "7bf238da695a947a00e94b08b90a2a43a4feb6f00b2e5e31c794bd02c633e33f"
+  },
+  "aligned_package_writer": {
+    "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py",
+    "bytes": 20314,
+    "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+  },
+  "field_reads": [
+    "manifest.json",
+    "gt[global_frame-1].key JSON only"
+  ],
+  "RGB_entries_read": false,
+  "correction": "Compare original annotation SHA to original archive bytes, preserve original full-raster then nearest resize scoring.",
+  "prior_scored_outputs_preserved": true,
+  "prediction_state_parameter_changes": 0
+}

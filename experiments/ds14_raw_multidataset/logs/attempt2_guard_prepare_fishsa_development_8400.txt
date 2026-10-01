@@ -1,0 +1,17 @@
+fishsa_development_8400 prepare 200 / 8400
+fishsa_development_8400 prepare 400 / 8400
+fishsa_development_8400 prepare 600 / 8400
+fishsa_development_8400 prepare 800 / 8400
+fishsa_development_8400 prepare 1000 / 8400
+fishsa_development_8400 prepare 1200 / 8400
+fishsa_development_8400 prepare 1400 / 8400
+fishsa_development_8400 prepare 1600 / 8400
+fishsa_development_8400 prepare 1800 / 8400
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\guard.py", line 27, in <module>
+    prepare(name);target=HERE/'inputs'/f'{name}_access.json'
+    ^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\prepare_inputs.py", line 53, in prepare
+    assert set(masks)=={o['id'] for o in obs['observations']}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

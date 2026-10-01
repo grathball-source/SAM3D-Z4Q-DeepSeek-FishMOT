@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds11_depth_birth_reconnect\freeze_review.py", line 21, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds11_depth_birth_reconnect\freeze_review.py", line 13, in main
+    birth_memory=inspect.getsource(birth_memory.BirthMemory),batch_control=inspect.getsource(runner.plan_births),
+                                                                                             ^^^^^^^^^^^^^^^^^^
+AttributeError: module 'runner' has no attribute 'plan_births'

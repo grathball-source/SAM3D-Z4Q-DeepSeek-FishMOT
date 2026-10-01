@@ -1,0 +1,70 @@
+{
+  "status": "EXPLICIT_PRE_FREEZE_REPLACEMENT_ENDPOINT_CONTRACT",
+  "code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\endpoint_census.py",
+    "bytes": 13881,
+    "sha256": "f08552a9e371bdae15b0341a34fb15daba3b02c3b5736caf555c62a03b838408"
+  },
+  "supersedes_endpoint_only_in": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\INPUT_REVIEW.json",
+    "bytes": 2839,
+    "sha256": "26d64c9133cc014c3df150a3df7afba390011fc99ea5d3420f8437639d0f422d"
+  },
+  "strict_zero_census_preserved": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\BIRTH_INPUT_CENSUS.json",
+    "bytes": 260395,
+    "sha256": "fc6f777d526cdcc7bc4aff97897c4672c5d12fd9ffad472c95c1916315690f2b"
+  },
+  "source_inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\SOURCE_INVENTORY.json",
+    "bytes": 1141034,
+    "sha256": "2cece1b154a0e535aa046305e32c0f258f3922078822192e4c05b034fc8dd210"
+  },
+  "query": {
+    "trigger": "SEGMENT_FIRST_EVER_NATIVE_FRAME_GT_1; INITIAL_FRAME_RECORDED_NOT_TRIED; RETURNING_NATIVE_NOT_RETRIED",
+    "quality": "ORIGINAL_CONFIDENCE_GATE_AND_AREA_GE64_AND_NO_NEIGHBORS_AND_RAW_CORE_USABLE",
+    "v2": "QUERY_MUST_ALSO_HAVE_USABLE_RETAINED_COHORT; INFERRED_NOT_CERTIFICATION"
+  },
+  "history": {
+    "min_points": 3,
+    "max_points": 30,
+    "fragment": "MOST_RECENT_CONTIGUOUS_JOINT_GEOMETRY_AND_USABLE_RAW_CLEAN_WINDOW",
+    "latest_short_fragment": "REJECT_IF_LENGTH_1_OR_2; NEVER_FALL_BACK_TO_EARLIER_QUALIFIED_FRAGMENT",
+    "actual_runtime_support": "EVERY_POINT_PRESENT_IN_ACTUAL_RAW_DEPTHSTATE_AND_MANAGER_CLASS_SOURCE_OBSERVATION",
+    "version": "SAME_SEGMENT_SOURCE_NATIVE_GENERATION_AND_ACTUAL_BRANCH_PUBLIC_EPOCH_AND_PUBLIC_ID",
+    "breaks": [
+      "SOURCE_GAP",
+      "VERSION_CHANGE",
+      "QUALITY_OR_CONTACT_RISK",
+      "UNUSABLE_RAW",
+      "NON_SOURCE_OBSERVATION_CLASS"
+    ],
+    "fit": "NEVER_INCLUDE_RISK_OR_GAP_OBSERVATIONS; NO_STITCHING; RAW_AND_GEOMETRY_ENDPOINT_ALIGNED"
+  },
+  "anchors": {
+    "reference": "ACTUAL_LAST_JOINT_CLEAN_POINT",
+    "bank": "SEPARATE_ACTUAL_PREFRAME_BRANCH_BANK_ANCHOR_AND_CURRENT_VERSION; NO_FABRICATED_OR_CROSS_VERSION_INHERITANCE"
+  },
+  "timing": {
+    "max_query_gap_seconds": 12.0,
+    "gap": "QUERY_TIME_MINUS_LAST_JOINT_CLEAN_TIME_INCLUDES_ALL_RISK_AND_ABSENCE"
+  },
+  "risk": {
+    "retain": "COMPLETE_INTERVENING_INPUT_FRAME_CHAIN_AND_REAL_SOURCE_OBSERVATIONS",
+    "ownership": "ANONYMOUS_FACTS_NO_INDIVIDUAL_FISH_OWNERSHIP_CLAIM",
+    "not_history": true
+  },
+  "source_census_scope": "UPPER_BOUND_ONLY; SOURCE_GENERATION_PROVEN; BRANCH_PUBLIC_EPOCH_BANK_ALIAS_OCCUPANCY_GROUP_CLASS_UNKNOWN",
+  "runtime_required": [
+    "CURRENT_PUBLIC_UNOCCUPIED",
+    "NO_ALIAS_CLAIM",
+    "NO_PROTECTED_GROUP_CLAIM",
+    "NO_ACTIVE_GROUP_AT_QUERY",
+    "EXACT_PREFRAME_BANK_ANCHOR_AND_CURRENT_VERSION_BINDING",
+    "UNIQUE_TARGET_AND_ATOMIC_FIRST_PUBLICATION"
+  ],
+  "no_GT_scoring_reference_reads": true,
+  "no_RGB_pixels": true,
+  "no_new_model": true,
+  "no_v3": true
+}

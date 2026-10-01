@@ -1,0 +1,130 @@
+{
+  "main_verdict": "ENGINEERING_PASS_FULL_TRIAL_COMPLETE_NEW_BIRTH_INCREMENT_ZERO_TARGET_NOT_MET",
+  "frames": 1471,
+  "objects": 39208,
+  "pooled": {
+    "SAM3_NATIVE": {
+      "IDF1": 80.97675951035305,
+      "HOTA": 79.96405589527662,
+      "AssA": 71.53049876161319,
+      "DetA": 89.73060596672879,
+      "IDSW": 108,
+      "FP": 487,
+      "FN": 985,
+      "GT": 39706,
+      "predictions": 39208
+    },
+    "F9_RESTORED": {
+      "IDF1": 80.97675951035305,
+      "HOTA": 80.01204931871929,
+      "AssA": 71.6157634532626,
+      "DetA": 89.73060596672879,
+      "IDSW": 106,
+      "FP": 487,
+      "FN": 985,
+      "GT": 39706,
+      "predictions": 39208
+    },
+    "R11_RAW": {
+      "IDF1": 80.97675951035305,
+      "HOTA": 80.01204931871929,
+      "AssA": 71.6157634532626,
+      "DetA": 89.73060596672879,
+      "IDSW": 106,
+      "FP": 487,
+      "FN": 985,
+      "GT": 39706,
+      "predictions": 39208
+    },
+    "R11_RESTORED": {
+      "IDF1": 80.97675951035305,
+      "HOTA": 80.01204931871929,
+      "AssA": 71.6157634532626,
+      "DetA": 89.73060596672879,
+      "IDSW": 106,
+      "FP": 487,
+      "FN": 985,
+      "GT": 39706,
+      "predictions": 39208
+    }
+  },
+  "delta": {
+    "F9_RESTORED_vs_SAM3_NATIVE": {
+      "IDF1": 0.0,
+      "HOTA": 0.04799342344267643,
+      "AssA": 0.08526469164941375,
+      "DetA": 0.0,
+      "IDSW": -2,
+      "FP": 0,
+      "FN": 0
+    },
+    "R11_RAW_vs_SAM3_NATIVE": {
+      "IDF1": 0.0,
+      "HOTA": 0.04799342344267643,
+      "AssA": 0.08526469164941375,
+      "DetA": 0.0,
+      "IDSW": -2,
+      "FP": 0,
+      "FN": 0
+    },
+    "R11_RESTORED_vs_SAM3_NATIVE": {
+      "IDF1": 0.0,
+      "HOTA": 0.04799342344267643,
+      "AssA": 0.08526469164941375,
+      "DetA": 0.0,
+      "IDSW": -2,
+      "FP": 0,
+      "FN": 0
+    },
+    "R11_RAW_vs_F9_RESTORED": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "R11_RESTORED_vs_F9_RESTORED": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    },
+    "R11_RESTORED_vs_R11_RAW": {
+      "IDF1": 0.0,
+      "HOTA": 0.0,
+      "AssA": 0.0,
+      "DetA": 0.0,
+      "IDSW": 0,
+      "FP": 0,
+      "FN": 0
+    }
+  },
+  "birth_correct": {
+    "F9_RESTORED": 0,
+    "R11_RAW": 0,
+    "R11_RESTORED": 0
+  },
+  "birth_target": false,
+  "group_correct": {
+    "F9_RESTORED": 2,
+    "R11_RAW": 2,
+    "R11_RESTORED": 2
+  },
+  "native_primary": true,
+  "new_birth_state_changes": 0,
+  "restored_offline_upstream_RGB_future": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "unresolved": [
+    "DEPTH_SUPPORTED_GAIN_OVER_NATIVE_IDF1",
+    "CURRENT_CONTACT_MEASUREMENT_CERTIFICATE",
+    "PHYSICAL_DEPTH_SURFACE_TRUTH",
+    "INDEPENDENT_VIDEO_VALIDATION"
+  ],
+  "next_step": "CURRENT_CONTACT_EXCLUSIVE_DEPTH_MEASUREMENT_CONTRACT_NOT_STARTED"
+}

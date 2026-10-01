@@ -1,0 +1,284 @@
+"""Same-source DS11 first-birth depth reconnect, before one lawful publication."""
+from __future__ import annotations
+import copy,gzip,hashlib,importlib.util,json,sys,time
+from pathlib import Path
+from common import *
+import cv2
+cv2.setNumThreads(1)
+from bridge import stream
+from merge_split_manager import choice_mapping,numeric_choice
+from depth_state import DepthState
+from birth_memory import BirthMemory
+from reconnect import choose as birth_choice
+from input_contract import verify_cached_segment
+_spec=importlib.util.spec_from_file_location('ds11_actual_controller',HERE/'controller.py')
+_native=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_native)
+DepthNativeBridge,DepthNativeManager=_native.DepthNativeBridge,_native.DepthNativeManager
+_spec9=importlib.util.spec_from_file_location('ds11_frozen_group_choice',HERE.parent/'ds9_joint_h0_depth/association.py')
+_old9=importlib.util.module_from_spec(_spec9);_spec9.loader.exec_module(_old9)
+EVENT_ARMS=ARMS[1:]
+CACHE=HERE.parent/'ds10_depth_failure_repair/run'
+CONFIG_PATH=ROOT/'online/closed_loop_2888/z4q_source/CONFIG.json'
+EVENT_CONFIG=OLD/'CONFIG_V7.json'
+
+def emit(row,mapping):
+    result=[dict(id=mapping[x['id']],mask=x['mask']) for x in row['native']]
+    assert len(result)==len(row['native'])==len(set(x['id'] for x in result))
+    return result
+
+def public_event(e):
+    keys=('id','suspect_frame','confirm_frame','q','end','status','numeric','restore',
+          'member_sources','public_ids','group_source','evidence_cutoff_frame','depth_frozen')
+    out={k:copy.deepcopy(e.get(k)) for k in keys}
+    out['reference_anchors']={str(k):copy.deepcopy(v.get('anchor')) for k,v in e['bank_snapshot'].items()}
+    out['post_first_observations']={str(n):copy.deepcopy(v[0]) for n,v in e['post_roles'].items() if v}
+    out['pre_geometry_history']=copy.deepcopy(e['pre'])
+    out['group_frames']=[s['frame'] for s in e['group']]
+    out['group_observations']=[dict(frame=s['frame'],source=s['source']) for s in e['group']]
+    return out
+
+def freeze_inputs(output):
+    assert not output.exists(),output
+    output.mkdir(parents=True)
+    dependencies={Path(m.__file__).resolve() for m in list(sys.modules.values())
+        if getattr(m,'__file__',None) and str(Path(m.__file__).resolve()).lower().startswith(str(ROOT).lower())
+        and str(m.__file__).endswith('.py')}
+    dependencies.update((NE1/'score.py',OLD/'score.py',DS1/'postseal.py'))
+    dependencies.update((HERE.parent/'ds9_joint_h0_depth/association.py',
+        HERE.parent/'ds9_joint_h0_depth/CONFIG.json',
+        HERE.parent/'ds10_depth_failure_repair/association.py'))
+    # Post-seal figure/report generators cannot alter prediction or scoring.
+    files={p for p in HERE.glob('*.py') if not p.name.startswith('postseal_')}
+    files|=set(HERE.glob('*.json'))|set(HERE.glob('*.md'))|dependencies
+    code={str(p):sha(p) for p in files}
+    for name,(start,stop) in SEGMENTS.items():
+        source=verify_cached_segment(name)
+        old=read(CACHE/name/'public/FREEZE.json')
+        frozen=dict(old,code_sha256=code,branch_policy='Independent real state, frozen F9 group policy; depth-supported first-ever births added only in R11 arms',
+            measurement_cache=source['cache']['DEPTH_OBSERVATIONS.jsonl.gz'],measurement_cache_source_chain=source,
+            new_model_http=0,model_cost_usd=0,no_gt_before_seal=True)
+        public=output/name/'public';public.mkdir(parents=True)
+        write_new(public/'FREEZE.json',frozen)
+
+def state_summary(state):
+    return {str(n):dict(key=list(r['key']),last_frame=r['last_frame'],
+        sample_frames=[s['frame'] for s in r['samples']],
+        latest_fragment_frames=[s['frame'] for s in r['latest_fragment']]) for n,r in state.live.items()}
+
+def plan_births(branch,view,queries,measured,full,mode,segment,disabled=False,group_blocked=False):
+    """One batch: colliding targets never get sequentially stolen by source order."""
+    proposals={};selected={}
+    for q in queries:
+        n=q['source'];q.update(selected_target=None,selected_anchor=None,selected_reference_anchor=None,
+            selected_candidate=None,selection=None,stage_error=None,status='KEEP_NATIVE')
+        if view['frame']==1:q['status']='INITIAL_FRAME_NOT_ASSOCIATED';continue
+        if disabled:q['status']='F9_CONTROL_DISABLED';continue
+        if group_blocked:q['status']='ACTIVE_GROUP_FRAME_BLOCKED';continue
+        target,detail=birth_choice(q['query_observation'],q['candidates'],measured,full,mode,segment)
+        q['selection']=detail
+        if target is None:continue
+        candidate=next(c for c in q['candidates'] if c['public']==target and c['eligible'])
+        q.update(selected_target=target,selected_candidate=copy.deepcopy(candidate),
+            selected_anchor=copy.deepcopy(candidate['anchor']),
+            selected_reference_anchor=copy.deepcopy(candidate['reference_anchor']),status='PROPOSED')
+        proposals[n]=target;selected[n]=candidate
+    conflicts={target for target in proposals.values() if list(proposals.values()).count(target)>1}
+    for q in queries:
+        if q['source'] in proposals and proposals[q['source']] in conflicts:
+            q['status']='TARGET_COLLISION_REJECTED';q['stage_error']='shared_best_target'
+            proposals.pop(q['source']);selected.pop(q['source'])
+    if len(proposals)>2:
+        for q in queries:
+            if q['source'] in proposals:q.update(status='BATCH_CAPACITY_REJECTED',stage_error='existing_transaction_capacity_exceeded')
+        return None,{},'BATCH_CAPACITY_REJECTED'
+    if not proposals:return None,{},'NO_BIRTH_COMMIT'
+    transaction,error=branch.stage_birth_reconnect(view,proposals,selected)
+    for q in queries:
+        if q['source'] in proposals:q.update(status='COMMIT' if transaction else 'STAGE_REJECTED',stage_error=error)
+    return transaction,(proposals if transaction else {}),'COMMIT' if transaction else 'STAGE_REJECTED'
+
+def run_segment(name,output,slice_mode=False,stop_at=None):
+    start,stop=SEGMENTS[name];base=input_dir(name);public=output/name/'public';public.mkdir(parents=True,exist_ok=True)
+    sources=stream(base/'observations.jsonl.gz',base/'profiles.jsonl.gz',stop-start+1)
+    measurements=rows(CACHE/name/'public/DEPTH_OBSERVATIONS.jsonl.gz')
+    assignments={r['frame']:r for r in rows(base/'assignments.jsonl.gz')}
+    suspects={r['frame']:r for r in read(base/'scan_v4.json')['suspects']}
+    config=read(CONFIG_PATH);event_config={'max_episode_seconds':read(EVENT_CONFIG)['max_episode_seconds']}
+    branches={a:DepthNativeBridge(config) for a in EVENT_ARMS}
+    managers={a:DepthNativeManager(a,branches[a],suspects,event_config,assignments) for a in EVENT_ARMS}
+    states={a:DepthState(name,a) for a in EVENT_ARMS}
+    support={a:DepthState(name,a+'_SENSOR_SUPPORT') for a in EVENT_ARMS}
+    memories={a:BirthMemory(name) for a in EVENT_ARMS}
+    processed=observed=0;first_slice=None;candidate_times=[];update_times=[];began=time.perf_counter()
+    birth_counts={a:dict(queries=0,proposals=0,commits=0) for a in EVENT_ARMS}
+    with gzip.open(public/'predictions.jsonl.gz','wt',encoding='utf-8') as predictions, \
+         gzip.open(public/'DEPTH_OBSERVATIONS.jsonl.gz','wt',encoding='utf-8') as obsfile, \
+         gzip.open(public/'DEPTH_STATES.jsonl.gz','wt',encoding='utf-8') as statefile, \
+         gzip.open(public/'TRANSACTIONS.jsonl.gz','wt',encoding='utf-8') as txfile, \
+         gzip.open(public/'BIRTHS.jsonl.gz','wt',encoding='utf-8') as births, \
+         (public/'PUBLISH_LEDGER.jsonl').open('x',encoding='utf-8') as publisher:
+        for index,((row,profiles),measured) in enumerate(zip(sources,measurements,strict=True)):
+            frame,now=row['frame'],row['time'];received=time.perf_counter()
+            assert frame==index+1 and row['global_frame']==start+index
+            assert (measured['frame'],measured['global_frame'],measured['time'])==(frame,row['global_frame'],now)
+            raw={int(n):v for n,v in measured['adaptive_raw'].items()}
+            restored={int(n):v for n,v in measured['restored'].items()}
+            assert set(raw)==set(restored)=={o['id'] for o in row['observations']}
+            obsfile.write(json.dumps(measured,separators=(',',':'),allow_nan=False)+'\n')
+            output_row={'SAM3_NATIVE':row['native']};event_publish={};birth_rows=[]
+            for arm in EVENT_ARMS:
+                branch,manager,state,rawstate,memory=branches[arm],managers[arm],states[arm],support[arm],memories[arm]
+                state_measured=raw if arm=='R11_RAW' else restored
+                full=measured['adaptive_full' if arm=='R11_RAW' else 'restored_full']
+                mode='RAW_DEPTH' if arm=='R11_RAW' else 'RESTORED_DEPTH'
+                previous=dict(branch.previous);pre_version=branch.version
+                signal=manager.before(row,profiles);episode=manager.active;group_blocked=bool(episode)
+                if episode and episode['suspect_frame']==frame:
+                    episode['depth_frozen']=state.freeze(episode,frame,branch.epochs,manager.source_generation)
+                    for n in episode['member_sources']:state.break_source(n);rawstate.break_source(n)
+                view=branch.preview(frame,now,row['observations'],profiles)
+                snapshot=dict(bank_anchors={str(k):copy.deepcopy(v.get('anchor')) for k,v in branch.engine.bank.items()},
+                    alias_targets={str(n):a['target'] for n,a in branch.engine.alias.items()},
+                    group_reserved_targets=sorted({k for s in branch.engine.protected.values() for k in s['member_public']}),
+                    epochs=copy.deepcopy(branch.epochs),source_generations=copy.deepcopy(manager.source_generation),
+                    previous_mapping=previous,birth_raw_arm=rawstate.arm)
+                queries=memory.before(row,profiles,manager,rawstate,view)
+                for query in queries:
+                    query['current_measurement_fact_id']=state_measured[query['source']]['fact_id']
+                transaction=restore=None
+                if episode and episode['q']==frame:
+                    assert episode['evidence_cutoff_frame']==frame and all(len(s)==1 for s in episode['post_roles'].values())
+                    for n in episode['post_roles']:state.record_pending(n,state_measured[n],frame)
+                    residual=sorted((set(episode['member_sources']) & {o['id'] for o in row['observations']})-set(episode['post_roles']))
+                    legacy,_=numeric_choice(episode);then=time.perf_counter()
+                    choice,detail=_old9.choose(episode,episode['depth_frozen'],state_measured,full,view['mapping'],mode,name)
+                    candidate_times.append(dict(arm=arm,frame=frame,kind='FROZEN_GROUP',seconds=time.perf_counter()-then))
+                    episode['numeric']=dict(choice=choice,detail=detail,legacy_choice=legacy)
+                    mapping=choice_mapping(episode,choice) if choice in ('H1','H2') else None
+                    error=('visible_member_residual_outside_two_member_restore' if residual else 'H0_KEEP_LAWFUL_MAPPING' if choice=='H0' else 'numeric_unresolved')
+                    if mapping and not residual:transaction,error=branch.stage_group_restore(view,episode,mapping)
+                    if transaction is None:
+                        transaction,fallback=branch.local_fallback(view,episode);status=fallback['status'];decision_source='OWN_BRANCH_LOCAL_FALLBACK'
+                    else:
+                        fallback=None;status='COMMIT' if transaction['changes'] else 'RESOLVE_NO_ID_CHANGE';decision_source=arm
+                    restore=dict(status=status,selected_choice=choice,numeric_choice=legacy,mapping=mapping,
+                        unassigned_member_residual=residual,changes=transaction['changes'],stage_error=error,
+                        decision_source=decision_source,fallback=fallback,
+                        mapping_relative_to_native={n:k for n,k in (mapping or {}).items() if n!=k},
+                        published_previous_mapping={n:previous.get(n) for n in episode['post_roles']},
+                        baseline_preview_mapping={n:view['mapping'][n] for n in episode['post_roles']},
+                        changed_relative_to_previous={n:k for n,k in transaction['mapping'].items() if n in previous and previous[n]!=k})
+                    episode['restore']=restore;manager.finish(frame,status)
+                then=time.perf_counter()
+                birth_tx,changes,birth_status=plan_births(branch,view,queries,state_measured,full,mode,name,
+                    disabled=arm=='F9_RESTORED',group_blocked=group_blocked)
+                candidate_times.append(dict(arm=arm,frame=frame,kind='BIRTH',seconds=time.perf_counter()-then))
+                assert transaction is None or birth_tx is None
+                if birth_tx is not None:transaction=birth_tx
+                ids,trace=branch.commit_once(view,transaction)
+                assert all(c['veto'] for c in trace.get('native_first_auto_edge_checks',[]))
+                assert not any(e.get('kind')=='reconnect' and e.get('accepted') for e in trace.get('events',[]))
+                post_restored=(set(episode['post_roles']) if episode and restore and restore['status'] in ('COMMIT','RESOLVE_NO_ID_CHANGE') else set())
+                classes={};then=time.perf_counter()
+                for item in row['observations']:
+                    n=item['id'];cls=manager.frame_class.get(n,'SOURCE_OBSERVATION')
+                    if n in post_restored:cls='RESTORED_POST'
+                    if cls in ('SOURCE_OBSERVATION','RESTORED_POST') and (item['area']<64 or item.get('neighbors') or not branch.engine.quality(item)):
+                        cls='QUALITY_OR_CONTACT_RISK'
+                    classes[n]=cls
+                    for target,facts in ((state,state_measured),(rawstate,raw)):
+                        target.update(n,facts[n],frame,now,ids[n],branch.epochs.get(n),manager._generation(n,frame),cls)
+                memory.after(row,profiles,manager,rawstate,ids,classes,raw)
+                update_times.append(dict(arm=arm,frame=frame,seconds=time.perf_counter()-then))
+                manager.after(row,profiles)
+                output_row[arm]=emit(row,ids)
+                for q in queries:
+                    q['actual_first_public_id']=ids[q['source']];q['transaction_version']=branch.version
+                birth_counts[arm]['queries']+=len(queries)
+                birth_counts[arm]['proposals']+=sum(q['selected_target'] is not None for q in queries)
+                birth_counts[arm]['commits']+=len(changes)
+                birth_rows.append(dict(frame=frame,global_frame=row['global_frame'],time=now,arm=arm,
+                    baseline_before=copy.deepcopy(view['mapping']),actual_mapping=copy.deepcopy(ids),changes=changes,
+                    status=birth_status,queries=queries,group_blocked=group_blocked,
+                    preframe=snapshot,preframe_version=pre_version,transaction_version=branch.version))
+                statefile.write(json.dumps(dict(frame=frame,global_frame=row['global_frame'],arm=arm,
+                    active_event=episode['id'] if episode else None,signal=signal,live=state_summary(state),
+                    birth_raw_arm=rawstate.arm,birth_raw_live=state_summary(rawstate),observation_classes=classes,
+                    breaks=state.breaks,updates=state.updates,group_count=len(state.groups),pending_count=len(state.pending),
+                    resident_live_objects=len(state.live),resident_cache_samples=sum(len(r['cache']) for r in state.live.values()),
+                    resident_current_samples=sum(len(r['samples']) for r in state.live.values()),
+                    resident_latest_fragment_samples=sum(len(r['latest_fragment']) for r in state.live.values())),
+                    separators=(',',':'),allow_nan=False,default=str)+'\n')
+                txfile.write(json.dumps(dict(frame=frame,global_frame=row['global_frame'],arm=arm,signal=signal,
+                    active_event=episode['id'] if episode else None,restore=restore,birth_restore=dict(status=birth_status,changes=changes),
+                    actual_published_mapping=ids,previous_mapping=previous,epochs=branch.epochs,
+                    bank_anchors={str(k):copy.deepcopy(v.get('anchor')) for k,v in branch.engine.bank.items()},
+                    controller_trace=trace),separators=(',',':'),allow_nan=False,default=str)+'\n')
+                if episode and restore:
+                    event_publish[arm]=dict(episode=episode['id'],q=frame,original_frame=row['global_frame'],post_sample_count=1,
+                        first_public_pair={str(n):ids[n] for n in episode['post_roles']},decision_source=restore['decision_source'])
+            prediction=dict(frame=frame,global_frame=row['global_frame'],time=now,variants=output_row)
+            line=json.dumps(prediction,separators=(',',':'),allow_nan=False)+'\n'
+            line_sha=hashlib.sha256(line.encode()).hexdigest();predictions.write(line)
+            birth_hashes={};birth_publish={}
+            for b in birth_rows:
+                b['prediction_row_sha256']=line_sha
+                bline=json.dumps(b,separators=(',',':'),allow_nan=False)+'\n';births.write(bline)
+                birth_hashes[b['arm']]=hashlib.sha256(bline.encode()).hexdigest()
+                if b['queries']:
+                    birth_publish[b['arm']]=dict(transaction_version=b['transaction_version'],changes=b['changes'],
+                        post_sample_count=1,first_public_ids={str(q['source']):q['actual_first_public_id'] for q in b['queries']})
+                if first_slice is None and b['arm']=='R11_RAW':
+                    qualified=next((q for q in b['queries'] if frame>1 and not b['group_blocked'] and
+                        q['query_observation']['quality'] and not q['query_observation']['neighbors'] and
+                        q['query_observation']['area']>=64 and raw[q['source']]['core_usable'] and
+                        any(c['eligible'] for c in q['candidates'])),None)
+                    if qualified:
+                        first_slice=dict(segment=name,q=frame,original_q=row['global_frame'],source=qualified['source'],
+                            arm=b['arm'],query=copy.deepcopy(qualified),birth_row=copy.deepcopy(b),
+                            measured=copy.deepcopy(measured),first_public_id=qualified['actual_first_public_id'])
+            published=time.perf_counter()
+            publisher.write(json.dumps(dict(frame=frame,global_frame=row['global_frame'],extraction_seconds=0.,
+                measurement_policy='EXACT_SEALED_DS10_CURRENT_MEASUREMENT_CACHE',receive_to_publish_seconds=published-received,
+                prediction_row_sha256=line_sha,birth_row_sha256=birth_hashes,event_publish=event_publish,
+                birth_publish=birth_publish),separators=(',',':'),allow_nan=False)+'\n')
+            processed+=1;observed+=len(row['observations'])
+            if frame%50==0:print(name,frame,'/',stop-start+1,'birth_commits', {a:v['commits'] for a,v in birth_counts.items()},flush=True)
+            if stop_at is not None and frame==stop_at:break
+            if slice_mode and first_slice:break
+    write_new(public/'EVENTS.json',{a:[public_event(e) for e in managers[a].events] for a in EVENT_ARMS})
+    write_new(public/'COMMON_STATE_SHADOW.json',[])
+    write_new(public/'PERFORMANCE.json',dict(candidate_times=candidate_times,state_update_times=update_times,
+        note='Local CPU one native/OpenCV thread; exact measurement cache, no reprojection timing; elapsed includes state and logs.'))
+    write_new(public/'RUN_SUMMARY.json',dict(segment=name,frames=processed,observations=observed,
+        elapsed_seconds=time.perf_counter()-began,peak_python_allocated_bytes=None,birth_counts=birth_counts,
+        state={a:dict(updates=states[a].updates,breaks=states[a].breaks,groups=len(states[a].groups),pending=len(states[a].pending)) for a in EVENT_ARMS},
+        new_model_http=0,model_cost_usd=0))
+    if stop_at is not None:return first_slice
+    if slice_mode:
+        if first_slice:write_new(output/'REAL_SLICE.json',first_slice)
+        return first_slice
+    assert processed==stop-start+1
+    filenames=('predictions.jsonl.gz','DEPTH_OBSERVATIONS.jsonl.gz','DEPTH_STATES.jsonl.gz','BIRTHS.jsonl.gz',
+        'TRANSACTIONS.jsonl.gz','PUBLISH_LEDGER.jsonl','EVENTS.json','RUN_SUMMARY.json','FREEZE.json','COMMON_STATE_SHADOW.json','PERFORMANCE.json')
+    write_new(public/'PREDICTIONS_SEALED.json',dict(status='SEALED_AWAITING_INDEPENDENT_SCORING',segment=name,
+        original_frames=[start,stop],frames=processed,published_frames=processed,arms=list(ARMS),new_model_http=0,model_cost_usd=0,
+        artifacts_sha256={f:sha(public/f) for f in filenames}))
+    return first_slice
+
+def main(mode='full'):
+    assert mode in ('slice','full')
+    output=HERE/('slice' if mode=='slice' else 'run');freeze_inputs(output)
+    first=None
+    for name in SEGMENTS:
+        value=run_segment(name,output,slice_mode=mode=='slice')
+        if value and first is None:first=value
+        if mode=='slice' and value:return
+    if mode=='slice':
+        write_new(output/'REAL_SLICE.json',dict(status='NO_AUTOMATIC_ELIGIBLE_BIRTH_SLICE',no_GT_selection=True))
+        return
+    write_new(output/'ALL_PREDICTIONS_SEALED.json',dict(status='ALL_FOUR_BRANCHES_FOUR_SEGMENTS_SEALED',
+        seals={name:sha(output/name/'public/PREDICTIONS_SEALED.json') for name in SEGMENTS},
+        frames=sum(b-a+1 for a,b in SEGMENTS.values()),arms=list(ARMS),new_model_http=0,model_cost_usd=0))
+
+if __name__=='__main__':main(sys.argv[1] if len(sys.argv)>1 else 'full')

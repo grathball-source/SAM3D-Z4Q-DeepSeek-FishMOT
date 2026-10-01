@@ -1,0 +1,81 @@
+{
+  "status": "PASS_BEFORE_GT_SCORING",
+  "checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "frames": 200,
+      "native_equals_DS10": true,
+      "F9_equals_DS10_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "6a995ca7b7fc25a68b14a31e9beded7b4bcb839baf821a22bb28c61bfd1cb877"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frames": 205,
+      "native_equals_DS10": true,
+      "F9_equals_DS10_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "ee9c16c6c7b9eed9af242d8d479d90b8c556b7460fa1b597e0ee8545e87b77a1"
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frames": 360,
+      "native_equals_DS10": true,
+      "F9_equals_DS10_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "e4b641e272273e05cc7d57cd6faff2941d635e8c4ad3124a885334c641530cb2"
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frames": 706,
+      "native_equals_DS10": true,
+      "F9_equals_DS10_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "c32e80de451c583d5e7607e775ad39040a27b760162a0ff593217907e9dda446"
+    }
+  ],
+  "all_seal_sha256": "ce244b52befab25da34f1161abf0430bc49e5e7b0a3a5747e7c4ed5b2fb9b892",
+  "source_precision_exceptions": [],
+  "source_comparison": "exact typed DS10 cached facts; no floating tolerance",
+  "q_publication_checks": 57,
+  "frozen_sample_fact_checks": 848,
+  "group_checks": 1152,
+  "birth_semantic_checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "birth_frame_rows": 600,
+      "birth_first_publication_queries": 117,
+      "birth_past_fact_checks": 1890,
+      "birth_selection_reconstructions": 12,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "birth_frame_rows": 615,
+      "birth_first_publication_queries": 141,
+      "birth_past_fact_checks": 5040,
+      "birth_selection_reconstructions": 8,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "birth_frame_rows": 1080,
+      "birth_first_publication_queries": 180,
+      "birth_past_fact_checks": 9546,
+      "birth_selection_reconstructions": 60,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "birth_frame_rows": 2118,
+      "birth_first_publication_queries": 183,
+      "birth_past_fact_checks": 25404,
+      "birth_selection_reconstructions": 36,
+      "birth_true_commits": 0
+    }
+  ],
+  "all_true_first_births_including_initial_and_unknown_retained": true,
+  "zero_deleted_masks": true,
+  "all_prediction_seals_verified": true,
+  "access_seal_sha256": "de610aa571682ed4188a0ffbb38f8bd533885a62e38431fe88bace2b4faae865"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "GT_FREE_INPUT_REVIEW_COMPLETE",
+  "created_utc": "2026-10-01T08:28:11.181422+00:00",
+  "code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\input_contract.py",
+    "bytes": 16295,
+    "sha256": "bfa4d07f76e75d38359e4311186a48ace85dbb424ced86b11bec2c986ac2cad0"
+  },
+  "inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\SOURCE_INVENTORY.json",
+    "bytes": 1141034,
+    "sha256": "2cece1b154a0e535aa046305e32c0f258f3922078822192e4c05b034fc8dd210"
+  },
+  "census": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds11_depth_birth_reconnect\\BIRTH_INPUT_CENSUS.json",
+    "bytes": 260395,
+    "sha256": "fc6f777d526cdcc7bc4aff97897c4672c5d12fd9ffad472c95c1916315690f2b"
+  },
+  "aggregate": {
+    "frames": 1471,
+    "observations": 39208,
+    "initial": 102,
+    "first_ever_births": 105,
+    "returns": 27,
+    "disappearances": 124
+  },
+  "identity_contract": {
+    "namespace": "SEGMENT_LOCAL_NATIVE_ID",
+    "first_frame": "INITIAL_FRAME_NOT_RECONNECT_TRIAL",
+    "birth": "NATIVE_NEVER_SEEN_IN_THIS_SEGMENT_AND_FRAME_GT_1",
+    "return_policy": "PREVIOUSLY_SEEN_NATIVE_NO_NEW_RECONNECT_RETRY",
+    "generation": "INCREMENT_ON_EVERY_NONCONTIGUOUS_NATIVE_APPEARANCE",
+    "alias_state": "OWN_DS11_BRANCH_ONLY"
+  },
+  "history_contract": {
+    "raw_required": true,
+    "min_contiguous_clean_points": 3,
+    "endpoint": "LAST_CLEAN_POINT_MUST_EQUAL_SOURCE_LAST_APPEARANCE",
+    "breaks": [
+      "SOURCE_GAP",
+      "NONINCREASING_TIME",
+      "PUBLIC_EPOCH_OR_SOURCE_GENERATION_CHANGE",
+      "QUALITY_CONTACT_RISK",
+      "UNUSABLE_RAW_CORE"
+    ],
+    "forbidden": "DO_NOT_REUSE_EARLY_LATEST_FRAGMENT_ACROSS_FINAL_RISK; DO_NOT_JOIN_FRAGMENTS; NO_CROSS_SEGMENT_HISTORY"
+  },
+  "measurement_contract": {
+    "reuse": "DS10_CURRENT_FRAME_PURE_ADAPTIVE_RAW_AND_V2_COHORT_FACTS",
+    "conditional_on": "SAME_MASK_RAW_AND_NATIVE_V2_BYTES_PRODUCER_CODE_CONFIG_CHECKS",
+    "fields": "raw/core_usable/fact_id; v2/core/cohorts/actual_selected_mad/core_mad_semantics/provenance_counts; timing",
+    "v2": "UPSTREAM_RGB_I_PLUS_1_OFFLINE; CURRENT_INFERRED_NOT_AUTHENTIC_DEPTH_CERTIFICATE",
+    "state_cache_reuse": false,
+    "physical_surface_identity": "UNKNOWN",
+    "physical_calibration_accuracy": "UNKNOWN"
+  },
+  "observed_extra_risk_boundary": "DS10 manager additionally excludes GROUP_MEASUREMENT, ANONYMOUS_RESIDUAL, POST_UNASSIGNED and unresolved event observations. If DS11 omits that manager, input-clean alone cannot certify one fish.",
+  "data_time_contract": "global=start+local-1; source/profile/native/measurement timestamps exact; profiles evidence<=current; available_at=max(rgb_us,depth_us)",
+  "no_GT_scoring_reference_reads": true,
+  "no_API": true,
+  "no_v3": true,
+  "no_new_SAM3": true
+}

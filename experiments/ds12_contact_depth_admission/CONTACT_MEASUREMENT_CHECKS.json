@@ -1,0 +1,1128 @@
+{
+  "status": "PASS",
+  "synthetic_tests": 11,
+  "GT_read": false,
+  "RGB_read": false,
+  "real_source_acceptance": {
+    "status": "PASS_CURRENT_SOURCE_RECONSTRUCTION_NOT_IDENTITY_SUCCESS",
+    "segment": "feeding_000000_000199",
+    "frame": 14,
+    "global_frame": 13,
+    "native": 24,
+    "automatic_selection": "EARLIEST_FIRST_EVER_NATIVE_CONTACT_BIRTH_WITH_AREA64_AND_INPUT_CONFIDENCE; NO_GT",
+    "actual_observation": {
+      "id": 24,
+      "mask": "n:24",
+      "box": [
+        87.0,
+        181.0,
+        121.0,
+        230.0
+      ],
+      "area": 365,
+      "score_birth": 0.9179486632347107,
+      "presence": null,
+      "depth": {
+        "n": 195,
+        "valid_fraction": 0.5342465753424658,
+        "median": 1116.7901611328125,
+        "mad": 40.5396728515625
+      },
+      "neighbors": [
+        9,
+        23
+      ]
+    },
+    "source_list": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000000_000199\\sources.json",
+      "bytes": 98899,
+      "sha256": "841b7f23c76941d2455a96c6231fdb6cb624649d462fbfa0ed1981b885601f9f"
+    },
+    "assignment_source": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\feeding_first_two_s0p\\private\\feeding_000000_000199\\assignments.jsonl.gz",
+      "bytes": 243655,
+      "sha256": "b56a44b68330aee00ee18e2526293000c7efc564f07e1311b31ec54361ab4a21"
+    },
+    "measurement_cache": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds10_depth_failure_repair\\run\\feeding_000000_000199\\public\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 3157674,
+      "sha256": "09af020ded4bdb6866ad7aa77ed0c48606410d0abd8a35d33bbf86f28c7cfc4b"
+    },
+    "raw_certificate": {
+      "native": 24,
+      "source": "RAW_SENSOR_CONTACT_CORE",
+      "mode": "RAW_DEPTH",
+      "segment": "feeding_000000_000199",
+      "frame": 14,
+      "global_frame": 13,
+      "time": 1789706581.113,
+      "fact_id": "feeding_000000_000199/F14/n:24/contact/raw",
+      "source_measurement_fact_id": "feeding_000000_000199/F14/n:24/adaptive/raw",
+      "source_binding": {
+        "global_frame": 13,
+        "raw_npz": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000013.npz",
+          "bytes": 775687,
+          "sha256": "fdae9c1495df9388aa43e24bbdc31173a32a39ff82230722a35d7e39ec996135"
+        },
+        "native_npy": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000013.npy",
+          "bytes": 1474688,
+          "sha256": "947acd369f179a6b6885390bd21e4414d1902f1b7210fb2410e49650fa3edd27"
+        },
+        "actual_fields_read": [
+          "depth_mm",
+          "source_index"
+        ],
+        "native_fields_read": [
+          "current_native_depth_mm"
+        ],
+        "aligned_depth": {
+          "dtype": "<f4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "a92707024a0761eb2f9be2f0bc1f751863fa6d8f82166ac0a1aa7f765890f6dd"
+        },
+        "aligned_source_index": {
+          "dtype": "<i4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "427c20686e971750daa7d531c8a6a72455f107feb6569e5bd0b9d4cae2feae2c"
+        },
+        "native_depth": {
+          "dtype": "<f4",
+          "shape": [
+            576,
+            640
+          ],
+          "sha256": "7c1af43b1c9e14bbb9345a87dde16c78f3f1f366a6d93de2823b856e5ee77a3d"
+        },
+        "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+        "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM; NOT_ASSUMED_EQUAL_TO_ALIGNED_Z",
+        "sensor_valid_range": "UNKNOWN",
+        "suspect_above_mm": 5000,
+        "suspect_policy": "DIAGNOSTIC_ONLY; NO_NEW_EXCLUSION",
+        "RGB_read": false,
+        "GT_read": false,
+        "frame": 14,
+        "time": 1789706581.113,
+        "measurement_fact_ids": {
+          "1": "feeding_000000_000199/F14/n:1/adaptive/raw",
+          "2": "feeding_000000_000199/F14/n:2/adaptive/raw",
+          "3": "feeding_000000_000199/F14/n:3/adaptive/raw",
+          "4": "feeding_000000_000199/F14/n:4/adaptive/raw",
+          "5": "feeding_000000_000199/F14/n:5/adaptive/raw",
+          "6": "feeding_000000_000199/F14/n:6/adaptive/raw",
+          "7": "feeding_000000_000199/F14/n:7/adaptive/raw",
+          "8": "feeding_000000_000199/F14/n:8/adaptive/raw",
+          "9": "feeding_000000_000199/F14/n:9/adaptive/raw",
+          "10": "feeding_000000_000199/F14/n:10/adaptive/raw",
+          "11": "feeding_000000_000199/F14/n:11/adaptive/raw",
+          "12": "feeding_000000_000199/F14/n:12/adaptive/raw",
+          "13": "feeding_000000_000199/F14/n:13/adaptive/raw",
+          "14": "feeding_000000_000199/F14/n:14/adaptive/raw",
+          "15": "feeding_000000_000199/F14/n:15/adaptive/raw",
+          "16": "feeding_000000_000199/F14/n:16/adaptive/raw",
+          "17": "feeding_000000_000199/F14/n:17/adaptive/raw",
+          "18": "feeding_000000_000199/F14/n:18/adaptive/raw",
+          "19": "feeding_000000_000199/F14/n:19/adaptive/raw",
+          "20": "feeding_000000_000199/F14/n:20/adaptive/raw",
+          "21": "feeding_000000_000199/F14/n:21/adaptive/raw",
+          "22": "feeding_000000_000199/F14/n:22/adaptive/raw",
+          "23": "feeding_000000_000199/F14/n:23/adaptive/raw",
+          "24": "feeding_000000_000199/F14/n:24/adaptive/raw"
+        }
+      },
+      "actual_depth": {
+        "dtype": "<f4",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "a92707024a0761eb2f9be2f0bc1f751863fa6d8f82166ac0a1aa7f765890f6dd"
+      },
+      "actual_source_index": {
+        "dtype": "<i4",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "427c20686e971750daa7d531c8a6a72455f107feb6569e5bd0b9d4cae2feae2c"
+      },
+      "actual_provenance": null,
+      "actual_native_depth": {
+        "dtype": "<f4",
+        "shape": [
+          576,
+          640
+        ],
+        "sha256": "7c1af43b1c9e14bbb9345a87dde16c78f3f1f366a6d93de2823b856e5ee77a3d"
+      },
+      "mask_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "534793172a5ee410c59abd07e1d7856df81d43dff21151e4444c1fbfae7b0e30"
+      },
+      "core_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "01f2b3567fbfe6c2c284c84f72bf9119aa64d8c923595b79fe17c9ed35855c61"
+      },
+      "selected_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "638443370f860f2fe8d13b4925a3b40f6d0c7800aac53e2ab83323a641ab4847"
+      },
+      "source_index_policy": "SHARED_ACROSS_ANY_MASK_EXCLUDED; SAME_MASK_ROW_MAJOR_CANONICAL_ONCE",
+      "mask_area": 365,
+      "shared_mask_pixels_excluded": 21,
+      "geometric_components": {
+        "method": "EXCLUSIVE_COMPONENT_ADAPTIVE_L2_CORE",
+        "formula": "distance >= max(1.5, min(3.0, 0.5 * component_max_distance))",
+        "connectivity": 8,
+        "distance_type": "DIST_L2",
+        "distance_mask": "EXACT_NEAREST_ZERO_INTEGER_GRID",
+        "arithmetic": "INTEGER_SQUARED_SELECTION; FLOAT64_SQRT_METADATA",
+        "exterior": "ZERO_PADDED_COMPONENT_CROP",
+        "mask_area": 365,
+        "exclusive_area": 344,
+        "roi_area": 143,
+        "component_count": 1,
+        "pieces": [
+          {
+            "component_id": 1,
+            "area": 344,
+            "dt_max_px": 4.242640687119285,
+            "dt_max_squared_px": 18,
+            "threshold_px": 2.1213203435596424,
+            "samples": 143,
+            "core_component_ids": [
+              "feeding_000000_000199/F14/n:24/contact/core:1",
+              "feeding_000000_000199/F14/n:24/contact/core:2"
+            ],
+            "core_empty_reason": null
+          }
+        ],
+        "samples_meaning": "GEOMETRIC_ROI_PIXELS_NOT_VALID_DEPTH_MEASUREMENTS",
+        "surface_identity": "UNKNOWN"
+      },
+      "components": [
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:1",
+          "core_label": 1,
+          "geometric_component_id": 1,
+          "area": 41,
+          "n": 33,
+          "valid_fraction": 0.8048780487804879,
+          "median": 1157.329833984375,
+          "mad": 5.5809326171875,
+          "q10": 1130.6213134765626,
+          "q25": 1145.14501953125,
+          "q75": 1161.627685546875,
+          "q90": 1163.0487548828125,
+          "median_mm": 1157.329833984375,
+          "actual_mad_mm": 5.5809326171875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 41,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 33,
+          "finite_positive_before_source_exclusions": 33,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 0,
+          "inferred_pixels_excluded": 0,
+          "provenance_counts": null,
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              41
+            ],
+            "sha256": "0e0babf9cb368766d98d6f056d9be1f7cd9ae22b00d7d9b3ac0d75273dba3101"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              33
+            ],
+            "sha256": "cf2a3012b77fb537b5129c0d53f233a276a095d2a1b90f1b25c6e5fcae6fa996"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "82af35c6dc5d1f56ba95b15852d776f94b91692abb988bbe30fae7c3de880689"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              33
+            ],
+            "sha256": "fc1062ab5b1828a71e0a4e9532bf727650120d351b954ab272308b351647d83a"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "4ffbde39f8fadf3e40f8d0a097560cd942b7e6b9337be66320a519ec87dbbbe5"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN"
+        },
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:2",
+          "core_label": 2,
+          "geometric_component_id": 1,
+          "area": 102,
+          "n": 42,
+          "valid_fraction": 0.4117647058823529,
+          "median": 1064.82861328125,
+          "mad": 10.93499755859375,
+          "q10": 1046.4486450195313,
+          "q25": 1055.1577453613281,
+          "q75": 1076.2236022949219,
+          "q90": 1082.46376953125,
+          "median_mm": 1064.82861328125,
+          "actual_mad_mm": 10.93499755859375,
+          "scale_mm": 16.212227380371093,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 102,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 42,
+          "finite_positive_before_source_exclusions": 42,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 0,
+          "inferred_pixels_excluded": 0,
+          "provenance_counts": null,
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              102
+            ],
+            "sha256": "74ef5c8f8c1fafae13217172d74e4bf0b697b9f69495c263d3cb5aecf03506c3"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              42
+            ],
+            "sha256": "9f272f809f57537a4a1a19a5c315e38156c97296a0dd4c89db9da4a69453f2bf"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              42
+            ],
+            "sha256": "3d2ccd175712732ff603652cefdf93d15bc37f6cdc3b20a7cce8bc304d7b088e"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              42
+            ],
+            "sha256": "b10c144e3b473739fe3a7219e165ab0872ccb2c42f3373c9404e792cf7e859da"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              42
+            ],
+            "sha256": "d7c33fcbbcd69abf42dcbecfad9f40ce3ff09546b086c29366b7ba9ae921e635"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN"
+        }
+      ],
+      "qualified_components": [
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:1",
+          "core_label": 1,
+          "geometric_component_id": 1,
+          "area": 41,
+          "n": 33,
+          "valid_fraction": 0.8048780487804879,
+          "median": 1157.329833984375,
+          "mad": 5.5809326171875,
+          "q10": 1130.6213134765626,
+          "q25": 1145.14501953125,
+          "q75": 1161.627685546875,
+          "q90": 1163.0487548828125,
+          "median_mm": 1157.329833984375,
+          "actual_mad_mm": 5.5809326171875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 41,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 33,
+          "finite_positive_before_source_exclusions": 33,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 0,
+          "inferred_pixels_excluded": 0,
+          "provenance_counts": null,
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              41
+            ],
+            "sha256": "0e0babf9cb368766d98d6f056d9be1f7cd9ae22b00d7d9b3ac0d75273dba3101"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              33
+            ],
+            "sha256": "cf2a3012b77fb537b5129c0d53f233a276a095d2a1b90f1b25c6e5fcae6fa996"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "82af35c6dc5d1f56ba95b15852d776f94b91692abb988bbe30fae7c3de880689"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              33
+            ],
+            "sha256": "fc1062ab5b1828a71e0a4e9532bf727650120d351b954ab272308b351647d83a"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "4ffbde39f8fadf3e40f8d0a097560cd942b7e6b9337be66320a519ec87dbbbe5"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN",
+          "weight": 0.5
+        },
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:2",
+          "core_label": 2,
+          "geometric_component_id": 1,
+          "area": 102,
+          "n": 42,
+          "valid_fraction": 0.4117647058823529,
+          "median": 1064.82861328125,
+          "mad": 10.93499755859375,
+          "q10": 1046.4486450195313,
+          "q25": 1055.1577453613281,
+          "q75": 1076.2236022949219,
+          "q90": 1082.46376953125,
+          "median_mm": 1064.82861328125,
+          "actual_mad_mm": 10.93499755859375,
+          "scale_mm": 16.212227380371093,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 102,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 42,
+          "finite_positive_before_source_exclusions": 42,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 0,
+          "inferred_pixels_excluded": 0,
+          "provenance_counts": null,
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              102
+            ],
+            "sha256": "74ef5c8f8c1fafae13217172d74e4bf0b697b9f69495c263d3cb5aecf03506c3"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              42
+            ],
+            "sha256": "9f272f809f57537a4a1a19a5c315e38156c97296a0dd4c89db9da4a69453f2bf"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              42
+            ],
+            "sha256": "3d2ccd175712732ff603652cefdf93d15bc37f6cdc3b20a7cce8bc304d7b088e"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              42
+            ],
+            "sha256": "b10c144e3b473739fe3a7219e165ab0872ccb2c42f3373c9404e792cf7e859da"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              42
+            ],
+            "sha256": "d7c33fcbbcd69abf42dcbecfad9f40ce3ff09546b086c29366b7ba9ae921e635"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN",
+          "weight": 0.5
+        }
+      ],
+      "qualified_component_count": 2,
+      "core_usable": true,
+      "eligible": true,
+      "neighbors": [
+        {
+          "native": 9,
+          "mask_area": 767,
+          "overlap_pixels": 21,
+          "pixels_within_8_neighbor_dilation": 72,
+          "duplicate_mask": false,
+          "query_contained_in_neighbor": false,
+          "neighbor_contained_in_query": false,
+          "shared_native_source_indices": 9,
+          "physical_relationship": "UNKNOWN"
+        },
+        {
+          "native": 23,
+          "mask_area": 664,
+          "overlap_pixels": 0,
+          "pixels_within_8_neighbor_dilation": 4,
+          "duplicate_mask": false,
+          "query_contained_in_neighbor": false,
+          "neighbor_contained_in_query": false,
+          "shared_native_source_indices": 0,
+          "physical_relationship": "UNKNOWN"
+        }
+      ],
+      "mixture_policy": "EQUAL_QUALIFIED_COMPONENTS_FIXED_BEFORE_CANDIDATE_COMPARISON",
+      "missing_policy": "COMMON_UNINFORMATIVE_NO_COMMIT",
+      "measured_fraction_denominator": "ACTUAL_CORE_COMPONENT_GEOMETRIC_AREA",
+      "inferred_measurement_certificate": false,
+      "qualification": "CURRENT_MEASUREMENT_AND_SOURCE_ONLY_NOT_FISH_IDENTITY",
+      "physical_surface_identity": "UNKNOWN",
+      "background_suspicion": "UNKNOWN",
+      "physical_accuracy": "UNKNOWN",
+      "sensor_valid_range": "UNKNOWN",
+      "upstream_RGB_and_future_used": false,
+      "no_future_frame_read": true,
+      "no_history_write": true,
+      "no_depth_threshold_segmentation": true,
+      "certificate_sha256": "e656cd69798db14ff2022f05cfc372f1a0a9a06bcd631f34a129d065c7f5eafc"
+    },
+    "retained_v2_certificate": {
+      "native": 24,
+      "source": "NATIVE_V2_RETAINED_CONTACT_CORE",
+      "mode": "RESTORED_DEPTH",
+      "segment": "feeding_000000_000199",
+      "frame": 14,
+      "global_frame": 13,
+      "time": 1789706581.113,
+      "fact_id": "feeding_000000_000199/F14/n:24/contact/retained",
+      "source_measurement_fact_id": "feeding_000000_000199/F14/n:24/adaptive/v2/retained",
+      "source_binding": {
+        "global_frame": 13,
+        "raw_npz": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000013.npz",
+          "bytes": 775687,
+          "sha256": "fdae9c1495df9388aa43e24bbdc31173a32a39ff82230722a35d7e39ec996135"
+        },
+        "native_npy": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000013.npy",
+          "bytes": 1474688,
+          "sha256": "947acd369f179a6b6885390bd21e4414d1902f1b7210fb2410e49650fa3edd27"
+        },
+        "actual_fields_read": [
+          "depth_mm",
+          "source_index"
+        ],
+        "native_fields_read": [
+          "current_native_depth_mm"
+        ],
+        "aligned_depth": {
+          "dtype": "<f4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "a92707024a0761eb2f9be2f0bc1f751863fa6d8f82166ac0a1aa7f765890f6dd"
+        },
+        "aligned_source_index": {
+          "dtype": "<i4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "427c20686e971750daa7d531c8a6a72455f107feb6569e5bd0b9d4cae2feae2c"
+        },
+        "native_depth": {
+          "dtype": "<f4",
+          "shape": [
+            576,
+            640
+          ],
+          "sha256": "7c1af43b1c9e14bbb9345a87dde16c78f3f1f366a6d93de2823b856e5ee77a3d"
+        },
+        "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+        "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM; NOT_ASSUMED_EQUAL_TO_ALIGNED_Z",
+        "sensor_valid_range": "UNKNOWN",
+        "suspect_above_mm": 5000,
+        "suspect_policy": "DIAGNOSTIC_ONLY; NO_NEW_EXCLUSION",
+        "RGB_read": false,
+        "GT_read": false,
+        "frame": 14,
+        "time": 1789706581.113,
+        "restored_source": {
+          "global_frame": 13,
+          "index": 13,
+          "future_support": "UPSTREAM_I_PLUS_1_OFFLINE",
+          "native_path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_01.h5",
+          "native_row": 13,
+          "native_index": 13,
+          "color_index": 13,
+          "color_timestamp_us": 1789706581113000,
+          "depth_timestamp_us": 1789706581115000,
+          "delta_us": -2000,
+          "source": "SAVED_NATIVE_V2_REPROJECTED_OFFLINE_RGB_FUTURE_SUPPORTED",
+          "fields_read": [
+            "depth_mm",
+            "original_depth_mm",
+            "filled_mask",
+            "invalidated_reason"
+          ],
+          "coordinates": "recorded RGB camera-Z millimeters; 360x640",
+          "provenance_codes": {
+            "0": "missing",
+            "1": "retained original measurement",
+            "2": "LingBot original-zero estimate",
+            "3": "LingBot nonzero replacement"
+          },
+          "provenance_counts": {
+            "0": 59580,
+            "1": 159432,
+            "2": 11388,
+            "3": 0
+          },
+          "RGB_read_now": false,
+          "GT_read_now": false,
+          "model_called_now": false,
+          "upstream_RGB_used": true,
+          "upstream_next_frame_cleaning": true,
+          "physical_accuracy": "UNKNOWN",
+          "causal_equivalence": "NOT_ESTABLISHED"
+        },
+        "native_h5": {
+          "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration_feeding_20260929\\full_v2\\depth_restored_v2_01.h5",
+          "bytes": 454302078,
+          "sha256": "1476b8e7ab97ebea085e91cc9c1331a5daa54ec4c1084f7a12c4170cb620fd52"
+        },
+        "measurement_fact_ids": {
+          "1": "feeding_000000_000199/F14/n:1/adaptive/v2/retained",
+          "2": "feeding_000000_000199/F14/n:2/adaptive/v2/retained",
+          "3": "feeding_000000_000199/F14/n:3/adaptive/v2/retained",
+          "4": "feeding_000000_000199/F14/n:4/adaptive/v2/retained",
+          "5": "feeding_000000_000199/F14/n:5/adaptive/v2/retained",
+          "6": "feeding_000000_000199/F14/n:6/adaptive/v2/retained",
+          "7": "feeding_000000_000199/F14/n:7/adaptive/v2/retained",
+          "8": "feeding_000000_000199/F14/n:8/adaptive/v2/retained",
+          "9": "feeding_000000_000199/F14/n:9/adaptive/v2/retained",
+          "10": "feeding_000000_000199/F14/n:10/adaptive/v2/retained",
+          "11": "feeding_000000_000199/F14/n:11/adaptive/v2/retained",
+          "12": "feeding_000000_000199/F14/n:12/adaptive/v2/retained",
+          "13": "feeding_000000_000199/F14/n:13/adaptive/v2/retained",
+          "14": "feeding_000000_000199/F14/n:14/adaptive/v2/retained",
+          "15": "feeding_000000_000199/F14/n:15/adaptive/v2/retained",
+          "16": "feeding_000000_000199/F14/n:16/adaptive/v2/retained",
+          "17": "feeding_000000_000199/F14/n:17/adaptive/v2/retained",
+          "18": "feeding_000000_000199/F14/n:18/adaptive/v2/retained",
+          "19": "feeding_000000_000199/F14/n:19/adaptive/v2/retained",
+          "20": "feeding_000000_000199/F14/n:20/adaptive/v2/retained",
+          "21": "feeding_000000_000199/F14/n:21/adaptive/v2/retained",
+          "22": "feeding_000000_000199/F14/n:22/adaptive/v2/retained",
+          "23": "feeding_000000_000199/F14/n:23/adaptive/v2/retained",
+          "24": "feeding_000000_000199/F14/n:24/adaptive/v2/retained"
+        }
+      },
+      "actual_depth": {
+        "dtype": "<f4",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "4fd5f07d19b3f58ac7dfc2e97c5818e1767227004588b820b7940eedb47b7acb"
+      },
+      "actual_source_index": {
+        "dtype": "<i4",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "66b9ae888ca2c9645bb85e848f085b67fae2796449f2c141446fdcccea1fab91"
+      },
+      "actual_provenance": {
+        "dtype": "|u1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "7cecfb79e843e3e49af5eeff1f2f6555eed41b481372ffbd5e24a38887810ec2"
+      },
+      "actual_native_depth": {
+        "dtype": "<f4",
+        "shape": [
+          576,
+          640
+        ],
+        "sha256": "7c1af43b1c9e14bbb9345a87dde16c78f3f1f366a6d93de2823b856e5ee77a3d"
+      },
+      "mask_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "534793172a5ee410c59abd07e1d7856df81d43dff21151e4444c1fbfae7b0e30"
+      },
+      "core_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "01f2b3567fbfe6c2c284c84f72bf9119aa64d8c923595b79fe17c9ed35855c61"
+      },
+      "selected_binding": {
+        "dtype": "|b1",
+        "shape": [
+          360,
+          640
+        ],
+        "sha256": "fa14fddf9b722298ae2804b728beda7138828d8febea47c4deed55192e3e6a64"
+      },
+      "source_index_policy": "SHARED_ACROSS_ANY_MASK_EXCLUDED; SAME_MASK_ROW_MAJOR_CANONICAL_ONCE",
+      "mask_area": 365,
+      "shared_mask_pixels_excluded": 21,
+      "geometric_components": {
+        "method": "EXCLUSIVE_COMPONENT_ADAPTIVE_L2_CORE",
+        "formula": "distance >= max(1.5, min(3.0, 0.5 * component_max_distance))",
+        "connectivity": 8,
+        "distance_type": "DIST_L2",
+        "distance_mask": "EXACT_NEAREST_ZERO_INTEGER_GRID",
+        "arithmetic": "INTEGER_SQUARED_SELECTION; FLOAT64_SQRT_METADATA",
+        "exterior": "ZERO_PADDED_COMPONENT_CROP",
+        "mask_area": 365,
+        "exclusive_area": 344,
+        "roi_area": 143,
+        "component_count": 1,
+        "pieces": [
+          {
+            "component_id": 1,
+            "area": 344,
+            "dt_max_px": 4.242640687119285,
+            "dt_max_squared_px": 18,
+            "threshold_px": 2.1213203435596424,
+            "samples": 143,
+            "core_component_ids": [
+              "feeding_000000_000199/F14/n:24/contact/core:1",
+              "feeding_000000_000199/F14/n:24/contact/core:2"
+            ],
+            "core_empty_reason": null
+          }
+        ],
+        "samples_meaning": "GEOMETRIC_ROI_PIXELS_NOT_VALID_DEPTH_MEASUREMENTS",
+        "surface_identity": "UNKNOWN"
+      },
+      "components": [
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:1",
+          "core_label": 1,
+          "geometric_component_id": 1,
+          "area": 41,
+          "n": 33,
+          "valid_fraction": 0.8048780487804879,
+          "median": 1157.329833984375,
+          "mad": 5.5809326171875,
+          "q10": 1130.6213134765626,
+          "q25": 1145.14501953125,
+          "q75": 1161.627685546875,
+          "q90": 1163.0487548828125,
+          "median_mm": 1157.329833984375,
+          "actual_mad_mm": 5.5809326171875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 41,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 33,
+          "finite_positive_before_source_exclusions": 40,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 7,
+          "inferred_pixels_excluded": 7,
+          "provenance_counts": {
+            "0": 1,
+            "1": 33,
+            "2": 7,
+            "3": 0
+          },
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              41
+            ],
+            "sha256": "0e0babf9cb368766d98d6f056d9be1f7cd9ae22b00d7d9b3ac0d75273dba3101"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              33
+            ],
+            "sha256": "cf2a3012b77fb537b5129c0d53f233a276a095d2a1b90f1b25c6e5fcae6fa996"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "82af35c6dc5d1f56ba95b15852d776f94b91692abb988bbe30fae7c3de880689"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              33
+            ],
+            "sha256": "fc1062ab5b1828a71e0a4e9532bf727650120d351b954ab272308b351647d83a"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "4ffbde39f8fadf3e40f8d0a097560cd942b7e6b9337be66320a519ec87dbbbe5"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN"
+        },
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:2",
+          "core_label": 2,
+          "geometric_component_id": 1,
+          "area": 102,
+          "n": 36,
+          "valid_fraction": 0.35294117647058826,
+          "median": 1064.82861328125,
+          "mad": 8.71044921875,
+          "q10": 1047.2965087890625,
+          "q25": 1057.9659423828125,
+          "q75": 1073.6537170410156,
+          "q90": 1080.89794921875,
+          "median_mm": 1064.82861328125,
+          "actual_mad_mm": 8.71044921875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 102,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 36,
+          "finite_positive_before_source_exclusions": 88,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 52,
+          "inferred_pixels_excluded": 52,
+          "provenance_counts": {
+            "0": 14,
+            "1": 36,
+            "2": 52,
+            "3": 0
+          },
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              102
+            ],
+            "sha256": "74ef5c8f8c1fafae13217172d74e4bf0b697b9f69495c263d3cb5aecf03506c3"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              36
+            ],
+            "sha256": "4ac0034abb40df0f7789b7dfdf755fefa2c3182cbd5456476e41674be833d0ed"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              36
+            ],
+            "sha256": "ffb441eb6c817d806a4c4189146542591a6d525b69a90d9e7d128416d4fb1cd9"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              36
+            ],
+            "sha256": "560d399e3a010dc25d7c43d7b87ad43b5919712596b27407c4a944f8eeca3415"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              36
+            ],
+            "sha256": "ed5572574f37a2891004cbd473a95e629fbb37e4769a63ad3e7dcc36b5558d7a"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN"
+        }
+      ],
+      "qualified_components": [
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:1",
+          "core_label": 1,
+          "geometric_component_id": 1,
+          "area": 41,
+          "n": 33,
+          "valid_fraction": 0.8048780487804879,
+          "median": 1157.329833984375,
+          "mad": 5.5809326171875,
+          "q10": 1130.6213134765626,
+          "q25": 1145.14501953125,
+          "q75": 1161.627685546875,
+          "q90": 1163.0487548828125,
+          "median_mm": 1157.329833984375,
+          "actual_mad_mm": 5.5809326171875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 41,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 33,
+          "finite_positive_before_source_exclusions": 40,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 7,
+          "inferred_pixels_excluded": 7,
+          "provenance_counts": {
+            "0": 1,
+            "1": 33,
+            "2": 7,
+            "3": 0
+          },
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              41
+            ],
+            "sha256": "0e0babf9cb368766d98d6f056d9be1f7cd9ae22b00d7d9b3ac0d75273dba3101"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              33
+            ],
+            "sha256": "cf2a3012b77fb537b5129c0d53f233a276a095d2a1b90f1b25c6e5fcae6fa996"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "82af35c6dc5d1f56ba95b15852d776f94b91692abb988bbe30fae7c3de880689"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              33
+            ],
+            "sha256": "fc1062ab5b1828a71e0a4e9532bf727650120d351b954ab272308b351647d83a"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              33
+            ],
+            "sha256": "4ffbde39f8fadf3e40f8d0a097560cd942b7e6b9337be66320a519ec87dbbbe5"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN",
+          "weight": 0.5
+        },
+        {
+          "component_id": "feeding_000000_000199/F14/n:24/contact/core:2",
+          "core_label": 2,
+          "geometric_component_id": 1,
+          "area": 102,
+          "n": 36,
+          "valid_fraction": 0.35294117647058826,
+          "median": 1064.82861328125,
+          "mad": 8.71044921875,
+          "q10": 1047.2965087890625,
+          "q25": 1057.9659423828125,
+          "q75": 1073.6537170410156,
+          "q90": 1080.89794921875,
+          "median_mm": 1064.82861328125,
+          "actual_mad_mm": 8.71044921875,
+          "scale_mm": 15.0,
+          "qualified": true,
+          "exclusion_reasons": [],
+          "geometric_samples": 102,
+          "geometric_samples_meaning": "CORE_AREA_NOT_MEASURED_N",
+          "selected_source_points": 36,
+          "finite_positive_before_source_exclusions": 88,
+          "shared_source_pixels_excluded": 0,
+          "duplicate_pixels_excluded": 0,
+          "duplicate_within_piece_before_canonical": 0,
+          "unmapped_pixels": 0,
+          "invalid_native_source_pixels": 52,
+          "inferred_pixels_excluded": 52,
+          "provenance_counts": {
+            "0": 14,
+            "1": 36,
+            "2": 52,
+            "3": 0
+          },
+          "aligned_above_5000_mm_diagnostic_n": 0,
+          "native_above_5000_mm_diagnostic_n": 0,
+          "core_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              102
+            ],
+            "sha256": "74ef5c8f8c1fafae13217172d74e4bf0b697b9f69495c263d3cb5aecf03506c3"
+          },
+          "selected_pixel_binding": {
+            "dtype": "<i8",
+            "shape": [
+              36
+            ],
+            "sha256": "4ac0034abb40df0f7789b7dfdf755fefa2c3182cbd5456476e41674be833d0ed"
+          },
+          "selected_depth_binding": {
+            "dtype": "<f4",
+            "shape": [
+              36
+            ],
+            "sha256": "ffb441eb6c817d806a4c4189146542591a6d525b69a90d9e7d128416d4fb1cd9"
+          },
+          "selected_native_index_binding": {
+            "dtype": "<i4",
+            "shape": [
+              36
+            ],
+            "sha256": "560d399e3a010dc25d7c43d7b87ad43b5919712596b27407c4a944f8eeca3415"
+          },
+          "selected_native_values_binding": {
+            "dtype": "<f4",
+            "shape": [
+              36
+            ],
+            "sha256": "ed5572574f37a2891004cbd473a95e629fbb37e4769a63ad3e7dcc36b5558d7a"
+          },
+          "physical_surface_identity": "UNKNOWN",
+          "background_suspicion": "UNKNOWN",
+          "fragment_identity": "UNKNOWN",
+          "weight": 0.5
+        }
+      ],
+      "qualified_component_count": 2,
+      "core_usable": true,
+      "eligible": true,
+      "neighbors": [
+        {
+          "native": 9,
+          "mask_area": 767,
+          "overlap_pixels": 21,
+          "pixels_within_8_neighbor_dilation": 72,
+          "duplicate_mask": false,
+          "query_contained_in_neighbor": false,
+          "neighbor_contained_in_query": false,
+          "shared_native_source_indices": 19,
+          "physical_relationship": "UNKNOWN"
+        },
+        {
+          "native": 23,
+          "mask_area": 664,
+          "overlap_pixels": 0,
+          "pixels_within_8_neighbor_dilation": 4,
+          "duplicate_mask": false,
+          "query_contained_in_neighbor": false,
+          "neighbor_contained_in_query": false,
+          "shared_native_source_indices": 0,
+          "physical_relationship": "UNKNOWN"
+        }
+      ],
+      "mixture_policy": "EQUAL_QUALIFIED_COMPONENTS_FIXED_BEFORE_CANDIDATE_COMPARISON",
+      "missing_policy": "COMMON_UNINFORMATIVE_NO_COMMIT",
+      "measured_fraction_denominator": "ACTUAL_CORE_COMPONENT_GEOMETRIC_AREA",
+      "inferred_measurement_certificate": false,
+      "qualification": "CURRENT_MEASUREMENT_AND_SOURCE_ONLY_NOT_FISH_IDENTITY",
+      "physical_surface_identity": "UNKNOWN",
+      "background_suspicion": "UNKNOWN",
+      "physical_accuracy": "UNKNOWN",
+      "sensor_valid_range": "UNKNOWN",
+      "upstream_RGB_and_future_used": true,
+      "no_future_frame_read": true,
+      "no_history_write": true,
+      "no_depth_threshold_segmentation": true,
+      "certificate_sha256": "bef62410340b4dec69da850883673f35a606078792fd0818baba614d41335add"
+    },
+    "all_current_masks": 24,
+    "every_mask_checked": true,
+    "certification": "PIXEL_SOURCE_AND_MEASUREMENT_QUALITY_ONLY",
+    "physical_surface_identity": "UNKNOWN",
+    "background_suspicion": "UNKNOWN",
+    "GT_read": false,
+    "RGB_read": false
+  }
+}

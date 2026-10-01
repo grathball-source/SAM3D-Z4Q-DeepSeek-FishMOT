@@ -1,0 +1,757 @@
+{
+  "status": "PASS_READONLY_POSTSEAL_RESULT_REVIEW",
+  "created_utc": "2026-10-01T11:52:10.985414+00:00",
+  "scope": {
+    "new_GT_reads": 0,
+    "new_source_pixel_reads": 0,
+    "prediction_replays": 0,
+    "TrackEval_reruns": 0,
+    "frozen_files_modified": 0,
+    "method": "stdlib SHA256/counts and sealed publication, transaction, state and existing RGB-identity audit inspection"
+  },
+  "evidence": {
+    "ALL_PREDICTIONS_SEALED.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\ALL_PREDICTIONS_SEALED.json",
+      "sha256": "3e8dd1976ffaf56835658b3ca6eea1e39df3c62a91bd8468c394667021718c3f"
+    },
+    "ACCESS_SEALED.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\ACCESS_SEALED.json",
+      "sha256": "715340353f70d38eb0e1a682f8080bb430f06c6c22468c0c59b9a305a71a0ccb"
+    },
+    "SCORING_SEALED.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\SCORING_SEALED.json",
+      "sha256": "ddebb3251ce01562c5b2e770bff976d2efa6ba8777b3265f54f6dd502ab26ac2"
+    },
+    "VERIFICATION.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\VERIFICATION.json",
+      "sha256": "c99890c276e910b2272a7996928d45790258a76df13fc9bc8a9fc720742e4c52"
+    },
+    "METRICS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\METRICS.json",
+      "sha256": "84f3eddb4f44f75f07c5c0e76510cdf014be0d2566f9cba1ce64b65a7a53df12"
+    },
+    "EVENT_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\EVENT_AUDIT.json",
+      "sha256": "070f6c6ab716a94bd9b804da4bfce8a99efa5c66be2a7b3c7d33c2b7370198c7"
+    },
+    "BIRTH_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\BIRTH_AUDIT.json",
+      "sha256": "03962b19ee3f8af779d67eb0cea4547ce012c17e0c461aeaff18a220ddcb475e"
+    },
+    "SWITCH_LEDGER.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\run\\SWITCH_LEDGER.json",
+      "sha256": "14c71f271b2aad9b55870fe9a506c26716db047435667b37e046c3e6313277f5"
+    }
+  },
+  "integrity": {
+    "score_artifacts_verified": 7,
+    "prediction_artifacts_verified": 48,
+    "unique_frozen_code_files_verified": 76,
+    "all_access_and_scoring_bindings_match": true,
+    "prior_sealed_pre_GT_source_recomputation": {
+      "packets": 101,
+      "object_certificates": 5430,
+      "components": 9850,
+      "comparison": "TYPED_EXACT_WITHOUT_FLOAT_TOLERANCE",
+      "exceptions": []
+    },
+    "source_recomputation_not_repeated_by_this_review": true
+  },
+  "cohort": {
+    "frames": 1471,
+    "arms": [
+      "SAM3_NATIVE",
+      "F9_RESTORED",
+      "R12_RAW",
+      "R12_RESTORED"
+    ],
+    "frame_arm_outputs": 5884,
+    "predictions_per_arm": 39208,
+    "GT_objects_from_sealed_metrics": 39706,
+    "segments": [
+      {
+        "segment": "feeding_000000_000199",
+        "frames": 200,
+        "IDSW": {
+          "SAM3_NATIVE": 10,
+          "F9_RESTORED": 10,
+          "R12_RAW": 10,
+          "R12_RESTORED": 10
+        }
+      },
+      {
+        "segment": "feeding_000351_000555",
+        "frames": 205,
+        "IDSW": {
+          "SAM3_NATIVE": 22,
+          "F9_RESTORED": 22,
+          "R12_RAW": 22,
+          "R12_RESTORED": 22
+        }
+      },
+      {
+        "segment": "feeding_000701_001060",
+        "frames": 360,
+        "IDSW": {
+          "SAM3_NATIVE": 36,
+          "F9_RESTORED": 36,
+          "R12_RAW": 36,
+          "R12_RESTORED": 36
+        }
+      },
+      {
+        "segment": "feeding_001201_001906",
+        "frames": 706,
+        "IDSW": {
+          "SAM3_NATIVE": 40,
+          "F9_RESTORED": 38,
+          "R12_RAW": 37,
+          "R12_RESTORED": 37
+        }
+      }
+    ],
+    "noninitial_true_firstborn_sources_per_arm": 105,
+    "initial_identities_recorded_not_associated_per_arm": 102,
+    "birth_query_rows_per_event_arm": 207,
+    "birth_frame_rows_per_event_arm": 1471,
+    "new_branch_status_counts": {
+      "INITIAL_FRAME_NOT_ASSOCIATED": 102,
+      "KEEP_NATIVE": 57,
+      "ACTIVE_GROUP_FRAME_BLOCKED": 47,
+      "COMMIT": 1
+    },
+    "fixed_cohort_not_selected_using_GT": true
+  },
+  "metrics": {
+    "pooled": {
+      "SAM3_NATIVE": {
+        "IDF1": 80.97675951035305,
+        "HOTA": 79.96405589527662,
+        "AssA": 71.53049876161319,
+        "DetA": 89.73060596672879,
+        "IDSW": 108,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "F9_RESTORED": {
+        "IDF1": 80.97675951035305,
+        "HOTA": 80.01204931871929,
+        "AssA": 71.6157634532626,
+        "DetA": 89.73060596672879,
+        "IDSW": 106,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "R12_RAW": {
+        "IDF1": 81.02998200572775,
+        "HOTA": 80.04715891806174,
+        "AssA": 71.67787189121145,
+        "DetA": 89.73060596672879,
+        "IDSW": 105,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "R12_RESTORED": {
+        "IDF1": 81.02998200572775,
+        "HOTA": 80.04715891806174,
+        "AssA": 71.67787189121145,
+        "DetA": 89.73060596672879,
+        "IDSW": 105,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      }
+    },
+    "pooled_delta": {
+      "F9_RESTORED_vs_SAM3_NATIVE": {
+        "IDF1": 0.0,
+        "HOTA": 0.04799342344267643,
+        "AssA": 0.08526469164941375,
+        "DetA": 0.0,
+        "IDSW": -2,
+        "FP": 0,
+        "FN": 0
+      },
+      "R12_RAW_vs_SAM3_NATIVE": {
+        "IDF1": 0.05322249537469759,
+        "HOTA": 0.08310302278512438,
+        "AssA": 0.14737312959826454,
+        "DetA": 0.0,
+        "IDSW": -3,
+        "FP": 0,
+        "FN": 0
+      },
+      "R12_RESTORED_vs_SAM3_NATIVE": {
+        "IDF1": 0.05322249537469759,
+        "HOTA": 0.08310302278512438,
+        "AssA": 0.14737312959826454,
+        "DetA": 0.0,
+        "IDSW": -3,
+        "FP": 0,
+        "FN": 0
+      },
+      "R12_RAW_vs_F9_RESTORED": {
+        "IDF1": 0.05322249537469759,
+        "HOTA": 0.03510959934244795,
+        "AssA": 0.06210843794885079,
+        "DetA": 0.0,
+        "IDSW": -1,
+        "FP": 0,
+        "FN": 0
+      },
+      "R12_RESTORED_vs_F9_RESTORED": {
+        "IDF1": 0.05322249537469759,
+        "HOTA": 0.03510959934244795,
+        "AssA": 0.06210843794885079,
+        "DetA": 0.0,
+        "IDSW": -1,
+        "FP": 0,
+        "FN": 0
+      },
+      "R12_RESTORED_vs_R12_RAW": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "delta_units": "percentage points for rates, integer counts for IDSW/FP/FN",
+    "pooled_direct_TrackEval_not_segment_average": true,
+    "summable_counts_verified": [
+      "IDSW",
+      "FP",
+      "FN",
+      "GT",
+      "predictions"
+    ],
+    "FP_FN_DetA_unchanged": true,
+    "tracking_gate": true,
+    "birth_plus_tracking_gate": true,
+    "satisfied_arms": [
+      "R12_RAW",
+      "R12_RESTORED"
+    ],
+    "statistical_significance_evaluated": false
+  },
+  "publication": {
+    "native_and_F9_all_frames_exact_DS11": true,
+    "R12_RAW_and_R12_RESTORED_all_frames_exact": true,
+    "mask_reference_order_preserved": true,
+    "integer_ids_unique_per_frame": true,
+    "actual_transactions_match_predictions": true,
+    "changed_frames": {
+      "feeding_000000_000199": {
+        "F9_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_SAM3_NATIVE": 0,
+        "R12_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_R12_RAW": 0
+      },
+      "feeding_000351_000555": {
+        "F9_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_SAM3_NATIVE": 0,
+        "R12_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_R12_RAW": 0
+      },
+      "feeding_000701_001060": {
+        "F9_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_SAM3_NATIVE": 0,
+        "R12_RESTORED_vs_SAM3_NATIVE": 0,
+        "R12_RAW_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_F9_RESTORED": 0,
+        "R12_RESTORED_vs_R12_RAW": 0
+      },
+      "feeding_001201_001906": {
+        "F9_RESTORED_vs_SAM3_NATIVE": 263,
+        "R12_RAW_vs_SAM3_NATIVE": 263,
+        "R12_RESTORED_vs_SAM3_NATIVE": 263,
+        "R12_RAW_vs_F9_RESTORED": 21,
+        "R12_RESTORED_vs_F9_RESTORED": 21,
+        "R12_RESTORED_vs_R12_RAW": 0
+      }
+    },
+    "new_increment_vs_F9": {
+      "segment": "feeding_001201_001906",
+      "local_frames": [
+        686,
+        706
+      ],
+      "global_frames": [
+        1886,
+        1906
+      ],
+      "inclusive_count": 21,
+      "only_mask": "n:198",
+      "F9_public_id": 198,
+      "R12_public_id": 176
+    },
+    "changed_vs_native": 263,
+    "new_21_frames_overlap_old_F9_changes": true,
+    "do_not_add_21_to_263": true,
+    "body_transaction_and_first_publication_hashes_bound": true,
+    "current_query_class": "QUALITY_OR_CONTACT_RISK",
+    "current_contact_frame_not_in_identity_or_birth_raw_pre_samples": true
+  },
+  "switches": {
+    "SAM3_NATIVE": {
+      "total": 108,
+      "segment_counts": {
+        "feeding_000000_000199": 10,
+        "feeding_000351_000555": 22,
+        "feeding_000701_001060": 36,
+        "feeding_001201_001906": 40
+      },
+      "removed_vs_native": [],
+      "added_vs_native": [],
+      "removed_vs_F9": [],
+      "added_vs_F9": [
+        {
+          "frame": 1239,
+          "gt_id": 4,
+          "native_mask": "n:167",
+          "native_id": 167,
+          "public_id": 167,
+          "matched_iou": 1.0,
+          "from_public_id": 136,
+          "to_public_id": 167,
+          "segment": "feeding_001201_001906",
+          "local_frame": 39
+        },
+        {
+          "frame": 1745,
+          "gt_id": 2,
+          "native_mask": "n:190",
+          "native_id": 190,
+          "public_id": 190,
+          "matched_iou": 0.6756756756756757,
+          "from_public_id": 188,
+          "to_public_id": 190,
+          "segment": "feeding_001201_001906",
+          "local_frame": 545
+        }
+      ]
+    },
+    "F9_RESTORED": {
+      "total": 106,
+      "segment_counts": {
+        "feeding_000000_000199": 10,
+        "feeding_000351_000555": 22,
+        "feeding_000701_001060": 36,
+        "feeding_001201_001906": 38
+      },
+      "removed_vs_native": [
+        {
+          "frame": 1239,
+          "gt_id": 4,
+          "native_mask": "n:167",
+          "native_id": 167,
+          "public_id": 167,
+          "matched_iou": 1.0,
+          "from_public_id": 136,
+          "to_public_id": 167,
+          "segment": "feeding_001201_001906",
+          "local_frame": 39
+        },
+        {
+          "frame": 1745,
+          "gt_id": 2,
+          "native_mask": "n:190",
+          "native_id": 190,
+          "public_id": 190,
+          "matched_iou": 0.6756756756756757,
+          "from_public_id": 188,
+          "to_public_id": 190,
+          "segment": "feeding_001201_001906",
+          "local_frame": 545
+        }
+      ],
+      "added_vs_native": [],
+      "removed_vs_F9": [],
+      "added_vs_F9": []
+    },
+    "R12_RAW": {
+      "total": 105,
+      "segment_counts": {
+        "feeding_000000_000199": 10,
+        "feeding_000351_000555": 22,
+        "feeding_000701_001060": 36,
+        "feeding_001201_001906": 37
+      },
+      "removed_vs_native": [
+        {
+          "frame": 1239,
+          "gt_id": 4,
+          "native_mask": "n:167",
+          "native_id": 167,
+          "public_id": 167,
+          "matched_iou": 1.0,
+          "from_public_id": 136,
+          "to_public_id": 167,
+          "segment": "feeding_001201_001906",
+          "local_frame": 39
+        },
+        {
+          "frame": 1745,
+          "gt_id": 2,
+          "native_mask": "n:190",
+          "native_id": 190,
+          "public_id": 190,
+          "matched_iou": 0.6756756756756757,
+          "from_public_id": 188,
+          "to_public_id": 190,
+          "segment": "feeding_001201_001906",
+          "local_frame": 545
+        },
+        {
+          "frame": 1886,
+          "gt_id": 4,
+          "native_mask": "n:198",
+          "native_id": 198,
+          "public_id": 198,
+          "matched_iou": 0.8767772511848341,
+          "from_public_id": 176,
+          "to_public_id": 198,
+          "segment": "feeding_001201_001906",
+          "local_frame": 686
+        }
+      ],
+      "added_vs_native": [],
+      "removed_vs_F9": [
+        {
+          "frame": 1886,
+          "gt_id": 4,
+          "native_mask": "n:198",
+          "native_id": 198,
+          "public_id": 198,
+          "matched_iou": 0.8767772511848341,
+          "from_public_id": 176,
+          "to_public_id": 198,
+          "segment": "feeding_001201_001906",
+          "local_frame": 686
+        }
+      ],
+      "added_vs_F9": []
+    },
+    "R12_RESTORED": {
+      "total": 105,
+      "segment_counts": {
+        "feeding_000000_000199": 10,
+        "feeding_000351_000555": 22,
+        "feeding_000701_001060": 36,
+        "feeding_001201_001906": 37
+      },
+      "removed_vs_native": [
+        {
+          "frame": 1239,
+          "gt_id": 4,
+          "native_mask": "n:167",
+          "native_id": 167,
+          "public_id": 167,
+          "matched_iou": 1.0,
+          "from_public_id": 136,
+          "to_public_id": 167,
+          "segment": "feeding_001201_001906",
+          "local_frame": 39
+        },
+        {
+          "frame": 1745,
+          "gt_id": 2,
+          "native_mask": "n:190",
+          "native_id": 190,
+          "public_id": 190,
+          "matched_iou": 0.6756756756756757,
+          "from_public_id": 188,
+          "to_public_id": 190,
+          "segment": "feeding_001201_001906",
+          "local_frame": 545
+        },
+        {
+          "frame": 1886,
+          "gt_id": 4,
+          "native_mask": "n:198",
+          "native_id": 198,
+          "public_id": 198,
+          "matched_iou": 0.8767772511848341,
+          "from_public_id": 176,
+          "to_public_id": 198,
+          "segment": "feeding_001201_001906",
+          "local_frame": 686
+        }
+      ],
+      "added_vs_native": [],
+      "removed_vs_F9": [
+        {
+          "frame": 1886,
+          "gt_id": 4,
+          "native_mask": "n:198",
+          "native_id": 198,
+          "public_id": 198,
+          "matched_iou": 0.8767772511848341,
+          "from_public_id": 176,
+          "to_public_id": 198,
+          "segment": "feeding_001201_001906",
+          "local_frame": 686
+        }
+      ],
+      "added_vs_F9": []
+    }
+  },
+  "attribution": {
+    "old_group_correct_commits": {
+      "F9_RESTORED": 2,
+      "R12_RAW": 2,
+      "R12_RESTORED": 2
+    },
+    "old_group_correct_nochange": {
+      "F9_RESTORED": 0,
+      "R12_RAW": 0,
+      "R12_RESTORED": 0
+    },
+    "old_F9_switches_removed": 2,
+    "new_birth_additional_switch_removed": 1,
+    "new_contact_births_per_new_arm": 1,
+    "distinct_new_recovered_events": 1,
+    "two_arms_not_independent_replications": true,
+    "endpoint_mapping_correct_commit": {
+      "F9_RESTORED": 0,
+      "R12_RAW": 1,
+      "R12_RESTORED": 1
+    },
+    "certified_physical_restore_count": {
+      "F9_RESTORED": 0,
+      "R12_RAW": 1,
+      "R12_RESTORED": 1
+    }
+  },
+  "physical_reference": {
+    "commits": [
+      {
+        "arm": "R12_RAW",
+        "segment": "feeding_001201_001906",
+        "frame": 686,
+        "global_frame": 1886,
+        "source": 198,
+        "selected_target": 176,
+        "selected_anchor": {
+          "frame": 657,
+          "native_id": 176,
+          "mask": "n:176",
+          "canonical_id": 176
+        },
+        "selected_reference_anchor": {
+          "frame": 657,
+          "time": 1789706642.386,
+          "native_id": 176,
+          "mask": "n:176",
+          "canonical_id": 176,
+          "source_generation": 1,
+          "public_epoch": 1
+        },
+        "actual_first_public_id": 176,
+        "post_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.8767772511848341,
+          "second_iou": 0.003401360544217687
+        },
+        "anchor_match": {
+          "local_frame": 657,
+          "native_source": 176,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.922077922077922,
+          "second_iou": 0.0
+        },
+        "actual_bank_anchor_match": {
+          "local_frame": 657,
+          "native_source": 176,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.922077922077922,
+          "second_iou": 0.0
+        },
+        "anchor_current_relation": "SAME",
+        "selected_source_origin_vs_clean": "SAME",
+        "selected_actual_bank_vs_clean": "SAME",
+        "certified_physical_restore_qualification": "SAME_QUERY_CLEAN_BANK_AND_SOURCE_ORIGIN_RGB_REFERENCE"
+      },
+      {
+        "arm": "R12_RESTORED",
+        "segment": "feeding_001201_001906",
+        "frame": 686,
+        "global_frame": 1886,
+        "source": 198,
+        "selected_target": 176,
+        "selected_anchor": {
+          "frame": 657,
+          "native_id": 176,
+          "mask": "n:176",
+          "canonical_id": 176
+        },
+        "selected_reference_anchor": {
+          "frame": 657,
+          "time": 1789706642.386,
+          "native_id": 176,
+          "mask": "n:176",
+          "canonical_id": 176,
+          "source_generation": 1,
+          "public_epoch": 1
+        },
+        "actual_first_public_id": 176,
+        "post_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.8767772511848341,
+          "second_iou": 0.003401360544217687
+        },
+        "anchor_match": {
+          "local_frame": 657,
+          "native_source": 176,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.922077922077922,
+          "second_iou": 0.0
+        },
+        "actual_bank_anchor_match": {
+          "local_frame": 657,
+          "native_source": 176,
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.922077922077922,
+          "second_iou": 0.0
+        },
+        "anchor_current_relation": "SAME",
+        "selected_source_origin_vs_clean": "SAME",
+        "selected_actual_bank_vs_clean": "SAME",
+        "certified_physical_restore_qualification": "SAME_QUERY_CLEAN_BANK_AND_SOURCE_ORIGIN_RGB_REFERENCE"
+      }
+    ],
+    "selected_old_source_origin_global_frame": 1443,
+    "selected_pre_fragment_points": 19,
+    "selected_pre_fragment_unique_RGB_matches": 19,
+    "selected_pre_fragment_GT_identity": 4,
+    "all_required_relations_same": true,
+    "reference_scope": "existing human-edited RGB identity correspondence",
+    "physical_depth_GT": false,
+    "pixel_surface_GT": false,
+    "physical_surface_identity": "UNKNOWN",
+    "unknown_and_not_committed_rows_retained": true
+  },
+  "active_depth_evidence": [
+    {
+      "arm": "R12_RAW",
+      "frame": 686,
+      "global_frame": 1886,
+      "source": 198,
+      "selected_target": 176,
+      "actual_first_public_id": 176,
+      "query_neighbors": [
+        157
+      ],
+      "admission_body_sha256": "eb2e6b6305d9e2f351ed8511f58bd8fbc66b68759b3de226dddfc5793daa76b8",
+      "candidate_count": 6,
+      "best": "OLD:176",
+      "runner_up": "NEW",
+      "joint_log_margin": 4.052215200919099,
+      "minimum_log_odds": 2.1972245773362196,
+      "geometry_log_lr": 3.816345705624686,
+      "depth_log_lr": 0.23586949529441226,
+      "stored_geometry_column_top": "OLD:176",
+      "stored_geometry_column_margin": 3.045128961463979,
+      "no_counterfactual_replay": true,
+      "reference_frame": 657,
+      "full_gap_seconds": 0.9639999866485596,
+      "qualified_components": [
+        {
+          "component_id": "feeding_001201_001906/F686/n:198/contact/core:1",
+          "n": 28,
+          "area": 34,
+          "valid_fraction": 0.8235294117647058,
+          "median_mm": 1142.8526611328125,
+          "actual_mad_mm": 7.947265625,
+          "scale_mm": 15.0,
+          "weight": 0.5
+        },
+        {
+          "component_id": "feeding_001201_001906/F686/n:198/contact/core:2",
+          "n": 45,
+          "area": 54,
+          "valid_fraction": 0.8333333333333334,
+          "median_mm": 1148.0694580078125,
+          "actual_mad_mm": 7.5145263671875,
+          "scale_mm": 15.0,
+          "weight": 0.5
+        }
+      ]
+    },
+    {
+      "arm": "R12_RESTORED",
+      "frame": 686,
+      "global_frame": 1886,
+      "source": 198,
+      "selected_target": 176,
+      "actual_first_public_id": 176,
+      "query_neighbors": [
+        157
+      ],
+      "admission_body_sha256": "c2ee27ff857ca613e747f0b72c2a3b738863c6a2b4f8669d3d5f4eb638b60312",
+      "candidate_count": 6,
+      "best": "OLD:176",
+      "runner_up": "NEW",
+      "joint_log_margin": 4.0979253957675645,
+      "minimum_log_odds": 2.1972245773362196,
+      "geometry_log_lr": 3.816345705624686,
+      "depth_log_lr": 0.2815796901428791,
+      "stored_geometry_column_top": "OLD:176",
+      "stored_geometry_column_margin": 3.045128961463979,
+      "no_counterfactual_replay": true,
+      "reference_frame": 657,
+      "full_gap_seconds": 0.9639999866485596,
+      "qualified_components": [
+        {
+          "component_id": "feeding_001201_001906/F686/n:198/contact/core:1",
+          "n": 28,
+          "area": 34,
+          "valid_fraction": 0.8235294117647058,
+          "median_mm": 1142.8526611328125,
+          "actual_mad_mm": 7.947265625,
+          "scale_mm": 15.0,
+          "weight": 0.5
+        },
+        {
+          "component_id": "feeding_001201_001906/F686/n:198/contact/core:2",
+          "n": 45,
+          "area": 54,
+          "valid_fraction": 0.8333333333333334,
+          "median_mm": 1148.0694580078125,
+          "actual_mad_mm": 7.5145263671875,
+          "scale_mm": 15.0,
+          "weight": 0.5
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Observed improvement on a fixed previously exposed single sequence; no statistical significance or generalization inference.",
+    "Depth contrast is positive, but OLD:176 is already the winner in the stored geometry column with margin 3.045129 > log(9). This is column inspection, not a counterfactual controller replay.",
+    "No same-trigger geometry-only, depth-zero or permuted-depth arm: independent depth discrimination versus contact admission/geometry is not identified.",
+    "Raw and restored have identical current certified components at the commit and identical full publications; no additional restored-depth benefit observed.",
+    "RGB identity consistency does not certify sensor depth accuracy or true fish-surface ownership.",
+    "Preformal float32-DT failure preserved; formal exact integer-distance producer with unchanged strict scorer.",
+    "FREEZE branch_policy R11-arms text is a static leftover; actual ARMS, conditions and sealed outputs are R12."
+  ],
+  "conclusion": "The complete frozen DS12 target is met in both new branches on this cohort. The new gain versus F9 is the one F1886 contact birth sustained over 21 publications. Old F9 group gains remain separately attributed; independent depth causality and physical depth/surface truth remain unestablished."
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "tests": 11,
+  "assertions": [
+    "__main__.ForecastTests.test_at_most_ten_samples_and_no_future_or_frame_join",
+    "__main__.ForecastTests.test_explicit_mixed_version_is_rejected",
+    "__main__.ForecastTests.test_inferred_effective_60_floor_is_not_shrunk",
+    "__main__.ForecastTests.test_last_real_mean_unknown_velocity_and_full_legacy_reference",
+    "__main__.ForecastTests.test_measurement_noise_subtracted_and_old_gap_floor_retained",
+    "__main__.ForecastTests.test_nonfinite_samples_do_not_create_a_local_level_forecast",
+    "__main__.ForecastTests.test_query_changes_only_actual_gap_not_past_diffusion_facts",
+    "__main__.ForecastTests.test_risk_and_version_breaks_via_real_depth_state",
+    "__main__.ForecastTests.test_three_points_changes_mean_but_has_no_diffusion_estimate",
+    "__main__.ForecastTests.test_true_time_units_nonnegative_diffusion_and_larger_process",
+    "__main__.ForecastTests.test_zero_one_two_points_exact_old_dict"
+  ],
+  "elapsed_seconds": 0.010838899994269013,
+  "native_math_threads": 1,
+  "code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\forecast.py",
+      "bytes": 4285,
+      "sha256": "2a67b111b1c54a2271b7d60e4dce7392c67b74f60203a2d303e72a2c6543f777"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\forecast_tests.py",
+      "bytes": 7182,
+      "sha256": "283ea0cc0267f4e16338a978fa7ce7ea6420031eb63dcb683235e5e6db14d886"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds12_contact_depth_admission\\CONFIG.json",
+      "bytes": 4202,
+      "sha256": "0e6d0a544e60c3c13538b2e7cd5b70fbbab0f42e2a4e8d7d2eced10bcfff661f"
+    }
+  ],
+  "old_predict_module_read_only": true,
+  "synthetic_only": true,
+  "gt_read": false,
+  "interpretation": "Causal statistical engineering checks; not physical accuracy or tracking benefit."
+}

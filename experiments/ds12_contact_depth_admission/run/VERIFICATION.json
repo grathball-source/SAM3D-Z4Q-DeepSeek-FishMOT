@@ -1,0 +1,120 @@
+{
+  "status": "PASS_BEFORE_GT_SCORING",
+  "checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "frames": 200,
+      "native_equals_DS11": true,
+      "F9_equals_DS11_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "01ad4e8bacbd57f24f6c48dac9123f963eaf1a01a9c36ed8e9b9be1d057c2495"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frames": 205,
+      "native_equals_DS11": true,
+      "F9_equals_DS11_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "728cdb0a1053feab8af6bcdee7414843c99a70ead1954c7130cc627324975ad4"
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frames": 360,
+      "native_equals_DS11": true,
+      "F9_equals_DS11_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "1a3e48039d8c7d9798b1f325c742c132b33c2e578c99244dbeb6462ecd00f5ea"
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frames": 706,
+      "native_equals_DS11": true,
+      "F9_equals_DS11_F9": true,
+      "source_cache_exact_DS10": true,
+      "old_seal_sha256": "af7508616cab0856e7ba905b5b3cc7f6cc19e8b9dcc8fa12dbb53904790e2c26"
+    }
+  ],
+  "all_seal_sha256": "3e8dd1976ffaf56835658b3ca6eea1e39df3c62a91bd8468c394667021718c3f",
+  "source_precision_exceptions": [],
+  "source_comparison": "exact typed DS10 cached facts; no floating tolerance",
+  "q_publication_checks": 57,
+  "frozen_sample_fact_checks": 848,
+  "group_checks": 1152,
+  "birth_semantic_checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "birth_frame_rows": 600,
+      "birth_first_publication_queries": 117,
+      "birth_past_fact_checks": 1890,
+      "birth_selection_reconstructions": 12,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "birth_frame_rows": 615,
+      "birth_first_publication_queries": 141,
+      "birth_past_fact_checks": 5040,
+      "birth_selection_reconstructions": 8,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "birth_frame_rows": 1080,
+      "birth_first_publication_queries": 180,
+      "birth_past_fact_checks": 9546,
+      "birth_selection_reconstructions": 60,
+      "birth_true_commits": 0
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "birth_frame_rows": 2118,
+      "birth_first_publication_queries": 183,
+      "birth_past_fact_checks": 25404,
+      "birth_selection_reconstructions": 36,
+      "birth_true_commits": 2
+    }
+  ],
+  "all_true_first_births_including_initial_and_unknown_retained": true,
+  "contact_measurement_semantic_checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "contact_frame_rows": 200,
+      "actual_contact_packet_recomputations": 15,
+      "actual_contact_object_recomputations": 804,
+      "actual_contact_components_recomputed": 1466,
+      "contact_source_pixel_statistics_comparison": "TYPED_EXACT_WITHOUT_FLOAT_TOLERANCE",
+      "all_automatic_noninitial_birth_packets_recomputed": true
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "contact_frame_rows": 205,
+      "actual_contact_packet_recomputations": 18,
+      "actual_contact_object_recomputations": 968,
+      "actual_contact_components_recomputed": 1698,
+      "contact_source_pixel_statistics_comparison": "TYPED_EXACT_WITHOUT_FLOAT_TOLERANCE",
+      "all_automatic_noninitial_birth_packets_recomputed": true
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "contact_frame_rows": 360,
+      "actual_contact_packet_recomputations": 35,
+      "actual_contact_object_recomputations": 1890,
+      "actual_contact_components_recomputed": 3376,
+      "contact_source_pixel_statistics_comparison": "TYPED_EXACT_WITHOUT_FLOAT_TOLERANCE",
+      "all_automatic_noninitial_birth_packets_recomputed": true
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "contact_frame_rows": 706,
+      "actual_contact_packet_recomputations": 33,
+      "actual_contact_object_recomputations": 1768,
+      "actual_contact_components_recomputed": 3310,
+      "contact_source_pixel_statistics_comparison": "TYPED_EXACT_WITHOUT_FLOAT_TOLERANCE",
+      "all_automatic_noninitial_birth_packets_recomputed": true
+    }
+  ],
+  "actual_current_raw_and_retained_v2_recomputed_before_gt": true,
+  "zero_deleted_masks": true,
+  "all_prediction_seals_verified": true,
+  "access_seal_sha256": "715340353f70d38eb0e1a682f8080bb430f06c6c22468c0c59b9a305a71a0ccb"
+}

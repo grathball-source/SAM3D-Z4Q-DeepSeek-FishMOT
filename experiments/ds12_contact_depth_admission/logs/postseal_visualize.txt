@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\postseal_visualize.py", line 396, in <module>
+    main()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\postseal_visualize.py", line 366, in main
+    assert not any(ax.images for ax in axes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\postseal_visualize.py", line 366, in <genexpr>
+    assert not any(ax.images for ax in axes)
+                   ^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'images'. Did you mean: 'imag'?

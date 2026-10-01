@@ -1,0 +1,34 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\check_real_slice.py", line 90, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\check_real_slice.py", line 47, in main
+    contacts,cchecks=scorer.recompute_contact_rows(public,name,sources,measurements,publish)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 368, in recompute_contact_rows
+    check_contact_equality(c,expected)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 345, in check_contact_equality
+    check_source_extraction(recorded,actual)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 131, in check_source_extraction
+    walk(new,old,[])
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 126, in walk
+    for key in a:walk(a[key],b[key],path+[key])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 126, in walk
+    for key in a:walk(a[key],b[key],path+[key])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 126, in walk
+    for key in a:walk(a[key],b[key],path+[key])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 129, in walk
+    for i,(x,y) in enumerate(zip(a,b,strict=True)):walk(x,y,path+[i])
+                                                   ^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 126, in walk
+    for key in a:walk(a[key],b[key],path+[key])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\evaluate.py", line 130, in walk
+    else:assert a==b,(path,'cached measurement changed')
+                ^^^^
+AssertionError: (['raw', '2', 'geometric_components', 'pieces', 0, 'dt_max_px'], 'cached measurement changed')

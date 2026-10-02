@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "relations": {
+        "query_vs_bank": "SAME",
+        "bank_vs_public_origin": "DIFFERENT",
+        "query_vs_public_origin": "DIFFERENT"
+      },
+      "actual": {
+        "physical": "WRONG",
+        "physical_reference": "CORRECT",
+        "public_reference": "PREEXISTING_PUBLIC_ORIGIN_MISMATCH"
+      }
+    },
+    {
+      "relations": {
+        "query_vs_bank": "DIFFERENT",
+        "bank_vs_public_origin": "DIFFERENT",
+        "query_vs_public_origin": "SAME"
+      },
+      "actual": {
+        "physical": "WRONG",
+        "physical_reference": "WRONG",
+        "public_reference": "PREEXISTING_PUBLIC_ORIGIN_MISMATCH"
+      }
+    },
+    {
+      "relations": {
+        "query_vs_bank": "UNKNOWN",
+        "bank_vs_public_origin": "UNKNOWN",
+        "query_vs_public_origin": "UNKNOWN"
+      },
+      "actual": {
+        "physical": "UNSCORABLE",
+        "physical_reference": "UNSCORABLE",
+        "public_reference": "UNSCORABLE_PUBLIC_ORIGIN"
+      }
+    }
+  ],
+  "current_score_sha256": "b0d14f4c89fde39544e992896445b85268238d9dd50dde1910a2cf19e0680a29",
+  "source_verifier_AST_unchanged": {
+    "verify_automatic_sources": "93510efcca74890c733608d7a3fdc41eb3dfd1cfadcdfce4d992ae69392adf3f",
+    "verify_order_sources": "5d00fb7dca742ad0303ae1a6ce4208272ad1f3871debc85e989d3382d0e2660c",
+    "order_records": "e162e444f14924f927136a04ae4b33434f9214dd3f59ef34d2c43d7ee87520cc",
+    "row_sha": "21f752f2efd23fbb20d83cbe52f30b3a042d4b7c807b99f4df22497d58fe2708"
+  },
+  "source_proof_completion_disk_sha256": "b49ebb7348d78d16d3e5908574a01a17b50156a16a7cea400eb000fc15c80354",
+  "GT_real_data_read": false,
+  "note": "Prefix source verification was unchanged while unused GT grading fields were finalized before formal freeze. The source proof SHA is its completion disk snapshot; it is not an attestation of all unused loaded grading code. Formal scoring uses the whole current frozen module.",
+  "model_http": 0,
+  "cost_usd": 0
+}

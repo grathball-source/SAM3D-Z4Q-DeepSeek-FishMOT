@@ -1,0 +1,84 @@
+{
+  "status": "REPORT_ONLY_EXECUTION_AND_BINDING_SELF_CHECK_PASS",
+  "utc": "2026-10-02T18:38:23.844131+00:00",
+  "scientific_reruns": 0,
+  "tests_rerun": 0,
+  "gt_raster_or_rgb_read": false,
+  "frozen_controller_unchanged": true,
+  "commands": [
+    {
+      "command": "E:/researchsoftware/anaconda3/envs/D-MOT/python.exe -u experiments/ds18_association_evidence_interface_repair/review_state_cases.py --source",
+      "exit_code": 0,
+      "elapsed_seconds": "UNKNOWN_NOT_INSTRUMENTED",
+      "stdout": "fishsa_development_8400 source review complete\nfishsa_validation_2888 source review complete\nLW source review complete\nfeeding_001201_001906 source review complete\n",
+      "source": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\review_state_cases.py",
+        "bytes": 10650,
+        "sha256": "431d46f21e31669fedaa4955627a9d270db30e74ecf405ed34dbde6c97a1d14c"
+      }
+    },
+    {
+      "command": "E:/researchsoftware/anaconda3/envs/D-MOT/python.exe -u experiments/ds18_association_evidence_interface_repair/complete_state_cases_postscore.py",
+      "exit_code": 0,
+      "exec_wall_time_seconds": 2.1727078,
+      "stdout": "",
+      "source": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\complete_state_cases_postscore.py",
+        "bytes": 18481,
+        "sha256": "f35feb9b479dfc18f50d6a645c74f5f93dd01df9d4f9df853b5df7f2a980bbb9"
+      }
+    },
+    {
+      "command": "E:/researchsoftware/anaconda3/envs/D-MOT/python.exe -u experiments/ds18_association_evidence_interface_repair/review_state_l3_postscore.py",
+      "exit_code": 0,
+      "exec_wall_time_seconds": 6.916273,
+      "stdout": "",
+      "source": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\review_state_l3_postscore.py",
+        "bytes": 8279,
+        "sha256": "8be41fc70b622a1c241df15fbdf4b053dbde497f9092c64e952ff355d3210536"
+      }
+    }
+  ],
+  "initial_report_helper_failure": {
+    "exit_code": 1,
+    "reason": "KeyError: bank_anchors on original Z4Q transaction, which has no such optional metadata field",
+    "affected_scientific_files": [],
+    "outputs_created": [],
+    "repair": "Report-only optional field handling; successful helper code hash is retained above."
+  },
+  "outputs": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_STATE_SOURCE_CASES.json",
+      "bytes": 10995459,
+      "sha256": "e6cc59625f44e1069157e8588016050d061f2652cd936e0d8f97707473e8b5e5"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_STATE_CASES.json",
+      "bytes": 3432446,
+      "sha256": "556ccbd7198a41b27604a2a975713d14b334c14a42cc9a8f2834288233ba4916"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_STATE_CASES.md",
+      "bytes": 20997,
+      "sha256": "1f45b965a06d8bf02eb6a9bed6e83e77cfab1d914ea92e802c061c78de37588b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_STATE_L3_ADDENDUM.json",
+      "bytes": 86757,
+      "sha256": "bbff37b2dd29a95afad68bf2a1bd5fb724a4558ca02905ab682dacddd292b946"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_STATE_L3_ADDENDUM.md",
+      "bytes": 2872,
+      "sha256": "e57a763eb6c6e6b48b5b732ed78f6dce8527c5e0e6fffec8b76dbd6a4f3571eb"
+    }
+  ],
+  "self_check": [
+    "All output helper byte/SHA bindings match saved actual helper bytes.",
+    "Every report source descriptor independently matches actual path/bytes/SHA.",
+    "Current frozen controller SHA unchanged.",
+    "Report scope and physical judgements retain missing/UNSCORABLE outcomes."
+  ],
+  "correction": "source-only cache prose last_evaluation_frame is superseded by final report: it is last remember_birth held/UNKNOWN update, not every attempted retry."
+}

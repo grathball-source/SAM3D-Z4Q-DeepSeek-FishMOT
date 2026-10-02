@@ -1,0 +1,418 @@
+{
+  "status": "EXTERNAL_FROZEN_SCIENTIFIC_FILES_ACTUAL_BYTES_VERIFIED",
+  "checked_utc": "2026-10-02T18:00:00.616811+00:00",
+  "frozen_external_dependencies": [
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_depth_birth_inherit_20260917\\features.py",
+      "bytes": 15614,
+      "sha256": "ff2ab3af280963d67cc0b33875793ccd15f6d47da7ac0290cc893952df26a43e",
+      "frozen_sha256": "ff2ab3af280963d67cc0b33875793ccd15f6d47da7ac0290cc893952df26a43e",
+      "segments": [
+        "feeding_000000_000199",
+        "feeding_000351_000555",
+        "feeding_000701_001060",
+        "feeding_001201_001906",
+        "fishsa_development_8400",
+        "fishsa_validation_2888",
+        "L3",
+        "LW"
+      ],
+      "status": "ACTUAL_BYTES_MATCH_EVERY_SEGMENT_FREEZE",
+      "role": "Original Birth fixed exclusive 7x7 core and unchanged legacy measurement statistics."
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68",
+      "frozen_sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68",
+      "segments": [
+        "feeding_000000_000199",
+        "feeding_000351_000555",
+        "feeding_000701_001060",
+        "feeding_001201_001906",
+        "fishsa_development_8400",
+        "fishsa_validation_2888",
+        "L3",
+        "LW"
+      ],
+      "status": "ACTUAL_BYTES_MATCH_EVERY_SEGMENT_FREEZE",
+      "role": "Original raw-depth projection/calibration functions for source alignment."
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328",
+      "frozen_sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328",
+      "segments": [
+        "feeding_000000_000199",
+        "feeding_000351_000555",
+        "feeding_000701_001060",
+        "feeding_001201_001906",
+        "fishsa_development_8400",
+        "fishsa_validation_2888",
+        "L3",
+        "LW"
+      ],
+      "status": "ACTUAL_BYTES_MATCH_EVERY_SEGMENT_FREEZE",
+      "role": "Existing polygon rasterization helper; no v3 restoration or SAM3 inference is invoked."
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\annotation\\run_sam3_trackeval.py",
+      "bytes": 13240,
+      "sha256": "bb231463d7ab34342600c9d79d4d4e3cefff98d23ae876dbe747da6602a5ffbe",
+      "frozen_sha256": "bb231463d7ab34342600c9d79d4d4e3cefff98d23ae876dbe747da6602a5ffbe",
+      "segments": [
+        "feeding_000000_000199",
+        "feeding_000351_000555",
+        "feeding_000701_001060",
+        "feeding_001201_001906",
+        "fishsa_development_8400",
+        "fishsa_validation_2888",
+        "L3",
+        "LW"
+      ],
+      "status": "ACTUAL_BYTES_MATCH_EVERY_SEGMENT_FREEZE",
+      "role": "Existing official TrackEval wrapper dependency; original metric/raster protocol retained."
+    }
+  ],
+  "external_file_count": 4,
+  "freeze_artifacts": {
+    "feeding_000000_000199": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000000_000199\\public\\FREEZE.json",
+      "bytes": 24807,
+      "sha256": "2d4a940173e200ecf70846d19762c91faad86c47e1ce8cde5fdbd5a329e44e08"
+    },
+    "feeding_000351_000555": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000351_000555\\public\\FREEZE.json",
+      "bytes": 24813,
+      "sha256": "822d0f337c12c573846256d2f57e7ab87592292169c1f55e5532a2f85ad4cde3"
+    },
+    "feeding_000701_001060": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000701_001060\\public\\FREEZE.json",
+      "bytes": 24841,
+      "sha256": "950537baf39930c347373c0b75989cba269ee5b566cf15441db55f325737d0bf"
+    },
+    "feeding_001201_001906": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_001201_001906\\public\\FREEZE.json",
+      "bytes": 24848,
+      "sha256": "d0e4839c3bd23d79d473e2fbfa3aa1a546121d54e082e6d523d720e274fd9f97"
+    },
+    "fishsa_development_8400": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\fishsa_development_8400\\public\\FREEZE.json",
+      "bytes": 24604,
+      "sha256": "9943bd80c45a20a07d6d5ce1f6193d8d44e9e1d735775478c5e8cb875155a797"
+    },
+    "fishsa_validation_2888": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\fishsa_validation_2888\\public\\FREEZE.json",
+      "bytes": 24567,
+      "sha256": "ae1e2cd71556c42d576492667eb2e8cfe9436a1e4955c0558b66c9ef871676a7"
+    },
+    "L3": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\L3\\public\\FREEZE.json",
+      "bytes": 920532,
+      "sha256": "9fc88112397548821c3a7ff42fe93138c705ef2a0b44a084a0f7bae786e7b57f"
+    },
+    "LW": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\LW\\public\\FREEZE.json",
+      "bytes": 900933,
+      "sha256": "b420294dfff03e760e89c3adf10a831d750aaf503de4b7276804a3613b65b711"
+    }
+  },
+  "current_runtime": {
+    "python": {
+      "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+      "bytes": 105288,
+      "sha256": "9d417695ba7177cb427e850651f2e20d638703d0cab64fc57074633add63c55e"
+    },
+    "version": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "environment_prefix": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT",
+    "site_packages": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages",
+    "vendored_dependencies_path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps",
+    "vendored_dependencies_exists": true,
+    "packages": [
+      {
+        "module": "numpy",
+        "distribution": "numpy",
+        "version": "2.5.3",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\numpy\\__init__.py",
+          "bytes": 26470,
+          "sha256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\numpy"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "scipy",
+        "distribution": "scipy",
+        "version": "1.18.1",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\scipy\\__init__.py",
+          "bytes": 4659,
+          "sha256": "a11ad8a1eaf423d32a0d3dd6c9be6c7be86068321f043dacd2d555a49418b92f"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\scipy"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "cv2",
+        "distribution": "opencv-python",
+        "version": "5.0.0.93",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\cv2\\__init__.py",
+          "bytes": 6811,
+          "sha256": "674817e87409bc589608ef9f4dd4c1a49f600b5e85ca8b106b3b0a9eab5c46cc"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\cv2"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "h5py",
+        "distribution": "h5py",
+        "version": "3.14.0",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\h5py\\__init__.py",
+          "bytes": 3777,
+          "sha256": "febac771c7e6c58397d780e59853fd8f29686b52144e5836161b91217376ed91"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\h5py"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "matplotlib",
+        "distribution": "matplotlib",
+        "version": "3.10.8",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\matplotlib\\__init__.py",
+          "bytes": 55823,
+          "sha256": "c6c47d1ecf25d7934f38c8a55c3b8e116d41aa08d8ecfa82f6ae8af589216a3a"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\matplotlib"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "PIL",
+        "distribution": "Pillow",
+        "version": "12.3.0",
+        "entrypoint": {
+          "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\PIL\\__init__.py",
+          "bytes": 2122,
+          "sha256": "3fffff8502f4b59ca61d39cce713d55ffef046954262fce1abac3e97f3803734"
+        },
+        "package_paths": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\PIL"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "pycocotools",
+        "distribution": "pycocotools",
+        "version": "2.0.11",
+        "entrypoint": {
+          "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\__init__.py",
+          "bytes": 22,
+          "sha256": "492e40efdd86392fcc0109f97ac48a095fcd59a62afbba7c1642dc2b3700c4e8"
+        },
+        "package_paths": [
+          "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Distribution metadata"
+      },
+      {
+        "module": "trackeval",
+        "distribution": "trackeval",
+        "version": null,
+        "entrypoint": {
+          "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\__init__.py",
+          "bytes": 116,
+          "sha256": "636586f4cc90a0be21e8aff605fb7fe97c089b3c46fafd43745d4c41bedceae3"
+        },
+        "package_paths": [
+          "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval"
+        ],
+        "entrypoint_snapshot": "OBSERVED_CURRENT_REPRODUCTION_METADATA_NOT_A_FULL_PACKAGE_SOURCE_FREEZE",
+        "version_note": "Vendored package; distribution version metadata unavailable"
+      }
+    ],
+    "GPU": false,
+    "server": false,
+    "prediction_parallel_jobs": 6,
+    "threads_per_job": 1,
+    "thread_variables": {
+      "CUDA_VISIBLE_DEVICES": "",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "repository_reconstruction": {
+    "root": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT",
+    "base_commit": "efbffae1e816eeff8ad95b74e1b246b06e290d7b",
+    "repository_code": "Tracked old sources at base commit; DS18 new sources with exact per-segment code_sha256. Do not copy or overwrite old external source files.",
+    "external_files": "Obtain authorized originals at these paths or equivalent documented paths and verify exact SHA before running. This metadata does not publish source contents."
+  },
+  "restricted_source_requirements": [
+    {
+      "segment": "feeding_000000_000199",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\SOURCE_MANIFEST.json",
+        "bytes": 3936,
+        "sha256": "a9e3a9e969b87630aeeea719df3583f3b7840ac1345fdce869e45e54cb3cab2a"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199",
+      "original_frames": [
+        0,
+        199
+      ],
+      "frames": 200,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000000_000199\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000351_000555\\SOURCE_MANIFEST.json",
+        "bytes": 3940,
+        "sha256": "88b2b397bc6af81a96078b96d2cf46c3aab0bdd29d36e7e6443c7ce95804cbc0"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000351_000555",
+      "original_frames": [
+        351,
+        555
+      ],
+      "frames": 205,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000351_000555\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\SOURCE_MANIFEST.json",
+        "bytes": 3967,
+        "sha256": "e05814bc5e4b1dcbf0f8bdf5737935a06d8278ad161ba44c37fe669020b15561"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060",
+      "original_frames": [
+        701,
+        1060
+      ],
+      "frames": 360,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000701_001060\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_001201_001906\\SOURCE_MANIFEST.json",
+        "bytes": 3973,
+        "sha256": "6dd31830365c8a5692ea99dc6d28f51c357e6fe9deec6c1e76479ee2b5155680"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_001201_001906",
+      "original_frames": [
+        1201,
+        1906
+      ],
+      "frames": 706,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_001201_001906\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_development_8400\\SOURCE_MANIFEST.json",
+        "bytes": 3733,
+        "sha256": "9a96be4824641be3457abe99d3a3f22f80b3cbf11abacb8977a5cb74b309abc3"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_development_8400",
+      "original_frames": [
+        1,
+        8400
+      ],
+      "frames": 8400,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\fishsa_development_8400\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_validation_2888\\SOURCE_MANIFEST.json",
+        "bytes": 3694,
+        "sha256": "3a47d159b884f676572e05ceb36008b69603e766771abc9f50b8f8010b75fbca"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_validation_2888",
+      "original_frames": [
+        9301,
+        12188
+      ],
+      "frames": 2888,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\fishsa_validation_2888\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "L3",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3\\SOURCE_MANIFEST.json",
+        "bytes": 862617,
+        "sha256": "64ce6834b270e44262d9824daaf2334e556798569a3bc2370a2e80a390b9a6ec"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3",
+      "original_frames": [
+        0,
+        3709
+      ],
+      "frames": 3710,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\L3\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    },
+    {
+      "segment": "LW",
+      "source_manifest": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\LW\\SOURCE_MANIFEST.json",
+        "bytes": 843828,
+        "sha256": "42939023e77771dfc4e8bf78514f89886b277b64a80e0da0fb7f3abb5b3cde91"
+      },
+      "private_input_directory": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\LW",
+      "original_frames": [
+        0,
+        3628
+      ],
+      "frames": 3629,
+      "frozen_source_chain_location": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\LW\\public\\FREEZE.json",
+      "raw_pixels_or_annotations_read_for_this_metadata": false
+    }
+  ],
+  "reproduction_requirements": [
+    "Authorized read access to existing DS14 private SOURCE_MANIFEST-derived original SAM3 assignments, observations, profiles, raw-depth/source-index measurements, scan records and underlying original raw datasets.",
+    "Verify the original source manifests and frozen SHA chain; do not replace SOURCE_OLD with a different SAM3 session, v3/annotated/recovered depth or a second prediction source.",
+    "Existing Python 3.12.14 D-MOT environment and vendored deps; package versions/path snapshots above are reproduction metadata, not an assertion that every installed package file was individually frozen.",
+    "Use a fresh output directory. Execute fixed tests and source checks, freeze all code/inputs, run all six arms and all eight segments, seal every prediction/access stream, then open only the authorized exposed references through the frozen scorer.",
+    "GT/reference files are separately access controlled. No GT, RGB, raster, provider identifiers, credentials, external old source contents or unsealed predictions were read/copied for this metadata.",
+    "Do not rerun SAM3, restore depth, call a model/API or train. No new credentials or key are needed. Preserve old seals and old directories.",
+    "Public code plus SHA/path metadata is sufficient to describe the protocol but does not grant access to private source pixels. An unauthorized environment cannot claim full reproduction solely from public artifacts."
+  ],
+  "source_pixels_copied": false,
+  "external_old_code_copied": false,
+  "GT_read": false,
+  "formal_predictions_read": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

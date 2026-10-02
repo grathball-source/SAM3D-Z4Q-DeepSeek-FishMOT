@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\failure_visuals.py", line 57, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\failure_visuals.py", line 10, in main
+    assert read(RUN/'SCORE_PROVENANCE.json')['reference_opened_after_all_seals']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\common.py", line 34, in read
+    def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\SCORE_PROVENANCE.json'

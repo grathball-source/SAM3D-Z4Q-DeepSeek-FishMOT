@@ -1,0 +1,131 @@
+{
+  "status": "FIXED_BEFORE_FORMAL_PREDICTIONS",
+  "arms": [
+    "SAM3_NATIVE",
+    "Z4Q_FROZEN",
+    "DS16_ORDER",
+    "ACTIVITY_ORDER",
+    "MIXED_ORDER",
+    "MIXED_OFF"
+  ],
+  "segments": {
+    "feeding_000000_000199": [
+      0,
+      199
+    ],
+    "feeding_000351_000555": [
+      351,
+      555
+    ],
+    "feeding_000701_001060": [
+      701,
+      1060
+    ],
+    "feeding_001201_001906": [
+      1201,
+      1906
+    ],
+    "fishsa_development_8400": [
+      1,
+      8400
+    ],
+    "fishsa_validation_2888": [
+      9301,
+      12188
+    ],
+    "L3": [
+      0,
+      3709
+    ],
+    "LW": [
+      0,
+      3628
+    ]
+  },
+  "frames": 20098,
+  "scientific_strategy": {
+    "status": "DESIGN_BEFORE_NEW_PREDICTIONS",
+    "authorized_by": "Human begins sole DS17 NEXT_STEP_PLAN: association evidence interface repair and one complete frozen replay",
+    "base_commit": "efbffae1e816eeff8ad95b74e1b246b06e290d7b",
+    "arms": [
+      "SAM3_NATIVE",
+      "Z4Q_FROZEN",
+      "DS16_ORDER",
+      "ACTIVITY_ORDER",
+      "MIXED_ORDER",
+      "MIXED_OFF"
+    ],
+    "state_repair": "Retain valid anonymous current measurements; prohibit group/post certification of individual history; preserve first-born pending proposal and check event-local atomic stage before identity write",
+    "mixture": "Current raw source-bound whole/core sorted-depth gap components; retain all layers; do not select a favored component",
+    "gap_mm": 30,
+    "scale_floor_mm": 15,
+    "max_scale_mm": 60,
+    "min_points": 16,
+    "min_fraction": 0.2,
+    "mixture_substantial_fraction": 0.2,
+    "mixture_separation": "median gap > max(30,scale_i+scale_j)",
+    "qualification": "Single compatible significant layer AND actual source quality AND legacy scalar quality; multiple substantial separated layers -> UNKNOWN, may be fish/background/bent fish",
+    "causal": "Original scanner, reference and first split q; no future post frame; stage/commit before first publication",
+    "controls": "Frozen original Z4Q thresholds/depth weights/2D formulas and DS16 ordinal formula/sign gate; no prompt/model, threshold search or GT-selected cases",
+    "hypotheses": {
+      "H_interface": "Actual same-ROI quality certification and explicit identity/measurement availability remove identified engineering failures",
+      "H_depth": "With shared repaired interface, MIXED_ORDER versus ACTIVITY_ORDER shows additional depth ambiguity screening benefit",
+      "H_order": "MIXED_ORDER versus MIXED_OFF isolates unchanged paired ordinal factor"
+    },
+    "success_rule": "Contract tests and complete sealed six-arm metrics are separate. Restore archived Z4Q gains is loss prevention. New depth gain requires same-source native/original Z4Q comparison plus shared state control; report all losses and UNKNOWN. No result-conditioned retuning.",
+    "boundaries": [
+      "Depth modes are not fish identities",
+      "Small contaminating or continuous/overlapping depth modes can remain undetected",
+      "Aligned measurements are correlated; source dedup qualification is not physical accuracy",
+      "Exposed reused cohort, not independent generalization",
+      "L3/LW references are weak prediction-derived preannotations",
+      "No new association future frames; old saved SAM3 frontend zero-lookahead not newly proved"
+    ],
+    "model_http": 0,
+    "smoke": 0,
+    "training": 0,
+    "sam3_inference": 0,
+    "completion_service": 0,
+    "cost_usd": 0,
+    "local_parallel": 6,
+    "threads_per_job": 1,
+    "mixture_population_contract": "D1 whole, Birth original fixed exclusive core, S0 adaptive exclusive core independently measured, pixel/source/scalar bound; no cross-ROI certificate",
+    "missing_whole_policy": "D1 whole required; Birth candidate required target/local survivor/competing whole UNKNOWN means no commit for that candidate, never zero cost; preserve original known veto and dummy. S0 whole NOT_USED, missing required paired core common uninformative H0."
+  },
+  "original_config": {
+    "min_points": 16,
+    "min_valid_fraction": 0.2,
+    "risk_floor_mm": 15.0,
+    "mad_scale": 1.4826,
+    "risk_budget_mm": 60.0,
+    "min_history_count": 5,
+    "max_history_age_s": 12.0,
+    "whole_veto_margin_mm": 15.0,
+    "assignment_margin": 0.15,
+    "motion_weight": 0.15,
+    "configuration_policy": "Fixed Q/R 2x2 on Z3N; no search; predicted outputs sealed before GT.",
+    "native_past_frames": 5,
+    "native_max_gap_s": 0.2,
+    "recent_core_max_age_s": 0.2,
+    "recent_core_max_risk_mm": 30.0
+  },
+  "runtime_order_parameters": {
+    "raw_scale_floor_mm": 15,
+    "max_raw_scale_mm": 60,
+    "min_points": 16,
+    "min_fraction": 0.2,
+    "history_frames": 30,
+    "fit_observations": 10,
+    "signal_fraction": 0.9,
+    "minimum_joint_odds": 9,
+    "depth_diffusion_min_increments": 3,
+    "birth_max_gap_seconds": 12.0
+  },
+  "measurement": "DS14 original whole/fixed-core/adaptive-core scalars with corresponding separately certified ROI/source populations; no restored depth",
+  "local_parallel": 6,
+  "threads": 1,
+  "segment_schedule": "LW,L3,development,validation,feeding; source work only; no sample or event changes",
+  "GT_before_all_seals": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

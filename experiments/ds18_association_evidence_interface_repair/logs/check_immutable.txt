@@ -1,0 +1,12 @@
+Error importing BURST due to missing underlying dependency: No module named 'tabulate'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\check_immutable.py", line 39, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\check_immutable.py", line 28, in main
+    order_sources=verify_order_sources(new),automatic_sources=verify_automatic_sources(new),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\score.py", line 278, in verify_order_sources
+    for current, original in zip(rows(public / 'DEPTH_OBSERVATIONS.jsonl.gz'),
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: zip() argument 2 is longer than argument 1

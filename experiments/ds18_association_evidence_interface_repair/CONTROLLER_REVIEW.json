@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "scope": "READONLY_IMPLEMENTATION_AND_TARGETED_SYNTHETIC_REVIEW_BEFORE_FORMAL_FREEZE",
+  "controller": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\controller.py",
+    "bytes": 42361,
+    "sha256": "85913c579d4470b1de8ef1690881238b0a623e4aa864ecd0f51362bc06a894f7"
+  },
+  "test_source": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\test_controller.py",
+    "bytes": 13107,
+    "sha256": "8867b0f2143c55233e25ba3129fe11801263cafe62d75ce96f96eb36974fcca8"
+  },
+  "measurement_contract": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\mixed_depth.py",
+    "bytes": 14616,
+    "sha256": "450a5685681bb2e0680d7dd6da28094e227ee496eab567c825425260cd39d01b"
+  },
+  "source_audit": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\SOURCE_INTERFACE_AUDIT.json",
+    "bytes": 4862733,
+    "sha256": "f55deb7ca5bb51d90512b816851c583687f2fa59bb43c054fdd73a2d750ece4c"
+  },
+  "actual_mro": [
+    {
+      "name": "EventReturn",
+      "module": "ds18_unique_test_controller",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\controller.py"
+    },
+    {
+      "name": "EventReturn",
+      "module": "ds18_reused_frozen_ds17_controller",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds17_mixed_depth_activity_repair\\controller.py"
+    },
+    {
+      "name": "EventReturn",
+      "module": "ds17_reused_frozen_ds16_controller",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\controller.py"
+    },
+    {
+      "name": "StableReturn",
+      "module": "px_return",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_return.py"
+    },
+    {
+      "name": "QualityBirth",
+      "module": "px_z4",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z4.py"
+    },
+    {
+      "name": "NativePrior",
+      "module": "px_z3",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z3.py"
+    },
+    {
+      "name": "PendingBirth",
+      "module": "ds18_unique_test_controller",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\controller.py"
+    },
+    {
+      "name": "BirthRefine",
+      "module": "px_z2",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_z2.py"
+    },
+    {
+      "name": "DepthRepair",
+      "module": "px_d1",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\z4q_pairwise_reconnect_repair\\source\\px_d1.py"
+    },
+    {
+      "name": "DepthIdentityBalance",
+      "module": "controller",
+      "step_owner": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_identity_balance_20260917\\controller.py"
+    },
+    {
+      "name": "object",
+      "module": "builtins",
+      "step_owner": null
+    }
+  ],
+  "targeted_checks": {
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "names": [
+      "test_unassigned_post_cannot_target_outside_bank_or_be_birth_survivor",
+      "test_only_atomic_joint_stage_certifies_current_q_and_clears_pending",
+      "test_d1_exact_histogram_population_and_identity_context"
+    ],
+    "pending_retry_new_target_not_registered": true,
+    "original_birth_frame_time_unchanged": true
+  },
+  "implementation_review": {
+    "birth_dispatch": "Runtime C3 MRO places PendingBirth between NativePrior and BirthRefine; DS16 step reaches the new born/matrix loop while original QualityBirth/NativePrior/D1 rules remain in their real chain.",
+    "prewrite_gate": "Birth matrix excludes edge before alias/source-bank retirement; D1 hook excludes before Hungarian proposal/accepted alias write. Any anonymous source targets any public ID is rejected; event public targets await joint stage.",
+    "anonymous_witness": "Unassigned post and group cannot provide a single-identity survivor/reservation for an outside automatic association. Their actual measurements remain intact for event joint comparison.",
+    "clean_references": "Step restores only protected clean fields/view/recent; mutable source activity stays truthful. Anonymous q cannot register new individual references unless the explicit atomic joint stage certifies its mapping.",
+    "exact_binding": "Current scalar validates actual same-ROI certificate, source and identity versions. Birth history uses exact old role/public/native/frame/mask anchor; unaltered active old anchors retain registry evidence when current observations are risky.",
+    "missing_whole": "Required current/target/survivor/competing whole UNKNOWN blocks that Birth edge without a zero-cost reward; measured whole vetoes retained. D1 whole remains required; S0 whole is explicitly not used and missing paired core returns H0.",
+    "d1_lineage": "Each actual last-15 whole contributor carries its source/identity context, strict-past frame/anchor, scalar and binding. Target and included partner aggregate checks validate every contribution; source versions are reported separately, not asserted identical. Existing EMA/last15/MAD/tolerance formulas remain unchanged; committed clean updates expose actual recurrence inputs.",
+    "pending": "Original first_seen frame/time and first_eligible are retained. Retry uses original six-second/first-eligible limits and generation, immutable first-proposal target/anchor whitelist; generation/window retirement cannot revive. A retry after prior public native output is explicitly marked previously published.",
+    "joint_stage": "Only original two-post bijection/occupancy/version/local atomic stage commits q. Preview cloning does not mutate branch; local fallback adopts own current causal preview and releases event protection without another step or historical rewrite."
+  },
+  "reviewed_repairs": [
+    "Removed POST_UNASSIGNED exception from anonymous Birth partner identity witness.",
+    "Current binding validates configured identity version as well as source version.",
+    "Pending target set only captured at first proposal; later missing/new targets cannot be learned into the whitelist.",
+    "Actual accepted D1/Birth consumption records include old/current bindings and D1 aggregate lineage."
+  ],
+  "future_validation": "Root will run original prefixes and complete six arms/eight segments. This review does not impose a GT-correct mapping or metric prerequisite.",
+  "GT_read": false,
+  "RGB_read": false,
+  "restored_read": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "old_code_data_seal_score_modified": false,
+  "physical_recovery_verdict": "UNKNOWN_UNTIL_ALL_PREDICTIONS_SEALED_AND_INDEPENDENT_SCORING"
+}

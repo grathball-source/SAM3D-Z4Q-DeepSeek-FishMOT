@@ -1,3 +1,14 @@
+## DS18 association evidence interface repair completed (2026-10-03)
+
+主判定：COMPLETE_TRIAL_GOAL_NOT_ACHIEVED。六臂八段、每臂20098帧；模型HTTP/费用=0。
+Feeding1471: MIXED_ORDER vs同源native ΔIDF1=+0.268647; vs原Z4Q=-0.471399; vs相同接口=-0.656411。
+fishsa_development_8400: MIXED_ORDER vs同源native ΔIDF1=+7.930784; vs原Z4Q=-0.089400; vs相同接口=+0.031787。
+fishsa_validation_2888: MIXED_ORDER vs同源native ΔIDF1=+3.957241; vs原Z4Q=-0.283902; vs相同接口=-0.278108。
+L3: MIXED_ORDER vs同源native ΔIDF1=+0.000000; vs原Z4Q=-2.318468; vs相同接口=+0.000000。
+LW: MIXED_ORDER vs同源native ΔIDF1=+0.000000; vs原Z4Q=-3.715862; vs相同接口=+0.000000。
+
+Complete code/logs/results: experiments/ds18_association_evidence_interface_repair. Model HTTP/cost=0. Old seals immutable; private pixels inventoried locally. Follow NEXT_STEP_PLAN.md; no automatic new model run.
+
 ## DS17 mixed depth/activity repair completed (2026-10-02)
 
 ## 主判定

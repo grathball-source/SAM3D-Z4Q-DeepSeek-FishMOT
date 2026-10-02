@@ -1,0 +1,4285 @@
+{
+  "status": "COMPLETE_POSTSEAL_DEPTH_MECHANISM_ANALYSIS",
+  "frames_per_arm": 20098,
+  "observations": 181842,
+  "roi_totals": {
+    "whole": {
+      "total": 181842,
+      "eligible": 125250,
+      "old_scalar_valid": 180727,
+      "old_valid_but_rejected": 55477,
+      "flags": {
+        "original_whole_birth_quality_valid": 163334,
+        "mixture": 10510,
+        "inclusive_mixture": 10447,
+        "independent_mixture": 10469,
+        "source_ownership_not_exclusive": 37220,
+        "shared_source_pixels": 37220,
+        "independent_quality_not_usable": 18410,
+        "original_pixel_quality_not_usable": 18508,
+        "independent_scale_above60": 17234,
+        "independent_fraction_below0p2": 871,
+        "independent_points_below16": 786
+      },
+      "reason": {
+        "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED": 125250,
+        "SUBSTANTIAL_MEASURED_LAYERS_HAVE_NOISE_SEPARATED_MEDIANS": 10510,
+        "ORIGINAL_SCALAR_INCLUDES_SHARED_OR_UNVERIFIED_NATIVE_SOURCES": 34652,
+        "INSUFFICIENT_INDEPENDENT_COVERAGE_OR_BROAD_SCALAR_SUPPORT": 11296,
+        "NO_SINGLE_QUALIFIED_SUBSTANTIAL_LAYER_IN_BOTH_POPULATIONS": 134
+      }
+    },
+    "birth_core": {
+      "total": 181842,
+      "eligible": 154995,
+      "old_scalar_valid": 160583,
+      "old_valid_but_rejected": 5588,
+      "flags": {
+        "independent_quality_not_usable": 21259,
+        "original_pixel_quality_not_usable": 21259,
+        "independent_points_below16": 16479,
+        "independent_fraction_below0p2": 8310,
+        "independent_scale_above60": 4547,
+        "mixture": 6466,
+        "inclusive_mixture": 6466,
+        "independent_mixture": 6466
+      },
+      "reason": {
+        "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED": 154995,
+        "INSUFFICIENT_INDEPENDENT_COVERAGE_OR_BROAD_SCALAR_SUPPORT": 20154,
+        "SUBSTANTIAL_MEASURED_LAYERS_HAVE_NOISE_SEPARATED_MEDIANS": 6466,
+        "NO_SINGLE_QUALIFIED_SUBSTANTIAL_LAYER_IN_BOTH_POPULATIONS": 227
+      }
+    },
+    "core": {
+      "total": 181842,
+      "eligible": 163218,
+      "old_scalar_valid": 170085,
+      "old_valid_but_rejected": 6867,
+      "flags": {
+        "independent_quality_not_usable": 11757,
+        "original_pixel_quality_not_usable": 11757,
+        "independent_scale_above60": 7961,
+        "mixture": 8320,
+        "inclusive_mixture": 8320,
+        "independent_mixture": 8320,
+        "independent_points_below16": 3398,
+        "independent_fraction_below0p2": 1745
+      },
+      "reason": {
+        "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED": 163218,
+        "INSUFFICIENT_INDEPENDENT_COVERAGE_OR_BROAD_SCALAR_SUPPORT": 10193,
+        "SUBSTANTIAL_MEASURED_LAYERS_HAVE_NOISE_SEPARATED_MEDIANS": 8320,
+        "NO_SINGLE_QUALIFIED_SUBSTANTIAL_LAYER_IN_BOTH_POPULATIONS": 111
+      }
+    }
+  },
+  "ordinal_totals": {
+    "DS16_ORDER": {
+      "q_count": 50,
+      "eligible": 22,
+      "unknown": 28,
+      "weak_pre_order": 21,
+      "changed_s0_choice_vs_same_candidate_geometry": 3,
+      "commits_with_actual_changes": 0
+    },
+    "ACTIVITY_ORDER": {
+      "q_count": 49,
+      "eligible": 20,
+      "unknown": 29,
+      "weak_pre_order": 19,
+      "changed_s0_choice_vs_same_candidate_geometry": 3,
+      "commits_with_actual_changes": 0
+    },
+    "MIXED_ORDER": {
+      "q_count": 50,
+      "eligible": 18,
+      "unknown": 32,
+      "weak_pre_order": 18,
+      "changed_s0_choice_vs_same_candidate_geometry": 3,
+      "commits_with_actual_changes": 0
+    },
+    "MIXED_OFF": {
+      "q_count": 51,
+      "eligible": 19,
+      "unknown": 32,
+      "weak_pre_order": 19,
+      "changed_s0_choice_vs_same_candidate_geometry": 0,
+      "commits_with_actual_changes": 3
+    }
+  },
+  "segments": {
+    "feeding_000000_000199": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 92.8897586431833,
+          "HOTA": 91.36252204380997,
+          "AssA": 88.0858769375677,
+          "DetA": 94.76188123291938,
+          "IDSW": 10,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 92.12561737023577,
+          "HOTA": 90.4837479885973,
+          "AssA": 86.39966385114246,
+          "DetA": 94.76188123291938,
+          "IDSW": 12,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        },
+        "DS16_ORDER": {
+          "IDF1": 92.12561737023577,
+          "HOTA": 90.4837479885973,
+          "AssA": 86.39966385114246,
+          "DetA": 94.76188123291938,
+          "IDSW": 12,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 92.8897586431833,
+          "HOTA": 91.24360554703888,
+          "AssA": 87.8567216105058,
+          "DetA": 94.76188123291938,
+          "IDSW": 11,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        },
+        "MIXED_ORDER": {
+          "IDF1": 92.12561737023577,
+          "HOTA": 90.43531165723726,
+          "AssA": 86.30716873136566,
+          "DetA": 94.76188123291938,
+          "IDSW": 12,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        },
+        "MIXED_OFF": {
+          "IDF1": 92.12561737023577,
+          "HOTA": 90.43531165723726,
+          "AssA": 86.30716873136566,
+          "DetA": 94.76188123291938,
+          "IDSW": 12,
+          "FP": 76,
+          "FN": 143,
+          "GT": 5399,
+          "predictions": 5332
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -0.7641412729475263,
+          "HOTA": -0.9272103865727104,
+          "AssA": -1.7787082062020403,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.0,
+          "HOTA": -0.04843633136003689,
+          "AssA": -0.09249511977679958,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": -0.7641412729475263,
+          "HOTA": -0.8082938898016181,
+          "AssA": -1.549552879140137,
+          "IDSW": 1,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 0,
+          "eligible": 0,
+          "unknown": 0,
+          "weak_pre_order": 0,
+          "reason": {},
+          "evidence_reason": {},
+          "choice": {},
+          "restore": {},
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 0,
+          "eligible": 0,
+          "unknown": 0,
+          "weak_pre_order": 0,
+          "reason": {},
+          "evidence_reason": {},
+          "choice": {},
+          "restore": {},
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 1,
+          "eligible": 1,
+          "unknown": 0,
+          "weak_pre_order": 1,
+          "reason": {
+            "INSUFFICIENT_JOINT_ODDS": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 1
+          },
+          "choice": {
+            "H0": 1
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 1
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 1,
+          "eligible": 1,
+          "unknown": 0,
+          "weak_pre_order": 1,
+          "reason": {
+            "INSUFFICIENT_JOINT_ODDS": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 1
+          },
+          "choice": {
+            "H0": 1
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 1
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 1
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 1
+          },
+          "automatic_actual_reference": {
+            "WRONG": 1,
+            "UNSCORABLE": 1
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 1,
+            "UNSCORABLE": 1
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 1,
+            "NO_SPLIT": 3
+          },
+          "first_public_endpoint": {
+            "WRONG": 1,
+            "NO_SPLIT": 3
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 1,
+            "NO_SPLIT": 3
+          },
+          "automatic_actual_reference": {
+            "WRONG": 2
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 2
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 1,
+            "NO_SPLIT": 3
+          },
+          "first_public_endpoint": {
+            "WRONG": 1,
+            "NO_SPLIT": 3
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 1,
+            "NO_SPLIT": 3
+          },
+          "automatic_actual_reference": {
+            "WRONG": 2
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 2
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 41,
+          "native_frame_differences": 84,
+          "first": {
+            "frame": 160,
+            "global_frame": 159,
+            "mappings": {
+              "n:26": [
+                26,
+                16
+              ]
+            }
+          },
+          "last": {
+            "frame": 200,
+            "global_frame": 199
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 0,
+          "native_frame_differences": 0,
+          "first": null,
+          "last": null
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 160,
+            "global_frame": 159,
+            "mappings": {
+              "n:26": [
+                26,
+                16
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [
+              {
+                "frame": 160,
+                "global_frame": 159,
+                "source": 26,
+                "target": 16,
+                "origin_rule": "D1_DELAYED",
+                "physical": "WRONG",
+                "actual_reference_physical": "WRONG",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 15,
+                  "native_id": 16,
+                  "mask": "n:16",
+                  "canonical_id": 16
+                }
+              }
+            ],
+            "MIXED_OFF": [
+              {
+                "frame": 160,
+                "global_frame": 159,
+                "source": 26,
+                "target": 16,
+                "origin_rule": "D1_DELAYED",
+                "physical": "WRONG",
+                "actual_reference_physical": "WRONG",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 15,
+                  "native_id": 16,
+                  "mask": "n:16",
+                  "canonical_id": 16
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "feeding_000351_000555": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 82.92727108051807,
+          "HOTA": 78.58284442084609,
+          "AssA": 72.1826902323686,
+          "DetA": 85.59283666556213,
+          "IDSW": 22,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 82.89104247803641,
+          "HOTA": 78.14779790472312,
+          "AssA": 71.42993326096412,
+          "DetA": 85.5395185924718,
+          "IDSW": 24,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        },
+        "DS16_ORDER": {
+          "IDF1": 82.89104247803641,
+          "HOTA": 78.14779790472312,
+          "AssA": 71.42993326096412,
+          "DetA": 85.5395185924718,
+          "IDSW": 24,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 82.92727108051807,
+          "HOTA": 77.9690956225396,
+          "AssA": 71.04992290257456,
+          "DetA": 85.60532424640878,
+          "IDSW": 26,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        },
+        "MIXED_ORDER": {
+          "IDF1": 82.87292817679558,
+          "HOTA": 77.86134284064073,
+          "AssA": 70.90818542712587,
+          "DetA": 85.5395185924718,
+          "IDSW": 26,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        },
+        "MIXED_OFF": {
+          "IDF1": 82.87292817679558,
+          "HOTA": 77.86134284064073,
+          "AssA": 70.90818542712587,
+          "DetA": 85.5395185924718,
+          "IDSW": 26,
+          "FP": 148,
+          "FN": 201,
+          "GT": 5547,
+          "predictions": 5494
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -0.0543429037224854,
+          "HOTA": -0.7215015802053557,
+          "AssA": -1.274504805242728,
+          "IDSW": 4,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -0.018114301240828468,
+          "HOTA": -0.2864550640823893,
+          "AssA": -0.5217478338382477,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": -0.0543429037224854,
+          "HOTA": -0.10775278189886706,
+          "AssA": -0.14173747544869286,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 6,
+          "eligible": 2,
+          "unknown": 4,
+          "weak_pre_order": 2,
+          "reason": {
+            "H0_BEST": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 6
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 6
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 7,
+          "eligible": 2,
+          "unknown": 5,
+          "weak_pre_order": 2,
+          "reason": {
+            "H0_BEST": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "MISSING_OR_MISMATCHED_PRE_VERSION": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "MISSING_OR_MISMATCHED_PRE_VERSION": 1
+          },
+          "choice": {
+            "H0": 7
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 7
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 5,
+          "eligible": 1,
+          "unknown": 4,
+          "weak_pre_order": 1,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 5,
+          "eligible": 1,
+          "unknown": 4,
+          "weak_pre_order": 1,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 4,
+            "NO_SPLIT": 5,
+            "CORRECT": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 5,
+            "CORRECT": 3,
+            "WRONG": 1
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 7,
+            "NO_SPLIT": 5
+          },
+          "automatic_actual_reference": {
+            "WRONG": 4
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 4
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 9,
+            "CORRECT": 2,
+            "UNSCORABLE": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 9,
+            "CORRECT": 3,
+            "UNSCORABLE": 1,
+            "WRONG": 1
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 9,
+            "NOT_COMMITTED": 5
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 1,
+            "WRONG": 3
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 1,
+            "WRONG": 3
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 9,
+            "CORRECT": 2,
+            "UNSCORABLE": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 9,
+            "CORRECT": 3,
+            "UNSCORABLE": 1,
+            "WRONG": 1
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 9,
+            "NOT_COMMITTED": 5
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 1,
+            "WRONG": 3
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 1,
+            "WRONG": 3
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 181,
+          "native_frame_differences": 317,
+          "first": {
+            "frame": 25,
+            "global_frame": 375,
+            "mappings": {
+              "n:70": [
+                70,
+                67
+              ]
+            }
+          },
+          "last": {
+            "frame": 205,
+            "global_frame": 555
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 0,
+          "native_frame_differences": 0,
+          "first": null,
+          "last": null
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 25,
+            "global_frame": 375,
+            "mappings": {
+              "n:70": [
+                70,
+                67
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [
+              {
+                "frame": 25,
+                "global_frame": 375,
+                "source": 70,
+                "target": 67,
+                "origin_rule": "D1_DELAYED",
+                "physical": "CORRECT",
+                "actual_reference_physical": "CORRECT",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 10,
+                  "native_id": 67,
+                  "mask": "n:67",
+                  "canonical_id": 67
+                }
+              }
+            ],
+            "MIXED_OFF": [
+              {
+                "frame": 25,
+                "global_frame": 375,
+                "source": 70,
+                "target": 67,
+                "origin_rule": "D1_DELAYED",
+                "physical": "CORRECT",
+                "actual_reference_physical": "CORRECT",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 10,
+                  "native_id": 67,
+                  "mask": "n:67",
+                  "canonical_id": 67
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "feeding_000701_001060": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 77.42803893145579,
+          "HOTA": 75.54502220156733,
+          "AssA": 65.0065795312991,
+          "DetA": 87.8023382533061,
+          "IDSW": 36,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.56090513377626,
+          "AssA": 61.64216153704466,
+          "DetA": 87.79608873492629,
+          "IDSW": 42,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        },
+        "DS16_ORDER": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.56090513377626,
+          "AssA": 61.64216153704466,
+          "DetA": 87.79608873492629,
+          "IDSW": 42,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.56090513377626,
+          "AssA": 61.64216153704466,
+          "DetA": 87.79608873492629,
+          "IDSW": 42,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        },
+        "MIXED_ORDER": {
+          "IDF1": 75.66784013253262,
+          "HOTA": 73.7343346302295,
+          "AssA": 61.93270932748681,
+          "DetA": 87.79608873492629,
+          "IDSW": 41,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        },
+        "MIXED_OFF": {
+          "IDF1": 75.66784013253262,
+          "HOTA": 73.7343346302295,
+          "AssA": 61.93270932748681,
+          "DetA": 87.79608873492629,
+          "IDSW": 41,
+          "FP": 154,
+          "FN": 278,
+          "GT": 9720,
+          "predictions": 9596
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -1.7601987989231702,
+          "HOTA": -1.8106875713378372,
+          "AssA": -3.073870203812284,
+          "IDSW": 5,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.0310623317457015,
+          "HOTA": 0.17342949645323813,
+          "AssA": 0.2905477904421545,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 0.0310623317457015,
+          "HOTA": 0.17342949645323813,
+          "AssA": 0.2905477904421545,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 5,
+          "eligible": 3,
+          "unknown": 2,
+          "weak_pre_order": 3,
+          "reason": {
+            "INSUFFICIENT_JOINT_ODDS": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 5,
+          "eligible": 3,
+          "unknown": 2,
+          "weak_pre_order": 3,
+          "reason": {
+            "INSUFFICIENT_JOINT_ODDS": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 5,
+          "eligible": 2,
+          "unknown": 3,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 2,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 2,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 5,
+          "eligible": 2,
+          "unknown": 3,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 2,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 2,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 5
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 5
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 3,
+            "CORRECT": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 1,
+            "CORRECT": 3,
+            "NO_SPLIT": 3,
+            "UNSCORABLE": 1
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 5,
+            "NO_SPLIT": 3
+          },
+          "automatic_actual_reference": {
+            "WRONG": 4,
+            "CORRECT": 2
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 4,
+            "CORRECT": 2
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 3,
+            "CORRECT": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 1,
+            "CORRECT": 3,
+            "NO_SPLIT": 3,
+            "UNSCORABLE": 1
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 5,
+            "NO_SPLIT": 3
+          },
+          "automatic_actual_reference": {
+            "WRONG": 3,
+            "CORRECT": 2
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 3,
+            "CORRECT": 2
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 3,
+            "CORRECT": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 1,
+            "CORRECT": 3,
+            "NO_SPLIT": 3,
+            "UNSCORABLE": 1
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 5,
+            "NO_SPLIT": 3
+          },
+          "automatic_actual_reference": {
+            "WRONG": 3,
+            "CORRECT": 2
+          },
+          "automatic_joint_public_reference": {
+            "WRONG": 3,
+            "CORRECT": 2
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 212,
+          "native_frame_differences": 378,
+          "first": {
+            "frame": 149,
+            "global_frame": 849,
+            "mappings": {
+              "n:119": [
+                70,
+                119
+              ]
+            }
+          },
+          "last": {
+            "frame": 360,
+            "global_frame": 1060
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 0,
+          "native_frame_differences": 0,
+          "first": null,
+          "last": null
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 149,
+            "global_frame": 849,
+            "mappings": {
+              "n:119": [
+                70,
+                119
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [
+              {
+                "frame": 149,
+                "global_frame": 849,
+                "source": 119,
+                "target": 70,
+                "origin_rule": "D1_DELAYED",
+                "physical": "WRONG",
+                "actual_reference_physical": "WRONG",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                }
+              }
+            ],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        }
+      ]
+    },
+    "feeding_001201_001906": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 78.83995135621001,
+          "HOTA": 78.72724758681133,
+          "AssA": 68.0893224800032,
+          "DetA": 91.05347483143902,
+          "IDSW": 40,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "DetA": 91.05748788823111,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "DS16_ORDER": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "DetA": 91.05748788823111,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 81.68455559667953,
+          "HOTA": 80.18787814889384,
+          "AssA": 70.63990122193157,
+          "DetA": 91.04865401384154,
+          "IDSW": 52,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "MIXED_ORDER": {
+          "IDF1": 80.53190926875693,
+          "HOTA": 79.17602661856243,
+          "AssA": 68.86964577386163,
+          "DetA": 91.04865401384154,
+          "IDSW": 50,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "MIXED_OFF": {
+          "IDF1": 81.09237032728811,
+          "HOTA": 80.05982168886152,
+          "AssA": 70.41436217474293,
+          "DetA": 91.04865401384154,
+          "IDSW": 49,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 1.6919579125469255,
+          "HOTA": 0.44877903175110134,
+          "AssA": 0.7803232938584301,
+          "IDSW": 10,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -0.9940252736213182,
+          "HOTA": -0.7164865194637002,
+          "AssA": -1.2434976482455653,
+          "IDSW": -4,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": -1.1526463279225965,
+          "HOTA": -1.0118515303314126,
+          "AssA": -1.770255448069932,
+          "IDSW": -2,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": -0.5604610585311747,
+          "HOTA": -0.8837950702990867,
+          "AssA": -1.544716400881299,
+          "IDSW": 1,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 9,
+          "eligible": 5,
+          "unknown": 4,
+          "weak_pre_order": 5,
+          "reason": {
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INSUFFICIENT_JOINT_ODDS": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 5,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 9,
+          "eligible": 5,
+          "unknown": 4,
+          "weak_pre_order": 5,
+          "reason": {
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INSUFFICIENT_JOINT_ODDS": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 5,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 9,
+          "eligible": 4,
+          "unknown": 5,
+          "weak_pre_order": 4,
+          "reason": {
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2,
+            "H0_BEST": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 4,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 10,
+          "eligible": 5,
+          "unknown": 5,
+          "weak_pre_order": 5,
+          "reason": {
+            "ORDINAL_OR_GEOMETRY_ODDS_ACCEPTED": 1,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2,
+            "H0_BEST": 3
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 5,
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H2": 1,
+            "H0": 9
+          },
+          "restore": {
+            "COMMIT": 1,
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 1
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "CORRECT": 3,
+            "NO_SPLIT": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "WRONG": 3,
+            "CORRECT": 3,
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 2
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 7,
+            "WRONG": 5
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 7,
+            "WRONG": 5
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "CORRECT": 3,
+            "NO_SPLIT": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "WRONG": 3,
+            "CORRECT": 3,
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 2
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 5,
+            "WRONG": 5
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 4,
+            "WRONG": 6
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "CORRECT": 4,
+            "NO_SPLIT": 2,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "CORRECT": 5,
+            "UNSCORABLE": 3,
+            "NO_SPLIT": 2,
+            "WRONG": 2
+          },
+          "committed_pre_consensus": {
+            "UNSCORABLE": 1,
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 2
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 6,
+            "WRONG": 4
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 5,
+            "WRONG": 5
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 484,
+          "native_frame_differences": 1542,
+          "first": {
+            "frame": 213,
+            "global_frame": 1413,
+            "mappings": {
+              "n:172": [
+                126,
+                172
+              ]
+            }
+          },
+          "last": {
+            "frame": 706,
+            "global_frame": 1906
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 629,
+          "native_frame_differences": 1234,
+          "first": {
+            "frame": 39,
+            "global_frame": 1239,
+            "mappings": {
+              "n:167": [
+                167,
+                136
+              ]
+            }
+          },
+          "last": {
+            "frame": 706,
+            "global_frame": 1906
+          }
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 213,
+            "global_frame": 1413,
+            "mappings": {
+              "n:172": [
+                126,
+                172
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [
+              {
+                "frame": 213,
+                "global_frame": 1413,
+                "source": 172,
+                "target": 126,
+                "origin_rule": "D1_DELAYED",
+                "physical": "WRONG",
+                "actual_reference_physical": "WRONG",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 139,
+                  "native_id": 126,
+                  "mask": "n:126",
+                  "canonical_id": 126
+                }
+              }
+            ],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        },
+        {
+          "pair": "MIXED_ORDER__MIXED_OFF",
+          "first": {
+            "frame": 39,
+            "global_frame": 1239,
+            "mappings": {
+              "n:167": [
+                167,
+                136
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        }
+      ]
+    },
+    "fishsa_development_8400": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 91.31328783860297,
+          "HOTA": 73.3461431977153,
+          "AssA": 69.18676765844471,
+          "DetA": 77.75663771120087,
+          "IDSW": 5,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 99.3334724001947,
+          "HOTA": 77.82948776478582,
+          "AssA": 77.90763828694708,
+          "DetA": 77.75663771120087,
+          "IDSW": 6,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "DS16_ORDER": {
+          "IDF1": 99.3334724001947,
+          "HOTA": 77.82948776478582,
+          "AssA": 77.90763828694708,
+          "DetA": 77.75663771120087,
+          "IDSW": 6,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 99.21228556386646,
+          "HOTA": 77.72170736752723,
+          "AssA": 77.69115981341824,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "MIXED_ORDER": {
+          "IDF1": 99.24407227503453,
+          "HOTA": 77.75051245836406,
+          "AssA": 77.74901399480879,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "MIXED_OFF": {
+          "IDF1": 99.24407227503453,
+          "HOTA": 77.75051245836406,
+          "AssA": 77.74901399480879,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 7.930784436431551,
+          "HOTA": 4.40436926064875,
+          "AssA": 8.562246336364083,
+          "IDSW": 3,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -0.08940012516016793,
+          "HOTA": -0.07897530642176775,
+          "AssA": -0.15862429213828477,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 0.03178671116806697,
+          "HOTA": 0.028805090836826253,
+          "AssA": 0.057854181390553094,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 9,
+          "eligible": 3,
+          "unknown": 6,
+          "weak_pre_order": 3,
+          "reason": {
+            "H0_BEST": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 9,
+          "eligible": 3,
+          "unknown": 6,
+          "weak_pre_order": 3,
+          "reason": {
+            "H0_BEST": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 9,
+          "eligible": 3,
+          "unknown": 6,
+          "weak_pre_order": 3,
+          "reason": {
+            "H0_BEST": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 9,
+          "eligible": 3,
+          "unknown": 6,
+          "weak_pre_order": 3,
+          "reason": {
+            "H0_BEST": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "evidence_reason": {
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+          },
+          "choice": {
+            "H0": 9
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 9
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "NO_SPLIT": 4,
+            "CORRECT": 2,
+            "WRONG": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 3,
+            "NO_SPLIT": 4,
+            "CORRECT": 4,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 4
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 3
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "NO_SPLIT": 4,
+            "CORRECT": 2,
+            "WRONG": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 3,
+            "NO_SPLIT": 4,
+            "CORRECT": 4,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 4
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 3
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "UNSCORABLE": 5,
+            "NO_SPLIT": 4,
+            "CORRECT": 2,
+            "WRONG": 2
+          },
+          "first_public_endpoint": {
+            "WRONG": 3,
+            "NO_SPLIT": 4,
+            "CORRECT": 4,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 9,
+            "NO_SPLIT": 4
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "CORRECT": 3
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 16,
+          "native_frame_differences": 16,
+          "first": {
+            "frame": 3947,
+            "global_frame": 3947,
+            "mappings": {
+              "n:7": [
+                7,
+                0
+              ]
+            }
+          },
+          "last": {
+            "frame": 3962,
+            "global_frame": 3962
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 0,
+          "native_frame_differences": 0,
+          "first": null,
+          "last": null
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 3947,
+            "global_frame": 3947,
+            "mappings": {
+              "n:7": [
+                7,
+                0
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [
+              {
+                "frame": 3947,
+                "global_frame": 3947,
+                "source": 7,
+                "target": 0,
+                "origin_rule": "BIRTH_REFINE",
+                "physical": "CORRECT",
+                "actual_reference_physical": "CORRECT",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 3836,
+                  "native_id": 6,
+                  "mask": "n:6",
+                  "canonical_id": 0
+                }
+              }
+            ],
+            "MIXED_OFF": [
+              {
+                "frame": 3947,
+                "global_frame": 3947,
+                "source": 7,
+                "target": 0,
+                "origin_rule": "BIRTH_REFINE",
+                "physical": "CORRECT",
+                "actual_reference_physical": "CORRECT",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 3836,
+                  "native_id": 6,
+                  "mask": "n:6",
+                  "canonical_id": 0
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fishsa_validation_2888": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 76.4564442770648,
+          "HOTA": 66.43552909955413,
+          "AssA": 55.19605907649384,
+          "DetA": 79.99491919833206,
+          "IDSW": 8,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "DS16_ORDER": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 80.69179292563516,
+          "HOTA": 69.2379863410464,
+          "AssA": 60.0640931164567,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "MIXED_ORDER": {
+          "IDF1": 80.41368521683711,
+          "HOTA": 68.95466080517635,
+          "AssA": 59.5712685081208,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "MIXED_OFF": {
+          "IDF1": 81.7868420290275,
+          "HOTA": 69.1162172516956,
+          "AssA": 59.85158973563649,
+          "DetA": 79.8339131595075,
+          "IDSW": 13,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 3.957240939772305,
+          "HOTA": 2.5191317056222147,
+          "AssA": 4.375209431626963,
+          "IDSW": 3,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -0.2839016193980086,
+          "HOTA": -0.28920815448161363,
+          "AssA": -0.5030529472940088,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": -0.27810770879804636,
+          "HOTA": -0.2833255358700484,
+          "AssA": -0.49282460833589425,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": -1.3731568121903877,
+          "HOTA": -0.16155644651925627,
+          "AssA": -0.2803212275156852,
+          "IDSW": -2,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 7,
+          "eligible": 3,
+          "unknown": 4,
+          "weak_pre_order": 3,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 7
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 7
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 7,
+          "eligible": 3,
+          "unknown": 4,
+          "weak_pre_order": 3,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 7
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 7
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 7,
+          "eligible": 3,
+          "unknown": 4,
+          "weak_pre_order": 3,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 7
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 7
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 7,
+          "eligible": 3,
+          "unknown": 4,
+          "weak_pre_order": 3,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "ORDINAL_OR_GEOMETRY_ODDS_ACCEPTED": 1,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "H0_BEST": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 3,
+            "VALID_SOFT_ORDER_EVIDENCE": 3,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+          },
+          "choice": {
+            "H0": 6,
+            "H1": 1
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 6,
+            "COMMIT": 1
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 1
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "CORRECT": 4,
+            "NO_SPLIT": 5,
+            "WRONG": 1,
+            "UNSCORABLE": 2
+          },
+          "first_public_endpoint": {
+            "CORRECT": 4,
+            "NO_SPLIT": 5,
+            "WRONG": 1,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 7,
+            "NO_SPLIT": 5
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 1,
+            "CORRECT": 2
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "CORRECT": 4,
+            "NO_SPLIT": 5,
+            "WRONG": 1,
+            "UNSCORABLE": 2
+          },
+          "first_public_endpoint": {
+            "CORRECT": 4,
+            "NO_SPLIT": 5,
+            "WRONG": 1,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 7,
+            "NO_SPLIT": 5
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 1,
+            "CORRECT": 2
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "CORRECT": 3,
+            "NO_SPLIT": 5,
+            "WRONG": 2,
+            "UNSCORABLE": 2
+          },
+          "first_public_endpoint": {
+            "CORRECT": 4,
+            "NO_SPLIT": 5,
+            "WRONG": 1,
+            "UNSCORABLE": 2
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 6,
+            "NO_SPLIT": 5,
+            "WRONG": 1
+          },
+          "automatic_actual_reference": {
+            "CORRECT": 3
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 1,
+            "CORRECT": 2
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 48,
+          "native_frame_differences": 48,
+          "first": {
+            "frame": 2189,
+            "global_frame": 11489,
+            "mappings": {
+              "n:8": [
+                3,
+                8
+              ]
+            }
+          },
+          "last": {
+            "frame": 2236,
+            "global_frame": 11536
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 289,
+          "native_frame_differences": 578,
+          "first": {
+            "frame": 2600,
+            "global_frame": 11900,
+            "mappings": {
+              "n:1": [
+                1,
+                4
+              ],
+              "n:4": [
+                4,
+                1
+              ]
+            }
+          },
+          "last": {
+            "frame": 2888,
+            "global_frame": 12188
+          }
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 2189,
+            "global_frame": 11489,
+            "mappings": {
+              "n:8": [
+                3,
+                8
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [
+              {
+                "frame": 2189,
+                "global_frame": 11489,
+                "source": 8,
+                "target": 3,
+                "origin_rule": "BIRTH_REFINE",
+                "physical": "CORRECT",
+                "actual_reference_physical": "CORRECT",
+                "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 1935,
+                  "native_id": 3,
+                  "mask": "n:3",
+                  "canonical_id": 3
+                }
+              }
+            ],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        },
+        {
+          "pair": "MIXED_ORDER__MIXED_OFF",
+          "first": {
+            "frame": 2600,
+            "global_frame": 11900,
+            "mappings": {
+              "n:1": [
+                1,
+                4
+              ],
+              "n:4": [
+                4,
+                1
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        }
+      ]
+    },
+    "L3": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "DetA": 60.254014677607174,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "DS16_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "MIXED_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "MIXED_OFF": {
+          "IDF1": 62.838602835561105,
+          "HOTA": 68.2141919692427,
+          "AssA": 77.22599084747802,
+          "DetA": 60.254014677607174,
+          "IDSW": 3,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -2.3184683238420263,
+          "HOTA": -1.808950075886628,
+          "AssA": -4.579390948797183,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 9.588184598746139,
+          "HOTA": 7.14841551804264,
+          "AssA": 17.03366367797186,
+          "IDSW": -2,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "WEAK_UNREVIEWED_PREDICTION_DERIVED_PREANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 4,
+          "eligible": 2,
+          "unknown": 2,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "H0_BEST": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "evidence_reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "choice": {
+            "H0": 4
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 4
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 4,
+          "eligible": 2,
+          "unknown": 2,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "H0_BEST": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "evidence_reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "choice": {
+            "H0": 4
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 4
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 4,
+          "eligible": 2,
+          "unknown": 2,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "INSUFFICIENT_JOINT_ODDS": 1,
+            "H0_BEST": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "evidence_reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "choice": {
+            "H0": 4
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 4
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 1,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 4,
+          "eligible": 2,
+          "unknown": 2,
+          "weak_pre_order": 2,
+          "reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "ORDINAL_OR_GEOMETRY_ODDS_ACCEPTED": 1,
+            "H0_BEST": 1,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "evidence_reason": {
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "NO_SAME_FRAME_PRE_PAIR": 1
+          },
+          "choice": {
+            "H0": 3,
+            "H1": 1
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 3,
+            "COMMIT": 1
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 1
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 3,
+            "CORRECT": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 2,
+            "CORRECT": 2
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 7,
+            "NOT_COMMITTED": 4
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 9
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 9
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 3,
+            "CORRECT": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 2,
+            "CORRECT": 2
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 7,
+            "NOT_COMMITTED": 4
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 8
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 8
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 3,
+            "WRONG": 1
+          },
+          "first_public_endpoint": {
+            "NO_SPLIT": 7,
+            "UNSCORABLE": 2,
+            "WRONG": 1,
+            "CORRECT": 1
+          },
+          "committed_pre_consensus": {
+            "NO_SPLIT": 7,
+            "NOT_COMMITTED": 3,
+            "WRONG": 1
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 8
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 8
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 269,
+          "native_frame_differences": 269,
+          "first": {
+            "frame": 548,
+            "global_frame": 547,
+            "mappings": {
+              "n:16": [
+                14,
+                16
+              ]
+            }
+          },
+          "last": {
+            "frame": 816,
+            "global_frame": 815
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 2290,
+          "native_frame_differences": 3760,
+          "first": {
+            "frame": 1421,
+            "global_frame": 1420,
+            "mappings": {
+              "n:6": [
+                6,
+                9
+              ],
+              "n:9": [
+                9,
+                6
+              ]
+            }
+          },
+          "last": {
+            "frame": 3710,
+            "global_frame": 3709
+          }
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 548,
+            "global_frame": 547,
+            "mappings": {
+              "n:16": [
+                14,
+                16
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [
+              {
+                "frame": 548,
+                "global_frame": 547,
+                "source": 16,
+                "target": 14,
+                "origin_rule": "D1_DELAYED",
+                "physical": "UNSCORABLE",
+                "actual_reference_physical": "UNSCORABLE",
+                "prior_public_reference_status": "UNSCORABLE_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 409,
+                  "native_id": 14,
+                  "mask": "n:14",
+                  "canonical_id": 14
+                }
+              }
+            ],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        },
+        {
+          "pair": "MIXED_ORDER__MIXED_OFF",
+          "first": {
+            "frame": 1421,
+            "global_frame": 1420,
+            "mappings": {
+              "n:6": [
+                6,
+                9
+              ],
+              "n:9": [
+                9,
+                6
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        }
+      ]
+    },
+    "LW": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36906738520446,
+          "AssA": 77.55512121843537,
+          "DetA": 56.79642006948201,
+          "IDSW": 7,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 64.3293952976855,
+          "HOTA": 68.9917212023931,
+          "AssA": 83.80559725800063,
+          "DetA": 56.79642006948201,
+          "IDSW": 10,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "DS16_ORDER": {
+          "IDF1": 64.3293952976855,
+          "HOTA": 68.99515546928005,
+          "AssA": 83.81394081004524,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.27006730237797,
+          "AssA": 77.32392411727031,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "MIXED_ORDER": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36204819931568,
+          "AssA": 77.53871764189722,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "MIXED_OFF": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36204819931568,
+          "AssA": 77.53871764189722,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        }
+      },
+      "mixed_deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 0.0,
+          "HOTA": -0.007019185888779589,
+          "AssA": -0.01640357653815272,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -3.715861563327934,
+          "HOTA": -2.6296730030774143,
+          "AssA": -6.2668796161034095,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 0.0,
+          "HOTA": 0.09198089693771294,
+          "AssA": 0.2147935246269128,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "MIXED_OFF": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "reference_status": "WEAK_UNREVIEWED_PREDICTION_DERIVED_PREANNOTATION",
+      "ordinal": {
+        "DS16_ORDER": {
+          "q_count": 10,
+          "eligible": 4,
+          "unknown": 6,
+          "weak_pre_order": 3,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 4,
+            "H0_BEST": 4
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 4,
+            "VALID_SOFT_ORDER_EVIDENCE": 4
+          },
+          "choice": {
+            "H0": 10
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 10
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "ACTIVITY_ORDER": {
+          "q_count": 8,
+          "eligible": 2,
+          "unknown": 6,
+          "weak_pre_order": 1,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2,
+            "H0_BEST": 2
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 4,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2,
+            "VALID_SOFT_ORDER_EVIDENCE": 2
+          },
+          "choice": {
+            "H0": 8
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 8
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_ORDER": {
+          "q_count": 10,
+          "eligible": 2,
+          "unknown": 8,
+          "weak_pre_order": 2,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 5,
+            "H0_BEST": 2,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 5,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "choice": {
+            "H0": 10
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 10
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        },
+        "MIXED_OFF": {
+          "q_count": 10,
+          "eligible": 2,
+          "unknown": 8,
+          "weak_pre_order": 2,
+          "reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 5,
+            "H0_BEST": 2,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "evidence_reason": {
+            "NO_SAME_FRAME_PRE_PAIR": 2,
+            "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 5,
+            "VALID_SOFT_ORDER_EVIDENCE": 2,
+            "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+          },
+          "choice": {
+            "H0": 10
+          },
+          "restore": {
+            "LOCAL_FALLBACK_COMMITTED": 10
+          },
+          "changed_s0_choice_vs_same_candidate_geometry": 0,
+          "commits_with_actual_changes": 0
+        }
+      },
+      "physical": {
+        "ACTIVITY_ORDER": {
+          "first_public_pre_consensus": {
+            "CORRECT": 2,
+            "NO_SPLIT": 14,
+            "UNSCORABLE": 6
+          },
+          "first_public_endpoint": {
+            "CORRECT": 4,
+            "NO_SPLIT": 14,
+            "UNSCORABLE": 4
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 8,
+            "NO_SPLIT": 14
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 39
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 39
+          }
+        },
+        "MIXED_ORDER": {
+          "first_public_pre_consensus": {
+            "CORRECT": 2,
+            "UNSCORABLE": 8,
+            "NO_SPLIT": 12
+          },
+          "first_public_endpoint": {
+            "CORRECT": 2,
+            "UNSCORABLE": 8,
+            "NO_SPLIT": 12
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 10,
+            "NO_SPLIT": 12
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 41
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 41
+          }
+        },
+        "MIXED_OFF": {
+          "first_public_pre_consensus": {
+            "CORRECT": 2,
+            "UNSCORABLE": 8,
+            "NO_SPLIT": 12
+          },
+          "first_public_endpoint": {
+            "CORRECT": 2,
+            "UNSCORABLE": 8,
+            "NO_SPLIT": 12
+          },
+          "committed_pre_consensus": {
+            "NOT_COMMITTED": 10,
+            "NO_SPLIT": 12
+          },
+          "automatic_actual_reference": {
+            "UNSCORABLE": 41
+          },
+          "automatic_joint_public_reference": {
+            "UNSCORABLE": 41
+          }
+        }
+      },
+      "publication_difference_summary": {
+        "ACTIVITY_ORDER__MIXED_ORDER": {
+          "frames_different": 2934,
+          "native_frame_differences": 4852,
+          "first": {
+            "frame": 227,
+            "global_frame": 226,
+            "mappings": {
+              "n:19": [
+                12,
+                19
+              ]
+            }
+          },
+          "last": {
+            "frame": 3629,
+            "global_frame": 3628
+          }
+        },
+        "MIXED_ORDER__MIXED_OFF": {
+          "frames_different": 0,
+          "native_frame_differences": 0,
+          "first": null,
+          "last": null
+        }
+      },
+      "first_divergence_actions": [
+        {
+          "pair": "ACTIVITY_ORDER__MIXED_ORDER",
+          "first": {
+            "frame": 227,
+            "global_frame": 226,
+            "mappings": {
+              "n:19": [
+                12,
+                19
+              ]
+            }
+          },
+          "official_automatic_verdicts": {
+            "ACTIVITY_ORDER": [
+              {
+                "frame": 227,
+                "global_frame": 226,
+                "source": 19,
+                "target": 12,
+                "origin_rule": "BIRTH_REFINE",
+                "physical": "UNSCORABLE",
+                "actual_reference_physical": "UNSCORABLE",
+                "prior_public_reference_status": "UNSCORABLE_PUBLIC_ORIGIN",
+                "durable_automatic_commit": true,
+                "actual_old_anchor": {
+                  "frame": 121,
+                  "native_id": 12,
+                  "mask": "n:12",
+                  "canonical_id": 12
+                }
+              }
+            ],
+            "MIXED_ORDER": [],
+            "MIXED_OFF": []
+          }
+        }
+      ]
+    }
+  },
+  "feeding_pooled": {
+    "metrics": {
+      "SAM3_NATIVE": {
+        "IDF1": 80.97675951035305,
+        "HOTA": 79.96405589527662,
+        "AssA": 71.53049876161319,
+        "DetA": 89.73060596672879,
+        "IDSW": 108,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 81.7168056365157,
+        "HOTA": 79.8598513405802,
+        "AssA": 71.34178214830844,
+        "DetA": 89.72335279629931,
+        "IDSW": 132,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "DS16_ORDER": {
+        "IDF1": 81.7168056365157,
+        "HOTA": 79.8598513405802,
+        "AssA": 71.34178214830844,
+        "DetA": 89.72335279629931,
+        "IDSW": 132,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "ACTIVITY_ORDER": {
+        "IDF1": 81.90181716805637,
+        "HOTA": 80.09235995218383,
+        "AssA": 71.75979619789821,
+        "DetA": 89.72857768486958,
+        "IDSW": 131,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "MIXED_ORDER": {
+        "IDF1": 81.24540639176826,
+        "HOTA": 79.51034245560157,
+        "AssA": 70.72668807550649,
+        "DetA": 89.71913546888594,
+        "IDSW": 129,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "MIXED_OFF": {
+        "IDF1": 81.51405327318346,
+        "HOTA": 79.93201990914454,
+        "AssA": 71.47297255242594,
+        "DetA": 89.71913546888594,
+        "IDSW": 128,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      }
+    },
+    "deltas": {
+      "SAM3_NATIVE": {
+        "IDF1": 0.26864688141520787,
+        "HOTA": -0.45371343967504174,
+        "AssA": -0.8038106861067007,
+        "IDSW": 21,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -0.4713992447474453,
+        "HOTA": -0.34950888497863275,
+        "AssA": -0.615094072801952,
+        "IDSW": -3,
+        "FP": 0,
+        "FN": 0
+      },
+      "ACTIVITY_ORDER": {
+        "IDF1": -0.6564107762881122,
+        "HOTA": -0.5820174965822531,
+        "AssA": -1.0331081223917238,
+        "IDSW": -2,
+        "FP": 0,
+        "FN": 0
+      },
+      "MIXED_OFF": {
+        "IDF1": -0.26864688141520787,
+        "HOTA": -0.42167745354296926,
+        "AssA": -0.7462844769194561,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "ordinal_contrast_cases": [
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "frame": 39,
+      "global_frame": 1239,
+      "same_context": true,
+      "order_choice": "H0",
+      "off_choice": "H2",
+      "order_reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "order_published": {
+        "167": 167,
+        "128": 128
+      },
+      "off_published": {
+        "167": 136,
+        "128": 128
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "167": 167,
+          "128": 128
+        }
+      },
+      "off_restore": {
+        "status": "COMMIT",
+        "changes": {
+          "167": 136
+        },
+        "stage_error": null,
+        "decision_source": "MIXED_OFF",
+        "baseline_preview_mapping": {
+          "167": 167,
+          "128": 128
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 39,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "WRONG",
+          "first_public_clean_endpoint_verdict": "WRONG",
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "167": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "128": {
+              "gt_id": 25,
+              "matched_frames": 11,
+              "gt_ids": [
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 39,
+          "choice": "H2",
+          "restore_status": "COMMIT",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "UNSCORABLE",
+          "post_q_through_q10_consensus": {
+            "167": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "128": {
+              "gt_id": 25,
+              "matched_frames": 11,
+              "gt_ids": [
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "SAME_SOURCE_GEOMETRY_CONTEXT_FIRST_DECISION"
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F528",
+      "frame": 532,
+      "global_frame": 1732,
+      "same_context": false,
+      "order_choice": "H0",
+      "off_choice": "H0",
+      "order_reason": "H0_BEST",
+      "order_published": {
+        "146": 146,
+        "176": 126
+      },
+      "off_published": {
+        "146": 146,
+        "176": 136
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "146": 146,
+          "176": 126
+        }
+      },
+      "off_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "146": 146,
+          "176": 136
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 532,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "146": {
+              "gt_id": 17,
+              "matched_frames": 11,
+              "gt_ids": [
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17
+              ]
+            },
+            "176": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 532,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "146": {
+              "gt_id": 17,
+              "matched_frames": 11,
+              "gt_ids": [
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17,
+                17
+              ]
+            },
+            "176": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "ALIAS_HISTORY_PROPAGATION_DIFFERENT_CONTEXT"
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2584",
+      "frame": 2600,
+      "global_frame": 11900,
+      "same_context": true,
+      "order_choice": "H0",
+      "off_choice": "H1",
+      "order_reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "order_published": {
+        "4": 4,
+        "1": 1
+      },
+      "off_published": {
+        "4": 1,
+        "1": 4
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "4": 4,
+          "1": 1
+        }
+      },
+      "off_restore": {
+        "status": "COMMIT",
+        "changes": {
+          "4": 1,
+          "1": 4
+        },
+        "stage_error": null,
+        "decision_source": "MIXED_OFF",
+        "baseline_preview_mapping": {
+          "4": 4,
+          "1": 1
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 2600,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "UNSCORABLE",
+          "first_public_clean_endpoint_verdict": "UNSCORABLE",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "1": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 2600,
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "first_public_physical": "UNSCORABLE",
+          "first_public_clean_endpoint_verdict": "UNSCORABLE",
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "1": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "SAME_SOURCE_GEOMETRY_CONTEXT_FIRST_DECISION"
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2759",
+      "frame": 2816,
+      "global_frame": 12116,
+      "same_context": false,
+      "order_choice": "H0",
+      "off_choice": "H0",
+      "order_reason": "H0_BEST",
+      "order_published": {
+        "4": 4,
+        "5": 5
+      },
+      "off_published": {
+        "4": 1,
+        "5": 5
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "4": 4,
+          "5": 5
+        }
+      },
+      "off_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "4": 1,
+          "5": 5
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 2816,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "5": {
+              "gt_id": 5,
+              "matched_frames": 8,
+              "gt_ids": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 2816,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "5": {
+              "gt_id": 5,
+              "matched_frames": 8,
+              "gt_ids": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "ALIAS_HISTORY_PROPAGATION_DIFFERENT_CONTEXT"
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "frame": 1421,
+      "global_frame": 1420,
+      "same_context": true,
+      "order_choice": "H0",
+      "off_choice": "H1",
+      "order_reason": "INSUFFICIENT_JOINT_ODDS",
+      "order_published": {
+        "9": 9,
+        "6": 6
+      },
+      "off_published": {
+        "9": 6,
+        "6": 9
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "9": 9,
+          "6": 6
+        }
+      },
+      "off_restore": {
+        "status": "COMMIT",
+        "changes": {
+          "9": 6,
+          "6": 9
+        },
+        "stage_error": null,
+        "decision_source": "MIXED_OFF",
+        "baseline_preview_mapping": {
+          "9": 9,
+          "6": 6
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 1421,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "9": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            },
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 1421,
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "first_public_physical": "WRONG",
+          "first_public_clean_endpoint_verdict": "WRONG",
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "9": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            },
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "SAME_SOURCE_GEOMETRY_CONTEXT_FIRST_DECISION"
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F2571",
+      "frame": 2583,
+      "global_frame": 2582,
+      "same_context": false,
+      "order_choice": "H0",
+      "off_choice": "H0",
+      "order_reason": "H0_BEST",
+      "order_published": {
+        "6": 6,
+        "5": 5
+      },
+      "off_published": {
+        "6": 9,
+        "5": 5
+      },
+      "order_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "6": 6,
+          "5": 5
+        }
+      },
+      "off_restore": {
+        "status": "LOCAL_FALLBACK_COMMITTED",
+        "changes": {},
+        "stage_error": "H0_KEEP_OWN_CAUSAL_MAPPING",
+        "decision_source": "OWN_BRANCH_LOCAL_FALLBACK",
+        "baseline_preview_mapping": {
+          "6": 9,
+          "5": 5
+        }
+      },
+      "published_different": true,
+      "official_postseal_verdicts": {
+        "MIXED_ORDER": {
+          "q": 2583,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "5": {
+              "gt_id": 3,
+              "matched_frames": 11,
+              "gt_ids": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+              ]
+            }
+          }
+        },
+        "MIXED_OFF": {
+          "q": 2583,
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "5": {
+              "gt_id": 3,
+              "matched_frames": 11,
+              "gt_ids": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3
+              ]
+            }
+          }
+        }
+      },
+      "causal_scope": "ALIAS_HISTORY_PROPAGATION_DIFFERENT_CONTEXT"
+    }
+  ],
+  "anonymous_group_depth_coverage": {
+    "feeding_000000_000199": {
+      "events": 4,
+      "split_q": 1,
+      "group_records": 22,
+      "roi": {
+        "whole": {
+          "frames": 22,
+          "independent_quality": 21,
+          "individual_eligible": 16,
+          "mixture": 1,
+          "inclusive_two_substantial_layers": 1,
+          "source_ownership_unknown": 6
+        },
+        "birth_core": {
+          "frames": 22,
+          "independent_quality": 14,
+          "individual_eligible": 13
+        },
+        "core": {
+          "frames": 22,
+          "independent_quality": 21,
+          "individual_eligible": 21
+        }
+      },
+      "split_events_with_any_mixed_ROI": []
+    },
+    "feeding_000351_000555": {
+      "events": 14,
+      "split_q": 5,
+      "group_records": 67,
+      "roi": {
+        "whole": {
+          "frames": 67,
+          "mixture": 10,
+          "independent_quality": 44,
+          "inclusive_two_substantial_layers": 10,
+          "source_ownership_unknown": 47,
+          "individual_eligible": 14
+        },
+        "birth_core": {
+          "frames": 67,
+          "mixture": 2,
+          "independent_quality": 51,
+          "inclusive_two_substantial_layers": 2,
+          "individual_eligible": 48
+        },
+        "core": {
+          "frames": 67,
+          "mixture": 4,
+          "independent_quality": 64,
+          "inclusive_two_substantial_layers": 4,
+          "individual_eligible": 60
+        }
+      },
+      "split_events_with_any_mixed_ROI": [
+        {
+          "event": "MS1-F59",
+          "q": 65,
+          "group_records": 6,
+          "mixed_frames_by_roi": {
+            "whole": 0,
+            "birth_core": 0,
+            "core": 1
+          }
+        },
+        {
+          "event": "MS1-F81",
+          "q": 84,
+          "group_records": 3,
+          "mixed_frames_by_roi": {
+            "whole": 3,
+            "birth_core": 0,
+            "core": 0
+          }
+        },
+        {
+          "event": "MS1-F166",
+          "q": 169,
+          "group_records": 3,
+          "mixed_frames_by_roi": {
+            "whole": 3,
+            "birth_core": 0,
+            "core": 0
+          }
+        }
+      ]
+    },
+    "feeding_000701_001060": {
+      "events": 8,
+      "split_q": 5,
+      "group_records": 33,
+      "roi": {
+        "whole": {
+          "frames": 33,
+          "mixture": 3,
+          "independent_quality": 25,
+          "inclusive_two_substantial_layers": 3,
+          "source_ownership_unknown": 23,
+          "individual_eligible": 7
+        },
+        "birth_core": {
+          "frames": 33,
+          "mixture": 6,
+          "independent_quality": 29,
+          "inclusive_two_substantial_layers": 6,
+          "individual_eligible": 24
+        },
+        "core": {
+          "frames": 33,
+          "mixture": 4,
+          "independent_quality": 27,
+          "inclusive_two_substantial_layers": 4,
+          "individual_eligible": 23
+        }
+      },
+      "split_events_with_any_mixed_ROI": [
+        {
+          "event": "MS1-F55",
+          "q": 64,
+          "group_records": 9,
+          "mixed_frames_by_roi": {
+            "whole": 1,
+            "birth_core": 6,
+            "core": 3
+          }
+        },
+        {
+          "event": "MS1-F295",
+          "q": 300,
+          "group_records": 5,
+          "mixed_frames_by_roi": {
+            "whole": 2,
+            "birth_core": 0,
+            "core": 1
+          }
+        }
+      ]
+    },
+    "feeding_001201_001906": {
+      "events": 11,
+      "split_q": 9,
+      "group_records": 201,
+      "roi": {
+        "whole": {
+          "frames": 201,
+          "independent_quality": 86,
+          "individual_eligible": 43,
+          "source_ownership_unknown": 92,
+          "mixture": 1,
+          "inclusive_two_substantial_layers": 1
+        },
+        "birth_core": {
+          "frames": 201,
+          "independent_quality": 183,
+          "individual_eligible": 166,
+          "mixture": 21,
+          "inclusive_two_substantial_layers": 21
+        },
+        "core": {
+          "frames": 201,
+          "independent_quality": 171,
+          "individual_eligible": 170,
+          "mixture": 2,
+          "inclusive_two_substantial_layers": 2
+        }
+      },
+      "split_events_with_any_mixed_ROI": [
+        {
+          "event": "MS1-F572",
+          "q": 605,
+          "group_records": 33,
+          "mixed_frames_by_roi": {
+            "whole": 1,
+            "birth_core": 21,
+            "core": 2
+          }
+        }
+      ]
+    },
+    "fishsa_development_8400": {
+      "events": 13,
+      "split_q": 9,
+      "group_records": 290,
+      "roi": {
+        "whole": {
+          "frames": 290,
+          "independent_quality": 159,
+          "individual_eligible": 133,
+          "mixture": 36,
+          "inclusive_two_substantial_layers": 36
+        },
+        "birth_core": {
+          "frames": 290,
+          "independent_quality": 281,
+          "individual_eligible": 252,
+          "mixture": 29,
+          "inclusive_two_substantial_layers": 29
+        },
+        "core": {
+          "frames": 290,
+          "independent_quality": 258,
+          "individual_eligible": 217,
+          "mixture": 41,
+          "inclusive_two_substantial_layers": 41
+        }
+      },
+      "split_events_with_any_mixed_ROI": [
+        {
+          "event": "MS1-F4485",
+          "q": 4501,
+          "group_records": 16,
+          "mixed_frames_by_roi": {
+            "whole": 14,
+            "birth_core": 2,
+            "core": 13
+          }
+        },
+        {
+          "event": "MS1-F5399",
+          "q": 5436,
+          "group_records": 37,
+          "mixed_frames_by_roi": {
+            "whole": 22,
+            "birth_core": 27,
+            "core": 28
+          }
+        }
+      ]
+    },
+    "fishsa_validation_2888": {
+      "events": 12,
+      "split_q": 7,
+      "group_records": 164,
+      "roi": {
+        "whole": {
+          "frames": 164,
+          "independent_quality": 155,
+          "individual_eligible": 155
+        },
+        "birth_core": {
+          "frames": 164,
+          "independent_quality": 157,
+          "individual_eligible": 157
+        },
+        "core": {
+          "frames": 164,
+          "independent_quality": 151,
+          "individual_eligible": 151
+        }
+      },
+      "split_events_with_any_mixed_ROI": []
+    },
+    "L3": {
+      "events": 11,
+      "split_q": 4,
+      "group_records": 901,
+      "roi": {
+        "whole": {
+          "frames": 901,
+          "source_ownership_unknown": 309,
+          "independent_quality": 811,
+          "individual_eligible": 591
+        },
+        "birth_core": {
+          "frames": 901,
+          "independent_quality": 894,
+          "individual_eligible": 894
+        },
+        "core": {
+          "frames": 901,
+          "independent_quality": 891,
+          "individual_eligible": 891
+        }
+      },
+      "split_events_with_any_mixed_ROI": []
+    },
+    "LW": {
+      "events": 22,
+      "split_q": 10,
+      "group_records": 1768,
+      "roi": {
+        "whole": {
+          "frames": 1768,
+          "independent_quality": 1401,
+          "source_ownership_unknown": 628,
+          "individual_eligible": 840,
+          "mixture": 64,
+          "inclusive_two_substantial_layers": 63
+        },
+        "birth_core": {
+          "frames": 1768,
+          "independent_quality": 1678,
+          "individual_eligible": 1669,
+          "mixture": 8,
+          "inclusive_two_substantial_layers": 8
+        },
+        "core": {
+          "frames": 1768,
+          "independent_quality": 1671,
+          "individual_eligible": 1640,
+          "mixture": 31,
+          "inclusive_two_substantial_layers": 31
+        }
+      },
+      "split_events_with_any_mixed_ROI": [
+        {
+          "event": "MS1-F932",
+          "q": 1156,
+          "group_records": 224,
+          "mixed_frames_by_roi": {
+            "whole": 46,
+            "birth_core": 5,
+            "core": 26
+          }
+        },
+        {
+          "event": "MS1-F2896",
+          "q": 2909,
+          "group_records": 13,
+          "mixed_frames_by_roi": {
+            "whole": 13,
+            "birth_core": 0,
+            "core": 2
+          }
+        }
+      ]
+    }
+  },
+  "control_boundary": {
+    "mixed_vs_activity": "Combined actual-ROI mixture/source/quality screening with own-state propagation",
+    "mixed_vs_off": "Frozen ordinal score plus positive-support/H0 admission policy; same pair eligibility",
+    "mixed_off": "Same paired measurement eligibility; not unrestricted geometry",
+    "anonymous_group_depth": "Recorded distributions are not consumed by the ordinal factor; multiple surfaces do not identify two fish",
+    "D1_actual_depth": "D_balanced smooth=False: last clean whole; last15 MAD; EMA recorded but not used as score mean"
+  },
+  "unknown_not_safe": true,
+  "GT_raster_read": false,
+  "new_model_http": 0,
+  "no_new_scientific_configuration": true,
+  "next_candidate": {
+    "name": "SEPARATE_ORDINAL_CONFIDENCE_FROM_SIGN_BASED_ADMISSION",
+    "supported_by": "All18 usable MIXED pre-order probabilities are weak; an essentially0.5 pre-sign blocks an endpoint-correct mapping, while val11900 and L3 require retaining wrong-swap prevention evidence",
+    "scope": "One frozen causal diagnostic, unchanged current history/measurement/state floor and joint log9 gate; vary only strict positive-LR/H0 sign admission separately from continuous ordinal likelihood",
+    "risks": [
+      "Removing sign admission may admit the physically wrong val11900 swap; no gain forecast",
+      "Cancelling the complete ordinal factor is contradicted by L3 OFF wrong swap and IDF1 loss",
+      "Group mixtures cover only10/50 split events and are not two-fish evidence"
+    ],
+    "not_started": true,
+    "no_promised_gain": true,
+    "must_keep_preexisting_public_vs_actual_reference_separate": true
+  },
+  "source_count_artifact": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_DEPTH_MECHANISM_COUNTS.json",
+    "bytes": 9498318,
+    "sha256": "138923ca8522a729ea27dd82a1d920bad6dd3e91ae6dc707fb1b0a341dc0dabd"
+  },
+  "anonymous_group_coverage_artifact": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\POSTSEAL_GROUP_LAYER_COVERAGE.json",
+    "bytes": 85142,
+    "sha256": "9f0d978cfacd4b760b6916a8a7f23cfa597f389b3946b77657fb6b53925a8dd3"
+  },
+  "official_metrics": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\METRICS.json",
+    "bytes": 42959632,
+    "sha256": "f48b36b76b8d1d978fbbb0bc49e5d7c7b024b3b596fee5edd27276b56b5d4ed2"
+  },
+  "score_provenance": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\SCORE_PROVENANCE.json",
+    "bytes": 1205,
+    "sha256": "a8ee782873d30f3fa40fe56a4cf3635937441009876d5e8e44c9df98be4c9af1"
+  },
+  "script": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\postseal_depth_analysis.py",
+    "bytes": 34531,
+    "sha256": "3f74bb87bf9f2563142ea622fe369bddea69a4a3b0dcaf69d1e835b800f4f570"
+  },
+  "anonymous_group_depth_totals": {
+    "events": 95,
+    "split_q": 50,
+    "group_records": 3446,
+    "split_events_with_any_mixed_ROI": 10
+  },
+  "reporting_correction": "Narrative group event total105 corrected to95 by summing the unchanged eight segment counters; no scientific rerun or sealed data changed."
+}

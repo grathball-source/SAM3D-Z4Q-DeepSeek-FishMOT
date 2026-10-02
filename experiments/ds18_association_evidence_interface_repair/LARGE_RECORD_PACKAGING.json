@@ -1,0 +1,41 @@
+{
+  "schema": "DS18_SEALED_RAW_BYTE_PARTS_V1",
+  "status": "PURE_DELIVERY_REPRESENTATION_ORIGINAL_GZIP_AND_SEAL_UNCHANGED",
+  "maximum_part_bytes": 62914560,
+  "records": [
+    {
+      "relative_path": "experiments/ds18_association_evidence_interface_repair/run/LW/public/TRANSACTIONS.jsonl.gz",
+      "bytes": 179086513,
+      "sha256": "e3392913270a477a45d5f4848637ffdb180d59b01bef8a72040dd5d35e874b2c",
+      "sealed_sha256": "e3392913270a477a45d5f4848637ffdb180d59b01bef8a72040dd5d35e874b2c",
+      "seal_relative_path": "experiments/ds18_association_evidence_interface_repair/run/LW/public/PREDICTIONS_SEALED.json",
+      "parts": [
+        {
+          "relative_path": "experiments/ds18_association_evidence_interface_repair/run/LW/public/TRANSACTIONS.jsonl.gz.rawpart001.bin",
+          "offset": 0,
+          "bytes": 62914560,
+          "sha256": "58155d4f71d0714d51f1298841a0803b64e50ab1ea2064a08d7838f1913279a7"
+        },
+        {
+          "relative_path": "experiments/ds18_association_evidence_interface_repair/run/LW/public/TRANSACTIONS.jsonl.gz.rawpart002.bin",
+          "offset": 62914560,
+          "bytes": 62914560,
+          "sha256": "627bb4001e77ad9ba5ec43e8bcceb14b6547a9c0750d0738077242e273dee29a"
+        },
+        {
+          "relative_path": "experiments/ds18_association_evidence_interface_repair/run/LW/public/TRANSACTIONS.jsonl.gz.rawpart003.bin",
+          "offset": 125829120,
+          "bytes": 53257393,
+          "sha256": "15e7f46dfd8e372230d0fcc033d9cbf16659b9fc45fcdff656485358ee33776b"
+        }
+      ]
+    }
+  ],
+  "original_gzip_changed": false,
+  "seal_changed": false,
+  "scientific_bytes_changed": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "reproduction": "Verify all raw parts, concatenate exact bytes in order, check original sealed SHA, create only missing originals. Existing originals with another SHA are rejected.",
+  "late_delivery_code_not_scientific_freeze": true
+}

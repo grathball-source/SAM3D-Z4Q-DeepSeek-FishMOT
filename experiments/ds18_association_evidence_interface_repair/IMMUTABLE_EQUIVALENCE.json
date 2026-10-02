@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "frames": 150,
+  "checks": {
+    "fishsa_development_8400": {
+      "rows": {
+        "predictions.jsonl.gz": 50,
+        "MIXED_DEPTH.jsonl.gz": 50,
+        "TRANSACTIONS.jsonl.gz": 250,
+        "DEPTH_STATES.jsonl.gz": 200,
+        "DEPTH_OBSERVATIONS.jsonl.gz": 50,
+        "BIRTHS.jsonl.gz": 200,
+        "CONTACT_CERTIFICATES.jsonl.gz": 50,
+        "ORDER_EVIDENCE.jsonl.gz": 0
+      },
+      "all_scientific_rows_and_canonical_JSON_equal": true,
+      "order_sources": {
+        "status": "PASS",
+        "pre_fact_bindings": 0,
+        "post_fact_bindings": 0,
+        "assigned_source_permutations": 0,
+        "frozen_raw_statistics_exact": true,
+        "permutation_only_in_scoring_binding": true,
+        "physical_depth_accuracy": "UNKNOWN",
+        "GT_read": false
+      },
+      "automatic_sources": {
+        "status": "PASS",
+        "actual_accepted_actions": 0,
+        "actual_measurement_bindings": 0,
+        "whole_ema_updates_recomputed": 582,
+        "whole_last15_and_partner_ema_recomputed": true,
+        "same_ROI_raw_profiles": true,
+        "GT_read": false,
+        "all_accepted_actions_have_current_and_actual_past_evidence": true
+      },
+      "actual_prediction": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\slice_immutable\\fishsa_development_8400\\public\\predictions.jsonl.gz",
+        "bytes": 893,
+        "sha256": "189d58951cb17e0812973a12ff297fdd531f29f1512ae8adfb9cbeeb38255571"
+      },
+      "elapsed_seconds": 14.867737299995497,
+      "old_elapsed_seconds": 38.59183900000062
+    },
+    "feeding_001201_001906": {
+      "rows": {
+        "predictions.jsonl.gz": 50,
+        "MIXED_DEPTH.jsonl.gz": 50,
+        "TRANSACTIONS.jsonl.gz": 250,
+        "DEPTH_STATES.jsonl.gz": 200,
+        "DEPTH_OBSERVATIONS.jsonl.gz": 50,
+        "BIRTHS.jsonl.gz": 200,
+        "CONTACT_CERTIFICATES.jsonl.gz": 50,
+        "ORDER_EVIDENCE.jsonl.gz": 4
+      },
+      "all_scientific_rows_and_canonical_JSON_equal": true,
+      "order_sources": {
+        "status": "PASS",
+        "pre_fact_bindings": 8,
+        "post_fact_bindings": 8,
+        "assigned_source_permutations": 0,
+        "frozen_raw_statistics_exact": true,
+        "permutation_only_in_scoring_binding": true,
+        "physical_depth_accuracy": "UNKNOWN",
+        "GT_read": false
+      },
+      "automatic_sources": {
+        "status": "PASS",
+        "actual_accepted_actions": 0,
+        "actual_measurement_bindings": 0,
+        "whole_ema_updates_recomputed": 1107,
+        "whole_last15_and_partner_ema_recomputed": true,
+        "same_ROI_raw_profiles": true,
+        "GT_read": false,
+        "all_accepted_actions_have_current_and_actual_past_evidence": true
+      },
+      "actual_prediction": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\slice_immutable\\feeding_001201_001906\\public\\predictions.jsonl.gz",
+        "bytes": 2156,
+        "sha256": "57cfa77ce4816af9888135f058cc817c685d58d087004073e3d8cc7c325c053c"
+      },
+      "elapsed_seconds": 59.1008140000049,
+      "old_elapsed_seconds": 119.79562560003251
+    },
+    "L3": {
+      "rows": {
+        "predictions.jsonl.gz": 50,
+        "MIXED_DEPTH.jsonl.gz": 50,
+        "TRANSACTIONS.jsonl.gz": 250,
+        "DEPTH_STATES.jsonl.gz": 200,
+        "DEPTH_OBSERVATIONS.jsonl.gz": 50,
+        "BIRTHS.jsonl.gz": 200,
+        "CONTACT_CERTIFICATES.jsonl.gz": 50,
+        "ORDER_EVIDENCE.jsonl.gz": 0
+      },
+      "all_scientific_rows_and_canonical_JSON_equal": true,
+      "order_sources": {
+        "status": "PASS",
+        "pre_fact_bindings": 0,
+        "post_fact_bindings": 0,
+        "assigned_source_permutations": 0,
+        "frozen_raw_statistics_exact": true,
+        "permutation_only_in_scoring_binding": true,
+        "physical_depth_accuracy": "UNKNOWN",
+        "GT_read": false
+      },
+      "automatic_sources": {
+        "status": "PASS",
+        "actual_accepted_actions": 0,
+        "actual_measurement_bindings": 0,
+        "whole_ema_updates_recomputed": 1247,
+        "whole_last15_and_partner_ema_recomputed": true,
+        "same_ROI_raw_profiles": true,
+        "GT_read": false,
+        "all_accepted_actions_have_current_and_actual_past_evidence": true
+      },
+      "actual_prediction": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\slice_immutable\\L3\\public\\predictions.jsonl.gz",
+        "bytes": 1372,
+        "sha256": "9f4e9ac00e59699835347a6186baf41ef353bf3f2568bc66340b564817a14191"
+      },
+      "elapsed_seconds": 27.95727190002799,
+      "old_elapsed_seconds": 61.16442269994877
+    }
+  },
+  "untrusted_JSON_fully_validated": true,
+  "mutable_state_clone_isolation": true,
+  "runtime_boundary": "Read-only normal branch operations; not an isolation boundary against malicious same-process Python builtin calls",
+  "original_mutable_source_archive": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\archive_prefreeze_mutable\\ARCHIVE.json",
+    "bytes": 1483,
+    "sha256": "a77cdd12d63d597db9a4a3ac2fa8423beca54c43e2c41f3c5fe7f0e3da9986b2"
+  },
+  "GT_read": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

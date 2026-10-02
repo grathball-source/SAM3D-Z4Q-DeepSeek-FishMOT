@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds15_z4q_depth_strategy_repair\test_hybrid.py", line 5, in <module>
+    from hybrid import HybridBridge
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds15_z4q_depth_strategy_repair\hybrid.py", line 5, in <module>
+    from controller import DepthNativeBridge
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds15_z4q_depth_strategy_repair\controller.py", line 22, in <module>
+    from ne_controller import NativeFirstGroupBridgeP
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ne1_native_first_event_association\ne_controller.py", line 20, in <module>
+    from px_return import StableReturn  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_return.py", line 10, in <module>
+    from px_z4 import QualityBirth
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z4.py", line 11, in <module>
+    from px_z3 import NativePrior, DepthRepair
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z3.py", line 6, in <module>
+    from px_z2 import BirthRefine, DepthRepair
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_z2.py", line 8, in <module>
+    from px_d1 import DepthRepair
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\z4q_pairwise_reconnect_repair\source\px_d1.py", line 11, in <module>
+    from controller import DepthIdentityBalance,center
+ImportError: cannot import name 'DepthIdentityBalance' from partially initialized module 'controller' (most likely due to a circular import) (E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds15_z4q_depth_strategy_repair\controller.py)

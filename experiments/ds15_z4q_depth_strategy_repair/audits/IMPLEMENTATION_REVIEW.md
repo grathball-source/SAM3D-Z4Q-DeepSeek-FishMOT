@@ -1,0 +1,39 @@
+# DS15 implementation review / 实现复核
+
+Reviewed before the scientific freeze, 2026-10-02. This review is static. The reviewer ran no predictions, GT evaluation, server job or model request. Parent-owned evidence already records 150 real prefix frames and the focused synthetic checks. Existing files and old seals were not changed by this review.
+
+## Finding requiring resolution before freeze
+
+**Automatic history minimum differs from the declared strategy.** `STRATEGY.json:26` declares at least **five** joint clean observations for an automatic contradiction veto. At review time `hybrid.py:104` instead used `CFG['birth_min_history_samples']`, which is **three** in `CONFIG.json`. The additional DS12 birth threshold and the automatic edge threshold are distinct contracts. Three/four observations could therefore reject an original Z4Q candidate despite the declared five-point automatic rule. Set the automatic minimum explicitly to five, retaining three for the existing additional birth path. A focused three/four/five-sample binding check is sufficient; no broader prediction rerun is needed for this particular contract.
+
+## Verified state and evidence flow
+
+1. **Original baseline is separate.** `runner.py` instantiates the original `Bridge` for `Z4Q_FROZEN`; it receives the same observations/profiles and commits its own cloned preview. It has no new manager or depth hook. `R12_RAW` retains `DepthNativeBridge` and the unmodified DS9 chooser. The two hybrid arms replace only their own engine with the pairwise-hook copy of the original return controller.
+
+2. **Depth context is bound before the current frame can enter history.** `runner.py:181–192` calls `bind_depth` before `manager.before`, preview or `BirthMemory.before`; `memory.after` and `manager.after` occur only after the selected commit (`runner.py:251–253`). `hybrid.py:92–121` requires the real preframe bank anchor, its registered source/public/generation/epoch version, matching contiguous geometry/depth frame-times, raw sensor provenance, a positive bounded gap and the same raw-state key. It copies the qualifying samples. The current query is a separate measurement entry. It is not inserted into the past fragment.
+
+3. **No context or confirmation pollution from repeated previews was found.** The context is replaced once per real frame, then deep-copied together with the engine into causal/staged/fallback trials. `HybridReturn.step` resets its trace checks on each trial (`hybrid.py:73–76`). A trial cannot mutate the bound real preframe fragment. Failed stages discard the clone. `DepthNativeBridge.preview` restores the protected write sets, including `birth`, `pending` and `first_eligible`, from the real preframe engine (`controller.py:28,140–148`). Thus protected trials cannot advance persistent first eligibility or D1 confirmation counts. Outside sources retain their legal causal updates. At q, local fallback adopts a complete own-branch causal clone, with an exact mapping-equality check (`controller.py:159–181`). This defers persistent member inheritance during protection; it can delay the original rule and must be measured against the SHARED arm.
+
+4. **Frozen history preserves one existing fragment.** `EventDepthState.freeze` copies `latest_fragment` only under the same public/epoch/generation and with every sample before the suspect frame (`hybrid.py:17–28`). The live deque stays bounded at 30. It does not join fragments across risk or fill missing frames. The group predictor independently requires causal, contiguous clean values and a query gap in `(0,12]` seconds. One/two samples keep the old no-slope fallback. The shared arm also receives this bookkeeping change, so it is not counted as standalone depth benefit.
+
+5. **UNKNOWN retains the old automatic candidate.** The hook changes neither original candidate scoring nor the original dummy/assignment matrix. It returns a veto only when frame/time, exact anchor, qualified current core and finite positive forecast scale all match; the signal/background mixture log LR must be at most `-log(9)`. Missing history, changed anchors, missing background or current risk leave `veto=False`. The original whole/core partner evidence and quality checks still decide the original edge.
+
+6. **Group admission is per changed public identity.** The private isolated DS9 module uses the local-level forecast without modifying the frozen R12 module. Every changed protected public requires its own eligible history, positive selected depth LR and strictly positive depth preference over the baseline or alternate source. Total depth contribution versus H0 must also be positive. Missing changed-role evidence causes H0. The original joint `log(9)` threshold remains. The unchanged role can have short/missing history, which allows a one-identity restoration without inventing a two-identity witness.
+
+## Reporting issue to preserve explicitly
+
+`controller.py:128–156` keeps the causal preview's mapping and trace while restoring protected aliases, banks and pending state. `stage_group_restore` can later replace member mappings at q. Therefore an `events[].accepted=True` automatic reconnect is **not by itself a durable alias commit**. During protection, a mapping may be published even though the member's candidate alias is not adopted; later trials can repeat that candidate. At q a group transaction can overwrite it.
+
+`score.py:183–202` checks the actual published mapping and labels overwritten actions `NOT_FIRST_PUBLISHED`; this is useful. `summarize.py:53–56` currently counts all accepted trace events in `accepted_auto_actions`. Report that count as accepted causal candidates and separately count actions applied to publication. If durable commits are claimed, they require the selected engine's actual alias/commit-frame state, rather than the clone trace. Repeated publication trials must not inflate the number of independent successful restores. This reporting distinction does not require changing the predictor.
+
+## Necessary validation scope
+
+Existing evidence: `PREFIX_CHECKS.json` records 50 frames each of FishSA development, later Feeding and L3; all five arms preserve ordered masks and unique IDs, and native/R12 are exact to DS14. Only the Feeding prefix includes an event. `test_group.py` exercises partial history, one-role restoration, invalid future/version/risk/MAD/gap, opposing depth preference, common missing query evidence and container-order symmetry. `test_hybrid.py` exercises the veto directly, UNKNOWN/anchor/current-quality retention, preview purity, one commit, old intact fragment retention, expiry and epoch break.
+
+Before freeze, the only directly required repair check is the explicit automatic three/four/five-sample minimum and source/anchor/version binding. The current direct-hook fixture supplies a ready-made context, so it cannot detect a `bind_depth` minimum mismatch. A compact synthetic binding/clone check should show that three/four points stay UNKNOWN, five clean points can become comparable, a changed anchor/version stays UNKNOWN, and repeated preview or failed stage leaves the preframe memory/context/first-eligible/pending state unchanged. No GT is needed.
+
+After all eight prediction seals, the existing independent gates should establish full native/R12 exact replay, six known original Z4Q archives (19032 frames) with the other two archives marked unavailable, ordered-mask conservation, one publish per frame and the same source/GT protocol. Prefix agreement is not proof of all late automatic recovery paths; full sealed parity and per-action publication/state audits supply that evidence. New-depth superiority remains an empirical result, including the known Feeding risk of original automatic inheritance.
+
+## 结论
+
+未发现当前帧深度混进过去参考、preview提前污染真实first-eligible/pending、跨风险拼接清洁历史或跨臂状态抄写。冻结前应修正自动否决“五点声明、三点执行”的不一致。报告必须分清“因果预览已接受候选”“本帧实际发布”“别名持久提交”，不能用预览trace的accepted总数冒充成功恢复次数。其余设计符合已声明的五臂对照；最终效果要等全部封存后的完整同源评测。

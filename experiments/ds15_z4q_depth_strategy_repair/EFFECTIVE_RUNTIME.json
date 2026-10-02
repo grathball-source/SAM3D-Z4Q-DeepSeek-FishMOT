@@ -1,0 +1,123 @@
+{
+  "status": "FIXED_BEFORE_FORMAL_PREDICTIONS",
+  "arms": [
+    "SAM3_NATIVE",
+    "Z4Q_FROZEN",
+    "R12_RAW",
+    "Z4Q_SHARED",
+    "Z4Q_DEPTH"
+  ],
+  "segments": {
+    "feeding_000000_000199": [
+      0,
+      199
+    ],
+    "feeding_000351_000555": [
+      351,
+      555
+    ],
+    "feeding_000701_001060": [
+      701,
+      1060
+    ],
+    "feeding_001201_001906": [
+      1201,
+      1906
+    ],
+    "fishsa_development_8400": [
+      1,
+      8400
+    ],
+    "fishsa_validation_2888": [
+      9301,
+      12188
+    ],
+    "L3": [
+      0,
+      3709
+    ],
+    "LW": [
+      0,
+      3628
+    ]
+  },
+  "frames": 20098,
+  "scientific_strategy": {
+    "trial": "DS15",
+    "review_base": "95f1a83172d6b90f36ff8bd5a7d948e74b42ae80",
+    "arms": [
+      "SAM3_NATIVE",
+      "Z4Q_FROZEN",
+      "R12_RAW",
+      "Z4Q_SHARED",
+      "Z4Q_DEPTH"
+    ],
+    "history": {
+      "live_cache_frames": 30,
+      "fit_observations": 10,
+      "immutable_reference": "LATEST_INTACT_SAME_VERSION_FRAGMENT",
+      "reference_max_age_seconds": 12,
+      "source_generation_epoch_breaks": true,
+      "risk_not_joined": true,
+      "current_post_samples": 1
+    },
+    "automatic": {
+      "original_rules": [
+        "D1_DELAYED",
+        "BIRTH_REFINE"
+      ],
+      "unknown_keeps_original_candidate": true,
+      "veto": "Exact bank/source/version, >=5 joint clean history, clean qualified current core and depth mixture LR <= -log9",
+      "threshold_source": "Existing minimum_joint_odds=9; not searched; original candidate score/dummy/weights unchanged"
+    },
+    "group": {
+      "mean": "Existing DS14 robust local-level forecast",
+      "joint_threshold": "Existing DS9 log9",
+      "admission": "Every changed protected public requires eligible own history, positive chosen depth LR and positive preference vs old/alternate source; total depth delta >0",
+      "missing": "COMMON_UNINFORMATIVE; fallback own Z4Q mapping",
+      "unchanged_roles_not_required_to_have_3_samples": true
+    },
+    "birth": "Existing DS12 first-source depth/contact selection, same certificate and atomic transaction; additional to original automatic rules",
+    "baseline": "Separate untouched original Bridge; no event manager or added veto",
+    "shared": "Same protection/history bookkeeping, old auto candidates unchanged, H0 only and no extra birth transactions",
+    "source": "Immutable DS14 prepared original raw, same saved SAM3 masks and geometry; no restored RGB/test data",
+    "scientific_success": "New depth arm exceeds same-source native AND original Z4Q; shared comparison separates common-mechanism effect; no guaranteed gain",
+    "exposure": "All are exposed development/diagnostic inputs; not independent blind validation",
+    "scope_frames": 20098,
+    "Feeding_scope": "Original SOURCE_OLD1471; other436 saved frames exist but not selected",
+    "new_model_http": 0,
+    "smoke": 0,
+    "training": 0,
+    "SAM3_inference": 0,
+    "completion_service": 0,
+    "cost_usd": 0,
+    "local_prediction_parallel_processes": 3,
+    "threads_per_process": 1,
+    "server": false,
+    "GPU": false,
+    "stop": "Finish all segments and score after all seals; no scientific edit/retry/threshold search after freeze; retain failures"
+  },
+  "original_config": {
+    "min_points": 16,
+    "min_valid_fraction": 0.2,
+    "risk_floor_mm": 15.0,
+    "mad_scale": 1.4826,
+    "risk_budget_mm": 60.0,
+    "min_history_count": 5,
+    "max_history_age_s": 12.0,
+    "whole_veto_margin_mm": 15.0,
+    "assignment_margin": 0.15,
+    "motion_weight": 0.15,
+    "configuration_policy": "Fixed Q/R 2x2 on Z3N; no search; predicted outputs sealed before GT.",
+    "native_past_frames": 5,
+    "native_max_gap_s": 0.2,
+    "recent_core_max_age_s": 0.2,
+    "recent_core_max_risk_mm": 30.0
+  },
+  "reused_raw_input_scope": "DS14 immutable prepared raw masks/profiles/facts; actual source bindings unchanged",
+  "local_parallel": 3,
+  "threads": 1,
+  "GT_before_all_seals": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

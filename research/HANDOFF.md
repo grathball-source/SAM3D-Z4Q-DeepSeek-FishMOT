@@ -1,3 +1,11 @@
+# Latest: DS15 Z4Q/depth strategy repair (2026-10-02)
+
+Completed five branches, eight segments,20098frames; all predictions/access sealed before original-reference scoring. Read experiments/ds15_z4q_depth_strategy_repair/DEEP_REVIEW.md, RESULTS.md, MAIN_JUDGEMENT.json, SUMMARY.json and three independent postseal audits. Original Z4Q19032 archived frames exact; native/R12 all20098 frame/event/metric parity exact;181842 mask tokens retained.1590 old files unchanged. Zero model HTTP/smoke/SAM3/training/completion/GPU/server/$0.24 private actual-ID/raw-depth figures are inventoried, not committed.
+
+Target failed: DEPTH IDF1 dev92.002662 vsZ4Q99.333472; val76.641849 vs80.697587; Feeding81.820716 vs81.716806; L3weak72.426787 vs74.745256; LWweak60.613534 vs64.329395. Feeding small +0.103911/IDSW-2 does not meet native HOTA/AssA/IDSW superiority. Common protection loses original birth n7->0/dev3902 and n8->3/global11488 despite reopening both old hooks. It freezes source witness records while actual sources remain visible, creating artificial frame/time certificate gaps. Four original actions preserved; strict physical audit counts original six as5correct+1unknown, not6certifiedcorrect.3219 source-comparable checks/10850 total;0 depth vetoes. No rolling threshold search after negative results.
+
+Only next step: separate anonymous real source continuity/proposal evidence from certified clean identity references. Preserve real target generation/epoch breaks, never update A/B clean from merged masks; jointly resolve and atomically publish current q. Do not force the known answers or copy whole B0 state. New version not started. Feeding only original4segments1471, notall1907; L3/LW prediction-dependent weak refs. Prior handoff remains verbatim below.
+
 # Latest: DS14 original raw full performance validation (2026-10-02)
 
 Completed all20098 frames: FishSA8400/2888, SOURCE_OLD Feeding1471, L3 3710, LW3629. Read experiments/ds14_raw_multidataset/RESULTS.md, RUN_NOTES.json, PLAN.md, FINAL_CHECKS.json, frozen code/input/state/publication/seals, METRICS and per-event audits. Same-source SAM3 vs frozen R12_RAW only; raw sensor throughout, zero model HTTP/smoke/SAM3/training/completion/GPU/server/$0. User's named-all-data instruction supersedes DS13's untuned two-clip/three-arm input block; no F9 or VLM result fabricated.

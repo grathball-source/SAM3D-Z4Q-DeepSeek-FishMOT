@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "staged_files": 269,
+  "manifest_files": 266,
+  "no_private_pixels_or_credentials": true,
+  "source_and_document_whitespace_check": {
+    "status": "PASS",
+    "command": [
+      "git",
+      "-c",
+      "core.whitespace=trailing-space,space-before-tab,cr-at-eol",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".gitignore",
+      "research/HANDOFF.md",
+      "experiments/ds17_mixed_depth_activity_repair",
+      ":!experiments/ds17_mixed_depth_activity_repair/METRIC_COMPARISON.svg"
+    ],
+    "exception": "Only unchanged byte-sealed Matplotlib SVG path whitespace excluded; no figure/source/score bytes changed"
+  }
+}

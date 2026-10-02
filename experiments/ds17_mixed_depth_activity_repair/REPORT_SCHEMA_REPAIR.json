@@ -1,0 +1,42 @@
+{
+  "status": "REPORT_CONTAINER_REPAIR_RECORDED_BEFORE_SCORING",
+  "recorded_utc": "2026-10-02T10:58:55.925143+00:00",
+  "frozen_report": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds17_mixed_depth_activity_repair\\postseal_report.py",
+    "bytes": 11554,
+    "sha256": "a42f731cd50ec1d634eff70c281cebe4843f42faab9f13a6d1d04dfc644b62d3"
+  },
+  "adapter": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds17_mixed_depth_activity_repair\\report_schema_repair.py",
+    "bytes": 4340,
+    "sha256": "53c13a8b29674da1928030472450da3e76551509deeeee21c8cb66752ec72f0c"
+  },
+  "official_metrics_existed_at_recording": false,
+  "gt_or_score_outputs_read_at_recording": false,
+  "synthetic_schema_check": "PASS",
+  "repair": {
+    "file_type": "EVENT_AUDIT.json",
+    "path": "arms",
+    "selected_group_branches": [
+      "DS16_ORDER",
+      "ACTIVITY_ORDER",
+      "MIXED_ORDER",
+      "MIXED_OFF"
+    ],
+    "excluded_container_metadata": [
+      "automatic_reconnect"
+    ],
+    "group_facts_modified": false,
+    "automatic_facts_modified": false,
+    "automatic_facts_reported_from": "UNCHANGED_AUTOMATIC_RECONNECT_AUDIT.json",
+    "other_reads": "EXACT_ORIGINAL_READ_FUNCTION"
+  },
+  "schema_review": {
+    "automatic_origin_rule_applied_durable_keys": "MATCH_SCORER_SOURCE",
+    "group_status_physical_restore_consensus_keys": "MATCH_SCORER_SOURCE",
+    "mixed_whole_core_flags_and_layer_keys": "MATCH_FROZEN_MEASUREMENT_SOURCE",
+    "q_order_evidence_restore_published_mapping_keys": "MATCH_FROZEN_RUNNER_SOURCE",
+    "additional_key_adaptations": []
+  },
+  "prediction_parameter_candidate_rule_scoring_or_metric_changes": false
+}

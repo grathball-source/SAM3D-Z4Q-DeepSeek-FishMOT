@@ -1,3 +1,16 @@
+## DS17 mixed depth/activity repair completed (2026-10-02)
+
+## 主判定
+
+**已完成六分支、八片段、20098帧/分支的真实状态回放与独立评分。DS17没有可靠的新深度提点，并暴露两个明确的关联接口错误；冻结此版本。**
+
+混合层记录、真实来源与逐发布记录可保留作诊断。当前版本不适合替换原Z4Q；不能将本轮失败外推为完整历史、深度或上下关系无效。
+
+新增模型推理、smoke、训练、SAM3推理、补全服务和费用全部0。没有读取v3、选择新GT锚点、修改旧封存、改写已发布历史或少评任何ID。
+
+
+Complete code/logs/results: experiments/ds17_mixed_depth_activity_repair. Model HTTP/cost=0. Old seals immutable; private pixels inventoried locally. Follow NEXT_STEP_PLAN.md; no automatic new model run.
+
 # Latest: DS16 event-relative depth order (2026-10-02)
 
 Completed six independent real-state branches, eight segments/20098 frames; all predictions and access sealed before reference scoring. Read experiments/ds16_relative_depth_order/PLAN.md, RESULTS.md, DEEP_REVIEW.md, MAIN_JUDGEMENT.json, POSTSEAL_ORDER_REVIEW.json and the state/order/pipeline audits. All181842 saved native masks conserved; original native/Z4Q all-frame and full metric parity exact. No new model HTTP, smoke, SAM3, training, completion, GPU, server or cost.

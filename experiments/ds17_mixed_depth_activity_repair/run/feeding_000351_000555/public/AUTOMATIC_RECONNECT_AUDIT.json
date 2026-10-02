@@ -1,0 +1,4587 @@
+{
+  "segment": "feeding_000351_000555",
+  "arms": {
+    "Z4Q_FROZEN": [
+      {
+        "frame": 24,
+        "global_frame": 374,
+        "source": 70,
+        "target": 67,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 67,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "UNSCORABLE",
+        "relations": {
+          "query_vs_bank": "UNKNOWN",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "SAME"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8919667590027701,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.4527363184079602,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8978102189781022,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 11,
+          "native_id": 67,
+          "mask": "n:67",
+          "canonical_id": 67
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.649583379681668,
+          "birth_frame": 11,
+          "confirmation_span_s": 0.2990000247955322,
+          "old_anchor": {
+            "frame": 11,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "age": 0.43199992179870605,
+          "distance": 31.037351786445466,
+          "radius": 31.681613142577305,
+          "normalized_distance": 0.9796645027753966,
+          "motion_cost": 0.3811369464611236,
+          "native_id": 70,
+          "canonical_id": 67,
+          "history_depth": 1163.4229736328125,
+          "current_depth": 1172.6004028320312,
+          "residual_mm": 9.17742919921875,
+          "tolerance_mm": 31.295999765396118,
+          "alternatives": [
+            {
+              "id": 59,
+              "residual_mm": 231.9676513671875
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 222.79022216796875,
+          "required_partner_margin_mm": 10.0,
+          "cost": 0.350416620318332,
+          "rejection": null
+        }
+      },
+      {
+        "frame": 118,
+        "global_frame": 468,
+        "source": 80,
+        "target": 21,
+        "origin_rule": "BIRTH_REFINE",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 21,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "UNKNOWN"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0189873417721519,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "accepted": true,
+          "confirmations": 1,
+          "birth_frame": 118,
+          "confirmation_span_s": 0.0,
+          "extra_confirmation_frames": 0,
+          "first_public_id": 21,
+          "age": 2.7249999046325684,
+          "distance": 68.76570406274904,
+          "radius": 158.6282940925102,
+          "normalized_distance": 0.4335021343837038,
+          "motion_cost": 0.08968269210741187,
+          "native_id": 80,
+          "canonical_id": 21,
+          "phase": "birth",
+          "evidence_max_frame": 118,
+          "old_anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "depth_anchors": {
+            "core": {
+              "z": 1154.5582885742188,
+              "u": 18.905412268066407,
+              "n": 30,
+              "fraction": 1.0,
+              "mad": 12.75152587890625,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 9
+            },
+            "whole": {
+              "z": 1165.031005859375,
+              "u": 16.806841918945313,
+              "n": 355,
+              "fraction": 0.9594594594594594,
+              "mad": 11.3360595703125,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 21
+            }
+          },
+          "current_depths": {
+            "core": {
+              "z": 1144.7615966796875,
+              "u": 15.0,
+              "n": 20,
+              "fraction": 0.6666666666666666,
+              "mad": 3.45697021484375
+            },
+            "whole": {
+              "z": 1167.66259765625,
+              "u": 16.508222534179687,
+              "n": 277,
+              "fraction": 0.7982708933717579,
+              "mad": 11.1346435546875
+            }
+          },
+          "core": {
+            "residual_mm": 9.79669189453125,
+            "risk_mm": 18.905412268066407,
+            "lower_mm": 0.0,
+            "upper_mm": 28.702104162597657,
+            "cost": 0.47836840270996095
+          },
+          "whole": {
+            "residual_mm": 2.631591796875,
+            "risk_mm": 16.806841918945313,
+            "lower_mm": 0.0,
+            "upper_mm": 19.438433715820313,
+            "cost": 0.3239738952636719
+          },
+          "partners": [
+            {
+              "id": 1,
+              "active": false,
+              "current_neighbor": false,
+              "historical_direct": true,
+              "core_history": {
+                "z": 1175.9340209960938,
+                "u": 24.215317382812497,
+                "n": 18,
+                "fraction": 0.9,
+                "mad": 16.3330078125,
+                "anchor": {
+                  "frame": 69,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.603,
+                "count": 35
+              },
+              "whole_history": {
+                "z": 1189.7534790039062,
+                "u": 15.0,
+                "n": 274,
+                "fraction": 0.7988338192419825,
+                "mad": 7.248046875,
+                "anchor": {
+                  "frame": 73,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.736,
+                "count": 46
+              },
+              "candidate_core": {
+                "residual_mm": 31.17242431640625,
+                "risk_mm": 24.215317382812497,
+                "lower_mm": 6.957106933593753,
+                "upper_mm": 55.38774169921875,
+                "cost": 0.9231290283203125
+              },
+              "candidate_whole": {
+                "residual_mm": 22.09088134765625,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 5.582658813476563,
+                "upper_mm": 38.59910388183594,
+                "cost": 0.643318398030599
+              },
+              "state": "excluded_by_depth",
+              "failures": [],
+              "core_margin": 0.44476062561035157
+            },
+            {
+              "id": 41,
+              "active": true,
+              "current_neighbor": true,
+              "historical_direct": false,
+              "core_history": {
+                "z": 1021.4024658203125,
+                "u": 15.0,
+                "n": 103,
+                "fraction": 0.7686567164179104,
+                "mad": 5.8099365234375,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 58
+              },
+              "whole_history": {
+                "z": 1047.758056640625,
+                "u": 43.80800668945312,
+                "n": 483,
+                "fraction": 0.7866449511400652,
+                "mad": 29.548095703125,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 47
+              },
+              "candidate_core": {
+                "residual_mm": 123.359130859375,
+                "risk_mm": 15.0,
+                "lower_mm": 108.359130859375,
+                "upper_mm": 138.359130859375,
+                "cost": 2.305985514322917
+              },
+              "candidate_whole": {
+                "residual_mm": 119.904541015625,
+                "risk_mm": 43.80800668945312,
+                "lower_mm": 76.09653432617188,
+                "upper_mm": 163.71254770507812,
+                "cost": 2.728542461751302
+              },
+              "state": "support",
+              "failures": [],
+              "current_whole": null,
+              "own_whole": null,
+              "cross_whole": null,
+              "current_core": {
+                "z": 1005.4594116210938,
+                "u": 15.0,
+                "n": 55,
+                "fraction": 0.9322033898305084,
+                "mad": 6.33941650390625
+              },
+              "own_core": {
+                "residual_mm": 15.94305419921875,
+                "risk_mm": 15.0,
+                "lower_mm": 0.94305419921875,
+                "upper_mm": 30.94305419921875,
+                "cost": 0.5157175699869792
+              },
+              "cross_core": {
+                "residual_mm": 149.098876953125,
+                "risk_mm": 18.905412268066407,
+                "lower_mm": 130.1934646850586,
+                "upper_mm": 168.0042892211914,
+                "cost": 2.800071487019857
+              },
+              "survivor_quality": true,
+              "joint_core_margin": 4.111971028645834,
+              "native_certificate": {
+                "qualified": true,
+                "failures": [],
+                "run": {
+                  "start_frame": 1,
+                  "count": 117,
+                  "last_frame": 117,
+                  "time": 1789706596.198
+                }
+              },
+              "native_reservation": false,
+              "native_history_same_run": true
+            }
+          ],
+          "excluded_partners": [
+            {
+              "id": 2,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 3,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 10,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 50,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 59,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 60,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 68,
+              "reason": "historical_active_not_current_neighbor"
+            }
+          ],
+          "failures": [],
+          "whole_other_candidates": [
+            {
+              "id": 6,
+              "comparison": {
+                "residual_mm": 13.4967041015625,
+                "risk_mm": 25.233518994140624,
+                "lower_mm": 0.0,
+                "upper_mm": 38.730223095703124,
+                "cost": 0.6455037182617187
+              },
+              "veto": null
+            },
+            {
+              "id": 20,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 2.519072392411774
+            },
+            {
+              "id": 30,
+              "comparison": {
+                "residual_mm": 21.4736328125,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 4.965410278320313,
+                "upper_mm": 37.98185534667969,
+                "cost": 0.6330309224446614
+              },
+              "veto": null
+            },
+            {
+              "id": 73,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 3.7825677497594166
+            }
+          ],
+          "survivor_witnesses": 1,
+          "cost": 0.49182080652607274,
+          "rejection": null,
+          "history_requalifications": [],
+          "native_reservations": 0,
+          "old_eligibility": [
+            {
+              "id": 1,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 1.494999885559082,
+              "clean_count": 47
+            },
+            {
+              "id": 2,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.192999839782715,
+              "clean_count": 17
+            },
+            {
+              "id": 3,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.0929999351501465,
+              "clean_count": 22
+            },
+            {
+              "id": 6,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": 2.990000009536743,
+              "clean_count": 28
+            },
+            {
+              "id": 9,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.9639999866485596,
+              "clean_count": 72
+            },
+            {
+              "id": 10,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 39
+            },
+            {
+              "id": 11,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.03299999237060547,
+              "clean_count": 107
+            },
+            {
+              "id": 15,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 22
+            },
+            {
+              "id": 20,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": 3.3889999389648438,
+              "clean_count": 6
+            },
+            {
+              "id": 21,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 2.7249999046325684,
+              "clean_count": 21
+            },
+            {
+              "id": 22,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 14
+            },
+            {
+              "id": 24,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 15
+            },
+            {
+              "id": 25,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.3259999752044678,
+              "clean_count": 16
+            },
+            {
+              "id": 26,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_recent_interaction",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 30,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 17
+            },
+            {
+              "id": 41,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6649999618530273,
+              "clean_count": 59
+            },
+            {
+              "id": 50,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 24
+            },
+            {
+              "id": 57,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 59,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5880000591278076,
+              "clean_count": 10
+            },
+            {
+              "id": 60,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 2
+            },
+            {
+              "id": 62,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5219998359680176,
+              "clean_count": 5
+            },
+            {
+              "id": 63,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 64,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 66,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 57
+            },
+            {
+              "id": 67,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 1.562000036239624,
+              "clean_count": 27
+            },
+            {
+              "id": 68,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 38
+            },
+            {
+              "id": 69,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 9
+            },
+            {
+              "id": 71,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 3.0899999141693115,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 72,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 73,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": 0.8639998435974121,
+              "clean_count": 34
+            },
+            {
+              "id": 74,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 75,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 76,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 77,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 78,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 79,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            }
+          ],
+          "assignment_margin": 0.3181575926264729
+        }
+      },
+      {
+        "frame": 172,
+        "global_frame": 522,
+        "source": 83,
+        "target": 73,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 73,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "DIFFERENT"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8834355828220859,
+          "second_iou": 0.0014947683109118087
+        },
+        "actual_old_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.6765558199182614,
+          "birth_frame": 136,
+          "confirmation_span_s": 0.13300013542175293,
+          "old_anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "age": 2.6579999923706055,
+          "distance": 175.39408624183358,
+          "radius": 193.9618284525727,
+          "normalized_distance": 0.9042711529434809,
+          "motion_cost": 0.3355882119643723,
+          "native_id": 83,
+          "canonical_id": 73,
+          "history_depth": 1150.9195556640625,
+          "current_depth": 1135.843017578125,
+          "residual_mm": 15.0765380859375,
+          "tolerance_mm": 55.20399017486572,
+          "alternatives": [
+            {
+              "id": 22,
+              "residual_mm": 48.99163818359375
+            },
+            {
+              "id": 15,
+              "residual_mm": 209.13018798828125
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 33.91510009765625,
+          "required_partner_margin_mm": 21.486660131835936,
+          "cost": 0.3234441800817386,
+          "rejection": null
+        }
+      }
+    ],
+    "DS16_ORDER": [
+      {
+        "frame": 24,
+        "global_frame": 374,
+        "source": 70,
+        "target": 67,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 67,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "UNSCORABLE",
+        "relations": {
+          "query_vs_bank": "UNKNOWN",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "SAME"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8919667590027701,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.4527363184079602,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8978102189781022,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 11,
+          "native_id": 67,
+          "mask": "n:67",
+          "canonical_id": 67
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.649583379681668,
+          "birth_frame": 11,
+          "confirmation_span_s": 0.2990000247955322,
+          "old_anchor": {
+            "frame": 11,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "age": 0.43199992179870605,
+          "distance": 31.037351786445466,
+          "radius": 31.681613142577305,
+          "normalized_distance": 0.9796645027753966,
+          "motion_cost": 0.3811369464611236,
+          "native_id": 70,
+          "canonical_id": 67,
+          "history_depth": 1163.4229736328125,
+          "current_depth": 1172.6004028320312,
+          "residual_mm": 9.17742919921875,
+          "tolerance_mm": 31.295999765396118,
+          "alternatives": [
+            {
+              "id": 59,
+              "residual_mm": 231.9676513671875
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 222.79022216796875,
+          "required_partner_margin_mm": 10.0,
+          "cost": 0.350416620318332,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 24,
+            "native_id": 70,
+            "public_id": 67,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      },
+      {
+        "frame": 118,
+        "global_frame": 468,
+        "source": 80,
+        "target": 21,
+        "origin_rule": "BIRTH_REFINE",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 21,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "UNKNOWN"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0189873417721519,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "BIRTH_REFINE",
+          "accepted": true,
+          "confirmations": 1,
+          "birth_frame": 118,
+          "confirmation_span_s": 0.0,
+          "extra_confirmation_frames": 0,
+          "first_public_id": 21,
+          "age": 2.7249999046325684,
+          "distance": 68.76570406274904,
+          "radius": 158.6282940925102,
+          "normalized_distance": 0.4335021343837038,
+          "motion_cost": 0.08968269210741187,
+          "native_id": 80,
+          "canonical_id": 21,
+          "phase": "birth",
+          "evidence_max_frame": 118,
+          "old_anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "depth_anchors": {
+            "core": {
+              "z": 1154.5582885742188,
+              "u": 18.905412268066407,
+              "n": 30,
+              "fraction": 1.0,
+              "mad": 12.75152587890625,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 9
+            },
+            "whole": {
+              "z": 1165.031005859375,
+              "u": 16.806841918945313,
+              "n": 355,
+              "fraction": 0.9594594594594594,
+              "mad": 11.3360595703125,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 21
+            }
+          },
+          "current_depths": {
+            "core": {
+              "z": 1144.7615966796875,
+              "u": 15.0,
+              "n": 20,
+              "fraction": 0.6666666666666666,
+              "mad": 3.45697021484375
+            },
+            "whole": {
+              "z": 1167.66259765625,
+              "u": 16.508222534179687,
+              "n": 277,
+              "fraction": 0.7982708933717579,
+              "mad": 11.1346435546875
+            }
+          },
+          "core": {
+            "residual_mm": 9.79669189453125,
+            "risk_mm": 18.905412268066407,
+            "lower_mm": 0.0,
+            "upper_mm": 28.702104162597657,
+            "cost": 0.47836840270996095
+          },
+          "whole": {
+            "residual_mm": 2.631591796875,
+            "risk_mm": 16.806841918945313,
+            "lower_mm": 0.0,
+            "upper_mm": 19.438433715820313,
+            "cost": 0.3239738952636719
+          },
+          "partners": [
+            {
+              "id": 1,
+              "active": false,
+              "current_neighbor": false,
+              "historical_direct": true,
+              "core_history": {
+                "z": 1175.9340209960938,
+                "u": 24.215317382812497,
+                "n": 18,
+                "fraction": 0.9,
+                "mad": 16.3330078125,
+                "anchor": {
+                  "frame": 69,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.603,
+                "count": 35
+              },
+              "whole_history": {
+                "z": 1189.7534790039062,
+                "u": 15.0,
+                "n": 274,
+                "fraction": 0.7988338192419825,
+                "mad": 7.248046875,
+                "anchor": {
+                  "frame": 73,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.736,
+                "count": 46
+              },
+              "candidate_core": {
+                "residual_mm": 31.17242431640625,
+                "risk_mm": 24.215317382812497,
+                "lower_mm": 6.957106933593753,
+                "upper_mm": 55.38774169921875,
+                "cost": 0.9231290283203125
+              },
+              "candidate_whole": {
+                "residual_mm": 22.09088134765625,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 5.582658813476563,
+                "upper_mm": 38.59910388183594,
+                "cost": 0.643318398030599
+              },
+              "state": "excluded_by_depth",
+              "failures": [],
+              "core_margin": 0.44476062561035157
+            },
+            {
+              "id": 41,
+              "active": true,
+              "current_neighbor": true,
+              "historical_direct": false,
+              "core_history": {
+                "z": 1021.4024658203125,
+                "u": 15.0,
+                "n": 103,
+                "fraction": 0.7686567164179104,
+                "mad": 5.8099365234375,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 58
+              },
+              "whole_history": {
+                "z": 1047.758056640625,
+                "u": 43.80800668945312,
+                "n": 483,
+                "fraction": 0.7866449511400652,
+                "mad": 29.548095703125,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 47
+              },
+              "candidate_core": {
+                "residual_mm": 123.359130859375,
+                "risk_mm": 15.0,
+                "lower_mm": 108.359130859375,
+                "upper_mm": 138.359130859375,
+                "cost": 2.305985514322917
+              },
+              "candidate_whole": {
+                "residual_mm": 119.904541015625,
+                "risk_mm": 43.80800668945312,
+                "lower_mm": 76.09653432617188,
+                "upper_mm": 163.71254770507812,
+                "cost": 2.728542461751302
+              },
+              "state": "support",
+              "failures": [],
+              "current_whole": null,
+              "own_whole": null,
+              "cross_whole": null,
+              "current_core": {
+                "z": 1005.4594116210938,
+                "u": 15.0,
+                "n": 55,
+                "fraction": 0.9322033898305084,
+                "mad": 6.33941650390625
+              },
+              "own_core": {
+                "residual_mm": 15.94305419921875,
+                "risk_mm": 15.0,
+                "lower_mm": 0.94305419921875,
+                "upper_mm": 30.94305419921875,
+                "cost": 0.5157175699869792
+              },
+              "cross_core": {
+                "residual_mm": 149.098876953125,
+                "risk_mm": 18.905412268066407,
+                "lower_mm": 130.1934646850586,
+                "upper_mm": 168.0042892211914,
+                "cost": 2.800071487019857
+              },
+              "survivor_quality": true,
+              "joint_core_margin": 4.111971028645834,
+              "native_certificate": {
+                "qualified": true,
+                "failures": [],
+                "run": {
+                  "start_frame": 1,
+                  "count": 117,
+                  "last_frame": 117,
+                  "time": 1789706596.198
+                }
+              },
+              "native_reservation": false,
+              "native_history_same_run": true
+            }
+          ],
+          "excluded_partners": [
+            {
+              "id": 2,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 3,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 10,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 50,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 59,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 60,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 68,
+              "reason": "historical_active_not_current_neighbor"
+            }
+          ],
+          "failures": [],
+          "whole_other_candidates": [
+            {
+              "id": 6,
+              "comparison": {
+                "residual_mm": 13.4967041015625,
+                "risk_mm": 25.233518994140624,
+                "lower_mm": 0.0,
+                "upper_mm": 38.730223095703124,
+                "cost": 0.6455037182617187
+              },
+              "veto": null
+            },
+            {
+              "id": 20,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 2.519072392411774
+            },
+            {
+              "id": 30,
+              "comparison": {
+                "residual_mm": 21.4736328125,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 4.965410278320313,
+                "upper_mm": 37.98185534667969,
+                "cost": 0.6330309224446614
+              },
+              "veto": null
+            },
+            {
+              "id": 73,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 3.7825677497594166
+            }
+          ],
+          "survivor_witnesses": 1,
+          "cost": 0.49182080652607274,
+          "rejection": null,
+          "history_requalifications": [],
+          "native_reservations": 0,
+          "old_eligibility": [
+            {
+              "id": 1,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 1.494999885559082,
+              "clean_count": 47
+            },
+            {
+              "id": 2,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.192999839782715,
+              "clean_count": 17
+            },
+            {
+              "id": 3,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.0929999351501465,
+              "clean_count": 22
+            },
+            {
+              "id": 6,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": 2.990000009536743,
+              "clean_count": 28
+            },
+            {
+              "id": 9,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.9639999866485596,
+              "clean_count": 72
+            },
+            {
+              "id": 10,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 39
+            },
+            {
+              "id": 11,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.03299999237060547,
+              "clean_count": 107
+            },
+            {
+              "id": 15,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 22
+            },
+            {
+              "id": 20,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": 3.3889999389648438,
+              "clean_count": 6
+            },
+            {
+              "id": 21,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 2.7249999046325684,
+              "clean_count": 21
+            },
+            {
+              "id": 22,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 14
+            },
+            {
+              "id": 24,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 15
+            },
+            {
+              "id": 25,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.3259999752044678,
+              "clean_count": 16
+            },
+            {
+              "id": 26,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_recent_interaction",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 30,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 17
+            },
+            {
+              "id": 41,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6649999618530273,
+              "clean_count": 59
+            },
+            {
+              "id": 50,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 12
+            },
+            {
+              "id": 57,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 59,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6310000419616699,
+              "clean_count": 38
+            },
+            {
+              "id": 60,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 2
+            },
+            {
+              "id": 62,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5219998359680176,
+              "clean_count": 5
+            },
+            {
+              "id": 63,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 64,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 66,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 57
+            },
+            {
+              "id": 67,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 1.562000036239624,
+              "clean_count": 27
+            },
+            {
+              "id": 68,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 38
+            },
+            {
+              "id": 69,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 9
+            },
+            {
+              "id": 71,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 3.0899999141693115,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 72,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 73,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": 0.8639998435974121,
+              "clean_count": 34
+            },
+            {
+              "id": 74,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 75,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 76,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 77,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 78,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 79,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            }
+          ],
+          "edge_veto": {
+            "frame": 118,
+            "native_id": 80,
+            "public_id": 21,
+            "origin_rule": "BIRTH_REFINE",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          },
+          "assignment_margin": 0.3181575926264729
+        }
+      },
+      {
+        "frame": 172,
+        "global_frame": 522,
+        "source": 83,
+        "target": 73,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 73,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "DIFFERENT"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8834355828220859,
+          "second_iou": 0.0014947683109118087
+        },
+        "actual_old_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.6765558199182614,
+          "birth_frame": 136,
+          "confirmation_span_s": 0.13300013542175293,
+          "old_anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "age": 2.6579999923706055,
+          "distance": 175.39408624183358,
+          "radius": 193.9618284525727,
+          "normalized_distance": 0.9042711529434809,
+          "motion_cost": 0.3355882119643723,
+          "native_id": 83,
+          "canonical_id": 73,
+          "history_depth": 1150.9195556640625,
+          "current_depth": 1135.843017578125,
+          "residual_mm": 15.0765380859375,
+          "tolerance_mm": 55.20399017486572,
+          "alternatives": [
+            {
+              "id": 22,
+              "residual_mm": 48.99163818359375
+            },
+            {
+              "id": 15,
+              "residual_mm": 209.13018798828125
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 33.91510009765625,
+          "required_partner_margin_mm": 21.486660131835936,
+          "cost": 0.3234441800817386,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 172,
+            "native_id": 83,
+            "public_id": 73,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      }
+    ],
+    "ACTIVITY_ORDER": [
+      {
+        "frame": 24,
+        "global_frame": 374,
+        "source": 70,
+        "target": 67,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 67,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "UNSCORABLE",
+        "relations": {
+          "query_vs_bank": "UNKNOWN",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "SAME"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8919667590027701,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.4527363184079602,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8978102189781022,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 11,
+          "native_id": 67,
+          "mask": "n:67",
+          "canonical_id": 67
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.649583379681668,
+          "birth_frame": 11,
+          "confirmation_span_s": 0.2990000247955322,
+          "old_anchor": {
+            "frame": 11,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "age": 0.43199992179870605,
+          "distance": 31.037351786445466,
+          "radius": 31.681613142577305,
+          "normalized_distance": 0.9796645027753966,
+          "motion_cost": 0.3811369464611236,
+          "native_id": 70,
+          "canonical_id": 67,
+          "history_depth": 1163.4229736328125,
+          "current_depth": 1172.6004028320312,
+          "residual_mm": 9.17742919921875,
+          "tolerance_mm": 31.295999765396118,
+          "alternatives": [
+            {
+              "id": 59,
+              "residual_mm": 231.9676513671875
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 222.79022216796875,
+          "required_partner_margin_mm": 10.0,
+          "cost": 0.350416620318332,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 24,
+            "native_id": 70,
+            "public_id": 67,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      },
+      {
+        "frame": 118,
+        "global_frame": 468,
+        "source": 80,
+        "target": 21,
+        "origin_rule": "BIRTH_REFINE",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 21,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "UNKNOWN"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0189873417721519,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "BIRTH_REFINE",
+          "accepted": true,
+          "confirmations": 1,
+          "birth_frame": 118,
+          "confirmation_span_s": 0.0,
+          "extra_confirmation_frames": 0,
+          "first_public_id": 21,
+          "age": 2.7249999046325684,
+          "distance": 68.76570406274904,
+          "radius": 158.6282940925102,
+          "normalized_distance": 0.4335021343837038,
+          "motion_cost": 0.08968269210741187,
+          "native_id": 80,
+          "canonical_id": 21,
+          "phase": "birth",
+          "evidence_max_frame": 118,
+          "old_anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "depth_anchors": {
+            "core": {
+              "z": 1154.5582885742188,
+              "u": 18.905412268066407,
+              "n": 30,
+              "fraction": 1.0,
+              "mad": 12.75152587890625,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 9
+            },
+            "whole": {
+              "z": 1165.031005859375,
+              "u": 16.806841918945313,
+              "n": 355,
+              "fraction": 0.9594594594594594,
+              "mad": 11.3360595703125,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 21
+            }
+          },
+          "current_depths": {
+            "core": {
+              "z": 1144.7615966796875,
+              "u": 15.0,
+              "n": 20,
+              "fraction": 0.6666666666666666,
+              "mad": 3.45697021484375
+            },
+            "whole": {
+              "z": 1167.66259765625,
+              "u": 16.508222534179687,
+              "n": 277,
+              "fraction": 0.7982708933717579,
+              "mad": 11.1346435546875
+            }
+          },
+          "core": {
+            "residual_mm": 9.79669189453125,
+            "risk_mm": 18.905412268066407,
+            "lower_mm": 0.0,
+            "upper_mm": 28.702104162597657,
+            "cost": 0.47836840270996095
+          },
+          "whole": {
+            "residual_mm": 2.631591796875,
+            "risk_mm": 16.806841918945313,
+            "lower_mm": 0.0,
+            "upper_mm": 19.438433715820313,
+            "cost": 0.3239738952636719
+          },
+          "partners": [
+            {
+              "id": 1,
+              "active": false,
+              "current_neighbor": false,
+              "historical_direct": true,
+              "core_history": {
+                "z": 1175.9340209960938,
+                "u": 24.215317382812497,
+                "n": 18,
+                "fraction": 0.9,
+                "mad": 16.3330078125,
+                "anchor": {
+                  "frame": 69,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.603,
+                "count": 35
+              },
+              "whole_history": {
+                "z": 1189.7534790039062,
+                "u": 15.0,
+                "n": 274,
+                "fraction": 0.7988338192419825,
+                "mad": 7.248046875,
+                "anchor": {
+                  "frame": 73,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.736,
+                "count": 46
+              },
+              "candidate_core": {
+                "residual_mm": 31.17242431640625,
+                "risk_mm": 24.215317382812497,
+                "lower_mm": 6.957106933593753,
+                "upper_mm": 55.38774169921875,
+                "cost": 0.9231290283203125
+              },
+              "candidate_whole": {
+                "residual_mm": 22.09088134765625,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 5.582658813476563,
+                "upper_mm": 38.59910388183594,
+                "cost": 0.643318398030599
+              },
+              "state": "excluded_by_depth",
+              "failures": [],
+              "core_margin": 0.44476062561035157
+            },
+            {
+              "id": 41,
+              "active": true,
+              "current_neighbor": true,
+              "historical_direct": false,
+              "core_history": {
+                "z": 1021.4024658203125,
+                "u": 15.0,
+                "n": 103,
+                "fraction": 0.7686567164179104,
+                "mad": 5.8099365234375,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 58
+              },
+              "whole_history": {
+                "z": 1047.758056640625,
+                "u": 43.80800668945312,
+                "n": 483,
+                "fraction": 0.7866449511400652,
+                "mad": 29.548095703125,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 47
+              },
+              "candidate_core": {
+                "residual_mm": 123.359130859375,
+                "risk_mm": 15.0,
+                "lower_mm": 108.359130859375,
+                "upper_mm": 138.359130859375,
+                "cost": 2.305985514322917
+              },
+              "candidate_whole": {
+                "residual_mm": 119.904541015625,
+                "risk_mm": 43.80800668945312,
+                "lower_mm": 76.09653432617188,
+                "upper_mm": 163.71254770507812,
+                "cost": 2.728542461751302
+              },
+              "state": "support",
+              "failures": [],
+              "current_whole": null,
+              "own_whole": null,
+              "cross_whole": null,
+              "current_core": {
+                "z": 1005.4594116210938,
+                "u": 15.0,
+                "n": 55,
+                "fraction": 0.9322033898305084,
+                "mad": 6.33941650390625
+              },
+              "own_core": {
+                "residual_mm": 15.94305419921875,
+                "risk_mm": 15.0,
+                "lower_mm": 0.94305419921875,
+                "upper_mm": 30.94305419921875,
+                "cost": 0.5157175699869792
+              },
+              "cross_core": {
+                "residual_mm": 149.098876953125,
+                "risk_mm": 18.905412268066407,
+                "lower_mm": 130.1934646850586,
+                "upper_mm": 168.0042892211914,
+                "cost": 2.800071487019857
+              },
+              "survivor_quality": true,
+              "joint_core_margin": 4.111971028645834,
+              "native_certificate": {
+                "qualified": true,
+                "failures": [],
+                "run": {
+                  "start_frame": 1,
+                  "count": 117,
+                  "last_frame": 117,
+                  "time": 1789706596.198
+                }
+              },
+              "native_reservation": false,
+              "native_history_same_run": true
+            }
+          ],
+          "excluded_partners": [
+            {
+              "id": 2,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 3,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 10,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 50,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 59,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 60,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 68,
+              "reason": "historical_active_not_current_neighbor"
+            }
+          ],
+          "failures": [],
+          "whole_other_candidates": [
+            {
+              "id": 6,
+              "comparison": {
+                "residual_mm": 13.4967041015625,
+                "risk_mm": 25.233518994140624,
+                "lower_mm": 0.0,
+                "upper_mm": 38.730223095703124,
+                "cost": 0.6455037182617187
+              },
+              "veto": null
+            },
+            {
+              "id": 20,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 2.519072392411774
+            },
+            {
+              "id": 30,
+              "comparison": {
+                "residual_mm": 21.4736328125,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 4.965410278320313,
+                "upper_mm": 37.98185534667969,
+                "cost": 0.6330309224446614
+              },
+              "veto": null
+            },
+            {
+              "id": 73,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 3.7825677497594166
+            }
+          ],
+          "survivor_witnesses": 1,
+          "cost": 0.49182080652607274,
+          "rejection": null,
+          "history_requalifications": [],
+          "native_reservations": 0,
+          "old_eligibility": [
+            {
+              "id": 1,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 1.494999885559082,
+              "clean_count": 47
+            },
+            {
+              "id": 2,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.192999839782715,
+              "clean_count": 17
+            },
+            {
+              "id": 3,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.0929999351501465,
+              "clean_count": 22
+            },
+            {
+              "id": 6,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": 2.990000009536743,
+              "clean_count": 28
+            },
+            {
+              "id": 9,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.9639999866485596,
+              "clean_count": 72
+            },
+            {
+              "id": 10,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 39
+            },
+            {
+              "id": 11,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.03299999237060547,
+              "clean_count": 107
+            },
+            {
+              "id": 15,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 22
+            },
+            {
+              "id": 20,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": 3.3889999389648438,
+              "clean_count": 6
+            },
+            {
+              "id": 21,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 2.7249999046325684,
+              "clean_count": 21
+            },
+            {
+              "id": 22,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 14
+            },
+            {
+              "id": 24,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 15
+            },
+            {
+              "id": 25,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.3259999752044678,
+              "clean_count": 16
+            },
+            {
+              "id": 26,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_recent_interaction",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 30,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 17
+            },
+            {
+              "id": 41,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6649999618530273,
+              "clean_count": 59
+            },
+            {
+              "id": 50,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 12
+            },
+            {
+              "id": 57,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 59,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5880000591278076,
+              "clean_count": 10
+            },
+            {
+              "id": 60,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 2
+            },
+            {
+              "id": 62,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5219998359680176,
+              "clean_count": 5
+            },
+            {
+              "id": 63,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 64,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 66,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 57
+            },
+            {
+              "id": 67,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 1.562000036239624,
+              "clean_count": 27
+            },
+            {
+              "id": 68,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 38
+            },
+            {
+              "id": 69,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 9
+            },
+            {
+              "id": 71,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 3.0899999141693115,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 72,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 73,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": 0.8639998435974121,
+              "clean_count": 34
+            },
+            {
+              "id": 74,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 75,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 76,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 77,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 78,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 79,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            }
+          ],
+          "edge_veto": {
+            "frame": 118,
+            "native_id": 80,
+            "public_id": 21,
+            "origin_rule": "BIRTH_REFINE",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          },
+          "assignment_margin": 0.3181575926264729
+        }
+      },
+      {
+        "frame": 172,
+        "global_frame": 522,
+        "source": 83,
+        "target": 73,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 73,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "DIFFERENT"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8834355828220859,
+          "second_iou": 0.0014947683109118087
+        },
+        "actual_old_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.6765558199182614,
+          "birth_frame": 136,
+          "confirmation_span_s": 0.13300013542175293,
+          "old_anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "age": 2.6579999923706055,
+          "distance": 175.39408624183358,
+          "radius": 193.9618284525727,
+          "normalized_distance": 0.9042711529434809,
+          "motion_cost": 0.3355882119643723,
+          "native_id": 83,
+          "canonical_id": 73,
+          "history_depth": 1150.9195556640625,
+          "current_depth": 1135.843017578125,
+          "residual_mm": 15.0765380859375,
+          "tolerance_mm": 55.20399017486572,
+          "alternatives": [
+            {
+              "id": 22,
+              "residual_mm": 48.99163818359375
+            },
+            {
+              "id": 15,
+              "residual_mm": 209.13018798828125
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 33.91510009765625,
+          "required_partner_margin_mm": 21.486660131835936,
+          "cost": 0.3234441800817386,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 172,
+            "native_id": 83,
+            "public_id": 73,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      }
+    ],
+    "MIXED_ORDER": [
+      {
+        "frame": 25,
+        "global_frame": 375,
+        "source": 70,
+        "target": 67,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 67,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "CORRECT",
+        "relations": {
+          "query_vs_bank": "SAME",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "SAME"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9392265193370166,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8899082568807339,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8978102189781022,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 10,
+          "native_id": 67,
+          "mask": "n:67",
+          "canonical_id": 67
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.5075352788704202,
+          "birth_frame": 11,
+          "confirmation_span_s": 0.3320000171661377,
+          "old_anchor": {
+            "frame": 10,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "age": 0.4980001449584961,
+          "distance": 14.850938109333883,
+          "radius": 31.70334742232734,
+          "normalized_distance": 0.46843438680153343,
+          "motion_cost": 0.10391086270666972,
+          "native_id": 70,
+          "canonical_id": 67,
+          "history_depth": 1157.1954345703125,
+          "current_depth": 1172.2142333984375,
+          "residual_mm": 15.018798828125,
+          "tolerance_mm": 31.49400043487549,
+          "alternatives": [
+            {
+              "id": 59,
+              "residual_mm": 231.58148193359375
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 216.56268310546875,
+          "required_partner_margin_mm": 10.0,
+          "cost": 0.4924647211295798,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 25,
+            "native_id": 70,
+            "public_id": 67,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      },
+      {
+        "frame": 118,
+        "global_frame": 468,
+        "source": 80,
+        "target": 21,
+        "origin_rule": "BIRTH_REFINE",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 21,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "UNKNOWN"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0189873417721519,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "BIRTH_REFINE",
+          "accepted": true,
+          "confirmations": 1,
+          "birth_frame": 118,
+          "confirmation_span_s": 0.0,
+          "extra_confirmation_frames": 0,
+          "first_public_id": 21,
+          "age": 2.7249999046325684,
+          "distance": 68.76570406274904,
+          "radius": 158.6282940925102,
+          "normalized_distance": 0.4335021343837038,
+          "motion_cost": 0.08968269210741187,
+          "native_id": 80,
+          "canonical_id": 21,
+          "phase": "birth",
+          "evidence_max_frame": 118,
+          "old_anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "depth_anchors": {
+            "core": {
+              "z": 1154.5582885742188,
+              "u": 18.905412268066407,
+              "n": 30,
+              "fraction": 1.0,
+              "mad": 12.75152587890625,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 9
+            },
+            "whole": {
+              "z": 1165.031005859375,
+              "u": 16.806841918945313,
+              "n": 355,
+              "fraction": 0.9594594594594594,
+              "mad": 11.3360595703125,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 20
+            }
+          },
+          "current_depths": {
+            "core": {
+              "z": 1144.7615966796875,
+              "u": 15.0,
+              "n": 20,
+              "fraction": 0.6666666666666666,
+              "mad": 3.45697021484375
+            },
+            "whole": {
+              "z": 1167.66259765625,
+              "u": 16.508222534179687,
+              "n": 277,
+              "fraction": 0.7982708933717579,
+              "mad": 11.1346435546875
+            }
+          },
+          "core": {
+            "residual_mm": 9.79669189453125,
+            "risk_mm": 18.905412268066407,
+            "lower_mm": 0.0,
+            "upper_mm": 28.702104162597657,
+            "cost": 0.47836840270996095
+          },
+          "whole": {
+            "residual_mm": 2.631591796875,
+            "risk_mm": 16.806841918945313,
+            "lower_mm": 0.0,
+            "upper_mm": 19.438433715820313,
+            "cost": 0.3239738952636719
+          },
+          "partners": [
+            {
+              "id": 1,
+              "active": false,
+              "current_neighbor": false,
+              "historical_direct": true,
+              "core_history": {
+                "z": 1175.9340209960938,
+                "u": 24.215317382812497,
+                "n": 18,
+                "fraction": 0.9,
+                "mad": 16.3330078125,
+                "anchor": {
+                  "frame": 69,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.603,
+                "count": 35
+              },
+              "whole_history": {
+                "z": 1189.7534790039062,
+                "u": 15.0,
+                "n": 274,
+                "fraction": 0.7988338192419825,
+                "mad": 7.248046875,
+                "anchor": {
+                  "frame": 73,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.736,
+                "count": 38
+              },
+              "candidate_core": {
+                "residual_mm": 31.17242431640625,
+                "risk_mm": 24.215317382812497,
+                "lower_mm": 6.957106933593753,
+                "upper_mm": 55.38774169921875,
+                "cost": 0.9231290283203125
+              },
+              "candidate_whole": {
+                "residual_mm": 22.09088134765625,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 5.582658813476563,
+                "upper_mm": 38.59910388183594,
+                "cost": 0.643318398030599
+              },
+              "state": "excluded_by_depth",
+              "failures": [],
+              "core_margin": 0.44476062561035157
+            },
+            {
+              "id": 41,
+              "active": true,
+              "current_neighbor": true,
+              "historical_direct": false,
+              "core_history": {
+                "z": 1021.4024658203125,
+                "u": 15.0,
+                "n": 103,
+                "fraction": 0.7686567164179104,
+                "mad": 5.8099365234375,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 55
+              },
+              "whole_history": {
+                "z": 1047.758056640625,
+                "u": 43.80800668945312,
+                "n": 483,
+                "fraction": 0.7866449511400652,
+                "mad": 29.548095703125,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 32
+              },
+              "candidate_core": {
+                "residual_mm": 123.359130859375,
+                "risk_mm": 15.0,
+                "lower_mm": 108.359130859375,
+                "upper_mm": 138.359130859375,
+                "cost": 2.305985514322917
+              },
+              "candidate_whole": {
+                "residual_mm": 119.904541015625,
+                "risk_mm": 43.80800668945312,
+                "lower_mm": 76.09653432617188,
+                "upper_mm": 163.71254770507812,
+                "cost": 2.728542461751302
+              },
+              "state": "support",
+              "failures": [],
+              "current_whole": null,
+              "own_whole": null,
+              "cross_whole": null,
+              "current_core": {
+                "z": 1005.4594116210938,
+                "u": 15.0,
+                "n": 55,
+                "fraction": 0.9322033898305084,
+                "mad": 6.33941650390625
+              },
+              "own_core": {
+                "residual_mm": 15.94305419921875,
+                "risk_mm": 15.0,
+                "lower_mm": 0.94305419921875,
+                "upper_mm": 30.94305419921875,
+                "cost": 0.5157175699869792
+              },
+              "cross_core": {
+                "residual_mm": 149.098876953125,
+                "risk_mm": 18.905412268066407,
+                "lower_mm": 130.1934646850586,
+                "upper_mm": 168.0042892211914,
+                "cost": 2.800071487019857
+              },
+              "survivor_quality": true,
+              "joint_core_margin": 4.111971028645834,
+              "native_certificate": {
+                "qualified": true,
+                "failures": [],
+                "run": {
+                  "start_frame": 1,
+                  "count": 117,
+                  "last_frame": 117,
+                  "time": 1789706596.198
+                }
+              },
+              "native_reservation": false,
+              "native_history_same_run": true
+            }
+          ],
+          "excluded_partners": [
+            {
+              "id": 2,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 3,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 10,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 50,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 59,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 60,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 68,
+              "reason": "historical_active_not_current_neighbor"
+            }
+          ],
+          "failures": [],
+          "whole_other_candidates": [
+            {
+              "id": 6,
+              "comparison": {
+                "residual_mm": 13.4967041015625,
+                "risk_mm": 25.233518994140624,
+                "lower_mm": 0.0,
+                "upper_mm": 38.730223095703124,
+                "cost": 0.6455037182617187
+              },
+              "veto": null
+            },
+            {
+              "id": 20,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 2.519072392411774
+            },
+            {
+              "id": 30,
+              "comparison": {
+                "residual_mm": 21.4736328125,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 4.965410278320313,
+                "upper_mm": 37.98185534667969,
+                "cost": 0.6330309224446614
+              },
+              "veto": null
+            },
+            {
+              "id": 73,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 3.7825677497594166
+            }
+          ],
+          "survivor_witnesses": 1,
+          "cost": 0.49182080652607274,
+          "rejection": null,
+          "history_requalifications": [],
+          "native_reservations": 0,
+          "old_eligibility": [
+            {
+              "id": 1,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 1.494999885559082,
+              "clean_count": 38
+            },
+            {
+              "id": 2,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.192999839782715,
+              "clean_count": 17
+            },
+            {
+              "id": 3,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.0929999351501465,
+              "clean_count": 22
+            },
+            {
+              "id": 6,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": 2.990000009536743,
+              "clean_count": 27
+            },
+            {
+              "id": 9,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.9639999866485596,
+              "clean_count": 68
+            },
+            {
+              "id": 10,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 25
+            },
+            {
+              "id": 11,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.03299999237060547,
+              "clean_count": 107
+            },
+            {
+              "id": 15,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 18
+            },
+            {
+              "id": 20,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": 3.3889999389648438,
+              "clean_count": 6
+            },
+            {
+              "id": 21,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 2.7249999046325684,
+              "clean_count": 20
+            },
+            {
+              "id": 22,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 14
+            },
+            {
+              "id": 24,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 11
+            },
+            {
+              "id": 25,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.425999879837036,
+              "clean_count": 10
+            },
+            {
+              "id": 26,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_recent_interaction",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 30,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 17
+            },
+            {
+              "id": 41,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6649999618530273,
+              "clean_count": 32
+            },
+            {
+              "id": 50,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 13
+            },
+            {
+              "id": 57,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 59,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5880000591278076,
+              "clean_count": 7
+            },
+            {
+              "id": 60,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 2
+            },
+            {
+              "id": 62,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5219998359680176,
+              "clean_count": 5
+            },
+            {
+              "id": 63,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 64,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 66,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 29
+            },
+            {
+              "id": 67,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 1.562000036239624,
+              "clean_count": 25
+            },
+            {
+              "id": 68,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 38
+            },
+            {
+              "id": 69,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 9
+            },
+            {
+              "id": 71,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 3.0899999141693115,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 72,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 73,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": 0.8639998435974121,
+              "clean_count": 21
+            },
+            {
+              "id": 74,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 75,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 76,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 77,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 78,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 79,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            }
+          ],
+          "edge_veto": {
+            "frame": 118,
+            "native_id": 80,
+            "public_id": 21,
+            "origin_rule": "BIRTH_REFINE",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          },
+          "assignment_margin": 0.3181575926264729
+        }
+      },
+      {
+        "frame": 172,
+        "global_frame": 522,
+        "source": 83,
+        "target": 73,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 73,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "DIFFERENT"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8834355828220859,
+          "second_iou": 0.0014947683109118087
+        },
+        "actual_old_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.6765558199182614,
+          "birth_frame": 136,
+          "confirmation_span_s": 0.13300013542175293,
+          "old_anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "age": 2.6579999923706055,
+          "distance": 175.39408624183358,
+          "radius": 193.9618284525727,
+          "normalized_distance": 0.9042711529434809,
+          "motion_cost": 0.3355882119643723,
+          "native_id": 83,
+          "canonical_id": 73,
+          "history_depth": 1150.9195556640625,
+          "current_depth": 1135.843017578125,
+          "residual_mm": 15.0765380859375,
+          "tolerance_mm": 55.20399017486572,
+          "alternatives": [
+            {
+              "id": 22,
+              "residual_mm": 48.99163818359375
+            },
+            {
+              "id": 15,
+              "residual_mm": 209.13018798828125
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 33.91510009765625,
+          "required_partner_margin_mm": 21.486660131835936,
+          "cost": 0.3234441800817386,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 172,
+            "native_id": 83,
+            "public_id": 73,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      }
+    ],
+    "MIXED_OFF": [
+      {
+        "frame": 25,
+        "global_frame": 375,
+        "source": 70,
+        "target": 67,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 67,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "CORRECT",
+        "relations": {
+          "query_vs_bank": "SAME",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "SAME"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9392265193370166,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8899082568807339,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.8978102189781022,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 10,
+          "native_id": 67,
+          "mask": "n:67",
+          "canonical_id": 67
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.5075352788704202,
+          "birth_frame": 11,
+          "confirmation_span_s": 0.3320000171661377,
+          "old_anchor": {
+            "frame": 10,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "age": 0.4980001449584961,
+          "distance": 14.850938109333883,
+          "radius": 31.70334742232734,
+          "normalized_distance": 0.46843438680153343,
+          "motion_cost": 0.10391086270666972,
+          "native_id": 70,
+          "canonical_id": 67,
+          "history_depth": 1157.1954345703125,
+          "current_depth": 1172.2142333984375,
+          "residual_mm": 15.018798828125,
+          "tolerance_mm": 31.49400043487549,
+          "alternatives": [
+            {
+              "id": 59,
+              "residual_mm": 231.58148193359375
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 216.56268310546875,
+          "required_partner_margin_mm": 10.0,
+          "cost": 0.4924647211295798,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 25,
+            "native_id": 70,
+            "public_id": 67,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      },
+      {
+        "frame": 118,
+        "global_frame": 468,
+        "source": 80,
+        "target": 21,
+        "origin_rule": "BIRTH_REFINE",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 21,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "UNKNOWN",
+          "query_vs_public_origin": "UNKNOWN"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNSCORABLE_LOW_OR_AMBIGUOUS_IOU",
+          "best_iou": 0.0189873417721519,
+          "second_iou": 0.0
+        },
+        "actual_old_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "BIRTH_REFINE",
+          "accepted": true,
+          "confirmations": 1,
+          "birth_frame": 118,
+          "confirmation_span_s": 0.0,
+          "extra_confirmation_frames": 0,
+          "first_public_id": 21,
+          "age": 2.7249999046325684,
+          "distance": 68.76570406274904,
+          "radius": 158.6282940925102,
+          "normalized_distance": 0.4335021343837038,
+          "motion_cost": 0.08968269210741187,
+          "native_id": 80,
+          "canonical_id": 21,
+          "phase": "birth",
+          "evidence_max_frame": 118,
+          "old_anchor": {
+            "frame": 36,
+            "native_id": 21,
+            "mask": "n:21",
+            "canonical_id": 21
+          },
+          "depth_anchors": {
+            "core": {
+              "z": 1154.5582885742188,
+              "u": 18.905412268066407,
+              "n": 30,
+              "fraction": 1.0,
+              "mad": 12.75152587890625,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 9
+            },
+            "whole": {
+              "z": 1165.031005859375,
+              "u": 16.806841918945313,
+              "n": 355,
+              "fraction": 0.9594594594594594,
+              "mad": 11.3360595703125,
+              "anchor": {
+                "frame": 36,
+                "native_id": 21,
+                "mask": "n:21",
+                "canonical_id": 21
+              },
+              "time": 1789706593.506,
+              "count": 20
+            }
+          },
+          "current_depths": {
+            "core": {
+              "z": 1144.7615966796875,
+              "u": 15.0,
+              "n": 20,
+              "fraction": 0.6666666666666666,
+              "mad": 3.45697021484375
+            },
+            "whole": {
+              "z": 1167.66259765625,
+              "u": 16.508222534179687,
+              "n": 277,
+              "fraction": 0.7982708933717579,
+              "mad": 11.1346435546875
+            }
+          },
+          "core": {
+            "residual_mm": 9.79669189453125,
+            "risk_mm": 18.905412268066407,
+            "lower_mm": 0.0,
+            "upper_mm": 28.702104162597657,
+            "cost": 0.47836840270996095
+          },
+          "whole": {
+            "residual_mm": 2.631591796875,
+            "risk_mm": 16.806841918945313,
+            "lower_mm": 0.0,
+            "upper_mm": 19.438433715820313,
+            "cost": 0.3239738952636719
+          },
+          "partners": [
+            {
+              "id": 1,
+              "active": false,
+              "current_neighbor": false,
+              "historical_direct": true,
+              "core_history": {
+                "z": 1175.9340209960938,
+                "u": 24.215317382812497,
+                "n": 18,
+                "fraction": 0.9,
+                "mad": 16.3330078125,
+                "anchor": {
+                  "frame": 69,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.603,
+                "count": 35
+              },
+              "whole_history": {
+                "z": 1189.7534790039062,
+                "u": 15.0,
+                "n": 274,
+                "fraction": 0.7988338192419825,
+                "mad": 7.248046875,
+                "anchor": {
+                  "frame": 73,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "time": 1789706594.736,
+                "count": 38
+              },
+              "candidate_core": {
+                "residual_mm": 31.17242431640625,
+                "risk_mm": 24.215317382812497,
+                "lower_mm": 6.957106933593753,
+                "upper_mm": 55.38774169921875,
+                "cost": 0.9231290283203125
+              },
+              "candidate_whole": {
+                "residual_mm": 22.09088134765625,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 5.582658813476563,
+                "upper_mm": 38.59910388183594,
+                "cost": 0.643318398030599
+              },
+              "state": "excluded_by_depth",
+              "failures": [],
+              "core_margin": 0.44476062561035157
+            },
+            {
+              "id": 41,
+              "active": true,
+              "current_neighbor": true,
+              "historical_direct": false,
+              "core_history": {
+                "z": 1021.4024658203125,
+                "u": 15.0,
+                "n": 103,
+                "fraction": 0.7686567164179104,
+                "mad": 5.8099365234375,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 55
+              },
+              "whole_history": {
+                "z": 1047.758056640625,
+                "u": 43.80800668945312,
+                "n": 483,
+                "fraction": 0.7866449511400652,
+                "mad": 29.548095703125,
+                "anchor": {
+                  "frame": 98,
+                  "native_id": 41,
+                  "mask": "n:41",
+                  "canonical_id": 41
+                },
+                "time": 1789706595.566,
+                "count": 32
+              },
+              "candidate_core": {
+                "residual_mm": 123.359130859375,
+                "risk_mm": 15.0,
+                "lower_mm": 108.359130859375,
+                "upper_mm": 138.359130859375,
+                "cost": 2.305985514322917
+              },
+              "candidate_whole": {
+                "residual_mm": 119.904541015625,
+                "risk_mm": 43.80800668945312,
+                "lower_mm": 76.09653432617188,
+                "upper_mm": 163.71254770507812,
+                "cost": 2.728542461751302
+              },
+              "state": "support",
+              "failures": [],
+              "current_whole": null,
+              "own_whole": null,
+              "cross_whole": null,
+              "current_core": {
+                "z": 1005.4594116210938,
+                "u": 15.0,
+                "n": 55,
+                "fraction": 0.9322033898305084,
+                "mad": 6.33941650390625
+              },
+              "own_core": {
+                "residual_mm": 15.94305419921875,
+                "risk_mm": 15.0,
+                "lower_mm": 0.94305419921875,
+                "upper_mm": 30.94305419921875,
+                "cost": 0.5157175699869792
+              },
+              "cross_core": {
+                "residual_mm": 149.098876953125,
+                "risk_mm": 18.905412268066407,
+                "lower_mm": 130.1934646850586,
+                "upper_mm": 168.0042892211914,
+                "cost": 2.800071487019857
+              },
+              "survivor_quality": true,
+              "joint_core_margin": 4.111971028645834,
+              "native_certificate": {
+                "qualified": true,
+                "failures": [],
+                "run": {
+                  "start_frame": 1,
+                  "count": 117,
+                  "last_frame": 117,
+                  "time": 1789706596.198
+                }
+              },
+              "native_reservation": false,
+              "native_history_same_run": true
+            }
+          ],
+          "excluded_partners": [
+            {
+              "id": 2,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 3,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 10,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 50,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 59,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 60,
+              "reason": "historical_active_not_current_neighbor"
+            },
+            {
+              "id": 68,
+              "reason": "historical_active_not_current_neighbor"
+            }
+          ],
+          "failures": [],
+          "whole_other_candidates": [
+            {
+              "id": 6,
+              "comparison": {
+                "residual_mm": 13.4967041015625,
+                "risk_mm": 25.233518994140624,
+                "lower_mm": 0.0,
+                "upper_mm": 38.730223095703124,
+                "cost": 0.6455037182617187
+              },
+              "veto": null
+            },
+            {
+              "id": 20,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 2.519072392411774
+            },
+            {
+              "id": 30,
+              "comparison": {
+                "residual_mm": 21.4736328125,
+                "risk_mm": 16.508222534179687,
+                "lower_mm": 4.965410278320313,
+                "upper_mm": 37.98185534667969,
+                "cost": 0.6330309224446614
+              },
+              "veto": null
+            },
+            {
+              "id": 73,
+              "excluded": "outside_motion_range",
+              "normalized_distance": 3.7825677497594166
+            }
+          ],
+          "survivor_witnesses": 1,
+          "cost": 0.49182080652607274,
+          "rejection": null,
+          "history_requalifications": [],
+          "native_reservations": 0,
+          "old_eligibility": [
+            {
+              "id": 1,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 1.494999885559082,
+              "clean_count": 38
+            },
+            {
+              "id": 2,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.192999839782715,
+              "clean_count": 17
+            },
+            {
+              "id": 3,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.0929999351501465,
+              "clean_count": 22
+            },
+            {
+              "id": 6,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": 2.990000009536743,
+              "clean_count": 27
+            },
+            {
+              "id": 9,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.9639999866485596,
+              "clean_count": 68
+            },
+            {
+              "id": 10,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 25
+            },
+            {
+              "id": 11,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.03299999237060547,
+              "clean_count": 107
+            },
+            {
+              "id": 15,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 18
+            },
+            {
+              "id": 20,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": 3.3889999389648438,
+              "clean_count": 6
+            },
+            {
+              "id": 21,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 2.7249999046325684,
+              "clean_count": 20
+            },
+            {
+              "id": 22,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 14
+            },
+            {
+              "id": 24,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.1570000648498535,
+              "clean_count": 11
+            },
+            {
+              "id": 25,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 2.425999879837036,
+              "clean_count": 10
+            },
+            {
+              "id": 26,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_recent_interaction",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 30,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.4649999141693115,
+              "clean_age_s": 3.190000057220459,
+              "clean_count": 17
+            },
+            {
+              "id": 41,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.6649999618530273,
+              "clean_count": 32
+            },
+            {
+              "id": 50,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 13
+            },
+            {
+              "id": 57,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 59,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5880000591278076,
+              "clean_count": 7
+            },
+            {
+              "id": 60,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 2
+            },
+            {
+              "id": 62,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.5219998359680176,
+              "clean_count": 5
+            },
+            {
+              "id": 63,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 2.4589998722076416,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 64,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 66,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.497999906539917,
+              "clean_count": 29
+            },
+            {
+              "id": 67,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 1.562000036239624,
+              "clean_count": 25
+            },
+            {
+              "id": 68,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 0.4649999141693115,
+              "clean_count": 38
+            },
+            {
+              "id": 69,
+              "eligible": false,
+              "failures": [
+                "occupied"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": 3.322999954223633,
+              "clean_count": 9
+            },
+            {
+              "id": 71,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 3.0899999141693115,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 72,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 73,
+              "eligible": true,
+              "failures": [],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": 0.8639998435974121,
+              "clean_count": 21
+            },
+            {
+              "id": 74,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 75,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 1.9609999656677246,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 76,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.9639999866485596,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 77,
+              "eligible": false,
+              "failures": [
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.06699991226196289,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 78,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            },
+            {
+              "id": 79,
+              "eligible": false,
+              "failures": [
+                "occupied",
+                "insufficient_D1_history",
+                "no_D1_clean_anchor",
+                "no_D1_depth_history"
+              ],
+              "last_seen_age_s": 0.03299999237060547,
+              "clean_age_s": null,
+              "clean_count": 0
+            }
+          ],
+          "edge_veto": {
+            "frame": 118,
+            "native_id": 80,
+            "public_id": 21,
+            "origin_rule": "BIRTH_REFINE",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          },
+          "assignment_margin": 0.3181575926264729
+        }
+      },
+      {
+        "frame": 172,
+        "global_frame": 522,
+        "source": 83,
+        "target": 73,
+        "origin_rule": "D1_DELAYED",
+        "stage_accepted": true,
+        "applied_at_first_publication": true,
+        "actual_first_public_id": 73,
+        "durable_alias_after_commit": true,
+        "overridden_by_explicit_transaction": false,
+        "durable_automatic_commit": true,
+        "physical": "WRONG",
+        "relations": {
+          "query_vs_bank": "DIFFERENT",
+          "bank_vs_public_origin": "SAME",
+          "query_vs_public_origin": "DIFFERENT"
+        },
+        "query_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "bank_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        },
+        "public_origin_match": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8834355828220859,
+          "second_iou": 0.0014947683109118087
+        },
+        "actual_old_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "actual_controller_action": {
+          "kind": "reconnect",
+          "origin_rule": "D1_DELAYED",
+          "accepted": true,
+          "confirmations": 5,
+          "assignment_margin": 0.6765558199182614,
+          "birth_frame": 136,
+          "confirmation_span_s": 0.13300013542175293,
+          "old_anchor": {
+            "frame": 92,
+            "native_id": 73,
+            "mask": "n:73",
+            "canonical_id": 73
+          },
+          "age": 2.6579999923706055,
+          "distance": 175.39408624183358,
+          "radius": 193.9618284525727,
+          "normalized_distance": 0.9042711529434809,
+          "motion_cost": 0.3355882119643723,
+          "native_id": 83,
+          "canonical_id": 73,
+          "history_depth": 1150.9195556640625,
+          "current_depth": 1135.843017578125,
+          "residual_mm": 15.0765380859375,
+          "tolerance_mm": 55.20399017486572,
+          "alternatives": [
+            {
+              "id": 22,
+              "residual_mm": 48.99163818359375
+            },
+            {
+              "id": 15,
+              "residual_mm": 209.13018798828125
+            }
+          ],
+          "reserved_partners": [],
+          "partner_margin_mm": 33.91510009765625,
+          "required_partner_margin_mm": 21.486660131835936,
+          "cost": 0.3234441800817386,
+          "rejection": null,
+          "edge_veto": {
+            "frame": 172,
+            "native_id": 83,
+            "public_id": 73,
+            "origin_rule": "D1_DELAYED",
+            "veto": false,
+            "reason": "DS16_ORIGINAL_Z4Q_CANDIDATE_RETAINED"
+          }
+        }
+      }
+    ]
+  },
+  "counts": {
+    "Z4Q_FROZEN": {
+      "UNSCORABLE": 1,
+      "WRONG": 2
+    },
+    "DS16_ORDER": {
+      "UNSCORABLE": 1,
+      "WRONG": 2
+    },
+    "ACTIVITY_ORDER": {
+      "UNSCORABLE": 1,
+      "WRONG": 2
+    },
+    "MIXED_ORDER": {
+      "CORRECT": 1,
+      "WRONG": 2
+    },
+    "MIXED_OFF": {
+      "CORRECT": 1,
+      "WRONG": 2
+    }
+  },
+  "bank_and_public_origin_kept_separate": true,
+  "UNKNOWN_not_correct": true,
+  "postseal_only": true,
+  "accepted_preview_is_not_durable_commit": true,
+  "explicit_transactions_not_counted_as_automatic": true
+}

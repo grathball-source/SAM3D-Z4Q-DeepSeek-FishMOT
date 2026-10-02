@@ -1,0 +1,518 @@
+{
+  "status": "POSTSEAL_POSTSCORE_PRIVATE_STATE_FAILURE_VISUAL",
+  "cases": [
+    {
+      "segment": "L3",
+      "action_type": "AUTOMATIC_D1_NOT_S0",
+      "action_local_frame": 3025,
+      "action_original_frame": 3024,
+      "frames": [
+        2872,
+        2890,
+        3025
+      ],
+      "selection": "POSTSCORE_KNOWN_BANK_ACTIVITY_FAILURE",
+      "display_arms": [
+        "SAM3_NATIVE",
+        "Z4Q_FROZEN",
+        "Z4Q_STATE_FIXED",
+        "ORDER_OFF",
+        "DEPTH_ORDER",
+        "ORDER_PERMUTE"
+      ],
+      "seed_sources": [
+        5,
+        6,
+        9,
+        47
+      ],
+      "context_sources": [
+        3,
+        4,
+        7,
+        34,
+        37,
+        39,
+        41
+      ],
+      "crop_xyxy": [
+        152,
+        0,
+        540,
+        243
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\private\\visuals\\L3_D1_3025_bank_activity_six_actual_ids.png",
+        "bytes": 1281776,
+        "sha256": "7e1ad93e1585d0907b9995a910e0c07c0d2ae33eaedbab6cd3148edfc8c22f43"
+      },
+      "prediction_file": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\L3\\public\\predictions.jsonl.gz",
+        "bytes": 67510,
+        "sha256": "3203205f56403897f733aa0c72da8130c122f7e56c8f6001857440776b63354d"
+      },
+      "assignment_file": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3\\assignments.jsonl.gz",
+        "bytes": 2319617,
+        "sha256": "d5e826a70bca99b0f8c47fd0ac0112a1a9af334cc2579ada618ef84b8ca330e2"
+      },
+      "reference_status": "WEAK_UNREVIEWED_PREDICTION_DERIVED_PREANNOTATION",
+      "frames_provenance": [
+        {
+          "frame": 2872,
+          "original_frame": 2871,
+          "phase": "PRE GROUP: target activity frozen here",
+          "absent_seed_masks": [
+            47
+          ],
+          "prediction_row_hashes": {
+            "uncompressed_row_bytes_sha256": "2a0f4fd45b58743e26ee33f252e78e3b95df1b5acb3a8a5cc8705eac94c89540",
+            "canonical_json_lf_sha256": "a6904d975678e8c7e8093d25a0ac920b7e552a3f06e355ee4ff6028fa6bc53ca"
+          },
+          "assignment_row_hashes": {
+            "uncompressed_row_bytes_sha256": "6f0eeb9895e622484260fd9e6a581c056c8b38f4673f4d00c7ef0d1e090a789d",
+            "canonical_json_lf_sha256": "faa7aee59a0bd2fda7f2c9a3f1ac774e04806081cbca31284eb51435b28f7fdf"
+          },
+          "actual_mapping": {
+            "SAM3_NATIVE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 34,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "Z4Q_FROZEN": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "Z4Q_STATE_FIXED": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "ORDER_OFF": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "9": 6,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "DEPTH_ORDER": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "ORDER_PERMUTE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "9": 6,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            }
+          },
+          "raw_source_binding": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder4\\depth_1786858268559000.npy",
+              "bytes": 1474688,
+              "sha256": "8370157983dbc3391da1a37f859479363fe233b029645aed3ba5b8a392eab599"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2871,
+            "time": 1786858268.557,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "7b0c800b811b6c2630ac6a040bb2c624e102330fbf1056cd8578110dc0c991c9"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ad9a61e8b6e9a274412391684804456c29fa22bb9dc98c27f607c8ba282e7ceb"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "3de337ab0a75522c37e8844309c12d7965170574da27063b2c2d92ade498efd5"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          }
+        },
+        {
+          "frame": 2890,
+          "original_frame": 2889,
+          "phase": "LATER REAL native9 RESIDUAL (posthoc diagnostic)",
+          "absent_seed_masks": [
+            47
+          ],
+          "prediction_row_hashes": {
+            "uncompressed_row_bytes_sha256": "c2cb62a55b1f3ed35d28ef749a4ce297885213a9ef919c55c11ac4d0eb10818a",
+            "canonical_json_lf_sha256": "1226c9b6157bc70a252857b28ee11e0c9c30278c77618a84b6463309c4ae9176"
+          },
+          "assignment_row_hashes": {
+            "uncompressed_row_bytes_sha256": "67d50489f9639b8fc07567c3619d1922a73c3444789882ed4012f75930dd3954",
+            "canonical_json_lf_sha256": "eb80dcdbc03275c57e7bed666ef17804efe0cc71126fea8a321f1e827515f933"
+          },
+          "actual_mapping": {
+            "SAM3_NATIVE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 34,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "Z4Q_FROZEN": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "Z4Q_STATE_FIXED": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "ORDER_OFF": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "9": 6,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "DEPTH_ORDER": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "9": 9,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            },
+            "ORDER_PERMUTE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "9": 6,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41
+            }
+          },
+          "raw_source_binding": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder4\\depth_1786858269155000.npy",
+              "bytes": 1474688,
+              "sha256": "fe5036d62142a865297aa26738da79e9708ea1d8da7d0f356d74965d76e6b5c8"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2889,
+            "time": 1786858269.154,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "18114e3d8ae9a9045700602dfdeddb10a699050d0179bff414a62f96c375fd1d"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "50a275de0d3528fa7c99d584acc523bc14864bad08baf538a52d9aef22bf20e8"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "38eab4d1da154f9fa150eb9206f6d052706ba6626b0de4e2b8112e4197c782e8"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          }
+        },
+        {
+          "frame": 3025,
+          "original_frame": 3024,
+          "phase": "AUTOMATIC D1 COMMIT: original n47 -> ID9 (not S0)",
+          "absent_seed_masks": [
+            9
+          ],
+          "prediction_row_hashes": {
+            "uncompressed_row_bytes_sha256": "d9c01f184dc469f80fe030651f030770aa0403bd90df3c1dd71b2064c5af4661",
+            "canonical_json_lf_sha256": "e8dbdf519c3cfb9d6b3f7e771540b36d423962e11b27f88ca0add4b2ab535af8"
+          },
+          "assignment_row_hashes": {
+            "uncompressed_row_bytes_sha256": "db02499aaccfb4856e36a72e40cba78708a2c26e76eea757a0083b1655ddb022",
+            "canonical_json_lf_sha256": "4debd4431afb42a487d0ca189d9455022356a78e60db3e00692baee42f57b04c"
+          },
+          "actual_mapping": {
+            "SAM3_NATIVE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "34": 34,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 47
+            },
+            "Z4Q_FROZEN": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 9
+            },
+            "Z4Q_STATE_FIXED": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 47
+            },
+            "ORDER_OFF": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 47
+            },
+            "DEPTH_ORDER": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 6,
+              "7": 7,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 47
+            },
+            "ORDER_PERMUTE": {
+              "3": 3,
+              "4": 4,
+              "5": 5,
+              "6": 9,
+              "7": 7,
+              "34": 15,
+              "37": 37,
+              "39": 39,
+              "41": 41,
+              "47": 47
+            }
+          },
+          "raw_source_binding": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder4\\depth_1786858273629000.npy",
+              "bytes": 1474688,
+              "sha256": "50add46536238f8fff6024d3208dbf7b7977031b0e0eca63f0ed0e245d6bc536"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3024,
+            "time": 1786858273.627,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6c66cf66b79179cb81606d6f6520b16fdf1ef7e1da34ce023a8ca90bc85056d4"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6488a5510cb6d10fde5fb63101c2d92ee809907b2560ed2825b702ab644ca466"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "03b0b113f94c9a09442c587533d97446e1c592f3235bceff2a596d9164feae8f"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          }
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\STATE_BASELINE_DIVERGENCE_AUDIT.json",
+    "bytes": 6736450,
+    "sha256": "b28b9765869f70609d1c8331fbb2ce2b042816be169de7e1e7ddb378c9d8daf2"
+  },
+  "scored": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\METRICS.json",
+    "bytes": 6523106,
+    "sha256": "5e4007f3d52c82cfdfacf0b13266e05010d9e1b5c75491bfce3eb2e76cf8cc92"
+  },
+  "prediction_seal": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\L3\\public\\PREDICTIONS_SEALED.json",
+    "bytes": 1612,
+    "sha256": "476c1d799e5dc405eeee85ed1117b50b6e011c778bf29f627f6131bfab0fe22a"
+  },
+  "source_field_reads": [],
+  "RGB_pixels_read": false,
+  "GT_pixels_read": false,
+  "restored_depth_read": false,
+  "private_images_not_for_git": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "script": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\visualize_state_postseal.py",
+    "bytes": 8223,
+    "sha256": "5609557c57b95e17dd079a0e18d71ea5915b43b84c123364a7e62956146653cb"
+  },
+  "reproduction": "Run this script in a new empty output copy after all seals/score; requires DS14 raw sensor bags/assignment caches and installed numpy/matplotlib."
+}

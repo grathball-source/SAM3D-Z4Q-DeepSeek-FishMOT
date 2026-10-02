@@ -1,0 +1,905 @@
+{
+  "status": "POSTSEAL_SCORE_ADDITION; ORIGINAL_SOURCE_ONLY_AUDIT_PRESERVED",
+  "created_at": "2026-10-02T17:42:51.154210+08:00",
+  "direct_gt_pixels_read": false,
+  "independent_gt_derived_scores_read": true,
+  "frozen_code_or_predictions_changed": false,
+  "events": [
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "status": "POSTSEAL_INDEPENDENT_SCORE_REVIEW",
+      "score_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_001201_001906\\public\\EVENT_AUDIT.json",
+      "score_sha256": "d26c35f101aaa4fb9fc05feaffd4f0b82955155465a8aa0405ad591bebf74b0a",
+      "arms": {
+        "ORDER_OFF": {
+          "q": 39,
+          "physical": "CORRECT",
+          "choice": "H2",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "128": 128,
+            "167": 136
+          },
+          "changes": {
+            "167": 136
+          },
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "pre_consensus_expected_mapping": {},
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "UNSCORABLE",
+          "post_q_through_q10_consensus": {
+            "167": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "128": {
+              "gt_id": 25,
+              "matched_frames": 11,
+              "gt_ids": [
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 1,
+              "known": 1,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                25
+              ]
+            },
+            "B": {
+              "observations": 7,
+              "known": 7,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            }
+          }
+        },
+        "DEPTH_ORDER": {
+          "q": 39,
+          "physical": "NOT_COMMITTED",
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "actual_first_public_mapping": {
+            "128": 128,
+            "167": 167
+          },
+          "changes": {},
+          "first_public_physical": "WRONG",
+          "first_public_clean_endpoint_verdict": "WRONG",
+          "pre_consensus_expected_mapping": {},
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "167": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "128": {
+              "gt_id": 25,
+              "matched_frames": 11,
+              "gt_ids": [
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 1,
+              "known": 1,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                25
+              ]
+            },
+            "B": {
+              "observations": 7,
+              "known": 7,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            }
+          }
+        },
+        "ORDER_PERMUTE": {
+          "q": 39,
+          "physical": "CORRECT",
+          "choice": "H2",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "128": 128,
+            "167": 136
+          },
+          "changes": {
+            "167": 136
+          },
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "pre_consensus_expected_mapping": {},
+          "first_public_pre_consensus_verdict": "UNSCORABLE",
+          "committed_pre_consensus_verdict": "UNSCORABLE",
+          "post_q_through_q10_consensus": {
+            "167": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            },
+            "128": {
+              "gt_id": 25,
+              "matched_frames": 11,
+              "gt_ids": [
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25,
+                25
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 1,
+              "known": 1,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                25
+              ]
+            },
+            "B": {
+              "observations": 7,
+              "known": 7,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            }
+          }
+        }
+      },
+      "metrics": {
+        "Z4Q_FROZEN": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "DetA": 91.05748788823111,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "Z4Q_STATE_FIXED": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "DetA": 91.05748788823111,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "ORDER_OFF": {
+          "IDF1": 81.74271664992332,
+          "HOTA": 80.04750679220015,
+          "AssA": 70.38511744011275,
+          "DetA": 91.05748788823111,
+          "IDSW": 52,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "DEPTH_ORDER": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "DetA": 91.05748788823111,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        },
+        "ORDER_PERMUTE": {
+          "IDF1": 81.74271664992332,
+          "HOTA": 80.04750679220015,
+          "AssA": 70.38511744011275,
+          "DetA": 91.05748788823111,
+          "IDSW": 52,
+          "FP": 109,
+          "FN": 363,
+          "GT": 19040,
+          "predictions": 18786
+        }
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2584",
+      "status": "POSTSEAL_INDEPENDENT_SCORE_REVIEW",
+      "score_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\fishsa_validation_2888\\public\\EVENT_AUDIT.json",
+      "score_sha256": "9e9ce59bd564a323f71eca8dd095cd154410d0e8132006c882a8877ba08c1172",
+      "arms": {
+        "ORDER_OFF": {
+          "q": 2600,
+          "physical": "UNSCORABLE",
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "1": 4,
+            "4": 1
+          },
+          "changes": {
+            "4": 1,
+            "1": 4
+          },
+          "first_public_physical": "UNSCORABLE",
+          "first_public_clean_endpoint_verdict": "UNSCORABLE",
+          "pre_consensus_expected_mapping": {
+            "4": 4,
+            "1": 1
+          },
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "1": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 13,
+              "known": 8,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            },
+            "B": {
+              "observations": 13,
+              "known": 13,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                2
+              ]
+            }
+          }
+        },
+        "DEPTH_ORDER": {
+          "q": 2600,
+          "physical": "NOT_COMMITTED",
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "actual_first_public_mapping": {
+            "1": 1,
+            "4": 4
+          },
+          "changes": {},
+          "first_public_physical": "UNSCORABLE",
+          "first_public_clean_endpoint_verdict": "UNSCORABLE",
+          "pre_consensus_expected_mapping": {
+            "4": 4,
+            "1": 1
+          },
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "1": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 13,
+              "known": 8,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            },
+            "B": {
+              "observations": 13,
+              "known": 13,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                2
+              ]
+            }
+          }
+        },
+        "ORDER_PERMUTE": {
+          "q": 2600,
+          "physical": "UNSCORABLE",
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "1": 4,
+            "4": 1
+          },
+          "changes": {
+            "4": 1,
+            "1": 4
+          },
+          "first_public_physical": "UNSCORABLE",
+          "first_public_clean_endpoint_verdict": "UNSCORABLE",
+          "pre_consensus_expected_mapping": {
+            "4": 4,
+            "1": 1
+          },
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "4": {
+              "gt_id": 2,
+              "matched_frames": 11,
+              "gt_ids": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "1": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 13,
+              "known": 8,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            },
+            "B": {
+              "observations": 13,
+              "known": 13,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                2
+              ]
+            }
+          }
+        }
+      },
+      "metrics": {
+        "Z4Q_FROZEN": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "Z4Q_STATE_FIXED": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "ORDER_OFF": {
+          "IDF1": 82.0707436484255,
+          "HOTA": 69.404572971062,
+          "AssA": 60.354639266420726,
+          "DetA": 79.8339131595075,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "DEPTH_ORDER": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "ORDER_PERMUTE": {
+          "IDF1": 82.0707436484255,
+          "HOTA": 69.404572971062,
+          "AssA": 60.354639266420726,
+          "DetA": 79.8339131595075,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        }
+      }
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "status": "POSTSEAL_INDEPENDENT_SCORE_REVIEW",
+      "score_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\L3\\public\\EVENT_AUDIT.json",
+      "score_sha256": "89aa584d06735253629279bdf611157e2173e1bbf54a828379e533e30d3638e5",
+      "arms": {
+        "ORDER_OFF": {
+          "q": 1421,
+          "physical": "WRONG",
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "6": 9,
+            "9": 6
+          },
+          "changes": {
+            "9": 6,
+            "6": 9
+          },
+          "first_public_physical": "WRONG",
+          "first_public_clean_endpoint_verdict": "WRONG",
+          "pre_consensus_expected_mapping": {
+            "9": 9,
+            "6": 6
+          },
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "9": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            },
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            },
+            "B": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            }
+          }
+        },
+        "DEPTH_ORDER": {
+          "q": 1421,
+          "physical": "NOT_COMMITTED",
+          "choice": "H0",
+          "restore_status": "LOCAL_FALLBACK_COMMITTED",
+          "actual_first_public_mapping": {
+            "6": 6,
+            "9": 9
+          },
+          "changes": {},
+          "first_public_physical": "CORRECT",
+          "first_public_clean_endpoint_verdict": "CORRECT",
+          "pre_consensus_expected_mapping": {
+            "9": 9,
+            "6": 6
+          },
+          "first_public_pre_consensus_verdict": "CORRECT",
+          "committed_pre_consensus_verdict": "NOT_COMMITTED",
+          "post_q_through_q10_consensus": {
+            "9": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            },
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            },
+            "B": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            }
+          }
+        },
+        "ORDER_PERMUTE": {
+          "q": 1421,
+          "physical": "WRONG",
+          "choice": "H1",
+          "restore_status": "COMMIT",
+          "actual_first_public_mapping": {
+            "6": 9,
+            "9": 6
+          },
+          "changes": {
+            "9": 6,
+            "6": 9
+          },
+          "first_public_physical": "WRONG",
+          "first_public_clean_endpoint_verdict": "WRONG",
+          "pre_consensus_expected_mapping": {
+            "9": 9,
+            "6": 6
+          },
+          "first_public_pre_consensus_verdict": "WRONG",
+          "committed_pre_consensus_verdict": "WRONG",
+          "post_q_through_q10_consensus": {
+            "9": {
+              "gt_id": 6,
+              "matched_frames": 11,
+              "gt_ids": [
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+              ]
+            },
+            "6": {
+              "gt_id": 4,
+              "matched_frames": 11,
+              "gt_ids": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+              ]
+            }
+          },
+          "postseal_future_diagnostic_not_prediction_input": true,
+          "pre_support": {
+            "A": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                4
+              ]
+            },
+            "B": {
+              "observations": 30,
+              "known": 30,
+              "continuous": true,
+              "same_version": true,
+              "gt_ids": [
+                6
+              ]
+            }
+          }
+        }
+      },
+      "metrics": {
+        "Z4Q_FROZEN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "DetA": 60.254014677607174,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "Z4Q_STATE_FIXED": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "ORDER_OFF": {
+          "IDF1": 62.838602835561105,
+          "HOTA": 68.2141919692427,
+          "AssA": 77.22599084747802,
+          "DetA": 60.254014677607174,
+          "IDSW": 3,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "DEPTH_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "ORDER_PERMUTE": {
+          "IDF1": 62.838602835561105,
+          "HOTA": 68.2141919692427,
+          "AssA": 77.22599084747802,
+          "DetA": 60.254014677607174,
+          "IDSW": 3,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        }
+      }
+    }
+  ],
+  "findings": [
+    "F1239: the near-neutral sign gate blocked a clean-endpoint correct restore and retained a clean-endpoint wrong publication; full pre consensus remains UNSCORABLE because A has one observation.",
+    "F11900: bank/clean endpoints are UNSCORABLE, but independently scored pre-fragment consensus marks ORDER first publication CORRECT and OFF/PERMUTE first publication and committed consensus WRONG. Thus the same sign admission has opposite diagnostic directions across the two events.",
+    "Validation whole-segment OFF/PERMUTE IDF1 rises while IDSW also rises and the event-relative physical pre consensus is wrong; metric improvement does not certify causal physical identity restoration.",
+    "Avoided restoration at F11900 already equals Z4Q_FROZEN/Z4Q_STATE_FIXED; it is not an extra benefit over those baselines.",
+    "No event noncommit or UNKNOWN is automatically safety success."
+  ]
+}

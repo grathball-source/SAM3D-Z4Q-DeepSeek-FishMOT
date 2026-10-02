@@ -1,3 +1,20 @@
+# Latest: DS16 event-relative depth order (2026-10-02)
+
+Completed six independent real-state branches, eight segments/20098 frames; all predictions and access sealed before reference scoring. Read experiments/ds16_relative_depth_order/PLAN.md, RESULTS.md, DEEP_REVIEW.md, MAIN_JUDGEMENT.json, POSTSEAL_ORDER_REVIEW.json and the state/order/pipeline audits. All181842 saved native masks conserved; original native/Z4Q all-frame and full metric parity exact. No new model HTTP, smoke, SAM3, training, completion, GPU, server or cost.
+
+Common state repair advances real source/proposal continuity while freezing only protected public references. Original BirthRefine dev3902 n7->0 and validation global11488 n8->3 both retained; the ordinal inputs there are UNKNOWN, so these recoveries are common mechanism benefits. Group/unassigned post remain anonymous. The new event factor uses representative-core relative depth order, not verified local occlusion topology or a stable identity fingerprint.
+
+Frozen judgement: FROZEN_ORDINAL_SUPPORT_RULE_NOT_MET; ordinal: NO_CERTIFIED_ORDINAL_SPECIFIC_RECOVERY.
+fishsa_development_8400: ORDER IDF1/HOTA/AssA/IDSW 99.333472/77.829488/77.907638/6; versus original Z4Q +0.000000/+0.000000/+0.000000/+0.
+fishsa_validation_2888: ORDER IDF1/HOTA/AssA/IDSW 80.697587/69.243869/60.074321/9; versus original Z4Q +0.000000/+0.000000/+0.000000/+0.
+L3: ORDER IDF1/HOTA/AssA/IDSW 72.426787/75.362607/94.259655/1; versus original Z4Q -2.318468/-1.808950/-4.579391/-1.
+LW: ORDER IDF1/HOTA/AssA/IDSW 64.329395/68.995155/83.813941/9; versus original Z4Q +0.000000/+0.003434/+0.008344/-1.
+Feeding_pooled1471: ORDER IDF1/HOTA/AssA/IDSW 81.716806/79.859851/71.341782/132; versus original Z4Q +0.000000/+0.000000/+0.000000/+0.
+
+Weak/UNKNOWN evidence, non-split events, stage rejection and unscorable reference are retained. Tiny negative ordinal support can veto an otherwise admitted geometric choice in this frozen version; its factor effect and admission-rule effect are reported separately. Raw adaptive-core pixel counts are not independent sensor-source counts or fish-surface accuracy. Feeding original four SOURCE_OLD ranges1471 only; another436 saved frames not tested. L3/LW dependent preannotation are weak diagnostics; exposed FishSA validation is not blind independent-video evidence. Private actual-pixel figures are inventoried and stay local.
+
+Only next step, superseding the report generator preliminary suggestion: separate immutable bank identity references from live activity/partner state, keep this ordinal formula/trigger/q/quality thresholds fixed, then run one same-source full state-repair contrast. Local crossing measurement is a later candidate, not another concurrent next step. No new experiment started. Prior handoff bytes remain verbatim below.
+
 # Latest: DS15 Z4Q/depth strategy repair (2026-10-02)
 
 Completed five branches, eight segments,20098frames; all predictions/access sealed before original-reference scoring. Read experiments/ds15_z4q_depth_strategy_repair/DEEP_REVIEW.md, RESULTS.md, MAIN_JUDGEMENT.json, SUMMARY.json and three independent postseal audits. Original Z4Q19032 archived frames exact; native/R12 all20098 frame/event/metric parity exact;181842 mask tokens retained.1590 old files unchanged. Zero model HTTP/smoke/SAM3/training/completion/GPU/server/$0.24 private actual-ID/raw-depth figures are inventoried, not committed.

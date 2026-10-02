@@ -1,0 +1,3198 @@
+{
+  "status": "READ_ONLY_POSTSEAL_MECHANISM_AUDIT",
+  "created_at": "2026-10-02T17:38:32.420699+08:00",
+  "scope": "ALL_EIGHT_SEGMENTS; NO_GT_OR_METRIC_FILES_READ; NO_NEW_SCIENTIFIC_CONFIG",
+  "source": "REUSED_IMMUTABLE_DS14_RAW_SENSOR_ADAPTIVE_CORE_MEASUREMENTS",
+  "input_boundaries": [
+    "Adaptive exclusive-mask core excludes overlapping mask pixels geometrically; fish surface/background ownership remains UNKNOWN.",
+    "Measured n is valid aligned-depth PIXELS, not guaranteed independent native sensor source points.",
+    "CONTACT_CERTIFICATES is deliberately empty raw={} and not used as deduplicated contact qualification.",
+    "Ordinal evidence is paired representative core medians, not direct local occlusion topology.",
+    "Only frozen pre and current first split frame determine ordinal factor; hidden individual depth is not fabricated.",
+    "Full geometry/history/automatic event policy persists, but ordinal factor does not infer the full hidden crossing path."
+  ],
+  "segments": [
+    {
+      "segment": "feeding_000000_000199",
+      "q_events": 0,
+      "eligible": 0,
+      "unknown": 0,
+      "reasons": {},
+      "accepted": {
+        "DEPTH_ORDER": 0
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000000_000199\\public\\EVENTS.json",
+      "events_sha256": "c41fb47edde8d3a27cc65e386632ce955b90bb839681f102fbc62c867ad36fa8",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000000_000199\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "840f058a2597770beacee6c34e032702ec89fbbe9635a9a4a2b98040cb943b0b"
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "q_events": 6,
+      "eligible": 2,
+      "unknown": 4,
+      "reasons": {
+        "VALID_SOFT_ORDER_EVIDENCE": 2,
+        "NO_SAME_FRAME_PRE_PAIR": 3,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+      },
+      "accepted": {
+        "ORDER_OFF": 0,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 0
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000351_000555\\public\\EVENTS.json",
+      "events_sha256": "c58da677fba93e618489309af771430222bfb49eb34b7782962d7493a7cd4d50",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000351_000555\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "663cd539951b275c3c3d4898370556bd006cfb83e59ef7db3b8e4cbd0df2580f"
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "q_events": 5,
+      "eligible": 3,
+      "unknown": 2,
+      "reasons": {
+        "VALID_SOFT_ORDER_EVIDENCE": 3,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+        "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+      },
+      "accepted": {
+        "ORDER_OFF": 0,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 0
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000701_001060\\public\\EVENTS.json",
+      "events_sha256": "fdc1f551ba49936ab6fb7b5005a58b1d0e15431c397beb6e0b7872957df455d0",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_000701_001060\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "14f45690edea5e13dcfd771b903e2667d4ddd0d391464af20d8e4279662e04a0"
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "q_events": 9,
+      "eligible": 5,
+      "unknown": 4,
+      "reasons": {
+        "VALID_SOFT_ORDER_EVIDENCE": 5,
+        "NO_SAME_FRAME_PRE_PAIR": 3,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+      },
+      "accepted": {
+        "ORDER_OFF": 1,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 1
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_001201_001906\\public\\EVENTS.json",
+      "events_sha256": "cec90888761c3c93e2497bfe717ef0fd9492e04ae972cea0e181c56675930f40",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\feeding_001201_001906\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "f6ffd56e1fe514b6976e86c6c4d09034adf5eeea1e721028211e501481104754"
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "q_events": 9,
+      "eligible": 3,
+      "unknown": 6,
+      "reasons": {
+        "VALID_SOFT_ORDER_EVIDENCE": 3,
+        "NO_SAME_FRAME_PRE_PAIR": 4,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 2
+      },
+      "accepted": {
+        "ORDER_OFF": 0,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 0
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\fishsa_development_8400\\public\\EVENTS.json",
+      "events_sha256": "3d7c7d87846c2d707c6e009897b2f3c6db5068872e2385e53824a45657c923c3",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\fishsa_development_8400\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "2987b95522cccb90f5a9a208b73393811d1d909887657166c8dc22fc11cc568f"
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "q_events": 7,
+      "eligible": 3,
+      "unknown": 4,
+      "reasons": {
+        "NO_SAME_FRAME_PRE_PAIR": 3,
+        "VALID_SOFT_ORDER_EVIDENCE": 3,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1
+      },
+      "accepted": {
+        "ORDER_OFF": 1,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 1
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\fishsa_validation_2888\\public\\EVENTS.json",
+      "events_sha256": "78dabbf7859f68bb53daf3b608b91cbecb02d017e5cb02f88c92a670f91b3adf",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\fishsa_validation_2888\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "aeaf9f58bcdd20c5924482b20447fc5c6d5927f0a675b0c8136a4fdc580c2a43"
+    },
+    {
+      "segment": "L3",
+      "q_events": 4,
+      "eligible": 2,
+      "unknown": 2,
+      "reasons": {
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 1,
+        "VALID_SOFT_ORDER_EVIDENCE": 2,
+        "NO_SAME_FRAME_PRE_PAIR": 1
+      },
+      "accepted": {
+        "ORDER_OFF": 1,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 1
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\L3\\public\\EVENTS.json",
+      "events_sha256": "6167d25c1b25bb4795fd3542342d5c54713b1de381a561a3be9556c80f6ff0b6",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\L3\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "ddf7fd055d91f62259fd5f78dc833930b7e7af8bd4dbfb4df6a2866be6d6afce"
+    },
+    {
+      "segment": "LW",
+      "q_events": 10,
+      "eligible": 4,
+      "unknown": 6,
+      "reasons": {
+        "NO_SAME_FRAME_PRE_PAIR": 2,
+        "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 4,
+        "VALID_SOFT_ORDER_EVIDENCE": 4
+      },
+      "accepted": {
+        "ORDER_OFF": 0,
+        "DEPTH_ORDER": 0,
+        "ORDER_PERMUTE": 0
+      },
+      "events_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\LW\\public\\EVENTS.json",
+      "events_sha256": "aac6201b475237ce616f15c91f48811673fba170669110ef08a87282db31e5a1",
+      "order_file": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\run\\LW\\public\\ORDER_EVIDENCE.jsonl.gz",
+      "order_sha256": "5ebd18010ca6ae6d6e481484cdb6184c933190a5cb783497ea2f19b8c2aa982e"
+    }
+  ],
+  "aggregate_reason_counts": {
+    "VALID_SOFT_ORDER_EVIDENCE": 22,
+    "NO_SAME_FRAME_PRE_PAIR": 16,
+    "INVALID_CAUSAL_CLEAN_PRE_SOURCE_BINDING": 11,
+    "INVALID_OR_MISSING_CURRENT_PAIRED_DEPTH": 1
+  },
+  "aggregate_q_events": 50,
+  "aggregate_eligible": 22,
+  "aggregate_unknown": 28,
+  "aggregate_accepted": {
+    "DEPTH_ORDER": 0,
+    "ORDER_OFF": 3,
+    "ORDER_PERMUTE": 3
+  },
+  "source_and_factor_checks": {
+    "actual_pre_sample_checks": 594,
+    "actual_post_binding_checks": 132,
+    "factor_checks": 156,
+    "permuted_bindings": 44,
+    "nontrivial_permuted_median": 44
+  },
+  "audit_errors": [],
+  "eligible_events": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "query_local_frame": 48,
+      "query_original_frame": 398,
+      "paired_pre_frames": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "pair_count": 4,
+      "p_A_nearer": 0.5408632716451802,
+      "last_delta_B_minus_A_mm": 29.427642822265625,
+      "scale_at_q_mm": 269.3865739600955,
+      "gap_seconds": 1.2620000839233398,
+      "pre_span_seconds": 0.09999990463256836,
+      "pre_confidence": 0.5408632716451802,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.07424310680442757,
+      "post_bindings": {
+        "50": {
+          "observation_source": 50,
+          "actual_state_source": 50,
+          "actual_state_fact_id": "feeding_000351_000555/F48/n:50/adaptive/raw",
+          "assigned_depth_source": 50,
+          "assigned_measurement_fact_id": "feeding_000351_000555/F48/n:50/adaptive/raw",
+          "core": {
+            "area": 191,
+            "n": 176,
+            "valid_fraction": 0.9214659685863874,
+            "median": 1011.0706787109375,
+            "mad": 13.485076904296875,
+            "q10": 990.2484436035156,
+            "q25": 997.071533203125,
+            "q75": 1022.3624877929688,
+            "q90": 1046.06591796875
+          },
+          "actual_core": {
+            "area": 191,
+            "n": 176,
+            "valid_fraction": 0.9214659685863874,
+            "median": 1011.0706787109375,
+            "mad": 13.485076904296875,
+            "q10": 990.2484436035156,
+            "q25": 997.071533203125,
+            "q75": 1022.3624877929688,
+            "q90": 1046.06591796875
+          },
+          "scoring_permutation_only": false
+        },
+        "30": {
+          "observation_source": 30,
+          "actual_state_source": 30,
+          "actual_state_fact_id": "feeding_000351_000555/F48/n:30/adaptive/raw",
+          "assigned_depth_source": 30,
+          "assigned_measurement_fact_id": "feeding_000351_000555/F48/n:30/adaptive/raw",
+          "core": {
+            "area": 189,
+            "n": 140,
+            "valid_fraction": 0.7407407407407407,
+            "median": 1127.9754028320312,
+            "mad": 18.83837890625,
+            "q10": 1097.5182739257812,
+            "q25": 1114.0274047851562,
+            "q75": 1160.2490844726562,
+            "q90": 1193.8428588867187
+          },
+          "actual_core": {
+            "area": 189,
+            "n": 140,
+            "valid_fraction": 0.7407407407407407,
+            "median": 1127.9754028320312,
+            "mad": 18.83837890625,
+            "q10": 1097.5182739257812,
+            "q25": 1114.0274047851562,
+            "q75": 1160.2490844726562,
+            "q90": 1193.8428588867187
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F166",
+      "query_local_frame": 169,
+      "query_original_frame": 519,
+      "paired_pre_frames": [
+        158
+      ],
+      "pair_count": 1,
+      "p_A_nearer": 0.18761892837241625,
+      "last_delta_B_minus_A_mm": -228.98388671875,
+      "scale_at_q_mm": 229.69804091552183,
+      "gap_seconds": 0.36500000953674316,
+      "pre_span_seconds": 0.0,
+      "pre_confidence": 0.8123810716275838,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.8255835182447603,
+      "post_bindings": {
+        "50": {
+          "observation_source": 50,
+          "actual_state_source": 50,
+          "actual_state_fact_id": "feeding_000351_000555/F169/n:50/adaptive/raw",
+          "assigned_depth_source": 50,
+          "assigned_measurement_fact_id": "feeding_000351_000555/F169/n:50/adaptive/raw",
+          "core": {
+            "area": 146,
+            "n": 135,
+            "valid_fraction": 0.9246575342465754,
+            "median": 934.3106689453125,
+            "mad": 3.4749755859375,
+            "q10": 929.65283203125,
+            "q25": 931.6710510253906,
+            "q75": 938.6838073730469,
+            "q90": 945.466796875
+          },
+          "actual_core": {
+            "area": 146,
+            "n": 135,
+            "valid_fraction": 0.9246575342465754,
+            "median": 934.3106689453125,
+            "mad": 3.4749755859375,
+            "q10": 929.65283203125,
+            "q25": 931.6710510253906,
+            "q75": 938.6838073730469,
+            "q90": 945.466796875
+          },
+          "scoring_permutation_only": false
+        },
+        "24": {
+          "observation_source": 24,
+          "actual_state_source": 24,
+          "actual_state_fact_id": "feeding_000351_000555/F169/n:24/adaptive/raw",
+          "assigned_depth_source": 24,
+          "assigned_measurement_fact_id": "feeding_000351_000555/F169/n:24/adaptive/raw",
+          "core": {
+            "area": 122,
+            "n": 84,
+            "valid_fraction": 0.6885245901639344,
+            "median": 1156.2364501953125,
+            "mad": 7.64581298828125,
+            "q10": 1145.1556274414063,
+            "q25": 1149.2179260253906,
+            "q75": 1169.039794921875,
+            "q90": 1176.6220703125
+          },
+          "actual_core": {
+            "area": 122,
+            "n": 84,
+            "valid_fraction": 0.6885245901639344,
+            "median": 1156.2364501953125,
+            "mad": 7.64581298828125,
+            "q10": 1145.1556274414063,
+            "q25": 1149.2179260253906,
+            "q75": 1169.039794921875,
+            "q90": 1176.6220703125
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F55",
+      "query_local_frame": 64,
+      "query_original_frame": 764,
+      "paired_pre_frames": [
+        27,
+        28
+      ],
+      "pair_count": 2,
+      "p_A_nearer": 0.5288905641814879,
+      "last_delta_B_minus_A_mm": 59.461181640625,
+      "scale_at_q_mm": 770.8518738383343,
+      "gap_seconds": 1.196000099182129,
+      "pre_span_seconds": 0.03299999237060547,
+      "pre_confidence": 0.5288905641814879,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.053085721437417084,
+      "post_bindings": {
+        "95": {
+          "observation_source": 95,
+          "actual_state_source": 95,
+          "actual_state_fact_id": "feeding_000701_001060/F64/n:95/adaptive/raw",
+          "assigned_depth_source": 95,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F64/n:95/adaptive/raw",
+          "core": {
+            "area": 172,
+            "n": 136,
+            "valid_fraction": 0.7906976744186046,
+            "median": 1008.89501953125,
+            "mad": 16.8077392578125,
+            "q10": 991.4314270019531,
+            "q25": 999.1036071777344,
+            "q75": 1153.3009338378906,
+            "q90": 1181.1904907226562
+          },
+          "actual_core": {
+            "area": 172,
+            "n": 136,
+            "valid_fraction": 0.7906976744186046,
+            "median": 1008.89501953125,
+            "mad": 16.8077392578125,
+            "q10": 991.4314270019531,
+            "q25": 999.1036071777344,
+            "q75": 1153.3009338378906,
+            "q90": 1181.1904907226562
+          },
+          "scoring_permutation_only": false
+        },
+        "118": {
+          "observation_source": 118,
+          "actual_state_source": 118,
+          "actual_state_fact_id": "feeding_000701_001060/F64/n:118/adaptive/raw",
+          "assigned_depth_source": 118,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F64/n:118/adaptive/raw",
+          "core": {
+            "area": 138,
+            "n": 121,
+            "valid_fraction": 0.8768115942028986,
+            "median": 1175.7830810546875,
+            "mad": 12.5172119140625,
+            "q10": 1145.511474609375,
+            "q25": 1162.606201171875,
+            "q75": 1187.5269775390625,
+            "q90": 1194.0794677734375
+          },
+          "actual_core": {
+            "area": 138,
+            "n": 121,
+            "valid_fraction": 0.8768115942028986,
+            "median": 1175.7830810546875,
+            "mad": 12.5172119140625,
+            "q10": 1145.511474609375,
+            "q25": 1162.606201171875,
+            "q75": 1187.5269775390625,
+            "q90": 1194.0794677734375
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F85",
+      "query_local_frame": 87,
+      "query_original_frame": 787,
+      "paired_pre_frames": [
+        10
+      ],
+      "pair_count": 1,
+      "p_A_nearer": 0.5107187865155108,
+      "last_delta_B_minus_A_mm": 47.016845703125,
+      "scale_at_q_mm": 1644.6186041685503,
+      "gap_seconds": 2.557999849319458,
+      "pre_span_seconds": 0.0,
+      "pre_confidence": 0.5107187865155108,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.018731571928097296,
+      "post_bindings": {
+        "108": {
+          "observation_source": 108,
+          "actual_state_source": 108,
+          "actual_state_fact_id": "feeding_000701_001060/F87/n:108/adaptive/raw",
+          "assigned_depth_source": 108,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F87/n:108/adaptive/raw",
+          "core": {
+            "area": 129,
+            "n": 122,
+            "valid_fraction": 0.9457364341085271,
+            "median": 1163.63818359375,
+            "mad": 13.603515625,
+            "q10": 1119.545361328125,
+            "q25": 1132.0965576171875,
+            "q75": 1172.8651428222656,
+            "q90": 1177.6325317382812
+          },
+          "actual_core": {
+            "area": 129,
+            "n": 122,
+            "valid_fraction": 0.9457364341085271,
+            "median": 1163.63818359375,
+            "mad": 13.603515625,
+            "q10": 1119.545361328125,
+            "q25": 1132.0965576171875,
+            "q75": 1172.8651428222656,
+            "q90": 1177.6325317382812
+          },
+          "scoring_permutation_only": false
+        },
+        "101": {
+          "observation_source": 101,
+          "actual_state_source": 101,
+          "actual_state_fact_id": "feeding_000701_001060/F87/n:101/adaptive/raw",
+          "assigned_depth_source": 101,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F87/n:101/adaptive/raw",
+          "core": {
+            "area": 190,
+            "n": 175,
+            "valid_fraction": 0.9210526315789473,
+            "median": 1086.527099609375,
+            "mad": 10.320068359375,
+            "q10": 1068.436572265625,
+            "q25": 1076.9314575195312,
+            "q75": 1102.3843383789062,
+            "q90": 1162.90166015625
+          },
+          "actual_core": {
+            "area": 190,
+            "n": 175,
+            "valid_fraction": 0.9210526315789473,
+            "median": 1086.527099609375,
+            "mad": 10.320068359375,
+            "q10": 1068.436572265625,
+            "q25": 1076.9314575195312,
+            "q75": 1102.3843383789062,
+            "q90": 1162.90166015625
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F328",
+      "query_local_frame": 339,
+      "query_original_frame": 1039,
+      "paired_pre_frames": [
+        306,
+        307,
+        308
+      ],
+      "pair_count": 3,
+      "p_A_nearer": 0.3454163327037126,
+      "last_delta_B_minus_A_mm": -143.32537841796875,
+      "scale_at_q_mm": 335.04018341994396,
+      "gap_seconds": 1.0309998989105225,
+      "pre_span_seconds": 0.06599998474121094,
+      "pre_confidence": 0.6545836672962875,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.31487872460709154,
+      "post_bindings": {
+        "119": {
+          "observation_source": 119,
+          "actual_state_source": 119,
+          "actual_state_fact_id": "feeding_000701_001060/F339/n:119/adaptive/raw",
+          "assigned_depth_source": 119,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F339/n:119/adaptive/raw",
+          "core": {
+            "area": 165,
+            "n": 164,
+            "valid_fraction": 0.9939393939393939,
+            "median": 1059.306884765625,
+            "mad": 10.38714599609375,
+            "q10": 1048.0271728515625,
+            "q25": 1051.0651550292969,
+            "q75": 1086.0546875,
+            "q90": 1113.3553955078125
+          },
+          "actual_core": {
+            "area": 165,
+            "n": 164,
+            "valid_fraction": 0.9939393939393939,
+            "median": 1059.306884765625,
+            "mad": 10.38714599609375,
+            "q10": 1048.0271728515625,
+            "q25": 1051.0651550292969,
+            "q75": 1086.0546875,
+            "q90": 1113.3553955078125
+          },
+          "scoring_permutation_only": false
+        },
+        "108": {
+          "observation_source": 108,
+          "actual_state_source": 108,
+          "actual_state_fact_id": "feeding_000701_001060/F339/n:108/adaptive/raw",
+          "assigned_depth_source": 108,
+          "assigned_measurement_fact_id": "feeding_000701_001060/F339/n:108/adaptive/raw",
+          "core": {
+            "area": 107,
+            "n": 88,
+            "valid_fraction": 0.822429906542056,
+            "median": 1160.5221557617188,
+            "mad": 17.70263671875,
+            "q10": 1067.8103393554688,
+            "q25": 1100.8504943847656,
+            "q75": 1173.6456604003906,
+            "q90": 1180.2891357421875
+          },
+          "actual_core": {
+            "area": 107,
+            "n": 88,
+            "valid_fraction": 0.822429906542056,
+            "median": 1160.5221557617188,
+            "mad": 17.70263671875,
+            "q10": 1067.8103393554688,
+            "q25": 1100.8504943847656,
+            "q75": 1173.6456604003906,
+            "q90": 1180.2891357421875
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "query_local_frame": 39,
+      "query_original_frame": 1239,
+      "paired_pre_frames": [
+        19
+      ],
+      "pair_count": 1,
+      "p_A_nearer": 0.4994574281506488,
+      "last_delta_B_minus_A_mm": -0.61981201171875,
+      "scale_at_q_mm": 428.3845601355248,
+      "gap_seconds": 0.6640000343322754,
+      "pre_span_seconds": 0.0,
+      "pre_confidence": 0.5005425718493512,
+      "reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.00015043214598221952,
+      "post_bindings": {
+        "167": {
+          "observation_source": 167,
+          "actual_state_source": 167,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "assigned_depth_source": 167,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "core": {
+            "area": 130,
+            "n": 99,
+            "valid_fraction": 0.7615384615384615,
+            "median": 1128.603515625,
+            "mad": 15.7529296875,
+            "q10": 1092.194384765625,
+            "q25": 1099.9407958984375,
+            "q75": 1141.2705688476562,
+            "q90": 1151.6137939453124
+          },
+          "actual_core": {
+            "area": 130,
+            "n": 99,
+            "valid_fraction": 0.7615384615384615,
+            "median": 1128.603515625,
+            "mad": 15.7529296875,
+            "q10": 1092.194384765625,
+            "q25": 1099.9407958984375,
+            "q75": 1141.2705688476562,
+            "q90": 1151.6137939453124
+          },
+          "scoring_permutation_only": false
+        },
+        "128": {
+          "observation_source": 128,
+          "actual_state_source": 128,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "assigned_depth_source": 128,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "core": {
+            "area": 113,
+            "n": 35,
+            "valid_fraction": 0.30973451327433627,
+            "median": 1119.082275390625,
+            "mad": 26.693603515625,
+            "q10": 1080.3059814453125,
+            "q25": 1094.9991455078125,
+            "q75": 1148.11962890625,
+            "q90": 1154.8917724609375
+          },
+          "actual_core": {
+            "area": 113,
+            "n": 35,
+            "valid_fraction": 0.30973451327433627,
+            "median": 1119.082275390625,
+            "mad": 26.693603515625,
+            "q10": 1080.3059814453125,
+            "q25": 1094.9991455078125,
+            "q75": 1148.11962890625,
+            "q90": 1154.8917724609375
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F55",
+      "query_local_frame": 63,
+      "query_original_frame": 1263,
+      "paired_pre_frames": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "pair_count": 6,
+      "p_A_nearer": 0.4793915133454938,
+      "last_delta_B_minus_A_mm": -8.8106689453125,
+      "scale_at_q_mm": 160.2214206727483,
+      "gap_seconds": 1.2300000190734863,
+      "pre_span_seconds": 0.1660001277923584,
+      "pre_confidence": 0.5206084866545062,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.03734103598916935,
+      "post_bindings": {
+        "164": {
+          "observation_source": 164,
+          "actual_state_source": 164,
+          "actual_state_fact_id": "feeding_001201_001906/F63/n:164/adaptive/raw",
+          "assigned_depth_source": 164,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F63/n:164/adaptive/raw",
+          "core": {
+            "area": 244,
+            "n": 208,
+            "valid_fraction": 0.8524590163934426,
+            "median": 1039.1569213867188,
+            "mad": 15.9754638671875,
+            "q10": 1022.5221313476562,
+            "q25": 1026.3224182128906,
+            "q75": 1112.0824279785156,
+            "q90": 1159.6774780273438
+          },
+          "actual_core": {
+            "area": 244,
+            "n": 208,
+            "valid_fraction": 0.8524590163934426,
+            "median": 1039.1569213867188,
+            "mad": 15.9754638671875,
+            "q10": 1022.5221313476562,
+            "q25": 1026.3224182128906,
+            "q75": 1112.0824279785156,
+            "q90": 1159.6774780273438
+          },
+          "scoring_permutation_only": false
+        },
+        "162": {
+          "observation_source": 162,
+          "actual_state_source": 162,
+          "actual_state_fact_id": "feeding_001201_001906/F63/n:162/adaptive/raw",
+          "assigned_depth_source": 162,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F63/n:162/adaptive/raw",
+          "core": {
+            "area": 108,
+            "n": 91,
+            "valid_fraction": 0.8425925925925926,
+            "median": 1161.7642822265625,
+            "mad": 9.2203369140625,
+            "q10": 1144.5396728515625,
+            "q25": 1153.0238037109375,
+            "q75": 1170.8681030273438,
+            "q90": 1175.1951904296875
+          },
+          "actual_core": {
+            "area": 108,
+            "n": 91,
+            "valid_fraction": 0.8425925925925926,
+            "median": 1161.7642822265625,
+            "mad": 9.2203369140625,
+            "q10": 1144.5396728515625,
+            "q25": 1153.0238037109375,
+            "q75": 1170.8681030273438,
+            "q90": 1175.1951904296875
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F515",
+      "query_local_frame": 519,
+      "query_original_frame": 1719,
+      "paired_pre_frames": [
+        466,
+        467,
+        468,
+        469,
+        470,
+        471
+      ],
+      "pair_count": 6,
+      "p_A_nearer": 0.6828545248923384,
+      "last_delta_B_minus_A_mm": 106.86376953125,
+      "scale_at_q_mm": 207.8726076267402,
+      "gap_seconds": 1.5950000286102295,
+      "pre_span_seconds": 0.1659998893737793,
+      "pre_confidence": 0.6828545248923384,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.36210602959035193,
+      "post_bindings": {
+        "177": {
+          "observation_source": 177,
+          "actual_state_source": 177,
+          "actual_state_fact_id": "feeding_001201_001906/F519/n:177/adaptive/raw",
+          "assigned_depth_source": 177,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F519/n:177/adaptive/raw",
+          "core": {
+            "area": 116,
+            "n": 115,
+            "valid_fraction": 0.9913793103448276,
+            "median": 1182.40576171875,
+            "mad": 15.9715576171875,
+            "q10": 1142.829833984375,
+            "q25": 1164.3299560546875,
+            "q75": 1197.3052978515625,
+            "q90": 1201.166455078125
+          },
+          "actual_core": {
+            "area": 116,
+            "n": 115,
+            "valid_fraction": 0.9913793103448276,
+            "median": 1182.40576171875,
+            "mad": 15.9715576171875,
+            "q10": 1142.829833984375,
+            "q25": 1164.3299560546875,
+            "q75": 1197.3052978515625,
+            "q90": 1201.166455078125
+          },
+          "scoring_permutation_only": false
+        },
+        "159": {
+          "observation_source": 159,
+          "actual_state_source": 159,
+          "actual_state_fact_id": "feeding_001201_001906/F519/n:159/adaptive/raw",
+          "assigned_depth_source": 159,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F519/n:159/adaptive/raw",
+          "core": {
+            "area": 191,
+            "n": 191,
+            "valid_fraction": 1.0,
+            "median": 1057.8636474609375,
+            "mad": 31.6793212890625,
+            "q10": 1019.4464721679688,
+            "q25": 1030.3915405273438,
+            "q75": 1097.6925659179688,
+            "q90": 1142.85009765625
+          },
+          "actual_core": {
+            "area": 191,
+            "n": 191,
+            "valid_fraction": 1.0,
+            "median": 1057.8636474609375,
+            "mad": 31.6793212890625,
+            "q10": 1019.4464721679688,
+            "q25": 1030.3915405273438,
+            "q75": 1097.6925659179688,
+            "q90": 1142.85009765625
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F528",
+      "query_local_frame": 532,
+      "query_original_frame": 1732,
+      "paired_pre_frames": [
+        510,
+        511
+      ],
+      "pair_count": 2,
+      "p_A_nearer": 0.5413245358176766,
+      "last_delta_B_minus_A_mm": 50.1553955078125,
+      "scale_at_q_mm": 453.9821081011961,
+      "gap_seconds": 0.6980001926422119,
+      "pre_span_seconds": 0.03299999237060547,
+      "pre_confidence": 0.5413245358176766,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.07704500119875758,
+      "post_bindings": {
+        "146": {
+          "observation_source": 146,
+          "actual_state_source": 146,
+          "actual_state_fact_id": "feeding_001201_001906/F532/n:146/adaptive/raw",
+          "assigned_depth_source": 146,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F532/n:146/adaptive/raw",
+          "core": {
+            "area": 214,
+            "n": 186,
+            "valid_fraction": 0.8691588785046729,
+            "median": 993.7501525878906,
+            "mad": 11.2711181640625,
+            "q10": 980.8461303710938,
+            "q25": 984.348876953125,
+            "q75": 1013.2355651855469,
+            "q90": 1048.5465698242188
+          },
+          "actual_core": {
+            "area": 214,
+            "n": 186,
+            "valid_fraction": 0.8691588785046729,
+            "median": 993.7501525878906,
+            "mad": 11.2711181640625,
+            "q10": 980.8461303710938,
+            "q25": 984.348876953125,
+            "q75": 1013.2355651855469,
+            "q90": 1048.5465698242188
+          },
+          "scoring_permutation_only": false
+        },
+        "176": {
+          "observation_source": 176,
+          "actual_state_source": 176,
+          "actual_state_fact_id": "feeding_001201_001906/F532/n:176/adaptive/raw",
+          "assigned_depth_source": 176,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F532/n:176/adaptive/raw",
+          "core": {
+            "area": 99,
+            "n": 67,
+            "valid_fraction": 0.6767676767676768,
+            "median": 1150.5369873046875,
+            "mad": 12.2066650390625,
+            "q10": 1117.783984375,
+            "q25": 1134.1700439453125,
+            "q75": 1162.3138427734375,
+            "q90": 1168.2622314453124
+          },
+          "actual_core": {
+            "area": 99,
+            "n": 67,
+            "valid_fraction": 0.6767676767676768,
+            "median": 1150.5369873046875,
+            "mad": 12.2066650390625,
+            "q10": 1117.783984375,
+            "q25": 1134.1700439453125,
+            "q75": 1162.3138427734375,
+            "q90": 1168.2622314453124
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F572",
+      "query_local_frame": 605,
+      "query_original_frame": 1805,
+      "paired_pre_frames": [
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563
+      ],
+      "pair_count": 7,
+      "p_A_nearer": 0.1518561302734783,
+      "last_delta_B_minus_A_mm": -186.962646484375,
+      "scale_at_q_mm": 158.56749202002771,
+      "gap_seconds": 1.3959999084472656,
+      "pre_span_seconds": 0.19900012016296387,
+      "pre_confidence": 0.8481438697265217,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.900171342005465,
+      "post_bindings": {
+        "194": {
+          "observation_source": 194,
+          "actual_state_source": 194,
+          "actual_state_fact_id": "feeding_001201_001906/F605/n:194/adaptive/raw",
+          "assigned_depth_source": 194,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F605/n:194/adaptive/raw",
+          "core": {
+            "area": 155,
+            "n": 150,
+            "valid_fraction": 0.967741935483871,
+            "median": 1140.28466796875,
+            "mad": 8.88525390625,
+            "q10": 1130.09658203125,
+            "q25": 1132.7604370117188,
+            "q75": 1153.244873046875,
+            "q90": 1171.0062744140625
+          },
+          "actual_core": {
+            "area": 155,
+            "n": 150,
+            "valid_fraction": 0.967741935483871,
+            "median": 1140.28466796875,
+            "mad": 8.88525390625,
+            "q10": 1130.09658203125,
+            "q25": 1132.7604370117188,
+            "q75": 1153.244873046875,
+            "q90": 1171.0062744140625
+          },
+          "scoring_permutation_only": false
+        },
+        "151": {
+          "observation_source": 151,
+          "actual_state_source": 151,
+          "actual_state_fact_id": "feeding_001201_001906/F605/n:151/adaptive/raw",
+          "assigned_depth_source": 151,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F605/n:151/adaptive/raw",
+          "core": {
+            "area": 148,
+            "n": 139,
+            "valid_fraction": 0.9391891891891891,
+            "median": 1070.52294921875,
+            "mad": 14.0216064453125,
+            "q10": 1053.2962646484375,
+            "q25": 1060.9728393554688,
+            "q75": 1087.4867553710938,
+            "q90": 1111.16513671875
+          },
+          "actual_core": {
+            "area": 148,
+            "n": 139,
+            "valid_fraction": 0.9391891891891891,
+            "median": 1070.52294921875,
+            "mad": 14.0216064453125,
+            "q10": 1053.2962646484375,
+            "q25": 1060.9728393554688,
+            "q75": 1087.4867553710938,
+            "q90": 1111.16513671875
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F1152",
+      "query_local_frame": 1274,
+      "query_original_frame": 1274,
+      "paired_pre_frames": [
+        985,
+        986
+      ],
+      "pair_count": 2,
+      "p_A_nearer": 0.49381684280403404,
+      "last_delta_B_minus_A_mm": -101.71807861328125,
+      "scale_at_q_mm": 6168.712474973652,
+      "gap_seconds": 9.595999956130981,
+      "pre_span_seconds": 0.03300023078918457,
+      "pre_confidence": 0.506183157195966,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.004803562881818252,
+      "post_bindings": {
+        "2": {
+          "observation_source": 2,
+          "actual_state_source": 2,
+          "actual_state_fact_id": "fishsa_development_8400/F1274/n:2/adaptive/raw",
+          "assigned_depth_source": 2,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F1274/n:2/adaptive/raw",
+          "core": {
+            "area": 948,
+            "n": 948,
+            "valid_fraction": 1.0,
+            "median": 750.7174682617188,
+            "mad": 35.576629638671875,
+            "q10": 714.3498352050781,
+            "q25": 724.2900695800781,
+            "q75": 807.2685852050781,
+            "q90": 818.8056091308594
+          },
+          "actual_core": {
+            "area": 948,
+            "n": 948,
+            "valid_fraction": 1.0,
+            "median": 750.7174682617188,
+            "mad": 35.576629638671875,
+            "q10": 714.3498352050781,
+            "q25": 724.2900695800781,
+            "q75": 807.2685852050781,
+            "q90": 818.8056091308594
+          },
+          "scoring_permutation_only": false
+        },
+        "6": {
+          "observation_source": 6,
+          "actual_state_source": 6,
+          "actual_state_fact_id": "fishsa_development_8400/F1274/n:6/adaptive/raw",
+          "assigned_depth_source": 6,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F1274/n:6/adaptive/raw",
+          "core": {
+            "area": 406,
+            "n": 406,
+            "valid_fraction": 1.0,
+            "median": 784.6611022949219,
+            "mad": 9.243499755859375,
+            "q10": 774.2427978515625,
+            "q25": 777.2732696533203,
+            "q75": 799.7090606689453,
+            "q90": 813.2846984863281
+          },
+          "actual_core": {
+            "area": 406,
+            "n": 406,
+            "valid_fraction": 1.0,
+            "median": 784.6611022949219,
+            "mad": 9.243499755859375,
+            "q10": 774.2427978515625,
+            "q25": 777.2732696533203,
+            "q75": 799.7090606689453,
+            "q90": 813.2846984863281
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F3078",
+      "query_local_frame": 3081,
+      "query_original_frame": 3081,
+      "paired_pre_frames": [
+        2964,
+        2965,
+        2966,
+        2967,
+        2968,
+        2969
+      ],
+      "pair_count": 6,
+      "p_A_nearer": 0.5656450149655576,
+      "last_delta_B_minus_A_mm": 84.67294311523438,
+      "scale_at_q_mm": 480.5951670900577,
+      "gap_seconds": 3.7330000400543213,
+      "pre_span_seconds": 0.1659998893737793,
+      "pre_confidence": 0.5656450149655576,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.06032092633555796,
+      "post_bindings": {
+        "1": {
+          "observation_source": 1,
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_development_8400/F3081/n:1/adaptive/raw",
+          "assigned_depth_source": 1,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F3081/n:1/adaptive/raw",
+          "core": {
+            "area": 643,
+            "n": 606,
+            "valid_fraction": 0.942457231726283,
+            "median": 792.6524963378906,
+            "mad": 31.55645751953125,
+            "q10": 677.7246398925781,
+            "q25": 688.7890777587891,
+            "q75": 818.7929534912109,
+            "q90": 825.6395568847656
+          },
+          "actual_core": {
+            "area": 643,
+            "n": 606,
+            "valid_fraction": 0.942457231726283,
+            "median": 792.6524963378906,
+            "mad": 31.55645751953125,
+            "q10": 677.7246398925781,
+            "q25": 688.7890777587891,
+            "q75": 818.7929534912109,
+            "q90": 825.6395568847656
+          },
+          "scoring_permutation_only": false
+        },
+        "6": {
+          "observation_source": 6,
+          "actual_state_source": 6,
+          "actual_state_fact_id": "fishsa_development_8400/F3081/n:6/adaptive/raw",
+          "assigned_depth_source": 6,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F3081/n:6/adaptive/raw",
+          "core": {
+            "area": 247,
+            "n": 244,
+            "valid_fraction": 0.9878542510121457,
+            "median": 828.63037109375,
+            "mad": 5.396148681640625,
+            "q10": 786.7441528320312,
+            "q25": 813.9690246582031,
+            "q75": 831.6194915771484,
+            "q90": 836.5917602539063
+          },
+          "actual_core": {
+            "area": 247,
+            "n": 244,
+            "valid_fraction": 0.9878542510121457,
+            "median": 828.63037109375,
+            "mad": 5.396148681640625,
+            "q10": 786.7441528320312,
+            "q25": 813.9690246582031,
+            "q75": 831.6194915771484,
+            "q90": 836.5917602539063
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F7997",
+      "query_local_frame": 8035,
+      "query_original_frame": 8035,
+      "paired_pre_frames": [
+        7872,
+        7873,
+        7874,
+        7875,
+        7876,
+        7877,
+        7878,
+        7879,
+        7880,
+        7881
+      ],
+      "pair_count": 10,
+      "p_A_nearer": 0.4971509990244422,
+      "last_delta_B_minus_A_mm": -2.777435302734375,
+      "scale_at_q_mm": 365.57576601682666,
+      "gap_seconds": 5.13100004196167,
+      "pre_span_seconds": 0.2990000247955322,
+      "pre_confidence": 0.5028490009755577,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.0035521854068872763,
+      "post_bindings": {
+        "8": {
+          "observation_source": 8,
+          "actual_state_source": 8,
+          "actual_state_fact_id": "fishsa_development_8400/F8035/n:8/adaptive/raw",
+          "assigned_depth_source": 8,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F8035/n:8/adaptive/raw",
+          "core": {
+            "area": 453,
+            "n": 453,
+            "valid_fraction": 1.0,
+            "median": 757.7267456054688,
+            "mad": 18.58966064453125,
+            "q10": 734.7714233398438,
+            "q25": 740.9491577148438,
+            "q75": 779.3074951171875,
+            "q90": 805.0216552734375
+          },
+          "actual_core": {
+            "area": 453,
+            "n": 453,
+            "valid_fraction": 1.0,
+            "median": 757.7267456054688,
+            "mad": 18.58966064453125,
+            "q10": 734.7714233398438,
+            "q25": 740.9491577148438,
+            "q75": 779.3074951171875,
+            "q90": 805.0216552734375
+          },
+          "scoring_permutation_only": false
+        },
+        "5": {
+          "observation_source": 5,
+          "actual_state_source": 5,
+          "actual_state_fact_id": "fishsa_development_8400/F8035/n:5/adaptive/raw",
+          "assigned_depth_source": 5,
+          "assigned_measurement_fact_id": "fishsa_development_8400/F8035/n:5/adaptive/raw",
+          "core": {
+            "area": 684,
+            "n": 683,
+            "valid_fraction": 0.9985380116959064,
+            "median": 798.9938354492188,
+            "mad": 14.98992919921875,
+            "q10": 778.8262451171875,
+            "q25": 787.7079162597656,
+            "q75": 817.7790222167969,
+            "q90": 831.0568603515626
+          },
+          "actual_core": {
+            "area": 684,
+            "n": 683,
+            "valid_fraction": 0.9985380116959064,
+            "median": 798.9938354492188,
+            "mad": 14.98992919921875,
+            "q10": 778.8262451171875,
+            "q25": 787.7079162597656,
+            "q75": 817.7790222167969,
+            "q90": 831.0568603515626
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2482",
+      "query_local_frame": 2486,
+      "query_original_frame": 11786,
+      "paired_pre_frames": [
+        2460,
+        2461,
+        2462,
+        2463
+      ],
+      "pair_count": 4,
+      "p_A_nearer": 0.5404907512254554,
+      "last_delta_B_minus_A_mm": 18.13287353515625,
+      "scale_at_q_mm": 167.52669550517442,
+      "gap_seconds": 0.7669999599456787,
+      "pre_span_seconds": 0.10000014305114746,
+      "pre_confidence": 0.5404907512254554,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.0048409226842458415,
+      "post_bindings": {
+        "1": {
+          "observation_source": 1,
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_validation_2888/F2486/n:1/adaptive/raw",
+          "assigned_depth_source": 1,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2486/n:1/adaptive/raw",
+          "core": {
+            "area": 527,
+            "n": 524,
+            "valid_fraction": 0.9943074003795066,
+            "median": 799.8562622070312,
+            "mad": 24.6053466796875,
+            "q10": 768.664501953125,
+            "q25": 776.4021148681641,
+            "q75": 825.4493713378906,
+            "q90": 831.0256530761719
+          },
+          "actual_core": {
+            "area": 527,
+            "n": 524,
+            "valid_fraction": 0.9943074003795066,
+            "median": 799.8562622070312,
+            "mad": 24.6053466796875,
+            "q10": 768.664501953125,
+            "q25": 776.4021148681641,
+            "q75": 825.4493713378906,
+            "q90": 831.0256530761719
+          },
+          "scoring_permutation_only": false
+        },
+        "6": {
+          "observation_source": 6,
+          "actual_state_source": 6,
+          "actual_state_fact_id": "fishsa_validation_2888/F2486/n:6/adaptive/raw",
+          "assigned_depth_source": 6,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2486/n:6/adaptive/raw",
+          "core": {
+            "area": 400,
+            "n": 399,
+            "valid_fraction": 0.9975,
+            "median": 796.3659057617188,
+            "mad": 5.1048583984375,
+            "q10": 787.086669921875,
+            "q25": 792.009765625,
+            "q75": 802.6279602050781,
+            "q90": 810.540185546875
+          },
+          "actual_core": {
+            "area": 400,
+            "n": 399,
+            "valid_fraction": 0.9975,
+            "median": 796.3659057617188,
+            "mad": 5.1048583984375,
+            "q10": 787.086669921875,
+            "q25": 792.009765625,
+            "q75": 802.6279602050781,
+            "q90": 810.540185546875
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2584",
+      "query_local_frame": 2600,
+      "query_original_frame": 11900,
+      "paired_pre_frames": [
+        2571,
+        2572,
+        2573,
+        2574,
+        2575,
+        2576,
+        2577,
+        2578,
+        2579,
+        2580
+      ],
+      "pair_count": 10,
+      "p_A_nearer": 0.7311252737112807,
+      "last_delta_B_minus_A_mm": 39.73736572265625,
+      "scale_at_q_mm": 59.03305267467736,
+      "gap_seconds": 0.6659998893737793,
+      "pre_span_seconds": 0.2999999523162842,
+      "pre_confidence": 0.7311252737112807,
+      "reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.16424124959462402,
+      "post_bindings": {
+        "4": {
+          "observation_source": 4,
+          "actual_state_source": 4,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "assigned_depth_source": 4,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "core": {
+            "area": 353,
+            "n": 353,
+            "valid_fraction": 1.0,
+            "median": 814.5136108398438,
+            "mad": 8.13128662109375,
+            "q10": 764.4943359375,
+            "q25": 784.4373779296875,
+            "q75": 819.12939453125,
+            "q90": 822.48876953125
+          },
+          "actual_core": {
+            "area": 353,
+            "n": 353,
+            "valid_fraction": 1.0,
+            "median": 814.5136108398438,
+            "mad": 8.13128662109375,
+            "q10": 764.4943359375,
+            "q25": 784.4373779296875,
+            "q75": 819.12939453125,
+            "q90": 822.48876953125
+          },
+          "scoring_permutation_only": false
+        },
+        "1": {
+          "observation_source": 1,
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "assigned_depth_source": 1,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "core": {
+            "area": 360,
+            "n": 257,
+            "valid_fraction": 0.7138888888888889,
+            "median": 803.66259765625,
+            "mad": 9.3790283203125,
+            "q10": 792.0238525390625,
+            "q25": 795.83251953125,
+            "q75": 817.5823974609375,
+            "q90": 828.8306396484375
+          },
+          "actual_core": {
+            "area": 360,
+            "n": 257,
+            "valid_fraction": 0.7138888888888889,
+            "median": 803.66259765625,
+            "mad": 9.3790283203125,
+            "q10": 792.0238525390625,
+            "q25": 795.83251953125,
+            "q75": 817.5823974609375,
+            "q90": 828.8306396484375
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2759",
+      "query_local_frame": 2816,
+      "query_original_frame": 12116,
+      "paired_pre_frames": [
+        2738,
+        2739,
+        2740
+      ],
+      "pair_count": 3,
+      "p_A_nearer": 0.5828871142341442,
+      "last_delta_B_minus_A_mm": 179.15646362304688,
+      "scale_at_q_mm": 802.2313229279306,
+      "gap_seconds": 2.5320000648498535,
+      "pre_span_seconds": 0.06699991226196289,
+      "pre_confidence": 0.5828871142341442,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.14681364433552246,
+      "post_bindings": {
+        "4": {
+          "observation_source": 4,
+          "actual_state_source": 4,
+          "actual_state_fact_id": "fishsa_validation_2888/F2816/n:4/adaptive/raw",
+          "assigned_depth_source": 4,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2816/n:4/adaptive/raw",
+          "core": {
+            "area": 301,
+            "n": 301,
+            "valid_fraction": 1.0,
+            "median": 770.6165161132812,
+            "mad": 13.99365234375,
+            "q10": 755.0740356445312,
+            "q25": 759.392333984375,
+            "q75": 788.4822998046875,
+            "q90": 815.0167236328125
+          },
+          "actual_core": {
+            "area": 301,
+            "n": 301,
+            "valid_fraction": 1.0,
+            "median": 770.6165161132812,
+            "mad": 13.99365234375,
+            "q10": 755.0740356445312,
+            "q25": 759.392333984375,
+            "q75": 788.4822998046875,
+            "q90": 815.0167236328125
+          },
+          "scoring_permutation_only": false
+        },
+        "5": {
+          "observation_source": 5,
+          "actual_state_source": 5,
+          "actual_state_fact_id": "fishsa_validation_2888/F2816/n:5/adaptive/raw",
+          "assigned_depth_source": 5,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2816/n:5/adaptive/raw",
+          "core": {
+            "area": 203,
+            "n": 202,
+            "valid_fraction": 0.9950738916256158,
+            "median": 828.9846801757812,
+            "mad": 2.7427978515625,
+            "q10": 822.1161804199219,
+            "q25": 826.9871520996094,
+            "q75": 831.8890686035156,
+            "q90": 834.6271850585938
+          },
+          "actual_core": {
+            "area": 203,
+            "n": 202,
+            "valid_fraction": 0.9950738916256158,
+            "median": 828.9846801757812,
+            "mad": 2.7427978515625,
+            "q10": 822.1161804199219,
+            "q25": 826.9871520996094,
+            "q75": 831.8890686035156,
+            "q90": 834.6271850585938
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "query_local_frame": 1421,
+      "query_original_frame": 1420,
+      "paired_pre_frames": [
+        1336,
+        1337,
+        1338,
+        1339,
+        1340,
+        1341,
+        1342,
+        1343,
+        1344,
+        1345
+      ],
+      "pair_count": 10,
+      "p_A_nearer": 0.4003130957890874,
+      "last_delta_B_minus_A_mm": -50.162200927734375,
+      "scale_at_q_mm": 185.89007794359566,
+      "gap_seconds": 2.5190000534057617,
+      "pre_span_seconds": 0.29799985885620117,
+      "pre_confidence": 0.5996869042109125,
+      "reason": "INSUFFICIENT_JOINT_ODDS",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.145399869515927,
+      "post_bindings": {
+        "9": {
+          "observation_source": 9,
+          "actual_state_source": 9,
+          "actual_state_fact_id": "L3/F1421/n:9/adaptive/raw",
+          "assigned_depth_source": 9,
+          "assigned_measurement_fact_id": "L3/F1421/n:9/adaptive/raw",
+          "core": {
+            "area": 1130,
+            "n": 1130,
+            "valid_fraction": 1.0,
+            "median": 624.3437805175781,
+            "mad": 18.710113525390625,
+            "q10": 603.3435180664062,
+            "q25": 609.6968841552734,
+            "q75": 669.8552398681641,
+            "q90": 707.5195983886719
+          },
+          "actual_core": {
+            "area": 1130,
+            "n": 1130,
+            "valid_fraction": 1.0,
+            "median": 624.3437805175781,
+            "mad": 18.710113525390625,
+            "q10": 603.3435180664062,
+            "q25": 609.6968841552734,
+            "q75": 669.8552398681641,
+            "q90": 707.5195983886719
+          },
+          "scoring_permutation_only": false
+        },
+        "6": {
+          "observation_source": 6,
+          "actual_state_source": 6,
+          "actual_state_fact_id": "L3/F1421/n:6/adaptive/raw",
+          "assigned_depth_source": 6,
+          "assigned_measurement_fact_id": "L3/F1421/n:6/adaptive/raw",
+          "core": {
+            "area": 251,
+            "n": 251,
+            "valid_fraction": 1.0,
+            "median": 672.9636840820312,
+            "mad": 15.250244140625,
+            "q10": 655.9674682617188,
+            "q25": 660.6698913574219,
+            "q75": 695.6828308105469,
+            "q90": 707.1564331054688
+          },
+          "actual_core": {
+            "area": 251,
+            "n": 251,
+            "valid_fraction": 1.0,
+            "median": 672.9636840820312,
+            "mad": 15.250244140625,
+            "q10": 655.9674682617188,
+            "q25": 660.6698913574219,
+            "q75": 695.6828308105469,
+            "q90": 707.1564331054688
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F2571",
+      "query_local_frame": 2583,
+      "query_original_frame": 2582,
+      "paired_pre_frames": [
+        2516,
+        2517
+      ],
+      "pair_count": 2,
+      "p_A_nearer": 0.48335407888288173,
+      "last_delta_B_minus_A_mm": -60.626251220703125,
+      "scale_at_q_mm": 1365.2298713287494,
+      "gap_seconds": 2.187000036239624,
+      "pre_span_seconds": 0.03399991989135742,
+      "pre_confidence": 0.5166459211171183,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.025406734801361425,
+      "post_bindings": {
+        "6": {
+          "observation_source": 6,
+          "actual_state_source": 6,
+          "actual_state_fact_id": "L3/F2583/n:6/adaptive/raw",
+          "assigned_depth_source": 6,
+          "assigned_measurement_fact_id": "L3/F2583/n:6/adaptive/raw",
+          "core": {
+            "area": 885,
+            "n": 885,
+            "valid_fraction": 1.0,
+            "median": 617.0863037109375,
+            "mad": 29.1646728515625,
+            "q10": 586.511669921875,
+            "q25": 593.8534545898438,
+            "q75": 663.8209838867188,
+            "q90": 681.522607421875
+          },
+          "actual_core": {
+            "area": 885,
+            "n": 885,
+            "valid_fraction": 1.0,
+            "median": 617.0863037109375,
+            "mad": 29.1646728515625,
+            "q10": 586.511669921875,
+            "q25": 593.8534545898438,
+            "q75": 663.8209838867188,
+            "q90": 681.522607421875
+          },
+          "scoring_permutation_only": false
+        },
+        "5": {
+          "observation_source": 5,
+          "actual_state_source": 5,
+          "actual_state_fact_id": "L3/F2583/n:5/adaptive/raw",
+          "assigned_depth_source": 5,
+          "assigned_measurement_fact_id": "L3/F2583/n:5/adaptive/raw",
+          "core": {
+            "area": 344,
+            "n": 344,
+            "valid_fraction": 1.0,
+            "median": 695.2780151367188,
+            "mad": 4.40045166015625,
+            "q10": 684.0447631835938,
+            "q25": 688.8899383544922,
+            "q75": 698.3359985351562,
+            "q90": 702.0006103515625
+          },
+          "actual_core": {
+            "area": 344,
+            "n": 344,
+            "valid_fraction": 1.0,
+            "median": 695.2780151367188,
+            "mad": 4.40045166015625,
+            "q10": 684.0447631835938,
+            "q25": 688.8899383544922,
+            "q75": 698.3359985351562,
+            "q90": 702.0006103515625
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1758",
+      "query_local_frame": 2029,
+      "query_original_frame": 2028,
+      "paired_pre_frames": [
+        1739,
+        1740,
+        1741,
+        1742,
+        1743
+      ],
+      "pair_count": 5,
+      "p_A_nearer": 0.5045536960975022,
+      "last_delta_B_minus_A_mm": 18.39166259765625,
+      "scale_at_q_mm": 1514.5195129776835,
+      "gap_seconds": 9.493000030517578,
+      "pre_span_seconds": 0.13299989700317383,
+      "pre_confidence": 0.5045536960975022,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.00030243919711945427,
+      "post_bindings": {
+        "60": {
+          "observation_source": 60,
+          "actual_state_source": 60,
+          "actual_state_fact_id": "LW/F2029/n:60/adaptive/raw",
+          "assigned_depth_source": 60,
+          "assigned_measurement_fact_id": "LW/F2029/n:60/adaptive/raw",
+          "core": {
+            "area": 267,
+            "n": 267,
+            "valid_fraction": 1.0,
+            "median": 727.1668701171875,
+            "mad": 6.4671630859375,
+            "q10": 717.1492553710938,
+            "q25": 722.8442077636719,
+            "q75": 741.4148864746094,
+            "q90": 784.7713012695312
+          },
+          "actual_core": {
+            "area": 267,
+            "n": 267,
+            "valid_fraction": 1.0,
+            "median": 727.1668701171875,
+            "mad": 6.4671630859375,
+            "q10": 717.1492553710938,
+            "q25": 722.8442077636719,
+            "q75": 741.4148864746094,
+            "q90": 784.7713012695312
+          },
+          "scoring_permutation_only": false
+        },
+        "5": {
+          "observation_source": 5,
+          "actual_state_source": 5,
+          "actual_state_fact_id": "LW/F2029/n:5/adaptive/raw",
+          "assigned_depth_source": 5,
+          "assigned_measurement_fact_id": "LW/F2029/n:5/adaptive/raw",
+          "core": {
+            "area": 486,
+            "n": 484,
+            "valid_fraction": 0.9958847736625515,
+            "median": 725.6189575195312,
+            "mad": 18.646331787109375,
+            "q10": 694.5610595703125,
+            "q25": 708.6811981201172,
+            "q75": 746.2183990478516,
+            "q90": 772.3602600097656
+          },
+          "actual_core": {
+            "area": 486,
+            "n": 484,
+            "valid_fraction": 0.9958847736625515,
+            "median": 725.6189575195312,
+            "mad": 18.646331787109375,
+            "q10": 694.5610595703125,
+            "q25": 708.6811981201172,
+            "q75": 746.2183990478516,
+            "q90": 772.3602600097656
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2033",
+      "query_local_frame": 2036,
+      "query_original_frame": 2035,
+      "paired_pre_frames": [
+        1982,
+        1983,
+        1984
+      ],
+      "pair_count": 3,
+      "p_A_nearer": 0.5028101738458635,
+      "last_delta_B_minus_A_mm": 4.16705322265625,
+      "scale_at_q_mm": 556.0605009085525,
+      "gap_seconds": 1.7260000705718994,
+      "pre_span_seconds": 0.06599998474121094,
+      "pre_confidence": 0.5028101738458635,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.00214698247934058,
+      "post_bindings": {
+        "63": {
+          "observation_source": 63,
+          "actual_state_source": 63,
+          "actual_state_fact_id": "LW/F2036/n:63/adaptive/raw",
+          "assigned_depth_source": 63,
+          "assigned_measurement_fact_id": "LW/F2036/n:63/adaptive/raw",
+          "core": {
+            "area": 85,
+            "n": 85,
+            "valid_fraction": 1.0,
+            "median": 732.14697265625,
+            "mad": 4.4949951171875,
+            "q10": 723.2227783203125,
+            "q25": 726.900390625,
+            "q75": 735.3862915039062,
+            "q90": 737.2791870117187
+          },
+          "actual_core": {
+            "area": 85,
+            "n": 85,
+            "valid_fraction": 1.0,
+            "median": 732.14697265625,
+            "mad": 4.4949951171875,
+            "q10": 723.2227783203125,
+            "q25": 726.900390625,
+            "q75": 735.3862915039062,
+            "q90": 737.2791870117187
+          },
+          "scoring_permutation_only": false
+        },
+        "82": {
+          "observation_source": 82,
+          "actual_state_source": 82,
+          "actual_state_fact_id": "LW/F2036/n:82/adaptive/raw",
+          "assigned_depth_source": 82,
+          "assigned_measurement_fact_id": "LW/F2036/n:82/adaptive/raw",
+          "core": {
+            "area": 415,
+            "n": 391,
+            "valid_fraction": 0.9421686746987952,
+            "median": 745.5757446289062,
+            "mad": 10.934326171875,
+            "q10": 726.595947265625,
+            "q25": 733.4166259765625,
+            "q75": 754.7441101074219,
+            "q90": 762.7911376953125
+          },
+          "actual_core": {
+            "area": 415,
+            "n": 391,
+            "valid_fraction": 0.9421686746987952,
+            "median": 745.5757446289062,
+            "mad": 10.934326171875,
+            "q10": 726.595947265625,
+            "q25": 733.4166259765625,
+            "q75": 754.7441101074219,
+            "q90": 762.7911376953125
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2896",
+      "query_local_frame": 2909,
+      "query_original_frame": 2908,
+      "paired_pre_frames": [
+        2875,
+        2876,
+        2877,
+        2878,
+        2879,
+        2880,
+        2881,
+        2882,
+        2883,
+        2884
+      ],
+      "pair_count": 10,
+      "p_A_nearer": 0.9719474407329496,
+      "last_delta_B_minus_A_mm": 183.11080932617188,
+      "scale_at_q_mm": 68.7129475536343,
+      "gap_seconds": 0.8289999961853027,
+      "pre_span_seconds": 0.2990000247955322,
+      "pre_confidence": 0.9719474407329496,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 1.8465405088449585,
+      "post_bindings": {
+        "106": {
+          "observation_source": 106,
+          "actual_state_source": 106,
+          "actual_state_fact_id": "LW/F2909/n:106/adaptive/raw",
+          "assigned_depth_source": 106,
+          "assigned_measurement_fact_id": "LW/F2909/n:106/adaptive/raw",
+          "core": {
+            "area": 384,
+            "n": 206,
+            "valid_fraction": 0.5364583333333334,
+            "median": 776.1117553710938,
+            "mad": 24.86907958984375,
+            "q10": 575.3227233886719,
+            "q25": 723.8204193115234,
+            "q75": 797.5305480957031,
+            "q90": 801.6702270507812
+          },
+          "actual_core": {
+            "area": 384,
+            "n": 206,
+            "valid_fraction": 0.5364583333333334,
+            "median": 776.1117553710938,
+            "mad": 24.86907958984375,
+            "q10": 575.3227233886719,
+            "q25": 723.8204193115234,
+            "q75": 797.5305480957031,
+            "q90": 801.6702270507812
+          },
+          "scoring_permutation_only": false
+        },
+        "3": {
+          "observation_source": 3,
+          "actual_state_source": 3,
+          "actual_state_fact_id": "LW/F2909/n:3/adaptive/raw",
+          "assigned_depth_source": 3,
+          "assigned_measurement_fact_id": "LW/F2909/n:3/adaptive/raw",
+          "core": {
+            "area": 845,
+            "n": 826,
+            "valid_fraction": 0.9775147928994082,
+            "median": 567.8035888671875,
+            "mad": 15.309722900390625,
+            "q10": 545.8120727539062,
+            "q25": 554.1721038818359,
+            "q75": 587.064697265625,
+            "q90": 787.1366577148438
+          },
+          "actual_core": {
+            "area": 845,
+            "n": 826,
+            "valid_fraction": 0.9775147928994082,
+            "median": 567.8035888671875,
+            "mad": 15.309722900390625,
+            "q10": 545.8120727539062,
+            "q25": 554.1721038818359,
+            "q75": 587.064697265625,
+            "q90": 787.1366577148438
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2979",
+      "query_local_frame": 3052,
+      "query_original_frame": 3051,
+      "paired_pre_frames": [
+        2977
+      ],
+      "pair_count": 1,
+      "p_A_nearer": 0.5047190604316387,
+      "last_delta_B_minus_A_mm": 20.145263671875,
+      "scale_at_q_mm": 1600.7899758577298,
+      "gap_seconds": 2.489000082015991,
+      "pre_span_seconds": 0.0,
+      "pre_confidence": 0.5047190604316387,
+      "reason": "H0_BEST",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.0017346755105312377,
+      "post_bindings": {
+        "60": {
+          "observation_source": 60,
+          "actual_state_source": 60,
+          "actual_state_fact_id": "LW/F3052/n:60/adaptive/raw",
+          "assigned_depth_source": 60,
+          "assigned_measurement_fact_id": "LW/F3052/n:60/adaptive/raw",
+          "core": {
+            "area": 120,
+            "n": 91,
+            "valid_fraction": 0.7583333333333333,
+            "median": 737.40234375,
+            "mad": 9.5418701171875,
+            "q10": 713.6485595703125,
+            "q25": 727.0933227539062,
+            "q75": 744.8910827636719,
+            "q90": 783.9064331054688
+          },
+          "actual_core": {
+            "area": 120,
+            "n": 91,
+            "valid_fraction": 0.7583333333333333,
+            "median": 737.40234375,
+            "mad": 9.5418701171875,
+            "q10": 713.6485595703125,
+            "q25": 727.0933227539062,
+            "q75": 744.8910827636719,
+            "q90": 783.9064331054688
+          },
+          "scoring_permutation_only": false
+        },
+        "128": {
+          "observation_source": 128,
+          "actual_state_source": 128,
+          "actual_state_fact_id": "LW/F3052/n:128/adaptive/raw",
+          "assigned_depth_source": 128,
+          "assigned_measurement_fact_id": "LW/F3052/n:128/adaptive/raw",
+          "core": {
+            "area": 759,
+            "n": 707,
+            "valid_fraction": 0.9314888010540184,
+            "median": 729.3887939453125,
+            "mad": 16.73760986328125,
+            "q10": 704.4482299804688,
+            "q25": 713.1574401855469,
+            "q75": 747.1374206542969,
+            "q90": 770.2466918945313
+          },
+          "actual_core": {
+            "area": 759,
+            "n": 707,
+            "valid_fraction": 0.9314888010540184,
+            "median": 729.3887939453125,
+            "mad": 16.73760986328125,
+            "q10": 704.4482299804688,
+            "q25": 713.1574401855469,
+            "q75": 747.1374206542969,
+            "q90": 770.2466918945313
+          },
+          "scoring_permutation_only": false
+        }
+      }
+    }
+  ],
+  "hard_sign_gate_rejections": [
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "query_local_frame": 39,
+      "query_original_frame": 1239,
+      "paired_pre_frames": [
+        19
+      ],
+      "pair_count": 1,
+      "p_A_nearer": 0.4994574281506488,
+      "last_delta_B_minus_A_mm": -0.61981201171875,
+      "scale_at_q_mm": 428.3845601355248,
+      "gap_seconds": 0.6640000343322754,
+      "pre_span_seconds": 0.0,
+      "pre_confidence": 0.5005425718493512,
+      "reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.00015043214598221952,
+      "post_bindings": {
+        "167": {
+          "observation_source": 167,
+          "actual_state_source": 167,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "assigned_depth_source": 167,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F39/n:167/adaptive/raw",
+          "core": {
+            "area": 130,
+            "n": 99,
+            "valid_fraction": 0.7615384615384615,
+            "median": 1128.603515625,
+            "mad": 15.7529296875,
+            "q10": 1092.194384765625,
+            "q25": 1099.9407958984375,
+            "q75": 1141.2705688476562,
+            "q90": 1151.6137939453124
+          },
+          "actual_core": {
+            "area": 130,
+            "n": 99,
+            "valid_fraction": 0.7615384615384615,
+            "median": 1128.603515625,
+            "mad": 15.7529296875,
+            "q10": 1092.194384765625,
+            "q25": 1099.9407958984375,
+            "q75": 1141.2705688476562,
+            "q90": 1151.6137939453124
+          },
+          "scoring_permutation_only": false
+        },
+        "128": {
+          "observation_source": 128,
+          "actual_state_source": 128,
+          "actual_state_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "assigned_depth_source": 128,
+          "assigned_measurement_fact_id": "feeding_001201_001906/F39/n:128/adaptive/raw",
+          "core": {
+            "area": 113,
+            "n": 35,
+            "valid_fraction": 0.30973451327433627,
+            "median": 1119.082275390625,
+            "mad": 26.693603515625,
+            "q10": 1080.3059814453125,
+            "q25": 1094.9991455078125,
+            "q75": 1148.11962890625,
+            "q90": 1154.8917724609375
+          },
+          "actual_core": {
+            "area": 113,
+            "n": 35,
+            "valid_fraction": 0.30973451327433627,
+            "median": 1119.082275390625,
+            "mad": 26.693603515625,
+            "q10": 1080.3059814453125,
+            "q25": 1094.9991455078125,
+            "q75": 1148.11962890625,
+            "q90": 1154.8917724609375
+          },
+          "scoring_permutation_only": false
+        }
+      },
+      "best": "H2",
+      "selected_ordinal_logLR": -0.00015043214598221952,
+      "h0_ordinal_logLR": 0.0,
+      "geometry_delta": 3.423893272050397,
+      "combined_margin": 2.803268320283575,
+      "minimum_log_odds": 2.1972245773362196,
+      "candidate_mappings": {
+        "H0": {
+          "167": 167,
+          "128": 128
+        },
+        "H1": {
+          "167": 128,
+          "128": 136
+        },
+        "H2": {
+          "167": 136,
+          "128": 128
+        }
+      },
+      "counterfactual_branch_acceptance": {
+        "ORDER_OFF": true,
+        "DEPTH_ORDER": false,
+        "ORDER_PERMUTE": true
+      },
+      "actual_order_selected_mapping": {
+        "167": 167,
+        "128": 128
+      },
+      "physical_correctness": "NOT_ASSESSED_HERE; INDEPENDENT_POSTSEAL_SCORE_REQUIRED"
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2584",
+      "query_local_frame": 2600,
+      "query_original_frame": 11900,
+      "paired_pre_frames": [
+        2571,
+        2572,
+        2573,
+        2574,
+        2575,
+        2576,
+        2577,
+        2578,
+        2579,
+        2580
+      ],
+      "pair_count": 10,
+      "p_A_nearer": 0.7311252737112807,
+      "last_delta_B_minus_A_mm": 39.73736572265625,
+      "scale_at_q_mm": 59.03305267467736,
+      "gap_seconds": 0.6659998893737793,
+      "pre_span_seconds": 0.2999999523162842,
+      "pre_confidence": 0.7311252737112807,
+      "reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "accepted": false,
+      "maximum_abs_ordinal_logLR": 0.16424124959462402,
+      "post_bindings": {
+        "4": {
+          "observation_source": 4,
+          "actual_state_source": 4,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "assigned_depth_source": 4,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2600/n:4/adaptive/raw",
+          "core": {
+            "area": 353,
+            "n": 353,
+            "valid_fraction": 1.0,
+            "median": 814.5136108398438,
+            "mad": 8.13128662109375,
+            "q10": 764.4943359375,
+            "q25": 784.4373779296875,
+            "q75": 819.12939453125,
+            "q90": 822.48876953125
+          },
+          "actual_core": {
+            "area": 353,
+            "n": 353,
+            "valid_fraction": 1.0,
+            "median": 814.5136108398438,
+            "mad": 8.13128662109375,
+            "q10": 764.4943359375,
+            "q25": 784.4373779296875,
+            "q75": 819.12939453125,
+            "q90": 822.48876953125
+          },
+          "scoring_permutation_only": false
+        },
+        "1": {
+          "observation_source": 1,
+          "actual_state_source": 1,
+          "actual_state_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "assigned_depth_source": 1,
+          "assigned_measurement_fact_id": "fishsa_validation_2888/F2600/n:1/adaptive/raw",
+          "core": {
+            "area": 360,
+            "n": 257,
+            "valid_fraction": 0.7138888888888889,
+            "median": 803.66259765625,
+            "mad": 9.3790283203125,
+            "q10": 792.0238525390625,
+            "q25": 795.83251953125,
+            "q75": 817.5823974609375,
+            "q90": 828.8306396484375
+          },
+          "actual_core": {
+            "area": 360,
+            "n": 257,
+            "valid_fraction": 0.7138888888888889,
+            "median": 803.66259765625,
+            "mad": 9.3790283203125,
+            "q10": 792.0238525390625,
+            "q25": 795.83251953125,
+            "q75": 817.5823974609375,
+            "q90": 828.8306396484375
+          },
+          "scoring_permutation_only": false
+        }
+      },
+      "best": "H1",
+      "selected_ordinal_logLR": -0.16424124959462402,
+      "h0_ordinal_logLR": 0.14103305772348618,
+      "geometry_delta": 3.2985735552476534,
+      "combined_margin": 2.993299247929543,
+      "minimum_log_odds": 2.1972245773362196,
+      "candidate_mappings": {
+        "H0": {
+          "4": 4,
+          "1": 1
+        },
+        "H1": {
+          "4": 1,
+          "1": 4
+        }
+      },
+      "counterfactual_branch_acceptance": {
+        "ORDER_OFF": true,
+        "DEPTH_ORDER": false,
+        "ORDER_PERMUTE": true
+      },
+      "actual_order_selected_mapping": {
+        "4": 4,
+        "1": 1
+      },
+      "physical_correctness": "NOT_ASSESSED_HERE; INDEPENDENT_POSTSEAL_SCORE_REQUIRED"
+    }
+  ],
+  "binding_failures": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F81",
+      "q_local": 84,
+      "q_original": 434,
+      "failures": [
+        {
+          "role": "B",
+          "source": 69,
+          "first_failed_sample_frame": 10,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "B": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F295",
+      "q_local": 300,
+      "q_original": 1000,
+      "failures": [
+        {
+          "role": "A",
+          "source": 68,
+          "first_failed_sample_frame": 226,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [],
+        "B": [
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279
+        ]
+      },
+      "depth_frames": {
+        "A": [
+          226,
+          227,
+          228,
+          229,
+          230,
+          231,
+          232,
+          233,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239
+        ],
+        "B": [
+          269,
+          270,
+          271,
+          272,
+          273,
+          274,
+          275,
+          276,
+          277,
+          278,
+          279
+        ]
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F152",
+      "q_local": 159,
+      "q_original": 1359,
+      "failures": [
+        {
+          "role": "A",
+          "source": 88,
+          "first_failed_sample_frame": 36,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [],
+        "B": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "depth_frames": {
+        "A": [
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "B": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F4519",
+      "q_local": 4524,
+      "q_original": 4524,
+      "failures": [
+        {
+          "role": "A",
+          "source": 1,
+          "first_failed_sample_frame": 4469,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [],
+        "B": [
+          4467,
+          4468,
+          4469,
+          4470,
+          4471,
+          4472,
+          4473,
+          4474,
+          4475,
+          4476,
+          4477,
+          4478,
+          4479,
+          4480,
+          4481,
+          4482,
+          4483,
+          4484,
+          4485,
+          4486,
+          4487,
+          4488,
+          4489,
+          4490,
+          4491,
+          4492,
+          4493,
+          4494,
+          4495,
+          4496
+        ]
+      },
+      "depth_frames": {
+        "A": [
+          4469,
+          4470,
+          4471,
+          4472,
+          4473,
+          4474,
+          4475,
+          4476,
+          4477
+        ],
+        "B": [
+          4467,
+          4468,
+          4469,
+          4470,
+          4471,
+          4472,
+          4473,
+          4474,
+          4475,
+          4476,
+          4477,
+          4478,
+          4479,
+          4480,
+          4481,
+          4482,
+          4483,
+          4484,
+          4485,
+          4486,
+          4487,
+          4488,
+          4489,
+          4490,
+          4491,
+          4492,
+          4493,
+          4494,
+          4495,
+          4496
+        ]
+      }
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F5927",
+      "q_local": 5939,
+      "q_original": 5939,
+      "failures": [
+        {
+          "role": "B",
+          "source": 7,
+          "first_failed_sample_frame": 5229,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          5848,
+          5849,
+          5850,
+          5851,
+          5852,
+          5853,
+          5854,
+          5855,
+          5856,
+          5857,
+          5858,
+          5859,
+          5860,
+          5861,
+          5862,
+          5863,
+          5864,
+          5865,
+          5866,
+          5867,
+          5868,
+          5869,
+          5870,
+          5871,
+          5872,
+          5873,
+          5874,
+          5875,
+          5876,
+          5877
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          5848,
+          5849,
+          5850,
+          5851,
+          5852,
+          5853,
+          5854,
+          5855,
+          5856,
+          5857,
+          5858,
+          5859,
+          5860,
+          5861,
+          5862,
+          5863,
+          5864,
+          5865,
+          5866,
+          5867,
+          5868,
+          5869,
+          5870,
+          5871,
+          5872,
+          5873,
+          5874,
+          5875,
+          5876,
+          5877
+        ],
+        "B": [
+          5229,
+          5230,
+          5231,
+          5232,
+          5233,
+          5234,
+          5235,
+          5236,
+          5237,
+          5238,
+          5239,
+          5240,
+          5241,
+          5242,
+          5243,
+          5244,
+          5245,
+          5246,
+          5247,
+          5248,
+          5249,
+          5250,
+          5251,
+          5252,
+          5253,
+          5254,
+          5255,
+          5256,
+          5257,
+          5258
+        ]
+      }
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2681",
+      "q_local": 2689,
+      "q_original": 11989,
+      "failures": [
+        {
+          "role": "A",
+          "source": 5,
+          "first_failed_sample_frame": 2496,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [],
+        "B": [
+          2620,
+          2621
+        ]
+      },
+      "depth_frames": {
+        "A": [
+          2496,
+          2497,
+          2498,
+          2499,
+          2500,
+          2501,
+          2502,
+          2503,
+          2504,
+          2505,
+          2506,
+          2507,
+          2508,
+          2509,
+          2510,
+          2511,
+          2512,
+          2513,
+          2514,
+          2515,
+          2516,
+          2517,
+          2518,
+          2519,
+          2520,
+          2521,
+          2522,
+          2523,
+          2524,
+          2525
+        ],
+        "B": [
+          2620,
+          2621
+        ]
+      }
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F226",
+      "q_local": 244,
+      "q_original": 243,
+      "failures": [
+        {
+          "role": "B",
+          "source": 9,
+          "first_failed_sample_frame": 45,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "B": [
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74
+        ]
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F375",
+      "q_local": 388,
+      "q_original": 387,
+      "failures": [
+        {
+          "role": "B",
+          "source": 6,
+          "first_failed_sample_frame": 148,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          337,
+          338,
+          339,
+          340,
+          341,
+          342,
+          343,
+          344,
+          345,
+          346,
+          347,
+          348,
+          349,
+          350,
+          351,
+          352,
+          353,
+          354,
+          355,
+          356,
+          357,
+          358,
+          359,
+          360,
+          361,
+          362,
+          363,
+          364,
+          365,
+          366
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          363,
+          364,
+          365,
+          366
+        ],
+        "B": [
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ]
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1274",
+      "q_local": 1276,
+      "q_original": 1275,
+      "failures": [
+        {
+          "role": "A",
+          "source": 5,
+          "first_failed_sample_frame": 1261,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [],
+        "B": [
+          1234,
+          1235,
+          1236,
+          1237,
+          1238,
+          1239,
+          1240,
+          1241,
+          1242,
+          1243,
+          1244,
+          1245,
+          1246,
+          1247,
+          1248,
+          1249,
+          1250,
+          1251,
+          1252,
+          1253,
+          1254,
+          1255,
+          1256,
+          1257,
+          1258,
+          1259,
+          1260,
+          1261,
+          1262,
+          1263
+        ]
+      },
+      "depth_frames": {
+        "A": [
+          1261,
+          1262,
+          1263
+        ],
+        "B": [
+          1234,
+          1235,
+          1236,
+          1237,
+          1238,
+          1239,
+          1240,
+          1241,
+          1242,
+          1243,
+          1244,
+          1245,
+          1246,
+          1247,
+          1248,
+          1249,
+          1250,
+          1251,
+          1252,
+          1253,
+          1254,
+          1255,
+          1256,
+          1257,
+          1258,
+          1259,
+          1260,
+          1261,
+          1262,
+          1263
+        ]
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F1277",
+      "q_local": 1281,
+      "q_original": 1280,
+      "failures": [
+        {
+          "role": "B",
+          "source": 6,
+          "first_failed_sample_frame": 1234,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          1261,
+          1262,
+          1263,
+          1264,
+          1265,
+          1266,
+          1267
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          1261,
+          1262,
+          1263,
+          1264,
+          1265,
+          1266,
+          1267
+        ],
+        "B": [
+          1234,
+          1235,
+          1236,
+          1237,
+          1238,
+          1239,
+          1240,
+          1241,
+          1242,
+          1243,
+          1244,
+          1245,
+          1246,
+          1247,
+          1248,
+          1249,
+          1250,
+          1251,
+          1252,
+          1253,
+          1254,
+          1255,
+          1256,
+          1257,
+          1258,
+          1259,
+          1260,
+          1261,
+          1262,
+          1263
+        ]
+      }
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2157",
+      "q_local": 2161,
+      "q_original": 2160,
+      "failures": [
+        {
+          "role": "B",
+          "source": 60,
+          "first_failed_sample_frame": 1814,
+          "reasons": [
+            "NO_MATCHING_GEOMETRY_FRAME"
+          ]
+        }
+      ],
+      "geometry_frames": {
+        "A": [
+          2141,
+          2142,
+          2143,
+          2144,
+          2145,
+          2146,
+          2147,
+          2148
+        ],
+        "B": []
+      },
+      "depth_frames": {
+        "A": [
+          2141,
+          2142,
+          2143,
+          2144,
+          2145,
+          2146,
+          2147,
+          2148
+        ],
+        "B": [
+          1814
+        ]
+      }
+    }
+  ],
+  "confidence_summary": {
+    "minimum": 0.5005425718493512,
+    "median": 0.5406770114353179,
+    "maximum": 0.9719474407329496,
+    "confidence_at_least_point9": 1,
+    "confidence_below_point6": 16
+  },
+  "factor_limits": {
+    "signal_fraction": 0.9,
+    "minimum_joint_odds": 9,
+    "maximum_positive_logLR": 0.6418538861723947,
+    "minimum_logLR": -2.3025850929940455,
+    "maximum_complete_pair_order_odds": 19
+  },
+  "findings": [
+    "No DEPTH_ORDER extra group candidate accepted; zero accepted is not proof no useful physical order exists.",
+    "Most measured pairs have weak propagated order confidence, reflecting short clean pre windows and long event/reference gaps.",
+    "Two branch differences are caused by the positive sign gate even though combined candidate margin still exceeds log9; one is effectively neutral (-0.00015) ordinal evidence.",
+    "Six early source-binding failures, plus L3/LW failures, often reflect missing geometry history despite remaining depth history; they are not automatically bad depth measurements.",
+    "Permutation is actual nontrivial current-depth binding exchange, not a label-only ablation; future branch state may legitimately diverge after prior decisions.",
+    "Three OFF/PERMUTE group restores were not adopted by ORDER: Feeding F1239 and FishSA F11900 are positive-sign gate rejections; L3 original F1420 is a genuine soft-factor odds change (2.321974 to 2.049657 below log9)."
+  ],
+  "frozen_code_changed": false,
+  "gt_read": false,
+  "new_model_http": 0,
+  "all_off_acceptance_order_differences": [
+    {
+      "segment": "feeding_001201_001906",
+      "event": "MS1-F35",
+      "query_original_frame": 1239,
+      "off_margin": 2.8035691619491128,
+      "order_margin": 2.803268320283575,
+      "order_reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "order_p_A_nearer": 0.4994574281506488,
+      "permuted_margin": 2.8038700036146507,
+      "permuted_accepted": true,
+      "off_mapping": {
+        "167": 136,
+        "128": 128
+      },
+      "order_mapping": {
+        "167": 167,
+        "128": 128
+      },
+      "physical_correctness": "NOT_ASSESSED_HERE"
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2584",
+      "query_original_frame": 11900,
+      "off_margin": 3.2985735552476534,
+      "order_margin": 2.993299247929543,
+      "order_reason": "NO_POSITIVE_ORDINAL_SUPPORT_OR_PREFERENCE",
+      "order_p_A_nearer": 0.7311252737112807,
+      "permuted_margin": 3.6038478625657637,
+      "permuted_accepted": true,
+      "off_mapping": {
+        "4": 1,
+        "1": 4
+      },
+      "order_mapping": {
+        "4": 4,
+        "1": 1
+      },
+      "physical_correctness": "NOT_ASSESSED_HERE"
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "query_original_frame": 1420,
+      "off_margin": 2.3219744100669324,
+      "order_margin": 2.049656878442077,
+      "order_reason": "INSUFFICIENT_JOINT_ODDS",
+      "order_p_A_nearer": 0.4003130957890874,
+      "permuted_margin": 2.594291941691788,
+      "permuted_accepted": true,
+      "off_mapping": {
+        "9": 6,
+        "6": 9
+      },
+      "order_mapping": {
+        "9": 9,
+        "6": 6
+      },
+      "physical_correctness": "NOT_ASSESSED_HERE"
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+## DS22 local-background measurement experiment completed (2026-10-04)
+
+All90 original actions: correct5 compatible/10 unknown, wrong1 weak conflict/3 compatible/13 unknown, unscorable1 conflict/3 compatible/54 unknown. All171 endpoints were reopened and validated. No tracker replay, new scores or model HTTP. Engineering complete; depth increment insufficient; STOP this frozen representation. Original Z4Q remains the reference. See experiments/ds22_local_background_depth/FINAL_REVIEW.md and NEXT_STEP_PLAN.md. The single next plan is a fixed RGB-D spatial-correspondence audit, not yet run. Old seals remain read-only; pixels private.
+
 ## DS21 original Z4Q depth discriminability audit completed (2026-10-04)
 
 All 90 original durable actions were audited symmetrically, including correct, wrong and unscorable cases. No new predictions, scoring or model HTTP were run. Measurement eligibility is not a tracking gain. See experiments/ds21_z4q_depth_discriminability_audit/FINAL_REVIEW.md and NEXT_STEP_PLAN.md for evidence and the single next action. Original Z4Q remains the performance reference; the current combined route is not automatically extended. Old seals are read-only; actual depth/mask figures remain private.

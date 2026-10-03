@@ -1,3 +1,8 @@
+## DS20 pending confirmation isolation completed (2026-10-03)
+
+主判定：COMPLETE_CONFIRMATION_REPAIR_DEPTH_GOAL_NOT_ESTABLISHED。六列八段，每列20098帧；模型HTTP/费用=0。
+完整结果见 experiments/ds20_pending_confirmation_isolation/RESULTS.md、FINAL_REVIEW.md。确认隔离工程、事务恢复与深度增量分列，DS19旧seal只读。仅规划 NEXT_STEP_PLAN.md，不自动启动模型。
+
 ## DS19 protected event-local return completed (2026-10-03)
 
 主判定：COMPLETE_TRIAL_PENDING_ISOLATION_GAP_DEPTH_GOAL_NOT_ACHIEVED。六列八段，每列20098帧；模型HTTP/费用=0。

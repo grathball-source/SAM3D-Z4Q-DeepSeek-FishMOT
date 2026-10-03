@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\review_confirmation_slices.py", line 287, in <module>
+    main()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\review_confirmation_slices.py", line 261, in main
+    write_new(target, output)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 68, in write_new
+    p=Path(p);p.parent.mkdir(parents=True,exist_ok=True)
+      ^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1162, in __init__
+    super().__init__(*args)
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 373, in __init__
+    raise TypeError(
+TypeError: argument should be a str or an os.PathLike object where __fspath__ returns a str, not 'int'

@@ -1,3 +1,7 @@
+## DS21 original Z4Q depth discriminability audit completed (2026-10-04)
+
+All 90 original durable actions were audited symmetrically, including correct, wrong and unscorable cases. No new predictions, scoring or model HTTP were run. Measurement eligibility is not a tracking gain. See experiments/ds21_z4q_depth_discriminability_audit/FINAL_REVIEW.md and NEXT_STEP_PLAN.md for evidence and the single next action. Original Z4Q remains the performance reference; the current combined route is not automatically extended. Old seals are read-only; actual depth/mask figures remain private.
+
 ## DS20 pending confirmation isolation completed (2026-10-03)
 
 主判定：COMPLETE_CONFIRMATION_REPAIR_DEPTH_GOAL_NOT_ESTABLISHED。六列八段，每列20098帧；模型HTTP/费用=0。

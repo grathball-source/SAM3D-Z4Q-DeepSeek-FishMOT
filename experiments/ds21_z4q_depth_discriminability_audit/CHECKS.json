@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "semantic_checks": 11,
+  "visual_checks": {
+    "status": "PASS",
+    "checks": 4,
+    "scope": "Fixed chronology/absent strata/segment-end clamp/causal anchor"
+  },
+  "real_source": "feeding_000000_000199",
+  "actual_check_sources": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\observations.jsonl.gz",
+      "bytes": 268711,
+      "sha256": "d5a1678b2d188c062e97e6d02da513e184c99343c898283873406520302f5b09"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\profiles.jsonl.gz",
+      "bytes": 685790,
+      "sha256": "b37db9b0ddfbb4f8c09126d83c4127b06b5ad103d0af32baa0acf2452ef83a45"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 1179814,
+      "sha256": "24c461a2c6570e9ebd83a24278a3cea9bc6f075b7de83533596611ce8cc3a0dc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000000_000199\\public\\MIXED_DEPTH.jsonl.gz",
+      "bytes": 211,
+      "sha256": "38193a6a641fd5298a2ea7cdd225898e59c5f0b146eb3027fe4b9e44e1166829"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\run\\feeding_000000_000199\\public\\MIXED_DEPTH.part001.jsonl.gz",
+      "bytes": 15432244,
+      "sha256": "04e87e3251716e4847759d6a6a924e9feddf5c2000da141db542597e4744a2a5"
+    }
+  ],
+  "actual_check_code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds21_z4q_depth_discriminability_audit\\audit.py",
+      "bytes": 28630,
+      "sha256": "41407b6e701e3c1a6e012ace84f8d593ce6d694a00a64d12592b87a152296748"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds21_z4q_depth_discriminability_audit\\checks.py",
+      "bytes": 4665,
+      "sha256": "69e30471351920768fe63dbc610a2687b110ebc90506a584634c594528c4523c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds21_z4q_depth_discriminability_audit\\visualize.py",
+      "bytes": 15697,
+      "sha256": "9139ad48008d664a54f91183d8fefc175dc70828c04448928fee0a7a93ce5612"
+    }
+  ],
+  "self_consistent_hash_does_not_bypass_semantics": true,
+  "GT_raster_read": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

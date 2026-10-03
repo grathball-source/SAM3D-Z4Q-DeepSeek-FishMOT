@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds19_protected_event_return\unrestored_control_review.py", line 188, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds19_protected_event_return\unrestored_control_review.py", line 148, in main
+    pictures=[picture for case in cases for picture in visualize_control(case)]
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds19_protected_event_return\unrestored_control_review.py", line 90, in visualize_control
+    row=predictions[frame];depth,index,native,binding=sensor(row['global_frame'],row['time']);binding['frame']=frame
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds16_relative_depth_order\source.py", line 77, in __call__
+    assert self.previous_frame is None or g>=self.previous_frame
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

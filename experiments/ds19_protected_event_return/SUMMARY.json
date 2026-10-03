@@ -1,0 +1,641 @@
+{
+  "status": "COMPLETE_TRIAL_PENDING_ISOLATION_GAP_DEPTH_GOAL_NOT_ACHIEVED",
+  "layers": {
+    "completion": "All eight sources, six columns and independent scoring completed",
+    "source_and_publication": "PASS: source/scalar/ROI/ledger/seal and old-control parity",
+    "atomic_return": "Tested accepted local write sets and immutable publication PASS",
+    "pending_policy": "ENGINEERING_GAP: source-only pending write set can overwrite a competing ordinary target confirmation outside the protected target set",
+    "input": "Raw same source only; 18 weak paired orders and 32 UNKNOWN at 50 first splits",
+    "shared_return": "L3 same event recovered in both RETURN arms; exact original Z4Q metrics recovered",
+    "depth_increment": "No stable positive composite depth policy increment; no ordinal joint COMMIT",
+    "physical_truth": "L3 CORRECT under weak prediction-derived reference; LW UNSCORABLE; depth surface truth UNKNOWN",
+    "generalization": "Reused exposed cohorts; not independent generalization"
+  },
+  "frames_per_arm": 20098,
+  "arms": [
+    "SAM3_NATIVE",
+    "Z4Q_FROZEN",
+    "ACTIVITY_ORDER",
+    "ACTIVITY_RETURN",
+    "MIXED_ORDER",
+    "MIXED_RETURN"
+  ],
+  "column_frames": 120588,
+  "native_observations": 181842,
+  "comparisons": {
+    "Feeding_pooled1471": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 80.97675951035305,
+          "HOTA": 79.96405589527662,
+          "AssA": 71.53049876161319,
+          "DetA": 89.73060596672879,
+          "IDSW": 108,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 81.7168056365157,
+          "HOTA": 79.8598513405802,
+          "AssA": 71.34178214830844,
+          "DetA": 89.72335279629931,
+          "IDSW": 132,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 81.90181716805637,
+          "HOTA": 80.09235995218383,
+          "AssA": 71.75979619789821,
+          "DetA": 89.72857768486958,
+          "IDSW": 131,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        },
+        "ACTIVITY_RETURN": {
+          "IDF1": 81.90181716805637,
+          "HOTA": 80.09718055849761,
+          "AssA": 71.76874445058183,
+          "DetA": 89.72857768486958,
+          "IDSW": 131,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        },
+        "MIXED_ORDER": {
+          "IDF1": 81.24540639176826,
+          "HOTA": 79.51034245560157,
+          "AssA": 70.72668807550649,
+          "DetA": 89.71913546888594,
+          "IDSW": 129,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        },
+        "MIXED_RETURN": {
+          "IDF1": 81.24540639176826,
+          "HOTA": 79.51034245560157,
+          "AssA": 70.72668807550649,
+          "DetA": 89.71913546888594,
+          "IDSW": 129,
+          "FP": 487,
+          "FN": 985,
+          "GT": 39706,
+          "predictions": 39208
+        }
+      },
+      "primary_minus_native": {
+        "IDF1": 0.26864688141520787,
+        "HOTA": -0.45371343967504174,
+        "AssA": -0.8038106861067007,
+        "IDSW": 21,
+        "FP": 0,
+        "FN": 0
+      },
+      "primary_minus_original_z4q": {
+        "IDF1": -0.4713992447474453,
+        "HOTA": -0.34950888497863275,
+        "AssA": -0.615094072801952,
+        "IDSW": -3,
+        "FP": 0,
+        "FN": 0
+      },
+      "repaired_depth_policy_difference": {
+        "IDF1": -0.6564107762881122,
+        "HOTA": -0.5868381028960385,
+        "AssA": -1.0420563750753473,
+        "IDSW": -2,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_development_8400": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 91.31328783860297,
+          "HOTA": 73.3461431977153,
+          "AssA": 69.18676765844471,
+          "DetA": 77.75663771120087,
+          "IDSW": 5,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 99.3334724001947,
+          "HOTA": 77.82948776478582,
+          "AssA": 77.90763828694708,
+          "DetA": 77.75663771120087,
+          "IDSW": 6,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 99.21228556386646,
+          "HOTA": 77.72170736752723,
+          "AssA": 77.69115981341824,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "ACTIVITY_RETURN": {
+          "IDF1": 99.21228556386646,
+          "HOTA": 77.72170736752723,
+          "AssA": 77.69115981341824,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "MIXED_ORDER": {
+          "IDF1": 99.24407227503453,
+          "HOTA": 77.75051245836406,
+          "AssA": 77.74901399480879,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        },
+        "MIXED_RETURN": {
+          "IDF1": 99.24407227503453,
+          "HOTA": 77.75051245836406,
+          "AssA": 77.74901399480879,
+          "DetA": 77.75663771120087,
+          "IDSW": 8,
+          "FP": 194,
+          "FN": 323,
+          "GT": 50400,
+          "predictions": 50271
+        }
+      },
+      "primary_minus_native": {
+        "IDF1": 7.930784436431551,
+        "HOTA": 4.40436926064875,
+        "AssA": 8.562246336364083,
+        "IDSW": 3,
+        "FP": 0,
+        "FN": 0
+      },
+      "primary_minus_original_z4q": {
+        "IDF1": -0.08940012516016793,
+        "HOTA": -0.07897530642176775,
+        "AssA": -0.15862429213828477,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "repaired_depth_policy_difference": {
+        "IDF1": 0.03178671116806697,
+        "HOTA": 0.028805090836826253,
+        "AssA": 0.057854181390553094,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_validation_2888": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 76.4564442770648,
+          "HOTA": 66.43552909955413,
+          "AssA": 55.19605907649384,
+          "DetA": 79.99491919833206,
+          "IDSW": 8,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "DetA": 79.83273464469796,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 80.69179292563516,
+          "HOTA": 69.2379863410464,
+          "AssA": 60.0640931164567,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "ACTIVITY_RETURN": {
+          "IDF1": 80.69179292563516,
+          "HOTA": 69.2379863410464,
+          "AssA": 60.0640931164567,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "MIXED_ORDER": {
+          "IDF1": 80.41368521683711,
+          "HOTA": 68.95466080517635,
+          "AssA": 59.5712685081208,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        },
+        "MIXED_RETURN": {
+          "IDF1": 80.41368521683711,
+          "HOTA": 68.95466080517635,
+          "AssA": 59.5712685081208,
+          "DetA": 79.83273464469796,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423,
+          "GT": 17322,
+          "predictions": 17197
+        }
+      },
+      "primary_minus_native": {
+        "IDF1": 3.957240939772305,
+        "HOTA": 2.5191317056222147,
+        "AssA": 4.375209431626963,
+        "IDSW": 3,
+        "FP": 0,
+        "FN": 0
+      },
+      "primary_minus_original_z4q": {
+        "IDF1": -0.2839016193980086,
+        "HOTA": -0.28920815448161363,
+        "AssA": -0.5030529472940088,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "repaired_depth_policy_difference": {
+        "IDF1": -0.27810770879804636,
+        "HOTA": -0.2833255358700484,
+        "AssA": -0.49282460833589425,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "L3": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "DetA": 60.254014677607174,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "ACTIVITY_RETURN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "DetA": 60.254014677607174,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "MIXED_ORDER": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "DetA": 60.254014677607174,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        },
+        "MIXED_RETURN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "DetA": 60.254014677607174,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0,
+          "GT": 22250,
+          "predictions": 36927
+        }
+      },
+      "primary_minus_native": {
+        "IDF1": 2.3184683238420263,
+        "HOTA": 1.808950075886628,
+        "AssA": 4.579390948797183,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "primary_minus_original_z4q": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      },
+      "repaired_depth_policy_difference": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "LW": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36906738520446,
+          "AssA": 77.55512121843537,
+          "DetA": 56.79642006948201,
+          "IDSW": 7,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 64.3293952976855,
+          "HOTA": 68.9917212023931,
+          "AssA": 83.80559725800063,
+          "DetA": 56.79642006948201,
+          "IDSW": 10,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "ACTIVITY_ORDER": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.27006730237797,
+          "AssA": 77.32392411727031,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "ACTIVITY_RETURN": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.2732660615164,
+          "AssA": 77.33138892400842,
+          "DetA": 56.79642006948201,
+          "IDSW": 8,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "MIXED_ORDER": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36204819931568,
+          "AssA": 77.53871764189722,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        },
+        "MIXED_RETURN": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36204819931568,
+          "AssA": 77.53871764189722,
+          "DetA": 56.79642006948201,
+          "IDSW": 9,
+          "FP": 16493,
+          "FN": 28,
+          "GT": 21774,
+          "predictions": 38239
+        }
+      },
+      "primary_minus_native": {
+        "IDF1": 0.0,
+        "HOTA": -0.007019185888779589,
+        "AssA": -0.01640357653815272,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "primary_minus_original_z4q": {
+        "IDF1": -3.715861563327934,
+        "HOTA": -2.6296730030774143,
+        "AssA": -6.2668796161034095,
+        "IDSW": -1,
+        "FP": 0,
+        "FN": 0
+      },
+      "repaired_depth_policy_difference": {
+        "IDF1": 0.0,
+        "HOTA": 0.08878213779928501,
+        "AssA": 0.20732871788879947,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "local_return_counts": {
+    "ACTIVITY_RETURN": {
+      "CORRECT": 1,
+      "UNSCORABLE": 1
+    },
+    "MIXED_RETURN": {
+      "CORRECT": 1
+    }
+  },
+  "local_return_cases": [
+    {
+      "segment": "L3",
+      "arm": "ACTIVITY_RETURN",
+      "event": "MS1-F2873",
+      "frame": 3025,
+      "global_frame": 3024,
+      "source": 47,
+      "target": 9,
+      "origin_rule": "D1_DELAYED",
+      "physical": "CORRECT",
+      "actual_reference_physical": "CORRECT",
+      "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+      "return_delay_since_first_source_frames": 134
+    },
+    {
+      "segment": "L3",
+      "arm": "MIXED_RETURN",
+      "event": "MS1-F2873",
+      "frame": 3025,
+      "global_frame": 3024,
+      "source": 47,
+      "target": 9,
+      "origin_rule": "D1_DELAYED",
+      "physical": "CORRECT",
+      "actual_reference_physical": "CORRECT",
+      "prior_public_reference_status": "CONSISTENT_PUBLIC_ORIGIN",
+      "return_delay_since_first_source_frames": 134
+    },
+    {
+      "segment": "LW",
+      "arm": "ACTIVITY_RETURN",
+      "event": "MS1-F3222",
+      "frame": 3272,
+      "global_frame": 3271,
+      "source": 144,
+      "target": 133,
+      "origin_rule": "D1_DELAYED",
+      "physical": "UNSCORABLE",
+      "actual_reference_physical": "UNSCORABLE",
+      "prior_public_reference_status": "UNSCORABLE_PUBLIC_ORIGIN",
+      "return_delay_since_first_source_frames": 4
+    }
+  ],
+  "S0_choices": {
+    "H0": 50
+  },
+  "fallback_first_public_bank": {
+    "WRONG": 10,
+    "CORRECT": 30,
+    "UNSCORABLE": 10
+  },
+  "fallback_pre_consensus": {
+    "UNSCORABLE": 29,
+    "CORRECT": 16,
+    "WRONG": 5
+  },
+  "fallback_is_not_joint_COMMIT": true,
+  "unique_actual_local_return_source_events": 2,
+  "pending_competition": {
+    "Feeding_ACTIVITY_RETURN": {
+      "source": 38,
+      "protected_target": 16,
+      "ordinary_target": 7,
+      "carry_local_frame": 193,
+      "first_changed_local_frame": 195,
+      "first_changed_original_frame": 194,
+      "changed_frames": 6
+    },
+    "LW_MIXED_RETURN": {
+      "source": 32,
+      "protected_target": 7,
+      "ordinary_target": 24,
+      "carry_local_frames": [
+        949,
+        950,
+        951,
+        952
+      ],
+      "first_changed_local_frame": 952,
+      "first_changed_original_frame": 951,
+      "changed_frames": 5
+    }
+  },
+  "timing": {
+    "formal_prediction_seconds": 2546.2044902000343,
+    "full_source_checks_and_scoring_seconds": 2019.3456668000435,
+    "report_and_private_return_visuals_seconds": 110.2058062000433
+  },
+  "new_model_http": 0,
+  "smoke": 0,
+  "training": 0,
+  "sam3_inference": 0,
+  "completion_service": 0,
+  "cost_usd": 0,
+  "scientific_files_frozen_no_retune": true,
+  "next_trial_not_started": true,
+  "sources": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\POST_SCORE_INTERPRETATION_REVIEW.json",
+      "bytes": 132297,
+      "sha256": "a2807cf9347576264ae3ee1d4a0ff1ef885f04ad6d6a5a8bfbdaded6046eeac3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PRE_PAIR_DIAGNOSIS.json",
+      "bytes": 3118522,
+      "sha256": "e8ac18bcdb35986293bef9f9f8e8d1a59758efec8b99c5300cd8d129ac09c118"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\DELIVERY_COMPLETE_RECORD_REVIEW.json",
+      "bytes": 47020,
+      "sha256": "5dcebd6de1d8898a0038626be419ebd635b3b3ff5f2d4ea5085beb5db5460006"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\DIAGNOSTIC_RENDER_REPAIR.json",
+      "bytes": 3656,
+      "sha256": "1a87164cd4335942ec0dd715d6e191a140f7b327b94039f11888d90ca2fb0dbf"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\run\\METRICS.json",
+      "bytes": 56619209,
+      "sha256": "6f00f2f5f857789d15a64420d9c4c6d753821bab1279e92a840ceab646634b26"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\run\\SCORE_PROVENANCE.json",
+      "bytes": 1161,
+      "sha256": "75730e4ca2c34ce36068e9f8001b2ac0fcae57ea5c6e55c22e66ac8ce08db139"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\ORDER_COVERAGE.json",
+      "bytes": 1258366,
+      "sha256": "de365279d89a5fed7564f03c696da8e0776a38fe984edf7fbdd3f287bd968e05"
+    }
+  ],
+  "next_step": "Isolate event protected-edge confirmation from ordinary candidate pending; one frozen same-source replay afterward"
+}

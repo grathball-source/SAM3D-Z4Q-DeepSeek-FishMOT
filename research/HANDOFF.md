@@ -1,3 +1,8 @@
+## DS19 protected event-local return completed (2026-10-03)
+
+主判定：COMPLETE_TRIAL_PENDING_ISOLATION_GAP_DEPTH_GOAL_NOT_ACHIEVED。六列八段，每列20098帧；模型HTTP/费用=0。
+完整结果见 experiments/ds19_protected_event_return/RESULTS.md、FINAL_REVIEW.md。共同事务恢复与深度增量分列，旧seal只读。仅规划 NEXT_STEP_PLAN.md，不自动启动模型。
+
 ## DS18 association evidence interface repair completed (2026-10-03)
 
 主判定：COMPLETE_TRIAL_GOAL_NOT_ACHIEVED。六臂八段、每臂20098帧；模型HTTP/费用=0。

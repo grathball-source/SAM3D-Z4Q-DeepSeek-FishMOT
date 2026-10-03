@@ -1,0 +1,27 @@
+{
+  "status": "FAIL",
+  "tests": 6,
+  "failures": 0,
+  "errors": 2,
+  "failure_details": [
+    {
+      "test": "test_conflicting_late_q_cannot_undo_return (ds19_event_return_checks.EventReturnTests.test_conflicting_late_q_cannot_undo_return)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py\", line 217, in test_conflicting_late_q_cannot_undo_return\n    before=state(case.branch)\n           ^^^^^^^^^^^^^^^^^^\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py\", line 24, in state\n    return plain(dict(engine=vars(branch.engine), previous=branch.previous,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py\", line 20, in plain\n    return json.loads(json.dumps(value, sort_keys=True, default=str))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\encoder.py\", line 200, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\encoder.py\", line 258, in iterencode\n    return _iterencode(o, 0)\n           ^^^^^^^^^^^^^^^^^\nTypeError: keys must be str, int, float, bool or None, not tuple\n"
+    },
+    {
+      "test": "test_disabled_matches_frozen_ds18_publication_and_state (ds19_event_return_checks.EventReturnTests.test_disabled_matches_frozen_ds18_publication_and_state)",
+      "traceback": "Traceback (most recent call last):\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py\", line 236, in test_disabled_matches_frozen_ds18_publication_and_state\n    self.assertEqual(plain(getattr(case.branch.engine,name)),\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py\", line 20, in plain\n    return json.loads(json.dumps(value, sort_keys=True, default=str))\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n          ^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\encoder.py\", line 200, in encode\n    chunks = self.iterencode(o, _one_shot=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\json\\encoder.py\", line 258, in iterencode\n    return _iterencode(o, 0)\n           ^^^^^^^^^^^^^^^^^\nTypeError: keys must be str, int, float, bool or None, not tuple\n"
+    }
+  ],
+  "GT_read": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "actual_test_sources": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\checks.py": "2c2f1d745bd5eb31bd0a511fbb4b2b7867abf9496c65b019712a72677dc30c0b",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\test_event_return.py": "fb18f9a9bfb9048f332e517881f969587f6edab679730057e15cdd7a287c493f",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\controller.py": "292e64cb708c8c8fd8e66132925f1747b07f3d95c70b73d06868efe8c9e75e36",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\controller.py": "966ddf22e4ac41fccd3105b1d49036c666ee0a0de074541152c126c2e96c3d1a",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\test_controller.py": "05b59e50a8f31f017a77f2d98c117b755745bf7da3909f0d6d8e03029e32e7bb",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\mixed_depth.py": "12b7564afb69690dd85be60c2af88744c784e97d62ad5dcbacbb9c2458abfbb7"
+  }
+}

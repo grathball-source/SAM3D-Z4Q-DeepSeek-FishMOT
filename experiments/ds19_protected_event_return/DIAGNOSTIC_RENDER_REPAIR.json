@@ -1,0 +1,78 @@
+{
+  "status": "POSTSCORE_RENDER_ONLY_REPAIR",
+  "cause": "RawDepth enforces monotonic frame reads; unordered frame set caused assert on previous_frame",
+  "repair": "Only replace for frame in frames with for frame in sorted(frames) inside visualize_control raw reader",
+  "before_line": "for frame in frames:",
+  "after_line": "for frame in sorted(frames):",
+  "failed_execution": {
+    "command": [
+      "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+      "-B",
+      "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\unrestored_control_review.py"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 15.73761089995969,
+    "started_utc": "2026-10-03T09:44:56.423065+00:00",
+    "finished_utc": "2026-10-03T09:45:12.160793+00:00",
+    "log": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\logs\\unrestored_control_review.txt",
+      "bytes": 1156,
+      "sha256": "25a030c6988b8d5836ca9e6f48883902d637520c6761cdb6c4407294c60c211d"
+    }
+  },
+  "successful_execution": {
+    "command": [
+      "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+      "-B",
+      "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\unrestored_control_review.py",
+      "retry1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 127.48539309995249,
+    "started_utc": "2026-10-03T09:46:11.093995+00:00",
+    "finished_utc": "2026-10-03T09:48:18.580492+00:00",
+    "log": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\logs\\unrestored_control_review_retry1.txt",
+      "bytes": 120,
+      "sha256": "e7fe1ec3a614296cfb06ffb87c45e3167f5fa2824a58f3892dbb64d0e74f719d"
+    }
+  },
+  "actual_current_helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\unrestored_control_review.py",
+    "bytes": 14322,
+    "sha256": "d7c056b95c7d925810e2d7a8e5cac5ea37f2afcc8f75e5b77cd1912c6b8da5b1"
+  },
+  "reconstructed_initial_helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\diagnostic_archive\\unrestored_control_review_initial_reconstructed.py",
+    "bytes": 14314,
+    "sha256": "f25b5443f870e2bee33b0152d87b3e261e0e0ea8be26612dc290a3eb5a02d978"
+  },
+  "initial_archive_provenance": "Exactly reconstructed by inverse of recorded sole one-line edit; this archive SHA is measured now, not an independently recorded pre-run source hash",
+  "one_line_inverse_recovers_current_exactly": true,
+  "archive_readonly": true,
+  "no_prediction_or_scorer_or_association_parameter_change": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "outputs": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\ORDER_COVERAGE.json",
+      "bytes": 1258366,
+      "sha256": "de365279d89a5fed7564f03c696da8e0776a38fe984edf7fbdd3f287bd968e05"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\ORDER_COVERAGE.md",
+      "bytes": 6675,
+      "sha256": "7a1eeeb479e14c5b4a9e8a53698f3e7c95a11264da6a8881ef5881e5f7cbad50"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\UNRESTORED_CONTROLS.json",
+      "bytes": 3767831,
+      "sha256": "68507beb8094d06d007a1cb1b9599c2efd7669dcc0edce38c38017b49ad804dd"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PRIVATE_UNRESTORED_CONTROL_VISUALS.json",
+      "bytes": 102903,
+      "sha256": "2aba5d5cb3e6569b8015c118745d4fbef3c843ac141a04f16751dac71c619e0b"
+    }
+  ]
+}

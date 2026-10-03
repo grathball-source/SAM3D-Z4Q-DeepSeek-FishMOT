@@ -1,0 +1,74 @@
+{
+  "status": "READONLY_AUDIT_COMPLETE",
+  "time_utc": "2026-10-03T10:05:25.526576+00:00",
+  "GT_read": false,
+  "metrics_read": false,
+  "new_model_http": 0,
+  "new_prediction": false,
+  "new_association": false,
+  "commands": [
+    {
+      "script": "diagnose_pre_pair.py",
+      "exit_code": 0,
+      "stdout": "DIAGNOSIS VALID18 / NO_SAME16 / INVALID_PRE13 / INVALID_CURRENT3; GEOMETRY_FRAME_ABSENT199"
+    },
+    {
+      "script": "review_pre_pair_focus.py",
+      "exit_code": 0,
+      "stdout": "FOCUS_ROWS 44"
+    },
+    {
+      "script": "review_pending_competition.py",
+      "exit_code": 0,
+      "stdout": "Feeding collisions193,196; LW collisions949-952"
+    }
+  ],
+  "actual_freeze_code_and_config_all_eight_segments": "PASS",
+  "artifacts": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\diagnose_pre_pair.py",
+      "bytes": 11349,
+      "sha256": "493391a88e7321149e5908b46379b13a73ee25194e35774f40b9c3cf136fe5b3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PRE_PAIR_DIAGNOSIS.json",
+      "bytes": 3118522,
+      "sha256": "e8ac18bcdb35986293bef9f9f8e8d1a59758efec8b99c5300cd8d129ac09c118"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PRE_PAIR_DIAGNOSIS.md",
+      "bytes": 9504,
+      "sha256": "e6874c761dacca01b38ca397c07c5c13353f7786d183429acdd5f63e712f3f12"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\review_pre_pair_focus.py",
+      "bytes": 2582,
+      "sha256": "ec2c0a9d4194495c581ee9cfbd4ef2b8136ab7e93d7c8e00674a273e084ed7ee"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PRE_PAIR_FOCUS_SOURCE_FACTS.json",
+      "bytes": 96903,
+      "sha256": "98255ae42d683370316c4ba66294dcb3de46a24ab3a6607da6d1de1c704f9cb4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\review_pending_competition.py",
+      "bytes": 3295,
+      "sha256": "9b481d3ce62153e4365edd7806faa6ce55b3f436ebefce85f0d8e21759afa141"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PENDING_COMPETITION_BOUNDARY.json",
+      "bytes": 1113529,
+      "sha256": "96be2ea0d9a65bf0cb7130bf8c15897be6dc101f34f6a4bfacc31135a5d0d73e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\PENDING_COMPETITION_BOUNDARY.md",
+      "bytes": 2659,
+      "sha256": "9c92783c082b07446fad41155fdb4ad3ac2f1a10f550ba07880dba66c23ed0c7"
+    }
+  ],
+  "frozen_controller": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds19_protected_event_return\\controller.py",
+    "bytes": 32583,
+    "sha256": "420aad60656d9084f7c7281c597d5039490a9f0aa3b221f02e855904b7241538"
+  }
+}

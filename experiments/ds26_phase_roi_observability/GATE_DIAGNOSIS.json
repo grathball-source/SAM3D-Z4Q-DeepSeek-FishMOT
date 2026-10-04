@@ -1,0 +1,1223 @@
+{
+  "status": "POSTSEAL_DESCRIPTIVE_DECOMPOSITION; NO_TUNING",
+  "actual_measurement_parameters": {
+    "layer_gap_mm": 30.0,
+    "scale_floor_mm": 15.0,
+    "max_scale_mm": 60.0,
+    "minimum_layer_n": 16,
+    "minimum_layer_fraction": 0.2,
+    "minimum_coverage_fraction": 0.2,
+    "annulus_inner_px": 5,
+    "annulus_outer_px": 20,
+    "neighbor_margin_px": 3,
+    "background_minimum_n": 64,
+    "background_contrast_floor_mm": 30.0,
+    "background_sigma_factor": 3.0,
+    "background_max_condition": 100.0,
+    "irls_steps": 5,
+    "huber_c": 1.5
+  },
+  "segments": {
+    "feeding_000000_000199": {
+      "unique_actual_mask_facts": 0,
+      "reason_counts": {},
+      "mutually_exclusive_diagnostic": {},
+      "measured_components": 0,
+      "substantial_components": 0,
+      "substantial_background_compatibility": {},
+      "layer_qualified_flags": 0,
+      "declared_qualified": 0,
+      "annulus_residual_scale_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_abs_residual_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "independent_roi_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "inclusive_valid_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "roi_area": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "post_pair_proxy": 0
+    },
+    "feeding_000351_000555": {
+      "unique_actual_mask_facts": 149,
+      "reason_counts": {
+        "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED": 143,
+        "SUBSTANTIAL_NOISY_OR_UNRESOLVED_SUPPORT": 6
+      },
+      "mutually_exclusive_diagnostic": {
+        "SOLE_QUALIFIED_PROXY": 31,
+        "NO_QUALIFIED_SUPPORT_WITH_PARENT_GATES_PASSED": 112,
+        "SUBSTANTIAL_UNRESOLVED_SUPPORT": 6
+      },
+      "measured_components": 304,
+      "substantial_components": 158,
+      "substantial_background_compatibility": {
+        "DIFFERENT_FROM_LOCAL_ANNULUS_PROXY": 37,
+        "BACKGROUND_COMPATIBLE": 121
+      },
+      "layer_qualified_flags": 31,
+      "declared_qualified": 31,
+      "annulus_residual_scale_mm": {
+        "n": 149,
+        "minimum": 15.0,
+        "q10": 15.0,
+        "median": 15.0,
+        "q90": 15.0,
+        "maximum": 45.947523465308876
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 149,
+        "minimum": 45.0,
+        "q10": 45.0,
+        "median": 45.0,
+        "q90": 45.0,
+        "maximum": 137.84257039592663
+      },
+      "substantial_abs_residual_mm": {
+        "n": 158,
+        "minimum": 0.07203529211960813,
+        "q10": 2.6570471305723458,
+        "median": 15.665059569671541,
+        "q90": 99.64599340564142,
+        "maximum": 326.7439052976233
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 158,
+        "minimum": 21.215528392901497,
+        "q10": 21.215927544341078,
+        "median": 24.72257753298905,
+        "q90": 50.155481968006185,
+        "maximum": 106.11487586556882
+      },
+      "independent_roi_fraction": {
+        "n": 149,
+        "minimum": 0.30742049469964666,
+        "q10": 0.6527507538260227,
+        "median": 0.9386281588447654,
+        "q90": 0.9914067008184655,
+        "maximum": 1.0
+      },
+      "inclusive_valid_fraction": {
+        "n": 149,
+        "minimum": 0.30742049469964666,
+        "q10": 0.6527507538260227,
+        "median": 0.9386281588447654,
+        "q90": 0.9914067008184655,
+        "maximum": 1.0
+      },
+      "roi_area": {
+        "n": 149,
+        "minimum": 269.0,
+        "q10": 351.6,
+        "median": 437.0,
+        "q90": 596.6,
+        "maximum": 990.0
+      },
+      "post_pair_proxy": 1
+    },
+    "feeding_000701_001060": {
+      "unique_actual_mask_facts": 100,
+      "reason_counts": {
+        "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED": 72,
+        "SUBSTANTIAL_NOISY_OR_UNRESOLVED_SUPPORT": 26,
+        "BACKGROUND_RESIDUAL_TOO_BROAD": 2
+      },
+      "mutually_exclusive_diagnostic": {
+        "NO_QUALIFIED_SUPPORT_WITH_PARENT_GATES_PASSED": 46,
+        "SUBSTANTIAL_UNRESOLVED_SUPPORT": 26,
+        "SOLE_QUALIFIED_PROXY": 26,
+        "BACKGROUND_MODEL_SCALE_FAILED": 2
+      },
+      "measured_components": 264,
+      "substantial_components": 103,
+      "substantial_background_compatibility": {
+        "BACKGROUND_COMPATIBLE": 64,
+        "DIFFERENT_FROM_LOCAL_ANNULUS_PROXY": 39
+      },
+      "layer_qualified_flags": 26,
+      "declared_qualified": 26,
+      "annulus_residual_scale_mm": {
+        "n": 100,
+        "minimum": 15.0,
+        "q10": 15.0,
+        "median": 15.0,
+        "q90": 47.48246340268612,
+        "maximum": 61.10754091572041
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 100,
+        "minimum": 45.0,
+        "q10": 45.0,
+        "median": 45.0,
+        "q90": 142.44739020805835,
+        "maximum": 183.32262274716123
+      },
+      "substantial_abs_residual_mm": {
+        "n": 103,
+        "minimum": 0.16667819374242754,
+        "q10": 6.088999868273732,
+        "median": 28.395024249651783,
+        "q90": 248.5613837884498,
+        "maximum": 340.0885733899588
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 103,
+        "minimum": 21.215245969617474,
+        "q10": 21.216303370679878,
+        "median": 31.65481242203202,
+        "q90": 78.38227943826399,
+        "maximum": 95.84819112370504
+      },
+      "independent_roi_fraction": {
+        "n": 100,
+        "minimum": 0.2623239436619718,
+        "q10": 0.641023046609371,
+        "median": 0.8901281596976139,
+        "q90": 0.9856785341016963,
+        "maximum": 1.0
+      },
+      "inclusive_valid_fraction": {
+        "n": 100,
+        "minimum": 0.2623239436619718,
+        "q10": 0.641023046609371,
+        "median": 0.8901281596976139,
+        "q90": 0.9856785341016963,
+        "maximum": 1.0
+      },
+      "roi_area": {
+        "n": 100,
+        "minimum": 370.0,
+        "q10": 424.7,
+        "median": 509.5,
+        "q90": 601.3000000000001,
+        "maximum": 746.0
+      },
+      "post_pair_proxy": 0
+    },
+    "feeding_001201_001906": {
+      "unique_actual_mask_facts": 178,
+      "reason_counts": {
+        "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED": 130,
+        "SUBSTANTIAL_NOISY_OR_UNRESOLVED_SUPPORT": 39,
+        "BACKGROUND_RESIDUAL_TOO_BROAD": 9
+      },
+      "mutually_exclusive_diagnostic": {
+        "NO_QUALIFIED_SUPPORT_WITH_PARENT_GATES_PASSED": 114,
+        "SUBSTANTIAL_UNRESOLVED_SUPPORT": 39,
+        "BACKGROUND_MODEL_SCALE_FAILED": 9,
+        "SOLE_QUALIFIED_PROXY": 16
+      },
+      "measured_components": 296,
+      "substantial_components": 187,
+      "substantial_background_compatibility": {
+        "BACKGROUND_COMPATIBLE": 148,
+        "DIFFERENT_FROM_LOCAL_ANNULUS_PROXY": 39
+      },
+      "layer_qualified_flags": 16,
+      "declared_qualified": 16,
+      "annulus_residual_scale_mm": {
+        "n": 178,
+        "minimum": 15.0,
+        "q10": 15.0,
+        "median": 15.0,
+        "q90": 51.33120783564737,
+        "maximum": 80.44119080194393
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 178,
+        "minimum": 45.0,
+        "q10": 45.0,
+        "median": 45.0,
+        "q90": 153.9936235069421,
+        "maximum": 241.32357240583178
+      },
+      "substantial_abs_residual_mm": {
+        "n": 187,
+        "minimum": 0.565600775568555,
+        "q10": 4.855840647799823,
+        "median": 21.920285682592066,
+        "q90": 112.10534352480941,
+        "maximum": 176.541321607182
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 187,
+        "minimum": 21.215211114857745,
+        "q10": 21.216659105328496,
+        "median": 37.90684844973811,
+        "q90": 82.50531579325622,
+        "maximum": 153.6175075010713
+      },
+      "independent_roi_fraction": {
+        "n": 178,
+        "minimum": 0.38752783964365256,
+        "q10": 0.717862629624888,
+        "median": 0.8744369369369369,
+        "q90": 0.9948157051282052,
+        "maximum": 1.0
+      },
+      "inclusive_valid_fraction": {
+        "n": 178,
+        "minimum": 0.38752783964365256,
+        "q10": 0.717862629624888,
+        "median": 0.8744369369369369,
+        "q90": 0.9948157051282052,
+        "maximum": 1.0
+      },
+      "roi_area": {
+        "n": 178,
+        "minimum": 302.0,
+        "q10": 375.7,
+        "median": 449.5,
+        "q90": 520.6,
+        "maximum": 909.0
+      },
+      "post_pair_proxy": 1
+    },
+    "fishsa_development_8400": {
+      "unique_actual_mask_facts": 0,
+      "reason_counts": {},
+      "mutually_exclusive_diagnostic": {},
+      "measured_components": 0,
+      "substantial_components": 0,
+      "substantial_background_compatibility": {},
+      "layer_qualified_flags": 0,
+      "declared_qualified": 0,
+      "annulus_residual_scale_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_abs_residual_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "independent_roi_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "inclusive_valid_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "roi_area": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "post_pair_proxy": 0
+    },
+    "fishsa_validation_2888": {
+      "unique_actual_mask_facts": 0,
+      "reason_counts": {},
+      "mutually_exclusive_diagnostic": {},
+      "measured_components": 0,
+      "substantial_components": 0,
+      "substantial_background_compatibility": {},
+      "layer_qualified_flags": 0,
+      "declared_qualified": 0,
+      "annulus_residual_scale_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_abs_residual_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "independent_roi_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "inclusive_valid_fraction": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "roi_area": {
+        "n": 0,
+        "minimum": null,
+        "q10": null,
+        "median": null,
+        "q90": null,
+        "maximum": null
+      },
+      "post_pair_proxy": 0
+    },
+    "L3": {
+      "unique_actual_mask_facts": 200,
+      "reason_counts": {
+        "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED": 196,
+        "SUBSTANTIAL_NOISY_OR_UNRESOLVED_SUPPORT": 4
+      },
+      "mutually_exclusive_diagnostic": {
+        "NO_QUALIFIED_SUPPORT_WITH_PARENT_GATES_PASSED": 196,
+        "SUBSTANTIAL_UNRESOLVED_SUPPORT": 4
+      },
+      "measured_components": 329,
+      "substantial_components": 200,
+      "substantial_background_compatibility": {
+        "BACKGROUND_COMPATIBLE": 196,
+        "DIFFERENT_FROM_LOCAL_ANNULUS_PROXY": 4
+      },
+      "layer_qualified_flags": 0,
+      "declared_qualified": 0,
+      "annulus_residual_scale_mm": {
+        "n": 200,
+        "minimum": 15.0,
+        "q10": 15.0,
+        "median": 15.0,
+        "q90": 15.0,
+        "maximum": 15.0
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 200,
+        "minimum": 45.0,
+        "q10": 45.0,
+        "median": 45.0,
+        "q90": 45.0,
+        "maximum": 45.0
+      },
+      "substantial_abs_residual_mm": {
+        "n": 200,
+        "minimum": 0.17106558118479143,
+        "q10": 9.694281725659243,
+        "median": 15.032417641428083,
+        "q90": 23.077318778242514,
+        "maximum": 47.937408249422674
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 200,
+        "minimum": 21.253370932091297,
+        "q10": 24.8556191409194,
+        "median": 30.736121049014123,
+        "q90": 47.640436588923286,
+        "maximum": 65.01966068826019
+      },
+      "independent_roi_fraction": {
+        "n": 200,
+        "minimum": 0.6904761904761905,
+        "q10": 0.8306576073768503,
+        "median": 0.971868235930736,
+        "q90": 1.0,
+        "maximum": 1.0
+      },
+      "inclusive_valid_fraction": {
+        "n": 200,
+        "minimum": 0.6904761904761905,
+        "q10": 0.8306576073768503,
+        "median": 0.971868235930736,
+        "q90": 1.0,
+        "maximum": 1.0
+      },
+      "roi_area": {
+        "n": 200,
+        "minimum": 94.0,
+        "q10": 206.70000000000002,
+        "median": 1189.0,
+        "q90": 2032.1,
+        "maximum": 2164.0
+      },
+      "post_pair_proxy": 0
+    },
+    "LW": {
+      "unique_actual_mask_facts": 489,
+      "reason_counts": {
+        "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED": 446,
+        "SUBSTANTIAL_NOISY_OR_UNRESOLVED_SUPPORT": 39,
+        "BACKGROUND_RESIDUAL_TOO_BROAD": 4
+      },
+      "mutually_exclusive_diagnostic": {
+        "NO_QUALIFIED_SUPPORT_WITH_PARENT_GATES_PASSED": 438,
+        "SUBSTANTIAL_UNRESOLVED_SUPPORT": 39,
+        "SOLE_QUALIFIED_PROXY": 8,
+        "BACKGROUND_MODEL_SCALE_FAILED": 4
+      },
+      "measured_components": 716,
+      "substantial_components": 493,
+      "substantial_background_compatibility": {
+        "BACKGROUND_COMPATIBLE": 471,
+        "DIFFERENT_FROM_LOCAL_ANNULUS_PROXY": 22
+      },
+      "layer_qualified_flags": 8,
+      "declared_qualified": 8,
+      "annulus_residual_scale_mm": {
+        "n": 489,
+        "minimum": 15.0,
+        "q10": 15.0,
+        "median": 18.112533343917185,
+        "q90": 39.977966127266185,
+        "maximum": 64.0083876340823
+      },
+      "annulus_contrast_threshold_mm": {
+        "n": 489,
+        "minimum": 45.0,
+        "q10": 45.0,
+        "median": 54.337600031751556,
+        "q90": 119.93389838179856,
+        "maximum": 192.0251629022469
+      },
+      "substantial_abs_residual_mm": {
+        "n": 493,
+        "minimum": 0.010414031308755511,
+        "q10": 3.8891668998453723,
+        "median": 17.849423213990235,
+        "q90": 77.10332942385517,
+        "maximum": 202.0929320720735
+      },
+      "substantial_combined_sigma_mm": {
+        "n": 493,
+        "minimum": 21.215176008850367,
+        "q10": 21.225131753800213,
+        "median": 32.0050944826394,
+        "q90": 54.84273622696599,
+        "maximum": 173.56433836548558
+      },
+      "independent_roi_fraction": {
+        "n": 489,
+        "minimum": 0.38926174496644295,
+        "q10": 0.8981263616557734,
+        "median": 0.9987745098039216,
+        "q90": 1.0,
+        "maximum": 1.0
+      },
+      "inclusive_valid_fraction": {
+        "n": 489,
+        "minimum": 0.38926174496644295,
+        "q10": 0.8981263616557734,
+        "median": 0.9987745098039216,
+        "q90": 1.0,
+        "maximum": 1.0
+      },
+      "roi_area": {
+        "n": 489,
+        "minimum": 70.0,
+        "q10": 230.8,
+        "median": 811.0,
+        "q90": 1332.6,
+        "maximum": 1947.0
+      },
+      "post_pair_proxy": 0
+    }
+  },
+  "all_sole_pair_measurements": [
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F14",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 14,
+      "global_frame": 364,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 14,
+          "global_frame": 364,
+          "time": 1789706592.775,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 14,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "df7d9e08fd07feddcfff65b3147a92dc0a1bb455a01014a0d2a5ca099cdccd9f",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 14,
+          "global_frame": 364,
+          "time": 1789706592.775,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 14,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "df7d9e08fd07feddcfff65b3147a92dc0a1bb455a01014a0d2a5ca099cdccd9f",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -41.1773681640625,
+      "propagated_sigma_mm": 34.26862126892539,
+      "standardized_difference": -1.20160562751913,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F15",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 15,
+      "global_frame": 365,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 15,
+          "global_frame": 365,
+          "time": 1789706592.809,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 15,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "9f8a7d277fc93618283e0cffeb68a2ab0a5bc5c15fa19c09cbc009e6ece462e9",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 15,
+          "global_frame": 365,
+          "time": 1789706592.809,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 15,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "9f8a7d277fc93618283e0cffeb68a2ab0a5bc5c15fa19c09cbc009e6ece462e9",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -31.592376708984375,
+      "propagated_sigma_mm": 34.329527602462704,
+      "standardized_difference": -0.920268320462354,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F16",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 16,
+      "global_frame": 366,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 16,
+          "global_frame": 366,
+          "time": 1789706592.842,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 16,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "f34707cad2eff06e115beafcb22edcf5db4765a5e476ce1ccaaecafd3d158d1d",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 16,
+          "global_frame": 366,
+          "time": 1789706592.842,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 16,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "f34707cad2eff06e115beafcb22edcf5db4765a5e476ce1ccaaecafd3d158d1d",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -33.857025146484375,
+      "propagated_sigma_mm": 34.77578614017323,
+      "standardized_difference": -0.9735804392750306,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F17",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 17,
+      "global_frame": 367,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 17,
+          "global_frame": 367,
+          "time": 1789706592.875,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 17,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "3d1a84c6db53d465b14dcd66f6d9ee7d4431302cef0c6f1b5a207f231570ad6b",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 17,
+          "global_frame": 367,
+          "time": 1789706592.875,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 17,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "3d1a84c6db53d465b14dcd66f6d9ee7d4431302cef0c6f1b5a207f231570ad6b",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -35.8853759765625,
+      "propagated_sigma_mm": 33.954480032983795,
+      "standardized_difference": -1.0568671922439399,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F18",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 18,
+      "global_frame": 368,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 18,
+          "global_frame": 368,
+          "time": 1789706592.908,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 18,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "0108401506d762f05153a46159e8f531e3450e45861f888c8e83ffd3c901a783",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 18,
+          "global_frame": 368,
+          "time": 1789706592.908,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 18,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "0108401506d762f05153a46159e8f531e3450e45861f888c8e83ffd3c901a783",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -36.410736083984375,
+      "propagated_sigma_mm": 34.43542354489075,
+      "standardized_difference": -1.0573628065447942,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F19",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 19,
+      "global_frame": 369,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 19,
+          "global_frame": 369,
+          "time": 1789706592.942,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 19,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "84f27857ba449ee447aeb7342a1caecfeafa2264a45d1cce5f18fe1ce53458f3",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 19,
+          "global_frame": 369,
+          "time": 1789706592.942,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 19,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "84f27857ba449ee447aeb7342a1caecfeafa2264a45d1cce5f18fe1ce53458f3",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -31.061126708984375,
+      "propagated_sigma_mm": 37.218927816912945,
+      "standardized_difference": -0.8345518941808325,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F20",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 20,
+      "global_frame": 370,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 20,
+          "global_frame": 370,
+          "time": 1789706592.975,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 20,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "4de81a1447805767b5e662681cff57827c6af27ec6256bbccb62490913995ec4",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 20,
+          "global_frame": 370,
+          "time": 1789706592.975,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 20,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "4de81a1447805767b5e662681cff57827c6af27ec6256bbccb62490913995ec4",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -29.1031494140625,
+      "propagated_sigma_mm": 35.84652559537619,
+      "standardized_difference": -0.8118820145240655,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F21",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 21,
+      "global_frame": 371,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 21,
+          "global_frame": 371,
+          "time": 1789706593.008,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 21,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "6f8b6c32c946dfe9c4a0b10a7eefeb774645d5aaac14787eadd5b09406dc1373",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 21,
+          "global_frame": 371,
+          "time": 1789706593.008,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 21,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "6f8b6c32c946dfe9c4a0b10a7eefeb774645d5aaac14787eadd5b09406dc1373",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -27.963287353515625,
+      "propagated_sigma_mm": 37.49751581621763,
+      "standardized_difference": -0.7457370640382939,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "CTX_b53b5a0356a58ed0/pre/F22",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 22,
+      "global_frame": 372,
+      "phase": "PRE_ACTUAL_CLEAN_ANCHORS",
+      "native_roles": {
+        "A": 15,
+        "B": 66
+      },
+      "role_provenance": {
+        "A": {
+          "frame": 22,
+          "global_frame": 372,
+          "time": 1789706593.041,
+          "role": "A",
+          "native": 15,
+          "public": 15,
+          "actual_bank_anchor": {
+            "frame": 22,
+            "native_id": 15,
+            "mask": "n:15",
+            "canonical_id": 15
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "40b3570b4b946fb98735bd09cdfffb666e32fd8c22b55923fa201916eb7d900d",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        },
+        "B": {
+          "frame": 22,
+          "global_frame": 372,
+          "time": 1789706593.041,
+          "role": "B",
+          "native": 66,
+          "public": 66,
+          "actual_bank_anchor": {
+            "frame": 22,
+            "native_id": 66,
+            "mask": "n:66",
+            "canonical_id": 66
+          },
+          "actual_publication_matches": true,
+          "transaction_sha256": "40b3570b4b946fb98735bd09cdfffb666e32fd8c22b55923fa201916eb7d900d",
+          "class_at_pre": "CLEAN_ACTUAL_BANK_ANCHOR"
+        }
+      },
+      "measured_depth_difference_mm": -31.797027587890625,
+      "propagated_sigma_mm": 35.89820139617313,
+      "standardized_difference": -0.8857554515608768,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "PAIR_9a28c773f3a9d2e2/q",
+      "context_id": "CTX_b53b5a0356a58ed0",
+      "segment": "feeding_000351_000555",
+      "frame": 198,
+      "global_frame": 548,
+      "phase": "POST_ACTUAL_GEOMETRY_IDENTITY_UNKNOWN",
+      "native_roles": {
+        "A": 86,
+        "B": 66
+      },
+      "role_provenance": {
+        "actual_mapping": {
+          "86": 86,
+          "66": 66
+        },
+        "original_transaction_sha256": "f5abc0d2f625b4c560d8225c60a69c47bf711ce5f4e4eed334450bdd14de616b",
+        "pre_versions": {
+          "A": [
+            15,
+            1,
+            15,
+            1
+          ],
+          "B": [
+            66,
+            1,
+            66,
+            1
+          ]
+        },
+        "current_partner_claim_version": [
+          66,
+          1,
+          66,
+          1
+        ],
+        "candidate_target_public": 15,
+        "candidate_mapping_is_hypothesis": true,
+        "current_source_is_actual_q_bank_anchor": false,
+        "partner_source_is_actual_q_bank_anchor": false,
+        "post_geometry_and_quality_gate_passed": true
+      },
+      "measured_depth_difference_mm": -250.92822265625,
+      "propagated_sigma_mm": 63.7184677605179,
+      "standardized_difference": -3.9380768476628925,
+      "measured_order": "B_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    },
+    {
+      "task_id": "PAIR_3e41983bca84f7b0/q",
+      "context_id": "CTX_3bebdea6b1a78989",
+      "segment": "feeding_001201_001906",
+      "frame": 118,
+      "global_frame": 1318,
+      "phase": "POST_ACTUAL_GEOMETRY_IDENTITY_UNKNOWN",
+      "native_roles": {
+        "A": 165,
+        "B": 164
+      },
+      "role_provenance": {
+        "actual_mapping": {
+          "165": 165,
+          "164": 164
+        },
+        "original_transaction_sha256": "699a4cdf4f11f3a07e3280759fe1581596e9f2ba937d24b3813b5ab3c69b0d85",
+        "pre_versions": {
+          "A": [
+            162,
+            1,
+            162,
+            1
+          ],
+          "B": [
+            164,
+            1,
+            164,
+            1
+          ]
+        },
+        "current_partner_claim_version": [
+          164,
+          1,
+          164,
+          1
+        ],
+        "candidate_target_public": 162,
+        "candidate_mapping_is_hypothesis": true,
+        "current_source_is_actual_q_bank_anchor": true,
+        "partner_source_is_actual_q_bank_anchor": false,
+        "post_geometry_and_quality_gate_passed": true
+      },
+      "measured_depth_difference_mm": 86.62222290039062,
+      "propagated_sigma_mm": 49.756226002204585,
+      "standardized_difference": 1.7409323387298825,
+      "measured_order": "A_PROXY_NEARER",
+      "identity": "UNKNOWN",
+      "selected_after_seal_for_reporting_only": true
+    }
+  ],
+  "unit": "UNIQUE_ACTUAL_FRAME_MASK_FACT; PAIR REFERENCES REPORTED SEPARATELY",
+  "no_threshold_change": true,
+  "no_GT_read": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "provenance": {
+    "code": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds26_phase_roi_observability\\diagnose.py",
+      "bytes": 4203,
+      "sha256": "d967ecae3fc9684b2005020b03d889225f4d18b07945045f5dd2f22a6b7d17af"
+    },
+    "facts": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds26_phase_roi_observability\\run\\ENDPOINT_FACTS.jsonl.gz",
+      "bytes": 3138374,
+      "sha256": "9d50e4a70d16ca80d285ef17ecc57a778335cae25c6a923caeef44e200c8312e"
+    },
+    "seal": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds26_phase_roi_observability\\run\\MEASUREMENTS_SEALED.json",
+      "bytes": 2549,
+      "sha256": "3b5a2042898d3c441c43780c68fc7fa7e15a6c48df97e2d64e6b77ebe3a217f8"
+    }
+  }
+}

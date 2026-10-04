@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "math": [
+    {
+      "name": "FEEDING",
+      "independent_opencv_max_error_px": 1.4210854715202004e-13,
+      "pixel_center_scaling_max_error_px": 1.1368683772161603e-13,
+      "native_roundtrip_max_error_px": 1.815154934550657e-05,
+      "R_determinant": 0.9938859458727737,
+      "R_orthogonality_max_abs": 0.012190666670826467,
+      "recorded_R_preserved": true,
+      "synthesized_positions": 1469,
+      "physical_accuracy": "UNKNOWN"
+    },
+    {
+      "name": "FISHSA",
+      "independent_opencv_max_error_px": 1.7053025658242404e-13,
+      "pixel_center_scaling_max_error_px": 1.1368683772161603e-13,
+      "native_roundtrip_max_error_px": 1.7903779236635854e-05,
+      "R_determinant": 0.9946302137746255,
+      "R_orthogonality_max_abs": 0.01071068605837644,
+      "recorded_R_preserved": true,
+      "synthesized_positions": 1469,
+      "physical_accuracy": "UNKNOWN"
+    },
+    {
+      "name": "L3",
+      "independent_opencv_max_error_px": 1.7053025658242404e-13,
+      "pixel_center_scaling_max_error_px": 1.1368683772161603e-13,
+      "native_roundtrip_max_error_px": 1.7903779236635854e-05,
+      "R_determinant": 0.9946302137746255,
+      "R_orthogonality_max_abs": 0.01071068605837644,
+      "recorded_R_preserved": true,
+      "synthesized_positions": 1469,
+      "physical_accuracy": "UNKNOWN"
+    },
+    {
+      "name": "LW",
+      "independent_opencv_max_error_px": 1.7053025658242404e-13,
+      "pixel_center_scaling_max_error_px": 1.1368683772161603e-13,
+      "native_roundtrip_max_error_px": 1.7644548680430164e-05,
+      "R_determinant": 0.9942006218882274,
+      "R_orthogonality_max_abs": 0.01156516733343449,
+      "recorded_R_preserved": true,
+      "synthesized_positions": 1469,
+      "physical_accuracy": "UNKNOWN"
+    }
+  ],
+  "metadata": {
+    "FEEDING": {
+      "rows": 1471,
+      "policy": "SORTED_ORDINAL_BOTH_STREAMS; EVERY_STORED_PAIR_ALSO_NEAREST_DEPTH",
+      "unique_depth_frames": 1471,
+      "reused_depth_assignments": 0,
+      "usable_pairs": 1471,
+      "minimum_delta_us": -2000,
+      "maximum_delta_us": -1000
+    },
+    "FISHSA": {
+      "rows": 12187,
+      "policy": "DEPTH_CENTRIC_NEAREST_RGB; UNIQUE_RGB; FRAME_ID_DEPTH_INDEX_PLUS_1",
+      "unique_depth_frames": 12187,
+      "reused_depth_assignments": 0,
+      "usable_pairs": 12187,
+      "minimum_delta_us": -4000,
+      "maximum_delta_us": -1000
+    },
+    "L3": {
+      "rows": 3710,
+      "policy": "RGB_CENTRIC_NEAREST_DEPTH; REUSE_ALLOWED; ABOVE_5_MS_MISSING",
+      "unique_depth_frames": 3708,
+      "reused_depth_assignments": 2,
+      "usable_pairs": 3705,
+      "minimum_delta_us": -34000,
+      "maximum_delta_us": 16000
+    },
+    "LW": {
+      "rows": 3629,
+      "policy": "RGB_CENTRIC_NEAREST_DEPTH; REUSE_ALLOWED; ABOVE_5_MS_MISSING",
+      "unique_depth_frames": 3606,
+      "reused_depth_assignments": 23,
+      "usable_pairs": 3606,
+      "minimum_delta_us": -4000,
+      "maximum_delta_us": 762000
+    }
+  },
+  "sources": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds16_relative_depth_order\\source.py",
+      "bytes": 9676,
+      "sha256": "19404334ab98ca3fac749ba04f7a0098820764c8fef9a9e8db72ac1ff1e8c97c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\source.py",
+      "bytes": 9676,
+      "sha256": "19404334ab98ca3fac749ba04f7a0098820764c8fef9a9e8db72ac1ff1e8c97c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\depth_restoration\\build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\provenance\\geometry.py",
+      "bytes": 4887,
+      "sha256": "3057ed3be879dff80dc15ab7569f6e3fc2f34ce4180ebd2c7bb6d339c8e38a68"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\provenance\\build_aligned_dataset.py",
+      "bytes": 20314,
+      "sha256": "4d3b85f5dd22d01084d55f538f2063aa3aa22c23cfb7b14c8151208809139328"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\prelabel_feeding_20260924\\build_aligned_feeding.py",
+      "bytes": 11356,
+      "sha256": "76dc17da6bde353f82e23284085c43d937719caccab181e46282b57862be2416"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\prelabel_feeding_20260924\\prepare.py",
+      "bytes": 2376,
+      "sha256": "0e11a83d2e75d9d8fbd71971df9edaf0d75d7a00d16b63124158b666ee64a3e4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\prelabel_new_bags_20260919\\prepare.py",
+      "bytes": 2673,
+      "sha256": "fe3c7ccf67bf55af08be231b889e2fde9dd63cb76f49e8117959807a19768458"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\extract_all_bag.py",
+      "bytes": 20145,
+      "sha256": "9f86b8c44e3bd031cff8f5e9622c0cc5fada87bbda51a4866fc94a8774722141"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+      "bytes": 9318,
+      "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\Metadata\\FEEDING Orbbec Femto Bolt_CL8654103ML_20260918124300_frame_timestamps.json",
+      "bytes": 681821,
+      "sha256": "1264016f96c02c8e93330b6df88612c0a5d038420de827151c9d00c33ec53d11"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\Metadata\\G10 Orbbec Femto Bolt_CL8654103L3_20260826094541_frame_timestamps.json",
+      "bytes": 4373687,
+      "sha256": "e4551fd7286fafa2e187f470a632e2485d5712b9ca48e474d891d4ae31f95f16"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\Metadata\\20260816_132923_CL8654103L3_frame_timestamps.json",
+      "bytes": 1327628,
+      "sha256": "e0d513525ee1ef51f2f95273c90e9dd328253e7349c937824bc951339835d311"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\Metadata\\20260816_132950_CL8654103LW_frame_timestamps.json",
+      "bytes": 1294155,
+      "sha256": "27de19f4abe38f39b99e66530997b1521cba7ab6bdf7d37a91a9590a4462dacd"
+    }
+  ],
+  "feeding_recorded_sdk_extrinsics_and_scale_exact": true,
+  "scope": {
+    "RGB_read": false,
+    "depth_pixels_read": false,
+    "GT_read": false,
+    "SDK_playback": false,
+    "model_HTTP": 0,
+    "tracker_run": false
+  }
+}

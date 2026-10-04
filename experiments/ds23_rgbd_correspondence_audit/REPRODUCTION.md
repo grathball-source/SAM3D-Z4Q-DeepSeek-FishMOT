@@ -1,0 +1,9 @@
+# 实际复现依赖与路径约束
+
+实际执行使用审查基点 `1ff8896254cde32efa79927fe95af29b8ac4937c` 的本地checkout、现有私有输入、Python3.12.14/NumPy2.5.3/OpenCV5.0.0和既有deps。source pin保留固定绝对路径；受限原始图、NPY/NPZ/H5、SAM3来源及20张成功图的实际字节/SHA在attempt2/RESTRICTED_ARTIFACTS.json；失败图另列父目录RESTRICTED_ARTIFACTS.json。
+
+initialize硬核对HEAD=审查基点，不能在已更新main上直接当作新复现通过。复现需受控、无其他任务的基点checkout，并保留已绑定来源绝对路径；将本轮代码放在同层级**新的**experiments输出目录，再创建其attempt2子目录。run以目录层级计算ROOT，不能任意挪动到另一层。跨机器/仓库路径移动须显式重绑定并重新核验相同源字节，不能删除来源检查来绕过。
+
+实际父目录已执行projection_checks.py和mask_time_checks.py；attempt2复制其已验证JSON，并未伪造两次新执行。新复现应先在新父目录运行这两个检查，或验证原结果/原实际日志及所有依赖字节后明确复用。attempt2的实际顺序是initialize→checks final→freeze→audit→review；每一步通过本目录execute.py记录真实日志。新attempt2采用已修复renderer，数值与规则保持父目录原值。
+
+旧seal、目录、partial与图片全部只读，不在原目录重跑。README中的父目录顺序描述原v1；完整成功结果只取attempt2，不能混入v1 partial。attempt2/RESTRICTED_ARTIFACTS里的通用复现串需要按本文件的父目录检查复用和层级约束理解。未承诺无数据依赖的单命令复现。

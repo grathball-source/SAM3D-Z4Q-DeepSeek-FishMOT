@@ -1,3 +1,7 @@
+## DS23 RGB-D correspondence audit completed (2026-10-04)
+
+All171 fixed endpoints/168 source frames: exact native-point reprojection/source-index and same-frame RGB contract PASS; 2582 original native masks unchanged. No unique coordinate repair established; underwater physical correspondence UNKNOWN. Private F159/F905 inspection shows RGB-visible target with weak/absent target depth structure; nearest unrelated depth edge is not a measured fish offset. One renderer-only technical retry is preserved. No tracker replay, new scores or model HTTP. See experiments/ds23_rgbd_correspondence_audit/FINAL_REVIEW.md and NEXT_STEP_PLAN.md for the single unrun next step. All old seals remain read-only; all pixel figures remain private.
+
 ## DS22 local-background measurement experiment completed (2026-10-04)
 
 All90 original actions: correct5 compatible/10 unknown, wrong1 weak conflict/3 compatible/13 unknown, unscorable1 conflict/3 compatible/54 unknown. All171 endpoints were reopened and validated. No tracker replay, new scores or model HTTP. Engineering complete; depth increment insufficient; STOP this frozen representation. Original Z4Q remains the reference. See experiments/ds22_local_background_depth/FINAL_REVIEW.md and NEXT_STEP_PLAN.md. The single next plan is a fixed RGB-D spatial-correspondence audit, not yet run. Old seals remain read-only; pixels private.

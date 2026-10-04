@@ -1,0 +1,5 @@
+# 构建记录
+
+全部正式数值执行通过execute保存真实stdout/stderr、退出码及墙钟耗时。首次checks成功后，SOURCE_ACCESS措辞改为“无后来RGB帧；归档nearest depth可晚1–2ms”，避免把当前RGB帧合同误称严格传感器实时因果。检查输出新增独占CHECKS_FINAL，freeze核验最终被测试源码的实际字节。数值规则、输入及投影公式未改变；最终切片/五项检查重新运行一次。旧CHECKS及真实日志保留，不覆盖。
+
+spatial开发者曾独立运行五项测试；正式日志仅记录本轮实际wrapper执行，不将开发者口述运行伪造成日志。本地初查曾发现L3/LW无各自README、DS14无run.py，随后沿用实际prepare_inputs.py、DS14 README和最新DS22计划；未因此改源或读取标签。

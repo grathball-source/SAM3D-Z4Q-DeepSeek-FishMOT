@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "numerical_tests": 5,
+  "real_slices": [
+    {
+      "fact_id": "feeding_000000_000199/F160/n:26/observation",
+      "projection": {
+        "status": "EXACT_REPROJECTION_AND_SOURCE_INDEX_PASS",
+        "valid_pixels": 157709,
+        "unique_native_sources": 157709,
+        "independent_opencv_formula_error_px": {
+          "n": 157709,
+          "median": 0.0,
+          "p90": 2.842170943040401e-14,
+          "max": 2.2914314707516465e-13
+        },
+        "raster_pixel_component_error_px": {
+          "n": 315418,
+          "median": 0.21217712117316978,
+          "p90": 0.4255038138738598,
+          "max": 0.4999970998270271
+        },
+        "independently_rounded_pixel_mismatches": 0,
+        "rgb_camera_Z_bit_exact": true,
+        "nearest_Z_and_native_index_tie_bit_exact": true,
+        "depth_undistortion_roundtrip_max_px": 1.815154934550657e-05,
+        "physical_accuracy": "UNKNOWN; RECORDED_CALIBRATION_SOFTWARE_CONSISTENCY_ONLY"
+      },
+      "RGB_binding": {
+        "original": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000159.jpg",
+          "bytes": 176219,
+          "sha256": "4a205181aeb439e2aa4672b5472177faf2a5495d57e8f7f8317fe411637ead47"
+        },
+        "all_RGB_files": [
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000159.jpg",
+            "bytes": 176219,
+            "sha256": "4a205181aeb439e2aa4672b5472177faf2a5495d57e8f7f8317fe411637ead47"
+          },
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000159.png",
+            "bytes": 236057,
+            "sha256": "24e3456ffe64405f05b62399e8fd360d14a53406c26af16c69c6fcfd725fdbc6"
+          }
+        ],
+        "original_shape": [
+          1080,
+          1920,
+          3
+        ],
+        "resized_shape": [
+          360,
+          640,
+          3
+        ],
+        "original_sha_matches_manifest": true,
+        "saved_small_RGB_bit_exact_to_INTER_AREA": true,
+        "original_to_small_pixel_center": "(old+.5)/3-.5",
+        "RGB_timestamp_us": 1789706585964000,
+        "depth_timestamp_us": 1789706585966000,
+        "delta_us": -2000,
+        "physical_synchronization": "RECORDED_TIMESTAMP_ONLY; WATER_PATH_OR_HARDWARE_LATENCY_UNKNOWN",
+        "use": "PRIVATE_INPUT_DIAGNOSIS_ONLY; NO_TRACKER_APPEARANCE"
+      },
+      "calibration": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+        "bytes": 9318,
+        "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+      },
+      "spatial": {
+        "status": "MEASURED",
+        "shape": [
+          360,
+          640
+        ],
+        "rules": {
+          "depth_edge_mm": 30.0,
+          "depth_edge_definition": "HORIZONTAL_VERTICAL_VALID_PAIRS_BOTH_ENDPOINTS",
+          "mask_boundary": "MASK_MINUS_3X3_EROSION_ZERO_BORDER",
+          "roi": "21X21_SQUARE_DILATION_10PX_CHEBYSHEV_RADIUS",
+          "rgb_edge": "UINT8_BGR_TO_GRAY_CANNY_50_100",
+          "distance": "EUCLIDEAN_PIXEL_CENTERS",
+          "shift_search": false,
+          "resize": false,
+          "RGB_is_private_proxy": true
+        },
+        "coverage": {
+          "mask": {
+            "pixel_n": 372,
+            "valid_depth_pixel_n": 363,
+            "valid_depth_fraction": 0.9758064516129032
+          },
+          "mask_inner_boundary": {
+            "pixel_n": 164,
+            "valid_depth_pixel_n": 160,
+            "valid_depth_fraction": 0.975609756097561
+          },
+          "roi10": {
+            "pixel_n": 2428,
+            "valid_depth_pixel_n": 2417,
+            "valid_depth_fraction": 0.9954695222405272
+          }
+        },
+        "edge_counts": {
+          "depth": {
+            "full_frame": 1222,
+            "inside_mask": 0,
+            "inside_roi10": 0
+          },
+          "rgb": {
+            "full_frame": 5148,
+            "inside_mask": 143,
+            "inside_roi10": 157
+          }
+        },
+        "boundary_to_depth_edge": {
+          "status": "AVAILABLE",
+          "query_n": 164,
+          "n": 164,
+          "median_px": 32.60364532470703,
+          "p90_px": 50.696876525878906,
+          "fractions_within_px": {
+            "1": 0.0,
+            "3": 0.0,
+            "5": 0.0,
+            "10": 0.0
+          }
+        },
+        "boundary_to_rgb_edge": {
+          "status": "AVAILABLE",
+          "query_n": 164,
+          "n": 164,
+          "median_px": 0.0,
+          "p90_px": 1.0,
+          "fractions_within_px": {
+            "1": 1.0,
+            "3": 1.0,
+            "5": 1.0,
+            "10": 1.0
+          }
+        },
+        "physical_registration_accuracy": "UNKNOWN",
+        "mask_ownership": "UNKNOWN",
+        "identity": "UNKNOWN"
+      },
+      "no_GT": true,
+      "no_state": true
+    },
+    {
+      "fact_id": "feeding_000701_001060/F205/n:123/observation",
+      "projection": {
+        "status": "EXACT_REPROJECTION_AND_SOURCE_INDEX_PASS",
+        "valid_pixels": 158050,
+        "unique_native_sources": 158050,
+        "independent_opencv_formula_error_px": {
+          "n": 158050,
+          "median": 0.0,
+          "p90": 2.842170943040401e-14,
+          "max": 2.2914314707516465e-13
+        },
+        "raster_pixel_component_error_px": {
+          "n": 316100,
+          "median": 0.2118898469325785,
+          "p90": 0.4262515062400724,
+          "max": 0.4999947048347053
+        },
+        "independently_rounded_pixel_mismatches": 0,
+        "rgb_camera_Z_bit_exact": true,
+        "nearest_Z_and_native_index_tie_bit_exact": true,
+        "depth_undistortion_roundtrip_max_px": 1.815154934550657e-05,
+        "physical_accuracy": "UNKNOWN; RECORDED_CALIBRATION_SOFTWARE_CONSISTENCY_ONLY"
+      },
+      "RGB_binding": {
+        "original": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000905.jpg",
+          "bytes": 187991,
+          "sha256": "0fffec1f8f74be4c4a8291b0314af413d0f23929d9f233a9cc1bac0d0e55c8ad"
+        },
+        "all_RGB_files": [
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000905.jpg",
+            "bytes": 187991,
+            "sha256": "0fffec1f8f74be4c4a8291b0314af413d0f23929d9f233a9cc1bac0d0e55c8ad"
+          },
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000905.png",
+            "bytes": 246961,
+            "sha256": "a05160564526640b42f9f9c0a33ad408cabc91a844f5b115f7ddba640f24b836"
+          }
+        ],
+        "original_shape": [
+          1080,
+          1920,
+          3
+        ],
+        "resized_shape": [
+          360,
+          640,
+          3
+        ],
+        "original_sha_matches_manifest": true,
+        "saved_small_RGB_bit_exact_to_INTER_AREA": true,
+        "original_to_small_pixel_center": "(old+.5)/3-.5",
+        "RGB_timestamp_us": 1789706610751000,
+        "depth_timestamp_us": 1789706610752000,
+        "delta_us": -1000,
+        "physical_synchronization": "RECORDED_TIMESTAMP_ONLY; WATER_PATH_OR_HARDWARE_LATENCY_UNKNOWN",
+        "use": "PRIVATE_INPUT_DIAGNOSIS_ONLY; NO_TRACKER_APPEARANCE"
+      },
+      "calibration": {
+        "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\calibration.json",
+        "bytes": 9318,
+        "sha256": "9002ebfeb7867163b67edd46185b9c477e462f9acce48daee7cebec864d0e335"
+      },
+      "spatial": {
+        "status": "MEASURED",
+        "shape": [
+          360,
+          640
+        ],
+        "rules": {
+          "depth_edge_mm": 30.0,
+          "depth_edge_definition": "HORIZONTAL_VERTICAL_VALID_PAIRS_BOTH_ENDPOINTS",
+          "mask_boundary": "MASK_MINUS_3X3_EROSION_ZERO_BORDER",
+          "roi": "21X21_SQUARE_DILATION_10PX_CHEBYSHEV_RADIUS",
+          "rgb_edge": "UINT8_BGR_TO_GRAY_CANNY_50_100",
+          "distance": "EUCLIDEAN_PIXEL_CENTERS",
+          "shift_search": false,
+          "resize": false,
+          "RGB_is_private_proxy": true
+        },
+        "coverage": {
+          "mask": {
+            "pixel_n": 472,
+            "valid_depth_pixel_n": 384,
+            "valid_depth_fraction": 0.8135593220338984
+          },
+          "mask_inner_boundary": {
+            "pixel_n": 181,
+            "valid_depth_pixel_n": 153,
+            "valid_depth_fraction": 0.8453038674033149
+          },
+          "roi10": {
+            "pixel_n": 2715,
+            "valid_depth_pixel_n": 2459,
+            "valid_depth_fraction": 0.9057090239410681
+          }
+        },
+        "edge_counts": {
+          "depth": {
+            "full_frame": 985,
+            "inside_mask": 7,
+            "inside_roi10": 9
+          },
+          "rgb": {
+            "full_frame": 5250,
+            "inside_mask": 160,
+            "inside_roi10": 181
+          }
+        },
+        "boundary_to_depth_edge": {
+          "status": "AVAILABLE",
+          "query_n": 181,
+          "n": 181,
+          "median_px": 7.615773677825928,
+          "p90_px": 26.248807907104492,
+          "fractions_within_px": {
+            "1": 0.011049723756906077,
+            "3": 0.09392265193370165,
+            "5": 0.32044198895027626,
+            "10": 0.580110497237569
+          }
+        },
+        "boundary_to_rgb_edge": {
+          "status": "AVAILABLE",
+          "query_n": 181,
+          "n": 181,
+          "median_px": 0.0,
+          "p90_px": 1.0,
+          "fractions_within_px": {
+            "1": 0.994475138121547,
+            "3": 1.0,
+            "5": 1.0,
+            "10": 1.0
+          }
+        },
+        "physical_registration_accuracy": "UNKNOWN",
+        "mask_ownership": "UNKNOWN",
+        "identity": "UNKNOWN"
+      },
+      "no_GT": true,
+      "no_state": true
+    }
+  ],
+  "actual_source_pins": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\SOURCE_MANIFEST.json",
+      "bytes": 3936,
+      "sha256": "a9e3a9e969b87630aeeea719df3583f3b7840ac1345fdce869e45e54cb3cab2a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\assignments.jsonl.gz",
+      "bytes": 243655,
+      "sha256": "31bd279fb1e5a9bac529677419343d95bbb2dc2b11cb4df6ee3fcef5db710f2f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000000_000199\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 1179814,
+      "sha256": "24c461a2c6570e9ebd83a24278a3cea9bc6f075b7de83533596611ce8cc3a0dc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000351_000555\\SOURCE_MANIFEST.json",
+      "bytes": 3940,
+      "sha256": "88b2b397bc6af81a96078b96d2cf46c3aab0bdd29d36e7e6443c7ce95804cbc0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000351_000555\\assignments.jsonl.gz",
+      "bytes": 274831,
+      "sha256": "f049a9fe887d40695bb223093d37abbed4cebaa52f134e671ce36a448086d1b9"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000351_000555\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 1201964,
+      "sha256": "ac499807c6994934f4c8fba0015b31c88e16c9a0d6a3e27f5528babf69680f77"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\SOURCE_MANIFEST.json",
+      "bytes": 3967,
+      "sha256": "e05814bc5e4b1dcbf0f8bdf5737935a06d8278ad161ba44c37fe669020b15561"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\assignments.jsonl.gz",
+      "bytes": 478869,
+      "sha256": "548a645d6e03aa74cb6fa6a5389caad17c087e1248dffcc2d0c2069a7cfa3f33"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_000701_001060\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 2096516,
+      "sha256": "3842cd9c7d9bc19936ea39edd6c4dadce061d458889140068e026e83b304de60"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_001201_001906\\SOURCE_MANIFEST.json",
+      "bytes": 3973,
+      "sha256": "6dd31830365c8a5692ea99dc6d28f51c357e6fe9deec6c1e76479ee2b5155680"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_001201_001906\\assignments.jsonl.gz",
+      "bytes": 879671,
+      "sha256": "8d9df0d73a458b4de6f6b7cbc15894ee7d93b8fc462df2495409b40167336945"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\feeding_001201_001906\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 4053900,
+      "sha256": "2c79ae9aa57a4b0eeee903b95d4aaf804fd298e33346fa61aa2fad0375fb7cc3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_development_8400\\SOURCE_MANIFEST.json",
+      "bytes": 3733,
+      "sha256": "9a96be4824641be3457abe99d3a3f22f80b3cbf11abacb8977a5cb74b309abc3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_development_8400\\assignments.jsonl.gz",
+      "bytes": 2989827,
+      "sha256": "d135a71863480b5ba5df5dbd5746e475e8c9f040a33a3439ac3199593713eeab"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_development_8400\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 12369693,
+      "sha256": "316eb7f9d1bc3c755167f582c0c1d4f56b330fe37ba16894ee7a440ec11894eb"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_validation_2888\\SOURCE_MANIFEST.json",
+      "bytes": 3694,
+      "sha256": "3a47d159b884f676572e05ceb36008b69603e766771abc9f50b8f8010b75fbca"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_validation_2888\\assignments.jsonl.gz",
+      "bytes": 1044994,
+      "sha256": "db5345fcd9e21f627a8e95abad639d929c9ea10810fc8304c8e5745e11ad5116"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\fishsa_validation_2888\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 4230243,
+      "sha256": "b9e4fc0dcc01c622dbeaf9ab60603420a7044ba46bd4b3be06687c89c43d8986"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3\\SOURCE_MANIFEST.json",
+      "bytes": 862617,
+      "sha256": "64ce6834b270e44262d9824daaf2334e556798569a3bc2370a2e80a390b9a6ec"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3\\assignments.jsonl.gz",
+      "bytes": 2319617,
+      "sha256": "d5e826a70bca99b0f8c47fd0ac0112a1a9af334cc2579ada618ef84b8ca330e2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\L3\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 8625046,
+      "sha256": "6141100435248c6d7ea69bb250c435d81c93248bc3872e0dd5e798de77a80988"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\LW\\SOURCE_MANIFEST.json",
+      "bytes": 843828,
+      "sha256": "42939023e77771dfc4e8bf78514f89886b277b64a80e0da0fb7f3abb5b3cde91"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\LW\\assignments.jsonl.gz",
+      "bytes": 2218258,
+      "sha256": "51e7d3930408f641a0531f3a4229497a928f7647108683378a1265ce711dc2c9"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\private\\LW\\DEPTH_OBSERVATIONS.jsonl.gz",
+      "bytes": 8793766,
+      "sha256": "097f36391f7cff7ac17067e1726a5866b7515345bbc4fcc769eae9206e3a482f"
+    }
+  ],
+  "code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\run.py",
+      "bytes": 13680,
+      "sha256": "854e2ad33ff2af980c9adad89b5cdeb6a3f94d77d20540b28c0942d167adc358"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\checks.py",
+      "bytes": 1984,
+      "sha256": "5b0a317436779aa03657a5e8f6358f783ff88bd0b3a05e31f58097716af94dee"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\spatial.py",
+      "bytes": 7956,
+      "sha256": "dae0ff9aae4cb5c0553debedfbfb06cd466d5c3850214f55614f6ea12aa2eb31"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\test_spatial.py",
+      "bytes": 3895,
+      "sha256": "918001e0f99788dcf933100e6ad224aaa969da68baa85b721299c1323e74542e"
+    }
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0
+}

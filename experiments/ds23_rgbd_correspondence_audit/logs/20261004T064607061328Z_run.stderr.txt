@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds23_rgbd_correspondence_audit\run.py", line 199, in <module>
+    if __name__=='__main__': {'initialize':initialize,'freeze':freeze,'audit':audit}[sys.argv[1]]()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds23_rgbd_correspondence_audit\run.py", line 179, in audit
+    detail=render_figure(path,rgb,arrays['depth'],arrays['masks'],fact['native'],fid,m,debug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds23_rgbd_correspondence_audit\spatial.py", line 83, in render_figure
+    assert all(np.array_equal(maps[key], debug[key], equal_nan=True) for key in maps), 'Figure raster mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Figure raster mismatch

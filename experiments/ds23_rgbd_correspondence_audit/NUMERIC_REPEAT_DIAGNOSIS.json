@@ -1,0 +1,2175 @@
+{
+  "status": "ACTUAL_FIXED_SOURCE_FLOAT_REPEAT_DIAGNOSIS",
+  "frozen_v1": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\FREEZE.json",
+    "bytes": 72804,
+    "sha256": "ad0a5b310cf88766983f9241d1b424a98bdbee8235cc87c3d929a08de0cc9eac"
+  },
+  "partial_v1_endpoints": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\ENDPOINTS.jsonl.gz",
+    "bytes": 1625,
+    "sha256": "181271e322a28e6c6f4557cc1121ea5aac5b0bda0fb889d2756c200ec2b1c64b"
+  },
+  "diagnosis_code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds23_rgbd_correspondence_audit\\REPEAT_DIAGNOSIS.py",
+    "bytes": 5029,
+    "sha256": "32b5477bb5b4f319580e0d00192f1de59848a84bcdad7cd271865e88d14e3765"
+  },
+  "partial_endpoint_n": 3,
+  "selected_first_and_last_partial_fact_ids": [
+    "feeding_000000_000199/F15/n:16/observation",
+    "feeding_000000_000199/F160/n:26/observation"
+  ],
+  "actual_cv2_threads": 1,
+  "actual_cv2_optimized": true,
+  "numeric_metrics_all_exact_equal": true,
+  "changed_map_keys": [
+    "depth_distance_px",
+    "rgb_distance_px"
+  ],
+  "observed_change_confined_to_unrendered_distance_maps": true,
+  "only_rendered_private_arrays": [
+    "depth_edges",
+    "rgb_edges"
+  ],
+  "diagnostics": [
+    {
+      "fact_id": "feeding_000000_000199/F15/n:16/observation",
+      "actual_global_frame": 14,
+      "actual_local_frame": 15,
+      "native": 16,
+      "original_record_matches_reopened_actual_metrics": true,
+      "actual_inputs_unchanged": true,
+      "input_array_bindings": {
+        "mask": {
+          "shape": [
+            360,
+            640
+          ],
+          "dtype": "bool",
+          "sha256": "117685f87331653b73974676b8b2262e7d322fd8da04aecd051d2a98ac86ceb2"
+        },
+        "depth": {
+          "shape": [
+            360,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "16f4ac335e938c78520bf7450adfc12ee502c306fb42b8ad1e3247830f70b2a0"
+        },
+        "RGB_private": {
+          "shape": [
+            360,
+            640,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256": "3d35e63c2153b37c0b5e9c96cce1b3906e801f5a6b28718d0d97b6a8297af7b6"
+        }
+      },
+      "raw_source_binding": {
+        "raw_npz": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000014.npz",
+          "bytes": 776854,
+          "sha256": "c1fb4295152a55aed008b40b04481c431a057a1504fda73e18f73ffac76167d8"
+        },
+        "native_npy": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000014.npy",
+          "bytes": 1474688,
+          "sha256": "6069618e397ff2949e86383362e0bb70f0f8a9b2449f5ee7365b11be934d6cb6"
+        },
+        "actual_fields_read": [
+          "depth_mm",
+          "source_index"
+        ],
+        "native_fields_read": [
+          "current_native_depth_mm"
+        ],
+        "delta_us": -1000,
+        "sensor_available": true,
+        "global_frame": 14,
+        "time": 1789706581.147,
+        "aligned_depth": {
+          "dtype": "<f4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "5d8c44ccd0844735a145a38d61232d0bfbc4dc77f4aee4c40c7d09b793a1152d"
+        },
+        "aligned_source_index": {
+          "dtype": "<i4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "3e32bf9e0e94e7a26c91e42fed805ae142aef8d86a86ef1274ae36397b02f293"
+        },
+        "native_depth": {
+          "dtype": "<f4",
+          "shape": [
+            576,
+            640
+          ],
+          "sha256": "277cbb0ab19626a48deda26186475efd68aef57659935f01a2ef3cf08d30311b"
+        },
+        "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+        "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+        "RGB_read": false,
+        "GT_read": false,
+        "restored_read": false,
+        "sensor_valid_range": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN"
+      },
+      "RGB_binding": {
+        "original": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000014.jpg",
+          "bytes": 163368,
+          "sha256": "5382f057d173aff870059b9ac3a728e94599347e43867b687c2c8177db88be85"
+        },
+        "all_RGB_files": [
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000014.jpg",
+            "bytes": 163368,
+            "sha256": "5382f057d173aff870059b9ac3a728e94599347e43867b687c2c8177db88be85"
+          },
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000014.png",
+            "bytes": 221176,
+            "sha256": "58b591dfa98ebdd04be8f5f84d3c8a729f55c9696349e35d2b9eb3d650db534e"
+          }
+        ],
+        "original_shape": [
+          1080,
+          1920,
+          3
+        ],
+        "resized_shape": [
+          360,
+          640,
+          3
+        ],
+        "original_sha_matches_manifest": true,
+        "saved_small_RGB_bit_exact_to_INTER_AREA": true,
+        "original_to_small_pixel_center": "(old+.5)/3-.5",
+        "RGB_timestamp_us": 1789706581147000,
+        "depth_timestamp_us": 1789706581148000,
+        "delta_us": -1000,
+        "physical_synchronization": "RECORDED_TIMESTAMP_ONLY; WATER_PATH_OR_HARDWARE_LATENCY_UNKNOWN",
+        "use": "PRIVATE_INPUT_DIAGNOSIS_ONLY; NO_TRACKER_APPEARANCE"
+      },
+      "comparison": "SAME_INPUT_VALUES_AND_GRID; SAME_FROZEN_CODE; THREADS_1; NO_TRANSFORM",
+      "repeats": [
+        {
+          "repeat": 1,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 404,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 889,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 889,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 889,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 889,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 11,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 12,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 404,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 889,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "fact_id": "feeding_000000_000199/F160/n:26/observation",
+      "actual_global_frame": 159,
+      "actual_local_frame": 160,
+      "native": 26,
+      "original_record_matches_reopened_actual_metrics": true,
+      "actual_inputs_unchanged": true,
+      "input_array_bindings": {
+        "mask": {
+          "shape": [
+            360,
+            640
+          ],
+          "dtype": "bool",
+          "sha256": "77f5c57fa123710426453ceca62778e30782fa21b8490efd06c8bf04e5b0cb14"
+        },
+        "depth": {
+          "shape": [
+            360,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "cbbd8cd6286153d94f9ecfd6482afc9531ba0cce14dba94626b583a9076e3fd3"
+        },
+        "RGB_private": {
+          "shape": [
+            360,
+            640,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256": "722df874c2bed359b215172481407d780d5110b398df493353b5a5395b2b684d"
+        }
+      },
+      "raw_source_binding": {
+        "raw_npz": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000159.npz",
+          "bytes": 763105,
+          "sha256": "7234a5534bca1676c5c1375cc0ec9eecbe3dbc3bdaffb29cf4ce57934a477692"
+        },
+        "native_npy": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000159.npy",
+          "bytes": 1474688,
+          "sha256": "1c06b31d775dd860ee0e137d8a425714f07f5b345a996a962ac03b4ec9214fe7"
+        },
+        "actual_fields_read": [
+          "depth_mm",
+          "source_index"
+        ],
+        "native_fields_read": [
+          "current_native_depth_mm"
+        ],
+        "delta_us": -2000,
+        "sensor_available": true,
+        "global_frame": 159,
+        "time": 1789706585.964,
+        "aligned_depth": {
+          "dtype": "<f4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "9add92d2237a6ea4e3820aa6499b3e8af16fdef48623c31a49fca7a8518fc860"
+        },
+        "aligned_source_index": {
+          "dtype": "<i4",
+          "shape": [
+            360,
+            640
+          ],
+          "sha256": "415a463acd3d51b5ab9acbe18c5dc2045ade85d7459e8cc6644c92e3afbfa8fc"
+        },
+        "native_depth": {
+          "dtype": "<f4",
+          "shape": [
+            576,
+            640
+          ],
+          "sha256": "efba348d4d16a1e68d41aa391336fef595682a10a6e8f7c1656fa3c7ee79b3df"
+        },
+        "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+        "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+        "RGB_read": false,
+        "GT_read": false,
+        "restored_read": false,
+        "sensor_valid_range": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN"
+      },
+      "RGB_binding": {
+        "original": {
+          "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000159.jpg",
+          "bytes": 176219,
+          "sha256": "4a205181aeb439e2aa4672b5472177faf2a5495d57e8f7f8317fe411637ead47"
+        },
+        "all_RGB_files": [
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_original\\000159.jpg",
+            "bytes": 176219,
+            "sha256": "4a205181aeb439e2aa4672b5472177faf2a5495d57e8f7f8317fe411637ead47"
+          },
+          {
+            "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\rgb_640x360\\000159.png",
+            "bytes": 236057,
+            "sha256": "24e3456ffe64405f05b62399e8fd360d14a53406c26af16c69c6fcfd725fdbc6"
+          }
+        ],
+        "original_shape": [
+          1080,
+          1920,
+          3
+        ],
+        "resized_shape": [
+          360,
+          640,
+          3
+        ],
+        "original_sha_matches_manifest": true,
+        "saved_small_RGB_bit_exact_to_INTER_AREA": true,
+        "original_to_small_pixel_center": "(old+.5)/3-.5",
+        "RGB_timestamp_us": 1789706585964000,
+        "depth_timestamp_us": 1789706585966000,
+        "delta_us": -2000,
+        "physical_synchronization": "RECORDED_TIMESTAMP_ONLY; WATER_PATH_OR_HARDWARE_LATENCY_UNKNOWN",
+        "use": "PRIVATE_INPUT_DIAGNOSIS_ONLY; NO_TRACKER_APPEARANCE"
+      },
+      "comparison": "SAME_INPUT_VALUES_AND_GRID; SAME_FROZEN_CODE; THREADS_1; NO_TRANSFORM",
+      "repeats": [
+        {
+          "repeat": 1,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        },
+        {
+          "repeat": 11,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 1339,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            }
+          }
+        },
+        {
+          "repeat": 12,
+          "numeric_metrics_exact_equal": true,
+          "maps": {
+            "mask_inner_boundary": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "valid_depth": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "rgb_edges": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "roi10": {
+              "dtype": "bool",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true
+            },
+            "depth_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": false,
+              "mismatch_n": 363,
+              "mask_mismatch_n": 1,
+              "boundary_mismatch_n": 1,
+              "max_abs_difference": 9.5367431640625e-07,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 1
+            },
+            "rgb_distance_px": {
+              "dtype": "float32",
+              "total_pixel_n": 230400,
+              "exact_equal": true,
+              "mismatch_n": 0,
+              "mask_mismatch_n": 0,
+              "boundary_mismatch_n": 0,
+              "max_abs_difference": 0.0,
+              "nonfinite_pattern_equal": true,
+              "max_float32_ULP_difference": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "old_frozen_files_unchanged": true,
+  "no_new_measurement_rules": true,
+  "no_new_identity_state": true,
+  "no_model_HTTP": true,
+  "model_HTTP_n": 0,
+  "cost_usd": 0,
+  "no_GT": true,
+  "no_future_or_shift_search": true
+}

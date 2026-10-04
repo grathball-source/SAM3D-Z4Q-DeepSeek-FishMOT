@@ -1,0 +1,21 @@
+{
+  "status": "TWO_PRE_FREEZE_TECHNICAL_ISSUES_REPAIRED",
+  "scientific_parameters_changed_after_freeze": false,
+  "issues": [
+    {
+      "phase": "first module import before tests",
+      "error": "KeyError min_points in historical contact_measurement import",
+      "repair": "Declare unchanged 16/.2/15/60 compatibility constants explicitly in DS24 CONFIG. Runtime raw adapter and DS22 numeric algorithm unchanged.",
+      "formal_predictions_before_repair": 0
+    },
+    {
+      "phase": "first completed 11-check run",
+      "error": "State digest could not serialize original engine retired set",
+      "repair": "Canonical sorted set and NumPy conversion for state hashes. Original CHECKS.json FAIL is retained. Subsequent 13 necessary checks PASS.",
+      "formal_predictions_before_repair": 0
+    }
+  ],
+  "module_namespace": "Use unique relative_controller module to preserve original controller imports. This correction preceded test execution.",
+  "new_model_http": 0,
+  "cost_usd": 0
+}

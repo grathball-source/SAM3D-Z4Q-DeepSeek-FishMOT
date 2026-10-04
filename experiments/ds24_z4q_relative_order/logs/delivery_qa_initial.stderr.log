@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds24_z4q_relative_order\delivery.py", line 222, in <module>
+    finalize()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds24_z4q_relative_order\delivery.py", line 119, in finalize
+    qa, inputs = verify_science(); save('POSTSEAL_QA.json', qa)
+                 ^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds24_z4q_relative_order\delivery.py", line 77, in verify_science
+    assert original[key] == modified[key], (name, frame, key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('feeding_000000_000199', 160, 'actual_actions')

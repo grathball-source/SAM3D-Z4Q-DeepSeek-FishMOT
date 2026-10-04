@@ -1,0 +1,23 @@
+{
+  "trial": "DS24",
+  "minimum_pre_pairs": 5,
+  "fit_observations": 10,
+  "history_frames": 30,
+  "max_history_seconds": 12.0,
+  "minimum_joint_odds": 9.0,
+  "raw_scale_floor_mm": 15.0,
+  "min_points": 16,
+  "min_fraction": 0.2,
+  "max_raw_scale_mm": 60.0,
+  "depth_diffusion_min_increments": 3,
+  "student_df": 4,
+  "measurement_module": "DS22_UNCHANGED",
+  "support_policy": "EXACTLY_ONE_QUALIFIED_COMPONENT; ALL_OTHER_COMPONENTS_RETAINED; NO_PEAK_CHOICE",
+  "minimum_support_over_original_mask": 0.2,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "veto_policy": "ALL_RELIABLE_PARTNERS_CONTRADICT; AT_LEAST_ONE; NO_COMPATIBLE_PARTNER",
+  "uncertainty_policy": "HYPOT_DEPTH_MAD_BACKGROUND_SCALE_PLANE_Q90; ORIGINAL_DS16_TIME_DIFFUSION",
+  "missing_policy": "UNCHANGED_ORIGINAL_CANDIDATE; NO_NEW_COST",
+  "identity_policy": "PAIR_MAPPING_IS_A_HYPOTHESIS; DEPTH_SUPPORT_OWNERSHIP_NOT_GT_CERTIFIED"
+}

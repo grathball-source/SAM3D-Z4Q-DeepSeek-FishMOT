@@ -1,0 +1,10 @@
+{
+  "status": "POSTSEAL_DELIVERY_CHECK_CORRECTED; SCIENTIFIC_OUTPUTS_UNCHANGED",
+  "initial_failure": "Exact raw actual_actions comparison at Feeding local160/global159 rejected two additional diagnostic keys, origin_rule and edge_veto. Original and modified engine state, mapping, aliases and bank already matched.",
+  "repair": "The release check removes only the two explicitly added annotations at the action level, verifies the actual edge_veto is false and matches q, then compares every remaining action and effect field exactly. It does not normalize choices, candidates, costs, anchors or state.",
+  "prediction_rerun": false,
+  "scoring_rerun": false,
+  "frozen_code_or_parameter_change": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds28_risk_driven_depth_entry\checks.py", line 5, in <module>
+    from evidence import endpoint,pair,Context,Sources,raw_source
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds28_risk_driven_depth_entry\evidence.py", line 3, in <module>
+    from history import History, anchor_key
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds28_risk_driven_depth_entry\history.py", line 6, in <module>
+    raw_source = module('ds28_causal_raw_source', ROOT/'experiments/ds16_relative_depth_order/source.py')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 73, in module
+    spec.loader.exec_module(m);return m
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds16_relative_depth_order\source.py", line 10, in <module>
+    from contact_measurement import array_binding
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds16_relative_depth_order\contact_measurement.py", line 21, in <module>
+    assert (CFG['min_points'], CFG['min_fraction'], CFG['raw_scale_floor_mm'],
+                                                    ~~~^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'raw_scale_floor_mm'

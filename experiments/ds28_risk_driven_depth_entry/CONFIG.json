@@ -1,0 +1,36 @@
+{
+  "schema": "DS28_PREDICTED_RISK_ENTRY_V1",
+  "experiment": "DS28_RISK_DRIVEN_DEPTH_ENTRY",
+  "minimum_pre_pairs": 5,
+  "fit_observations": 10,
+  "history_frames": 30,
+  "max_history_seconds": 12,
+  "min_points": 16,
+  "min_fraction": 0.2,
+  "competition_window": 0.15,
+  "soft_weight": 0.15,
+  "minimum_pre_probability_distance": 0.1,
+  "null_probability": 0.5,
+  "history_aggregation": "MEDIAN_PROBABILITY_NO_MULTIPLICATION",
+  "age_attenuation_s": 6.0,
+  "hard_veto": false,
+  "student_t_degrees_of_freedom": 4,
+  "qualified_endpoint_supports": 1,
+  "measurement_policy": {
+    "contrast": [
+      10.0,
+      2.0
+    ],
+    "scale_floor_mm": 5.0
+  },
+  "entry_policies": {
+    "DEPTH_NEAR": "ORIGINAL_LEGAL_COST_NEAR_015",
+    "DEPTH_RISK": "ALL_ORIGINAL_LEGAL_EDGES_IN_PREDICTED_INTERACTION_AND_MISSING_POOL"
+  },
+  "unknown_keeps_original_candidates_and_costs": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "raw_scale_floor_mm": 15.0,
+  "max_raw_scale_mm": 60.0,
+  "legacy_raw_adapter_import_contract": "15/60 are readonly compatibility assertions; actual new measured support uses measurement_policy 5mm"
+}

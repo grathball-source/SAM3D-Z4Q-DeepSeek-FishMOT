@@ -1,0 +1,14 @@
+{
+  "status": "PRE_FREEZE_ENGINEERING_REPAIRS; NO_FORMAL_PREDICTIONS_OR_SCORE_READ",
+  "repairs": [
+    "Restored original compatibility CONFIG keys min_points=16,min_fraction=.2,max_raw_scale_mm=60 so unchanged DS12/DS17/DS22 dependency imports retain their exact constants.",
+    "A source test selected two equal-size components; the selector was corrected to the deliberately duplicated actual1100mm synthetic layer. Measurement algorithm unchanged.",
+    "Private packet cache now retains all public layer facts but only qualified layer rasters and anonymous union/ROI needed by the association;384MiB bound avoids retaining full plane/residual arrays for every interval frame.",
+    "Before freeze, recursive20px growth of all observed support/background masks was recognized as violating contact-locality. Replaced by fixed seed-patch shape, translated only by the previous measured qualified two-layer center; absence keeps position and UNKNOWN. Earlier engineering prefixes remain archived and unscored."
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "formal_prediction_started": false,
+  "GT_read_for_tuning": false,
+  "old_seals_modified": false
+}

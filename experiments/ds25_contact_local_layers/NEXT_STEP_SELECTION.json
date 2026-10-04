@@ -1,0 +1,21 @@
+{
+  "decision": "PLANNED_NOT_STARTED",
+  "title": "阶段ROI只读配对测量：先核验实际能观测哪一层",
+  "rationale": "独立封存审计显示当前端点247/378个唯一ROI为空，但15个真实接触种子均不足两个合格层。接触窗口与clean端点的测量对象错位有证据；修正端点仍不能自动恢复缺失的合并期双层。先停止这一冻结空间链，避免把无覆盖当成可靠身份约束。",
+  "action": "固定本轮15个预测anchor/partner/seed参考上下文和原始depth，按阶段配对比较：clean pre/post各自绑定实际合格mask的前景支持；接触期保留同一匿名local区域。只检验深度来源、背景兼容、独立点、单层/双层和时序可观测性，逐对象报告UNKNOWN及测量对象变化，不启动新的身份回放或声称提点。",
+  "limits": "不换reference、source generation、q或候选，不使用GT挑区域/层，不放宽质量阈值、不改变两个矩阵及事务规则，不新增模型/训练/补全。所有像素私有。没有完整连续空间链时，不能沿用本轮swapped-endpoint veto来认证身份；待真实配对证据决定是否值得另立恢复假设。",
+  "evidence": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds25_contact_local_layers\\FAILURE_REVIEW.json",
+      "bytes": 466824,
+      "sha256": "1661c3c5d59ed4d12ff9b78153425b846dd3fa7a216c2d690b8f09266e292e92"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds25_contact_local_layers\\INPUT_REVIEW.json",
+      "bytes": 12684,
+      "sha256": "50367d5fcb7db163046348381f86403de2ed361f16806a9cc8c59cd5cc9dbcfc"
+    }
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0
+}

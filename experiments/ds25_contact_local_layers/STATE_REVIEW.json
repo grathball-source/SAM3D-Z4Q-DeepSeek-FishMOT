@@ -1,0 +1,121 @@
+{
+  "status": "PASS_FOCUSED_ENGINEERING_REVIEW_NOT_SCIENTIFIC_ACCEPTANCE",
+  "review_scope": "Read-only review of current history, association, runner, original two hooks and compact measurement cache; one additive audit record only",
+  "base_commit": "b2c92d1e5353ae4c613d7f8b86699c4f0a76bb08",
+  "GT_read": false,
+  "new_model_http": 0,
+  "core_modules_modified_by_this_review": false,
+  "old_experiments_modified": false,
+  "critical_findings": [],
+  "verified_contracts": {
+    "history": {
+      "History_class_AST_exactly_matches_DS24": true,
+      "registration_after_actual_branch_commit": true,
+      "anchor_key": ["frame", "native_id", "canonical_id", "mask"],
+      "version_key": ["native", "generation", "public", "epoch"],
+      "clean_requires_actual_current_bank_anchor_quality_no_neighbors_not_retired": true,
+      "risk_breaks_live_clean_fragment_but_retains_legal_old_anchor": true,
+      "risk_layers_never_supply_individual_clean_history_or_bank_updates": true,
+      "Context_upstream_partner_version_geometry_and_synchronous_fragment_gates_preserved": true
+    },
+    "local_window": {
+      "seed_is_earliest_actual_old_A_and_partner_B_mask_contact_in_anchor_less_than_frame_less_than_q": true,
+      "seed_selection_uses_3px_geometry_not_depth_quality_GT_or_result": true,
+      "single_new_group_mask_alone_cannot_establish_seed": true,
+      "initial_window_is_once_only_20px_seed_dilation": true,
+      "next_window_translates_initial_window_not_previous_dilated_roi": true,
+      "translation_uses_only_previous_frame_exactly_two_qualified_anonymous_support_centroids": true,
+      "unknown_measurement_retains_previous_window": true,
+      "boundary_clipping_may_reduce_footprint_but_never_exceed_initial_area": true,
+      "all_sampling_ROIs_clipped_to_actual_observed_mask_union": true,
+      "old_all_support_union_does_not_drive_window_growth": true
+    },
+    "causal_access": {
+      "mask_raw_and_packet_access_assert_frame_at_or_before_current_cutoff_and_acquired": true,
+      "trusted_saved_raw_packet_binding_checked_before_measurement": true,
+      "sequence_requires_every_pre_and_intervening_frame_through_q_available": true,
+      "pre_ROI_uses_later_contact_geometry_already_observed_by_q": true,
+      "retrospective_input_declared_and_not_strict_zero_wait_online_pre_anchor_measurement": true,
+      "no_q_plus_one_input": true
+    },
+    "compact_cache": {
+      "key": ["frame", "ROI_SHA256"],
+      "all_public_layer_facts_retained_without_requalification": true,
+      "qualified_full_support_rasters_and_canonical_selected_positions_exactly_retained": true,
+      "discarded_unqualified_private_geometry_not_used_by_association_or_window_translation": true,
+      "roles_and_contact_seed_added_per_call_not_stored_as_cached_identity": true,
+      "dynamic_full_vs_compact_fact_equal": true,
+      "dynamic_full_vs_compact_qualified_arrays_equal": true,
+      "dynamic_full_vs_compact_endpoint_ownership_equal": true,
+      "dynamic_repeated_packet_emits_one_public_fact": true
+    },
+    "association_math": {
+      "exactly_two_measurement_qualified_background_distinct_layers_required_every_frame": true,
+      "frame_local_support_labels_remain_anonymous": true,
+      "canonical_points_sorted_unique_inside_support_and_not_reused_between_layers": true,
+      "endpoint_bijection_requires_at_least_0_9_own_mask_and_at_most_0_1_other_mask_membership": true,
+      "clean_PRE_path_ownership_must_remain_consistent_before_contact": true,
+      "both_geometry_permutations_enumerated_without_depth_based_selection": true,
+      "symmetric_canonical_point_overlap_with_3px_margin_requires_0_2_each_direction": true,
+      "zero_or_multiple_spatial_bijections_unknown": true,
+      "df4_CDF_formula_matches_existing_proxy": true,
+      "every_observed_node_requires_same_strong_order_at_odds_9": true,
+      "weak_order_rank_reversal_gap_or_missing_support_unknown": true,
+      "cross_frame_source_index_identity_matching": false,
+      "elapsed_depth_extrapolation": false,
+      "only_swapped_unique_end_role_bijection_returns_CONFLICT": true,
+      "conditional_physical_accuracy_and_identity_remain_UNKNOWN": true,
+      "public_result_contains_numeric_counts_paths_fact_ids_and_hashes_not_private_arrays": true
+    },
+    "preview_and_original_entrypoints": {
+      "preview_uses_original_engine_clone": true,
+      "shared_Context_may_cache_measurements_but_does_not_mutate_identity_History_or_bank": true,
+      "commit_once_and_after_commit_History_observe_preserved": true,
+      "original_D1_DELAYED_and_BIRTH_REFINE_hooks_exercised_on_real_saved_observations": true,
+      "original_matrix_costs_and_other_candidates_preserved_when_no_veto": true,
+      "runner_asserts_native_and_Z4Q_frozen_same_source_outputs": true,
+      "runner_asserts_engine_state_parity_when_disabled_and_until_first_veto": true,
+      "duplicate_commit_rejected": true
+    }
+  },
+  "executed_checks": {
+    "focused_unittest_count": 6,
+    "focused_unittest_passed": 6,
+    "focused_unittest_seconds": 1.54,
+    "names": [
+      "test_real_controller_preview_does_not_mutate_original",
+      "test_history_risk_break_retains_exact_old_anchor",
+      "test_generation_gap_and_epoch_change",
+      "test_actual_two_matrix_hooks_preserve_original_preview",
+      "test_anonymous_spatial_chain",
+      "test_unchanged_partner_aggregate"
+    ],
+    "additional_in_memory_checks": [
+      "History AST parity with DS24",
+      "full versus compact public fact and qualified geometry equality",
+      "full versus compact endpoint ownership equality",
+      "cached packet excludes endpoint roles and per-call contact seed",
+      "one public measurement fact per frame and ROI"
+    ],
+    "input_fixture": "Synthetic two-layer source arrays for cache parity; real original saved observations for both matrix hooks",
+    "no_research_success_inferred": true
+  },
+  "finite_boundaries": [
+    "No critical semantic error was found in this bounded review. These checks do not certify future physical layer identity or scientific improvement.",
+    "Unique raster overlap and stable noise-proxy order can follow a surface or background rather than a physical fish. Endpoint labels are tested original mapping claims, not GT observations.",
+    "The 384 MiB private packet-cache accounting is not a whole-process memory hard limit: raw arrays, mask caches and references held by the currently evaluated sequence also occupy memory.",
+    "The bounded seed footprint may lose pixels at image edges. Missing or ambiguous support remains UNKNOWN rather than restoring unseen layers or predicting a missing path.",
+    "Retrospective pre-window selection uses a contact seed acquired after anchor but before q. It is legal q-cutoff saved-mask replay and is not evidence of strict real-time pre-anchor measurement.",
+    "DS24 upstream UNKNOWN gates are unchanged: 16864 of 17785 partner comparisons, 94.82 percent, were blocked before measurement. New spatial evidence does not claim to repair that coverage.",
+    "Full own-state replay, all prediction seals and independent postseal scoring are still required. Zero veto or zero changed outputs cannot establish effectiveness or intervention safety."
+  ],
+  "reviewed_source_sha256": {
+    "CONFIG.json": "20edee458fb6647ea9e0508875f4bbccb6b6a7bab774ffa3a694cc404b1bd5f8",
+    "PLAN.md": "340750441c7dbb7f642fc43f40d67147031acae2b5ba9a4b9734e8cb44aec7a1",
+    "association.py": "154f326ea434f2ecf795f706fb1488c643ac31acd1f4df11defef8909561ecdc",
+    "history.py": "56b4e87df15a564536541b6bc01ce62c4b065914dfb1426e4b9ccb7d59113949",
+    "measurement.py": "1d00f552d2000962a9a7d697f23848bd2df6c7575ac330fac736abd26c8e5b9f",
+    "relative_controller.py": "68d1afbf3a5d08a857c217c54fd0ce04dd55022eff39555a8a793f922ecf9cd5",
+    "runner.py": "6fb224185f60e98b32ebbb444fa95a6b7d9f14a9b3e0baedf0d1b17fddc51c6c"
+  }
+}

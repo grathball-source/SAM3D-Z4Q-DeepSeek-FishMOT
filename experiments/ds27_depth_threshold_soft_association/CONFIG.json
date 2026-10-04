@@ -1,0 +1,50 @@
+{
+  "schema": "DS25_ANONYMOUS_CONTACT_LOCAL_SPATIAL_CHAIN_V1",
+  "minimum_pre_pairs": 5,
+  "fit_observations": 10,
+  "history_frames": 30,
+  "max_history_seconds": 12,
+  "minimum_joint_odds": 9,
+  "contact_margin_px": 3,
+  "local_expansion_px": 20,
+  "spatial_link_margin_px": 3,
+  "minimum_symmetric_overlap_fraction": 0.2,
+  "minimum_endpoint_membership_fraction": 0.9,
+  "maximum_other_role_membership_fraction": 0.1,
+  "raw_scale_floor_mm": 15.0,
+  "max_raw_scale_mm": 60.0,
+  "min_points": 16,
+  "min_fraction": 0.2,
+  "layer_gap_mm": 30.0,
+  "student_t_degrees_of_freedom": 4,
+  "all_acquired_intervening_frames_required": true,
+  "require_actual_contact_seed": true,
+  "unknown_keeps_original_candidates_and_costs": true,
+  "qualified_layer_count": 2,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "experiment": "DS27_DEPTH_THRESHOLD_SOFT_ASSOCIATION",
+  "competition_window": 0.15,
+  "soft_weight": 0.15,
+  "minimum_pre_probability_distance": 0.1,
+  "null_probability": 0.5,
+  "history_aggregation": "MEDIAN_PROBABILITY_NO_MULTIPLICATION",
+  "age_attenuation_s": 6.0,
+  "hard_veto": false,
+  "qualified_endpoint_supports": 1,
+  "contrast_levels": {
+    "C0": [
+      30.0,
+      3.0
+    ],
+    "C1": [
+      10.0,
+      2.0
+    ]
+  },
+  "measurement_scale_floor_levels_mm": [
+    15.0,
+    5.0
+  ],
+  "depth_layer_gap_mm": 30.0
+}

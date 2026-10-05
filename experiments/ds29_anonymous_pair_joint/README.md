@@ -1,0 +1,3 @@
+# DS29 anonymous pair joint association
+
+Read PLAN.md and CONFIG.json. Local saved-mask CPU replay, eight fixed segments / 20098 frames / four own-state branches. No model, RGB, future, restored depth, new SAM3, training or services. Existing scanner and q, exact independently versioned pre anchors, anonymous current candidates, complete H1/H2 mapping, shared null for depth omissions, mixture marginalization, actual pre-publication transaction. Old experiments read-only. Use the recorded Python and dependencies; run checks, a guarded prefix, freeze, orchestrate, score, review, report and delivery in that order in a fresh output directory. Private raw-depth/mask visualization pixels remain outside Git.

@@ -1,0 +1,378 @@
+{
+  "events": [
+    {
+      "arm": "JOINT_GEOMETRY",
+      "frame": 64,
+      "global_frame": 764,
+      "event": "MS1-F55",
+      "raw_choice": "DEFER",
+      "staged": false,
+      "stage_error": "DEFER",
+      "status": "LOCAL_FALLBACK",
+      "actual_published_mapping": {
+        "95": 95,
+        "118": 118
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "DEFER",
+      "committed_actual_reference_physical": "NO_JOINT_COMMIT",
+      "edges": [],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_DEPTH",
+      "frame": 64,
+      "global_frame": 764,
+      "event": "MS1-F55",
+      "raw_choice": "DEFER",
+      "staged": false,
+      "stage_error": "DEFER",
+      "status": "LOCAL_FALLBACK",
+      "actual_published_mapping": {
+        "95": 95,
+        "118": 118
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "DEFER",
+      "committed_actual_reference_physical": "NO_JOINT_COMMIT",
+      "edges": [],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_GEOMETRY",
+      "frame": 87,
+      "global_frame": 787,
+      "event": "MS1-F85",
+      "raw_choice": "H2",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_RESOLVE_NO_CHANGE",
+      "actual_published_mapping": {
+        "108": 108,
+        "101": 101
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "CORRECT",
+      "committed_actual_reference_physical": "CORRECT",
+      "edges": [
+        {
+          "source": 101,
+          "public": 101,
+          "actual_reference_relation": "SAME",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 10,
+            "native_id": 101,
+            "mask": "n:101",
+            "canonical_id": 101
+          }
+        },
+        {
+          "source": 108,
+          "public": 108,
+          "actual_reference_relation": "SAME",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 11,
+            "native_id": 108,
+            "mask": "n:108",
+            "canonical_id": 108
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H2"
+    },
+    {
+      "arm": "JOINT_DEPTH",
+      "frame": 87,
+      "global_frame": 787,
+      "event": "MS1-F85",
+      "raw_choice": "H2",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_RESOLVE_NO_CHANGE",
+      "actual_published_mapping": {
+        "108": 108,
+        "101": 101
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "CORRECT",
+      "committed_actual_reference_physical": "CORRECT",
+      "edges": [
+        {
+          "source": 101,
+          "public": 101,
+          "actual_reference_relation": "SAME",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 10,
+            "native_id": 101,
+            "mask": "n:101",
+            "canonical_id": 101
+          }
+        },
+        {
+          "source": 108,
+          "public": 108,
+          "actual_reference_relation": "SAME",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 11,
+            "native_id": 108,
+            "mask": "n:108",
+            "canonical_id": 108
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H2"
+    },
+    {
+      "arm": "JOINT_GEOMETRY",
+      "frame": 300,
+      "global_frame": 1000,
+      "event": "MS1-F295",
+      "raw_choice": "DEFER",
+      "staged": false,
+      "stage_error": "DEFER",
+      "status": "LOCAL_FALLBACK",
+      "actual_published_mapping": {
+        "129": 91,
+        "137": 137
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "DEFER",
+      "committed_actual_reference_physical": "NO_JOINT_COMMIT",
+      "edges": [],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_DEPTH",
+      "frame": 300,
+      "global_frame": 1000,
+      "event": "MS1-F295",
+      "raw_choice": "DEFER",
+      "staged": false,
+      "stage_error": "DEFER",
+      "status": "LOCAL_FALLBACK",
+      "actual_published_mapping": {
+        "129": 91,
+        "137": 137
+      },
+      "changes": {},
+      "raw_choice_actual_reference_physical": "DEFER",
+      "committed_actual_reference_physical": "NO_JOINT_COMMIT",
+      "edges": [],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_GEOMETRY",
+      "frame": 327,
+      "global_frame": 1027,
+      "event": "MS1-F325",
+      "raw_choice": "H1",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_COMMIT",
+      "actual_published_mapping": {
+        "137": 95,
+        "95": 137
+      },
+      "changes": {
+        "137": 95,
+        "95": 137
+      },
+      "raw_choice_actual_reference_physical": "WRONG",
+      "committed_actual_reference_physical": "WRONG",
+      "edges": [
+        {
+          "source": 137,
+          "public": 95,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 36,
+            "native_id": 95,
+            "mask": "n:95",
+            "canonical_id": 95
+          }
+        },
+        {
+          "source": 95,
+          "public": 137,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 314,
+            "native_id": 137,
+            "mask": "n:137",
+            "canonical_id": 137
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_DEPTH",
+      "frame": 327,
+      "global_frame": 1027,
+      "event": "MS1-F325",
+      "raw_choice": "H1",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_COMMIT",
+      "actual_published_mapping": {
+        "137": 95,
+        "95": 137
+      },
+      "changes": {
+        "137": 95,
+        "95": 137
+      },
+      "raw_choice_actual_reference_physical": "WRONG",
+      "committed_actual_reference_physical": "WRONG",
+      "edges": [
+        {
+          "source": 137,
+          "public": 95,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 36,
+            "native_id": 95,
+            "mask": "n:95",
+            "canonical_id": 95
+          }
+        },
+        {
+          "source": 95,
+          "public": 137,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 314,
+            "native_id": 137,
+            "mask": "n:137",
+            "canonical_id": 137
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_GEOMETRY",
+      "frame": 339,
+      "global_frame": 1039,
+      "event": "MS1-F328",
+      "raw_choice": "H1",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_COMMIT",
+      "actual_published_mapping": {
+        "119": 108,
+        "108": 70
+      },
+      "changes": {
+        "119": 108,
+        "108": 70
+      },
+      "raw_choice_actual_reference_physical": "WRONG",
+      "committed_actual_reference_physical": "WRONG",
+      "edges": [
+        {
+          "source": 119,
+          "public": 108,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 11,
+            "native_id": 108,
+            "mask": "n:108",
+            "canonical_id": 108
+          }
+        },
+        {
+          "source": 108,
+          "public": 70,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "DIFFERENT",
+          "anchor": {
+            "frame": 252,
+            "native_id": 119,
+            "mask": "n:119",
+            "canonical_id": 70
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    },
+    {
+      "arm": "JOINT_DEPTH",
+      "frame": 339,
+      "global_frame": 1039,
+      "event": "MS1-F328",
+      "raw_choice": "H1",
+      "staged": true,
+      "stage_error": null,
+      "status": "JOINT_COMMIT",
+      "actual_published_mapping": {
+        "119": 108,
+        "108": 70
+      },
+      "changes": {
+        "119": 108,
+        "108": 70
+      },
+      "raw_choice_actual_reference_physical": "WRONG",
+      "committed_actual_reference_physical": "WRONG",
+      "edges": [
+        {
+          "source": 119,
+          "public": 108,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "SAME",
+          "anchor": {
+            "frame": 11,
+            "native_id": 108,
+            "mask": "n:108",
+            "canonical_id": 108
+          }
+        },
+        {
+          "source": 108,
+          "public": 70,
+          "actual_reference_relation": "DIFFERENT",
+          "preexisting_public_origin": "DIFFERENT",
+          "anchor": {
+            "frame": 252,
+            "native_id": 119,
+            "mask": "n:119",
+            "canonical_id": 70
+          }
+        }
+      ],
+      "depth_informative": false,
+      "geometry_choice": "H1"
+    }
+  ],
+  "counts": {
+    "JOINT_GEOMETRY": {
+      "NO_JOINT_COMMIT": 2,
+      "CORRECT": 1,
+      "WRONG": 2
+    },
+    "JOINT_DEPTH": {
+      "NO_JOINT_COMMIT": 2,
+      "CORRECT": 1,
+      "WRONG": 2
+    }
+  }
+}

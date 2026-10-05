@@ -1,0 +1,36 @@
+{
+  "schema": "DS29_ANONYMOUS_PAIR_JOINT_V1",
+  "experiment": "DS29_ANONYMOUS_PAIR_JOINT",
+  "minimum_pre_pairs": 1,
+  "fit_observations": 10,
+  "history_frames": 30,
+  "max_history_seconds": 12,
+  "min_points": 16,
+  "min_fraction": 0.2,
+  "null_probability": 0.5,
+  "history_aggregation": "MEDIAN_PROBABILITY_NO_MULTIPLICATION",
+  "age_attenuation_s": 6.0,
+  "hard_veto": false,
+  "student_t_degrees_of_freedom": 4,
+  "measurement_policy": {
+    "contrast": [
+      10.0,
+      2.0
+    ],
+    "scale_floor_mm": 5.0
+  },
+  "unknown_keeps_original_candidates_and_costs": true,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "raw_scale_floor_mm": 15.0,
+  "max_raw_scale_mm": 60.0,
+  "legacy_raw_adapter_import_contract": "15/60 are readonly compatibility assertions; actual new measured support uses measurement_policy 5mm",
+  "depth_weight": 0.25,
+  "joint_margin": 0.15,
+  "max_episode_seconds": 10.0,
+  "current_candidates": "ANONYMOUS_BOTH",
+  "mixture_policy": "ALL_QUALIFIED_SUPPORTS_MEASURED_POPULATION_WEIGHT_COMMON_NULL_NO_PEAK",
+  "original_scanner": "IMMUTABLE_SCAN_V4",
+  "single_point_post_velocity": "UNKNOWN",
+  "original_2d_prediction_horizon_s": 1.0
+}

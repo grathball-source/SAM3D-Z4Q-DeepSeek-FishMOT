@@ -1,3 +1,7 @@
+## DS29 anonymous pair joint completed (2026-10-05)
+
+Status: FULL_REPLAY_COMPLETE_NO_DEPTH_INCREMENT. Eight same-source segments/20098frames, four own-state branches, no API/GPU/training/SAM3/completion/fees. See experiments/ds29_anonymous_pair_joint/FINAL_REVIEW.md and full metrics. Current candidates jointly anonymous; exact independent pre anchors; mixture marginalization/common null. Complete negative/positive sourcewise results retained; shared protection/geometric changes separated from depth increment. Old source/seals unchanged; all private figures inventoried. One next-step plan unstarted. Old handoff bytes preserved below.
+
 ## DS28 risk-driven depth entry completed (2026-10-05)
 
 Eight same-source segments/20098frames, four ownstate branches; status FULL_REPLAY_COMPLETE_COST_CHANGED_NO_ASSOCIATION_INCREMENT. See experiments/ds28_risk_driven_depth_entry/FINAL_REVIEW.md. Near exactly reproducesDS27 C1/S5. Original predicted interaction/missing legal edge coverage495->1552,17wrongactions now checked but0fullpre/q comparisons. Five actual cost changes occur on one alreadycorrect restoration,0newidentitycommits/publication/metric gain. Native/originalZ4Q/full weak-reference boundaries and inheritedIDSW retained. All32depth/maskfigures private; noRGB/GT raster published. A prestart log-name collision prevented L3 launch; UUID logger completed its first run,7seals and all frozen code unchanged. No API/GPU/server/training/SAM3/completion/fees. One anonymous-current-pair joint interpretation plan is unstarted. Old handoff bytes preserved below.

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds29_anonymous_pair_joint\report.py", line 79, in <module>
+    parsed=[x.split('|')[1:-1] for x in path.read_text().splitlines() if x.startswith('|')]
+                                        ^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1028, in read_text
+    return f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x80 in position 9: illegal multibyte sequence

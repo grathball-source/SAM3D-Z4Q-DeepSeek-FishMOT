@@ -1,0 +1,78 @@
+{
+  "status": "POSTSEAL_EXACT_SHARED_POPULATION_AUDIT",
+  "counts": {
+    "complete_pre_q": 11,
+    "entire_current_qualified_combo_null_on_any_shared_source": 2,
+    "no_qualified_current_support_pair": 9
+  },
+  "records": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "q": 48,
+      "global_frame": 398,
+      "exact_shared_unique_sources": 1,
+      "discarded_candidate_pair_mass": 0.6257336343115124,
+      "endpoints": {
+        "A": {
+          "fact_id": "feeding_000351_000555/F48/contact_roi:5cc501f3b8b600baeb6db751658698cf2049ece116b079dbb7ceca646f2912b8/raw",
+          "measurement_sha256": "2d431e6f3b95b1beeed525dcf2458392c8353416656e8ba5718775f357ee6171",
+          "independent_n": 369,
+          "shared_fraction": 0.0027100271002710027,
+          "z_mm": 1026.7501220703125,
+          "sigma_mm": 43.61832754158269,
+          "support_weight": 0.8329571106094809
+        },
+        "B": {
+          "fact_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw",
+          "measurement_sha256": "00dcc70b3314c6fb39fe00aa3448d2eaab36b8975875d9f27ade7f0167ab683b",
+          "independent_n": 308,
+          "shared_fraction": 0.003246753246753247,
+          "z_mm": 1138.2389526367188,
+          "sigma_mm": 39.25411933041287,
+          "support_weight": 0.751219512195122
+        }
+      },
+      "actual_current_probability": 0.5,
+      "executed_policy": "ANY_SHARED_SOURCE_NULLS_ENTIRE_SUPPORT_COMBINATION",
+      "proposed_unique_only_remeasurement_not_executed": true,
+      "no_GT_used": true
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "q": 1421,
+      "global_frame": 1420,
+      "exact_shared_unique_sources": 20,
+      "discarded_candidate_pair_mass": 0.9994456762749445,
+      "endpoints": {
+        "A": {
+          "fact_id": "L3/F1421/contact_roi:60f0aa634568d8a3f9e1247522cd404da6297db57a2905754700a1e4dc88ac7e/raw",
+          "measurement_sha256": "8d99b7472d5516b9ea68150373891b7a2317d98fcc85f9cddcc65effdcd99c3a",
+          "independent_n": 1803,
+          "shared_fraction": 0.011092623405435386,
+          "z_mm": 650.7365112304688,
+          "sigma_mm": 57.56130911690569,
+          "support_weight": 0.9994456762749445
+        },
+        "B": {
+          "fact_id": "L3/F1421/contact_roi:376cf228ca1f0c277a642851a747c63b07f8d52a63cb134d986aacbd3e875759/raw",
+          "measurement_sha256": "3232f37e956d1360407242a390e1434572ec3205e00d4374fa2213a62b89f4c2",
+          "independent_n": 580,
+          "shared_fraction": 0.034482758620689655,
+          "z_mm": 687.0706176757812,
+          "sigma_mm": 31.900673649494284,
+          "support_weight": 1.0
+        }
+      },
+      "actual_current_probability": 0.5,
+      "executed_policy": "ANY_SHARED_SOURCE_NULLS_ENTIRE_SUPPORT_COMBINATION",
+      "proposed_unique_only_remeasurement_not_executed": true,
+      "no_GT_used": true
+    }
+  ],
+  "original_seals_unchanged": true,
+  "no_new_method_or_prediction_executed": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

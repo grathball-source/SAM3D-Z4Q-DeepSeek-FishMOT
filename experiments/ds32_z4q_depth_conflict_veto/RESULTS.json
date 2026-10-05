@@ -1,0 +1,144 @@
+{
+  "status": "NO_EFFECT_FULL_PUBLICATIONS_EQUAL_TO_ORIGINAL_Z4Q",
+  "engineering": "PASS_FROZEN_SOURCE_STATE_PUBLICATION_AND_ALL_SEALS",
+  "input": "SAME_SAVED_SAM3_AND_RAW_DEPTH; L3_LW_WEAK; EXPOSED_DIAGNOSTIC",
+  "depth_increment": "NO_EFFECT_FULL_PUBLICATIONS_EQUAL_TO_ORIGINAL_Z4Q",
+  "frames": 20098,
+  "branch_frames": 60294,
+  "unchanged_original_masks": 181842,
+  "counts": {
+    "hook_edges": 10509,
+    "raw_conflicts": 0,
+    "redundant_conflicts": 0,
+    "legal_edges_deleted": 0,
+    "changed_frames": 0,
+    "original_own_state_null_checks": 20098,
+    "veto_frames": 0,
+    "selected_commit_changes": 0
+  },
+  "comparison": {
+    "Feeding pooled 1471": {
+      "SAM3_NATIVE": {
+        "IDF1": 0.7400461261626532,
+        "HOTA": -0.10420455469640899,
+        "AssA": -0.18871661330474865,
+        "IDSW": 24,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_development_8400": {
+      "SAM3_NATIVE": {
+        "IDF1": 8.02018456159172,
+        "HOTA": 4.483344567070517,
+        "AssA": 8.720870628502368,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_validation_2888": {
+      "SAM3_NATIVE": {
+        "IDF1": 4.241142559170314,
+        "HOTA": 2.8083398601038283,
+        "AssA": 4.878262378920972,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "L3": {
+      "SAM3_NATIVE": {
+        "IDF1": 2.3184683238420263,
+        "HOTA": 1.808950075886628,
+        "AssA": 4.579390948797183,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "LW": {
+      "SAM3_NATIVE": {
+        "IDF1": 3.715861563327934,
+        "HOTA": 2.6226538171886347,
+        "AssA": 6.250476039565257,
+        "IDSW": 3,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "veto_physical_counts": {
+    "feeding_000000_000199": {},
+    "feeding_000351_000555": {},
+    "feeding_000701_001060": {},
+    "feeding_001201_001906": {},
+    "fishsa_development_8400": {},
+    "fishsa_validation_2888": {},
+    "L3": {},
+    "LW": {}
+  },
+  "metrics": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\run\\METRICS.json",
+    "bytes": 13636,
+    "sha256": "1735e5cafe4d4cb1d90fc77430a8e0151af3dbf3d2bfa1f63132ea3df4f0a7f8"
+  },
+  "analysis": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\ANALYSIS_POSTSEAL.json",
+    "bytes": 5576660,
+    "sha256": "705bfcf6323f806a1451819137bd9b964d447219dd1bf84d1f700abb38f02014"
+  },
+  "original_switch_coverage": {
+    "original_switches": 159,
+    "NOT_ACCEPTED_AT_THIS_ROUND_TWO_ENTRANCES": 125,
+    "NATIVE_SWITCH_FRAME_PRESENT": 127,
+    "NOT_ACCEPTED_AT_THIS_ROUND_TWO_ENTRANCES|NATIVE_SWITCH_FRAME_PRESENT": 125,
+    "ACCEPTED_D1_OR_BIRTH_CURRENT_NATIVE_PUBLIC": 34,
+    "NO_NATIVE_SWITCH_SAME_FRAME": 32,
+    "ACCEPTED_D1_OR_BIRTH_CURRENT_NATIVE_PUBLIC|NO_NATIVE_SWITCH_SAME_FRAME": 32,
+    "ACCEPTED_D1_OR_BIRTH_CURRENT_NATIVE_PUBLIC|NATIVE_SWITCH_FRAME_PRESENT": 2
+  },
+  "frozen_version_closed": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

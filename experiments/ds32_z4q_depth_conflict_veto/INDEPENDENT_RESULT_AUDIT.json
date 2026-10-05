@@ -1,0 +1,169 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_RESULT_AUDIT",
+  "audited_utc": "2026-10-05T14:19:10.253158+00:00",
+  "counts": {
+    "frames": 20098,
+    "objects": 181842,
+    "original_own_state_null_checks": 20098,
+    "hook_edges": 10509,
+    "original_own_state_accepted_commits": 90,
+    "original_eligible_edges": 1552,
+    "original_rejected_edges": 8957
+  },
+  "segment_counts": {
+    "feeding_000000_000199": {
+      "frames": 200,
+      "objects": 5332,
+      "original_own_state_null_checks": 200,
+      "hook_edges": 168,
+      "original_own_state_accepted_commits": 3,
+      "original_eligible_edges": 31,
+      "original_rejected_edges": 137
+    },
+    "feeding_000351_000555": {
+      "frames": 205,
+      "objects": 5494,
+      "original_own_state_null_checks": 205,
+      "hook_edges": 466,
+      "original_own_state_accepted_commits": 3,
+      "original_eligible_edges": 46,
+      "original_rejected_edges": 420
+    },
+    "feeding_000701_001060": {
+      "frames": 360,
+      "objects": 9596,
+      "original_own_state_null_checks": 360,
+      "hook_edges": 1345,
+      "original_own_state_accepted_commits": 6,
+      "original_eligible_edges": 156,
+      "original_rejected_edges": 1189
+    },
+    "feeding_001201_001906": {
+      "frames": 706,
+      "objects": 18786,
+      "original_own_state_null_checks": 706,
+      "hook_edges": 1469,
+      "original_own_state_accepted_commits": 15,
+      "original_eligible_edges": 328,
+      "original_rejected_edges": 1141
+    },
+    "fishsa_development_8400": {
+      "frames": 8400,
+      "objects": 50271,
+      "original_own_state_null_checks": 8400,
+      "hook_edges": 13,
+      "original_own_state_accepted_commits": 3,
+      "original_eligible_edges": 11,
+      "original_rejected_edges": 2
+    },
+    "fishsa_validation_2888": {
+      "frames": 2888,
+      "objects": 17197,
+      "original_own_state_null_checks": 2888,
+      "hook_edges": 85,
+      "original_own_state_accepted_commits": 3,
+      "original_eligible_edges": 14,
+      "original_rejected_edges": 71
+    },
+    "L3": {
+      "frames": 3710,
+      "objects": 36927,
+      "original_own_state_null_checks": 3710,
+      "hook_edges": 843,
+      "original_own_state_accepted_commits": 10,
+      "original_eligible_edges": 135,
+      "original_rejected_edges": 708
+    },
+    "LW": {
+      "frames": 3629,
+      "objects": 38239,
+      "original_own_state_null_checks": 3629,
+      "hook_edges": 6120,
+      "original_own_state_accepted_commits": 47,
+      "original_eligible_edges": 831,
+      "original_rejected_edges": 5289
+    }
+  },
+  "reason_counts": {
+    "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 5377,
+    "TARGET_FORECAST_TOO_BROAD": 3933,
+    "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 1061,
+    "NO_RELIABLE_DEPTH_CONFLICT_KEEP_ORIGINAL_EDGE": 134,
+    "CURRENT_DEPTH_UNRELIABLE": 4
+  },
+  "original_action_counts": {
+    "WRONG": 17,
+    "UNSCORABLE": 57,
+    "CORRECT": 16
+  },
+  "original_action_query_reasons": {
+    "WRONG|TARGET_FORECAST_TOO_BROAD": 14,
+    "UNSCORABLE|TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 5,
+    "WRONG|TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 2,
+    "CORRECT|TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 7,
+    "WRONG|TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 1,
+    "CORRECT|TARGET_FORECAST_TOO_BROAD": 9,
+    "UNSCORABLE|TARGET_FORECAST_TOO_BROAD": 28,
+    "UNSCORABLE|TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 24
+  },
+  "original_switch_counts": {
+    "original_switches": 159,
+    "NOT_ACCEPTED_AT_THIS_ROUND_TWO_ENTRANCES": 125,
+    "NATIVE_SWITCH_FRAME_PRESENT": 127,
+    "ACCEPTED_D1_OR_BIRTH_CURRENT_NATIVE_PUBLIC": 34,
+    "NO_NATIVE_SWITCH_SAME_FRAME": 32
+  },
+  "full_state_null_frames_verified": 20098,
+  "complete_publications_equal_original_Z4Q_frames": 20098,
+  "Native_and_original_Z4Q_archived_reproduction_frames": 20098,
+  "all_nine_metric_tables_match_archived_baselines_and_veto_equals_original": true,
+  "pooled_IDF1_and_integer_counts_independently_verified": true,
+  "overall_query_field_denominators_and_quantiles_recomputed": true,
+  "raw_conflicts": 0,
+  "legal_deletions": 0,
+  "counterfactual": "NOT_RUN_NO_ACTUAL_REMOVABLE_EDGE",
+  "same_prior_action_links": 90,
+  "GT_sources_read": false,
+  "scoring_or_tracking_executed": false,
+  "new_tests": false,
+  "reviewed_artifacts": {
+    "ANALYSIS_POSTSEAL.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\ANALYSIS_POSTSEAL.json",
+      "bytes": 5576660,
+      "sha256": "705bfcf6323f806a1451819137bd9b964d447219dd1bf84d1f700abb38f02014"
+    },
+    "run/METRICS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\run\\METRICS.json",
+      "bytes": 13636,
+      "sha256": "1735e5cafe4d4cb1d90fc77430a8e0151af3dbf3d2bfa1f63132ea3df4f0a7f8"
+    },
+    "run/ALL_PREDICTIONS_SEALED.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\run\\ALL_PREDICTIONS_SEALED.json",
+      "bytes": 5066,
+      "sha256": "dc3def175414ba2f39158940198c7a2a501e7f1defcebcc3f6213c27f04a2f2c"
+    },
+    "SCORING_BINDING_ACCEPTANCE.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\SCORING_BINDING_ACCEPTANCE.json",
+      "bytes": 1560,
+      "sha256": "ef1dfe4ba906bc6e078e9b2468a55ba2f8e3610a13ad80bed6a625dcb07e1123"
+    },
+    "RUNTIME_FREEZE.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\RUNTIME_FREEZE.json",
+      "bytes": 14236,
+      "sha256": "5ca555c5b8d669f619bd27bdd5b51dee70b5a129b0ee864818afbeb04b087120"
+    },
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 40429,
+      "sha256": "f0b1af894f19e8449625112450cfa00a9bba26941fa7f6dc828c5412a0a529d9"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1769,
+      "sha256": "f39f6c5377b28446e3aff2379d4108393abc4bf0621d2edaecf056f749c1df14"
+    }
+  },
+  "elapsed_seconds": 28.308508099988103,
+  "model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PRE_REVIEW_READY_SWITCH_COVERAGE_AND_DYNAMIC_MATH_GUARD_RESULT_PENDING",
+  "reviewed_utc": "2026-10-05T12:54:32.822245+00:00",
+  "reviewed_artifacts": {
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11699,
+      "sha256": "2e5363be13ccf259e37ea4512719930a52e879ca37bf84a4aaf159815df8049d"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8677,
+      "sha256": "5d8d1685c6b384f97ef47d7cafda3234a0fda7b5d2d54bd4db105fde56467ff8"
+    },
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 30985,
+      "sha256": "49bce017d2d4cf93f13d285402d5678e2698e7f651e984c81f8abef871b8b81e"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1769,
+      "sha256": "f39f6c5377b28446e3aff2379d4108393abc4bf0621d2edaecf056f749c1df14"
+    }
+  },
+  "previous_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\POSTSEAL_DELIVERY_SOURCE_REVIEW_FINAL_READY.json",
+    "bytes": 5978,
+    "sha256": "ddfd2946e384945d449c08b5ff642e6f7c6086de0e440f399e1eb5b4cf218c94"
+  },
+  "switch_coverage": {
+    "source_review": "READY_PENDING_ACTUAL_SWITCHES",
+    "frame_join": "Original SWITCHES.frame equals clear_step global frame; joined to prediction.global_frame.",
+    "native_alignment": "gt_id plus globalframe, independently of public integers.",
+    "inheritance": "Only matching current native/public accepted D1_DELAYED/BIRTH_REFINE means same-frame acceptance.",
+    "negative_boundary": "NOT_ACCEPTED_AT_THIS_ROUND_TWO_ENTRANCES does not imply no query, no earlier alias effect, or no causal association.",
+    "per_event_coverage_assertion": "Every original switch receives one record; count equals original official IDSW.",
+    "prior_link_scope": "Full original engine prior-state hash equality distinguishes same-state queries from cross-branch followup."
+  },
+  "dynamic_math": {
+    "ds14_math": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\evaluate.py",
+      "bytes": 15885,
+      "sha256": "d7a6a323688a67631dc258e22100b84db2a9ad2d5c589ebf906fa5937e4d6513"
+    },
+    "actual_AST_source_expression": "ast.parse((DS1 / 'postseal.py').read_text(encoding='utf-8'))",
+    "actual_AST_filter": "[n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == 'clear_step']",
+    "clear_source": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\postseal.py",
+      "bytes": 8787,
+      "sha256": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1"
+    },
+    "clear_source_in_runtime_code": false,
+    "clear_source_matches_already_frozen_git_BASE": true,
+    "guard_prefix_executed_without_score_or_receipt": true,
+    "additional_dynamic_math_source_gaps_found": [],
+    "other_paths": "DS20 adapter preSTART+frozen BASE guard; DS14 math and authority OLD/score.py in runtime; official TrackEval metrics modules in runtime."
+  },
+  "runtime_code_files_verified": 71,
+  "runtime_code_mismatches": 0,
+  "GT_read": false,
+  "actual_metrics_read": false,
+  "actual_switches_read": false,
+  "actual_metrics_existed_at_review": false,
+  "scoring_executed": false,
+  "SCORING_BINDING_ACCEPTANCE_created": false,
+  "frozen_source_modified": false,
+  "only_helper_edit": "score_checked.py independent BASE byte check and audit fields; no scoring math/reference/prediction changes.",
+  "model_http": 0,
+  "cost_usd": 0,
+  "final_result_acceptance_not_granted": true
+}

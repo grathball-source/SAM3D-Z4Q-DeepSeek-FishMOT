@@ -1,0 +1,4866 @@
+{
+  "original_eligible_reason_counts": {
+    "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 115,
+    "TARGET_FORECAST_TOO_BROAD": 728,
+    "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 698,
+    "CURRENT_DEPTH_UNRELIABLE": 1,
+    "NO_RELIABLE_DEPTH_CONFLICT_KEEP_ORIGINAL_EDGE": 10
+  },
+  "original_action_counts": {
+    "WRONG": 17,
+    "UNSCORABLE": 57,
+    "CORRECT": 16
+  },
+  "all_original_wrong_actions": [
+    {
+      "segment": "feeding_000000_000199",
+      "frame": 160,
+      "global_frame": 159,
+      "phase": "D1_DELAYED",
+      "native_id": 26,
+      "canonical_id": 16,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 15,
+        "native_id": 16,
+        "mask": "n:16",
+        "canonical_id": 16
+      },
+      "extra_reference": {
+        "frame": 15,
+        "native_id": 16,
+        "mask": "n:16",
+        "canonical_id": 16
+      },
+      "query_fact_id": "feeding_000000_000199/F160/n:26/mixed/core/raw",
+      "measured_current_mm": 1190.703857421875,
+      "predicted_mu_mm": 1185.6513219470191,
+      "predicted_scale_mm": 378.33204878658205,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 16.79335880126953,
+        "predicted_scale_mm": 378.33204878658205,
+        "forecast_slope_mm_s": 3.699613075168615,
+        "bound_anchor_age_s": 4.816999912261963,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 5.052535474855858,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 15,
+          "native_id": 16,
+          "mask": "n:16",
+          "canonical_id": 16
+        },
+        "target_version": [
+          "feeding_000000_000199",
+          16,
+          1,
+          16,
+          1,
+          1
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000000_000199/F6/n:16/mixed/core/raw",
+          "feeding_000000_000199/F7/n:16/mixed/core/raw",
+          "feeding_000000_000199/F8/n:16/mixed/core/raw",
+          "feeding_000000_000199/F9/n:16/mixed/core/raw",
+          "feeding_000000_000199/F10/n:16/mixed/core/raw",
+          "feeding_000000_000199/F11/n:16/mixed/core/raw",
+          "feeding_000000_000199/F12/n:16/mixed/core/raw",
+          "feeding_000000_000199/F13/n:16/mixed/core/raw",
+          "feeding_000000_000199/F14/n:16/mixed/core/raw",
+          "feeding_000000_000199/F15/n:16/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 16,
+          "fragment_start": 1,
+          "source_version": [
+            "feeding_000000_000199",
+            16,
+            1,
+            16,
+            1,
+            1
+          ],
+          "previous_actual_observation": null,
+          "consecutive_from_previous_actual": false,
+          "preceding_clean_observation": null,
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 0,
+          "preceding_risk_reason_counts": {},
+          "preceding_risk_depth_gate_reason_counts": {},
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": null,
+          "last_preceding_risk": null,
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000000_000199",
+      "frame": 191,
+      "global_frame": 190,
+      "phase": "D1_DELAYED",
+      "native_id": 30,
+      "canonical_id": 8,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 1.0,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 8,
+          "iou": 1.0,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 42,
+        "native_id": 8,
+        "mask": "n:8",
+        "canonical_id": 8
+      },
+      "extra_reference": {
+        "frame": 42,
+        "native_id": 8,
+        "mask": "n:8",
+        "canonical_id": 8
+      },
+      "query_fact_id": "feeding_000000_000199/F191/n:30/mixed/core/raw",
+      "measured_current_mm": 954.7371215820312,
+      "predicted_mu_mm": 1080.5512561801913,
+      "predicted_scale_mm": 568.3627640759023,
+      "actual_numeric": {
+        "target_returned_sample_count": 7,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": 568.3627640759023,
+        "forecast_slope_mm_s": 23.084904634430625,
+        "bound_anchor_age_s": 4.950000047683716,
+        "returned_history_time_span_s": 0.19999980926513672,
+        "forecast_fit_span_s": 0.19999980926513672,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": null,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 42,
+          "native_id": 8,
+          "mask": "n:8",
+          "canonical_id": 8
+        },
+        "target_version": [
+          "feeding_000000_000199",
+          8,
+          1,
+          8,
+          1,
+          36
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000000_000199/F36/n:8/mixed/core/raw",
+          "feeding_000000_000199/F37/n:8/mixed/core/raw",
+          "feeding_000000_000199/F38/n:8/mixed/core/raw",
+          "feeding_000000_000199/F39/n:8/mixed/core/raw",
+          "feeding_000000_000199/F40/n:8/mixed/core/raw",
+          "feeding_000000_000199/F41/n:8/mixed/core/raw",
+          "feeding_000000_000199/F42/n:8/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 8,
+          "fragment_start": 36,
+          "source_version": [
+            "feeding_000000_000199",
+            8,
+            1,
+            8,
+            1,
+            36
+          ],
+          "previous_actual_observation": {
+            "native": 8,
+            "public": 8,
+            "source_version": [
+              "feeding_000000_000199",
+              8,
+              1,
+              8,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000000_000199/F35/n:8/mixed/core/raw",
+            "source_binding_sha256": "b8628bb8514d27a9769c883cf31f29c06cf6253a10eb8490465d3ca4a56329b4",
+            "actual_bank_anchor": null,
+            "registry_preserved_on_risk": true,
+            "frame": 35,
+            "time": 1789706581.811,
+            "actual_depth_extract": {
+              "native": 8,
+              "frame": 35,
+              "time": 1789706581.811,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 208,
+                "fraction_of_original_core": 0.8702928870292888,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000000_000199/F35/n:8/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": null,
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 35,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 35,
+            "CURRENT_CONTACT_RISK": 35
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 35
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 8,
+            "public": 8,
+            "source_version": [
+              "feeding_000000_000199",
+              8,
+              1,
+              8,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000000_000199/F1/n:8/mixed/core/raw",
+            "source_binding_sha256": "1ffa1c56e0bb39985269a502ad1fcdfcfaa5d2551fb4279eb22e7d6bec37217b",
+            "actual_bank_anchor": null,
+            "registry_preserved_on_risk": true,
+            "frame": 1,
+            "time": 1789706580.681,
+            "actual_depth_extract": {
+              "native": 8,
+              "frame": 1,
+              "time": 1789706580.681,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 61,
+                "fraction_of_original_core": 0.648936170212766,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000000_000199/F1/n:8/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 8,
+            "public": 8,
+            "source_version": [
+              "feeding_000000_000199",
+              8,
+              1,
+              8,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000000_000199/F35/n:8/mixed/core/raw",
+            "source_binding_sha256": "b8628bb8514d27a9769c883cf31f29c06cf6253a10eb8490465d3ca4a56329b4",
+            "actual_bank_anchor": null,
+            "registry_preserved_on_risk": true,
+            "frame": 35,
+            "time": 1789706581.811,
+            "actual_depth_extract": {
+              "native": 8,
+              "frame": 35,
+              "time": 1789706581.811,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 208,
+                "fraction_of_original_core": 0.8702928870292888,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000000_000199/F35/n:8/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frame": 118,
+      "global_frame": 468,
+      "phase": "BIRTH_REFINE",
+      "native_id": 80,
+      "canonical_id": 21,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 21,
+          "iou": 0.9183098591549296,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.912718204488778,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 36,
+        "native_id": 21,
+        "mask": "n:21",
+        "canonical_id": 21
+      },
+      "extra_reference": {
+        "frame": 36,
+        "native_id": 21,
+        "mask": "n:21",
+        "canonical_id": 21
+      },
+      "query_fact_id": "feeding_000351_000555/F118/n:80/mixed/core/raw",
+      "measured_current_mm": 1149.74072265625,
+      "predicted_mu_mm": 1082.9496586165133,
+      "predicted_scale_mm": 224.80849304629808,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 18.647785180664062,
+        "predicted_scale_mm": 224.80849304629808,
+        "forecast_slope_mm_s": -25.883301831167756,
+        "bound_anchor_age_s": 2.7249999046325684,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 66.79106403973674,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 36,
+          "native_id": 21,
+          "mask": "n:21",
+          "canonical_id": 21
+        },
+        "target_version": [
+          "feeding_000351_000555",
+          21,
+          2,
+          21,
+          2,
+          26
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000351_000555/F27/n:21/mixed/core/raw",
+          "feeding_000351_000555/F28/n:21/mixed/core/raw",
+          "feeding_000351_000555/F29/n:21/mixed/core/raw",
+          "feeding_000351_000555/F30/n:21/mixed/core/raw",
+          "feeding_000351_000555/F31/n:21/mixed/core/raw",
+          "feeding_000351_000555/F32/n:21/mixed/core/raw",
+          "feeding_000351_000555/F33/n:21/mixed/core/raw",
+          "feeding_000351_000555/F34/n:21/mixed/core/raw",
+          "feeding_000351_000555/F35/n:21/mixed/core/raw",
+          "feeding_000351_000555/F36/n:21/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 21,
+          "fragment_start": 26,
+          "source_version": [
+            "feeding_000351_000555",
+            21,
+            2,
+            21,
+            2,
+            26
+          ],
+          "previous_actual_observation": {
+            "native": 21,
+            "public": 21,
+            "source_version": [
+              "feeding_000351_000555",
+              21,
+              2,
+              21,
+              2,
+              null
+            ],
+            "source_generation": 2,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F25/n:21/mixed/core/raw",
+            "source_binding_sha256": "a1133d1ce4b29e0f7c7666055ad6fe76b4ffa3ac1450af99b44043f0c5981c6a",
+            "actual_bank_anchor": {
+              "frame": 20,
+              "native_id": 21,
+              "mask": "n:21",
+              "canonical_id": 21
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 25,
+            "time": 1789706593.141,
+            "actual_depth_extract": {
+              "native": 21,
+              "frame": 25,
+              "time": 1789706593.141,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 96,
+                "fraction_of_original_core": 0.5853658536585366,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F25/n:21/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 21,
+            "public": 21,
+            "source_version": [
+              "feeding_000351_000555",
+              21,
+              2,
+              21,
+              2,
+              13
+            ],
+            "source_generation": 2,
+            "public_epoch": 2,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 13,
+            "fragment_length": 8,
+            "fact_id": "feeding_000351_000555/F20/n:21/mixed/core/raw",
+            "source_binding_sha256": "0cf682cae1d811b5e79cdcd63175c3b0e8e928e16b99dd42dd552b1f4d943697",
+            "actual_bank_anchor": {
+              "frame": 20,
+              "native_id": 21,
+              "mask": "n:21",
+              "canonical_id": 21
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 20,
+            "time": 1789706592.975,
+            "actual_depth_extract": {
+              "native": 21,
+              "frame": 20,
+              "time": 1789706592.975,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 140,
+                "fraction_of_original_core": 0.8187134502923976,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F20/n:21/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 5,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 5,
+            "CURRENT_CONTACT_RISK": 5
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 5
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 21,
+            "public": 21,
+            "source_version": [
+              "feeding_000351_000555",
+              21,
+              2,
+              21,
+              2,
+              null
+            ],
+            "source_generation": 2,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F21/n:21/mixed/core/raw",
+            "source_binding_sha256": "a141182021177d87dee3a80740a99eb68f648577b94d9a0295b7aa9e98e3ad1d",
+            "actual_bank_anchor": {
+              "frame": 20,
+              "native_id": 21,
+              "mask": "n:21",
+              "canonical_id": 21
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 21,
+            "time": 1789706593.008,
+            "actual_depth_extract": {
+              "native": 21,
+              "frame": 21,
+              "time": 1789706593.008,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 30,
+                "fraction_of_original_core": 0.22058823529411764,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F21/n:21/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 21,
+            "public": 21,
+            "source_version": [
+              "feeding_000351_000555",
+              21,
+              2,
+              21,
+              2,
+              null
+            ],
+            "source_generation": 2,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F25/n:21/mixed/core/raw",
+            "source_binding_sha256": "a1133d1ce4b29e0f7c7666055ad6fe76b4ffa3ac1450af99b44043f0c5981c6a",
+            "actual_bank_anchor": {
+              "frame": 20,
+              "native_id": 21,
+              "mask": "n:21",
+              "canonical_id": 21
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 25,
+            "time": 1789706593.141,
+            "actual_depth_extract": {
+              "native": 21,
+              "frame": 25,
+              "time": 1789706593.141,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 96,
+                "fraction_of_original_core": 0.5853658536585366,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F25/n:21/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "frame": 172,
+      "global_frame": 522,
+      "phase": "D1_DELAYED",
+      "native_id": 83,
+      "canonical_id": 73,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.9446564885496184,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 24,
+          "iou": 0.8976377952755905,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 92,
+        "native_id": 73,
+        "mask": "n:73",
+        "canonical_id": 73
+      },
+      "extra_reference": {
+        "frame": 92,
+        "native_id": 73,
+        "mask": "n:73",
+        "canonical_id": 73
+      },
+      "query_fact_id": "feeding_000351_000555/F172/n:83/mixed/core/raw",
+      "measured_current_mm": 1105.5377197265625,
+      "predicted_mu_mm": 1358.8978855563685,
+      "predicted_scale_mm": 356.8176372243384,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 24.524976635742185,
+        "target_last_measured_scale_mm": 38.812104382324215,
+        "predicted_scale_mm": 356.8176372243384,
+        "forecast_slope_mm_s": 85.652490758142,
+        "bound_anchor_age_s": 2.6579999923706055,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 253.36016582980596,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 92,
+          "native_id": 73,
+          "mask": "n:73",
+          "canonical_id": 73
+        },
+        "target_version": [
+          "feeding_000351_000555",
+          73,
+          1,
+          73,
+          1,
+          62
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000351_000555/F83/n:73/mixed/core/raw",
+          "feeding_000351_000555/F84/n:73/mixed/core/raw",
+          "feeding_000351_000555/F85/n:73/mixed/core/raw",
+          "feeding_000351_000555/F86/n:73/mixed/core/raw",
+          "feeding_000351_000555/F87/n:73/mixed/core/raw",
+          "feeding_000351_000555/F88/n:73/mixed/core/raw",
+          "feeding_000351_000555/F89/n:73/mixed/core/raw",
+          "feeding_000351_000555/F90/n:73/mixed/core/raw",
+          "feeding_000351_000555/F91/n:73/mixed/core/raw",
+          "feeding_000351_000555/F92/n:73/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 73,
+          "fragment_start": 62,
+          "source_version": [
+            "feeding_000351_000555",
+            73,
+            1,
+            73,
+            1,
+            62
+          ],
+          "previous_actual_observation": {
+            "native": 73,
+            "public": 73,
+            "source_version": [
+              "feeding_000351_000555",
+              73,
+              1,
+              73,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "UNRELIABLE_CURRENT_DEPTH"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F61/n:73/mixed/core/raw",
+            "source_binding_sha256": "1369c329e8faa243226769d623b51807931f631dccb21289ddb06b12a7dc7dd0",
+            "actual_bank_anchor": {
+              "frame": 61,
+              "native_id": 73,
+              "mask": "n:73",
+              "canonical_id": 73
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 61,
+            "time": 1789706594.337,
+            "actual_depth_extract": {
+              "native": 73,
+              "frame": 61,
+              "time": 1789706594.337,
+              "reason": "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED",
+              "usable": false,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": true,
+                "independent_source_n": 166,
+                "fraction_of_original_core": 0.8469387755102041,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F61/n:73/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": null,
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 16,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 13,
+            "CURRENT_CONTACT_RISK": 13,
+            "UNRELIABLE_CURRENT_DEPTH": 10
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 10,
+            "RELIABLE_INDEPENDENT_CORE": 6
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 73,
+            "public": 73,
+            "source_version": [
+              "feeding_000351_000555",
+              73,
+              1,
+              73,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK",
+              "UNRELIABLE_CURRENT_DEPTH"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F46/n:73/mixed/core/raw",
+            "source_binding_sha256": "b8d9d836524e4687aa3f1e312d1a52fdb3cc49b98fd965c9a76ca25d018af00a",
+            "actual_bank_anchor": null,
+            "registry_preserved_on_risk": true,
+            "frame": 46,
+            "time": 1789706593.839,
+            "actual_depth_extract": {
+              "native": 73,
+              "frame": 46,
+              "time": 1789706593.839,
+              "reason": "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED",
+              "usable": false,
+              "quality": {
+                "core_status": "POTENTIAL_MIXTURE",
+                "core_reason": "SUBSTANTIAL_MEASURED_LAYERS_HAVE_NOISE_SEPARATED_MEDIANS",
+                "core_eligible_single": false,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": true,
+                "whole_multilayer": true,
+                "independent_source_n": 96,
+                "fraction_of_original_core": 0.5783132530120482,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F46/n:73/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 73,
+            "public": 73,
+            "source_version": [
+              "feeding_000351_000555",
+              73,
+              1,
+              73,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "UNRELIABLE_CURRENT_DEPTH"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000351_000555/F61/n:73/mixed/core/raw",
+            "source_binding_sha256": "1369c329e8faa243226769d623b51807931f631dccb21289ddb06b12a7dc7dd0",
+            "actual_bank_anchor": {
+              "frame": 61,
+              "native_id": 73,
+              "mask": "n:73",
+              "canonical_id": 73
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 61,
+            "time": 1789706594.337,
+            "actual_depth_extract": {
+              "native": 73,
+              "frame": 61,
+              "time": 1789706594.337,
+              "reason": "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED",
+              "usable": false,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": true,
+                "independent_source_n": 166,
+                "fraction_of_original_core": 0.8469387755102041,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000351_000555/F61/n:73/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frame": 134,
+      "global_frame": 834,
+      "phase": "D1_DELAYED",
+      "native_id": 118,
+      "canonical_id": 99,
+      "query_reason": "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9408033826638478,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 1,
+          "iou": 0.7943548387096774,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 112,
+        "native_id": 99,
+        "mask": "n:99",
+        "canonical_id": 99
+      },
+      "extra_reference": {
+        "frame": 112,
+        "native_id": 99,
+        "mask": "n:99",
+        "canonical_id": 99
+      },
+      "query_fact_id": "feeding_000701_001060/F134/n:118/mixed/core/raw",
+      "measured_current_mm": 1175.74609375,
+      "predicted_mu_mm": null,
+      "predicted_scale_mm": null,
+      "actual_numeric": {
+        "target_returned_sample_count": 1,
+        "current_measured_scale_mm": 33.17625168457031,
+        "target_last_measured_scale_mm": 24.4411822265625,
+        "predicted_scale_mm": null,
+        "forecast_slope_mm_s": null,
+        "bound_anchor_age_s": 0.7309999465942383,
+        "returned_history_time_span_s": 0.0,
+        "forecast_fit_span_s": null,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": null,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 112,
+          "native_id": 99,
+          "mask": "n:99",
+          "canonical_id": 99
+        },
+        "target_version": [
+          "feeding_000701_001060",
+          99,
+          1,
+          99,
+          1,
+          112
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000701_001060/F112/n:99/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 99,
+          "fragment_start": 112,
+          "source_version": [
+            "feeding_000701_001060",
+            99,
+            1,
+            99,
+            1,
+            112
+          ],
+          "previous_actual_observation": {
+            "native": 99,
+            "public": 99,
+            "source_version": [
+              "feeding_000701_001060",
+              99,
+              1,
+              99,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F111/n:99/mixed/core/raw",
+            "source_binding_sha256": "94cafb91d8892b6a32a8994cf5614f926843cdc2b1db912c9f6054984f749878",
+            "actual_bank_anchor": {
+              "frame": 102,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 111,
+            "time": 1789706607.628,
+            "actual_depth_extract": {
+              "native": 99,
+              "frame": 111,
+              "time": 1789706607.628,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.8368421052631579,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F111/n:99/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 99,
+            "public": 99,
+            "source_version": [
+              "feeding_000701_001060",
+              99,
+              1,
+              99,
+              1,
+              98
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 98,
+            "fragment_length": 5,
+            "fact_id": "feeding_000701_001060/F102/n:99/mixed/core/raw",
+            "source_binding_sha256": "bafbda02aab3954a4ed03768dbc2a0c9b76648cb356599ccc258b4758099f671",
+            "actual_bank_anchor": {
+              "frame": 102,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 102,
+            "time": 1789706607.328,
+            "actual_depth_extract": {
+              "native": 99,
+              "frame": 102,
+              "time": 1789706607.328,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 165,
+                "fraction_of_original_core": 0.9593023255813954,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F102/n:99/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 9,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 9,
+            "CURRENT_CONTACT_RISK": 9
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 9
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 99,
+            "public": 99,
+            "source_version": [
+              "feeding_000701_001060",
+              99,
+              1,
+              99,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F103/n:99/mixed/core/raw",
+            "source_binding_sha256": "abcf246edd2d02d20ca56266dc49ca41ae5a2a434818b8e13904ad84bfdb3a47",
+            "actual_bank_anchor": {
+              "frame": 102,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 103,
+            "time": 1789706607.362,
+            "actual_depth_extract": {
+              "native": 99,
+              "frame": 103,
+              "time": 1789706607.362,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 170,
+                "fraction_of_original_core": 0.96045197740113,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F103/n:99/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 99,
+            "public": 99,
+            "source_version": [
+              "feeding_000701_001060",
+              99,
+              1,
+              99,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F111/n:99/mixed/core/raw",
+            "source_binding_sha256": "94cafb91d8892b6a32a8994cf5614f926843cdc2b1db912c9f6054984f749878",
+            "actual_bank_anchor": {
+              "frame": 102,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 111,
+            "time": 1789706607.628,
+            "actual_depth_extract": {
+              "native": 99,
+              "frame": 111,
+              "time": 1789706607.628,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.8368421052631579,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F111/n:99/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frame": 149,
+      "global_frame": 849,
+      "phase": "D1_DELAYED",
+      "native_id": 119,
+      "canonical_id": 70,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 14,
+          "iou": 0.9248434237995825,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 26,
+          "iou": 0.9363817097415507,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 7,
+        "native_id": 70,
+        "mask": "n:70",
+        "canonical_id": 70
+      },
+      "extra_reference": {
+        "frame": 7,
+        "native_id": 70,
+        "mask": "n:70",
+        "canonical_id": 70
+      },
+      "query_fact_id": "feeding_000701_001060/F149/n:119/mixed/core/raw",
+      "measured_current_mm": 987.0123901367188,
+      "predicted_mu_mm": 606.8265146601,
+      "predicted_scale_mm": 620.9341698759745,
+      "actual_numeric": {
+        "target_returned_sample_count": 7,
+        "current_measured_scale_mm": 32.478115759277344,
+        "target_last_measured_scale_mm": 18.680271350097655,
+        "predicted_scale_mm": 620.9341698759745,
+        "forecast_slope_mm_s": -86.39185637921722,
+        "bound_anchor_age_s": 4.718000173568726,
+        "returned_history_time_span_s": 0.19899988174438477,
+        "forecast_fit_span_s": 0.19899988174438477,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 380.1858754766188,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 7,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        },
+        "target_version": [
+          "feeding_000701_001060",
+          70,
+          1,
+          70,
+          1,
+          1
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000701_001060/F1/n:70/mixed/core/raw",
+          "feeding_000701_001060/F2/n:70/mixed/core/raw",
+          "feeding_000701_001060/F3/n:70/mixed/core/raw",
+          "feeding_000701_001060/F4/n:70/mixed/core/raw",
+          "feeding_000701_001060/F5/n:70/mixed/core/raw",
+          "feeding_000701_001060/F6/n:70/mixed/core/raw",
+          "feeding_000701_001060/F7/n:70/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 70,
+          "fragment_start": 1,
+          "source_version": [
+            "feeding_000701_001060",
+            70,
+            1,
+            70,
+            1,
+            1
+          ],
+          "previous_actual_observation": null,
+          "consecutive_from_previous_actual": false,
+          "preceding_clean_observation": null,
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 0,
+          "preceding_risk_reason_counts": {},
+          "preceding_risk_depth_gate_reason_counts": {},
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": null,
+          "last_preceding_risk": null,
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frame": 197,
+      "global_frame": 897,
+      "phase": "D1_DELAYED",
+      "native_id": 127,
+      "canonical_id": 106,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 9,
+          "iou": 0.9487870619946092,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9725490196078431,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 42,
+        "native_id": 106,
+        "mask": "n:106",
+        "canonical_id": 106
+      },
+      "extra_reference": {
+        "frame": 42,
+        "native_id": 106,
+        "mask": "n:106",
+        "canonical_id": 106
+      },
+      "query_fact_id": "feeding_000701_001060/F197/n:127/mixed/core/raw",
+      "measured_current_mm": 1177.5224609375,
+      "predicted_mu_mm": 1345.7740307692052,
+      "predicted_scale_mm": 731.9240380250782,
+      "actual_numeric": {
+        "target_returned_sample_count": 6,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": 731.9240380250782,
+        "forecast_slope_mm_s": 38.37029752100108,
+        "bound_anchor_age_s": 5.1499998569488525,
+        "returned_history_time_span_s": 0.1660001277923584,
+        "forecast_fit_span_s": 0.1660001277923584,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": null,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 42,
+          "native_id": 106,
+          "mask": "n:106",
+          "canonical_id": 106
+        },
+        "target_version": [
+          "feeding_000701_001060",
+          106,
+          1,
+          106,
+          1,
+          37
+        ],
+        "target_sample_fact_ids": [
+          "feeding_000701_001060/F37/n:106/mixed/core/raw",
+          "feeding_000701_001060/F38/n:106/mixed/core/raw",
+          "feeding_000701_001060/F39/n:106/mixed/core/raw",
+          "feeding_000701_001060/F40/n:106/mixed/core/raw",
+          "feeding_000701_001060/F41/n:106/mixed/core/raw",
+          "feeding_000701_001060/F42/n:106/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 106,
+          "fragment_start": 37,
+          "source_version": [
+            "feeding_000701_001060",
+            106,
+            1,
+            106,
+            1,
+            37
+          ],
+          "previous_actual_observation": {
+            "native": 106,
+            "public": 106,
+            "source_version": [
+              "feeding_000701_001060",
+              106,
+              1,
+              106,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F36/n:106/mixed/core/raw",
+            "source_binding_sha256": "9135bd6df20fc1e04870985a72f2dac4416feca22a1117ffe8852e49646cf783",
+            "actual_bank_anchor": {
+              "frame": 29,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 36,
+            "time": 1789706605.136,
+            "actual_depth_extract": {
+              "native": 106,
+              "frame": 36,
+              "time": 1789706605.136,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 224,
+                "fraction_of_original_core": 0.9911504424778761,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F36/n:106/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 106,
+            "public": 106,
+            "source_version": [
+              "feeding_000701_001060",
+              106,
+              1,
+              106,
+              1,
+              24
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 24,
+            "fragment_length": 6,
+            "fact_id": "feeding_000701_001060/F29/n:106/mixed/core/raw",
+            "source_binding_sha256": "cf9029bb11f5fc3f49972933fe713ff664f716a82011c39d6d765dbdb4712cc1",
+            "actual_bank_anchor": {
+              "frame": 29,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 29,
+            "time": 1789706604.903,
+            "actual_depth_extract": {
+              "native": 106,
+              "frame": 29,
+              "time": 1789706604.903,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 201,
+                "fraction_of_original_core": 0.9136363636363637,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F29/n:106/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 7,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 7,
+            "CURRENT_CONTACT_RISK": 7
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 7
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 106,
+            "public": 106,
+            "source_version": [
+              "feeding_000701_001060",
+              106,
+              1,
+              106,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F30/n:106/mixed/core/raw",
+            "source_binding_sha256": "51125f914fc9e60fa869f0e48cc14a97229dac5838210c2517b87905c47140bb",
+            "actual_bank_anchor": {
+              "frame": 29,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 30,
+            "time": 1789706604.936,
+            "actual_depth_extract": {
+              "native": 106,
+              "frame": 30,
+              "time": 1789706604.936,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 199,
+                "fraction_of_original_core": 0.908675799086758,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F30/n:106/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 106,
+            "public": 106,
+            "source_version": [
+              "feeding_000701_001060",
+              106,
+              1,
+              106,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_000701_001060/F36/n:106/mixed/core/raw",
+            "source_binding_sha256": "9135bd6df20fc1e04870985a72f2dac4416feca22a1117ffe8852e49646cf783",
+            "actual_bank_anchor": {
+              "frame": 29,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 36,
+            "time": 1789706605.136,
+            "actual_depth_extract": {
+              "native": 106,
+              "frame": 36,
+              "time": 1789706605.136,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 224,
+                "fraction_of_original_core": 0.9911504424778761,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_000701_001060/F36/n:106/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "frame": 269,
+      "global_frame": 969,
+      "phase": "D1_DELAYED",
+      "native_id": 129,
+      "canonical_id": 91,
+      "query_reason": "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 13,
+          "iou": 0.9740740740740741,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 8,
+          "iou": 0.8896396396396397,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 147,
+        "native_id": 91,
+        "mask": "n:91",
+        "canonical_id": 91
+      },
+      "extra_reference": {
+        "frame": 147,
+        "native_id": 91,
+        "mask": "n:91",
+        "canonical_id": 91
+      },
+      "query_fact_id": "feeding_000701_001060/F269/n:129/mixed/core/raw",
+      "measured_current_mm": 979.744140625,
+      "predicted_mu_mm": null,
+      "predicted_scale_mm": null,
+      "actual_numeric": {
+        "target_returned_sample_count": 0,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": null,
+        "predicted_scale_mm": null,
+        "forecast_slope_mm_s": null,
+        "bound_anchor_age_s": null,
+        "returned_history_time_span_s": null,
+        "forecast_fit_span_s": null,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": null,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "UNAVAILABLE_NO_BOUND_RETURNED_SAMPLES",
+        "no_history_inference": false
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 190,
+      "global_frame": 1390,
+      "phase": "BIRTH_REFINE",
+      "native_id": 172,
+      "canonical_id": 126,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.817966903073286,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 16,
+          "iou": 0.9232558139534883,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": true,
+      "original_reference": {
+        "frame": 138,
+        "native_id": 126,
+        "mask": "n:126",
+        "canonical_id": 126
+      },
+      "extra_reference": {
+        "frame": 139,
+        "native_id": 126,
+        "mask": "n:126",
+        "canonical_id": 126
+      },
+      "query_fact_id": "feeding_001201_001906/F190/n:172/mixed/core/raw",
+      "measured_current_mm": 1090.206298828125,
+      "predicted_mu_mm": 1080.101088864327,
+      "predicted_scale_mm": 277.80368217159844,
+      "actual_numeric": {
+        "target_returned_sample_count": 7,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 24.140029101562497,
+        "predicted_scale_mm": 277.80368217159844,
+        "forecast_slope_mm_s": 0.7091902591908246,
+        "bound_anchor_age_s": 1.695000171661377,
+        "returned_history_time_span_s": 0.19899988174438477,
+        "forecast_fit_span_s": 0.19899988174438477,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 10.10520996379796,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 139,
+          "native_id": 126,
+          "mask": "n:126",
+          "canonical_id": 126
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          126,
+          1,
+          126,
+          1,
+          133
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F133/n:126/mixed/core/raw",
+          "feeding_001201_001906/F134/n:126/mixed/core/raw",
+          "feeding_001201_001906/F135/n:126/mixed/core/raw",
+          "feeding_001201_001906/F136/n:126/mixed/core/raw",
+          "feeding_001201_001906/F137/n:126/mixed/core/raw",
+          "feeding_001201_001906/F138/n:126/mixed/core/raw",
+          "feeding_001201_001906/F139/n:126/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 126,
+          "fragment_start": 133,
+          "source_version": [
+            "feeding_001201_001906",
+            126,
+            1,
+            126,
+            1,
+            133
+          ],
+          "previous_actual_observation": {
+            "native": 126,
+            "public": 126,
+            "source_version": [
+              "feeding_001201_001906",
+              126,
+              1,
+              126,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F132/n:126/mixed/core/raw",
+            "source_binding_sha256": "09a4129832d5ab73c91f9ce3bca96fae00c44034b70acaadd39573be0e853949",
+            "actual_bank_anchor": {
+              "frame": 99,
+              "native_id": 126,
+              "mask": "n:126",
+              "canonical_id": 126
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 132,
+            "time": 1789706624.939,
+            "actual_depth_extract": {
+              "native": 126,
+              "frame": 132,
+              "time": 1789706624.939,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 218,
+                "fraction_of_original_core": 0.990909090909091,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F132/n:126/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 126,
+            "public": 126,
+            "source_version": [
+              "feeding_001201_001906",
+              126,
+              1,
+              126,
+              1,
+              54
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 54,
+            "fragment_length": 30,
+            "fact_id": "feeding_001201_001906/F99/n:126/mixed/core/raw",
+            "source_binding_sha256": "608ce5f7acde23d678a7a62a8b54d390f7a81feffb78a000f272a5fc3df6644b",
+            "actual_bank_anchor": {
+              "frame": 99,
+              "native_id": 126,
+              "mask": "n:126",
+              "canonical_id": 126
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 99,
+            "time": 1789706623.843,
+            "actual_depth_extract": {
+              "native": 126,
+              "frame": 99,
+              "time": 1789706623.843,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 152,
+                "fraction_of_original_core": 0.926829268292683,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F99/n:126/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 33,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 33,
+            "CURRENT_CONTACT_RISK": 33,
+            "ANONYMOUS_EVENT_RISK": 1
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 33
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 126,
+            "public": 126,
+            "source_version": [
+              "feeding_001201_001906",
+              126,
+              1,
+              126,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F100/n:126/mixed/core/raw",
+            "source_binding_sha256": "d89fc5e12eebe979e78df7569a5624e81ace8ecfb2ae1278a259d0521bea2e35",
+            "actual_bank_anchor": {
+              "frame": 99,
+              "native_id": 126,
+              "mask": "n:126",
+              "canonical_id": 126
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 100,
+            "time": 1789706623.876,
+            "actual_depth_extract": {
+              "native": 126,
+              "frame": 100,
+              "time": 1789706623.876,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 143,
+                "fraction_of_original_core": 0.9225806451612903,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F100/n:126/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 126,
+            "public": 126,
+            "source_version": [
+              "feeding_001201_001906",
+              126,
+              1,
+              126,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F132/n:126/mixed/core/raw",
+            "source_binding_sha256": "09a4129832d5ab73c91f9ce3bca96fae00c44034b70acaadd39573be0e853949",
+            "actual_bank_anchor": {
+              "frame": 99,
+              "native_id": 126,
+              "mask": "n:126",
+              "canonical_id": 126
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 132,
+            "time": 1789706624.939,
+            "actual_depth_extract": {
+              "native": 126,
+              "frame": 132,
+              "time": 1789706624.939,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 218,
+                "fraction_of_original_core": 0.990909090909091,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F132/n:126/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 204,
+      "global_frame": 1404,
+      "phase": "D1_DELAYED",
+      "native_id": 168,
+      "canonical_id": 136,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 0.9462025316455697,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.9329710144927537,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 22,
+        "native_id": 136,
+        "mask": "n:136",
+        "canonical_id": 136
+      },
+      "extra_reference": {
+        "frame": 22,
+        "native_id": 136,
+        "mask": "n:136",
+        "canonical_id": 136
+      },
+      "query_fact_id": "feeding_001201_001906/F204/n:168/mixed/core/raw",
+      "measured_current_mm": 1160.65185546875,
+      "predicted_mu_mm": 685.4484294549945,
+      "predicted_scale_mm": 745.8560169968832,
+      "actual_numeric": {
+        "target_returned_sample_count": 7,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 20.361046032714842,
+        "predicted_scale_mm": 745.8560169968832,
+        "forecast_slope_mm_s": -77.72031508169668,
+        "bound_anchor_age_s": 6.04800009727478,
+        "returned_history_time_span_s": 0.19899988174438477,
+        "forecast_fit_span_s": 0.19899988174438477,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 475.20342601375546,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 22,
+          "native_id": 136,
+          "mask": "n:136",
+          "canonical_id": 136
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          136,
+          1,
+          136,
+          1,
+          16
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F16/n:136/mixed/core/raw",
+          "feeding_001201_001906/F17/n:136/mixed/core/raw",
+          "feeding_001201_001906/F18/n:136/mixed/core/raw",
+          "feeding_001201_001906/F19/n:136/mixed/core/raw",
+          "feeding_001201_001906/F20/n:136/mixed/core/raw",
+          "feeding_001201_001906/F21/n:136/mixed/core/raw",
+          "feeding_001201_001906/F22/n:136/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 136,
+          "fragment_start": 16,
+          "source_version": [
+            "feeding_001201_001906",
+            136,
+            1,
+            136,
+            1,
+            16
+          ],
+          "previous_actual_observation": {
+            "native": 136,
+            "public": 136,
+            "source_version": [
+              "feeding_001201_001906",
+              136,
+              1,
+              136,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F15/n:136/mixed/core/raw",
+            "source_binding_sha256": "e16df6734dffe4192b9156245a369d25342ab1ade96f909766959312c5c2cb19",
+            "actual_bank_anchor": {
+              "frame": 5,
+              "native_id": 136,
+              "mask": "n:136",
+              "canonical_id": 136
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 15,
+            "time": 1789706621.052,
+            "actual_depth_extract": {
+              "native": 136,
+              "frame": 15,
+              "time": 1789706621.052,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 226,
+                "fraction_of_original_core": 0.9377593360995851,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F15/n:136/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 136,
+            "public": 136,
+            "source_version": [
+              "feeding_001201_001906",
+              136,
+              1,
+              136,
+              1,
+              1
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 1,
+            "fragment_length": 5,
+            "fact_id": "feeding_001201_001906/F5/n:136/mixed/core/raw",
+            "source_binding_sha256": "6461deefcde4286928c8ae76e2fd82eb54b7be81d8b9b07b08c2a92ff0bae592",
+            "actual_bank_anchor": {
+              "frame": 5,
+              "native_id": 136,
+              "mask": "n:136",
+              "canonical_id": 136
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 5,
+            "time": 1789706620.719,
+            "actual_depth_extract": {
+              "native": 136,
+              "frame": 5,
+              "time": 1789706620.719,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 154,
+                "fraction_of_original_core": 0.7857142857142857,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F5/n:136/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 10,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 10,
+            "CURRENT_CONTACT_RISK": 10
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 10
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 136,
+            "public": 136,
+            "source_version": [
+              "feeding_001201_001906",
+              136,
+              1,
+              136,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F6/n:136/mixed/core/raw",
+            "source_binding_sha256": "2fae6ebf93821c659059b6a11f48a3c24f9c1e0dcaa983b8446ffb99c204ef48",
+            "actual_bank_anchor": {
+              "frame": 5,
+              "native_id": 136,
+              "mask": "n:136",
+              "canonical_id": 136
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 6,
+            "time": 1789706620.753,
+            "actual_depth_extract": {
+              "native": 136,
+              "frame": 6,
+              "time": 1789706620.753,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 184,
+                "fraction_of_original_core": 0.9292929292929293,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F6/n:136/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 136,
+            "public": 136,
+            "source_version": [
+              "feeding_001201_001906",
+              136,
+              1,
+              136,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F15/n:136/mixed/core/raw",
+            "source_binding_sha256": "e16df6734dffe4192b9156245a369d25342ab1ade96f909766959312c5c2cb19",
+            "actual_bank_anchor": {
+              "frame": 5,
+              "native_id": 136,
+              "mask": "n:136",
+              "canonical_id": 136
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 15,
+            "time": 1789706621.052,
+            "actual_depth_extract": {
+              "native": 136,
+              "frame": 15,
+              "time": 1789706621.052,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 226,
+                "fraction_of_original_core": 0.9377593360995851,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F15/n:136/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 316,
+      "global_frame": 1516,
+      "phase": "D1_DELAYED",
+      "native_id": 178,
+      "canonical_id": 119,
+      "query_reason": "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 0.9301848049281314,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 15,
+          "iou": 0.8190327613104524,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 213,
+        "native_id": 119,
+        "mask": "n:119",
+        "canonical_id": 119
+      },
+      "extra_reference": {
+        "frame": 213,
+        "native_id": 119,
+        "mask": "n:119",
+        "canonical_id": 119
+      },
+      "query_fact_id": "feeding_001201_001906/F316/n:178/mixed/core/raw",
+      "measured_current_mm": 1172.094482421875,
+      "predicted_mu_mm": null,
+      "predicted_scale_mm": null,
+      "actual_numeric": {
+        "target_returned_sample_count": 2,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": null,
+        "forecast_slope_mm_s": null,
+        "bound_anchor_age_s": 3.422999858856201,
+        "returned_history_time_span_s": 0.03299999237060547,
+        "forecast_fit_span_s": null,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": null,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 213,
+          "native_id": 119,
+          "mask": "n:119",
+          "canonical_id": 119
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          119,
+          1,
+          119,
+          1,
+          212
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F212/n:119/mixed/core/raw",
+          "feeding_001201_001906/F213/n:119/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 119,
+          "fragment_start": 212,
+          "source_version": [
+            "feeding_001201_001906",
+            119,
+            1,
+            119,
+            1,
+            212
+          ],
+          "previous_actual_observation": {
+            "native": 119,
+            "public": 119,
+            "source_version": [
+              "feeding_001201_001906",
+              119,
+              1,
+              119,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw",
+            "source_binding_sha256": "5d9c5d4db283a1da57c5878ffb4d8998f7279db979b15ef2a069f2204c6b05db",
+            "actual_bank_anchor": {
+              "frame": 210,
+              "native_id": 119,
+              "mask": "n:119",
+              "canonical_id": 119
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 211,
+            "time": 1789706627.565,
+            "actual_depth_extract": {
+              "native": 119,
+              "frame": 211,
+              "time": 1789706627.565,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 256,
+                "fraction_of_original_core": 0.9377289377289377,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 119,
+            "public": 119,
+            "source_version": [
+              "feeding_001201_001906",
+              119,
+              1,
+              119,
+              1,
+              200
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 200,
+            "fragment_length": 11,
+            "fact_id": "feeding_001201_001906/F210/n:119/mixed/core/raw",
+            "source_binding_sha256": "2e208e896302a1831a2110c5e68ea4f60a8035939cae8750980bd01646a732cf",
+            "actual_bank_anchor": {
+              "frame": 210,
+              "native_id": 119,
+              "mask": "n:119",
+              "canonical_id": 119
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 210,
+            "time": 1789706627.531,
+            "actual_depth_extract": {
+              "native": 119,
+              "frame": 210,
+              "time": 1789706627.531,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 252,
+                "fraction_of_original_core": 0.9298892988929889,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F210/n:119/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 1,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 1,
+            "CURRENT_CONTACT_RISK": 1
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 1
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 119,
+            "public": 119,
+            "source_version": [
+              "feeding_001201_001906",
+              119,
+              1,
+              119,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw",
+            "source_binding_sha256": "5d9c5d4db283a1da57c5878ffb4d8998f7279db979b15ef2a069f2204c6b05db",
+            "actual_bank_anchor": {
+              "frame": 210,
+              "native_id": 119,
+              "mask": "n:119",
+              "canonical_id": 119
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 211,
+            "time": 1789706627.565,
+            "actual_depth_extract": {
+              "native": 119,
+              "frame": 211,
+              "time": 1789706627.565,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 256,
+                "fraction_of_original_core": 0.9377289377289377,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 119,
+            "public": 119,
+            "source_version": [
+              "feeding_001201_001906",
+              119,
+              1,
+              119,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw",
+            "source_binding_sha256": "5d9c5d4db283a1da57c5878ffb4d8998f7279db979b15ef2a069f2204c6b05db",
+            "actual_bank_anchor": {
+              "frame": 210,
+              "native_id": 119,
+              "mask": "n:119",
+              "canonical_id": 119
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 211,
+            "time": 1789706627.565,
+            "actual_depth_extract": {
+              "native": 119,
+              "frame": 211,
+              "time": 1789706627.565,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 256,
+                "fraction_of_original_core": 0.9377289377289377,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F211/n:119/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 481,
+      "global_frame": 1681,
+      "phase": "D1_DELAYED",
+      "native_id": 188,
+      "canonical_id": 125,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9526184538653366,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.8668171557562077,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 201,
+        "native_id": 125,
+        "mask": "n:125",
+        "canonical_id": 125
+      },
+      "extra_reference": {
+        "frame": 201,
+        "native_id": 125,
+        "mask": "n:125",
+        "canonical_id": 125
+      },
+      "query_fact_id": "feeding_001201_001906/F481/n:188/mixed/core/raw",
+      "measured_current_mm": 1158.543701171875,
+      "predicted_mu_mm": 1003.0334454960674,
+      "predicted_scale_mm": 750.0131178105916,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 22.189139611816405,
+        "predicted_scale_mm": 750.0131178105916,
+        "forecast_slope_mm_s": -15.574980592602504,
+        "bound_anchor_age_s": 9.304999828338623,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 155.51025567580757,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 201,
+          "native_id": 125,
+          "mask": "n:125",
+          "canonical_id": 125
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          125,
+          1,
+          125,
+          1,
+          191
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F192/n:125/mixed/core/raw",
+          "feeding_001201_001906/F193/n:125/mixed/core/raw",
+          "feeding_001201_001906/F194/n:125/mixed/core/raw",
+          "feeding_001201_001906/F195/n:125/mixed/core/raw",
+          "feeding_001201_001906/F196/n:125/mixed/core/raw",
+          "feeding_001201_001906/F197/n:125/mixed/core/raw",
+          "feeding_001201_001906/F198/n:125/mixed/core/raw",
+          "feeding_001201_001906/F199/n:125/mixed/core/raw",
+          "feeding_001201_001906/F200/n:125/mixed/core/raw",
+          "feeding_001201_001906/F201/n:125/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 125,
+          "fragment_start": 191,
+          "source_version": [
+            "feeding_001201_001906",
+            125,
+            1,
+            125,
+            1,
+            191
+          ],
+          "previous_actual_observation": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw",
+            "source_binding_sha256": "2779ebce03e5be9798b1a761916e2252a3931ab4cd39fcffff39097e128c769f",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 190,
+            "time": 1789706626.867,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 190,
+              "time": 1789706626.867,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 155,
+                "fraction_of_original_core": 0.9810126582278481,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              154
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 154,
+            "fragment_length": 3,
+            "fact_id": "feeding_001201_001906/F156/n:125/mixed/core/raw",
+            "source_binding_sha256": "1f3f5b1545ad53ee0e3f909bc82d2b5fde8a66d6ec7bed6449f697083a650cef",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 156,
+            "time": 1789706625.737,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 156,
+              "time": 1789706625.737,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 150,
+                "fraction_of_original_core": 0.9316770186335404,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F156/n:125/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 34,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 34,
+            "CURRENT_CONTACT_RISK": 34
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 34
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F157/n:125/mixed/core/raw",
+            "source_binding_sha256": "6030668ef63b88524d2a56e38253beb9eb1389b2be9ecde82c7ecdda71c5f70b",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 157,
+            "time": 1789706625.77,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 157,
+              "time": 1789706625.77,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 146,
+                "fraction_of_original_core": 0.9012345679012346,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F157/n:125/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw",
+            "source_binding_sha256": "2779ebce03e5be9798b1a761916e2252a3931ab4cd39fcffff39097e128c769f",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 190,
+            "time": 1789706626.867,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 190,
+              "time": 1789706626.867,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 155,
+                "fraction_of_original_core": 0.9810126582278481,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 512,
+      "global_frame": 1712,
+      "phase": "D1_DELAYED",
+      "native_id": 186,
+      "canonical_id": 166,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 8,
+          "iou": 0.9424603174603174,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 2,
+          "iou": 0.9633620689655172,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 254,
+        "native_id": 166,
+        "mask": "n:166",
+        "canonical_id": 166
+      },
+      "extra_reference": {
+        "frame": 254,
+        "native_id": 166,
+        "mask": "n:166",
+        "canonical_id": 166
+      },
+      "query_fact_id": "feeding_001201_001906/F512/n:186/mixed/core/raw",
+      "measured_current_mm": 1045.3873291015625,
+      "predicted_mu_mm": 2124.1015761246163,
+      "predicted_scale_mm": 700.9486659585306,
+      "actual_numeric": {
+        "target_returned_sample_count": 9,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": 700.9486659585306,
+        "forecast_slope_mm_s": 127.30212639933399,
+        "bound_anchor_age_s": 8.572999954223633,
+        "returned_history_time_span_s": 0.26600003242492676,
+        "forecast_fit_span_s": 0.26600003242492676,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 1078.7142470230538,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 254,
+          "native_id": 166,
+          "mask": "n:166",
+          "canonical_id": 166
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          166,
+          1,
+          166,
+          1,
+          246
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F246/n:166/mixed/core/raw",
+          "feeding_001201_001906/F247/n:166/mixed/core/raw",
+          "feeding_001201_001906/F248/n:166/mixed/core/raw",
+          "feeding_001201_001906/F249/n:166/mixed/core/raw",
+          "feeding_001201_001906/F250/n:166/mixed/core/raw",
+          "feeding_001201_001906/F251/n:166/mixed/core/raw",
+          "feeding_001201_001906/F252/n:166/mixed/core/raw",
+          "feeding_001201_001906/F253/n:166/mixed/core/raw",
+          "feeding_001201_001906/F254/n:166/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 166,
+          "fragment_start": 246,
+          "source_version": [
+            "feeding_001201_001906",
+            166,
+            1,
+            166,
+            1,
+            246
+          ],
+          "previous_actual_observation": {
+            "native": 166,
+            "public": 166,
+            "source_version": [
+              "feeding_001201_001906",
+              166,
+              1,
+              166,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F245/n:166/mixed/core/raw",
+            "source_binding_sha256": "80fc72e3c2d5e5d07cd635293ed9991cffd64dfa12bdc466c759e4dff798038b",
+            "actual_bank_anchor": {
+              "frame": 96,
+              "native_id": 166,
+              "mask": "n:166",
+              "canonical_id": 166
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 245,
+            "time": 1789706628.694,
+            "actual_depth_extract": {
+              "native": 166,
+              "frame": 245,
+              "time": 1789706628.694,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 166,
+                "fraction_of_original_core": 0.9120879120879121,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F245/n:166/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 166,
+            "public": 166,
+            "source_version": [
+              "feeding_001201_001906",
+              166,
+              1,
+              166,
+              1,
+              66
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 66,
+            "fragment_length": 30,
+            "fact_id": "feeding_001201_001906/F96/n:166/mixed/core/raw",
+            "source_binding_sha256": "d983aa105aeb1a4fd70daf80a994c768b491665c6289d21abb2f2b7303e5187c",
+            "actual_bank_anchor": {
+              "frame": 96,
+              "native_id": 166,
+              "mask": "n:166",
+              "canonical_id": 166
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 96,
+            "time": 1789706623.743,
+            "actual_depth_extract": {
+              "native": 166,
+              "frame": 96,
+              "time": 1789706623.743,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 148,
+                "fraction_of_original_core": 0.9308176100628931,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F96/n:166/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 149,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 149,
+            "CURRENT_CONTACT_RISK": 95,
+            "UNRELIABLE_CURRENT_DEPTH": 10,
+            "ANONYMOUS_EVENT_RISK": 2
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 139,
+            "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 5,
+            "UNRELIABLE_INDEPENDENT_CORE": 5
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 166,
+            "public": 166,
+            "source_version": [
+              "feeding_001201_001906",
+              166,
+              1,
+              166,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F97/n:166/mixed/core/raw",
+            "source_binding_sha256": "e38417f09fc1de83be2d7afb52c239436b22cb8dbb0b9f96ed3efda00239766a",
+            "actual_bank_anchor": {
+              "frame": 96,
+              "native_id": 166,
+              "mask": "n:166",
+              "canonical_id": 166
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 97,
+            "time": 1789706623.776,
+            "actual_depth_extract": {
+              "native": 166,
+              "frame": 97,
+              "time": 1789706623.776,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.9578313253012049,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F97/n:166/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 166,
+            "public": 166,
+            "source_version": [
+              "feeding_001201_001906",
+              166,
+              1,
+              166,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F245/n:166/mixed/core/raw",
+            "source_binding_sha256": "80fc72e3c2d5e5d07cd635293ed9991cffd64dfa12bdc466c759e4dff798038b",
+            "actual_bank_anchor": {
+              "frame": 96,
+              "native_id": 166,
+              "mask": "n:166",
+              "canonical_id": 166
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 245,
+            "time": 1789706628.694,
+            "actual_depth_extract": {
+              "native": 166,
+              "frame": 245,
+              "time": 1789706628.694,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 166,
+                "fraction_of_original_core": 0.9120879120879121,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F245/n:166/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 551,
+      "global_frame": 1751,
+      "phase": "D1_DELAYED",
+      "native_id": 183,
+      "canonical_id": 125,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 14,
+          "iou": 0.9458128078817734,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 6,
+          "iou": 0.8668171557562077,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 201,
+        "native_id": 125,
+        "mask": "n:125",
+        "canonical_id": 125
+      },
+      "extra_reference": {
+        "frame": 201,
+        "native_id": 125,
+        "mask": "n:125",
+        "canonical_id": 125
+      },
+      "query_fact_id": "feeding_001201_001906/F551/n:183/mixed/core/raw",
+      "measured_current_mm": 1136.2059326171875,
+      "predicted_mu_mm": 966.8060410238639,
+      "predicted_scale_mm": 935.2379983027213,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 29.0511416015625,
+        "target_last_measured_scale_mm": 22.189139611816405,
+        "predicted_scale_mm": 935.2379983027213,
+        "forecast_slope_mm_s": -15.574980592602504,
+        "bound_anchor_age_s": 11.63099980354309,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 169.39989159332356,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 201,
+          "native_id": 125,
+          "mask": "n:125",
+          "canonical_id": 125
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          125,
+          1,
+          125,
+          1,
+          191
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F192/n:125/mixed/core/raw",
+          "feeding_001201_001906/F193/n:125/mixed/core/raw",
+          "feeding_001201_001906/F194/n:125/mixed/core/raw",
+          "feeding_001201_001906/F195/n:125/mixed/core/raw",
+          "feeding_001201_001906/F196/n:125/mixed/core/raw",
+          "feeding_001201_001906/F197/n:125/mixed/core/raw",
+          "feeding_001201_001906/F198/n:125/mixed/core/raw",
+          "feeding_001201_001906/F199/n:125/mixed/core/raw",
+          "feeding_001201_001906/F200/n:125/mixed/core/raw",
+          "feeding_001201_001906/F201/n:125/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 125,
+          "fragment_start": 191,
+          "source_version": [
+            "feeding_001201_001906",
+            125,
+            1,
+            125,
+            1,
+            191
+          ],
+          "previous_actual_observation": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw",
+            "source_binding_sha256": "2779ebce03e5be9798b1a761916e2252a3931ab4cd39fcffff39097e128c769f",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 190,
+            "time": 1789706626.867,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 190,
+              "time": 1789706626.867,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 155,
+                "fraction_of_original_core": 0.9810126582278481,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              154
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 154,
+            "fragment_length": 3,
+            "fact_id": "feeding_001201_001906/F156/n:125/mixed/core/raw",
+            "source_binding_sha256": "1f3f5b1545ad53ee0e3f909bc82d2b5fde8a66d6ec7bed6449f697083a650cef",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 156,
+            "time": 1789706625.737,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 156,
+              "time": 1789706625.737,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 150,
+                "fraction_of_original_core": 0.9316770186335404,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F156/n:125/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 34,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 34,
+            "CURRENT_CONTACT_RISK": 34
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 34
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F157/n:125/mixed/core/raw",
+            "source_binding_sha256": "6030668ef63b88524d2a56e38253beb9eb1389b2be9ecde82c7ecdda71c5f70b",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 157,
+            "time": 1789706625.77,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 157,
+              "time": 1789706625.77,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 146,
+                "fraction_of_original_core": 0.9012345679012346,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F157/n:125/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 125,
+            "public": 125,
+            "source_version": [
+              "feeding_001201_001906",
+              125,
+              1,
+              125,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw",
+            "source_binding_sha256": "2779ebce03e5be9798b1a761916e2252a3931ab4cd39fcffff39097e128c769f",
+            "actual_bank_anchor": {
+              "frame": 156,
+              "native_id": 125,
+              "mask": "n:125",
+              "canonical_id": 125
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 190,
+            "time": 1789706626.867,
+            "actual_depth_extract": {
+              "native": 125,
+              "frame": 190,
+              "time": 1789706626.867,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 155,
+                "fraction_of_original_core": 0.9810126582278481,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F190/n:125/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 599,
+      "global_frame": 1799,
+      "phase": "D1_DELAYED",
+      "native_id": 187,
+      "canonical_id": 164,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 5,
+          "iou": 0.9571428571428572,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 18,
+          "iou": 0.9730290456431535,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 376,
+        "native_id": 164,
+        "mask": "n:164",
+        "canonical_id": 164
+      },
+      "extra_reference": {
+        "frame": 376,
+        "native_id": 164,
+        "mask": "n:164",
+        "canonical_id": 164
+      },
+      "query_fact_id": "feeding_001201_001906/F599/n:187/mixed/core/raw",
+      "measured_current_mm": 1152.73486328125,
+      "predicted_mu_mm": 1208.4464754464134,
+      "predicted_scale_mm": 1067.1530498596053,
+      "actual_numeric": {
+        "target_returned_sample_count": 6,
+        "current_measured_scale_mm": 15.0,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": 1067.1530498596053,
+        "forecast_slope_mm_s": 10.063047015774991,
+        "bound_anchor_age_s": 7.409999847412109,
+        "returned_history_time_span_s": 0.16700005531311035,
+        "forecast_fit_span_s": 0.16700005531311035,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 55.71161216516339,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 376,
+          "native_id": 164,
+          "mask": "n:164",
+          "canonical_id": 164
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          164,
+          1,
+          164,
+          1,
+          371
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F371/n:164/mixed/core/raw",
+          "feeding_001201_001906/F372/n:164/mixed/core/raw",
+          "feeding_001201_001906/F373/n:164/mixed/core/raw",
+          "feeding_001201_001906/F374/n:164/mixed/core/raw",
+          "feeding_001201_001906/F375/n:164/mixed/core/raw",
+          "feeding_001201_001906/F376/n:164/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 164,
+          "fragment_start": 371,
+          "source_version": [
+            "feeding_001201_001906",
+            164,
+            1,
+            164,
+            1,
+            371
+          ],
+          "previous_actual_observation": {
+            "native": 164,
+            "public": 164,
+            "source_version": [
+              "feeding_001201_001906",
+              164,
+              1,
+              164,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw",
+            "source_binding_sha256": "615170d43bc30d114093a467d5a0b915fcba0c83d9f71d0529b471086513f573",
+            "actual_bank_anchor": {
+              "frame": 369,
+              "native_id": 164,
+              "mask": "n:164",
+              "canonical_id": 164
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 370,
+            "time": 1789706632.848,
+            "actual_depth_extract": {
+              "native": 164,
+              "frame": 370,
+              "time": 1789706632.848,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.9875776397515528,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 164,
+            "public": 164,
+            "source_version": [
+              "feeding_001201_001906",
+              164,
+              1,
+              164,
+              1,
+              346
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 346,
+            "fragment_length": 24,
+            "fact_id": "feeding_001201_001906/F369/n:164/mixed/core/raw",
+            "source_binding_sha256": "8c50fc4b589459ff82b8ee03cbdc223bd469ddfa643c256951623ea0d8a51a2c",
+            "actual_bank_anchor": {
+              "frame": 369,
+              "native_id": 164,
+              "mask": "n:164",
+              "canonical_id": 164
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 369,
+            "time": 1789706632.815,
+            "actual_depth_extract": {
+              "native": 164,
+              "frame": 369,
+              "time": 1789706632.815,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 188,
+                "fraction_of_original_core": 0.9740932642487047,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F369/n:164/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 1,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 1,
+            "CURRENT_CONTACT_RISK": 1
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 1
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 164,
+            "public": 164,
+            "source_version": [
+              "feeding_001201_001906",
+              164,
+              1,
+              164,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw",
+            "source_binding_sha256": "615170d43bc30d114093a467d5a0b915fcba0c83d9f71d0529b471086513f573",
+            "actual_bank_anchor": {
+              "frame": 369,
+              "native_id": 164,
+              "mask": "n:164",
+              "canonical_id": 164
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 370,
+            "time": 1789706632.848,
+            "actual_depth_extract": {
+              "native": 164,
+              "frame": 370,
+              "time": 1789706632.848,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.9875776397515528,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 164,
+            "public": 164,
+            "source_version": [
+              "feeding_001201_001906",
+              164,
+              1,
+              164,
+              1,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 1,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw",
+            "source_binding_sha256": "615170d43bc30d114093a467d5a0b915fcba0c83d9f71d0529b471086513f573",
+            "actual_bank_anchor": {
+              "frame": 369,
+              "native_id": 164,
+              "mask": "n:164",
+              "canonical_id": 164
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 370,
+            "time": 1789706632.848,
+            "actual_depth_extract": {
+              "native": 164,
+              "frame": 370,
+              "time": 1789706632.848,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 159,
+                "fraction_of_original_core": 0.9875776397515528,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F370/n:164/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 688,
+      "global_frame": 1888,
+      "phase": "D1_DELAYED",
+      "native_id": 193,
+      "canonical_id": 158,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 8,
+          "iou": 0.9085487077534792,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 7,
+          "iou": 0.9402173913043478,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 600,
+        "native_id": 177,
+        "mask": "n:177",
+        "canonical_id": 158
+      },
+      "extra_reference": {
+        "frame": 600,
+        "native_id": 177,
+        "mask": "n:177",
+        "canonical_id": 158
+      },
+      "query_fact_id": "feeding_001201_001906/F688/n:193/mixed/core/raw",
+      "measured_current_mm": 1145.6722412109375,
+      "predicted_mu_mm": 1103.591434819196,
+      "predicted_scale_mm": 285.55469271770295,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 29.134031103515625,
+        "target_last_measured_scale_mm": 24.55339072265625,
+        "predicted_scale_mm": 285.55469271770295,
+        "forecast_slope_mm_s": -20.87721364861468,
+        "bound_anchor_age_s": 2.923999786376953,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 42.08080639174159,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 600,
+          "native_id": 177,
+          "mask": "n:177",
+          "canonical_id": 158
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          177,
+          1,
+          158,
+          2,
+          588
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F591/n:177/mixed/core/raw",
+          "feeding_001201_001906/F592/n:177/mixed/core/raw",
+          "feeding_001201_001906/F593/n:177/mixed/core/raw",
+          "feeding_001201_001906/F594/n:177/mixed/core/raw",
+          "feeding_001201_001906/F595/n:177/mixed/core/raw",
+          "feeding_001201_001906/F596/n:177/mixed/core/raw",
+          "feeding_001201_001906/F597/n:177/mixed/core/raw",
+          "feeding_001201_001906/F598/n:177/mixed/core/raw",
+          "feeding_001201_001906/F599/n:177/mixed/core/raw",
+          "feeding_001201_001906/F600/n:177/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 177,
+          "fragment_start": 588,
+          "source_version": [
+            "feeding_001201_001906",
+            177,
+            1,
+            158,
+            2,
+            588
+          ],
+          "previous_actual_observation": {
+            "native": 177,
+            "public": 158,
+            "source_version": [
+              "feeding_001201_001906",
+              177,
+              1,
+              158,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F587/n:177/mixed/core/raw",
+            "source_binding_sha256": "458b5e8350fa33e2333ef115d01cd3cc3abb5067cef7615814f6f6f2b1921d00",
+            "actual_bank_anchor": {
+              "frame": 584,
+              "native_id": 177,
+              "mask": "n:177",
+              "canonical_id": 158
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 587,
+            "time": 1789706640.06,
+            "actual_depth_extract": {
+              "native": 177,
+              "frame": 587,
+              "time": 1789706640.06,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 222,
+                "fraction_of_original_core": 0.940677966101695,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F587/n:177/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 177,
+            "public": 158,
+            "source_version": [
+              "feeding_001201_001906",
+              177,
+              1,
+              158,
+              2,
+              533
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 533,
+            "fragment_length": 30,
+            "fact_id": "feeding_001201_001906/F584/n:177/mixed/core/raw",
+            "source_binding_sha256": "6541aea348bdb3d6bb028340304ef6f502c3ad5058213103400095c0be0f7b9f",
+            "actual_bank_anchor": {
+              "frame": 584,
+              "native_id": 177,
+              "mask": "n:177",
+              "canonical_id": 158
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 584,
+            "time": 1789706639.96,
+            "actual_depth_extract": {
+              "native": 177,
+              "frame": 584,
+              "time": 1789706639.96,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 204,
+                "fraction_of_original_core": 0.9488372093023256,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F584/n:177/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 3,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 3,
+            "CURRENT_CONTACT_RISK": 3
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 3
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 177,
+            "public": 158,
+            "source_version": [
+              "feeding_001201_001906",
+              177,
+              1,
+              158,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F585/n:177/mixed/core/raw",
+            "source_binding_sha256": "5063c74eabce2fae950610f71dffca534be78ac8ab1f48662a0f365e658baf6b",
+            "actual_bank_anchor": {
+              "frame": 584,
+              "native_id": 177,
+              "mask": "n:177",
+              "canonical_id": 158
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 585,
+            "time": 1789706639.993,
+            "actual_depth_extract": {
+              "native": 177,
+              "frame": 585,
+              "time": 1789706639.993,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 204,
+                "fraction_of_original_core": 0.9400921658986175,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F585/n:177/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 177,
+            "public": 158,
+            "source_version": [
+              "feeding_001201_001906",
+              177,
+              1,
+              158,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F587/n:177/mixed/core/raw",
+            "source_binding_sha256": "458b5e8350fa33e2333ef115d01cd3cc3abb5067cef7615814f6f6f2b1921d00",
+            "actual_bank_anchor": {
+              "frame": 584,
+              "native_id": 177,
+              "mask": "n:177",
+              "canonical_id": 158
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 587,
+            "time": 1789706640.06,
+            "actual_depth_extract": {
+              "native": 177,
+              "frame": 587,
+              "time": 1789706640.06,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 222,
+                "fraction_of_original_core": 0.940677966101695,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F587/n:177/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "frame": 693,
+      "global_frame": 1893,
+      "phase": "D1_DELAYED",
+      "native_id": 197,
+      "canonical_id": 167,
+      "query_reason": "TARGET_FORECAST_TOO_BROAD",
+      "physical_original": "WRONG",
+      "physical_extra_bank": {
+        "relation": "DIFFERENT",
+        "physical": "WRONG",
+        "current": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 22,
+          "iou": 0.9717138103161398,
+          "second_iou": 0.0
+        },
+        "reference": {
+          "status": "UNIQUE_IOU_MATCH",
+          "gt_id": 4,
+          "iou": 0.922077922077922,
+          "second_iou": 0.0
+        }
+      },
+      "references_differ": false,
+      "original_reference": {
+        "frame": 657,
+        "native_id": 176,
+        "mask": "n:176",
+        "canonical_id": 167
+      },
+      "extra_reference": {
+        "frame": 657,
+        "native_id": 176,
+        "mask": "n:176",
+        "canonical_id": 167
+      },
+      "query_fact_id": "feeding_001201_001906/F693/n:197/mixed/core/raw",
+      "measured_current_mm": 1154.9607543945312,
+      "predicted_mu_mm": 1194.3813100303507,
+      "predicted_scale_mm": 94.05120126494688,
+      "actual_numeric": {
+        "target_returned_sample_count": 10,
+        "current_measured_scale_mm": 28.166685278320312,
+        "target_last_measured_scale_mm": 15.0,
+        "predicted_scale_mm": 94.05120126494688,
+        "forecast_slope_mm_s": 32.04669486053561,
+        "bound_anchor_age_s": 1.196000099182129,
+        "returned_history_time_span_s": 0.2990000247955322,
+        "forecast_fit_span_s": 0.2990000247955322,
+        "residual_mm": null,
+        "threshold_mm": null,
+        "residual_over_threshold": null
+      },
+      "runtime_residual_mm": null,
+      "runtime_threshold_mm": null,
+      "postseal_diagnostic_abs_residual_mm": 39.42055563581948,
+      "diagnostic_is_not_a_runtime_test_or_actual_veto": true,
+      "actual_target_fragment_break": {
+        "status": "BOUND_TO_ACTUAL_TARGET_FRAGMENT",
+        "actual_bank_anchor": {
+          "frame": 657,
+          "native_id": 176,
+          "mask": "n:176",
+          "canonical_id": 167
+        },
+        "target_version": [
+          "feeding_001201_001906",
+          176,
+          1,
+          167,
+          2,
+          639
+        ],
+        "target_sample_fact_ids": [
+          "feeding_001201_001906/F648/n:176/mixed/core/raw",
+          "feeding_001201_001906/F649/n:176/mixed/core/raw",
+          "feeding_001201_001906/F650/n:176/mixed/core/raw",
+          "feeding_001201_001906/F651/n:176/mixed/core/raw",
+          "feeding_001201_001906/F652/n:176/mixed/core/raw",
+          "feeding_001201_001906/F653/n:176/mixed/core/raw",
+          "feeding_001201_001906/F654/n:176/mixed/core/raw",
+          "feeding_001201_001906/F655/n:176/mixed/core/raw",
+          "feeding_001201_001906/F656/n:176/mixed/core/raw",
+          "feeding_001201_001906/F657/n:176/mixed/core/raw"
+        ],
+        "preceding_break": {
+          "native": 176,
+          "fragment_start": 639,
+          "source_version": [
+            "feeding_001201_001906",
+            176,
+            1,
+            167,
+            2,
+            639
+          ],
+          "previous_actual_observation": {
+            "native": 176,
+            "public": 167,
+            "source_version": [
+              "feeding_001201_001906",
+              176,
+              1,
+              167,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F638/n:176/mixed/core/raw",
+            "source_binding_sha256": "358a49e8bffc8055300b6f0ce687f7cb7a0d6f6a59413a13bf8d9c5becefbfc0",
+            "actual_bank_anchor": {
+              "frame": 600,
+              "native_id": 176,
+              "mask": "n:176",
+              "canonical_id": 167
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 638,
+            "time": 1789706641.754,
+            "actual_depth_extract": {
+              "native": 176,
+              "frame": 638,
+              "time": 1789706641.754,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 176,
+                "fraction_of_original_core": 0.8888888888888888,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F638/n:176/mixed/core/raw"
+            }
+          },
+          "consecutive_from_previous_actual": true,
+          "preceding_clean_observation": {
+            "native": 176,
+            "public": 167,
+            "source_version": [
+              "feeding_001201_001906",
+              176,
+              1,
+              167,
+              2,
+              566
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR",
+            "reasons": [],
+            "fragment_start": 566,
+            "fragment_length": 30,
+            "fact_id": "feeding_001201_001906/F600/n:176/mixed/core/raw",
+            "source_binding_sha256": "914677b4dd7deb2a53b589baee0ae4b620b790d83b0d8f205c76cf0cee14ccf2",
+            "actual_bank_anchor": {
+              "frame": 600,
+              "native_id": 176,
+              "mask": "n:176",
+              "canonical_id": 167
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 600,
+            "time": 1789706640.492,
+            "actual_depth_extract": {
+              "native": 176,
+              "frame": 600,
+              "time": 1789706640.492,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 214,
+                "fraction_of_original_core": 0.9727272727272728,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F600/n:176/mixed/core/raw"
+            }
+          },
+          "missing_native_frame_intervals": [],
+          "public_generation_epoch_change_from_previous_actual": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "public_generation_epoch_change_from_previous_clean": {
+            "public": false,
+            "source_generation": false,
+            "public_epoch": false
+          },
+          "preceding_risk_observations": 38,
+          "preceding_risk_reason_counts": {
+            "NO_ACTUAL_CURRENT_BANK_ANCHOR": 38,
+            "CURRENT_CONTACT_RISK": 38
+          },
+          "preceding_risk_depth_gate_reason_counts": {
+            "RELIABLE_INDEPENDENT_CORE": 38
+          },
+          "preceding_risk_undefined_depth_gate_reasons": 0,
+          "first_preceding_risk": {
+            "native": 176,
+            "public": 167,
+            "source_version": [
+              "feeding_001201_001906",
+              176,
+              1,
+              167,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F601/n:176/mixed/core/raw",
+            "source_binding_sha256": "d7897a136749b1c691f6d2d0712a0614c0d6d8048e6cfeb1b596287adc2ecf75",
+            "actual_bank_anchor": {
+              "frame": 600,
+              "native_id": 176,
+              "mask": "n:176",
+              "canonical_id": 167
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 601,
+            "time": 1789706640.525,
+            "actual_depth_extract": {
+              "native": 176,
+              "frame": 601,
+              "time": 1789706640.525,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 211,
+                "fraction_of_original_core": 0.9768518518518519,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F601/n:176/mixed/core/raw"
+            }
+          },
+          "last_preceding_risk": {
+            "native": 176,
+            "public": 167,
+            "source_version": [
+              "feeding_001201_001906",
+              176,
+              1,
+              167,
+              2,
+              null
+            ],
+            "source_generation": 1,
+            "public_epoch": 2,
+            "observation_class": "ANONYMOUS_RISK_OBSERVATION",
+            "reasons": [
+              "NO_ACTUAL_CURRENT_BANK_ANCHOR",
+              "CURRENT_CONTACT_RISK"
+            ],
+            "fragment_start": null,
+            "fragment_length": 0,
+            "fact_id": "feeding_001201_001906/F638/n:176/mixed/core/raw",
+            "source_binding_sha256": "358a49e8bffc8055300b6f0ce687f7cb7a0d6f6a59413a13bf8d9c5becefbfc0",
+            "actual_bank_anchor": {
+              "frame": 600,
+              "native_id": 176,
+              "mask": "n:176",
+              "canonical_id": 167
+            },
+            "registry_preserved_on_risk": true,
+            "frame": 638,
+            "time": 1789706641.754,
+            "actual_depth_extract": {
+              "native": 176,
+              "frame": 638,
+              "time": 1789706641.754,
+              "reason": "RELIABLE_INDEPENDENT_CORE",
+              "usable": true,
+              "quality": {
+                "core_status": "SINGLE_COMPATIBLE_LAYER",
+                "core_reason": "NO_SUBSTANTIAL_SEPARATED_SECOND_LAYER_DETECTED",
+                "core_eligible_single": true,
+                "core_quality_usable": true,
+                "exclusive_native_sources": true,
+                "unverified_source_n": 0,
+                "core_multilayer": false,
+                "whole_multilayer": false,
+                "independent_source_n": 176,
+                "fraction_of_original_core": 0.8888888888888888,
+                "physical_surface_identity": "UNKNOWN"
+              },
+              "fact_id": "feeding_001201_001906/F638/n:176/mixed/core/raw"
+            }
+          },
+          "pure_unreliable_current_depth_interruption": false,
+          "pure_flag_semantics": "Software observer reason only; UNRELIABLE_CURRENT_DEPTH also includes mixing, ownership, points, coverage and wide scale. It does not certify a pure sensor hole.",
+          "boundary": "Actual branch source observations before this exact fragment; no inferred identity or predicted repair gain."
+        }
+      }
+    }
+  ],
+  "all_wrong_actions_extra_bank_independently_wrong": true,
+  "postseal_diagnostic_differences_do_not_fill_missing_runtime_residual": true,
+  "source_analysis": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\ANALYSIS_POSTSEAL.json",
+    "bytes": 5576660,
+    "sha256": "705bfcf6323f806a1451819137bd9b964d447219dd1bf84d1f700abb38f02014"
+  },
+  "helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\interpretation.py",
+    "bytes": 7952,
+    "sha256": "15ebf2bb78d7a57c044a829178fd1a517a77857232290dd53278153cb418e923"
+  },
+  "model_http": 0,
+  "cost_usd": 0
+}

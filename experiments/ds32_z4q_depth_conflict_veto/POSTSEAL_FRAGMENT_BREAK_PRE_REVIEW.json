@@ -1,0 +1,68 @@
+{
+  "status": "PRE_REVIEW_READY_EXACT_FRAGMENT_PRECEDING_BREAK_RESULT_PENDING",
+  "reviewed_utc": "2026-10-05T13:29:50.724975+00:00",
+  "reviewed_artifacts": {
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 39428,
+      "sha256": "d414804dd550d9e2db0c54cd50373f0054788d6b71eb8a255f64597e75aedc4e"
+    },
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11852,
+      "sha256": "d81c9de757e1e25e66668f3397576a7d0a647e42a508345398dc2922d4add66f"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8677,
+      "sha256": "5d8d1685c6b384f97ef47d7cafda3234a0fda7b5d2d54bd4db105fde56467ff8"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1769,
+      "sha256": "f39f6c5377b28446e3aff2379d4108393abc4bf0621d2edaecf056f749c1df14"
+    }
+  },
+  "previous_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\POSTSEAL_QUERY_DIAGNOSTICS_PRE_REVIEW.json",
+    "bytes": 5256,
+    "sha256": "9d9ba62696f3cbe8f680692295b3526858a02ef25480ac28f84d69f9dc9ee950"
+  },
+  "source_checks": [
+    {
+      "topic": "Causal update order",
+      "conclusion": "Original accepted-action query target fragment is resolved before current q source_observations enter the diagnostic registries. Thus current identity commit cannot retroactively choose or modify pre-fragment evidence."
+    },
+    {
+      "topic": "Exact source binding",
+      "conclusion": "native plus real fragment_start indexes separate records. All returned samples must share native and the complete source version; registry version and final actual anchor must match. Missing or mismatched binding is UNAVAILABLE and does not imply no history."
+    },
+    {
+      "topic": "Fragment-specific risk",
+      "conclusion": "Per-source last observed/last clean, pending risk sequence and missing-frame intervals track only the actual branch fragment preceding this exact target history. Reasons are not chosen by GT outcome and unrelated global null counts do not establish a wrong-edge cause."
+    },
+    {
+      "topic": "Strict pure unreliable-depth interruption",
+      "conclusion": "True requires nonempty risk sequence, every risk reason list exactly UNRELIABLE_CURRENT_DEPTH, no missing native frames, equal public/generation/epoch for preceding clean and every risk and current fragment, and first risk immediately after preceding clean. All other risks or domain/version changes keep false."
+    },
+    {
+      "topic": "Meaning boundary",
+      "conclusion": "pure_unreliable_current_depth_interruption is a strict software provenance category, not proof of sensor holes, same physical identity, justified carry-forward, or a causal restoration benefit. UNRELIABLE_CURRENT_DEPTH can include mixture, insufficient independent source points, ownership/quality failure, invalid values or broad scale. Diagnose the actual referenced depth facts before calling it sensor missingness."
+    },
+    {
+      "topic": "Counterfactual boundary",
+      "conclusion": "An exact preceding risk break explains the input availability seen by this query; it does not show that removing that break would fix the original wrong association. Only an authorized later own-state counterfactual can establish that increment."
+    }
+  ],
+  "remaining_source_findings": [],
+  "runtime_code_files_verified": 71,
+  "runtime_code_mismatches": 0,
+  "GT_read": false,
+  "actual_metrics_read": false,
+  "actual_metrics_existed_at_review": false,
+  "helper_or_scoring_executed": false,
+  "frozen_science_modified": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "final_result_acceptance_not_granted": true
+}

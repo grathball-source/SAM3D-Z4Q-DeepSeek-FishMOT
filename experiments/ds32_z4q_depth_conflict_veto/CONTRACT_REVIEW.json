@@ -1,0 +1,137 @@
+{
+  "status": "REPAIR_REQUIRED_BEFORE_FORMAL_FREEZE",
+  "reviewed_utc": "2026-10-05T11:15:16.592354+00:00",
+  "scope": "READ_ONLY_CODE_AND_EXISTING_NO_GT_PREFIX_SUMMARY; NO_NEW_TRACKING_OR_GT",
+  "artifacts": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\common.py",
+      "bytes": 1762,
+      "sha256": "78365d71fda03917cef784ad9391db2328243d07cf9934e98c3755d8904ac127"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\CONFIG.json",
+      "bytes": 254,
+      "sha256": "9877d972d7f49d80aa0d1a5d0c88954718f628660b7d8a649ef09eb97e6ed85b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\PLAN.md",
+      "bytes": 4524,
+      "sha256": "fa5d78a7d8d75e4419c4a11390e3e6a4efebcd88f14d41f23d343e7b09353bcd"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\controller.py",
+      "bytes": 7017,
+      "sha256": "4012a399738ed93cc879f22d664db6b855f78730e2d29eacc328ed735f404281"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\runner.py",
+      "bytes": 9417,
+      "sha256": "8092cf2c46cc435e8860b8075c8c800148f6d69921369778842ca7ff4890bcf5"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\guard.py",
+      "bytes": 1179,
+      "sha256": "bc6d4cb8453a225e68ba85ef1f1efa2613b3c25ca8624b40c0d5591cd0ec3e9d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\orchestrate.py",
+      "bytes": 2354,
+      "sha256": "c5de2f6c7125314e2c619013a1d792ff38af8aa737e1790331069ddda526f0d5"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score.py",
+      "bytes": 8598,
+      "sha256": "2a451a017ca3d9cca8debd3d3081cb9903264521c77cc5c7d0340a73c23bc451"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\evidence.py",
+      "bytes": 15114,
+      "sha256": "7bc879b777dfe51c5254a69fab270e1fda46992f20360f9f14637f3fdefd8b27"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_d1.py",
+      "bytes": 9289,
+      "sha256": "5c19844537161c899de23809a8435ec75e78005378423092278f2d4fd3d5e5d0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_return.py",
+      "bytes": 4295,
+      "sha256": "2dabdc413b63e7580fafe99a1819edc17b5abc97edc59597b8f663e0f629a71a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z2.py",
+      "bytes": 12193,
+      "sha256": "0a81c0128e3cc58b6d70114d82581673f041e35885ded998e3cb704b1a700237"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z3.py",
+      "bytes": 6539,
+      "sha256": "24e85fc06432819e92f6c0dddbf547d567cf09f9e971cb5401e7fe99ae8eea03"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z4.py",
+      "bytes": 6652,
+      "sha256": "2c4766b3afaa504cc3cd8d5beb2a14ac25a19f92cd79a3d504eec08903ddc4bf"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CF_SELECTION_PIN",
+      "severity": "required",
+      "file": "score.py",
+      "issue": "verify_all() does not verify_item(seal['selection']); main later re-reads COUNTERFACTUAL_SELECTION.json to choose CF segment.",
+      "repair": "Verify actual selection bytes before any reference read; assert CF segment/allow_edge match its pinned selection."
+    },
+    {
+      "id": "CF_CODE_INPUT_FREEZE",
+      "severity": "required",
+      "file": "runner.py",
+      "issue": "Only formal RUN verifies FREEZE code pins; counterfactual runners skip FREEZE entirely and counterfactual seal has no formal freeze reference.",
+      "repair": "Verify frozen science and source pins at CF START, bind formal freeze and selection in CF seal, and verify these before reference reads."
+    },
+    {
+      "id": "COMMIT_COUNT_NORMALIZATION",
+      "severity": "nonblocking",
+      "file": "runner.py",
+      "issue": "Identity tuple comparison avoids false differences from depth_veto formatting; phase and old-anchor changes are not represented by selected_commit_changes.",
+      "repair": "Either compare committed_edges() normalized write records or document counter as changed source/target commit-pair lists only; report phase/reference separately."
+    },
+    {
+      "id": "UNSELECTED_MATRIX_EDGE",
+      "severity": "interpretation",
+      "file": "runner.py",
+      "issue": "D1 reason=None admits cost>=1 edges although dummy will usually beat them. First legal deletion need not prevent an original selected commit.",
+      "repair": "Keep matrix deletion and actual selection/commit/publication changes distinct; zero-effect ALLOW/VETO remains valid."
+    },
+    {
+      "id": "STATE_SERIALIZATION_COST",
+      "severity": "measurement",
+      "file": "evidence.py",
+      "issue": "Full lossless sample state is serialized several times per frame; no scope change proposed from static concern alone.",
+      "observed_prefix_seconds": 51.1974567999132,
+      "observed_prefix_frames": 200,
+      "observed_prefix_objects": 5332,
+      "estimate": "~43 min for 20,098 frames at this Feeding density with two workers; longer 12-second window may differ, FishSA fewer masks may reduce cost."
+    }
+  ],
+  "passed_contracts": [
+    "Exact namespace+frame+native+canonical+mask target lookup also checked against last actual bank anchor",
+    "Every included target sample has same source appearance generation/public epoch/risk fragment and consecutive frame/time",
+    "Current q is not in pre-history; source extract frame/time/native asserted before query or observe",
+    "Original physical engine fields preserved and compared to same-own-prior canonical preview on null",
+    "Query returns detached copies and does not mutate state; clone-owned containers isolated",
+    "Only actual original-eligible edge can be deleted; unknown evidence leaves original cost/margin/dummy unchanged",
+    "Raw conflict and redundant conflict distinct from matrix deletion",
+    "Formal prediction/transaction/depth-extract row hashes tied to publication ledger",
+    "One-to-one public output and all original masks retained; same-source original outputs checked each frame",
+    "Official scoring code imported without opening references; reference reads occur only after main verify_all()"
+  ],
+  "limits": [
+    "Forecast factor 3 and scale cap are engineering proxies, not physical confidence",
+    "Source quality/single-layer/core certification does not prove fish-surface or physical identity",
+    "Independent review did not run tracking, read GT or assess method performance",
+    "Freeze.py and formal FREEZE artifacts not present at review time; final freeze/source pin review pending"
+  ],
+  "model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PRE_REVIEW_R1_RESOLVED_PENDING_DELIVERY_GUARDS_AND_ACTUAL_RESULTS",
+  "reviewed_utc": "2026-10-05T12:06:34.752290+00:00",
+  "previous_review": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\POSTSEAL_DELIVERY_SOURCE_REVIEW.json",
+    "bytes": 6475,
+    "sha256": "4b500ab119bbb2198d5f960d7f55840276e07e85f2500f30295be3a744e5b405"
+  },
+  "reviewed_artifacts": {
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11144,
+      "sha256": "1ac53ea3c8688d2c7c74d367863c7c82266045ddc7309f6e2a5cb2cc02177dd7"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8677,
+      "sha256": "5d8d1685c6b384f97ef47d7cafda3234a0fda7b5d2d54bd4db105fde56467ff8"
+    },
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 27122,
+      "sha256": "1ae2a2870c98879541aae66eb86272ac96235d96e172c4f93992e2c3f9dd49ff"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1165,
+      "sha256": "9b8c35afcafb704cfbec86575bd3fe0de51180590fe28a7dabc2e88f14f185a7"
+    }
+  },
+  "resolved_findings": [
+    "R1"
+  ],
+  "resolution": "Strong-reference zero differences get a no-gain status. Gain requires at least one positive strong-reference metric and no meaningful negative strong-reference metric.",
+  "pending_findings": [
+    {
+      "id": "R2",
+      "severity": "P3",
+      "file": "analysis_postseal.py",
+      "line": 201,
+      "status": "WORDING_BOUNDARY",
+      "finding": "No selected removable legal edge is reported NO_ACTUAL_CONFLICT_NO_COUNTERFACTUAL, although redundant conflicts on originally rejected edges could exist.",
+      "repair": "Use NO_ACTUAL_REMOVABLE_LEGAL_CONFLICT_NO_COUNTERFACTUAL or equivalent precise wording. Raw, redundant and actual deletions are already separated."
+    },
+    {
+      "id": "R3",
+      "severity": "P2",
+      "file": "delivery.py",
+      "line": 103,
+      "status": "DELIVERY_ACCEPTANCE_REQUIRED_AFTER_ACTUAL_RESULTS",
+      "finding": "Remote mode verifies stored manifest pins against fetched origin/main blobs and adds receipt pins; final mode also checks remote verification receipt. A local artifact changed after manifest creation is not itself reread before remote verification.",
+      "repair": "At index, remote and final verification, check actual local bytes against every existing manifest pin and ensure PUBLIC_ARTIFACT_MANIFEST stays unchanged across the science and receipt commits. This is delivery validation only; preserve frozen sources/results/seals."
+    }
+  ],
+  "actual_metrics_existed_at_review": false,
+  "actual_metrics_read": false,
+  "GT_read": false,
+  "new_tracking": false,
+  "frozen_science_modified": false,
+  "final_acceptance_not_granted": true
+}

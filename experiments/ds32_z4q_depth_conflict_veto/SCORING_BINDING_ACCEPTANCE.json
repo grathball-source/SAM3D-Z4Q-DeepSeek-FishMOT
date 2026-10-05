@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PRESTART_IMPORT_PINS_AND_FROZEN_BASE_ADAPTER",
+  "prestart_import_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\SCORE_IMPORT_ACCEPTANCE.json",
+    "bytes": 841,
+    "sha256": "10ab36c3ba7db6df0011c53a1c2a4a9674f61f8e4724ff22724757316fd87b2c"
+  },
+  "adapter_at_frozen_git_BASE_sha256": "e9fa6547e815e00be9b993904b3ccd6aa8182cb2cc97b23fb80c67009e7f0fa9",
+  "dynamic_clear_math": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\postseal.py",
+    "bytes": 8787,
+    "sha256": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1"
+  },
+  "dynamic_clear_math_at_frozen_git_BASE_sha256": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1",
+  "dynamic_clear_import_contract": "Pinned DS14 evaluate.py AST-extracts only clear_step from DS1/postseal.py; source bytes verified against the already frozen Git BASE before import.",
+  "frozen_score": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score.py",
+    "bytes": 9130,
+    "sha256": "a7ddeb7ec494f0e68d1fe45936be004d0686c491d2e01668d4869a921e92b9fe"
+  },
+  "wrapper_changes_no_math_reference_or_prediction": true,
+  "runtime_dynamic_adapter_pin_gap": "Adapter and AST-extracted clear_step source were not auto-enumerated in runtime.code; independent guard verifies them against the already frozen Git BASE. Adapter also had a preSTART import pin.",
+  "verified_before_GT_read": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

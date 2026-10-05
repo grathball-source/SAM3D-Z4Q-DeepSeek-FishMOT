@@ -1,0 +1,52 @@
+{
+  "status": "MINIMAL_CANONICAL_LIFECYCLE_COPIES_WITH_ORIGINAL_LEGALITY_AWARE_EDGE_HOOKS",
+  "no_threshold_cost_dummy_motion_or_publication_change": true,
+  "old_sources_readonly": true,
+  "records": [
+    {
+      "original_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py",
+      "original_bytes": 9036,
+      "original_sha256": "ec1c50d2b948968ebbe77913ddcfe323bed1e84b346ca49fdd44e4dd70a11562",
+      "adapted_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_d1.py",
+      "adapted_bytes": 9289,
+      "adapted_sha256": "5c19844537161c899de23809a8435ec75e78005378423092278f2d4fd3d5e5d0",
+      "unified_diff": "--- E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py\n+++ E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_d1.py\n@@ -6,7 +6,7 @@\n from copy import deepcopy\n import numpy as np\n from scipy.optimize import linear_sum_assignment\n-OLD=Path(__file__).resolve().parent.parent/'sam3_depth_identity_balance_20260917'\n+OLD=Path(__file__).resolve().parents[3]/'online/closed_loop_2888/z4q_source/source/sam3_depth_identity_balance_20260917'\n sys.path.insert(0,str(OLD))\n from controller import DepthIdentityBalance,center\n \n@@ -98,7 +98,13 @@\n       cost=residual/tolerance+.15*t['motion_cost']\n      else:\n       cost=t['motion_cost']/.8\n-     t.update(cost=cost,rejection=reason);edges.append(t)\n+     t.update(cost=cost,rejection=reason)\n+     exclusion=self.edge_veto(frame,now,o,k,h.get('anchor'),'D1_DELAYED',t,reason is None)\n+     t['depth_veto']=exclusion\n+     if exclusion['veto']:\n+      assert reason is None\n+      reason='ds32_depth_conflict';t['rejection']=reason\n+     edges.append(t)\n      if reason:\n       self.counts['reject_'+reason]+=1\n       if self.pending.get(o['id'],{}).get('target')==k:new_pending.pop(o['id'],None)\n@@ -153,3 +159,6 @@\n   trace=dict(events=events,edges=edges,eligible_old=len(old),eligible_new=len(new),\n              aliases={str(n):dict(target=a['target'],anchor=a['anchor'],commit_frame=a['commit_frame']) for n,a in self.alias.items() if n in native})\n   return ids,trace\n+\n+ def edge_veto(self,frame,now,observation,public,anchor,origin_rule,original_terms,original_eligible):\n+  return dict(veto=False)\n"
+    },
+    {
+      "original_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py",
+      "original_bytes": 11765,
+      "original_sha256": "fd2e5aa648281a590c00737d90dd8099af09c8fbdd133c768a5104b965b5afb4",
+      "adapted_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z2.py",
+      "adapted_bytes": 12193,
+      "adapted_sha256": "0a81c0128e3cc58b6d70114d82581673f041e35885ded998e3cb704b1a700237",
+      "unified_diff": "--- E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py\n+++ E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z2.py\n@@ -5,7 +5,7 @@\n import numpy as np\n from scipy.optimize import linear_sum_assignment\n sys.path.insert(0,str(Path(__file__).resolve().parent.parent/'sam3_depth_failure_repair_20260917'))\n-from repair_controller_r3 import DepthRepair\n+from ds32_d1 import DepthRepair\n \n class BirthRefine(DepthRepair):\n  def __init__(self,config,enabled=True):\n@@ -142,7 +142,15 @@\n     if conflict:\n      checks.append(dict(native_id=o['id'],rejection='existing_alias_conflict_defer_to_D1',failures=['existing_alias_conflict_defer_to_D1'],evidence_max_frame=frame,old_eligibility=eligibility));continue\n     for j,k in enumerate(old):\n-     t=self.edge(frame,now,o,k,profiles,occupied,current,{x['id'] for x in born},old);t['old_eligibility']=eligibility;checks.append(t)\n+     t=self.edge(frame,now,o,k,profiles,occupied,current,{x['id'] for x in born},old);t['old_eligibility']=eligibility\n+     original_eligible=not t['failures'] and t['cost'] is not None\n+     exclusion=self.edge_veto(frame,now,o,k,self.bank[k].get('anchor'),'BIRTH_REFINE',t,original_eligible)\n+     t['depth_veto']=exclusion\n+     if exclusion['veto']:\n+      assert original_eligible\n+      t['failures'].append('ds32_depth_conflict');t['rejection']='ds32_depth_conflict'\n+      if self.pending.get(o['id'],{}).get('target')==k:self.pending.pop(o['id'],None)\n+     checks.append(t)\n      if not t['failures'] and t['cost'] is not None:matrix[i,j]=t['cost'];terms[i,j]=t\n     if not old:checks.append(dict(native_id=o['id'],rejection='no_eligible_unoccupied_history',failures=['no_eligible_unoccupied_history'],evidence_max_frame=frame,old_eligibility=eligibility))\n    rr,cc=linear_sum_assignment(matrix);total=float(matrix[rr,cc].sum());accepted=[]\n"
+    },
+    {
+      "original_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py",
+      "original_bytes": 6545,
+      "original_sha256": "f199d1d78b653bfdbd46b6575da4c6d77e79f1b8fc89463d929843e4ba79950b",
+      "adapted_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z3.py",
+      "adapted_bytes": 6539,
+      "adapted_sha256": "24e85fc06432819e92f6c0dddbf547d567cf09f9e971cb5401e7fe99ae8eea03",
+      "unified_diff": "--- E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py\n+++ E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z3.py\n@@ -3,7 +3,7 @@\n import copy\n import sys\n sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'sam3_depth_birth_refine_20260918'))\n-from controller_z2 import BirthRefine, DepthRepair\n+from ds32_z2 import BirthRefine, DepthRepair\n \n \n class NativePrior(BirthRefine):\n"
+    },
+    {
+      "original_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py",
+      "original_bytes": 6658,
+      "original_sha256": "73ab21fdb0cad0986c967cfc5d56f5174451ee90111c27324afee4b9fae976fc",
+      "adapted_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z4.py",
+      "adapted_bytes": 6652,
+      "adapted_sha256": "2c4766b3afaa504cc3cd8d5beb2a14ac25a19f92cd79a3d504eec08903ddc4bf",
+      "unified_diff": "--- E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py\n+++ E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_z4.py\n@@ -8,7 +8,7 @@\n import sys\n import numpy as np\n sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'sam3_depth_birth_native_prior_20260918'))\n-from controller_z3 import NativePrior, DepthRepair\n+from ds32_z3 import NativePrior, DepthRepair\n \n \n class QualityBirth(NativePrior):\n"
+    },
+    {
+      "original_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py",
+      "original_bytes": 4301,
+      "original_sha256": "233f180ff8a6a14f43a0e133606281644f0257b4a4d303794ac007df84d563b6",
+      "adapted_path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_return.py",
+      "adapted_bytes": 4295,
+      "adapted_sha256": "2dabdc413b63e7580fafe99a1819edc17b5abc97edc59597b8f663e0f629a71a",
+      "unified_diff": "--- E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py\n+++ E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\source\\ds32_return.py\n@@ -7,7 +7,7 @@\n import copy\n import sys\n sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'sam3_depth_birth_quality_20260918'))\n-from controller_z4 import QualityBirth\n+from ds32_z4 import QualityBirth\n \n \n class StableReturn(QualityBirth):\n"
+    }
+  ]
+}

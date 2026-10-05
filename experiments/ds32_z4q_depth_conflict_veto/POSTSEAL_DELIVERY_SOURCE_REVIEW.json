@@ -1,0 +1,118 @@
+{
+  "status": "PRE_REVIEW_REPAIRS_REQUIRED_NO_RESULT_ACCEPTANCE",
+  "reviewed_utc": "2026-10-05T12:04:45.231672+00:00",
+  "reviewed_artifacts": {
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11144,
+      "sha256": "1ac53ea3c8688d2c7c74d367863c7c82266045ddc7309f6e2a5cb2cc02177dd7"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8288,
+      "sha256": "acfa2b891f2d819ed910412191d6201929fbb2a1f00134c3426d9b65697ac949"
+    },
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 26742,
+      "sha256": "7bae4c4a08c822abfa0ff8b542f1b264699b84e9f1294a300fb00d4756e68deb"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1165,
+      "sha256": "9b8c35afcafb704cfbec86575bd3fe0de51180590fe28a7dabc2e88f14f185a7"
+    }
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "severity": "P1",
+      "file": "report.py",
+      "line": 30,
+      "status": "REPAIR_REQUIRED_IN_POSTSEAL_HELPER",
+      "finding": "Gain predicate accepts equality for all nine strong-reference metric deltas. With changed publications and all strong-reference deltas zero, this reports SOURCE_DEPENDENT_GAIN without measured positive gain.",
+      "repair": "Require at least one strictly positive strong-reference IDF1/HOTA/AssA delta before selecting a gain status. Keep all-zero strong-reference case distinct from weak-reference-only change; do not change prediction or scoring."
+    },
+    {
+      "id": "R2",
+      "severity": "P3",
+      "file": "analysis_postseal.py",
+      "line": 201,
+      "status": "WORDING_BOUNDARY",
+      "finding": "No selected removable legal edge is reported NO_ACTUAL_CONFLICT_NO_COUNTERFACTUAL, although redundant conflicts on originally rejected edges could exist.",
+      "repair": "Use NO_ACTUAL_REMOVABLE_LEGAL_CONFLICT_NO_COUNTERFACTUAL or equivalent precise wording. Raw, redundant and actual deletions are already separated."
+    },
+    {
+      "id": "R3",
+      "severity": "P2",
+      "file": "delivery.py",
+      "line": 103,
+      "status": "DELIVERY_ACCEPTANCE_REQUIRED_AFTER_ACTUAL_RESULTS",
+      "finding": "Remote mode verifies stored manifest pins against fetched origin/main blobs and adds receipt pins; final mode also checks remote verification receipt. A local artifact changed after manifest creation is not itself reread before remote verification.",
+      "repair": "At index, remote and final verification, check actual local bytes against every existing manifest pin and ensure PUBLIC_ARTIFACT_MANIFEST stays unchanged across the science and receipt commits. This is delivery validation only; preserve frozen sources/results/seals."
+    }
+  ],
+  "source_checks": [
+    {
+      "topic": "27 full metric rows and 10 delta rows",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_METRICS",
+      "evidence": "8 source segments plus Feeding pooled, all 3 arms; 5 headline domains x2 baselines. Report reparses six-decimal values and checks against actual metrics."
+    },
+    {
+      "topic": "paired frozen Z4Q and same-source native",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_METRICS",
+      "evidence": "Every source includes SAM3_NATIVE/Z4Q_FROZEN/Z4Q_DEPTH_VETO; score checks native and original Z4Q against archived same-source metrics."
+    },
+    {
+      "topic": "same prior commit counter semantics",
+      "result": "SOURCE_VALIDATED",
+      "evidence": "Postseal accepted decision transform preserves phase/native/public/reference and adds constant accepted=True; equivalent to frozen committed_edges, excluding attached query diagnostics."
+    },
+    {
+      "topic": "physical reference separation and original harmful actions",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_AUDITS",
+      "evidence": "VETO_AUDIT judges actual evidence bank anchor; original scoring anchor separately stored. All original accepted correct/wrong/unscorable actions have followup query/null/veto/accepted outcome and prior-state link scope."
+    },
+    {
+      "topic": "single edge true-state counterfactual",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_COUNTERFACTUAL",
+      "evidence": "ALLOW exactly one selected legal conflict; pre-q full original/evidence/source/depth hashes equal; VETO reproduces formal complete variants/state; after q own state evolves independently."
+    },
+    {
+      "topic": "seal/no-GT causal boundary",
+      "result": "SOURCE_VALIDATED_PENDING_ALL_SEALS",
+      "evidence": "score.verify_all precedes reading scored matches and metrics. Postseal analysis reads existing scorer match records, never direct GT; regression frames are diagnostic only."
+    },
+    {
+      "topic": "dynamic adapter and preserved scoring math",
+      "result": "SOURCE_VALIDATED",
+      "evidence": "score_checked checks preSTART scorer/adapter/math pin, actual adapter SHA against frozen Git BASE, all runtime hashes, then import frozen score/main."
+    },
+    {
+      "topic": "weak truth and source version boundaries",
+      "result": "SOURCE_VALIDATED",
+      "evidence": "report and analysis mark exposed references, L3/LW weak unreviewed references, source continuity cannot certify absent producer resets, depth scales are uncalibrated proxies."
+    },
+    {
+      "topic": "actual origin/main and public blobs",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_REMOTE",
+      "evidence": "ls-remote actual main equals local HEAD; fetch origin/main confirms ref; every manifest blob SHA and bytes checked. Final mode includes committed REMOTE_VERIFICATION. Actual push remains parent execution."
+    },
+    {
+      "topic": "non-destructive delivery",
+      "result": "SOURCE_VALIDATED_PENDING_REAL_DELIVERY",
+      "evidence": "HANDOFF old bytes preserved; private outputs excluded and checked ignored; old seals runtime checked; no force-push operation in delivery helper."
+    }
+  ],
+  "expected_metric_rows": 27,
+  "expected_delta_rows": 10,
+  "actual_metrics_existed_at_review": false,
+  "actual_metrics_read": false,
+  "GT_read": false,
+  "new_tracking": false,
+  "new_tests": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "frozen_science_modified": false,
+  "final_acceptance_not_granted": true
+}

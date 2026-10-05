@@ -1,0 +1,64 @@
+{
+  "status": "PRE_REVIEW_READY_FINAL_DETACHED_DEPTH_GATE_SUBTYPE_RESULT_PENDING",
+  "reviewed_utc": "2026-10-05T13:34:18.922155+00:00",
+  "reviewed_artifacts": {
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 40429,
+      "sha256": "f0b1af894f19e8449625112450cfa00a9bba26941fa7f6dc828c5412a0a529d9"
+    },
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11852,
+      "sha256": "d81c9de757e1e25e66668f3397576a7d0a647e42a508345398dc2922d4add66f"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8677,
+      "sha256": "5d8d1685c6b384f97ef47d7cafda3234a0fda7b5d2d54bd4db105fde56467ff8"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1769,
+      "sha256": "f39f6c5377b28446e3aff2379d4108393abc4bf0621d2edaecf056f749c1df14"
+    }
+  },
+  "previous_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\POSTSEAL_FRAGMENT_BREAK_PRE_REVIEW.json",
+    "bytes": 3995,
+    "sha256": "984c0eca3192f5e89d268b6b3d1d9e7355df44ba7b11f46f2ed3f03ecd7ad5c6"
+  },
+  "source_checks": [
+    {
+      "topic": "Actual depth source",
+      "conclusion": "Each current classification fetches its own native key from the current DEPTH_EXTRACTS row. read_frames binds depth frame and actual row SHA to the sealed publication ledger; frozen runner generated native/frame/time facts from validated DS18 same-frame packets."
+    },
+    {
+      "topic": "Detached exact-fragment records",
+      "conclusion": "Selected native/frame/time/reason/usable/quality/fact_id fields are deep-copied into actual previous, clean and first/last risk records. They remain attached to the exact target fragment binding previously reviewed, without global or different-source substitution."
+    },
+    {
+      "topic": "Risk denominators",
+      "conclusion": "Every actual risk observation contributes one true extract reason when defined, otherwise the undefined-depth-gate counter. These counts concern this preceding risk sequence only; none are inferred from metric outcomes."
+    },
+    {
+      "topic": "Software category boundary",
+      "conclusion": "Pure observer UNRELIABLE_CURRENT_DEPTH remains a software reason category. Detailed actual quality and source reason may show mixed layer, source ownership/points, coverage, wide scale or invalid values; the code explicitly disclaims a pure sensor hole."
+    },
+    {
+      "topic": "No science/result changes",
+      "conclusion": "Previously reviewed strict version/public/generation/missing-frame checks, causal q update order, all-original switch coverage, descriptive numeric diagnostics and actual bank/reference scoring boundaries remain intact. Only postseal diagnostic representation changed."
+    }
+  ],
+  "remaining_source_findings": [],
+  "runtime_code_files_verified": 71,
+  "runtime_code_mismatches": 0,
+  "GT_read": false,
+  "actual_metrics_read": false,
+  "actual_metrics_existed_at_review": false,
+  "helper_or_scoring_executed": false,
+  "frozen_science_modified": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "final_result_acceptance_not_granted": true
+}

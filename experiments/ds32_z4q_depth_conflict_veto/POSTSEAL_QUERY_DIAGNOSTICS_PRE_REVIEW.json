@@ -1,0 +1,103 @@
+{
+  "status": "PRE_REVIEW_READY_QUERY_NUMERIC_DIAGNOSTICS_RESULT_PENDING",
+  "reviewed_utc": "2026-10-05T13:00:55.572349+00:00",
+  "reviewed_artifacts": {
+    "analysis_postseal.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\analysis_postseal.py",
+      "bytes": 35311,
+      "sha256": "5ab816b18c7134db34a9380a0d632b259a2b4a2bba5d3c4878f51316d9fea889"
+    },
+    "report.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\report.py",
+      "bytes": 11852,
+      "sha256": "d81c9de757e1e25e66668f3397576a7d0a647e42a508345398dc2922d4add66f"
+    },
+    "delivery.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\delivery.py",
+      "bytes": 8677,
+      "sha256": "5d8d1685c6b384f97ef47d7cafda3234a0fda7b5d2d54bd4db105fde56467ff8"
+    },
+    "score_checked.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\score_checked.py",
+      "bytes": 1769,
+      "sha256": "f39f6c5377b28446e3aff2379d4108393abc4bf0621d2edaecf056f749c1df14"
+    }
+  },
+  "previous_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\POSTSEAL_SWITCH_COVERAGE_AND_MATH_GUARD_PRE_REVIEW.json",
+    "bytes": 3830,
+    "sha256": "6bfa1d4b0ce3bb40c1cd96bab5e8deee11b29b444430dc6cbee1c74d1e45e7c4"
+  },
+  "queried_math_and_evidence_source_pins": {
+    "ds31_persistent_identity_depth/depth.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\depth.py",
+      "bytes": 8142,
+      "sha256": "17f7dd00621b8a983d65d57149977bed791b2ad0d7cda5fea7dfab6c4ef118d4"
+    },
+    "ds1_depth_only/depth_state.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "bytes": 6837,
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453"
+    },
+    "ds32_z4q_depth_conflict_veto/evidence.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds32_z4q_depth_conflict_veto\\evidence.py",
+      "bytes": 15639,
+      "sha256": "a4107de7a1200a33eedbbb660022c33571fe15be2bd9c8bd0f1e8256fb66ec5d"
+    }
+  },
+  "query_numeric_field_count": 11,
+  "query_numeric_fields": [
+    "target_returned_sample_count",
+    "current_measured_scale_mm",
+    "target_last_measured_scale_mm",
+    "predicted_scale_mm",
+    "forecast_slope_mm_s",
+    "bound_anchor_age_s",
+    "returned_history_time_span_s",
+    "forecast_fit_span_s",
+    "residual_mm",
+    "threshold_mm",
+    "residual_over_threshold"
+  ],
+  "source_checks": [
+    {
+      "topic": "Returned samples",
+      "conclusion": "target_returned_sample_count counts only exact anchor-bound samples returned by the current query. Empty returns do not imply no global history. Actual frozen query supplies at most last10 samples; it never concatenates risk fragments."
+    },
+    {
+      "topic": "Actual forecast span and horizon",
+      "conclusion": "Age is derived only when returned last sample exactly matches the queried anchor. Fit span is defined only for actual WLS_LINEAR_TIME and uses the same returned window supplied to the unmodified last10 DS1 fit; no synthetic time or current-q sample enters pre."
+    },
+    {
+      "topic": "Finite, usable and eligible",
+      "conclusion": "Each field splits finite/missing/nonfinite denominators; usable flags are separately counted. A finite current scale may still fail whole/core mixture or source quality. Forecast.usable is the raw prediction flag, and does not imply passing DS32 forecast<=60 or full query veto eligibility."
+    },
+    {
+      "topic": "Residuals",
+      "conclusion": "Residual and threshold come only from values actually computed in frozen query. Early exits keep them missing, and ratio exists only when both are defined and threshold>0; no inferred residual or selected layer is substituted."
+    },
+    {
+      "topic": "Quantiles",
+      "conclusion": "Min/q25/median/q75/max summarize defined finite query-weighted values; all queries and original-eligible queries use separate phase/reason denominators. They are descriptive distributions, not confidence bounds, physical depth accuracy or unique-event samples."
+    },
+    {
+      "topic": "Accepted actions",
+      "conclusion": "Wrong/correct/unscorable original accepted-action followup receives the same query numeric fields when a real corresponding query exists; absent queries remain None. No pooled unrelated candidate statistic substitutes for these actions."
+    },
+    {
+      "topic": "Publication and scoring",
+      "conclusion": "Helper remains postseal only. Existing single-edge CF, actual bank versus original reference, full switch coverage and weak-reference boundaries are preserved; no prediction/scoring rule is edited."
+    }
+  ],
+  "remaining_source_findings": [],
+  "runtime_code_files_verified": 71,
+  "runtime_code_mismatches": 0,
+  "helper_or_scoring_executed": false,
+  "GT_read": false,
+  "actual_metrics_read": false,
+  "actual_metrics_existed_at_review": false,
+  "frozen_science_modified": false,
+  "model_http": 0,
+  "cost_usd": 0,
+  "final_result_acceptance_not_granted": true
+}

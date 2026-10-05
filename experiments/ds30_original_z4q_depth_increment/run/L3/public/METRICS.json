@@ -1,0 +1,74 @@
+{
+  "segment": "L3",
+  "frames": 3710,
+  "metrics": {
+    "SAM3_NATIVE": {
+      "IDF1": 72.42678743430724,
+      "HOTA": 75.36260748728535,
+      "AssA": 94.25965452544987,
+      "DetA": 60.254014677607174,
+      "IDSW": 1,
+      "FP": 14677,
+      "FN": 0,
+      "GT": 22250,
+      "predictions": 36927
+    },
+    "Z4Q_FROZEN": {
+      "IDF1": 74.74525575814927,
+      "HOTA": 77.17155756317197,
+      "AssA": 98.83904547424706,
+      "DetA": 60.254014677607174,
+      "IDSW": 2,
+      "FP": 14677,
+      "FN": 0,
+      "GT": 22250,
+      "predictions": 36927
+    },
+    "DEPTH_INCREMENT": {
+      "IDF1": 74.74525575814927,
+      "HOTA": 77.17155756317197,
+      "AssA": 98.83904547424706,
+      "DetA": 60.254014677607174,
+      "IDSW": 2,
+      "FP": 14677,
+      "FN": 0,
+      "GT": 22250,
+      "predictions": 36927
+    }
+  },
+  "changed_frames": {
+    "DEPTH_INCREMENT": []
+  },
+  "deltas": {
+    "DEPTH_INCREMENT": {
+      "SAM3_NATIVE": {
+        "IDF1": 2.3184683238420263,
+        "HOTA": 1.808950075886628,
+        "AssA": 4.579390948797183,
+        "DetA": 0.0,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "depth_increment_over_original_z4q": {
+    "IDF1": 0.0,
+    "HOTA": 0.0,
+    "AssA": 0.0,
+    "DetA": 0.0,
+    "IDSW": 0,
+    "FP": 0,
+    "FN": 0
+  },
+  "reference_status": "WEAK_UNREVIEWED_PREDICTION_DERIVED_PREANNOTATION"
+}

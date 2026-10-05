@@ -1,0 +1,231 @@
+{
+  "status": "PASS_ACTUAL_SHARED_SOURCE_REMEASUREMENT_CONTRACT",
+  "records": [
+    {
+      "segment": "feeding_000351_000555",
+      "frame": 48,
+      "global_frame": 398,
+      "current_sources": [
+        50,
+        30
+      ],
+      "old_fact_only_source_fixture": true,
+      "not_current_trial_state_or_choice": true,
+      "source_check": {
+        "shared_unique_sources": 1,
+        "shared_source_binding": {
+          "dtype": "<i4",
+          "shape": [
+            1
+          ],
+          "sha256": "099adadefefafa60b927af54148a72b77094a56b961fd0e6ecc9cc4f876a17c5"
+        },
+        "remeasured": true,
+        "original_facts_retained": true,
+        "original_ROI_denominators_unchanged": true
+      },
+      "comparison": {
+        "A": {
+          "fact_id": "feeding_000351_000555/F48/contact_roi:5cc501f3b8b600baeb6db751658698cf2049ece116b079dbb7ceca646f2912b8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8",
+          "measurement_sha256": "dcafb981297b70a86079069db9f7d68f33e164628b9ce43788facb3b2f2eb6c3",
+          "frame": 48,
+          "supports": [
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:5cc501f3b8b600baeb6db751658698cf2049ece116b079dbb7ceca646f2912b8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:1",
+              "used": true,
+              "weight": 0.8306997742663657,
+              "z_mm": 1026.72998046875,
+              "sigma_mm": 43.24372393694658,
+              "reason": "QUALIFIED_ANONYMOUS_SUPPORT"
+            },
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:5cc501f3b8b600baeb6db751658698cf2049ece116b079dbb7ceca646f2912b8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/missing_depth",
+              "used": false,
+              "weight": 0.0,
+              "z_mm": null,
+              "sigma_mm": null,
+              "reason": "COMMON_NULL_SUPPORT"
+            }
+          ],
+          "null_weight": 0.16930022573363435,
+          "foreground_identity": "UNKNOWN",
+          "reason": "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED"
+        },
+        "B": {
+          "fact_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8",
+          "measurement_sha256": "89c2d0ebc21476b9796d04513422588b56757e1b29499fec8982f5c7f3e130c7",
+          "frame": 48,
+          "supports": [
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:1",
+              "used": false,
+              "weight": 0.0,
+              "z_mm": 1064.0078125,
+              "sigma_mm": 7.072202612183666,
+              "reason": "COMMON_NULL_SUPPORT"
+            },
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:2",
+              "used": true,
+              "weight": 0.748780487804878,
+              "z_mm": 1138.1094970703125,
+              "sigma_mm": 39.478692400691536,
+              "reason": "QUALIFIED_ANONYMOUS_SUPPORT"
+            },
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:3",
+              "used": false,
+              "weight": 0.0,
+              "z_mm": 1009.3294677734375,
+              "sigma_mm": 7.071816099787346,
+              "reason": "COMMON_NULL_SUPPORT"
+            },
+            {
+              "support_id": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/missing_depth",
+              "used": false,
+              "weight": 0.0,
+              "z_mm": null,
+              "sigma_mm": null,
+              "reason": "COMMON_NULL_SUPPORT"
+            }
+          ],
+          "null_weight": 0.25121951219512195,
+          "foreground_identity": "UNKNOWN",
+          "reason": "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED"
+        },
+        "probability_A_nearer": 0.7706017680344694,
+        "combinations": [
+          {
+            "A_support": "feeding_000351_000555/F48/contact_roi:5cc501f3b8b600baeb6db751658698cf2049ece116b079dbb7ceca646f2912b8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:1",
+            "B_support": "feeding_000351_000555/F48/contact_roi:c1b6b3b2eddc3e97294388c23161d10a8ce1502a0b35f79d85097bb0be15e0f8/raw/independent_pair:96a8da30e7ad09af9c03330d78712cc44b76d0609b4bfb6b2b2f7f91d9ba3cd8/gap:1/support:2",
+            "weight": 0.6220117821945713,
+            "probability_A_nearer": 0.9350428332398093,
+            "shared_native_sources": 0,
+            "shared_support_common_null": false
+          }
+        ],
+        "common_null_weight": 0.3779882178054287,
+        "physical_accuracy_mm": "UNKNOWN",
+        "no_peak_selection": true
+      },
+      "actual_source_reads": [
+        {
+          "frame": 48,
+          "global_frame": 398,
+          "query_cutoff_frame": 48,
+          "source_binding_sha256": "0e639eef5865bbc31486a48c8f5b6cabd688e5d2d91b5afd38b204a4c6cb157a"
+        }
+      ]
+    },
+    {
+      "segment": "L3",
+      "frame": 1421,
+      "global_frame": 1420,
+      "current_sources": [
+        9,
+        6
+      ],
+      "old_fact_only_source_fixture": true,
+      "not_current_trial_state_or_choice": true,
+      "source_check": {
+        "shared_unique_sources": 20,
+        "shared_source_binding": {
+          "dtype": "<i4",
+          "shape": [
+            20
+          ],
+          "sha256": "97c13900e918011114795eb122de664c59e2deb254c4d17a1d5aacf305e685b4"
+        },
+        "remeasured": true,
+        "original_facts_retained": true,
+        "original_ROI_denominators_unchanged": true
+      },
+      "comparison": {
+        "A": {
+          "fact_id": "L3/F1421/contact_roi:60f0aa634568d8a3f9e1247522cd404da6297db57a2905754700a1e4dc88ac7e/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1",
+          "measurement_sha256": "f6792152047a86ca3438243fc13f3b34fc0f21b7287bf5984e8735052ebcdbfb",
+          "frame": 1421,
+          "supports": [
+            {
+              "support_id": "L3/F1421/contact_roi:60f0aa634568d8a3f9e1247522cd404da6297db57a2905754700a1e4dc88ac7e/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1/gap:1/support:1",
+              "used": true,
+              "weight": 0.988359201773836,
+              "z_mm": 649.6407470703125,
+              "sigma_mm": 57.32809777446734,
+              "reason": "QUALIFIED_ANONYMOUS_SUPPORT"
+            },
+            {
+              "support_id": "L3/F1421/contact_roi:60f0aa634568d8a3f9e1247522cd404da6297db57a2905754700a1e4dc88ac7e/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1/missing_depth",
+              "used": false,
+              "weight": 0.0,
+              "z_mm": null,
+              "sigma_mm": null,
+              "reason": "COMMON_NULL_SUPPORT"
+            }
+          ],
+          "null_weight": 0.01164079822616404,
+          "foreground_identity": "UNKNOWN",
+          "reason": "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED"
+        },
+        "B": {
+          "fact_id": "L3/F1421/contact_roi:376cf228ca1f0c277a642851a747c63b07f8d52a63cb134d986aacbd3e875759/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1",
+          "measurement_sha256": "27c9ebf2d3b07071488303c4bb028fe45efa6cadfbafbbccf402af63b648b054",
+          "frame": 1421,
+          "supports": [
+            {
+              "support_id": "L3/F1421/contact_roi:376cf228ca1f0c277a642851a747c63b07f8d52a63cb134d986aacbd3e875759/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1/gap:1/support:1",
+              "used": true,
+              "weight": 0.9655172413793104,
+              "z_mm": 687.5549621582031,
+              "sigma_mm": 32.91953715353909,
+              "reason": "QUALIFIED_ANONYMOUS_SUPPORT"
+            }
+          ],
+          "null_weight": 0.03448275862068961,
+          "foreground_identity": "UNKNOWN",
+          "reason": "EXACTLY_TWO_QUALIFIED_LOCAL_SUPPORTS_REQUIRED"
+        },
+        "probability_A_nearer": 0.6922894497520166,
+        "combinations": [
+          {
+            "A_support": "L3/F1421/contact_roi:60f0aa634568d8a3f9e1247522cd404da6297db57a2905754700a1e4dc88ac7e/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1/gap:1/support:1",
+            "B_support": "L3/F1421/contact_roi:376cf228ca1f0c277a642851a747c63b07f8d52a63cb134d986aacbd3e875759/raw/independent_pair:c037545bfdf38e8c51a3f962014d537cef6847d18a52fff0d3d7d3ee0a2e05a1/gap:1/support:1",
+            "weight": 0.9542778499885313,
+            "probability_A_nearer": 0.7015025809876312,
+            "shared_native_sources": 0,
+            "shared_support_common_null": false
+          }
+        ],
+        "common_null_weight": 0.04572215001146873,
+        "physical_accuracy_mm": "UNKNOWN",
+        "no_peak_selection": true
+      },
+      "actual_source_reads": [
+        {
+          "frame": 1421,
+          "global_frame": 1420,
+          "query_cutoff_frame": 1421,
+          "source_binding_sha256": "dfff782c212ac379ace335c78ea996cc320f95ab0445c29aa03bc8ea1a04a838"
+        }
+      ]
+    }
+  ],
+  "measurements": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds30_original_z4q_depth_increment\\shared_source_diagnostic\\MEASUREMENTS.jsonl.gz",
+    "bytes": 22851,
+    "sha256": "7b596935de27f90a38bd006edd544c4dd709637227cf61dabe3c4df33131d4ca"
+  },
+  "no_GT_or_RGB": true,
+  "actual_field_reads": [
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000398.npz",
+      "key": "depth_mm"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000398.npz",
+      "key": "source_index"
+    }
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0
+}

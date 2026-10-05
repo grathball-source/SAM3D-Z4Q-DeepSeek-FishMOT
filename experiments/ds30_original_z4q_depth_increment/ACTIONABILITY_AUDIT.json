@@ -1,0 +1,180 @@
+{
+  "status": "POSTSEAL_SUGGESTION_AND_ACTUAL_OCCUPATION_REFERENCE_AUDIT",
+  "records": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "q": 48,
+      "global_frame": 398,
+      "depth_preference": "H1",
+      "geometry_preference": "H2",
+      "depth_only_margin": 0.038727997559395565,
+      "total_margin": 0.5052072190811119,
+      "suggestion_only_not_committed": true,
+      "not_a_counterfactual_tracking_run_or_metric": true,
+      "preferred_mapping": {
+        "50": 50,
+        "30": 59
+      },
+      "actual_published_mapping": {
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "9": 9,
+        "10": 10,
+        "11": 11,
+        "15": 15,
+        "20": 20,
+        "21": 21,
+        "22": 22,
+        "24": 24,
+        "25": 25,
+        "26": 26,
+        "30": 30,
+        "41": 41,
+        "50": 50,
+        "57": 57,
+        "59": 59,
+        "60": 60,
+        "62": 62,
+        "64": 64,
+        "66": 66,
+        "68": 68,
+        "69": 69,
+        "70": 67,
+        "72": 72,
+        "73": 73
+      },
+      "changes_needed": {
+        "30": 59
+      },
+      "occupied_public_targets": {
+        "59": [
+          30,
+          59
+        ]
+      },
+      "visible_member_residual": [
+        59
+      ],
+      "edges": [
+        {
+          "source": 50,
+          "public": 50,
+          "reference": {
+            "frame": 10,
+            "native_id": 50,
+            "mask": "n:50",
+            "canonical_id": 50
+          },
+          "relation": "SAME",
+          "actual_previous_bank_anchor": {
+            "frame": 37,
+            "native_id": 50,
+            "mask": "n:50",
+            "canonical_id": 50
+          },
+          "previous_bank_anchor_still_frozen": false
+        },
+        {
+          "source": 30,
+          "public": 59,
+          "reference": {
+            "frame": 10,
+            "native_id": 59,
+            "mask": "n:59",
+            "canonical_id": 59
+          },
+          "relation": "DIFFERENT",
+          "actual_previous_bank_anchor": {
+            "frame": 10,
+            "native_id": 59,
+            "mask": "n:59",
+            "canonical_id": 59
+          },
+          "previous_bank_anchor_still_frozen": true
+        }
+      ],
+      "depth_preference_actual_reference_physical": "WRONG",
+      "weak_unreviewed_reference": false,
+      "original_decision": "DEFER",
+      "stage_error": "DEFER"
+    },
+    {
+      "segment": "L3",
+      "event": "MS1-F1403",
+      "q": 1421,
+      "global_frame": 1420,
+      "depth_preference": "H2",
+      "geometry_preference": "H1",
+      "depth_only_margin": 0.052969767369092126,
+      "total_margin": 0.3833675594865632,
+      "suggestion_only_not_committed": true,
+      "not_a_counterfactual_tracking_run_or_metric": true,
+      "preferred_mapping": {
+        "6": 6,
+        "9": 9
+      },
+      "actual_published_mapping": {
+        "3": 3,
+        "4": 4,
+        "5": 5,
+        "6": 6,
+        "7": 7,
+        "9": 9,
+        "15": 15,
+        "23": 13,
+        "25": 2,
+        "31": 31
+      },
+      "changes_needed": {},
+      "occupied_public_targets": {},
+      "visible_member_residual": [],
+      "edges": [
+        {
+          "source": 6,
+          "public": 6,
+          "reference": {
+            "frame": 1345,
+            "native_id": 6,
+            "mask": "n:6",
+            "canonical_id": 6
+          },
+          "relation": "SAME",
+          "actual_previous_bank_anchor": {
+            "frame": 1345,
+            "native_id": 6,
+            "mask": "n:6",
+            "canonical_id": 6
+          },
+          "previous_bank_anchor_still_frozen": true
+        },
+        {
+          "source": 9,
+          "public": 9,
+          "reference": {
+            "frame": 1345,
+            "native_id": 9,
+            "mask": "n:9",
+            "canonical_id": 9
+          },
+          "relation": "SAME",
+          "actual_previous_bank_anchor": {
+            "frame": 1345,
+            "native_id": 9,
+            "mask": "n:9",
+            "canonical_id": 9
+          },
+          "previous_bank_anchor_still_frozen": true
+        }
+      ],
+      "depth_preference_actual_reference_physical": "CORRECT",
+      "weak_unreviewed_reference": true,
+      "original_decision": "DEFER",
+      "stage_error": "DEFER"
+    }
+  ],
+  "no_new_stage_or_counterfactual_metrics": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

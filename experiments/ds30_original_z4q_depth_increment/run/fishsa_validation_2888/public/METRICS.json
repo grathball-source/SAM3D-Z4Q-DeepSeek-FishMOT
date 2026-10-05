@@ -1,0 +1,74 @@
+{
+  "segment": "fishsa_validation_2888",
+  "frames": 2888,
+  "metrics": {
+    "SAM3_NATIVE": {
+      "IDF1": 76.4564442770648,
+      "HOTA": 66.43552909955413,
+      "AssA": 55.19605907649384,
+      "DetA": 79.99491919833206,
+      "IDSW": 8,
+      "FP": 298,
+      "FN": 423,
+      "GT": 17322,
+      "predictions": 17197
+    },
+    "Z4Q_FROZEN": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423,
+      "GT": 17322,
+      "predictions": 17197
+    },
+    "DEPTH_INCREMENT": {
+      "IDF1": 80.69758683623512,
+      "HOTA": 69.24386895965796,
+      "AssA": 60.07432145541481,
+      "DetA": 79.83273464469796,
+      "IDSW": 9,
+      "FP": 298,
+      "FN": 423,
+      "GT": 17322,
+      "predictions": 17197
+    }
+  },
+  "changed_frames": {
+    "DEPTH_INCREMENT": []
+  },
+  "deltas": {
+    "DEPTH_INCREMENT": {
+      "SAM3_NATIVE": {
+        "IDF1": 4.241142559170314,
+        "HOTA": 2.8083398601038283,
+        "AssA": 4.878262378920972,
+        "DetA": -0.16218455363409134,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "depth_increment_over_original_z4q": {
+    "IDF1": 0.0,
+    "HOTA": 0.0,
+    "AssA": 0.0,
+    "DetA": 0.0,
+    "IDSW": 0,
+    "FP": 0,
+    "FN": 0
+  },
+  "reference_status": "EXPOSED_EXISTING_ANNOTATION"
+}

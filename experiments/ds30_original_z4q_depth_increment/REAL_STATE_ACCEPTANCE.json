@@ -1,0 +1,2347 @@
+{
+  "status": "PASS_ACTUAL_NULL_STATE_AND_PUBLICATION_CHECKS",
+  "full_branch_state_pairs_checked": 4524,
+  "checks_include_engine_previous_epochs_provenance_version": true,
+  "real_cases": [
+    {
+      "frame": 3902,
+      "global_frame": 3902,
+      "transaction": {
+        "frame": 3902,
+        "global_frame": 3902,
+        "time": 1787708871.331,
+        "arm": "DEPTH_INCREMENT",
+        "actual_published_mapping": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "7": 0
+        },
+        "branch_version": 3902,
+        "actual_alias_targets": {
+          "6": 0,
+          "7": 0
+        },
+        "bank_anchors": {
+          "0": {
+            "frame": 3836,
+            "native_id": 6,
+            "mask": "n:6",
+            "canonical_id": 0
+          },
+          "1": {
+            "frame": 3902,
+            "native_id": 1,
+            "mask": "n:1",
+            "canonical_id": 1
+          },
+          "2": {
+            "frame": 3873,
+            "native_id": 2,
+            "mask": "n:2",
+            "canonical_id": 2
+          },
+          "3": {
+            "frame": 3902,
+            "native_id": 3,
+            "mask": "n:3",
+            "canonical_id": 3
+          },
+          "4": {
+            "frame": 3893,
+            "native_id": 4,
+            "mask": "n:4",
+            "canonical_id": 4
+          },
+          "5": {
+            "frame": 3870,
+            "native_id": 5,
+            "mask": "n:5",
+            "canonical_id": 5
+          }
+        },
+        "engine_state_sha256": "954d278b12a5153abce3f7b4c187d25479095cedfa4ba6a316b466dcc6173b75",
+        "branch_state_sha256": "9915a3f8e87cea6dd540085f47621dba4b9af2e3ce3ba951802ab4345cf68073",
+        "original_own_branch_preview_state_sha256": "9915a3f8e87cea6dd540085f47621dba4b9af2e3ce3ba951802ab4345cf68073",
+        "state_selection": "ORIGINAL_OWN_BRANCH_PREVIEW",
+        "controller_trace": {
+          "events": [
+            {
+              "kind": "reconnect",
+              "accepted": true,
+              "confirmations": 1,
+              "birth_frame": 3902,
+              "confirmation_span_s": 0.0,
+              "extra_confirmation_frames": 0,
+              "first_public_id": 0,
+              "age": 2.199000120162964,
+              "distance": 94.67106503516229,
+              "radius": 191.7044695237127,
+              "normalized_distance": 0.4938385905679264,
+              "motion_cost": 0.11479699559230061,
+              "native_id": 7,
+              "canonical_id": 0,
+              "phase": "birth",
+              "evidence_max_frame": 3902,
+              "old_anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "depth_anchors": {
+                "core": {
+                  "z": 837.7853088378906,
+                  "u": 15.0,
+                  "n": 326,
+                  "fraction": 1.0,
+                  "mad": 5.37432861328125,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2464
+                },
+                "whole": {
+                  "z": 837.1642456054688,
+                  "u": 15.0,
+                  "n": 1024,
+                  "fraction": 1.0,
+                  "mad": 5.06939697265625,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2381
+                }
+              },
+              "current_depths": {
+                "core": {
+                  "z": 808.6637573242188,
+                  "u": 18.370974060058593,
+                  "n": 223,
+                  "fraction": 1.0,
+                  "mad": 12.39105224609375
+                },
+                "whole": {
+                  "z": 816.9362182617188,
+                  "u": 17.70695313720703,
+                  "n": 773,
+                  "fraction": 1.0,
+                  "mad": 11.94317626953125
+                }
+              },
+              "core": {
+                "residual_mm": 29.121551513671875,
+                "risk_mm": 18.370974060058593,
+                "lower_mm": 10.750577453613282,
+                "upper_mm": 47.49252557373047,
+                "cost": 0.7915420928955078
+              },
+              "whole": {
+                "residual_mm": 20.22802734375,
+                "risk_mm": 17.70695313720703,
+                "lower_mm": 2.52107420654297,
+                "upper_mm": 37.93498048095703,
+                "cost": 0.6322496746826172
+              },
+              "partners": [
+                {
+                  "id": 4,
+                  "active": true,
+                  "current_neighbor": true,
+                  "historical_direct": true,
+                  "core_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  },
+                  "whole_history": null,
+                  "candidate_core": {
+                    "residual_mm": 119.60101318359375,
+                    "risk_mm": 18.370974060058593,
+                    "lower_mm": 101.23003912353516,
+                    "upper_mm": 137.97198724365234,
+                    "cost": 2.299533120727539
+                  },
+                  "candidate_whole": null,
+                  "state": "support",
+                  "failures": [],
+                  "current_whole": null,
+                  "own_whole": null,
+                  "cross_whole": null,
+                  "current_core": {
+                    "z": 690.2540893554688,
+                    "u": 17.942590979003906,
+                    "n": 569,
+                    "fraction": 0.901743264659271,
+                    "mad": 12.10211181640625
+                  },
+                  "own_core": {
+                    "residual_mm": 1.19134521484375,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 0.0,
+                    "upper_mm": 19.133936193847656,
+                    "cost": 0.3188989365641276
+                  },
+                  "cross_core": {
+                    "residual_mm": 147.53121948242188,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 129.58862850341797,
+                    "upper_mm": 165.47381046142578,
+                    "cost": 2.757896841023763
+                  },
+                  "survivor_quality": true,
+                  "joint_core_margin": 3.9469889322916663,
+                  "native_certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "native_reservation": false,
+                  "native_history_same_run": true
+                }
+              ],
+              "excluded_partners": [
+                {
+                  "id": 1,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 2,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 5,
+                  "reason": "historical_active_not_current_neighbor"
+                }
+              ],
+              "failures": [],
+              "whole_other_candidates": [],
+              "survivor_witnesses": 1,
+              "cost": 0.8087616422343529,
+              "rejection": null,
+              "history_requalifications": [
+                {
+                  "id": 4,
+                  "view": "core",
+                  "basis": "recent_isolated_actual_core",
+                  "anchor": {
+                    "frame": 3901,
+                    "native_id": 4,
+                    "mask": "n:4",
+                    "canonical_id": 4
+                  },
+                  "certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "previous_history": null,
+                  "actual_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  }
+                }
+              ],
+              "native_reservations": 0,
+              "old_eligibility": [
+                {
+                  "id": 0,
+                  "eligible": true,
+                  "failures": [],
+                  "last_seen_age_s": 0.3000001907348633,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 2468
+                },
+                {
+                  "id": 1,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 1733
+                },
+                {
+                  "id": 2,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.9660000801086426,
+                  "clean_count": 2258
+                },
+                {
+                  "id": 3,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.03299999237060547,
+                  "clean_count": 1858
+                },
+                {
+                  "id": 4,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.3000001907348633,
+                  "clean_count": 1532
+                },
+                {
+                  "id": 5,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 1.065999984741211,
+                  "clean_count": 1563
+                }
+              ],
+              "assignment_margin": 0.19123835776564713
+            }
+          ],
+          "edges": [],
+          "eligible_old": 0,
+          "eligible_new": 0,
+          "aliases": {
+            "7": {
+              "target": 0,
+              "anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "commit_frame": 3902
+            }
+          },
+          "birth_checks": [
+            {
+              "age": 2.199000120162964,
+              "distance": 94.67106503516229,
+              "radius": 191.7044695237127,
+              "normalized_distance": 0.4938385905679264,
+              "motion_cost": 0.11479699559230061,
+              "native_id": 7,
+              "canonical_id": 0,
+              "phase": "birth",
+              "evidence_max_frame": 3902,
+              "old_anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "depth_anchors": {
+                "core": {
+                  "z": 837.7853088378906,
+                  "u": 15.0,
+                  "n": 326,
+                  "fraction": 1.0,
+                  "mad": 5.37432861328125,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2464
+                },
+                "whole": {
+                  "z": 837.1642456054688,
+                  "u": 15.0,
+                  "n": 1024,
+                  "fraction": 1.0,
+                  "mad": 5.06939697265625,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2381
+                }
+              },
+              "current_depths": {
+                "core": {
+                  "z": 808.6637573242188,
+                  "u": 18.370974060058593,
+                  "n": 223,
+                  "fraction": 1.0,
+                  "mad": 12.39105224609375
+                },
+                "whole": {
+                  "z": 816.9362182617188,
+                  "u": 17.70695313720703,
+                  "n": 773,
+                  "fraction": 1.0,
+                  "mad": 11.94317626953125
+                }
+              },
+              "core": {
+                "residual_mm": 29.121551513671875,
+                "risk_mm": 18.370974060058593,
+                "lower_mm": 10.750577453613282,
+                "upper_mm": 47.49252557373047,
+                "cost": 0.7915420928955078
+              },
+              "whole": {
+                "residual_mm": 20.22802734375,
+                "risk_mm": 17.70695313720703,
+                "lower_mm": 2.52107420654297,
+                "upper_mm": 37.93498048095703,
+                "cost": 0.6322496746826172
+              },
+              "partners": [
+                {
+                  "id": 4,
+                  "active": true,
+                  "current_neighbor": true,
+                  "historical_direct": true,
+                  "core_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  },
+                  "whole_history": null,
+                  "candidate_core": {
+                    "residual_mm": 119.60101318359375,
+                    "risk_mm": 18.370974060058593,
+                    "lower_mm": 101.23003912353516,
+                    "upper_mm": 137.97198724365234,
+                    "cost": 2.299533120727539
+                  },
+                  "candidate_whole": null,
+                  "state": "support",
+                  "failures": [],
+                  "current_whole": null,
+                  "own_whole": null,
+                  "cross_whole": null,
+                  "current_core": {
+                    "z": 690.2540893554688,
+                    "u": 17.942590979003906,
+                    "n": 569,
+                    "fraction": 0.901743264659271,
+                    "mad": 12.10211181640625
+                  },
+                  "own_core": {
+                    "residual_mm": 1.19134521484375,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 0.0,
+                    "upper_mm": 19.133936193847656,
+                    "cost": 0.3188989365641276
+                  },
+                  "cross_core": {
+                    "residual_mm": 147.53121948242188,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 129.58862850341797,
+                    "upper_mm": 165.47381046142578,
+                    "cost": 2.757896841023763
+                  },
+                  "survivor_quality": true,
+                  "joint_core_margin": 3.9469889322916663,
+                  "native_certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "native_reservation": false,
+                  "native_history_same_run": true
+                }
+              ],
+              "excluded_partners": [
+                {
+                  "id": 1,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 2,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 5,
+                  "reason": "historical_active_not_current_neighbor"
+                }
+              ],
+              "failures": [],
+              "whole_other_candidates": [],
+              "survivor_witnesses": 1,
+              "cost": 0.8087616422343529,
+              "rejection": null,
+              "history_requalifications": [
+                {
+                  "id": 4,
+                  "view": "core",
+                  "basis": "recent_isolated_actual_core",
+                  "anchor": {
+                    "frame": 3901,
+                    "native_id": 4,
+                    "mask": "n:4",
+                    "canonical_id": 4
+                  },
+                  "certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "previous_history": null,
+                  "actual_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  }
+                }
+              ],
+              "native_reservations": 0,
+              "old_eligibility": [
+                {
+                  "id": 0,
+                  "eligible": true,
+                  "failures": [],
+                  "last_seen_age_s": 0.3000001907348633,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 2468
+                },
+                {
+                  "id": 1,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 1733
+                },
+                {
+                  "id": 2,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.9660000801086426,
+                  "clean_count": 2258
+                },
+                {
+                  "id": 3,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.03299999237060547,
+                  "clean_count": 1858
+                },
+                {
+                  "id": 4,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.3000001907348633,
+                  "clean_count": 1532
+                },
+                {
+                  "id": 5,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 1.065999984741211,
+                  "clean_count": 1563
+                }
+              ],
+              "assignment_margin": 0.19123835776564713
+            }
+          ],
+          "native_return_checks": [],
+          "return_quarantine": {}
+        },
+        "actual_actions": [
+          {
+            "action": {
+              "kind": "reconnect",
+              "accepted": true,
+              "confirmations": 1,
+              "birth_frame": 3902,
+              "confirmation_span_s": 0.0,
+              "extra_confirmation_frames": 0,
+              "first_public_id": 0,
+              "age": 2.199000120162964,
+              "distance": 94.67106503516229,
+              "radius": 191.7044695237127,
+              "normalized_distance": 0.4938385905679264,
+              "motion_cost": 0.11479699559230061,
+              "native_id": 7,
+              "canonical_id": 0,
+              "phase": "birth",
+              "evidence_max_frame": 3902,
+              "old_anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "depth_anchors": {
+                "core": {
+                  "z": 837.7853088378906,
+                  "u": 15.0,
+                  "n": 326,
+                  "fraction": 1.0,
+                  "mad": 5.37432861328125,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2464
+                },
+                "whole": {
+                  "z": 837.1642456054688,
+                  "u": 15.0,
+                  "n": 1024,
+                  "fraction": 1.0,
+                  "mad": 5.06939697265625,
+                  "anchor": {
+                    "frame": 3836,
+                    "native_id": 6,
+                    "mask": "n:6",
+                    "canonical_id": 0
+                  },
+                  "time": 1787708869.132,
+                  "count": 2381
+                }
+              },
+              "current_depths": {
+                "core": {
+                  "z": 808.6637573242188,
+                  "u": 18.370974060058593,
+                  "n": 223,
+                  "fraction": 1.0,
+                  "mad": 12.39105224609375
+                },
+                "whole": {
+                  "z": 816.9362182617188,
+                  "u": 17.70695313720703,
+                  "n": 773,
+                  "fraction": 1.0,
+                  "mad": 11.94317626953125
+                }
+              },
+              "core": {
+                "residual_mm": 29.121551513671875,
+                "risk_mm": 18.370974060058593,
+                "lower_mm": 10.750577453613282,
+                "upper_mm": 47.49252557373047,
+                "cost": 0.7915420928955078
+              },
+              "whole": {
+                "residual_mm": 20.22802734375,
+                "risk_mm": 17.70695313720703,
+                "lower_mm": 2.52107420654297,
+                "upper_mm": 37.93498048095703,
+                "cost": 0.6322496746826172
+              },
+              "partners": [
+                {
+                  "id": 4,
+                  "active": true,
+                  "current_neighbor": true,
+                  "historical_direct": true,
+                  "core_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  },
+                  "whole_history": null,
+                  "candidate_core": {
+                    "residual_mm": 119.60101318359375,
+                    "risk_mm": 18.370974060058593,
+                    "lower_mm": 101.23003912353516,
+                    "upper_mm": 137.97198724365234,
+                    "cost": 2.299533120727539
+                  },
+                  "candidate_whole": null,
+                  "state": "support",
+                  "failures": [],
+                  "current_whole": null,
+                  "own_whole": null,
+                  "cross_whole": null,
+                  "current_core": {
+                    "z": 690.2540893554688,
+                    "u": 17.942590979003906,
+                    "n": 569,
+                    "fraction": 0.901743264659271,
+                    "mad": 12.10211181640625
+                  },
+                  "own_core": {
+                    "residual_mm": 1.19134521484375,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 0.0,
+                    "upper_mm": 19.133936193847656,
+                    "cost": 0.3188989365641276
+                  },
+                  "cross_core": {
+                    "residual_mm": 147.53121948242188,
+                    "risk_mm": 17.942590979003906,
+                    "lower_mm": 129.58862850341797,
+                    "upper_mm": 165.47381046142578,
+                    "cost": 2.757896841023763
+                  },
+                  "survivor_quality": true,
+                  "joint_core_margin": 3.9469889322916663,
+                  "native_certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "native_reservation": false,
+                  "native_history_same_run": true
+                }
+              ],
+              "excluded_partners": [
+                {
+                  "id": 1,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 2,
+                  "reason": "historical_active_not_current_neighbor"
+                },
+                {
+                  "id": 5,
+                  "reason": "historical_active_not_current_neighbor"
+                }
+              ],
+              "failures": [],
+              "whole_other_candidates": [],
+              "survivor_witnesses": 1,
+              "cost": 0.8087616422343529,
+              "rejection": null,
+              "history_requalifications": [
+                {
+                  "id": 4,
+                  "view": "core",
+                  "basis": "recent_isolated_actual_core",
+                  "anchor": {
+                    "frame": 3901,
+                    "native_id": 4,
+                    "mask": "n:4",
+                    "canonical_id": 4
+                  },
+                  "certificate": {
+                    "qualified": true,
+                    "failures": [],
+                    "run": {
+                      "start_frame": 1,
+                      "count": 3901,
+                      "last_frame": 3901,
+                      "time": 1787708871.298
+                    }
+                  },
+                  "previous_history": null,
+                  "actual_history": {
+                    "z": 689.062744140625,
+                    "u": 15.6961587890625,
+                    "n": 542,
+                    "fraction": 0.9186440677966101,
+                    "mad": 10.5869140625,
+                    "time": 1787708871.298,
+                    "count": 1,
+                    "anchor": {
+                      "frame": 3901,
+                      "native_id": 4,
+                      "mask": "n:4",
+                      "canonical_id": 4
+                    }
+                  }
+                }
+              ],
+              "native_reservations": 0,
+              "old_eligibility": [
+                {
+                  "id": 0,
+                  "eligible": true,
+                  "failures": [],
+                  "last_seen_age_s": 0.3000001907348633,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 2468
+                },
+                {
+                  "id": 1,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 2.199000120162964,
+                  "clean_count": 1733
+                },
+                {
+                  "id": 2,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.9660000801086426,
+                  "clean_count": 2258
+                },
+                {
+                  "id": 3,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.03299999237060547,
+                  "clean_count": 1858
+                },
+                {
+                  "id": 4,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 0.3000001907348633,
+                  "clean_count": 1532
+                },
+                {
+                  "id": 5,
+                  "eligible": false,
+                  "failures": [
+                    "occupied"
+                  ],
+                  "last_seen_age_s": 0.03299999237060547,
+                  "clean_age_s": 1.065999984741211,
+                  "clean_count": 1563
+                }
+              ],
+              "assignment_margin": 0.19123835776564713
+            },
+            "actual_published": true,
+            "durable_alias": true
+          }
+        ],
+        "joint_decision": {
+          "event": "MS1-F3863",
+          "suspect_frame": 3863,
+          "frame": 3902,
+          "global_frame": 3902,
+          "choice": "DEFER",
+          "detail": {
+            "pre": {
+              "A": {
+                "status": "UNKNOWN_REFERENCE",
+                "anchor": {
+                  "frame": 3492,
+                  "native_id": 4,
+                  "mask": "n:4",
+                  "canonical_id": 4
+                },
+                "version": null,
+                "public": 4,
+                "samples": []
+              },
+              "B": {
+                "status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+                "anchor": {
+                  "frame": 3836,
+                  "native_id": 6,
+                  "mask": "n:6",
+                  "canonical_id": 0
+                },
+                "version": [
+                  6,
+                  1,
+                  0,
+                  2
+                ],
+                "public": 0,
+                "samples": [
+                  {
+                    "frame": 3827,
+                    "time": 1787708868.832,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      332.0,
+                      140.0,
+                      373.0,
+                      238.0
+                    ],
+                    "area": 1180,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1180,
+                      "valid_fraction": 1.0,
+                      "median": 828.9405212402344,
+                      "mad": 8.263427734375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3828,
+                    "time": 1787708868.866,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      330.0,
+                      138.0,
+                      371.0,
+                      232.0
+                    ],
+                    "area": 1104,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1104,
+                      "valid_fraction": 1.0,
+                      "median": 830.4408874511719,
+                      "mad": 7.331146240234375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3829,
+                    "time": 1787708868.899,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      327.0,
+                      134.0,
+                      366.0,
+                      226.0
+                    ],
+                    "area": 1088,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1088,
+                      "valid_fraction": 1.0,
+                      "median": 831.8063659667969,
+                      "mad": 6.914886474609375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3830,
+                    "time": 1787708868.932,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      324.0,
+                      131.0,
+                      365.0,
+                      222.0
+                    ],
+                    "area": 1069,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1069,
+                      "valid_fraction": 1.0,
+                      "median": 832.8615112304688,
+                      "mad": 6.518798828125
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3831,
+                    "time": 1787708868.965,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      322.0,
+                      129.0,
+                      364.0,
+                      218.0
+                    ],
+                    "area": 1043,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1043,
+                      "valid_fraction": 1.0,
+                      "median": 834.358154296875,
+                      "mad": 6.63275146484375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3832,
+                    "time": 1787708868.999,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      319.0,
+                      126.0,
+                      363.0,
+                      211.0
+                    ],
+                    "area": 1047,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1047,
+                      "valid_fraction": 1.0,
+                      "median": 834.6163940429688,
+                      "mad": 6.49017333984375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3833,
+                    "time": 1787708869.032,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      317.0,
+                      124.0,
+                      364.0,
+                      198.0
+                    ],
+                    "area": 1003,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1003,
+                      "valid_fraction": 1.0,
+                      "median": 835.9329223632812,
+                      "mad": 5.94610595703125
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3834,
+                    "time": 1787708869.065,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      312.0,
+                      123.0,
+                      364.0,
+                      192.0
+                    ],
+                    "area": 981,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 981,
+                      "valid_fraction": 1.0,
+                      "median": 837.2269287109375,
+                      "mad": 5.2730712890625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3835,
+                    "time": 1787708869.099,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      309.0,
+                      122.0,
+                      364.0,
+                      190.0
+                    ],
+                    "area": 967,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 967,
+                      "valid_fraction": 1.0,
+                      "median": 836.7069702148438,
+                      "mad": 5.43414306640625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 3836,
+                    "time": 1787708869.132,
+                    "native": 6,
+                    "public": 0,
+                    "version": [
+                      6,
+                      1,
+                      0,
+                      2
+                    ],
+                    "box": [
+                      307.0,
+                      121.0,
+                      364.0,
+                      192.0
+                    ],
+                    "area": 1024,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1024,
+                      "valid_fraction": 1.0,
+                      "median": 837.1642456054688,
+                      "mad": 5.06939697265625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  }
+                ]
+              }
+            },
+            "anonymous_current_sources": [
+              7,
+              4
+            ],
+            "query_frame": 3902,
+            "post_count": 1,
+            "current_roles": "IDENTITY_UNKNOWN_UNTIL_MAPPING_COMMIT",
+            "candidates": {},
+            "pre_pairs": [],
+            "current_pair": null,
+            "pre_probability": 0.5,
+            "attenuated_pre_probability": 0.5,
+            "current_probability": 0.5,
+            "depth_used": false,
+            "reason": "UNKNOWN_REFERENCE"
+          },
+          "staged": false,
+          "stage_error": "DEFER",
+          "fallback": {
+            "status": "ORIGINAL_OWN_BRANCH_PREVIEW_RETAINED",
+            "copies_other_branch": false,
+            "complete_state_retained": true
+          },
+          "mapping": null,
+          "changes": {},
+          "references": {
+            "4": {
+              "frame": 3492,
+              "native_id": 4,
+              "mask": "n:4",
+              "canonical_id": 4
+            },
+            "0": {
+              "frame": 3836,
+              "native_id": 6,
+              "mask": "n:6",
+              "canonical_id": 0
+            }
+          },
+          "signal": {
+            "kind": "FIRST_SPLIT_DECISION_PENDING",
+            "episode": "MS1-F3863"
+          },
+          "status": "ORIGINAL_FALLBACK",
+          "post_velocity": "UNKNOWN",
+          "future_frames_used": 0,
+          "actual_published_mapping": {
+            "7": 0,
+            "4": 4
+          },
+          "actual_aliases": {
+            "7": {
+              "target": 0,
+              "anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "commit_frame": 3902
+            },
+            "4": null
+          },
+          "commit_version": 3902,
+          "decided_before_first_publication": true
+        },
+        "signal": {
+          "kind": "FIRST_SPLIT_DECISION_PENDING",
+          "episode": "MS1-F3863"
+        }
+      },
+      "published_row_sha256": "41f5df11fb6637a43ac5b0e0036585de9a3aa9bcaa75dc7d2d51137951a9f5e3"
+    },
+    {
+      "frame": 4524,
+      "global_frame": 4524,
+      "transaction": {
+        "frame": 4524,
+        "global_frame": 4524,
+        "time": 1787708892.055,
+        "arm": "DEPTH_INCREMENT",
+        "actual_published_mapping": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "7": 0
+        },
+        "branch_version": 4524,
+        "actual_alias_targets": {
+          "6": 0,
+          "7": 0
+        },
+        "bank_anchors": {
+          "0": {
+            "frame": 4496,
+            "native_id": 7,
+            "mask": "n:7",
+            "canonical_id": 0
+          },
+          "1": {
+            "frame": 4477,
+            "native_id": 1,
+            "mask": "n:1",
+            "canonical_id": 1
+          },
+          "2": {
+            "frame": 4524,
+            "native_id": 2,
+            "mask": "n:2",
+            "canonical_id": 2
+          },
+          "3": {
+            "frame": 4524,
+            "native_id": 3,
+            "mask": "n:3",
+            "canonical_id": 3
+          },
+          "4": {
+            "frame": 4384,
+            "native_id": 4,
+            "mask": "n:4",
+            "canonical_id": 4
+          },
+          "5": {
+            "frame": 4460,
+            "native_id": 5,
+            "mask": "n:5",
+            "canonical_id": 5
+          }
+        },
+        "engine_state_sha256": "963a835c4497f2342e5883b95dd87885bc9aaff79c188b274aef45cf6ea0d529",
+        "branch_state_sha256": "a41ad2b5e43b1cf423c23ad9a31be02a9e3496633cae17b6f247026eedc19bf5",
+        "original_own_branch_preview_state_sha256": "a41ad2b5e43b1cf423c23ad9a31be02a9e3496633cae17b6f247026eedc19bf5",
+        "state_selection": "ORIGINAL_OWN_BRANCH_PREVIEW",
+        "controller_trace": {
+          "events": [],
+          "edges": [],
+          "eligible_old": 0,
+          "eligible_new": 0,
+          "aliases": {
+            "7": {
+              "target": 0,
+              "anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "commit_frame": 3902
+            }
+          },
+          "birth_checks": [],
+          "native_return_checks": [],
+          "return_quarantine": {}
+        },
+        "actual_actions": [],
+        "joint_decision": {
+          "event": "MS1-F4519",
+          "suspect_frame": 4519,
+          "frame": 4524,
+          "global_frame": 4524,
+          "choice": "DEFER",
+          "detail": {
+            "pre": {
+              "A": {
+                "status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+                "anchor": {
+                  "frame": 4477,
+                  "native_id": 1,
+                  "mask": "n:1",
+                  "canonical_id": 1
+                },
+                "version": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "public": 1,
+                "samples": [
+                  {
+                    "frame": 4469,
+                    "time": 1787708890.222,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      344.0,
+                      100.0,
+                      456.0,
+                      158.0
+                    ],
+                    "area": 1632,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1457,
+                      "valid_fraction": 0.8927696078431373,
+                      "median": 515.2550048828125,
+                      "mad": 23.80224609375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4470,
+                    "time": 1787708890.256,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      338.0,
+                      98.0,
+                      452.0,
+                      151.0
+                    ],
+                    "area": 1605,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1463,
+                      "valid_fraction": 0.9115264797507788,
+                      "median": 513.0137939453125,
+                      "mad": 21.86004638671875
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4471,
+                    "time": 1787708890.289,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      331.0,
+                      99.0,
+                      446.0,
+                      153.0
+                    ],
+                    "area": 1644,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1401,
+                      "valid_fraction": 0.8521897810218978,
+                      "median": 513.8265991210938,
+                      "mad": 23.823822021484375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4472,
+                    "time": 1787708890.322,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      324.0,
+                      100.0,
+                      438.0,
+                      154.0
+                    ],
+                    "area": 1698,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1355,
+                      "valid_fraction": 0.797997644287397,
+                      "median": 506.79168701171875,
+                      "mad": 18.666046142578125
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4473,
+                    "time": 1787708890.356,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      317.0,
+                      102.0,
+                      427.0,
+                      153.0
+                    ],
+                    "area": 1703,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1380,
+                      "valid_fraction": 0.8103347034644744,
+                      "median": 509.2456359863281,
+                      "mad": 20.648086547851562
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4474,
+                    "time": 1787708890.389,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      312.0,
+                      102.0,
+                      419.0,
+                      149.0
+                    ],
+                    "area": 1730,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1420,
+                      "valid_fraction": 0.8208092485549133,
+                      "median": 511.7746887207031,
+                      "mad": 23.677398681640625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4475,
+                    "time": 1787708890.422,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      304.0,
+                      101.0,
+                      412.0,
+                      140.0
+                    ],
+                    "area": 1736,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1402,
+                      "valid_fraction": 0.8076036866359447,
+                      "median": 508.8795928955078,
+                      "mad": 18.450027465820312
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4476,
+                    "time": 1787708890.456,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      298.0,
+                      100.0,
+                      408.0,
+                      129.0
+                    ],
+                    "area": 1618,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1276,
+                      "valid_fraction": 0.788627935723115,
+                      "median": 509.1523132324219,
+                      "mad": 17.4710693359375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4477,
+                    "time": 1787708890.489,
+                    "native": 1,
+                    "public": 1,
+                    "version": [
+                      1,
+                      1,
+                      1,
+                      1
+                    ],
+                    "box": [
+                      292.0,
+                      99.0,
+                      407.0,
+                      131.0
+                    ],
+                    "area": 1587,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1224,
+                      "valid_fraction": 0.7712665406427222,
+                      "median": 507.72377014160156,
+                      "mad": 15.844085693359375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  }
+                ]
+              },
+              "B": {
+                "status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+                "anchor": {
+                  "frame": 4496,
+                  "native_id": 7,
+                  "mask": "n:7",
+                  "canonical_id": 0
+                },
+                "version": [
+                  7,
+                  1,
+                  0,
+                  1
+                ],
+                "public": 0,
+                "samples": [
+                  {
+                    "frame": 4487,
+                    "time": 1787708890.822,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      188.0,
+                      215.0,
+                      288.0,
+                      287.0
+                    ],
+                    "area": 1658,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1520,
+                      "valid_fraction": 0.916767189384801,
+                      "median": 704.2896423339844,
+                      "mad": 47.39898681640625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4488,
+                    "time": 1787708890.855,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      187.0,
+                      215.0,
+                      286.0,
+                      286.0
+                    ],
+                    "area": 1653,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1507,
+                      "valid_fraction": 0.91167574107683,
+                      "median": 704.6773071289062,
+                      "mad": 47.25555419921875
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4489,
+                    "time": 1787708890.889,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      187.0,
+                      214.0,
+                      286.0,
+                      286.0
+                    ],
+                    "area": 1660,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1486,
+                      "valid_fraction": 0.8951807228915662,
+                      "median": 697.61572265625,
+                      "mad": 42.62298583984375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4490,
+                    "time": 1787708890.922,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      186.0,
+                      213.0,
+                      285.0,
+                      285.0
+                    ],
+                    "area": 1627,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1186,
+                      "valid_fraction": 0.7289489858635525,
+                      "median": 676.7083435058594,
+                      "mad": 22.516571044921875
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4491,
+                    "time": 1787708890.955,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      185.0,
+                      213.0,
+                      284.0,
+                      284.0
+                    ],
+                    "area": 1632,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1421,
+                      "valid_fraction": 0.8707107843137255,
+                      "median": 694.1556396484375,
+                      "mad": 40.49658203125
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4492,
+                    "time": 1787708890.989,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      184.0,
+                      212.0,
+                      284.0,
+                      284.0
+                    ],
+                    "area": 1623,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1447,
+                      "valid_fraction": 0.8915588416512631,
+                      "median": 697.0374145507812,
+                      "mad": 43.83447265625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4493,
+                    "time": 1787708891.022,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      184.0,
+                      212.0,
+                      283.0,
+                      284.0
+                    ],
+                    "area": 1672,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1450,
+                      "valid_fraction": 0.8672248803827751,
+                      "median": 695.5006103515625,
+                      "mad": 42.915374755859375
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4494,
+                    "time": 1787708891.055,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      183.0,
+                      210.0,
+                      282.0,
+                      283.0
+                    ],
+                    "area": 1652,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1360,
+                      "valid_fraction": 0.8232445520581114,
+                      "median": 686.3524780273438,
+                      "mad": 33.656646728515625
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4495,
+                    "time": 1787708891.089,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      183.0,
+                      210.0,
+                      282.0,
+                      284.0
+                    ],
+                    "area": 1654,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 1306,
+                      "valid_fraction": 0.7896009673518742,
+                      "median": 679.4252319335938,
+                      "mad": 28.687713623046875
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  },
+                  {
+                    "frame": 4496,
+                    "time": 1787708891.122,
+                    "native": 7,
+                    "public": 0,
+                    "version": [
+                      7,
+                      1,
+                      0,
+                      1
+                    ],
+                    "box": [
+                      182.0,
+                      210.0,
+                      282.0,
+                      284.0
+                    ],
+                    "area": 1660,
+                    "neighbors": [],
+                    "acquired_mask_depth": {
+                      "n": 877,
+                      "valid_fraction": 0.5283132530120482,
+                      "median": 655.7982788085938,
+                      "mad": 9.1502685546875
+                    },
+                    "measurement_origin": "ORIGINAL_SAVED_OBSERVATION; MASK_MAY_BE_MIXED",
+                    "observation_class": "CLEAN_ACTUAL_BANK_ANCHOR"
+                  }
+                ]
+              }
+            },
+            "anonymous_current_sources": [
+              7,
+              1
+            ],
+            "query_frame": 4524,
+            "post_count": 1,
+            "current_roles": "IDENTITY_UNKNOWN_UNTIL_MAPPING_COMMIT",
+            "candidates": {
+              "H1": {
+                "mapping": {
+                  "7": 1,
+                  "1": 0
+                },
+                "geometry_cost": 1.2323571943704472,
+                "depth_cost": 0.0,
+                "total_cost": 1.2323571943704472,
+                "order_compatibility": 0.5,
+                "edges": [
+                  {
+                    "position_cost": 1.1950131909725303,
+                    "pre_fit": {
+                      "status": "ESTIMATED_FROM_MEASURED",
+                      "model": "OLS_INTERCEPT_LINEAR_TIME",
+                      "samples": 9,
+                      "sample_frames": [
+                        4469,
+                        4470,
+                        4471,
+                        4472,
+                        4473,
+                        4474,
+                        4475,
+                        4476,
+                        4477
+                      ],
+                      "sample_times": [
+                        1787708890.222,
+                        1787708890.256,
+                        1787708890.289,
+                        1787708890.322,
+                        1787708890.356,
+                        1787708890.389,
+                        1787708890.422,
+                        1787708890.456,
+                        1787708890.489
+                      ],
+                      "span_seconds": 0.2670001983642578,
+                      "first_frame": 4469,
+                      "last_frame": 4477,
+                      "time_origin": 1787708890.222,
+                      "intercept_px": [
+                        400.6306159226324,
+                        129.86090096904258
+                      ],
+                      "px_per_second": [
+                        -202.14076196785862,
+                        -49.25025633493927
+                      ],
+                      "speed_px_per_second": 208.05402038413894,
+                      "residual_rms_px_by_axis": [
+                        1.5483559423692186,
+                        2.7826102531155663
+                      ],
+                      "residual_rms_2d_px": 3.1843878446279037,
+                      "residual_max_2d_px": 4.51100607162104,
+                      "uncertainty": "IN_SAMPLE_RESIDUAL_ONLY_NOT_CALIBRATED_FORECAST"
+                    },
+                    "predicted_center_px": [
+                      144.51823041185327,
+                      67.46081642318397
+                    ],
+                    "observed_center_px": [
+                      198.5,
+                      199.5
+                    ],
+                    "prediction_horizon_s": 1.0,
+                    "gap_seconds": 1.565999984741211,
+                    "post_velocity": "UNKNOWN_ONE_CURRENT_OBSERVATION"
+                  },
+                  {
+                    "position_cost": 0.03734400339791697,
+                    "pre_fit": {
+                      "status": "ESTIMATED_FROM_MEASURED",
+                      "model": "OLS_INTERCEPT_LINEAR_TIME",
+                      "samples": 10,
+                      "sample_frames": [
+                        4487,
+                        4488,
+                        4489,
+                        4490,
+                        4491,
+                        4492,
+                        4493,
+                        4494,
+                        4495,
+                        4496
+                      ],
+                      "sample_times": [
+                        1787708890.822,
+                        1787708890.855,
+                        1787708890.889,
+                        1787708890.922,
+                        1787708890.955,
+                        1787708890.989,
+                        1787708891.022,
+                        1787708891.055,
+                        1787708891.089,
+                        1787708891.122
+                      ],
+                      "span_seconds": 0.2999999523162842,
+                      "first_frame": 4487,
+                      "last_frame": 4496,
+                      "time_origin": 1787708890.822,
+                      "intercept_px": [
+                        237.5071907386202,
+                        250.77136778925896
+                      ],
+                      "px_per_second": [
+                        -19.714608057687304,
+                        -14.809120948906102
+                      ],
+                      "speed_px_per_second": 24.65716597964086,
+                      "residual_rms_px_by_axis": [
+                        0.3272807337981954,
+                        0.40084990786347546
+                      ],
+                      "residual_rms_2d_px": 0.5174875141968568,
+                      "residual_max_2d_px": 0.9191941823290632,
+                      "uncertainty": "IN_SAMPLE_RESIDUAL_ONLY_NOT_CALIBRATED_FORECAST"
+                    },
+                    "predicted_center_px": [
+                      213.19907821383651,
+                      232.51172106608846
+                    ],
+                    "observed_center_px": [
+                      212.0,
+                      237.0
+                    ],
+                    "prediction_horizon_s": 0.9330000877380371,
+                    "gap_seconds": 0.9330000877380371,
+                    "post_velocity": "UNKNOWN_ONE_CURRENT_OBSERVATION"
+                  }
+                ]
+              },
+              "H2": {
+                "mapping": {
+                  "1": 1,
+                  "7": 0
+                },
+                "geometry_cost": 1.8191447452270941,
+                "depth_cost": 0.0,
+                "total_cost": 1.8191447452270941,
+                "order_compatibility": 0.5,
+                "edges": [
+                  {
+                    "position_cost": 1.5286655300171834,
+                    "pre_fit": {
+                      "status": "ESTIMATED_FROM_MEASURED",
+                      "model": "OLS_INTERCEPT_LINEAR_TIME",
+                      "samples": 9,
+                      "sample_frames": [
+                        4469,
+                        4470,
+                        4471,
+                        4472,
+                        4473,
+                        4474,
+                        4475,
+                        4476,
+                        4477
+                      ],
+                      "sample_times": [
+                        1787708890.222,
+                        1787708890.256,
+                        1787708890.289,
+                        1787708890.322,
+                        1787708890.356,
+                        1787708890.389,
+                        1787708890.422,
+                        1787708890.456,
+                        1787708890.489
+                      ],
+                      "span_seconds": 0.2670001983642578,
+                      "first_frame": 4469,
+                      "last_frame": 4477,
+                      "time_origin": 1787708890.222,
+                      "intercept_px": [
+                        400.6306159226324,
+                        129.86090096904258
+                      ],
+                      "px_per_second": [
+                        -202.14076196785862,
+                        -49.25025633493927
+                      ],
+                      "speed_px_per_second": 208.05402038413894,
+                      "residual_rms_px_by_axis": [
+                        1.5483559423692186,
+                        2.7826102531155663
+                      ],
+                      "residual_rms_2d_px": 3.1843878446279037,
+                      "residual_max_2d_px": 4.51100607162104,
+                      "uncertainty": "IN_SAMPLE_RESIDUAL_ONLY_NOT_CALIBRATED_FORECAST"
+                    },
+                    "predicted_center_px": [
+                      144.51823041185327,
+                      67.46081642318397
+                    ],
+                    "observed_center_px": [
+                      212.0,
+                      237.0
+                    ],
+                    "prediction_horizon_s": 1.0,
+                    "gap_seconds": 1.565999984741211,
+                    "post_velocity": "UNKNOWN_ONE_CURRENT_OBSERVATION"
+                  },
+                  {
+                    "position_cost": 0.29047921520991066,
+                    "pre_fit": {
+                      "status": "ESTIMATED_FROM_MEASURED",
+                      "model": "OLS_INTERCEPT_LINEAR_TIME",
+                      "samples": 10,
+                      "sample_frames": [
+                        4487,
+                        4488,
+                        4489,
+                        4490,
+                        4491,
+                        4492,
+                        4493,
+                        4494,
+                        4495,
+                        4496
+                      ],
+                      "sample_times": [
+                        1787708890.822,
+                        1787708890.855,
+                        1787708890.889,
+                        1787708890.922,
+                        1787708890.955,
+                        1787708890.989,
+                        1787708891.022,
+                        1787708891.055,
+                        1787708891.089,
+                        1787708891.122
+                      ],
+                      "span_seconds": 0.2999999523162842,
+                      "first_frame": 4487,
+                      "last_frame": 4496,
+                      "time_origin": 1787708890.822,
+                      "intercept_px": [
+                        237.5071907386202,
+                        250.77136778925896
+                      ],
+                      "px_per_second": [
+                        -19.714608057687304,
+                        -14.809120948906102
+                      ],
+                      "speed_px_per_second": 24.65716597964086,
+                      "residual_rms_px_by_axis": [
+                        0.3272807337981954,
+                        0.40084990786347546
+                      ],
+                      "residual_rms_2d_px": 0.5174875141968568,
+                      "residual_max_2d_px": 0.9191941823290632,
+                      "uncertainty": "IN_SAMPLE_RESIDUAL_ONLY_NOT_CALIBRATED_FORECAST"
+                    },
+                    "predicted_center_px": [
+                      213.19907821383651,
+                      232.51172106608846
+                    ],
+                    "observed_center_px": [
+                      198.5,
+                      199.5
+                    ],
+                    "prediction_horizon_s": 0.9330000877380371,
+                    "gap_seconds": 0.9330000877380371,
+                    "post_velocity": "UNKNOWN_ONE_CURRENT_OBSERVATION"
+                  }
+                ]
+              }
+            },
+            "pre_pairs": [],
+            "current_pair": null,
+            "pre_probability": 0.5,
+            "attenuated_pre_probability": 0.5,
+            "current_probability": 0.5,
+            "depth_used": false,
+            "depth_reason": "NO_SAME_FRAME_IN_INDEPENDENT_PRE_COMMON_NULL",
+            "margin": 0.5867875508566469,
+            "reason": "NO_DEPTH_INCREMENT_KEEP_COMPLETE_ORIGINAL_STATE",
+            "geometry_choice": "H1"
+          },
+          "staged": false,
+          "stage_error": "DEFER",
+          "fallback": {
+            "status": "ORIGINAL_OWN_BRANCH_PREVIEW_RETAINED",
+            "copies_other_branch": false,
+            "complete_state_retained": true
+          },
+          "mapping": null,
+          "changes": {},
+          "references": {
+            "1": {
+              "frame": 4477,
+              "native_id": 1,
+              "mask": "n:1",
+              "canonical_id": 1
+            },
+            "0": {
+              "frame": 4496,
+              "native_id": 7,
+              "mask": "n:7",
+              "canonical_id": 0
+            }
+          },
+          "signal": {
+            "kind": "FIRST_SPLIT_DECISION_PENDING",
+            "episode": "MS1-F4519"
+          },
+          "status": "ORIGINAL_FALLBACK",
+          "post_velocity": "UNKNOWN",
+          "future_frames_used": 0,
+          "actual_published_mapping": {
+            "7": 0,
+            "1": 1
+          },
+          "actual_aliases": {
+            "7": {
+              "target": 0,
+              "anchor": {
+                "frame": 3836,
+                "native_id": 6,
+                "mask": "n:6",
+                "canonical_id": 0
+              },
+              "commit_frame": 3902
+            },
+            "1": null
+          },
+          "commit_version": 4524,
+          "decided_before_first_publication": true
+        },
+        "signal": {
+          "kind": "FIRST_SPLIT_DECISION_PENDING",
+          "episode": "MS1-F4519"
+        }
+      },
+      "published_row_sha256": "dd8228031e46465d2e4cf46d1812d760e2567e5df5002c51381d5309c6a423ed"
+    }
+  ],
+  "prefix_summary": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds30_original_z4q_depth_increment\\slice_state_final\\fishsa_development_8400\\public\\RUN_SUMMARY.json",
+    "bytes": 807,
+    "sha256": "21bc0b86feeee55931017b83b8ac3972808cbfb62069056b7da8b6d912854f9d"
+  },
+  "prefix_transactions": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds30_original_z4q_depth_increment\\slice_state_final\\fishsa_development_8400\\public\\TRANSACTIONS.jsonl.gz",
+    "bytes": 580773,
+    "sha256": "a0ccbeab6138b8196b3c349d9a8f0f9c172554f42d6e04438c07345bb661f737"
+  },
+  "prefix_publications": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds30_original_z4q_depth_increment\\slice_state_final\\fishsa_development_8400\\public\\predictions.jsonl.gz",
+    "bytes": 43189,
+    "sha256": "eceebdc369f3a2a084d4964f90e129587a45d48dcc4a5064e6e241fe856f456d"
+  },
+  "no_GT_or_RGB": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

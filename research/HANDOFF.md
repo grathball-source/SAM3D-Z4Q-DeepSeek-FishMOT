@@ -1,3 +1,7 @@
+## DS30 original Z4Q depth increment completed (2026-10-05)
+
+Status: FULL_REPLAY_COMPLETE_NO_DEPTH_STATE_INCREMENT. Eight same-source segments/20098frames, three own-state branches, no API/GPU/training/SAM3/completion/fees. See experiments/ds30_original_z4q_depth_increment/FINAL_REVIEW.md and full metrics. Original Z4Q authoritative, read-only event observer; exact pre anchors; measured supports/common null. Complete negative/positive sourcewise results retained; original own-branch state retained on null, DEFER or failed stage; shared source points remeasured. Old source/seals unchanged; all private figures inventoried. One next-step plan unstarted. Old handoff bytes preserved below.
+
 ## DS29 anonymous pair joint completed (2026-10-05)
 
 Status: FULL_REPLAY_COMPLETE_NO_DEPTH_INCREMENT. Eight same-source segments/20098frames, four own-state branches, no API/GPU/training/SAM3/completion/fees. See experiments/ds29_anonymous_pair_joint/FINAL_REVIEW.md and full metrics. Current candidates jointly anonymous; exact independent pre anchors; mixture marginalization/common null. Complete negative/positive sourcewise results retained; shared protection/geometric changes separated from depth increment. Old source/seals unchanged; all private figures inventoried. One next-step plan unstarted. Old handoff bytes preserved below.

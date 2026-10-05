@@ -1,0 +1,170 @@
+{
+  "status": "FULL_REPLAY_COMPLETE_SOURCEWISE_PERSISTENT_IDENTITY_AND_DEPTH_RESULTS",
+  "engineering": "PASS_FINAL_V2_STATE_SOURCE_PUBLICATION_AND_ALL_SEALS",
+  "scientific_goal": "NOT_ACHIEVED_ALL_FIVE_SUMMARIES_BELOW_NATIVE_AND_ORIGINAL_Z4Q",
+  "frames": 20098,
+  "branch_frames": 80392,
+  "unchanged_original_masks": 181842,
+  "changed_PID_action_physical_counts": {
+    "PID_MOTION": {
+      "WRONG": 103,
+      "UNSCORABLE": 47,
+      "CORRECT": 5
+    },
+    "PID_DEPTH": {
+      "WRONG": 97,
+      "CORRECT": 5,
+      "UNSCORABLE": 44
+    }
+  },
+  "comparison": {
+    "Feeding pooled 1471": {
+      "SAM3_NATIVE": {
+        "IDF1": -15.414248422333173,
+        "HOTA": -11.606008361108053,
+        "AssA": -19.06739188357856,
+        "IDSW": 109,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -16.154294548495827,
+        "HOTA": -11.501803806411644,
+        "AssA": -18.87867527027381,
+        "IDSW": 85,
+        "FP": 0,
+        "FN": 0
+      },
+      "PID_MOTION": {
+        "IDF1": 0.8743695668702571,
+        "HOTA": 0.8713363030614403,
+        "AssA": 1.3287586192802934,
+        "IDSW": 5,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_development_8400": {
+      "SAM3_NATIVE": {
+        "IDF1": -22.84669865204478,
+        "HOTA": -13.43433207318946,
+        "AssA": -23.00955740217664,
+        "IDSW": 8,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -30.8668832136365,
+        "HOTA": -17.917676640259977,
+        "AssA": -31.730428030679008,
+        "IDSW": 7,
+        "FP": 0,
+        "FN": 0
+      },
+      "PID_MOTION": {
+        "IDF1": -13.988139583395423,
+        "HOTA": -9.231322027970812,
+        "AssA": -15.307295911014577,
+        "IDSW": 6,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "fishsa_validation_2888": {
+      "SAM3_NATIVE": {
+        "IDF1": -31.037979083982734,
+        "HOTA": -23.044672183524803,
+        "AssA": -31.63237914565924,
+        "IDSW": 19,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -35.27912164315305,
+        "HOTA": -25.85301204362863,
+        "AssA": -36.51064152458021,
+        "IDSW": 18,
+        "FP": 0,
+        "FN": 0
+      },
+      "PID_MOTION": {
+        "IDF1": -3.858744459572989,
+        "HOTA": -3.4086605622726367,
+        "AssA": -3.8336044222939876,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "L3": {
+      "SAM3_NATIVE": {
+        "IDF1": -8.327559693799955,
+        "HOTA": -8.023494037180413,
+        "AssA": -19.002325623657583,
+        "IDSW": 3,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -10.646028017641981,
+        "HOTA": -9.83244411306704,
+        "AssA": -23.581716572454766,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "PID_MOTION": {
+        "IDF1": 21.967994322118386,
+        "HOTA": 15.102077809583918,
+        "AssA": 29.970588970699183,
+        "IDSW": -11,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "LW": {
+      "SAM3_NATIVE": {
+        "IDF1": -33.45275190375419,
+        "HOTA": -28.406133852825633,
+        "AssA": -52.18055716757736,
+        "IDSW": 33,
+        "FP": 0,
+        "FN": 0
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": -37.168613467082125,
+        "HOTA": -31.028787670014268,
+        "AssA": -58.43103320714262,
+        "IDSW": 30,
+        "FP": 0,
+        "FN": 0
+      },
+      "PID_MOTION": {
+        "IDF1": -2.666089014046957,
+        "HOTA": -0.49589303663326945,
+        "AssA": -0.6672433056098726,
+        "IDSW": 4,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "metrics": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\METRICS.json",
+    "bytes": 797463,
+    "sha256": "306fe7b2bab19abe163aae2d10d494df0cbef55d84ae32c69f00fa8548e2ba28"
+  },
+  "mechanism": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\MECHANISM_ANALYSIS.json",
+    "bytes": 1209157,
+    "sha256": "5c26175e0c8e6a805932c67f309342ef3c9a4f7b1f36b54d4d8bef3ed323a0ef"
+  },
+  "analysis": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\ANALYSIS.json",
+    "bytes": 8059221,
+    "sha256": "7841d0aea3c852f0e72f98a4175b1de4fb93aa296c904fbd53e8b364264aa063"
+  },
+  "engineering_v1_unscored": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

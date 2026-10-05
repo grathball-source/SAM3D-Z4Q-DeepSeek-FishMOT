@@ -1,0 +1,178 @@
+{
+  "records": [
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "PID_DEPTH",
+      "frame": 4434,
+      "global_frame": 4434,
+      "source": 5,
+      "target": 7,
+      "previous_pid": 5,
+      "reference": {
+        "frame": 4188,
+        "native_id": 7,
+        "source_generation": 0,
+        "pid": 7
+      },
+      "relation": "DIFFERENT",
+      "physical": "WRONG",
+      "mapping_changed": true,
+      "depth_used": false,
+      "depth_changed_same_state_selection": false,
+      "first_public_origin": {
+        "frame": 3902,
+        "native_id": 7
+      },
+      "relations": {
+        "query_vs_actual_reference": "DIFFERENT",
+        "reference_vs_first_public_origin": "SAME",
+        "query_vs_first_public_origin": "DIFFERENT"
+      },
+      "initial_public_origin_mismatch": false,
+      "caveat": "First public observation may itself be merged/unscorable; SAME is conditional on unique postseal IoU match, not human-certified identity."
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "PID_MOTION",
+      "frame": 4864,
+      "global_frame": 4864,
+      "source": 5,
+      "target": 7,
+      "previous_pid": 5,
+      "reference": {
+        "frame": 4757,
+        "native_id": 7,
+        "source_generation": 0,
+        "pid": 7
+      },
+      "relation": "DIFFERENT",
+      "physical": "WRONG",
+      "mapping_changed": true,
+      "depth_used": false,
+      "depth_changed_same_state_selection": false,
+      "first_public_origin": {
+        "frame": 3902,
+        "native_id": 7
+      },
+      "relations": {
+        "query_vs_actual_reference": "DIFFERENT",
+        "reference_vs_first_public_origin": "SAME",
+        "query_vs_first_public_origin": "DIFFERENT"
+      },
+      "initial_public_origin_mismatch": false,
+      "caveat": "First public observation may itself be merged/unscorable; SAME is conditional on unique postseal IoU match, not human-certified identity."
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "PID_DEPTH",
+      "frame": 4948,
+      "global_frame": 4948,
+      "source": 3,
+      "target": 1000000,
+      "previous_pid": 3,
+      "reference": {
+        "frame": 4757,
+        "native_id": 7,
+        "source_generation": 0,
+        "pid": 1000000
+      },
+      "relation": "DIFFERENT",
+      "physical": "WRONG",
+      "mapping_changed": true,
+      "depth_used": true,
+      "depth_changed_same_state_selection": true,
+      "first_public_origin": {
+        "frame": 4434,
+        "native_id": 7
+      },
+      "relations": {
+        "query_vs_actual_reference": "DIFFERENT",
+        "reference_vs_first_public_origin": "SAME",
+        "query_vs_first_public_origin": "DIFFERENT"
+      },
+      "initial_public_origin_mismatch": false,
+      "caveat": "First public observation may itself be merged/unscorable; SAME is conditional on unique postseal IoU match, not human-certified identity."
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "PID_DEPTH",
+      "frame": 6711,
+      "global_frame": 6711,
+      "source": 1,
+      "target": 1000000,
+      "previous_pid": 1,
+      "reference": {
+        "frame": 6701,
+        "native_id": 3,
+        "source_generation": 0,
+        "pid": 1000000
+      },
+      "relation": "DIFFERENT",
+      "physical": "WRONG",
+      "mapping_changed": true,
+      "depth_used": true,
+      "depth_changed_same_state_selection": true,
+      "first_public_origin": {
+        "frame": 4434,
+        "native_id": 7
+      },
+      "relations": {
+        "query_vs_actual_reference": "DIFFERENT",
+        "reference_vs_first_public_origin": "DIFFERENT",
+        "query_vs_first_public_origin": "DIFFERENT"
+      },
+      "initial_public_origin_mismatch": true,
+      "caveat": "First public observation may itself be merged/unscorable; SAME is conditional on unique postseal IoU match, not human-certified identity."
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "PID_DEPTH",
+      "frame": 7017,
+      "global_frame": 7017,
+      "source": 4,
+      "target": 1000002,
+      "previous_pid": 4,
+      "reference": {
+        "frame": 6748,
+        "native_id": 3,
+        "source_generation": 0,
+        "pid": 1000002
+      },
+      "relation": "DIFFERENT",
+      "physical": "WRONG",
+      "mapping_changed": true,
+      "depth_used": false,
+      "depth_changed_same_state_selection": false,
+      "first_public_origin": {
+        "frame": 6711,
+        "native_id": 3
+      },
+      "relations": {
+        "query_vs_actual_reference": "DIFFERENT",
+        "reference_vs_first_public_origin": "SAME",
+        "query_vs_first_public_origin": "DIFFERENT"
+      },
+      "initial_public_origin_mismatch": false,
+      "caveat": "First public observation may itself be merged/unscorable; SAME is conditional on unique postseal IoU match, not human-certified identity."
+    }
+  ],
+  "counts": {
+    "PID_MOTION": {
+      "all/CORRECT": 75,
+      "prior_public_origin/SAME": 73,
+      "all/WRONG": 1,
+      "changed/WRONG": 1,
+      "prior_public_origin/DIFFERENT": 3
+    },
+    "PID_DEPTH": {
+      "all/CORRECT": 109,
+      "prior_public_origin/SAME": 73,
+      "all/WRONG": 4,
+      "changed/WRONG": 4,
+      "prior_public_origin/DIFFERENT": 40,
+      "depth_changed/WRONG": 2
+    }
+  },
+  "origin_policy": "FIRST_ACTUAL_PERSISTENT_PID_PUBLICATION",
+  "new_GT_raster_read": false
+}

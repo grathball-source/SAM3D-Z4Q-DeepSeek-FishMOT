@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds31_persistent_identity_depth\freeze.py", line 3, in <module>
+    import runner,score,identity,depth,subprocess,sys,platform
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds31_persistent_identity_depth\score.py", line 5, in <module>
+    ref=module('ds31_official_readonly',ROOT/'experiments/ds20_pending_confirmation_isolation/score.py')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 73, in module
+    spec.loader.exec_module(m);return m
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\score.py", line 4, in <module>
+    from mixed_depth import validate_certificate, validate_bound_measurement, bind_measurement, _digest as evidence_digest, _validated_facts
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\mixed_depth.py", line 24, in <module>
+    _old = _module('ds18_frozen_ds17_measurement', ROOT / 'experiments/ds17_mixed_depth_activity_repair/mixed_depth.py')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\mixed_depth.py", line 19, in _module
+    spec.loader.exec_module(module)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds17_mixed_depth_activity_repair\mixed_depth.py", line 18, in <module>
+    _spec.loader.exec_module(_core)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\contact_measurement.py", line 21, in <module>
+    assert (CFG['min_points'], CFG['min_fraction'], CFG['raw_scale_floor_mm'],
+            ~~~^^^^^^^^^^^^^^
+KeyError: 'min_points'

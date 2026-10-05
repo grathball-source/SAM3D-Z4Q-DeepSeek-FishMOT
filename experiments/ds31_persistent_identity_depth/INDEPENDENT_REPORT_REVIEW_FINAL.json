@@ -1,0 +1,358 @@
+{
+  "schema": "DS31_INDEPENDENT_REPORT_REVIEW_FINAL_V1",
+  "status": "PASS",
+  "reviewed_utc": "2026-10-05T09:39:02.913277+00:00",
+  "reviewed_documents": {
+    "INTERPRETATION.md": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\INTERPRETATION.md",
+      "bytes": 7286,
+      "sha256": "339332f77505919045de42771a98bc0018f390357e810eadf458d1531d5eb272"
+    },
+    "NEXT_STEP_PLAN.md": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\NEXT_STEP_PLAN.md",
+      "bytes": 1821,
+      "sha256": "d012be7e79046bfc2b7b018ddd0b7c9766bf0706c081c7546ab2ecc4b1417cf6"
+    },
+    "FINAL_REVIEW.md": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\FINAL_REVIEW.md",
+      "bytes": 22039,
+      "sha256": "53e84435cbf18636555f5bc7cb4fa6d5bab95db96212d221543f448f059918e2"
+    }
+  },
+  "previous_review": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\INDEPENDENT_REPORT_REVIEW.json",
+    "bytes": 16722,
+    "sha256": "6c90e4c9c217251da3418f5e21c06a21224fb5561ee94ca22614933adf663463"
+  },
+  "previous_review_preserved": true,
+  "findings": [],
+  "scope": "Final supplement for the new F364 joint-competition explanation and current regenerated report; previous scientific/numeric review remains preserved.",
+  "supplemental_verification": {
+    "f364": {
+      "segment": "feeding_000351_000555",
+      "local_frame": 14,
+      "global_frame": 364,
+      "only_candidate_pid": 30,
+      "feasible_competing_sources": [
+        30,
+        66,
+        69
+      ],
+      "rows": {
+        "30": {
+          "observation_mm": 1147.2462768554688,
+          "prediction_mm": 1047.5615448044407,
+          "absolute_difference_mm": 99.68473205102805,
+          "combined_scale_mm": 68.19567487119285,
+          "geometry_cost": 0.7568819487109185,
+          "depth_cost": 0.9811472970937567,
+          "joint_cost": 1.0021687729843576,
+          "log_signal": -6.273192498141195,
+          "log_background": -5.087135110924348
+        },
+        "66": {
+          "observation_mm": 879.047607421875,
+          "prediction_mm": 1047.5615448044407,
+          "absolute_difference_mm": 168.5139373825657,
+          "combined_scale_mm": 64.15555234025155,
+          "geometry_cost": 0.8644829586438043,
+          "depth_cost": -1.9412790751799622,
+          "joint_cost": 0.37916318984881375,
+          "log_signal": -7.648143578753425,
+          "log_background": -9.680327157211412
+        },
+        "69": {
+          "observation_mm": 1140.6416015625,
+          "prediction_mm": 1047.5615448044407,
+          "absolute_difference_mm": 93.0800567580593,
+          "combined_scale_mm": 64.15555234025155,
+          "geometry_cost": 0.9893995198606821,
+          "depth_cost": 0.9065607866708537,
+          "joint_cost": 1.2160397165283956,
+          "log_signal": -6.1991597340752245,
+          "log_background": -5.113499780610171
+        }
+      },
+      "geometry_raw_winner": 30,
+      "geometry_deleted_edge_margin": 0.1076010099328858,
+      "geometry_accepted_edges": 0,
+      "depth_raw_and_accepted_winner": 66,
+      "depth_deleted_edge_margin": 0.6208368101511863,
+      "interpretation": "Correct native30 is closer to the recorded forecast but near the full-frame background median, so its likelihood ratio penalizes it above dummy; the joint matrix rewards native66 and accepts the wrong actual-reference edge.",
+      "evidence": {
+        "transaction": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000351_000555\\public\\TRANSACTIONS.jsonl.gz",
+          "bytes": 384740,
+          "sha256": "c14035d18eee182a26b5d1d0f6ccb06520a98661b16b8af373d6a6f01ca54109"
+        },
+        "selector": {
+          "arm": "PID_DEPTH",
+          "frame": 14
+        }
+      }
+    },
+    "active_row_37_caveat": "Whole-matrix selection change with the row active; not isolated own-row intervention.",
+    "current_report_metric_rows_verified": 36,
+    "current_report_delta_rows_verified": 15,
+    "current_interpretation_and_next_step_embedded_exactly": true,
+    "report_validation": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\REPORT_VALIDATION.json",
+      "bytes": 1087,
+      "sha256": "650a8bfcccf2cc231c044073a52085cdf348ba9785fccdb90e057f0192295e35"
+    }
+  },
+  "retained_verified_counts": {
+    "pid_depth_groups": 143,
+    "first_split_events": [
+      {
+        "segment": "feeding_001201_001906",
+        "event": "PID-F572-151",
+        "q": 605,
+        "confirm_frame": 573
+      }
+    ],
+    "pid_depth_changed_actions": {
+      "count": 146,
+      "physical": {
+        "CORRECT": 5,
+        "WRONG": 97,
+        "UNSCORABLE": 44
+      }
+    },
+    "pid_motion_changed_actions": {
+      "count": 155,
+      "physical": {
+        "CORRECT": 5,
+        "WRONG": 103,
+        "UNSCORABLE": 47
+      }
+    },
+    "active_row_whole_matrix_changed_pid_actions": {
+      "count": 37,
+      "physical": {
+        "CORRECT": 0,
+        "WRONG": 32,
+        "UNSCORABLE": 5
+      }
+    },
+    "same_state_added_changed_pid_actions": {
+      "count": 68,
+      "physical": {
+        "CORRECT": 2,
+        "WRONG": 57,
+        "UNSCORABLE": 9
+      }
+    },
+    "matrix_counts": {
+      "frames_checked": 20098,
+      "unlocked_observation_rows": 43327,
+      "zero_feasible_old_pid_rows": 30283,
+      "one_feasible_old_pid_rows": 5968,
+      "multiple_feasible_old_pid_rows": 7076,
+      "geometry_accepted_edges": 2442,
+      "depth_accepted_edges": 1001,
+      "active_depth_rows": 10184,
+      "frames_with_modified_cost": 4779,
+      "frames_with_changed_accepted_edges": 1419,
+      "added_accepted_edges": 126,
+      "removed_accepted_edges": 1567,
+      "replaced_source_targets": 2,
+      "added_actual_pid_changes": 68,
+      "added_same_pid_recertifications": 58,
+      "removed_target_still_published": 793,
+      "removed_target_not_published": 774,
+      "geometry_accepted_rows_suppressed_to_dummy": 1063,
+      "geometry_accepted_rows_suppressed_by_margin": 502
+    },
+    "trajectory_counts": {
+      "divergent_frames": 14507,
+      "changed_source_frame_pairs": 73633
+    },
+    "switch_counts": {
+      "PID_MOTION_minus_Z4Q_FROZEN": {
+        "added_count": 225,
+        "eliminated_count": 88,
+        "common_count": 71,
+        "net_idsw": 137
+      },
+      "PID_DEPTH_minus_Z4Q_FROZEN": {
+        "added_count": 232,
+        "eliminated_count": 90,
+        "common_count": 69,
+        "net_idsw": 142
+      },
+      "PID_DEPTH_minus_PID_MOTION": {
+        "added_count": 213,
+        "eliminated_count": 208,
+        "common_count": 88,
+        "net_idsw": 5
+      }
+    }
+  },
+  "retained_causal_boundaries": {
+    "actual_reference_and_first_public_origin_separate": true,
+    "same_state_matrix_effects_separate_from_full_branch_trajectory": true,
+    "removed_counterfactual_edges_not_physically_graded": true,
+    "downstream_native_and_pid_publication_not_certified_future_fish_continuity": true,
+    "no_reanchor_described_as_possible_not_unique_proven_cause": true,
+    "L3_LW_weak_references_explicit": true,
+    "next_step_unstarted_and_not_promised_gain": true
+  },
+  "unchanged_scored_evidence": {
+    "run/ALL_PREDICTIONS_SEALED.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\ALL_PREDICTIONS_SEALED.json",
+      "bytes": 4812,
+      "sha256": "791e2ab9645456fb62303f333fc767a95d6af7ca4550f01a1958e9eea131cadb"
+    },
+    "run/METRICS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\METRICS.json",
+      "bytes": 797463,
+      "sha256": "306fe7b2bab19abe163aae2d10d494df0cbef55d84ae32c69f00fa8548e2ba28"
+    },
+    "ANALYSIS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\ANALYSIS.json",
+      "bytes": 8059221,
+      "sha256": "7841d0aea3c852f0e72f98a4175b1de4fb93aa296c904fbd53e8b364264aa063"
+    },
+    "CASE_EVIDENCE.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\CASE_EVIDENCE.json",
+      "bytes": 281460,
+      "sha256": "335615a347fa4a5e9f4fb8b057c1c616fc9ea4d900d452e605f907db78638467"
+    },
+    "run/MECHANISM_ANALYSIS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\MECHANISM_ANALYSIS.json",
+      "bytes": 1209157,
+      "sha256": "5c26175e0c8e6a805932c67f309342ef3c9a4f7b1f36b54d4d8bef3ed323a0ef"
+    },
+    "run/feeding_000000_000199/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000000_000199\\public\\ACTION_AUDIT.json",
+      "bytes": 23062,
+      "sha256": "4f9e43e98a4eb2cc6ae8e86cc7fd011bc6143a95ca40028a7270be76764d4600"
+    },
+    "run/feeding_000000_000199/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000000_000199\\public\\EVENTS.json",
+      "bytes": 5917,
+      "sha256": "64981d37a986c8e247f6c21fac0b0c49e6d41c1c4479df1bcaf629e16a0ae904"
+    },
+    "run/feeding_000351_000555/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000351_000555\\public\\ACTION_AUDIT.json",
+      "bytes": 72164,
+      "sha256": "39b2b42b41ce06f4929bf32f1da3c2bd63ad22ec830bfabb72c9c7d57a62a431"
+    },
+    "run/feeding_000351_000555/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000351_000555\\public\\EVENTS.json",
+      "bytes": 33790,
+      "sha256": "0e44abcf40bb1989412c3203d510da6aaa3702aef77b62f3220d4efd4d79e3ec"
+    },
+    "run/feeding_000701_001060/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000701_001060\\public\\ACTION_AUDIT.json",
+      "bytes": 95226,
+      "sha256": "62bf0ee803a917551f39beb4007000a1c13a73e0c0bca2c1c6c89d0d5738bcd9"
+    },
+    "run/feeding_000701_001060/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000701_001060\\public\\EVENTS.json",
+      "bytes": 25791,
+      "sha256": "0dcfe7504281627ab4b75ef15753f5364d53fc89ecba31e0538c4fd96320a59f"
+    },
+    "run/feeding_001201_001906/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_001201_001906\\public\\ACTION_AUDIT.json",
+      "bytes": 113788,
+      "sha256": "c4e0885d2c5abb888386919956d0aa57468b0e2a81f98f363783c4120a51dfda"
+    },
+    "run/feeding_001201_001906/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_001201_001906\\public\\EVENTS.json",
+      "bytes": 20880,
+      "sha256": "17675ef79c6a17dc2291d4152756ec1cbc22bff81b385d3b499ed10c8b12b02c"
+    },
+    "run/fishsa_development_8400/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\fishsa_development_8400\\public\\ACTION_AUDIT.json",
+      "bytes": 92712,
+      "sha256": "a475644bc271f5b2692ed31342bb8e71718e89226aeb73f976bd4afcd9d7d24b"
+    },
+    "run/fishsa_development_8400/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\fishsa_development_8400\\public\\EVENTS.json",
+      "bytes": 15651,
+      "sha256": "595037891f4de8fb1d6e05acebdf6e28dedb05f54c29eca5070bbcaea345f3e9"
+    },
+    "run/fishsa_validation_2888/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\fishsa_validation_2888\\public\\ACTION_AUDIT.json",
+      "bytes": 52777,
+      "sha256": "09ed8a93ff43b415da2f1480acdc6433509f14f65dc631d57faafb21943b7350"
+    },
+    "run/fishsa_validation_2888/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\fishsa_validation_2888\\public\\EVENTS.json",
+      "bytes": 7397,
+      "sha256": "8689459ff8a61a50535eb87c837a8cbb880b2f71de6b190ede73b13ef762006e"
+    },
+    "run/L3/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\L3\\public\\ACTION_AUDIT.json",
+      "bytes": 217686,
+      "sha256": "18810aa040797cff06c0ba8cc86d79577a207402d703e8145003d3666e6b0c8f"
+    },
+    "run/L3/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\L3\\public\\EVENTS.json",
+      "bytes": 15307,
+      "sha256": "dfb83e365c95ed25ad1ede815e572aaba418e5a1e4c217a957da0fc602af9616"
+    },
+    "run/LW/public/ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\LW\\public\\ACTION_AUDIT.json",
+      "bytes": 339936,
+      "sha256": "a2223850455e800944b0b36b8562493f20d7c4da1da398e84fa7d9b629040b6c"
+    },
+    "run/LW/public/EVENTS.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\LW\\public\\EVENTS.json",
+      "bytes": 48190,
+      "sha256": "04c4a8be492d1d1aa1c349a42db274fabfc17219bef865eda7cd4fb41015d25d"
+    },
+    "run/feeding_000351_000555/public/REFERENCE_MATCHES.jsonl.gz": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000351_000555\\public\\REFERENCE_MATCHES.jsonl.gz",
+      "bytes": 78988,
+      "sha256": "2b0182f4f6934fe839651bc1e6d8e51bbfd35478b78ac60c3aab2f1e1809a992"
+    },
+    "run/feeding_000351_000555/public/ORIGIN_ACTION_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\run\\feeding_000351_000555\\public\\ORIGIN_ACTION_AUDIT.json",
+      "bytes": 32446,
+      "sha256": "56c75461ccd4df9adcf4eeffd1ba2b7593041709fc42f7df237a223e4f8f25fc"
+    },
+    "RUNTIME_FREEZE.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\RUNTIME_FREEZE.json",
+      "bytes": 12900,
+      "sha256": "9d046988dbc62d476431e7caf3e0aaf3c95638f7a02b76244fc19d420b2ddb6f"
+    },
+    "identity.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\identity.py",
+      "bytes": 15793,
+      "sha256": "3d1f0e31530bf2c8d3312299f42cf8e0f3b88da27708e8bcd3eaf0f276b74e06"
+    },
+    "depth.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\depth.py",
+      "bytes": 8142,
+      "sha256": "17f7dd00621b8a983d65d57149977bed791b2ad0d7cda5fea7dfab6c4ef118d4"
+    },
+    "CONFIG.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\CONFIG.json",
+      "bytes": 773,
+      "sha256": "926a8d43db652fa2e87ec6e158ee67a7482351526bf33a9a4c777bc37d51ce8e"
+    }
+  },
+  "final_semantic_checks": {
+    "background_median_term_correct": true,
+    "same_state_vs_full_trajectory_separate": true,
+    "actual_bank_reference_vs_public_origin_separate": true,
+    "physical_endpoint_judgment_retained_from_scored_matches": true,
+    "future_publication_not_future_physical_identity": true,
+    "L3_LW_weak_reference_caveat_present": true,
+    "unimplemented_full_system_not_declared_invalid": true,
+    "next_step_explicitly_unstarted": true,
+    "veto_branch_own_state_and_null_neutrality_correct": true
+  },
+  "independent_static_second_review": "No findings; independently confirmed the F364 penalties/rewards, margins, 37-case caveat and unstarted own-state next step.",
+  "boundaries": {
+    "new_GT_RGB_raster_read": false,
+    "API_server_model": false,
+    "tracker_replay": false,
+    "scientific_code_result_or_parameter_changes": false,
+    "root_documents_modified_by_reviewer": false,
+    "commit_performed": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "FAIL",
+  "tests": 9,
+  "failures": [
+    {
+      "test": "test_first_split_decides_before_publish_and_keeps_residual_occupancy (__main__.Checks.test_first_split_decides_before_publish_and_keeps_residual_occupancy)",
+      "detail": "Traceback (most recent call last):\n  File \"E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\checks.py\", line 141, in test_first_split_decides_before_publish_and_keeps_residual_occupancy\n    self.assertEqual((mapping[1], mapping[102]), (1, 2))\nAssertionError: Tuples differ: (1000000, 2) != (1, 2)\n\nFirst differing element 0:\n1000000\n1\n\n- (1000000, 2)\n+ (1, 2)\n"
+    }
+  ],
+  "errors": [],
+  "synthetic_not_research_success": true,
+  "no_external_inputs": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

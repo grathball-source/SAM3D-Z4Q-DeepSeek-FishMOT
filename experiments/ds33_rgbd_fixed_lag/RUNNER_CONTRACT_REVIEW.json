@@ -1,0 +1,83 @@
+{
+  "schema": "DS33_RUNNER_CONTRACT_REVIEW_V1",
+  "status": "PASS_SCOPED_SYNTHETIC_AND_STATIC_REVIEW",
+  "source_code": {
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\runner.py": "b24f9f92f10eb803f6c34e13646f838c2d003f843e10c24e77279ffdfb905151",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\controller.py": "59378f2c02f534ed1a22987957da3845ff3da13ff8ffc342301733a5249f06bd",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\lag.py": "f52be38f147e115861f8bb60fb24ce86de0cc64e1e897261acea293fd8107881",
+    "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\evidence.py": "44fc0e741e8d6e186a684eb071b8b11b5f15fa909490dd243d6d473595915190"
+  },
+  "corrected_findings": [
+    {
+      "issue": "overlap first-publish mapping changed while actual_changes stale",
+      "fix": "actual publish recomputes differences and marks earlier-active-window influence",
+      "verified": "actual publish AST body on synthetic q41"
+    },
+    {
+      "issue": "archived/assignment time-global metadata incompletely bound",
+      "fix": "actual runner source tuple asserts frame/global/time for archive and assignment",
+      "verified": "static code"
+    },
+    {
+      "issue": "standalone replay accepted evidence beyond q30",
+      "fix": "replay_option rejects final frame above frozen cutoff",
+      "verified": "actual q40-to71 returns INVALID without checkpoint mutation"
+    }
+  ],
+  "checks": [
+    "REAL_ENGINE_Q40_AFTER_PUBLISHED_PREFIX_CHECKPOINT",
+    "ALT_PREVIEW_COMMIT_ALIAS_PREVIOUS_BANK_AND_COMPLETE_UNPUBLISHED_SUFFIX",
+    "OUTSIDE_NATIVE8_ALIAS7_REPAIR_PRESERVED",
+    "ORIGINAL_PUBLISHED_PREFIX_UNCHANGED",
+    "ACTUAL_RUNNER_PUBLISH_Q40_MAPPING3_FIRST_ONCE",
+    "OVERLAP_Q41_FINAL_CHANGES_AND_ACTUAL_ACTIONS_REBOUND",
+    "30_PACKET_CACHE_REMAINS_BOUNDED",
+    "DIRECT_REPLAY_Q31_REJECTED_ATOMICALLY",
+    "NO_DIRECT_ALIAS_OR_OUTPUT_ONLY_REPAIR"
+  ],
+  "synthetic": {
+    "q": 40,
+    "confirm": 43,
+    "first_publish_q": 70,
+    "overlap_q": 41,
+    "first_publish_overlap": 71,
+    "original_overlap": {
+      "8": 7,
+      "2": 2,
+      "3": 1
+    },
+    "actual_overlap": {
+      "2": 2,
+      "3": 3,
+      "8": 7
+    },
+    "aliases_at_confirm": {
+      "8": {
+        "target": 7,
+        "anchor": {
+          "frame": 38,
+          "native_id": 7,
+          "mask": "n:7",
+          "canonical_id": 7
+        },
+        "commit_frame": 41
+      }
+    },
+    "previous_at_confirm": {
+      "8": 7,
+      "2": 2,
+      "3": 3
+    },
+    "new_independent_overlap_commit": false
+  },
+  "limits": [
+    "Synthetic integration exercises actual controller, lag, runtime-row and publish code; does not run full run_segment or sensor readers.",
+    "Original lifecycle can propose a new reconnect after window release; no permanent ID lock is claimed.",
+    "Outside publication mappings are asserted per replay frame; physical correctness and depth benefit remain UNKNOWN before sealed scoring.",
+    "No GT, result metric, real pixels or server/service API were read or executed."
+  ],
+  "GT_read": false,
+  "formal_run": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

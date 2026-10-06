@@ -1,0 +1,323 @@
+{
+  "status": "PASS_ACTUAL_LOCAL_PRIVATE_VISUAL_INSPECTION",
+  "scope": "POSTSEAL_PRIVATE_DIAGNOSTICS_ONLY",
+  "inspected_utc": "2026-10-06T08:40:24.257134+00:00",
+  "inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\CASE_INVENTORY.json",
+    "bytes": 54445,
+    "sha256": "e238b4701ed1306032611bfb1d57538c12853717316b4fad19d78e9f53f75e1a"
+  },
+  "public_private_inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\run\\PRIVATE_VISUALS_INVENTORY.json",
+    "bytes": 2788,
+    "sha256": "1672998a7db7244af5f43966bfba8fbb821423f42f1a40a378fac7724108a4cd"
+  },
+  "execution": {
+    "command": [
+      "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+      "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private_visuals.py"
+    ],
+    "started_utc": "2026-10-06T08:33:56.290391+00:00",
+    "ended_utc": "2026-10-06T08:37:56.755424+00:00",
+    "elapsed_seconds": 240.4654840999283,
+    "exit_code": 0,
+    "stdout": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\logs\\20261006T083356290391Z_a83a95b1a0124a04a9cb60227eda5486_private_visuals.stdout.txt",
+      "bytes": 717,
+      "sha256": "c82b1d885572782ba97ddc9c2fd7da4f8f32d3904fdf7bdfb47f9de872fd5cdb"
+    },
+    "stderr": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\logs\\20261006T083356290391Z_a83a95b1a0124a04a9cb60227eda5486_private_visuals.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "new_model_http": 0,
+    "cost_usd": 0
+  },
+  "actual_view_image_inspection": [
+    {
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\01_feeding_000000_000199_Q160_RGB_LAG.png",
+        "bytes": 5728067,
+        "sha256": "555b9928f77f95cecd8c4fae791b0f52b24aa542a4371a41e334f80952580035"
+      },
+      "segment": "feeding_000000_000199",
+      "method": "functions.view_image original pixels actually displayed and inspected",
+      "findings": [
+        "Four actual branch rows and pre/q/confirm columns visible",
+        "Actual raw mask contours and first-published native-to-public mappings preserved",
+        "Pre bank anchor quality and current DS18 quality separately labelled",
+        "Propagated contours labelled hypotheses; conditional 3D support and UNKNOWN points explicit",
+        "RGB and raw sensor depth use the exact formal source binding; no GT raster or labels"
+      ]
+    },
+    {
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\08_LW_Q115_RGB_LAG.png",
+        "bytes": 4626447,
+        "sha256": "9bfc1997db9f9a478db6fbabf8bd3f9b6840649cb4229276da6607a1cb0f6067"
+      },
+      "segment": "LW",
+      "method": "functions.view_image original pixels actually displayed and inspected",
+      "findings": [
+        "Four actual branch rows and pre/q/confirm columns visible",
+        "Actual raw mask contours and first-published native-to-public mappings preserved",
+        "Pre bank anchor quality and current DS18 quality separately labelled",
+        "Propagated contours labelled hypotheses; conditional 3D support and UNKNOWN points explicit",
+        "RGB and raw sensor depth use the exact formal source binding; no GT raster or labels"
+      ]
+    }
+  ],
+  "all_image_numeric_checks": [
+    {
+      "segment": "feeding_000000_000199",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\01_feeding_000000_000199_Q160_RGB_LAG.png",
+        "bytes": 5728067,
+        "sha256": "555b9928f77f95cecd8c4fae791b0f52b24aa542a4371a41e334f80952580035"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          15
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          160
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          162
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "feeding_000351_000555",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\02_feeding_000351_000555_Q24_RGB_LAG.png",
+        "bytes": 6197353,
+        "sha256": "19ff718729f6def77a74ba2e6107f5000f7d810d28722f06654951ba1984bbe5"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          11
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          24
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          26
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\03_feeding_000701_001060_Q134_RGB_LAG.png",
+        "bytes": 6107666,
+        "sha256": "9e9cd321903e8592a5017f6b38a5732c8ae6531ab5aeaccc4faf9e392bc1be1d"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          112
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          134
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          136
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\04_feeding_001201_001906_Q160_RGB_LAG.png",
+        "bytes": 5915233,
+        "sha256": "c177bda20b5b8ad5085fa006b32f4c1e5eb6850b1b3349ab6d5e40fbe514fa6e"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          119
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          160
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          162
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\05_fishsa_development_8400_Q1327_RGB_LAG.png",
+        "bytes": 5384875,
+        "sha256": "f3e8f9677d3c4eed2043a2a5201bdfa7bf6042301d413dc6046ee3a915a670a3"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          986
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          1327
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          1329
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\06_fishsa_validation_2888_Q280_RGB_LAG.png",
+        "bytes": 5401082,
+        "sha256": "6f11b38953f11ef25ec6511fc3a795d9b18c4e77325dc4ad5016bebbe6436427"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          96
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          280
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          282
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "L3",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\07_L3_Q298_RGB_LAG.png",
+        "bytes": 4316241,
+        "sha256": "45f764fbd745dc6883dca1a799bca45a84e6dd10bfd83b2e36e8d90cd11da118"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          211
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          298
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          300
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 3
+    },
+    {
+      "segment": "LW",
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\visuals\\08_LW_Q115_RGB_LAG.png",
+        "bytes": 4626447,
+        "sha256": "9bfc1997db9f9a478db6fbabf8bd3f9b6840649cb4229276da6607a1cb0f6067"
+      },
+      "shape": [
+        2066,
+        3840,
+        3
+      ],
+      "phases": [
+        [
+          "PRE_ACTUAL_REFERENCE",
+          52
+        ],
+        [
+          "Q_FIRST_PUBLICATION",
+          115
+        ],
+        [
+          "CONFIRM_OR_STOP",
+          120
+        ]
+      ],
+      "reconstruction_status": "EXACT_SEALED_CONTOUR_REPLAY_MATCH",
+      "exact_matches": 6
+    }
+  ],
+  "images": 8,
+  "exact_reconstruction_candidate_frame_matches": 27,
+  "unknown_no_registered_bound_contour": [],
+  "actual_mask_publication_bound_by_helper": true,
+  "frozen_science_unchanged": true,
+  "all_predictions_and_scoring_completed_before_pixels": true,
+  "actual_viewed_images": 2,
+  "not_every_image_manually_viewed": true,
+  "limitations": [
+    "Dense or image-boundary fish labels can overlap or be clipped locally; full mapping is checked in the sealed scalar publication record.",
+    "Fixed 0..3000 mm display scale is a visualization, not a foreground classifier or calibrated physical accuracy claim.",
+    "This scoped acceptance does not judge physical identity correctness, method effectiveness, or metric gain.",
+    "RGB_LAG was selected by fixed first-event/arm ordering; measured conditional depth overlay does not mean this RGB-only arm used it for association."
+  ],
+  "GT_read": false,
+  "all_pixels_remain_private": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

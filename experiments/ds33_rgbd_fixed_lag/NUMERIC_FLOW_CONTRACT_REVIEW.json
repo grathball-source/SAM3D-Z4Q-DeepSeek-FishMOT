@@ -1,0 +1,828 @@
+{
+  "status": "PASS_SCOPED_FLOW_SOURCE_COORDINATE_TIME_AND_UNKNOWN_CONTRACT",
+  "base": "56010cdd9b08923258c5dbf3311f7197342973f4",
+  "utc": "2026-10-06T06:08:13.244084+00:00",
+  "reviewed_code": {
+    "sensor.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\sensor.py",
+      "bytes": 7575,
+      "sha256": "f7f916cefb4a8ac8f1b147a0098aece0999e6f7f6d8fa868729a8ad786d4acc8"
+    },
+    "flow.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\flow.py",
+      "bytes": 21953,
+      "sha256": "a39461177860db1092f2fbfd02b9ab77ec3025c3b340c79c849e51fd032647be"
+    },
+    "flow_checks.py": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\flow_checks.py",
+      "bytes": 11343,
+      "sha256": "cc3eeb13806f26ee40d7a5fce39e9011d2aa524f181800fe0e609728ee5e6c2d"
+    },
+    "SENSOR_AUDIT.json": {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\SENSOR_AUDIT.json",
+      "bytes": 12208162,
+      "sha256": "58af4b288e7dfdbddf32b1dad273c29c2d72e316e89b04adc516b4671a2c3182"
+    }
+  },
+  "reviewer": "independent ds33_data_audit",
+  "method": "Read source end-to-end, independent nonoverlap target/time/dedup/missing/boundary numerical checks; no duplicate full source hashing",
+  "checks": [
+    {
+      "name": "NONOVERLAPPING_FLOW_TARGET_NOT_SAME_PIXEL_DEPTH_DIFFERENCE",
+      "status": "PASS",
+      "old_target_ROIs_disjoint": true,
+      "current_old_ROI_depth_mm": 1200.0,
+      "current_true_target_depth_mm": 1500.0,
+      "expected_displacement_xyz_mm": [
+        64.0,
+        0.0,
+        300.0
+      ],
+      "actual": {
+        "status": "AVAILABLE_CONDITIONAL_3D_CORRESPONDENCES",
+        "reasons": [],
+        "rgb_dt_s": 0.033,
+        "depth_dt_s": 0.033,
+        "original_roi_area": 3072,
+        "correspondence_n": 3072,
+        "correspondence_fraction_of_original_roi": 1.0,
+        "displacement_xyz_mm": {
+          "n": 3072,
+          "median": [
+            64.0,
+            0.0,
+            300.0
+          ],
+          "mad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "norm": {
+            "n": 3072,
+            "median": 306.7507131206055,
+            "mad": 0.0,
+            "q90": 306.7507131206055,
+            "maximum": 306.7507131206055
+          }
+        },
+        "velocity_xyz_mm_s": {
+          "n": 3072,
+          "median": [
+            1939.3939393939393,
+            0.0,
+            9090.90909090909
+          ],
+          "mad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "norm": {
+            "n": 3072,
+            "median": 9295.476155169861,
+            "mad": 0.0,
+            "q90": 9295.476155169861,
+            "maximum": 9295.476155169861
+          }
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "depth_edge_risk_is_not_a_verified_occlusion": true,
+        "no_background_foreground_certificate": true,
+        "rgb_reliable_candidates": 3072,
+        "missing_depth_candidates": 0,
+        "previous_source_duplicates_removed": 0,
+        "current_source_duplicates_removed": 0,
+        "previous_unique_source_n": 3072,
+        "current_unique_source_n": 3072,
+        "source_pixel_binding": {
+          "shape": [
+            3072
+          ],
+          "dtype": "int64",
+          "sha256": "ed7fb5850a8c075856249c92fa7de09e26d862692b3c1716b84dfe5dfd886744"
+        },
+        "target_pixel_binding": {
+          "shape": [
+            3072
+          ],
+          "dtype": "int64",
+          "sha256": "b53a2a657f6226b19fe41c82b982ccd5f746fafcb23a1437fb5f015686e95fac"
+        },
+        "previous_frame_local_source_binding": {
+          "shape": [
+            3072
+          ],
+          "dtype": "int32",
+          "sha256": "558f2c3862fa3ab78fa2feeb08c0e8372ae216825cb4c5a852db6f4083d6608d"
+        },
+        "current_frame_local_source_binding": {
+          "shape": [
+            3072
+          ],
+          "dtype": "int32",
+          "sha256": "a76a0b1d99988b90d6258dd50f93f7d4793065b41b19cd14c1673a27d023ff6c"
+        },
+        "displacement_binding": {
+          "shape": [
+            3072,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "5a687b7ed52d1a61c419edd80db4224f3cf40bfa62718c55edaeeb00845d4d18"
+        },
+        "velocity_binding": {
+          "shape": [
+            3072,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "8d0770bdcc3b69a2d91a9090eb5a5475ddadfb7e26e3f267c5f72f3ee2c06a46"
+        },
+        "fb_error_px": {
+          "n": 3072,
+          "median": 0.0,
+          "mad": 0.0,
+          "q90": 0.0,
+          "maximum": 0.0
+        },
+        "photometric_residual_gray": {
+          "n": 3072,
+          "median": 0.0,
+          "mad": 0.0,
+          "q90": 0.0,
+          "maximum": 0.0
+        },
+        "target_depth_edge_risk_n": 220,
+        "invalid_RGB_correspondence_is_not_hidden_fish_reconstruction": true
+      }
+    },
+    {
+      "name": "REUSED_DEPTH_TIMESTAMP_HAS_NO_VELOCITY_OR_SUPPORT_BUT_RGB_CONTINUES",
+      "status": "PASS",
+      "actual": {
+        "status": "UNKNOWN",
+        "reasons": [
+          "REUSED_NATIVE_DEPTH_TIMESTAMP_NO_OBSERVED_VELOCITY"
+        ],
+        "rgb_dt_s": 0.033,
+        "depth_dt_s": 0.0,
+        "original_roi_area": 3072,
+        "correspondence_n": 0,
+        "correspondence_fraction_of_original_roi": 0.0,
+        "displacement_xyz_mm": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "norm": {
+            "n": 0,
+            "median": null,
+            "mad": null,
+            "q90": null,
+            "maximum": null
+          }
+        },
+        "velocity_xyz_mm_s": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "norm": {
+            "n": 0,
+            "median": null,
+            "mad": null,
+            "q90": null,
+            "maximum": null
+          }
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "depth_edge_risk_is_not_a_verified_occlusion": true,
+        "no_background_foreground_certificate": true
+      },
+      "support": {
+        "schema": "DS33_LOCAL_RGBD_POINT_SUPPORT_V1",
+        "status": "UNKNOWN",
+        "reasons": [
+          "REUSED_NATIVE_DEPTH_TIMESTAMP_NO_OBSERVED_VELOCITY"
+        ],
+        "maximum_read_global_frame": 2,
+        "original_roi_area": 3072,
+        "independent_correspondence_n": 0,
+        "support_n": 0,
+        "support_fraction": 0.0,
+        "local_patches": [],
+        "actual_parameters": {
+          "point_patch_px": 32,
+          "point_min_patch_points": 16,
+          "point_scale_floor_mm": 15.0,
+          "point_scale_cap_mm": 60.0,
+          "point_residual_sigma": 3.0,
+          "point_mad_sigma": 1.4826
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "local_consistency_is_engineering_hypothesis": true,
+        "nonrigid_motion_is_local_not_whole_fish_translation": true,
+        "no_mask_inpainting": true,
+        "no_foreground_expansion": true,
+        "no_verified_occlusion": true,
+        "identity_endpoint_quality_requires_separate_DS18_contract": true,
+        "support_binding": {
+          "shape": [
+            160,
+            240
+          ],
+          "dtype": "bool",
+          "sha256": "5c9b37300155c1f3338bc88f17d69c51fb248b0de0155630962ca6504d789bba"
+        }
+      }
+    },
+    {
+      "name": "DUPLICATE_NATIVE_SAMPLE_CANNOT_MULTIPLY_COVERAGE",
+      "status": "PASS",
+      "actual": {
+        "status": "UNKNOWN",
+        "reasons": [
+          "INSUFFICIENT_INDEPENDENT_POINT_COVERAGE"
+        ],
+        "rgb_dt_s": 0.033,
+        "depth_dt_s": 0.033,
+        "original_roi_area": 3072,
+        "correspondence_n": 1,
+        "correspondence_fraction_of_original_roi": 0.0003255208333333333,
+        "displacement_xyz_mm": {
+          "n": 1,
+          "median": [
+            -51.0,
+            -30.0,
+            0.0
+          ],
+          "mad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "norm": {
+            "n": 1,
+            "median": 59.16924876994806,
+            "mad": 0.0,
+            "q90": 59.16924876994806,
+            "maximum": 59.16924876994806
+          }
+        },
+        "velocity_xyz_mm_s": {
+          "n": 1,
+          "median": [
+            -1545.4545454545453,
+            -909.090909090909,
+            0.0
+          ],
+          "mad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "norm": {
+            "n": 1,
+            "median": 1793.0075384832742,
+            "mad": 0.0,
+            "q90": 1793.0075384832742,
+            "maximum": 1793.0075384832742
+          }
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "depth_edge_risk_is_not_a_verified_occlusion": true,
+        "no_background_foreground_certificate": true,
+        "rgb_reliable_candidates": 3072,
+        "missing_depth_candidates": 0,
+        "previous_source_duplicates_removed": 3071,
+        "current_source_duplicates_removed": 0,
+        "previous_unique_source_n": 1,
+        "current_unique_source_n": 1,
+        "source_pixel_binding": {
+          "shape": [
+            1
+          ],
+          "dtype": "int64",
+          "sha256": "387f572bba454af24b12d24d9c4330da45ef4fc63564ae4a3f3f055c1479c4d1"
+        },
+        "target_pixel_binding": {
+          "shape": [
+            1
+          ],
+          "dtype": "int64",
+          "sha256": "1c5cf5473e7737d81614fed0566fc3a285625b3b797d3ada31df8ef48018f341"
+        },
+        "previous_frame_local_source_binding": {
+          "shape": [
+            1
+          ],
+          "dtype": "int32",
+          "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+        },
+        "current_frame_local_source_binding": {
+          "shape": [
+            1
+          ],
+          "dtype": "int32",
+          "sha256": "c43614df38674a848bc2e6902c9c648bbcd9a1d5f73152e535e9e1391279a07b"
+        },
+        "displacement_binding": {
+          "shape": [
+            1,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "9dd100f039cee35cdc3b122af8b4255540c62e6032b5739c9ce015bed1c649ba"
+        },
+        "velocity_binding": {
+          "shape": [
+            1,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "10ee9fb1b92f1b6fd308d6cebc3bfc8bcfd97505f9be4cd5000e3a9e61c2d71f"
+        },
+        "fb_error_px": {
+          "n": 1,
+          "median": 0.0,
+          "mad": 0.0,
+          "q90": 0.0,
+          "maximum": 0.0
+        },
+        "photometric_residual_gray": {
+          "n": 1,
+          "median": 0.0,
+          "mad": 0.0,
+          "q90": 0.0,
+          "maximum": 0.0
+        },
+        "target_depth_edge_risk_n": 0,
+        "invalid_RGB_correspondence_is_not_hidden_fish_reconstruction": true
+      },
+      "support": {
+        "schema": "DS33_LOCAL_RGBD_POINT_SUPPORT_V1",
+        "status": "UNKNOWN",
+        "reasons": [
+          "INSUFFICIENT_LOCAL_SUPPORT_COVERAGE"
+        ],
+        "maximum_read_global_frame": 2,
+        "original_roi_area": 3072,
+        "independent_correspondence_n": 1,
+        "support_n": 0,
+        "support_fraction": 0.0,
+        "local_patches": [
+          {
+            "patch_xy": [
+              2,
+              1
+            ],
+            "status": "UNKNOWN",
+            "reason": "INSUFFICIENT_INDEPENDENT_PATCH_POINTS",
+            "independent_point_n": 1,
+            "accepted_n": 0,
+            "rejected_n": 1,
+            "displacement_center_xyz_mm": [
+              -51.0,
+              -30.0,
+              0.0
+            ],
+            "displacement_vector_mad_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "residual_norm_mm": {
+              "n": 1,
+              "median": 0.0,
+              "mad": 0.0,
+              "q90": 0.0,
+              "maximum": 0.0
+            },
+            "raw_robust_scale_mm": 0.0,
+            "effective_scale_mm": 15.0
+          }
+        ],
+        "actual_parameters": {
+          "point_patch_px": 32,
+          "point_min_patch_points": 16,
+          "point_scale_floor_mm": 15.0,
+          "point_scale_cap_mm": 60.0,
+          "point_residual_sigma": 3.0,
+          "point_mad_sigma": 1.4826
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "local_consistency_is_engineering_hypothesis": true,
+        "nonrigid_motion_is_local_not_whole_fish_translation": true,
+        "no_mask_inpainting": true,
+        "no_foreground_expansion": true,
+        "no_verified_occlusion": true,
+        "identity_endpoint_quality_requires_separate_DS18_contract": true,
+        "unknown_patch_n": 1,
+        "rejected_or_unknown_point_n": 1,
+        "rgb_reliable_candidates": 3072,
+        "missing_depth_candidates": 0,
+        "previous_source_duplicates_removed": 3071,
+        "current_source_duplicates_removed": 0,
+        "source_point_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "current_point_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "support_binding": {
+          "shape": [
+            160,
+            240
+          ],
+          "dtype": "bool",
+          "sha256": "5c9b37300155c1f3338bc88f17d69c51fb248b0de0155630962ca6504d789bba"
+        }
+      }
+    },
+    {
+      "name": "MISSING_DEPTH_DOES_NOT_CREATE_RELIABLE_SUPPORT_OR_RECONSTRUCTION",
+      "status": "PASS",
+      "actual": {
+        "status": "UNKNOWN",
+        "reasons": [
+          "INSUFFICIENT_INDEPENDENT_POINT_COVERAGE"
+        ],
+        "rgb_dt_s": 0.033,
+        "depth_dt_s": 0.033,
+        "original_roi_area": 3072,
+        "correspondence_n": 0,
+        "correspondence_fraction_of_original_roi": 0.0,
+        "displacement_xyz_mm": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "norm": {
+            "n": 0,
+            "median": null,
+            "mad": null,
+            "q90": null,
+            "maximum": null
+          }
+        },
+        "velocity_xyz_mm_s": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "norm": {
+            "n": 0,
+            "median": null,
+            "mad": null,
+            "q90": null,
+            "maximum": null
+          }
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "depth_edge_risk_is_not_a_verified_occlusion": true,
+        "no_background_foreground_certificate": true,
+        "rgb_reliable_candidates": 3072,
+        "missing_depth_candidates": 3072,
+        "previous_source_duplicates_removed": 0,
+        "current_source_duplicates_removed": 0,
+        "previous_unique_source_n": 0,
+        "current_unique_source_n": 0,
+        "source_pixel_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "target_pixel_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "previous_frame_local_source_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int32",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "current_frame_local_source_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int32",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "displacement_binding": {
+          "shape": [
+            0,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "velocity_binding": {
+          "shape": [
+            0,
+            3
+          ],
+          "dtype": "float64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "fb_error_px": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "q90": null,
+          "maximum": null
+        },
+        "photometric_residual_gray": {
+          "n": 0,
+          "median": null,
+          "mad": null,
+          "q90": null,
+          "maximum": null
+        },
+        "target_depth_edge_risk_n": 0,
+        "invalid_RGB_correspondence_is_not_hidden_fish_reconstruction": true
+      },
+      "support": {
+        "schema": "DS33_LOCAL_RGBD_POINT_SUPPORT_V1",
+        "status": "UNKNOWN",
+        "reasons": [
+          "INSUFFICIENT_LOCAL_SUPPORT_COVERAGE"
+        ],
+        "maximum_read_global_frame": 2,
+        "original_roi_area": 3072,
+        "independent_correspondence_n": 0,
+        "support_n": 0,
+        "support_fraction": 0.0,
+        "local_patches": [],
+        "actual_parameters": {
+          "point_patch_px": 32,
+          "point_min_patch_points": 16,
+          "point_scale_floor_mm": 15.0,
+          "point_scale_cap_mm": 60.0,
+          "point_residual_sigma": 3.0,
+          "point_mad_sigma": 1.4826
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "local_consistency_is_engineering_hypothesis": true,
+        "nonrigid_motion_is_local_not_whole_fish_translation": true,
+        "no_mask_inpainting": true,
+        "no_foreground_expansion": true,
+        "no_verified_occlusion": true,
+        "identity_endpoint_quality_requires_separate_DS18_contract": true,
+        "unknown_patch_n": 0,
+        "rejected_or_unknown_point_n": 0,
+        "rgb_reliable_candidates": 3072,
+        "missing_depth_candidates": 3072,
+        "previous_source_duplicates_removed": 0,
+        "current_source_duplicates_removed": 0,
+        "source_point_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "current_point_binding": {
+          "shape": [
+            0
+          ],
+          "dtype": "int64",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "support_binding": {
+          "shape": [
+            160,
+            240
+          ],
+          "dtype": "bool",
+          "sha256": "5c9b37300155c1f3338bc88f17d69c51fb248b0de0155630962ca6504d789bba"
+        }
+      }
+    },
+    {
+      "name": "TEXTURED_STATIC_SURFACE_CAN_PASS_SO_SUPPORT_IS_NOT_FOREGROUND_IDENTITY_OR_VISIBILITY_TRUTH",
+      "status": "PASS_BOUNDARY_DEMONSTRATION",
+      "accepted_n": 4096,
+      "actual": {
+        "schema": "DS33_LOCAL_RGBD_POINT_SUPPORT_V1",
+        "status": "AVAILABLE_CONDITIONAL_3D_SUPPORT",
+        "reasons": [],
+        "maximum_read_global_frame": 2,
+        "original_roi_area": 4096,
+        "independent_correspondence_n": 4096,
+        "support_n": 4096,
+        "support_fraction": 1.0,
+        "local_patches": [
+          {
+            "patch_xy": [
+              2,
+              1
+            ],
+            "status": "AVAILABLE_CONDITIONAL_LOCAL_SUPPORT",
+            "reason": "LOCAL_3D_MOTION_CONSISTENCY",
+            "independent_point_n": 1024,
+            "accepted_n": 1024,
+            "rejected_n": 0,
+            "displacement_center_xyz_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "displacement_vector_mad_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "residual_norm_mm": {
+              "n": 1024,
+              "median": 0.0,
+              "mad": 0.0,
+              "q90": 0.0,
+              "maximum": 0.0
+            },
+            "raw_robust_scale_mm": 0.0,
+            "effective_scale_mm": 15.0
+          },
+          {
+            "patch_xy": [
+              3,
+              1
+            ],
+            "status": "AVAILABLE_CONDITIONAL_LOCAL_SUPPORT",
+            "reason": "LOCAL_3D_MOTION_CONSISTENCY",
+            "independent_point_n": 1024,
+            "accepted_n": 1024,
+            "rejected_n": 0,
+            "displacement_center_xyz_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "displacement_vector_mad_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "residual_norm_mm": {
+              "n": 1024,
+              "median": 0.0,
+              "mad": 0.0,
+              "q90": 0.0,
+              "maximum": 0.0
+            },
+            "raw_robust_scale_mm": 0.0,
+            "effective_scale_mm": 15.0
+          },
+          {
+            "patch_xy": [
+              2,
+              2
+            ],
+            "status": "AVAILABLE_CONDITIONAL_LOCAL_SUPPORT",
+            "reason": "LOCAL_3D_MOTION_CONSISTENCY",
+            "independent_point_n": 1024,
+            "accepted_n": 1024,
+            "rejected_n": 0,
+            "displacement_center_xyz_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "displacement_vector_mad_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "residual_norm_mm": {
+              "n": 1024,
+              "median": 0.0,
+              "mad": 0.0,
+              "q90": 0.0,
+              "maximum": 0.0
+            },
+            "raw_robust_scale_mm": 0.0,
+            "effective_scale_mm": 15.0
+          },
+          {
+            "patch_xy": [
+              3,
+              2
+            ],
+            "status": "AVAILABLE_CONDITIONAL_LOCAL_SUPPORT",
+            "reason": "LOCAL_3D_MOTION_CONSISTENCY",
+            "independent_point_n": 1024,
+            "accepted_n": 1024,
+            "rejected_n": 0,
+            "displacement_center_xyz_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "displacement_vector_mad_mm": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "residual_norm_mm": {
+              "n": 1024,
+              "median": 0.0,
+              "mad": 0.0,
+              "q90": 0.0,
+              "maximum": 0.0
+            },
+            "raw_robust_scale_mm": 0.0,
+            "effective_scale_mm": 15.0
+          }
+        ],
+        "actual_parameters": {
+          "point_patch_px": 32,
+          "point_min_patch_points": 16,
+          "point_scale_floor_mm": 15.0,
+          "point_scale_cap_mm": 60.0,
+          "point_residual_sigma": 3.0,
+          "point_mad_sigma": 1.4826
+        },
+        "source_indices_are_frame_local": true,
+        "physical_identity": "UNKNOWN",
+        "physical_accuracy_mm": "UNKNOWN",
+        "local_consistency_is_engineering_hypothesis": true,
+        "nonrigid_motion_is_local_not_whole_fish_translation": true,
+        "no_mask_inpainting": true,
+        "no_foreground_expansion": true,
+        "no_verified_occlusion": true,
+        "identity_endpoint_quality_requires_separate_DS18_contract": true,
+        "unknown_patch_n": 0,
+        "rejected_or_unknown_point_n": 0,
+        "rgb_reliable_candidates": 4096,
+        "missing_depth_candidates": 0,
+        "previous_source_duplicates_removed": 0,
+        "current_source_duplicates_removed": 0,
+        "source_point_binding": {
+          "shape": [
+            4096
+          ],
+          "dtype": "int64",
+          "sha256": "dacc2fb09de6221f94d0d58fc80e0d4a13303be533bb2911e1cc5aa14aa8d018"
+        },
+        "current_point_binding": {
+          "shape": [
+            4096
+          ],
+          "dtype": "int64",
+          "sha256": "dacc2fb09de6221f94d0d58fc80e0d4a13303be533bb2911e1cc5aa14aa8d018"
+        },
+        "support_binding": {
+          "shape": [
+            160,
+            240
+          ],
+          "dtype": "bool",
+          "sha256": "74c2796b530a44d0641bd2a4ab67cc2b11674552abf969f905436f8f990c9629"
+        }
+      }
+    }
+  ],
+  "scientific_boundaries": [
+    "RGB DIS supplies uncertain pixel correspondence; native source_index is frame-local deduplication, never temporal identity.",
+    "Actual 3D positions come from recorded native rays and R/t at the flow target, not RGB same-pixel depth subtraction.",
+    "Local displacement consistency is a frozen engineering proxy; coherent background or wrong-surface motion may pass.",
+    "The 1.4826 robust factor and 3-scale residual gate are not calibrated 3D probability or occlusion truth.",
+    "Nearest target-pixel sampling has rasterization/flow uncertainty; reported depth edge risk is not a certified occlusion.",
+    "Depth absence yields UNKNOWN/empty support, not missing-fish pixels; association must use a common no-information fallback.",
+    "Whole-fish depth endpoint quality and version lineage still require separate DS18 evidence.",
+    "DOWNSTREAM_ASSOCIATION_UNKNOWN_NOT_ADVANTAGE_NOT_YET_AUDITED; this receipt covers flow helper, not controller selection.",
+    "No real fish recovery success or metric improvement is inferred from synthetic tests."
+  ],
+  "conclusion": "No concrete source/time/coordinate scientific bug found in reviewed helper. Conditionally valid sparse contour support; scientific identity and visibility accuracy remain UNKNOWN.",
+  "synthetic_only": true,
+  "actual_GT_or_annotation_instance_id_read": false,
+  "private_pixels_written": false,
+  "full_replay_started": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

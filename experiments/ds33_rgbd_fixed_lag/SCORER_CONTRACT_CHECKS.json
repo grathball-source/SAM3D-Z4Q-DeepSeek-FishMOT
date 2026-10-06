@@ -1,0 +1,191 @@
+{
+  "status": "PASS_SCORER_ACTUAL_SOURCE_PROTOCOL_AND_SYNTHETIC_NUMERICS",
+  "checks": [
+    {
+      "name": "TWO_ACTUAL_SENSOR_MASK_DS18_FLOW_SOURCE_LEDGER_ROWS",
+      "status": "PASS",
+      "frames": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SELF_CONSISTENT_FUTURE_SENSOR_BINDING",
+      "status": "PASS_REJECTED_AFTER_RECOMPUTING_BINDING_HASHES"
+    },
+    {
+      "name": "SELF_CONSISTENT_WRONG_CURRENT_FLOW_SOURCE",
+      "status": "PASS_REJECTED_AFTER_RECOMPUTING_BINDING_HASHES"
+    },
+    {
+      "name": "SELF_CONSISTENT_WRONG_DEPTH_QUALITY_EXTRACT",
+      "status": "PASS_REJECTED_AFTER_RECOMPUTING_BINDING_HASHES"
+    },
+    {
+      "name": "SELF_CONSISTENT_WRONG_MASK_BINDING",
+      "status": "PASS_REJECTED_AFTER_RECOMPUTING_BINDING_HASHES"
+    },
+    {
+      "name": "SELF_CONSISTENT_WRONG_SENSOR_TIMESTAMP",
+      "status": "PASS_REJECTED_AFTER_RECOMPUTING_BINDING_HASHES"
+    },
+    {
+      "name": "UNKNOWN_AND_NEW_PUBLIC_ORIGIN_CANNOT_CERTIFY_IDENTITY",
+      "status": "PASS"
+    },
+    {
+      "name": "AMBIGUOUS_PHYSICAL_REFERENCE_IS_UNSCORABLE",
+      "status": "PASS"
+    },
+    {
+      "name": "OFFICIAL_CLEAR_SWITCH_AND_COUNT_SYNTHETIC_PARITY",
+      "status": "PASS",
+      "official": {
+        "IDF1": 66.66666666666666,
+        "HOTA": 74.53559924999297,
+        "AssA": 55.55555555555555,
+        "DetA": 100.0,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0,
+        "GT": 3,
+        "predictions": 3
+      }
+    },
+    {
+      "name": "NET_ZERO_SWITCHES_CAN_CONTAIN_ADDED_AND_ELIMINATED_RECORDS",
+      "status": "PASS"
+    }
+  ],
+  "scoring_code_dependencies": [
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\__init__.py",
+      "bytes": 22,
+      "sha256": "492e40efdd86392fcc0109f97ac48a095fcd59a62afbba7c1642dc2b3700c4e8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\_mask.pyd",
+      "bytes": 129024,
+      "sha256": "01783d2782ede36575a020b52b7410aa3e80cac857e54285dcb569f36e1e50c4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\mask.py",
+      "bytes": 4693,
+      "sha256": "1281ce0b5436ffe924c96521b2ae1d589f6f0e2a7b7281b6bb284f7b2245545c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\__init__.py",
+      "bytes": 116,
+      "sha256": "636586f4cc90a0be21e8aff605fb7fe97c089b3c46fafd43745d4c41bedceae3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\__init__.py",
+      "bytes": 212,
+      "sha256": "5fd5d495814450ecdb45e60cfd6a2b20b79c75a455d1a2ea2171a0df3cc2dc90"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\_base_metric.py",
+      "bytes": 5025,
+      "sha256": "dac8b87bf3801269aa280b1cf91184f483de4f4e5c158bd07a4b1733b1a5722b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\clear.py",
+      "bytes": 9166,
+      "sha256": "ab3963eac401073fe1b2957c734af1e531368f42fca49627c14422350b2744f0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\count.py",
+      "bytes": 1584,
+      "sha256": "ffce9a3ed557f164f7a811f0a8cf66f609eec0af822dbc87d8fdaef560032163"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\hota.py",
+      "bytes": 10504,
+      "sha256": "c582255c3d36bdb49c3ceeb2a5bd912cee009190dfcfe465b4173d03aaa97d6a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\identity.py",
+      "bytes": 6214,
+      "sha256": "e76b1bdcbf5b193662431596a984cf70a5be32e903eb5f2a3d9921b4762f93ba"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\ideucl.py",
+      "bytes": 5514,
+      "sha256": "1009ec40533df6fb28ad3397be745394a6ab970b02920e711808cb78b1720eeb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\j_and_f.py",
+      "bytes": 13021,
+      "sha256": "9872e658209634e5b07cb080c43308073d65fa32003c9285ecbdf2e60898dccc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\track_map.py",
+      "bytes": 20859,
+      "sha256": "492b588ca63d1adce96530f914239530fac1b018e5a2c603f036a3337d9aefb0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\vace.py",
+      "bytes": 5881,
+      "sha256": "13db97a61cc7291e5356c80a0a4f11a88b75a9664a81fc903d6bd41a1cd6ffdc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_i1_validation_20260915\\prepare_truth.py",
+      "bytes": 1943,
+      "sha256": "7bf238da695a947a00e94b08b90a2a43a4feb6f00b2e5e31c794bd02c633e33f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\evaluate.py",
+      "bytes": 15885,
+      "sha256": "d7a6a323688a67631dc258e22100b84db2a9ad2d5c589ebf906fa5937e4d6513"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\finish_scoring.py",
+      "bytes": 4125,
+      "sha256": "4ab505aec0be9c0d0a80b2c04146b1c10da651a82b4dcb49c0d8f5efcb6b616d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "bytes": 6837,
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\postseal.py",
+      "bytes": 8787,
+      "sha256": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds20_pending_confirmation_isolation\\score.py",
+      "bytes": 56496,
+      "sha256": "e9fa6547e815e00be9b993904b3ccd6aa8182cb2cc97b23fb80c67009e7f0fa9"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\depth.py",
+      "bytes": 8142,
+      "sha256": "17f7dd00621b8a983d65d57149977bed791b2ad0d7cda5fea7dfab6c4ef118d4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\score.py",
+      "bytes": 35303,
+      "sha256": "9fd0eb6809762b9b751a75cf090d3a182b11d10836058186dd17b8a901359345"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\score.py",
+      "bytes": 7658,
+      "sha256": "7a596967f82980d2ea2f8a487cab7af7101a5f85d646ca3eba4f08b07588da02"
+    },
+    {
+      "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\scipy\\optimize\\_lsap.cp312-win_amd64.pyd",
+      "bytes": 190976,
+      "sha256": "34e851d39d8c07b071e1206752073b86d29e5cfb63001bc611805ac1d0db7772"
+    }
+  ],
+  "prefix_prediction_seal": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\slice_integration_v3\\feeding_000000_000199\\public\\PREDICTIONS_SEALED.json",
+    "bytes": 1040,
+    "sha256": "69591919c06a5b6f6df779eba2a5ca34f29b650f3ca212a2768d9f29aedc1601"
+  },
+  "GT_opened": false,
+  "annotations_opened": false,
+  "new_model_http": 0,
+  "scope": "No method performance claim; complete formal prediction/access seals are still mandatory before GT scoring."
+}

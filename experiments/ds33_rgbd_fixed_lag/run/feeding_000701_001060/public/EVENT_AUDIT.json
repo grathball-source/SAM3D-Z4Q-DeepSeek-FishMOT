@@ -1,0 +1,5612 @@
+{
+  "segment": "feeding_000701_001060",
+  "automatic_actions": [
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 134,
+      "global_frame": 834,
+      "phase": "D1_DELAYED",
+      "source": 118,
+      "target": 99,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.8490730931703778,
+        "birth_frame": 64,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 112,
+          "native_id": 99,
+          "mask": "n:99",
+          "canonical_id": 99
+        },
+        "age": 0.7309999465942383,
+        "distance": 58.76450329544449,
+        "radius": 63.609528701307255,
+        "normalized_distance": 0.923831766957217,
+        "motion_cost": 0.347361934034921,
+        "native_id": 118,
+        "canonical_id": 99,
+        "history_depth": 1186.1219482421875,
+        "current_depth": 1189.3033447265625,
+        "residual_mm": 3.181396484375,
+        "tolerance_mm": 32.192999839782715,
+        "alternatives": [
+          {
+            "id": 68,
+            "residual_mm": 25.69329833984375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 22.51190185546875,
+        "required_partner_margin_mm": 10.0,
+        "cost": 0.15092690682962207,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 112,
+        "native_id": 99,
+        "mask": "n:99",
+        "canonical_id": 99
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 99
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 2,
+        "iou": 0.9408033826638478,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.7943548387096774,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.9113924050632911,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 134,
+      "global_frame": 834,
+      "phase": "D1_DELAYED",
+      "source": 118,
+      "target": 99,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.8490730931703778,
+        "birth_frame": 64,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 112,
+          "native_id": 99,
+          "mask": "n:99",
+          "canonical_id": 99
+        },
+        "age": 0.7309999465942383,
+        "distance": 58.76450329544449,
+        "radius": 63.609528701307255,
+        "normalized_distance": 0.923831766957217,
+        "motion_cost": 0.347361934034921,
+        "native_id": 118,
+        "canonical_id": 99,
+        "history_depth": 1186.1219482421875,
+        "current_depth": 1189.3033447265625,
+        "residual_mm": 3.181396484375,
+        "tolerance_mm": 32.192999839782715,
+        "alternatives": [
+          {
+            "id": 68,
+            "residual_mm": 25.69329833984375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 22.51190185546875,
+        "required_partner_margin_mm": 10.0,
+        "cost": 0.15092690682962207,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 134,
+          "time": 1789706608.392,
+          "phase": "D1_DELAYED",
+          "native_id": 118,
+          "public_id": 99,
+          "target_bank_anchor": {
+            "frame": 112,
+            "native_id": 99,
+            "mask": "n:99",
+            "canonical_id": 99
+          },
+          "action_reference_anchor": {
+            "frame": 112,
+            "native_id": 99,
+            "mask": "n:99",
+            "canonical_id": 99
+          },
+          "terms": {
+            "age": 0.7309999465942383,
+            "distance": 58.76450329544449,
+            "radius": 63.609528701307255,
+            "normalized_distance": 0.923831766957217,
+            "motion_cost": 0.347361934034921,
+            "native_id": 118,
+            "canonical_id": 99,
+            "history_depth": 1186.1219482421875,
+            "current_depth": 1189.3033447265625,
+            "residual_mm": 3.181396484375,
+            "tolerance_mm": 32.192999839782715,
+            "alternatives": [
+              {
+                "id": 68,
+                "residual_mm": 25.69329833984375
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 22.51190185546875,
+            "required_partner_margin_mm": 10.0,
+            "cost": 0.15092690682962207,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 112,
+        "native_id": 99,
+        "mask": "n:99",
+        "canonical_id": 99
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 99
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 2,
+        "iou": 0.9408033826638478,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.7943548387096774,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.9113924050632911,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 134,
+      "global_frame": 834,
+      "phase": "D1_DELAYED",
+      "source": 118,
+      "target": 99,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.8490730931703778,
+        "birth_frame": 64,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 112,
+          "native_id": 99,
+          "mask": "n:99",
+          "canonical_id": 99
+        },
+        "age": 0.7309999465942383,
+        "distance": 58.76450329544449,
+        "radius": 63.609528701307255,
+        "normalized_distance": 0.923831766957217,
+        "motion_cost": 0.347361934034921,
+        "native_id": 118,
+        "canonical_id": 99,
+        "history_depth": 1186.1219482421875,
+        "current_depth": 1189.3033447265625,
+        "residual_mm": 3.181396484375,
+        "tolerance_mm": 32.192999839782715,
+        "alternatives": [
+          {
+            "id": 68,
+            "residual_mm": 25.69329833984375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 22.51190185546875,
+        "required_partner_margin_mm": 10.0,
+        "cost": 0.15092690682962207,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 134,
+          "time": 1789706608.392,
+          "phase": "D1_DELAYED",
+          "native_id": 118,
+          "public_id": 99,
+          "target_bank_anchor": {
+            "frame": 112,
+            "native_id": 99,
+            "mask": "n:99",
+            "canonical_id": 99
+          },
+          "action_reference_anchor": {
+            "frame": 112,
+            "native_id": 99,
+            "mask": "n:99",
+            "canonical_id": 99
+          },
+          "terms": {
+            "age": 0.7309999465942383,
+            "distance": 58.76450329544449,
+            "radius": 63.609528701307255,
+            "normalized_distance": 0.923831766957217,
+            "motion_cost": 0.347361934034921,
+            "native_id": 118,
+            "canonical_id": 99,
+            "history_depth": 1186.1219482421875,
+            "current_depth": 1189.3033447265625,
+            "residual_mm": 3.181396484375,
+            "tolerance_mm": 32.192999839782715,
+            "alternatives": [
+              {
+                "id": 68,
+                "residual_mm": 25.69329833984375
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 22.51190185546875,
+            "required_partner_margin_mm": 10.0,
+            "cost": 0.15092690682962207,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 112,
+        "native_id": 99,
+        "mask": "n:99",
+        "canonical_id": 99
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 99
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 2,
+        "iou": 0.9408033826638478,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.7943548387096774,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 1,
+        "iou": 0.9113924050632911,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 149,
+      "global_frame": 849,
+      "phase": "D1_DELAYED",
+      "source": 119,
+      "target": 70,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.30505638082405007,
+        "birth_frame": 95,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 7,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        },
+        "age": 4.718000173568726,
+        "distance": 231.1008516188014,
+        "radius": 337.706496538091,
+        "normalized_distance": 0.6843245658223066,
+        "motion_cost": 0.20875692354187414,
+        "native_id": 119,
+        "canonical_id": 70,
+        "history_depth": 1056.4567260742188,
+        "current_depth": 1019.1854248046875,
+        "residual_mm": 37.27130126953125,
+        "tolerance_mm": 56.16276651191711,
+        "alternatives": [
+          {
+            "id": 101,
+            "residual_mm": 134.718017578125
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 97.44671630859375,
+        "required_partner_margin_mm": 18.005843994140623,
+        "cost": 0.6949436191759498,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 7,
+        "native_id": 70,
+        "mask": "n:70",
+        "canonical_id": 70
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 70
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 14,
+        "iou": 0.9248434237995825,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9363817097415507,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8790322580645161,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 149,
+      "global_frame": 849,
+      "phase": "D1_DELAYED",
+      "source": 119,
+      "target": 70,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.30505638082405007,
+        "birth_frame": 95,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 7,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        },
+        "age": 4.718000173568726,
+        "distance": 231.1008516188014,
+        "radius": 337.706496538091,
+        "normalized_distance": 0.6843245658223066,
+        "motion_cost": 0.20875692354187414,
+        "native_id": 119,
+        "canonical_id": 70,
+        "history_depth": 1056.4567260742188,
+        "current_depth": 1019.1854248046875,
+        "residual_mm": 37.27130126953125,
+        "tolerance_mm": 56.16276651191711,
+        "alternatives": [
+          {
+            "id": 101,
+            "residual_mm": 134.718017578125
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 97.44671630859375,
+        "required_partner_margin_mm": 18.005843994140623,
+        "cost": 0.6949436191759498,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 149,
+          "time": 1789706608.89,
+          "phase": "D1_DELAYED",
+          "native_id": 119,
+          "public_id": 70,
+          "target_bank_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "action_reference_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "terms": {
+            "age": 4.718000173568726,
+            "distance": 231.1008516188014,
+            "radius": 337.706496538091,
+            "normalized_distance": 0.6843245658223066,
+            "motion_cost": 0.20875692354187414,
+            "native_id": 119,
+            "canonical_id": 70,
+            "history_depth": 1056.4567260742188,
+            "current_depth": 1019.1854248046875,
+            "residual_mm": 37.27130126953125,
+            "tolerance_mm": 56.16276651191711,
+            "alternatives": [
+              {
+                "id": 101,
+                "residual_mm": 134.718017578125
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 97.44671630859375,
+            "required_partner_margin_mm": 18.005843994140623,
+            "cost": 0.6949436191759498,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 7,
+        "native_id": 70,
+        "mask": "n:70",
+        "canonical_id": 70
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 70
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 14,
+        "iou": 0.9248434237995825,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9363817097415507,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8790322580645161,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 149,
+      "global_frame": 849,
+      "phase": "D1_DELAYED",
+      "source": 119,
+      "target": 70,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.30505638082405007,
+        "birth_frame": 95,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 7,
+          "native_id": 70,
+          "mask": "n:70",
+          "canonical_id": 70
+        },
+        "age": 4.718000173568726,
+        "distance": 231.1008516188014,
+        "radius": 337.706496538091,
+        "normalized_distance": 0.6843245658223066,
+        "motion_cost": 0.20875692354187414,
+        "native_id": 119,
+        "canonical_id": 70,
+        "history_depth": 1056.4567260742188,
+        "current_depth": 1019.1854248046875,
+        "residual_mm": 37.27130126953125,
+        "tolerance_mm": 56.16276651191711,
+        "alternatives": [
+          {
+            "id": 101,
+            "residual_mm": 134.718017578125
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 97.44671630859375,
+        "required_partner_margin_mm": 18.005843994140623,
+        "cost": 0.6949436191759498,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 149,
+          "time": 1789706608.89,
+          "phase": "D1_DELAYED",
+          "native_id": 119,
+          "public_id": 70,
+          "target_bank_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "action_reference_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "terms": {
+            "age": 4.718000173568726,
+            "distance": 231.1008516188014,
+            "radius": 337.706496538091,
+            "normalized_distance": 0.6843245658223066,
+            "motion_cost": 0.20875692354187414,
+            "native_id": 119,
+            "canonical_id": 70,
+            "history_depth": 1056.4567260742188,
+            "current_depth": 1019.1854248046875,
+            "residual_mm": 37.27130126953125,
+            "tolerance_mm": 56.16276651191711,
+            "alternatives": [
+              {
+                "id": 101,
+                "residual_mm": 134.718017578125
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 97.44671630859375,
+            "required_partner_margin_mm": 18.005843994140623,
+            "cost": 0.6949436191759498,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 7,
+        "native_id": 70,
+        "mask": "n:70",
+        "canonical_id": 70
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 70
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 14,
+        "iou": 0.9248434237995825,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9363817097415507,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8790322580645161,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 197,
+      "global_frame": 897,
+      "phase": "D1_DELAYED",
+      "source": 127,
+      "target": 106,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.61519160151791,
+        "birth_frame": 145,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 42,
+          "native_id": 106,
+          "mask": "n:106",
+          "canonical_id": 106
+        },
+        "age": 5.1499998569488525,
+        "distance": 131.96302728484463,
+        "radius": 291.52441229265554,
+        "normalized_distance": 0.45266544316833945,
+        "motion_cost": 0.09737942962908375,
+        "native_id": 127,
+        "canonical_id": 106,
+        "history_depth": 1163.29150390625,
+        "current_depth": 1181.61328125,
+        "residual_mm": 18.32177734375,
+        "tolerance_mm": 49.64878276176452,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 12.799188793945312,
+        "cost": 0.38363463928638936,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 42,
+        "native_id": 106,
+        "mask": "n:106",
+        "canonical_id": 106
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 106
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 9,
+        "iou": 0.9487870619946092,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9725490196078431,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9135802469135802,
+        "second_iou": 0.00510204081632653
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 197,
+      "global_frame": 897,
+      "phase": "D1_DELAYED",
+      "source": 127,
+      "target": 106,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.61519160151791,
+        "birth_frame": 145,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 42,
+          "native_id": 106,
+          "mask": "n:106",
+          "canonical_id": 106
+        },
+        "age": 5.1499998569488525,
+        "distance": 131.96302728484463,
+        "radius": 291.52441229265554,
+        "normalized_distance": 0.45266544316833945,
+        "motion_cost": 0.09737942962908375,
+        "native_id": 127,
+        "canonical_id": 106,
+        "history_depth": 1163.29150390625,
+        "current_depth": 1181.61328125,
+        "residual_mm": 18.32177734375,
+        "tolerance_mm": 49.64878276176452,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 12.799188793945312,
+        "cost": 0.38363463928638936,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 197,
+          "time": 1789706610.485,
+          "phase": "D1_DELAYED",
+          "native_id": 127,
+          "public_id": 106,
+          "target_bank_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "action_reference_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "terms": {
+            "age": 5.1499998569488525,
+            "distance": 131.96302728484463,
+            "radius": 291.52441229265554,
+            "normalized_distance": 0.45266544316833945,
+            "motion_cost": 0.09737942962908375,
+            "native_id": 127,
+            "canonical_id": 106,
+            "history_depth": 1163.29150390625,
+            "current_depth": 1181.61328125,
+            "residual_mm": 18.32177734375,
+            "tolerance_mm": 49.64878276176452,
+            "alternatives": [],
+            "reserved_partners": [],
+            "partner_margin_mm": null,
+            "required_partner_margin_mm": 12.799188793945312,
+            "cost": 0.38363463928638936,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 42,
+        "native_id": 106,
+        "mask": "n:106",
+        "canonical_id": 106
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 106
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 9,
+        "iou": 0.9487870619946092,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9725490196078431,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9135802469135802,
+        "second_iou": 0.00510204081632653
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 197,
+      "global_frame": 897,
+      "phase": "D1_DELAYED",
+      "source": 127,
+      "target": 106,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.61519160151791,
+        "birth_frame": 145,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 42,
+          "native_id": 106,
+          "mask": "n:106",
+          "canonical_id": 106
+        },
+        "age": 5.1499998569488525,
+        "distance": 131.96302728484463,
+        "radius": 291.52441229265554,
+        "normalized_distance": 0.45266544316833945,
+        "motion_cost": 0.09737942962908375,
+        "native_id": 127,
+        "canonical_id": 106,
+        "history_depth": 1163.29150390625,
+        "current_depth": 1181.61328125,
+        "residual_mm": 18.32177734375,
+        "tolerance_mm": 49.64878276176452,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 12.799188793945312,
+        "cost": 0.38363463928638936,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 197,
+          "time": 1789706610.485,
+          "phase": "D1_DELAYED",
+          "native_id": 127,
+          "public_id": 106,
+          "target_bank_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "action_reference_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "terms": {
+            "age": 5.1499998569488525,
+            "distance": 131.96302728484463,
+            "radius": 291.52441229265554,
+            "normalized_distance": 0.45266544316833945,
+            "motion_cost": 0.09737942962908375,
+            "native_id": 127,
+            "canonical_id": 106,
+            "history_depth": 1163.29150390625,
+            "current_depth": 1181.61328125,
+            "residual_mm": 18.32177734375,
+            "tolerance_mm": 49.64878276176452,
+            "alternatives": [],
+            "reserved_partners": [],
+            "partner_margin_mm": null,
+            "required_partner_margin_mm": 12.799188793945312,
+            "cost": 0.38363463928638936,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 42,
+        "native_id": 106,
+        "mask": "n:106",
+        "canonical_id": 106
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 106
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 9,
+        "iou": 0.9487870619946092,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9725490196078431,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9135802469135802,
+        "second_iou": 0.00510204081632653
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 205,
+      "global_frame": 905,
+      "phase": "D1_DELAYED",
+      "source": 123,
+      "target": 117,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.5504342466739178,
+        "birth_frame": 126,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 84,
+          "native_id": 117,
+          "mask": "n:117",
+          "canonical_id": 117
+        },
+        "age": 4.020999908447266,
+        "distance": 74.17698883756839,
+        "radius": 186.21192676311307,
+        "normalized_distance": 0.3983471420277586,
+        "motion_cost": 0.07627440151415865,
+        "native_id": 123,
+        "canonical_id": 117,
+        "history_depth": 1180.156005859375,
+        "current_depth": 1153.8685302734375,
+        "residual_mm": 26.2874755859375,
+        "tolerance_mm": 60.0,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 25.0,
+        "cost": 0.4495657533260822,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 84,
+        "native_id": 117,
+        "mask": "n:117",
+        "canonical_id": 117
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 46,
+        "global_frame": 746,
+        "native_id": 117
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9408163265306122,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9415730337078652,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8946515397082658,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 205,
+      "global_frame": 905,
+      "phase": "D1_DELAYED",
+      "source": 123,
+      "target": 117,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.5504342466739178,
+        "birth_frame": 126,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 84,
+          "native_id": 117,
+          "mask": "n:117",
+          "canonical_id": 117
+        },
+        "age": 4.020999908447266,
+        "distance": 74.17698883756839,
+        "radius": 186.21192676311307,
+        "normalized_distance": 0.3983471420277586,
+        "motion_cost": 0.07627440151415865,
+        "native_id": 123,
+        "canonical_id": 117,
+        "history_depth": 1180.156005859375,
+        "current_depth": 1153.8685302734375,
+        "residual_mm": 26.2874755859375,
+        "tolerance_mm": 60.0,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 25.0,
+        "cost": 0.4495657533260822,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 205,
+          "time": 1789706610.751,
+          "phase": "D1_DELAYED",
+          "native_id": 123,
+          "public_id": 117,
+          "target_bank_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "action_reference_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "terms": {
+            "age": 4.020999908447266,
+            "distance": 74.17698883756839,
+            "radius": 186.21192676311307,
+            "normalized_distance": 0.3983471420277586,
+            "motion_cost": 0.07627440151415865,
+            "native_id": 123,
+            "canonical_id": 117,
+            "history_depth": 1180.156005859375,
+            "current_depth": 1153.8685302734375,
+            "residual_mm": 26.2874755859375,
+            "tolerance_mm": 60.0,
+            "alternatives": [],
+            "reserved_partners": [],
+            "partner_margin_mm": null,
+            "required_partner_margin_mm": 25.0,
+            "cost": 0.4495657533260822,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 84,
+        "native_id": 117,
+        "mask": "n:117",
+        "canonical_id": 117
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 46,
+        "global_frame": 746,
+        "native_id": 117
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9408163265306122,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9415730337078652,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8946515397082658,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 205,
+      "global_frame": 905,
+      "phase": "D1_DELAYED",
+      "source": 123,
+      "target": 117,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.5504342466739178,
+        "birth_frame": 126,
+        "confirmation_span_s": 0.13299989700317383,
+        "old_anchor": {
+          "frame": 84,
+          "native_id": 117,
+          "mask": "n:117",
+          "canonical_id": 117
+        },
+        "age": 4.020999908447266,
+        "distance": 74.17698883756839,
+        "radius": 186.21192676311307,
+        "normalized_distance": 0.3983471420277586,
+        "motion_cost": 0.07627440151415865,
+        "native_id": 123,
+        "canonical_id": 117,
+        "history_depth": 1180.156005859375,
+        "current_depth": 1153.8685302734375,
+        "residual_mm": 26.2874755859375,
+        "tolerance_mm": 60.0,
+        "alternatives": [],
+        "reserved_partners": [],
+        "partner_margin_mm": null,
+        "required_partner_margin_mm": 25.0,
+        "cost": 0.4495657533260822,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 205,
+          "time": 1789706610.751,
+          "phase": "D1_DELAYED",
+          "native_id": 123,
+          "public_id": 117,
+          "target_bank_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "action_reference_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "terms": {
+            "age": 4.020999908447266,
+            "distance": 74.17698883756839,
+            "radius": 186.21192676311307,
+            "normalized_distance": 0.3983471420277586,
+            "motion_cost": 0.07627440151415865,
+            "native_id": 123,
+            "canonical_id": 117,
+            "history_depth": 1180.156005859375,
+            "current_depth": 1153.8685302734375,
+            "residual_mm": 26.2874755859375,
+            "tolerance_mm": 60.0,
+            "alternatives": [],
+            "reserved_partners": [],
+            "partner_margin_mm": null,
+            "required_partner_margin_mm": 25.0,
+            "cost": 0.4495657533260822,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 84,
+        "native_id": 117,
+        "mask": "n:117",
+        "canonical_id": 117
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 46,
+        "global_frame": 746,
+        "native_id": 117
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9408163265306122,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.9415730337078652,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 26,
+        "iou": 0.8946515397082658,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 269,
+      "global_frame": 969,
+      "phase": "D1_DELAYED",
+      "source": 129,
+      "target": 91,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.3081203637342864,
+        "birth_frame": 196,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 147,
+          "native_id": 91,
+          "mask": "n:91",
+          "canonical_id": 91
+        },
+        "age": 4.05400013923645,
+        "distance": 197.77172710217872,
+        "radius": 319.8655679601629,
+        "normalized_distance": 0.6182963935862265,
+        "motion_cost": 0.17398737011540166,
+        "native_id": 129,
+        "canonical_id": 91,
+        "history_depth": 967.802490234375,
+        "current_depth": 997.0661926269531,
+        "residual_mm": 29.263702392578125,
+        "tolerance_mm": 43.95391136741638,
+        "alternatives": [
+          {
+            "id": 128,
+            "residual_mm": 118.79977416992188
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 89.53607177734375,
+        "required_partner_margin_mm": 11.194607299804687,
+        "cost": 0.6918796362657136,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 147,
+        "native_id": 91,
+        "mask": "n:91",
+        "canonical_id": 91
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 91
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 13,
+        "iou": 0.9740740740740741,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.8896396396396397,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.9287598944591029,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 269,
+      "global_frame": 969,
+      "phase": "D1_DELAYED",
+      "source": 129,
+      "target": 91,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.3081203637342864,
+        "birth_frame": 196,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 147,
+          "native_id": 91,
+          "mask": "n:91",
+          "canonical_id": 91
+        },
+        "age": 4.05400013923645,
+        "distance": 197.77172710217872,
+        "radius": 319.8655679601629,
+        "normalized_distance": 0.6182963935862265,
+        "motion_cost": 0.17398737011540166,
+        "native_id": 129,
+        "canonical_id": 91,
+        "history_depth": 967.802490234375,
+        "current_depth": 997.0661926269531,
+        "residual_mm": 29.263702392578125,
+        "tolerance_mm": 43.95391136741638,
+        "alternatives": [
+          {
+            "id": 128,
+            "residual_mm": 118.79977416992188
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 89.53607177734375,
+        "required_partner_margin_mm": 11.194607299804687,
+        "cost": 0.6918796362657136,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 269,
+          "time": 1789706612.878,
+          "phase": "D1_DELAYED",
+          "native_id": 129,
+          "public_id": 91,
+          "target_bank_anchor": {
+            "frame": 147,
+            "native_id": 91,
+            "mask": "n:91",
+            "canonical_id": 91
+          },
+          "action_reference_anchor": {
+            "frame": 147,
+            "native_id": 91,
+            "mask": "n:91",
+            "canonical_id": 91
+          },
+          "terms": {
+            "age": 4.05400013923645,
+            "distance": 197.77172710217872,
+            "radius": 319.8655679601629,
+            "normalized_distance": 0.6182963935862265,
+            "motion_cost": 0.17398737011540166,
+            "native_id": 129,
+            "canonical_id": 91,
+            "history_depth": 967.802490234375,
+            "current_depth": 997.0661926269531,
+            "residual_mm": 29.263702392578125,
+            "tolerance_mm": 43.95391136741638,
+            "alternatives": [
+              {
+                "id": 128,
+                "residual_mm": 118.79977416992188
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 89.53607177734375,
+            "required_partner_margin_mm": 11.194607299804687,
+            "cost": 0.6918796362657136,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 147,
+        "native_id": 91,
+        "mask": "n:91",
+        "canonical_id": 91
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 91
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 13,
+        "iou": 0.9740740740740741,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.8896396396396397,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.9287598944591029,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 269,
+      "global_frame": 969,
+      "phase": "D1_DELAYED",
+      "source": 129,
+      "target": 91,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.3081203637342864,
+        "birth_frame": 196,
+        "confirmation_span_s": 0.13300013542175293,
+        "old_anchor": {
+          "frame": 147,
+          "native_id": 91,
+          "mask": "n:91",
+          "canonical_id": 91
+        },
+        "age": 4.05400013923645,
+        "distance": 197.77172710217872,
+        "radius": 319.8655679601629,
+        "normalized_distance": 0.6182963935862265,
+        "motion_cost": 0.17398737011540166,
+        "native_id": 129,
+        "canonical_id": 91,
+        "history_depth": 967.802490234375,
+        "current_depth": 997.0661926269531,
+        "residual_mm": 29.263702392578125,
+        "tolerance_mm": 43.95391136741638,
+        "alternatives": [
+          {
+            "id": 128,
+            "residual_mm": 118.79977416992188
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 89.53607177734375,
+        "required_partner_margin_mm": 11.194607299804687,
+        "cost": 0.6918796362657136,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 269,
+          "time": 1789706612.878,
+          "phase": "D1_DELAYED",
+          "native_id": 129,
+          "public_id": 91,
+          "target_bank_anchor": {
+            "frame": 147,
+            "native_id": 91,
+            "mask": "n:91",
+            "canonical_id": 91
+          },
+          "action_reference_anchor": {
+            "frame": 147,
+            "native_id": 91,
+            "mask": "n:91",
+            "canonical_id": 91
+          },
+          "terms": {
+            "age": 4.05400013923645,
+            "distance": 197.77172710217872,
+            "radius": 319.8655679601629,
+            "normalized_distance": 0.6182963935862265,
+            "motion_cost": 0.17398737011540166,
+            "native_id": 129,
+            "canonical_id": 91,
+            "history_depth": 967.802490234375,
+            "current_depth": 997.0661926269531,
+            "residual_mm": 29.263702392578125,
+            "tolerance_mm": 43.95391136741638,
+            "alternatives": [
+              {
+                "id": 128,
+                "residual_mm": 118.79977416992188
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 89.53607177734375,
+            "required_partner_margin_mm": 11.194607299804687,
+            "cost": 0.6918796362657136,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 147,
+        "native_id": 91,
+        "mask": "n:91",
+        "canonical_id": 91
+      },
+      "physical_preanchor": "WRONG",
+      "physical_preanchor_relation": "DIFFERENT",
+      "public_origin_reference": {
+        "frame": 1,
+        "global_frame": 701,
+        "native_id": 91
+      },
+      "public_origin_relation": "DIFFERENT",
+      "public_reference_correctness": "WRONG",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 13,
+        "iou": 0.9740740740740741,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.8896396396396397,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 8,
+        "iou": 0.9287598944591029,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "Z4Q_FROZEN",
+      "frame": 343,
+      "global_frame": 1043,
+      "phase": "D1_DELAYED",
+      "source": 132,
+      "target": 120,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.7999659256616176,
+        "birth_frame": 268,
+        "confirmation_span_s": 0.13199996948242188,
+        "old_anchor": {
+          "frame": 126,
+          "native_id": 120,
+          "mask": "n:120",
+          "canonical_id": 120
+        },
+        "age": 7.210000038146973,
+        "distance": 349.59154738065394,
+        "radius": 282.76865874427335,
+        "normalized_distance": 1.2363164607178514,
+        "motion_cost": 0.5343119061794941,
+        "native_id": 132,
+        "canonical_id": 120,
+        "history_depth": 1085.0264892578125,
+        "current_depth": 1092.2197265625,
+        "residual_mm": 7.1932373046875,
+        "tolerance_mm": 60.0,
+        "alternatives": [
+          {
+            "id": 9,
+            "residual_mm": 164.70849609375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 157.5152587890625,
+        "required_partner_margin_mm": 21.726822509765626,
+        "cost": 0.20003407433838244,
+        "rejection": null
+      },
+      "actual_pre_reference": {
+        "frame": 126,
+        "native_id": 120,
+        "mask": "n:120",
+        "canonical_id": 120
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 100,
+        "global_frame": 800,
+        "native_id": 120
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9454887218045113,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9233576642335767,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 1.0,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGB_LAG",
+      "frame": 343,
+      "global_frame": 1043,
+      "phase": "D1_DELAYED",
+      "source": 132,
+      "target": 120,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.7999659256616176,
+        "birth_frame": 268,
+        "confirmation_span_s": 0.13199996948242188,
+        "old_anchor": {
+          "frame": 126,
+          "native_id": 120,
+          "mask": "n:120",
+          "canonical_id": 120
+        },
+        "age": 7.210000038146973,
+        "distance": 349.59154738065394,
+        "radius": 282.76865874427335,
+        "normalized_distance": 1.2363164607178514,
+        "motion_cost": 0.5343119061794941,
+        "native_id": 132,
+        "canonical_id": 120,
+        "history_depth": 1085.0264892578125,
+        "current_depth": 1092.2197265625,
+        "residual_mm": 7.1932373046875,
+        "tolerance_mm": 60.0,
+        "alternatives": [
+          {
+            "id": 9,
+            "residual_mm": 164.70849609375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 157.5152587890625,
+        "required_partner_margin_mm": 21.726822509765626,
+        "cost": 0.20003407433838244,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 343,
+          "time": 1789706615.336,
+          "phase": "D1_DELAYED",
+          "native_id": 132,
+          "public_id": 120,
+          "target_bank_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "action_reference_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "terms": {
+            "age": 7.210000038146973,
+            "distance": 349.59154738065394,
+            "radius": 282.76865874427335,
+            "normalized_distance": 1.2363164607178514,
+            "motion_cost": 0.5343119061794941,
+            "native_id": 132,
+            "canonical_id": 120,
+            "history_depth": 1085.0264892578125,
+            "current_depth": 1092.2197265625,
+            "residual_mm": 7.1932373046875,
+            "tolerance_mm": 60.0,
+            "alternatives": [
+              {
+                "id": 9,
+                "residual_mm": 164.70849609375
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 157.5152587890625,
+            "required_partner_margin_mm": 21.726822509765626,
+            "cost": 0.20003407433838244,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 126,
+        "native_id": 120,
+        "mask": "n:120",
+        "canonical_id": 120
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 100,
+        "global_frame": 800,
+        "native_id": 120
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9454887218045113,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9233576642335767,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 1.0,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    },
+    {
+      "arm": "RGBD_LAG",
+      "frame": 343,
+      "global_frame": 1043,
+      "phase": "D1_DELAYED",
+      "source": 132,
+      "target": 120,
+      "actual_action": {
+        "kind": "reconnect",
+        "accepted": true,
+        "confirmations": 5,
+        "assignment_margin": 0.7999659256616176,
+        "birth_frame": 268,
+        "confirmation_span_s": 0.13199996948242188,
+        "old_anchor": {
+          "frame": 126,
+          "native_id": 120,
+          "mask": "n:120",
+          "canonical_id": 120
+        },
+        "age": 7.210000038146973,
+        "distance": 349.59154738065394,
+        "radius": 282.76865874427335,
+        "normalized_distance": 1.2363164607178514,
+        "motion_cost": 0.5343119061794941,
+        "native_id": 132,
+        "canonical_id": 120,
+        "history_depth": 1085.0264892578125,
+        "current_depth": 1092.2197265625,
+        "residual_mm": 7.1932373046875,
+        "tolerance_mm": 60.0,
+        "alternatives": [
+          {
+            "id": 9,
+            "residual_mm": 164.70849609375
+          }
+        ],
+        "reserved_partners": [],
+        "partner_margin_mm": 157.5152587890625,
+        "required_partner_margin_mm": 21.726822509765626,
+        "cost": 0.20003407433838244,
+        "rejection": null,
+        "depth_veto": {
+          "frame": 343,
+          "time": 1789706615.336,
+          "phase": "D1_DELAYED",
+          "native_id": 132,
+          "public_id": 120,
+          "target_bank_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "action_reference_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "terms": {
+            "age": 7.210000038146973,
+            "distance": 349.59154738065394,
+            "radius": 282.76865874427335,
+            "normalized_distance": 1.2363164607178514,
+            "motion_cost": 0.5343119061794941,
+            "native_id": 132,
+            "canonical_id": 120,
+            "history_depth": 1085.0264892578125,
+            "current_depth": 1092.2197265625,
+            "residual_mm": 7.1932373046875,
+            "tolerance_mm": 60.0,
+            "alternatives": [
+              {
+                "id": 9,
+                "residual_mm": 164.70849609375
+              }
+            ],
+            "reserved_partners": [],
+            "partner_margin_mm": 157.5152587890625,
+            "required_partner_margin_mm": 21.726822509765626,
+            "cost": 0.20003407433838244,
+            "rejection": null
+          },
+          "original_eligible": true,
+          "veto": false,
+          "reason": null
+        }
+      },
+      "actual_pre_reference": {
+        "frame": 126,
+        "native_id": 120,
+        "mask": "n:120",
+        "canonical_id": 120
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_preanchor_relation": "SAME",
+      "public_origin_reference": {
+        "frame": 100,
+        "global_frame": 800,
+        "native_id": 120
+      },
+      "public_origin_relation": "SAME",
+      "public_reference_correctness": "CORRECT",
+      "query_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9454887218045113,
+        "second_iou": 0.0
+      },
+      "preanchor_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 0.9233576642335767,
+        "second_iou": 0.0
+      },
+      "public_origin_match": {
+        "status": "UNIQUE_IOU_MATCH",
+        "gt_id": 7,
+        "iou": 1.0,
+        "second_iou": 0.0
+      },
+      "incidental_public_reference_return": false
+    }
+  ],
+  "event_arms": {
+    "RGB_LAG": [
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q134",
+        "request_frame": 134,
+        "global_frame": 834,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "112": 112,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 119,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "124": 124
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 118,
+            "target": 99,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 112,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 2,
+              "iou": 0.9408033826638478,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 1,
+              "iou": 0.7943548387096774,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 118,
+            "public_id": 99,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 2,
+              "iou": 0.9408033826638478,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.8490730931703778,
+                  "birth_frame": 64,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "age": 0.7309999465942383,
+                  "distance": 58.76450329544449,
+                  "radius": 63.609528701307255,
+                  "normalized_distance": 0.923831766957217,
+                  "motion_cost": 0.347361934034921,
+                  "native_id": 118,
+                  "canonical_id": 99,
+                  "history_depth": 1186.1219482421875,
+                  "current_depth": 1189.3033447265625,
+                  "residual_mm": 3.181396484375,
+                  "tolerance_mm": 32.192999839782715,
+                  "alternatives": [
+                    {
+                      "id": 68,
+                      "residual_mm": 25.69329833984375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 22.51190185546875,
+                  "required_partner_margin_mm": 10.0,
+                  "cost": 0.15092690682962207,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 134,
+                    "time": 1789706608.392,
+                    "phase": "D1_DELAYED",
+                    "native_id": 118,
+                    "public_id": 99,
+                    "target_bank_anchor": {
+                      "frame": 112,
+                      "native_id": 99,
+                      "mask": "n:99",
+                      "canonical_id": 99
+                    },
+                    "action_reference_anchor": {
+                      "frame": 112,
+                      "native_id": 99,
+                      "mask": "n:99",
+                      "canonical_id": 99
+                    },
+                    "terms": {
+                      "age": 0.7309999465942383,
+                      "distance": 58.76450329544449,
+                      "radius": 63.609528701307255,
+                      "normalized_distance": 0.923831766957217,
+                      "motion_cost": 0.347361934034921,
+                      "native_id": 118,
+                      "canonical_id": 99,
+                      "history_depth": 1186.1219482421875,
+                      "current_depth": 1189.3033447265625,
+                      "residual_mm": 3.181396484375,
+                      "tolerance_mm": 32.192999839782715,
+                      "alternatives": [
+                        {
+                          "id": 68,
+                          "residual_mm": 25.69329833984375
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 22.51190185546875,
+                      "required_partner_margin_mm": 10.0,
+                      "cost": 0.15092690682962207,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 134,
+                  "time": 1789706608.392,
+                  "phase": "D1_DELAYED",
+                  "native_id": 118,
+                  "public_id": 99,
+                  "target_bank_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "action_reference_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "terms": {
+                    "age": 0.7309999465942383,
+                    "distance": 58.76450329544449,
+                    "radius": 63.609528701307255,
+                    "normalized_distance": 0.923831766957217,
+                    "motion_cost": 0.347361934034921,
+                    "native_id": 118,
+                    "canonical_id": 99,
+                    "history_depth": 1186.1219482421875,
+                    "current_depth": 1189.3033447265625,
+                    "residual_mm": 3.181396484375,
+                    "tolerance_mm": 32.192999839782715,
+                    "alternatives": [
+                      {
+                        "id": 68,
+                        "residual_mm": 25.69329833984375
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 22.51190185546875,
+                    "required_partner_margin_mm": 10.0,
+                    "cost": 0.15092690682962207,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "actual_bank_reference": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 1,
+                  "iou": 0.7943548387096774,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 1,
+                  "iou": 0.7943548387096774,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 134,
+                "time": 1789706608.392,
+                "phase": "D1_DELAYED",
+                "native_id": 118,
+                "public_id": 99,
+                "target_bank_anchor": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "action_reference_anchor": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "terms": {
+                  "age": 0.7309999465942383,
+                  "distance": 58.76450329544449,
+                  "radius": 63.609528701307255,
+                  "normalized_distance": 0.923831766957217,
+                  "motion_cost": 0.347361934034921,
+                  "native_id": 118,
+                  "canonical_id": 99,
+                  "history_depth": 1186.1219482421875,
+                  "current_depth": 1189.3033447265625,
+                  "residual_mm": 3.181396484375,
+                  "tolerance_mm": 32.192999839782715,
+                  "alternatives": [
+                    {
+                      "id": 68,
+                      "residual_mm": 25.69329833984375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 22.51190185546875,
+                  "required_partner_margin_mm": 10.0,
+                  "cost": 0.15092690682962207,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 99
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 1,
+              "iou": 0.9113924050632911,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 136,
+        "first_publish_at_arrival_frame": 164,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q149",
+        "request_frame": 149,
+        "global_frame": 849,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "112": 112,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "125": 125,
+          "126": 126,
+          "127": 127
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 119,
+            "target": 70,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 7,
+              "native_id": 70,
+              "mask": "n:70",
+              "canonical_id": 70
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 14,
+              "iou": 0.9248434237995825,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9363817097415507,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 119,
+            "public_id": 70,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 14,
+              "iou": 0.9248434237995825,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.30505638082405007,
+                  "birth_frame": 95,
+                  "confirmation_span_s": 0.13300013542175293,
+                  "old_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "age": 4.718000173568726,
+                  "distance": 231.1008516188014,
+                  "radius": 337.706496538091,
+                  "normalized_distance": 0.6843245658223066,
+                  "motion_cost": 0.20875692354187414,
+                  "native_id": 119,
+                  "canonical_id": 70,
+                  "history_depth": 1056.4567260742188,
+                  "current_depth": 1019.1854248046875,
+                  "residual_mm": 37.27130126953125,
+                  "tolerance_mm": 56.16276651191711,
+                  "alternatives": [
+                    {
+                      "id": 101,
+                      "residual_mm": 134.718017578125
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 97.44671630859375,
+                  "required_partner_margin_mm": 18.005843994140623,
+                  "cost": 0.6949436191759498,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 149,
+                    "time": 1789706608.89,
+                    "phase": "D1_DELAYED",
+                    "native_id": 119,
+                    "public_id": 70,
+                    "target_bank_anchor": {
+                      "frame": 7,
+                      "native_id": 70,
+                      "mask": "n:70",
+                      "canonical_id": 70
+                    },
+                    "action_reference_anchor": {
+                      "frame": 7,
+                      "native_id": 70,
+                      "mask": "n:70",
+                      "canonical_id": 70
+                    },
+                    "terms": {
+                      "age": 4.718000173568726,
+                      "distance": 231.1008516188014,
+                      "radius": 337.706496538091,
+                      "normalized_distance": 0.6843245658223066,
+                      "motion_cost": 0.20875692354187414,
+                      "native_id": 119,
+                      "canonical_id": 70,
+                      "history_depth": 1056.4567260742188,
+                      "current_depth": 1019.1854248046875,
+                      "residual_mm": 37.27130126953125,
+                      "tolerance_mm": 56.16276651191711,
+                      "alternatives": [
+                        {
+                          "id": 101,
+                          "residual_mm": 134.718017578125
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 97.44671630859375,
+                      "required_partner_margin_mm": 18.005843994140623,
+                      "cost": 0.6949436191759498,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 149,
+                  "time": 1789706608.89,
+                  "phase": "D1_DELAYED",
+                  "native_id": 119,
+                  "public_id": 70,
+                  "target_bank_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "action_reference_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "terms": {
+                    "age": 4.718000173568726,
+                    "distance": 231.1008516188014,
+                    "radius": 337.706496538091,
+                    "normalized_distance": 0.6843245658223066,
+                    "motion_cost": 0.20875692354187414,
+                    "native_id": 119,
+                    "canonical_id": 70,
+                    "history_depth": 1056.4567260742188,
+                    "current_depth": 1019.1854248046875,
+                    "residual_mm": 37.27130126953125,
+                    "tolerance_mm": 56.16276651191711,
+                    "alternatives": [
+                      {
+                        "id": 101,
+                        "residual_mm": 134.718017578125
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 97.44671630859375,
+                    "required_partner_margin_mm": 18.005843994140623,
+                    "cost": 0.6949436191759498,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "actual_bank_reference": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9363817097415507,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9363817097415507,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 149,
+                "time": 1789706608.89,
+                "phase": "D1_DELAYED",
+                "native_id": 119,
+                "public_id": 70,
+                "target_bank_anchor": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "action_reference_anchor": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "terms": {
+                  "age": 4.718000173568726,
+                  "distance": 231.1008516188014,
+                  "radius": 337.706496538091,
+                  "normalized_distance": 0.6843245658223066,
+                  "motion_cost": 0.20875692354187414,
+                  "native_id": 119,
+                  "canonical_id": 70,
+                  "history_depth": 1056.4567260742188,
+                  "current_depth": 1019.1854248046875,
+                  "residual_mm": 37.27130126953125,
+                  "tolerance_mm": 56.16276651191711,
+                  "alternatives": [
+                    {
+                      "id": 101,
+                      "residual_mm": 134.718017578125
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 97.44671630859375,
+                  "required_partner_margin_mm": 18.005843994140623,
+                  "cost": 0.6949436191759498,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 70
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.8790322580645161,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 151,
+        "first_publish_at_arrival_frame": 179,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q197",
+        "request_frame": 197,
+        "global_frame": 897,
+        "original_status": "UNKNOWN_DEADLINE_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 129
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 127,
+            "target": 106,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 42,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 9,
+              "iou": 0.9487870619946092,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9725490196078431,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 127,
+            "public_id": 106,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 9,
+              "iou": 0.9487870619946092,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.61519160151791,
+                  "birth_frame": 145,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "age": 5.1499998569488525,
+                  "distance": 131.96302728484463,
+                  "radius": 291.52441229265554,
+                  "normalized_distance": 0.45266544316833945,
+                  "motion_cost": 0.09737942962908375,
+                  "native_id": 127,
+                  "canonical_id": 106,
+                  "history_depth": 1163.29150390625,
+                  "current_depth": 1181.61328125,
+                  "residual_mm": 18.32177734375,
+                  "tolerance_mm": 49.64878276176452,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 12.799188793945312,
+                  "cost": 0.38363463928638936,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 197,
+                    "time": 1789706610.485,
+                    "phase": "D1_DELAYED",
+                    "native_id": 127,
+                    "public_id": 106,
+                    "target_bank_anchor": {
+                      "frame": 42,
+                      "native_id": 106,
+                      "mask": "n:106",
+                      "canonical_id": 106
+                    },
+                    "action_reference_anchor": {
+                      "frame": 42,
+                      "native_id": 106,
+                      "mask": "n:106",
+                      "canonical_id": 106
+                    },
+                    "terms": {
+                      "age": 5.1499998569488525,
+                      "distance": 131.96302728484463,
+                      "radius": 291.52441229265554,
+                      "normalized_distance": 0.45266544316833945,
+                      "motion_cost": 0.09737942962908375,
+                      "native_id": 127,
+                      "canonical_id": 106,
+                      "history_depth": 1163.29150390625,
+                      "current_depth": 1181.61328125,
+                      "residual_mm": 18.32177734375,
+                      "tolerance_mm": 49.64878276176452,
+                      "alternatives": [],
+                      "reserved_partners": [],
+                      "partner_margin_mm": null,
+                      "required_partner_margin_mm": 12.799188793945312,
+                      "cost": 0.38363463928638936,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 197,
+                  "time": 1789706610.485,
+                  "phase": "D1_DELAYED",
+                  "native_id": 127,
+                  "public_id": 106,
+                  "target_bank_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "action_reference_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "terms": {
+                    "age": 5.1499998569488525,
+                    "distance": 131.96302728484463,
+                    "radius": 291.52441229265554,
+                    "normalized_distance": 0.45266544316833945,
+                    "motion_cost": 0.09737942962908375,
+                    "native_id": 127,
+                    "canonical_id": 106,
+                    "history_depth": 1163.29150390625,
+                    "current_depth": 1181.61328125,
+                    "residual_mm": 18.32177734375,
+                    "tolerance_mm": 49.64878276176452,
+                    "alternatives": [],
+                    "reserved_partners": [],
+                    "partner_margin_mm": null,
+                    "required_partner_margin_mm": 12.799188793945312,
+                    "cost": 0.38363463928638936,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "actual_bank_reference": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9725490196078431,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9725490196078431,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 197,
+                "time": 1789706610.485,
+                "phase": "D1_DELAYED",
+                "native_id": 127,
+                "public_id": 106,
+                "target_bank_anchor": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "action_reference_anchor": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "terms": {
+                  "age": 5.1499998569488525,
+                  "distance": 131.96302728484463,
+                  "radius": 291.52441229265554,
+                  "normalized_distance": 0.45266544316833945,
+                  "motion_cost": 0.09737942962908375,
+                  "native_id": 127,
+                  "canonical_id": 106,
+                  "history_depth": 1163.29150390625,
+                  "current_depth": 1181.61328125,
+                  "residual_mm": 18.32177734375,
+                  "tolerance_mm": 49.64878276176452,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 12.799188793945312,
+                  "cost": 0.38363463928638936,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 106
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9135802469135802,
+              "second_iou": 0.00510204081632653
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          },
+          {
+            "source": 128,
+            "public_id": 128,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 17,
+              "iou": 0.958498023715415,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [],
+            "physical_preanchor": "NO_RECONNECT_REFERENCE",
+            "original_request_candidate_edges": [],
+            "public_origin_reference": {
+              "frame": 168,
+              "global_frame": 868,
+              "native_id": 128
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 17,
+              "iou": 0.852054794520548,
+              "second_iou": 0.0021929824561403508
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 227,
+        "first_publish_at_arrival_frame": 227,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q205",
+        "request_frame": 205,
+        "global_frame": 905,
+        "original_status": "ACTIVE_WINDOW_OVERLAP_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 129
+        },
+        "physical_preanchor": "CORRECT",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "SHADOW_REQUEST_NOT_INDEPENDENT_COMMIT",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 123,
+            "target": 117,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 84,
+              "native_id": 117,
+              "mask": "n:117",
+              "canonical_id": 117
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9408163265306122,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9415730337078652,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "CORRECT"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 123,
+            "public_id": 117,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9408163265306122,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.5504342466739178,
+                  "birth_frame": 126,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "age": 4.020999908447266,
+                  "distance": 74.17698883756839,
+                  "radius": 186.21192676311307,
+                  "normalized_distance": 0.3983471420277586,
+                  "motion_cost": 0.07627440151415865,
+                  "native_id": 123,
+                  "canonical_id": 117,
+                  "history_depth": 1180.156005859375,
+                  "current_depth": 1153.8685302734375,
+                  "residual_mm": 26.2874755859375,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 25.0,
+                  "cost": 0.4495657533260822,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 205,
+                    "time": 1789706610.751,
+                    "phase": "D1_DELAYED",
+                    "native_id": 123,
+                    "public_id": 117,
+                    "target_bank_anchor": {
+                      "frame": 84,
+                      "native_id": 117,
+                      "mask": "n:117",
+                      "canonical_id": 117
+                    },
+                    "action_reference_anchor": {
+                      "frame": 84,
+                      "native_id": 117,
+                      "mask": "n:117",
+                      "canonical_id": 117
+                    },
+                    "terms": {
+                      "age": 4.020999908447266,
+                      "distance": 74.17698883756839,
+                      "radius": 186.21192676311307,
+                      "normalized_distance": 0.3983471420277586,
+                      "motion_cost": 0.07627440151415865,
+                      "native_id": 123,
+                      "canonical_id": 117,
+                      "history_depth": 1180.156005859375,
+                      "current_depth": 1153.8685302734375,
+                      "residual_mm": 26.2874755859375,
+                      "tolerance_mm": 60.0,
+                      "alternatives": [],
+                      "reserved_partners": [],
+                      "partner_margin_mm": null,
+                      "required_partner_margin_mm": 25.0,
+                      "cost": 0.4495657533260822,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 205,
+                  "time": 1789706610.751,
+                  "phase": "D1_DELAYED",
+                  "native_id": 123,
+                  "public_id": 117,
+                  "target_bank_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "action_reference_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "terms": {
+                    "age": 4.020999908447266,
+                    "distance": 74.17698883756839,
+                    "radius": 186.21192676311307,
+                    "normalized_distance": 0.3983471420277586,
+                    "motion_cost": 0.07627440151415865,
+                    "native_id": 123,
+                    "canonical_id": 117,
+                    "history_depth": 1180.156005859375,
+                    "current_depth": 1153.8685302734375,
+                    "residual_mm": 26.2874755859375,
+                    "tolerance_mm": 60.0,
+                    "alternatives": [],
+                    "reserved_partners": [],
+                    "partner_margin_mm": null,
+                    "required_partner_margin_mm": 25.0,
+                    "cost": 0.4495657533260822,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "actual_bank_reference": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9415730337078652,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9415730337078652,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "CORRECT",
+                "physical_bank_anchor": "CORRECT"
+              }
+            ],
+            "physical_preanchor": "CORRECT",
+            "original_request_candidate_edges": [
+              {
+                "frame": 205,
+                "time": 1789706610.751,
+                "phase": "D1_DELAYED",
+                "native_id": 123,
+                "public_id": 117,
+                "target_bank_anchor": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "action_reference_anchor": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "terms": {
+                  "age": 4.020999908447266,
+                  "distance": 74.17698883756839,
+                  "radius": 186.21192676311307,
+                  "normalized_distance": 0.3983471420277586,
+                  "motion_cost": 0.07627440151415865,
+                  "native_id": 123,
+                  "canonical_id": 117,
+                  "history_depth": 1180.156005859375,
+                  "current_depth": 1153.8685302734375,
+                  "residual_mm": 26.2874755859375,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 25.0,
+                  "cost": 0.4495657533260822,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 46,
+              "global_frame": 746,
+              "native_id": 117
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.8946515397082658,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 205,
+        "first_publish_at_arrival_frame": 235,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q269",
+        "request_frame": 269,
+        "global_frame": 969,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "88": 88,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "118": 99,
+          "119": 70,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 91,
+          "130": 130,
+          "132": 132
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 129,
+            "target": 91,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 147,
+              "native_id": 91,
+              "mask": "n:91",
+              "canonical_id": 91
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 13,
+              "iou": 0.9740740740740741,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 8,
+              "iou": 0.8896396396396397,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 129,
+            "public_id": 91,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 13,
+              "iou": 0.9740740740740741,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.3081203637342864,
+                  "birth_frame": 196,
+                  "confirmation_span_s": 0.13300013542175293,
+                  "old_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "age": 4.05400013923645,
+                  "distance": 197.77172710217872,
+                  "radius": 319.8655679601629,
+                  "normalized_distance": 0.6182963935862265,
+                  "motion_cost": 0.17398737011540166,
+                  "native_id": 129,
+                  "canonical_id": 91,
+                  "history_depth": 967.802490234375,
+                  "current_depth": 997.0661926269531,
+                  "residual_mm": 29.263702392578125,
+                  "tolerance_mm": 43.95391136741638,
+                  "alternatives": [
+                    {
+                      "id": 128,
+                      "residual_mm": 118.79977416992188
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 89.53607177734375,
+                  "required_partner_margin_mm": 11.194607299804687,
+                  "cost": 0.6918796362657136,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 269,
+                    "time": 1789706612.878,
+                    "phase": "D1_DELAYED",
+                    "native_id": 129,
+                    "public_id": 91,
+                    "target_bank_anchor": {
+                      "frame": 147,
+                      "native_id": 91,
+                      "mask": "n:91",
+                      "canonical_id": 91
+                    },
+                    "action_reference_anchor": {
+                      "frame": 147,
+                      "native_id": 91,
+                      "mask": "n:91",
+                      "canonical_id": 91
+                    },
+                    "terms": {
+                      "age": 4.05400013923645,
+                      "distance": 197.77172710217872,
+                      "radius": 319.8655679601629,
+                      "normalized_distance": 0.6182963935862265,
+                      "motion_cost": 0.17398737011540166,
+                      "native_id": 129,
+                      "canonical_id": 91,
+                      "history_depth": 967.802490234375,
+                      "current_depth": 997.0661926269531,
+                      "residual_mm": 29.263702392578125,
+                      "tolerance_mm": 43.95391136741638,
+                      "alternatives": [
+                        {
+                          "id": 128,
+                          "residual_mm": 118.79977416992188
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 89.53607177734375,
+                      "required_partner_margin_mm": 11.194607299804687,
+                      "cost": 0.6918796362657136,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 269,
+                  "time": 1789706612.878,
+                  "phase": "D1_DELAYED",
+                  "native_id": 129,
+                  "public_id": 91,
+                  "target_bank_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "action_reference_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "terms": {
+                    "age": 4.05400013923645,
+                    "distance": 197.77172710217872,
+                    "radius": 319.8655679601629,
+                    "normalized_distance": 0.6182963935862265,
+                    "motion_cost": 0.17398737011540166,
+                    "native_id": 129,
+                    "canonical_id": 91,
+                    "history_depth": 967.802490234375,
+                    "current_depth": 997.0661926269531,
+                    "residual_mm": 29.263702392578125,
+                    "tolerance_mm": 43.95391136741638,
+                    "alternatives": [
+                      {
+                        "id": 128,
+                        "residual_mm": 118.79977416992188
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 89.53607177734375,
+                    "required_partner_margin_mm": 11.194607299804687,
+                    "cost": 0.6918796362657136,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "actual_bank_reference": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 8,
+                  "iou": 0.8896396396396397,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 8,
+                  "iou": 0.8896396396396397,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 269,
+                "time": 1789706612.878,
+                "phase": "D1_DELAYED",
+                "native_id": 129,
+                "public_id": 91,
+                "target_bank_anchor": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "action_reference_anchor": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "terms": {
+                  "age": 4.05400013923645,
+                  "distance": 197.77172710217872,
+                  "radius": 319.8655679601629,
+                  "normalized_distance": 0.6182963935862265,
+                  "motion_cost": 0.17398737011540166,
+                  "native_id": 129,
+                  "canonical_id": 91,
+                  "history_depth": 967.802490234375,
+                  "current_depth": 997.0661926269531,
+                  "residual_mm": 29.263702392578125,
+                  "tolerance_mm": 43.95391136741638,
+                  "alternatives": [
+                    {
+                      "id": 128,
+                      "residual_mm": 118.79977416992188
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 89.53607177734375,
+                  "required_partner_margin_mm": 11.194607299804687,
+                  "cost": 0.6918796362657136,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 91
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 8,
+              "iou": 0.9287598944591029,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 271,
+        "first_publish_at_arrival_frame": 299,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGB_LAG/Q343",
+        "request_frame": 343,
+        "global_frame": 1043,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "50": 50,
+          "88": 88,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "110": 110,
+          "118": 99,
+          "119": 70,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 91,
+          "130": 130,
+          "132": 120,
+          "133": 133,
+          "135": 135,
+          "136": 136,
+          "137": 137,
+          "139": 139,
+          "143": 143
+        },
+        "physical_preanchor": "CORRECT",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 132,
+            "target": 120,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 126,
+              "native_id": 120,
+              "mask": "n:120",
+              "canonical_id": 120
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9454887218045113,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9233576642335767,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "CORRECT"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 132,
+            "public_id": 120,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9454887218045113,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.7999659256616176,
+                  "birth_frame": 268,
+                  "confirmation_span_s": 0.13199996948242188,
+                  "old_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "age": 7.210000038146973,
+                  "distance": 349.59154738065394,
+                  "radius": 282.76865874427335,
+                  "normalized_distance": 1.2363164607178514,
+                  "motion_cost": 0.5343119061794941,
+                  "native_id": 132,
+                  "canonical_id": 120,
+                  "history_depth": 1085.0264892578125,
+                  "current_depth": 1092.2197265625,
+                  "residual_mm": 7.1932373046875,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [
+                    {
+                      "id": 9,
+                      "residual_mm": 164.70849609375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 157.5152587890625,
+                  "required_partner_margin_mm": 21.726822509765626,
+                  "cost": 0.20003407433838244,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 343,
+                    "time": 1789706615.336,
+                    "phase": "D1_DELAYED",
+                    "native_id": 132,
+                    "public_id": 120,
+                    "target_bank_anchor": {
+                      "frame": 126,
+                      "native_id": 120,
+                      "mask": "n:120",
+                      "canonical_id": 120
+                    },
+                    "action_reference_anchor": {
+                      "frame": 126,
+                      "native_id": 120,
+                      "mask": "n:120",
+                      "canonical_id": 120
+                    },
+                    "terms": {
+                      "age": 7.210000038146973,
+                      "distance": 349.59154738065394,
+                      "radius": 282.76865874427335,
+                      "normalized_distance": 1.2363164607178514,
+                      "motion_cost": 0.5343119061794941,
+                      "native_id": 132,
+                      "canonical_id": 120,
+                      "history_depth": 1085.0264892578125,
+                      "current_depth": 1092.2197265625,
+                      "residual_mm": 7.1932373046875,
+                      "tolerance_mm": 60.0,
+                      "alternatives": [
+                        {
+                          "id": 9,
+                          "residual_mm": 164.70849609375
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 157.5152587890625,
+                      "required_partner_margin_mm": 21.726822509765626,
+                      "cost": 0.20003407433838244,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 343,
+                  "time": 1789706615.336,
+                  "phase": "D1_DELAYED",
+                  "native_id": 132,
+                  "public_id": 120,
+                  "target_bank_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "action_reference_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "terms": {
+                    "age": 7.210000038146973,
+                    "distance": 349.59154738065394,
+                    "radius": 282.76865874427335,
+                    "normalized_distance": 1.2363164607178514,
+                    "motion_cost": 0.5343119061794941,
+                    "native_id": 132,
+                    "canonical_id": 120,
+                    "history_depth": 1085.0264892578125,
+                    "current_depth": 1092.2197265625,
+                    "residual_mm": 7.1932373046875,
+                    "tolerance_mm": 60.0,
+                    "alternatives": [
+                      {
+                        "id": 9,
+                        "residual_mm": 164.70849609375
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 157.5152587890625,
+                    "required_partner_margin_mm": 21.726822509765626,
+                    "cost": 0.20003407433838244,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "actual_bank_reference": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9233576642335767,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9233576642335767,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "CORRECT",
+                "physical_bank_anchor": "CORRECT"
+              }
+            ],
+            "physical_preanchor": "CORRECT",
+            "original_request_candidate_edges": [
+              {
+                "frame": 343,
+                "time": 1789706615.336,
+                "phase": "D1_DELAYED",
+                "native_id": 132,
+                "public_id": 120,
+                "target_bank_anchor": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "action_reference_anchor": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "terms": {
+                  "age": 7.210000038146973,
+                  "distance": 349.59154738065394,
+                  "radius": 282.76865874427335,
+                  "normalized_distance": 1.2363164607178514,
+                  "motion_cost": 0.5343119061794941,
+                  "native_id": 132,
+                  "canonical_id": 120,
+                  "history_depth": 1085.0264892578125,
+                  "current_depth": 1092.2197265625,
+                  "residual_mm": 7.1932373046875,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [
+                    {
+                      "id": 9,
+                      "residual_mm": 164.70849609375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 157.5152587890625,
+                  "required_partner_margin_mm": 21.726822509765626,
+                  "cost": 0.20003407433838244,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 100,
+              "global_frame": 800,
+              "native_id": 120
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 1.0,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 345,
+        "first_publish_at_arrival_frame": 360,
+        "decision_to_first_publication_delay_frames": 17,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      }
+    ],
+    "RGBD_LAG": [
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q134",
+        "request_frame": 134,
+        "global_frame": 834,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "112": 112,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 119,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "124": 124
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 118,
+            "target": 99,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 112,
+              "native_id": 99,
+              "mask": "n:99",
+              "canonical_id": 99
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 2,
+              "iou": 0.9408033826638478,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 1,
+              "iou": 0.7943548387096774,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 118,
+            "public_id": 99,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 2,
+              "iou": 0.9408033826638478,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.8490730931703778,
+                  "birth_frame": 64,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "age": 0.7309999465942383,
+                  "distance": 58.76450329544449,
+                  "radius": 63.609528701307255,
+                  "normalized_distance": 0.923831766957217,
+                  "motion_cost": 0.347361934034921,
+                  "native_id": 118,
+                  "canonical_id": 99,
+                  "history_depth": 1186.1219482421875,
+                  "current_depth": 1189.3033447265625,
+                  "residual_mm": 3.181396484375,
+                  "tolerance_mm": 32.192999839782715,
+                  "alternatives": [
+                    {
+                      "id": 68,
+                      "residual_mm": 25.69329833984375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 22.51190185546875,
+                  "required_partner_margin_mm": 10.0,
+                  "cost": 0.15092690682962207,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 134,
+                    "time": 1789706608.392,
+                    "phase": "D1_DELAYED",
+                    "native_id": 118,
+                    "public_id": 99,
+                    "target_bank_anchor": {
+                      "frame": 112,
+                      "native_id": 99,
+                      "mask": "n:99",
+                      "canonical_id": 99
+                    },
+                    "action_reference_anchor": {
+                      "frame": 112,
+                      "native_id": 99,
+                      "mask": "n:99",
+                      "canonical_id": 99
+                    },
+                    "terms": {
+                      "age": 0.7309999465942383,
+                      "distance": 58.76450329544449,
+                      "radius": 63.609528701307255,
+                      "normalized_distance": 0.923831766957217,
+                      "motion_cost": 0.347361934034921,
+                      "native_id": 118,
+                      "canonical_id": 99,
+                      "history_depth": 1186.1219482421875,
+                      "current_depth": 1189.3033447265625,
+                      "residual_mm": 3.181396484375,
+                      "tolerance_mm": 32.192999839782715,
+                      "alternatives": [
+                        {
+                          "id": 68,
+                          "residual_mm": 25.69329833984375
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 22.51190185546875,
+                      "required_partner_margin_mm": 10.0,
+                      "cost": 0.15092690682962207,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 134,
+                  "time": 1789706608.392,
+                  "phase": "D1_DELAYED",
+                  "native_id": 118,
+                  "public_id": 99,
+                  "target_bank_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "action_reference_anchor": {
+                    "frame": 112,
+                    "native_id": 99,
+                    "mask": "n:99",
+                    "canonical_id": 99
+                  },
+                  "terms": {
+                    "age": 0.7309999465942383,
+                    "distance": 58.76450329544449,
+                    "radius": 63.609528701307255,
+                    "normalized_distance": 0.923831766957217,
+                    "motion_cost": 0.347361934034921,
+                    "native_id": 118,
+                    "canonical_id": 99,
+                    "history_depth": 1186.1219482421875,
+                    "current_depth": 1189.3033447265625,
+                    "residual_mm": 3.181396484375,
+                    "tolerance_mm": 32.192999839782715,
+                    "alternatives": [
+                      {
+                        "id": 68,
+                        "residual_mm": 25.69329833984375
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 22.51190185546875,
+                    "required_partner_margin_mm": 10.0,
+                    "cost": 0.15092690682962207,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "actual_bank_reference": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 1,
+                  "iou": 0.7943548387096774,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 1,
+                  "iou": 0.7943548387096774,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 134,
+                "time": 1789706608.392,
+                "phase": "D1_DELAYED",
+                "native_id": 118,
+                "public_id": 99,
+                "target_bank_anchor": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "action_reference_anchor": {
+                  "frame": 112,
+                  "native_id": 99,
+                  "mask": "n:99",
+                  "canonical_id": 99
+                },
+                "terms": {
+                  "age": 0.7309999465942383,
+                  "distance": 58.76450329544449,
+                  "radius": 63.609528701307255,
+                  "normalized_distance": 0.923831766957217,
+                  "motion_cost": 0.347361934034921,
+                  "native_id": 118,
+                  "canonical_id": 99,
+                  "history_depth": 1186.1219482421875,
+                  "current_depth": 1189.3033447265625,
+                  "residual_mm": 3.181396484375,
+                  "tolerance_mm": 32.192999839782715,
+                  "alternatives": [
+                    {
+                      "id": 68,
+                      "residual_mm": 25.69329833984375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 22.51190185546875,
+                  "required_partner_margin_mm": 10.0,
+                  "cost": 0.15092690682962207,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 99
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 1,
+              "iou": 0.9113924050632911,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 136,
+        "first_publish_at_arrival_frame": 164,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q149",
+        "request_frame": 149,
+        "global_frame": 849,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "112": 112,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "125": 125,
+          "126": 126,
+          "127": 127
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 119,
+            "target": 70,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 7,
+              "native_id": 70,
+              "mask": "n:70",
+              "canonical_id": 70
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 14,
+              "iou": 0.9248434237995825,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9363817097415507,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 119,
+            "public_id": 70,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 14,
+              "iou": 0.9248434237995825,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.30505638082405007,
+                  "birth_frame": 95,
+                  "confirmation_span_s": 0.13300013542175293,
+                  "old_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "age": 4.718000173568726,
+                  "distance": 231.1008516188014,
+                  "radius": 337.706496538091,
+                  "normalized_distance": 0.6843245658223066,
+                  "motion_cost": 0.20875692354187414,
+                  "native_id": 119,
+                  "canonical_id": 70,
+                  "history_depth": 1056.4567260742188,
+                  "current_depth": 1019.1854248046875,
+                  "residual_mm": 37.27130126953125,
+                  "tolerance_mm": 56.16276651191711,
+                  "alternatives": [
+                    {
+                      "id": 101,
+                      "residual_mm": 134.718017578125
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 97.44671630859375,
+                  "required_partner_margin_mm": 18.005843994140623,
+                  "cost": 0.6949436191759498,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 149,
+                    "time": 1789706608.89,
+                    "phase": "D1_DELAYED",
+                    "native_id": 119,
+                    "public_id": 70,
+                    "target_bank_anchor": {
+                      "frame": 7,
+                      "native_id": 70,
+                      "mask": "n:70",
+                      "canonical_id": 70
+                    },
+                    "action_reference_anchor": {
+                      "frame": 7,
+                      "native_id": 70,
+                      "mask": "n:70",
+                      "canonical_id": 70
+                    },
+                    "terms": {
+                      "age": 4.718000173568726,
+                      "distance": 231.1008516188014,
+                      "radius": 337.706496538091,
+                      "normalized_distance": 0.6843245658223066,
+                      "motion_cost": 0.20875692354187414,
+                      "native_id": 119,
+                      "canonical_id": 70,
+                      "history_depth": 1056.4567260742188,
+                      "current_depth": 1019.1854248046875,
+                      "residual_mm": 37.27130126953125,
+                      "tolerance_mm": 56.16276651191711,
+                      "alternatives": [
+                        {
+                          "id": 101,
+                          "residual_mm": 134.718017578125
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 97.44671630859375,
+                      "required_partner_margin_mm": 18.005843994140623,
+                      "cost": 0.6949436191759498,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 149,
+                  "time": 1789706608.89,
+                  "phase": "D1_DELAYED",
+                  "native_id": 119,
+                  "public_id": 70,
+                  "target_bank_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "action_reference_anchor": {
+                    "frame": 7,
+                    "native_id": 70,
+                    "mask": "n:70",
+                    "canonical_id": 70
+                  },
+                  "terms": {
+                    "age": 4.718000173568726,
+                    "distance": 231.1008516188014,
+                    "radius": 337.706496538091,
+                    "normalized_distance": 0.6843245658223066,
+                    "motion_cost": 0.20875692354187414,
+                    "native_id": 119,
+                    "canonical_id": 70,
+                    "history_depth": 1056.4567260742188,
+                    "current_depth": 1019.1854248046875,
+                    "residual_mm": 37.27130126953125,
+                    "tolerance_mm": 56.16276651191711,
+                    "alternatives": [
+                      {
+                        "id": 101,
+                        "residual_mm": 134.718017578125
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 97.44671630859375,
+                    "required_partner_margin_mm": 18.005843994140623,
+                    "cost": 0.6949436191759498,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "actual_bank_reference": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9363817097415507,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9363817097415507,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 149,
+                "time": 1789706608.89,
+                "phase": "D1_DELAYED",
+                "native_id": 119,
+                "public_id": 70,
+                "target_bank_anchor": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "action_reference_anchor": {
+                  "frame": 7,
+                  "native_id": 70,
+                  "mask": "n:70",
+                  "canonical_id": 70
+                },
+                "terms": {
+                  "age": 4.718000173568726,
+                  "distance": 231.1008516188014,
+                  "radius": 337.706496538091,
+                  "normalized_distance": 0.6843245658223066,
+                  "motion_cost": 0.20875692354187414,
+                  "native_id": 119,
+                  "canonical_id": 70,
+                  "history_depth": 1056.4567260742188,
+                  "current_depth": 1019.1854248046875,
+                  "residual_mm": 37.27130126953125,
+                  "tolerance_mm": 56.16276651191711,
+                  "alternatives": [
+                    {
+                      "id": 101,
+                      "residual_mm": 134.718017578125
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 97.44671630859375,
+                  "required_partner_margin_mm": 18.005843994140623,
+                  "cost": 0.6949436191759498,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 70
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.8790322580645161,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 151,
+        "first_publish_at_arrival_frame": 179,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q197",
+        "request_frame": 197,
+        "global_frame": 897,
+        "original_status": "UNKNOWN_DEADLINE_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "116": 116,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 123,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 129
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 127,
+            "target": 106,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 42,
+              "native_id": 106,
+              "mask": "n:106",
+              "canonical_id": 106
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 9,
+              "iou": 0.9487870619946092,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9725490196078431,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 127,
+            "public_id": 106,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 9,
+              "iou": 0.9487870619946092,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.61519160151791,
+                  "birth_frame": 145,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "age": 5.1499998569488525,
+                  "distance": 131.96302728484463,
+                  "radius": 291.52441229265554,
+                  "normalized_distance": 0.45266544316833945,
+                  "motion_cost": 0.09737942962908375,
+                  "native_id": 127,
+                  "canonical_id": 106,
+                  "history_depth": 1163.29150390625,
+                  "current_depth": 1181.61328125,
+                  "residual_mm": 18.32177734375,
+                  "tolerance_mm": 49.64878276176452,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 12.799188793945312,
+                  "cost": 0.38363463928638936,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 197,
+                    "time": 1789706610.485,
+                    "phase": "D1_DELAYED",
+                    "native_id": 127,
+                    "public_id": 106,
+                    "target_bank_anchor": {
+                      "frame": 42,
+                      "native_id": 106,
+                      "mask": "n:106",
+                      "canonical_id": 106
+                    },
+                    "action_reference_anchor": {
+                      "frame": 42,
+                      "native_id": 106,
+                      "mask": "n:106",
+                      "canonical_id": 106
+                    },
+                    "terms": {
+                      "age": 5.1499998569488525,
+                      "distance": 131.96302728484463,
+                      "radius": 291.52441229265554,
+                      "normalized_distance": 0.45266544316833945,
+                      "motion_cost": 0.09737942962908375,
+                      "native_id": 127,
+                      "canonical_id": 106,
+                      "history_depth": 1163.29150390625,
+                      "current_depth": 1181.61328125,
+                      "residual_mm": 18.32177734375,
+                      "tolerance_mm": 49.64878276176452,
+                      "alternatives": [],
+                      "reserved_partners": [],
+                      "partner_margin_mm": null,
+                      "required_partner_margin_mm": 12.799188793945312,
+                      "cost": 0.38363463928638936,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 197,
+                  "time": 1789706610.485,
+                  "phase": "D1_DELAYED",
+                  "native_id": 127,
+                  "public_id": 106,
+                  "target_bank_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "action_reference_anchor": {
+                    "frame": 42,
+                    "native_id": 106,
+                    "mask": "n:106",
+                    "canonical_id": 106
+                  },
+                  "terms": {
+                    "age": 5.1499998569488525,
+                    "distance": 131.96302728484463,
+                    "radius": 291.52441229265554,
+                    "normalized_distance": 0.45266544316833945,
+                    "motion_cost": 0.09737942962908375,
+                    "native_id": 127,
+                    "canonical_id": 106,
+                    "history_depth": 1163.29150390625,
+                    "current_depth": 1181.61328125,
+                    "residual_mm": 18.32177734375,
+                    "tolerance_mm": 49.64878276176452,
+                    "alternatives": [],
+                    "reserved_partners": [],
+                    "partner_margin_mm": null,
+                    "required_partner_margin_mm": 12.799188793945312,
+                    "cost": 0.38363463928638936,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "actual_bank_reference": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9725490196078431,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9725490196078431,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 197,
+                "time": 1789706610.485,
+                "phase": "D1_DELAYED",
+                "native_id": 127,
+                "public_id": 106,
+                "target_bank_anchor": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "action_reference_anchor": {
+                  "frame": 42,
+                  "native_id": 106,
+                  "mask": "n:106",
+                  "canonical_id": 106
+                },
+                "terms": {
+                  "age": 5.1499998569488525,
+                  "distance": 131.96302728484463,
+                  "radius": 291.52441229265554,
+                  "normalized_distance": 0.45266544316833945,
+                  "motion_cost": 0.09737942962908375,
+                  "native_id": 127,
+                  "canonical_id": 106,
+                  "history_depth": 1163.29150390625,
+                  "current_depth": 1181.61328125,
+                  "residual_mm": 18.32177734375,
+                  "tolerance_mm": 49.64878276176452,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 12.799188793945312,
+                  "cost": 0.38363463928638936,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 106
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9135802469135802,
+              "second_iou": 0.00510204081632653
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          },
+          {
+            "source": 128,
+            "public_id": 128,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 17,
+              "iou": 0.958498023715415,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [],
+            "physical_preanchor": "NO_RECONNECT_REFERENCE",
+            "original_request_candidate_edges": [],
+            "public_origin_reference": {
+              "frame": 168,
+              "global_frame": 868,
+              "native_id": 128
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 17,
+              "iou": 0.852054794520548,
+              "second_iou": 0.0021929824561403508
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 227,
+        "first_publish_at_arrival_frame": 227,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q205",
+        "request_frame": 205,
+        "global_frame": 905,
+        "original_status": "ACTIVE_WINDOW_OVERLAP_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "86": 86,
+          "88": 88,
+          "91": 91,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "118": 99,
+          "119": 70,
+          "120": 120,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 129
+        },
+        "physical_preanchor": "CORRECT",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "SHADOW_REQUEST_NOT_INDEPENDENT_COMMIT",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 123,
+            "target": 117,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 84,
+              "native_id": 117,
+              "mask": "n:117",
+              "canonical_id": 117
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9408163265306122,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9415730337078652,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "CORRECT"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 123,
+            "public_id": 117,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.9408163265306122,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.5504342466739178,
+                  "birth_frame": 126,
+                  "confirmation_span_s": 0.13299989700317383,
+                  "old_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "age": 4.020999908447266,
+                  "distance": 74.17698883756839,
+                  "radius": 186.21192676311307,
+                  "normalized_distance": 0.3983471420277586,
+                  "motion_cost": 0.07627440151415865,
+                  "native_id": 123,
+                  "canonical_id": 117,
+                  "history_depth": 1180.156005859375,
+                  "current_depth": 1153.8685302734375,
+                  "residual_mm": 26.2874755859375,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 25.0,
+                  "cost": 0.4495657533260822,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 205,
+                    "time": 1789706610.751,
+                    "phase": "D1_DELAYED",
+                    "native_id": 123,
+                    "public_id": 117,
+                    "target_bank_anchor": {
+                      "frame": 84,
+                      "native_id": 117,
+                      "mask": "n:117",
+                      "canonical_id": 117
+                    },
+                    "action_reference_anchor": {
+                      "frame": 84,
+                      "native_id": 117,
+                      "mask": "n:117",
+                      "canonical_id": 117
+                    },
+                    "terms": {
+                      "age": 4.020999908447266,
+                      "distance": 74.17698883756839,
+                      "radius": 186.21192676311307,
+                      "normalized_distance": 0.3983471420277586,
+                      "motion_cost": 0.07627440151415865,
+                      "native_id": 123,
+                      "canonical_id": 117,
+                      "history_depth": 1180.156005859375,
+                      "current_depth": 1153.8685302734375,
+                      "residual_mm": 26.2874755859375,
+                      "tolerance_mm": 60.0,
+                      "alternatives": [],
+                      "reserved_partners": [],
+                      "partner_margin_mm": null,
+                      "required_partner_margin_mm": 25.0,
+                      "cost": 0.4495657533260822,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 205,
+                  "time": 1789706610.751,
+                  "phase": "D1_DELAYED",
+                  "native_id": 123,
+                  "public_id": 117,
+                  "target_bank_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "action_reference_anchor": {
+                    "frame": 84,
+                    "native_id": 117,
+                    "mask": "n:117",
+                    "canonical_id": 117
+                  },
+                  "terms": {
+                    "age": 4.020999908447266,
+                    "distance": 74.17698883756839,
+                    "radius": 186.21192676311307,
+                    "normalized_distance": 0.3983471420277586,
+                    "motion_cost": 0.07627440151415865,
+                    "native_id": 123,
+                    "canonical_id": 117,
+                    "history_depth": 1180.156005859375,
+                    "current_depth": 1153.8685302734375,
+                    "residual_mm": 26.2874755859375,
+                    "tolerance_mm": 60.0,
+                    "alternatives": [],
+                    "reserved_partners": [],
+                    "partner_margin_mm": null,
+                    "required_partner_margin_mm": 25.0,
+                    "cost": 0.4495657533260822,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "actual_bank_reference": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9415730337078652,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 26,
+                  "iou": 0.9415730337078652,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "CORRECT",
+                "physical_bank_anchor": "CORRECT"
+              }
+            ],
+            "physical_preanchor": "CORRECT",
+            "original_request_candidate_edges": [
+              {
+                "frame": 205,
+                "time": 1789706610.751,
+                "phase": "D1_DELAYED",
+                "native_id": 123,
+                "public_id": 117,
+                "target_bank_anchor": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "action_reference_anchor": {
+                  "frame": 84,
+                  "native_id": 117,
+                  "mask": "n:117",
+                  "canonical_id": 117
+                },
+                "terms": {
+                  "age": 4.020999908447266,
+                  "distance": 74.17698883756839,
+                  "radius": 186.21192676311307,
+                  "normalized_distance": 0.3983471420277586,
+                  "motion_cost": 0.07627440151415865,
+                  "native_id": 123,
+                  "canonical_id": 117,
+                  "history_depth": 1180.156005859375,
+                  "current_depth": 1153.8685302734375,
+                  "residual_mm": 26.2874755859375,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [],
+                  "reserved_partners": [],
+                  "partner_margin_mm": null,
+                  "required_partner_margin_mm": 25.0,
+                  "cost": 0.4495657533260822,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 46,
+              "global_frame": 746,
+              "native_id": 117
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 26,
+              "iou": 0.8946515397082658,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 205,
+        "first_publish_at_arrival_frame": 235,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q269",
+        "request_frame": 269,
+        "global_frame": 969,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "26": 26,
+          "50": 50,
+          "68": 68,
+          "72": 72,
+          "88": 88,
+          "92": 92,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "108": 108,
+          "110": 110,
+          "113": 113,
+          "118": 99,
+          "119": 70,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 91,
+          "130": 130,
+          "132": 132
+        },
+        "physical_preanchor": "WRONG",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 129,
+            "target": 91,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 147,
+              "native_id": 91,
+              "mask": "n:91",
+              "canonical_id": 91
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 13,
+              "iou": 0.9740740740740741,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 8,
+              "iou": 0.8896396396396397,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "WRONG"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 129,
+            "public_id": 91,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 13,
+              "iou": 0.9740740740740741,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.3081203637342864,
+                  "birth_frame": 196,
+                  "confirmation_span_s": 0.13300013542175293,
+                  "old_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "age": 4.05400013923645,
+                  "distance": 197.77172710217872,
+                  "radius": 319.8655679601629,
+                  "normalized_distance": 0.6182963935862265,
+                  "motion_cost": 0.17398737011540166,
+                  "native_id": 129,
+                  "canonical_id": 91,
+                  "history_depth": 967.802490234375,
+                  "current_depth": 997.0661926269531,
+                  "residual_mm": 29.263702392578125,
+                  "tolerance_mm": 43.95391136741638,
+                  "alternatives": [
+                    {
+                      "id": 128,
+                      "residual_mm": 118.79977416992188
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 89.53607177734375,
+                  "required_partner_margin_mm": 11.194607299804687,
+                  "cost": 0.6918796362657136,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 269,
+                    "time": 1789706612.878,
+                    "phase": "D1_DELAYED",
+                    "native_id": 129,
+                    "public_id": 91,
+                    "target_bank_anchor": {
+                      "frame": 147,
+                      "native_id": 91,
+                      "mask": "n:91",
+                      "canonical_id": 91
+                    },
+                    "action_reference_anchor": {
+                      "frame": 147,
+                      "native_id": 91,
+                      "mask": "n:91",
+                      "canonical_id": 91
+                    },
+                    "terms": {
+                      "age": 4.05400013923645,
+                      "distance": 197.77172710217872,
+                      "radius": 319.8655679601629,
+                      "normalized_distance": 0.6182963935862265,
+                      "motion_cost": 0.17398737011540166,
+                      "native_id": 129,
+                      "canonical_id": 91,
+                      "history_depth": 967.802490234375,
+                      "current_depth": 997.0661926269531,
+                      "residual_mm": 29.263702392578125,
+                      "tolerance_mm": 43.95391136741638,
+                      "alternatives": [
+                        {
+                          "id": 128,
+                          "residual_mm": 118.79977416992188
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 89.53607177734375,
+                      "required_partner_margin_mm": 11.194607299804687,
+                      "cost": 0.6918796362657136,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 269,
+                  "time": 1789706612.878,
+                  "phase": "D1_DELAYED",
+                  "native_id": 129,
+                  "public_id": 91,
+                  "target_bank_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "action_reference_anchor": {
+                    "frame": 147,
+                    "native_id": 91,
+                    "mask": "n:91",
+                    "canonical_id": 91
+                  },
+                  "terms": {
+                    "age": 4.05400013923645,
+                    "distance": 197.77172710217872,
+                    "radius": 319.8655679601629,
+                    "normalized_distance": 0.6182963935862265,
+                    "motion_cost": 0.17398737011540166,
+                    "native_id": 129,
+                    "canonical_id": 91,
+                    "history_depth": 967.802490234375,
+                    "current_depth": 997.0661926269531,
+                    "residual_mm": 29.263702392578125,
+                    "tolerance_mm": 43.95391136741638,
+                    "alternatives": [
+                      {
+                        "id": 128,
+                        "residual_mm": 118.79977416992188
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 89.53607177734375,
+                    "required_partner_margin_mm": 11.194607299804687,
+                    "cost": 0.6918796362657136,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "actual_bank_reference": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 8,
+                  "iou": 0.8896396396396397,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 8,
+                  "iou": 0.8896396396396397,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "WRONG",
+                "physical_bank_anchor": "WRONG"
+              }
+            ],
+            "physical_preanchor": "WRONG",
+            "original_request_candidate_edges": [
+              {
+                "frame": 269,
+                "time": 1789706612.878,
+                "phase": "D1_DELAYED",
+                "native_id": 129,
+                "public_id": 91,
+                "target_bank_anchor": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "action_reference_anchor": {
+                  "frame": 147,
+                  "native_id": 91,
+                  "mask": "n:91",
+                  "canonical_id": 91
+                },
+                "terms": {
+                  "age": 4.05400013923645,
+                  "distance": 197.77172710217872,
+                  "radius": 319.8655679601629,
+                  "normalized_distance": 0.6182963935862265,
+                  "motion_cost": 0.17398737011540166,
+                  "native_id": 129,
+                  "canonical_id": 91,
+                  "history_depth": 967.802490234375,
+                  "current_depth": 997.0661926269531,
+                  "residual_mm": 29.263702392578125,
+                  "tolerance_mm": 43.95391136741638,
+                  "alternatives": [
+                    {
+                      "id": 128,
+                      "residual_mm": 118.79977416992188
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 89.53607177734375,
+                  "required_partner_margin_mm": 11.194607299804687,
+                  "cost": 0.6918796362657136,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 1,
+              "global_frame": 701,
+              "native_id": 91
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 8,
+              "iou": 0.9287598944591029,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "DIFFERENT",
+            "public_reference_correctness": "WRONG"
+          }
+        ],
+        "evidence_max_frame": 271,
+        "first_publish_at_arrival_frame": 299,
+        "decision_to_first_publication_delay_frames": 30,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      },
+      {
+        "event": "feeding_000701_001060/RGBD_LAG/Q343",
+        "request_frame": 343,
+        "global_frame": 1043,
+        "original_status": "RESOLVED_KEEP",
+        "submitted_option": "KEEP",
+        "raw_selected_option": "KEEP",
+        "actual_changes": {},
+        "actual_first_published_mapping": {
+          "9": 9,
+          "11": 11,
+          "25": 25,
+          "50": 50,
+          "88": 88,
+          "95": 95,
+          "101": 101,
+          "104": 104,
+          "110": 110,
+          "118": 99,
+          "119": 70,
+          "122": 122,
+          "123": 117,
+          "125": 125,
+          "126": 126,
+          "127": 106,
+          "128": 128,
+          "129": 91,
+          "130": 130,
+          "132": 120,
+          "133": 133,
+          "135": 135,
+          "136": 136,
+          "137": 137,
+          "139": 139,
+          "143": 143
+        },
+        "physical_preanchor": "CORRECT",
+        "selection_changes_real_publication": false,
+        "submitted_alternative": false,
+        "outcome_role": "BOUNDED_WINDOW_DECISION",
+        "physical_references_are_actual_published_actions": true,
+        "original_accepted_references": [
+          {
+            "source": 132,
+            "target": 120,
+            "phase": "D1_DELAYED",
+            "actual_pre_reference": {
+              "frame": 126,
+              "native_id": 120,
+              "mask": "n:120",
+              "canonical_id": 120
+            },
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9454887218045113,
+              "second_iou": 0.0
+            },
+            "reference_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9233576642335767,
+              "second_iou": 0.0
+            },
+            "physical_preanchor": "CORRECT"
+          }
+        ],
+        "selected_sources": [
+          {
+            "source": 132,
+            "public_id": 120,
+            "query_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 0.9454887218045113,
+              "second_iou": 0.0
+            },
+            "selected_edge_references": [
+              {
+                "phase": "D1_DELAYED",
+                "actual_published_action": {
+                  "kind": "reconnect",
+                  "accepted": true,
+                  "confirmations": 5,
+                  "assignment_margin": 0.7999659256616176,
+                  "birth_frame": 268,
+                  "confirmation_span_s": 0.13199996948242188,
+                  "old_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "age": 7.210000038146973,
+                  "distance": 349.59154738065394,
+                  "radius": 282.76865874427335,
+                  "normalized_distance": 1.2363164607178514,
+                  "motion_cost": 0.5343119061794941,
+                  "native_id": 132,
+                  "canonical_id": 120,
+                  "history_depth": 1085.0264892578125,
+                  "current_depth": 1092.2197265625,
+                  "residual_mm": 7.1932373046875,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [
+                    {
+                      "id": 9,
+                      "residual_mm": 164.70849609375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 157.5152587890625,
+                  "required_partner_margin_mm": 21.726822509765626,
+                  "cost": 0.20003407433838244,
+                  "rejection": null,
+                  "depth_veto": {
+                    "frame": 343,
+                    "time": 1789706615.336,
+                    "phase": "D1_DELAYED",
+                    "native_id": 132,
+                    "public_id": 120,
+                    "target_bank_anchor": {
+                      "frame": 126,
+                      "native_id": 120,
+                      "mask": "n:120",
+                      "canonical_id": 120
+                    },
+                    "action_reference_anchor": {
+                      "frame": 126,
+                      "native_id": 120,
+                      "mask": "n:120",
+                      "canonical_id": 120
+                    },
+                    "terms": {
+                      "age": 7.210000038146973,
+                      "distance": 349.59154738065394,
+                      "radius": 282.76865874427335,
+                      "normalized_distance": 1.2363164607178514,
+                      "motion_cost": 0.5343119061794941,
+                      "native_id": 132,
+                      "canonical_id": 120,
+                      "history_depth": 1085.0264892578125,
+                      "current_depth": 1092.2197265625,
+                      "residual_mm": 7.1932373046875,
+                      "tolerance_mm": 60.0,
+                      "alternatives": [
+                        {
+                          "id": 9,
+                          "residual_mm": 164.70849609375
+                        }
+                      ],
+                      "reserved_partners": [],
+                      "partner_margin_mm": 157.5152587890625,
+                      "required_partner_margin_mm": 21.726822509765626,
+                      "cost": 0.20003407433838244,
+                      "rejection": null
+                    },
+                    "original_eligible": true,
+                    "veto": false,
+                    "reason": null
+                  }
+                },
+                "original_request_edge_binding": {
+                  "frame": 343,
+                  "time": 1789706615.336,
+                  "phase": "D1_DELAYED",
+                  "native_id": 132,
+                  "public_id": 120,
+                  "target_bank_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "action_reference_anchor": {
+                    "frame": 126,
+                    "native_id": 120,
+                    "mask": "n:120",
+                    "canonical_id": 120
+                  },
+                  "terms": {
+                    "age": 7.210000038146973,
+                    "distance": 349.59154738065394,
+                    "radius": 282.76865874427335,
+                    "normalized_distance": 1.2363164607178514,
+                    "motion_cost": 0.5343119061794941,
+                    "native_id": 132,
+                    "canonical_id": 120,
+                    "history_depth": 1085.0264892578125,
+                    "current_depth": 1092.2197265625,
+                    "residual_mm": 7.1932373046875,
+                    "tolerance_mm": 60.0,
+                    "alternatives": [
+                      {
+                        "id": 9,
+                        "residual_mm": 164.70849609375
+                      }
+                    ],
+                    "reserved_partners": [],
+                    "partner_margin_mm": 157.5152587890625,
+                    "required_partner_margin_mm": 21.726822509765626,
+                    "cost": 0.20003407433838244,
+                    "rejection": null
+                  },
+                  "original_eligible": true,
+                  "veto": false,
+                  "reason": null
+                },
+                "actual_action_reference": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "actual_bank_reference": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "action_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9233576642335767,
+                  "second_iou": 0.0
+                },
+                "bank_reference_match": {
+                  "status": "UNIQUE_IOU_MATCH",
+                  "gt_id": 7,
+                  "iou": 0.9233576642335767,
+                  "second_iou": 0.0
+                },
+                "physical_preanchor": "CORRECT",
+                "physical_bank_anchor": "CORRECT"
+              }
+            ],
+            "physical_preanchor": "CORRECT",
+            "original_request_candidate_edges": [
+              {
+                "frame": 343,
+                "time": 1789706615.336,
+                "phase": "D1_DELAYED",
+                "native_id": 132,
+                "public_id": 120,
+                "target_bank_anchor": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "action_reference_anchor": {
+                  "frame": 126,
+                  "native_id": 120,
+                  "mask": "n:120",
+                  "canonical_id": 120
+                },
+                "terms": {
+                  "age": 7.210000038146973,
+                  "distance": 349.59154738065394,
+                  "radius": 282.76865874427335,
+                  "normalized_distance": 1.2363164607178514,
+                  "motion_cost": 0.5343119061794941,
+                  "native_id": 132,
+                  "canonical_id": 120,
+                  "history_depth": 1085.0264892578125,
+                  "current_depth": 1092.2197265625,
+                  "residual_mm": 7.1932373046875,
+                  "tolerance_mm": 60.0,
+                  "alternatives": [
+                    {
+                      "id": 9,
+                      "residual_mm": 164.70849609375
+                    }
+                  ],
+                  "reserved_partners": [],
+                  "partner_margin_mm": 157.5152587890625,
+                  "required_partner_margin_mm": 21.726822509765626,
+                  "cost": 0.20003407433838244,
+                  "rejection": null
+                },
+                "original_eligible": true,
+                "veto": false,
+                "reason": null
+              }
+            ],
+            "public_origin_reference": {
+              "frame": 100,
+              "global_frame": 800,
+              "native_id": 120
+            },
+            "public_origin_match": {
+              "status": "UNIQUE_IOU_MATCH",
+              "gt_id": 7,
+              "iou": 1.0,
+              "second_iou": 0.0
+            },
+            "public_origin_relation": "SAME",
+            "public_reference_correctness": "CORRECT"
+          }
+        ],
+        "evidence_max_frame": 345,
+        "first_publish_at_arrival_frame": 360,
+        "decision_to_first_publication_delay_frames": 17,
+        "public_reference_correctness_is_separate_from_physical_reconnect": true,
+        "dummy_new_label_is_not_certified_identity_recovery": true,
+        "prediction_case_selection_did_not_use_GT": true
+      }
+    ]
+  },
+  "automatic_counts": {
+    "Z4Q_FROZEN": {
+      "WRONG": 4,
+      "CORRECT": 2
+    },
+    "RGB_LAG": {
+      "WRONG": 4,
+      "CORRECT": 2
+    },
+    "RGBD_LAG": {
+      "WRONG": 4,
+      "CORRECT": 2
+    }
+  },
+  "event_counts": {
+    "RGB_LAG": {
+      "WRONG": 4,
+      "CORRECT": 2
+    },
+    "RGBD_LAG": {
+      "WRONG": 4,
+      "CORRECT": 2
+    }
+  },
+  "altered_event_counts": {
+    "RGB_LAG": {},
+    "RGBD_LAG": {}
+  },
+  "UNKNOWN_unscorable_and_no_reference_not_correct": true,
+  "public_origin_definition": "First actual publication with that public label strictly before query; not equality of public integer and GT integer.",
+  "physical_depth_accuracy": "UNKNOWN",
+  "old_scores_unchanged": true,
+  "postseal_only": true
+}

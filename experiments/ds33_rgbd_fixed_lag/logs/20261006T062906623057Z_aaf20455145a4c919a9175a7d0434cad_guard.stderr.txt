@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds33_rgbd_fixed_lag\guard.py", line 83, in <module>
+    main()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds33_rgbd_fixed_lag\guard.py", line 63, in main
+    run_segment(name, output, stop_at=int(sys.argv[3]))
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds33_rgbd_fixed_lag\runner.py", line 227, in run_segment
+    assert row['global_frame'] == start + frame - 1 == assignment['global_frame'] == measured['global_frame'] == quality_packet['global_frame'] == archive['global_frame']
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'global_frame'

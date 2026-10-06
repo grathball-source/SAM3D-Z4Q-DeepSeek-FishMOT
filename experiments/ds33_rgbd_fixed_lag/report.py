@@ -1,0 +1,213 @@
+"""Late postseal report assembly; never changes frozen scientific inputs or decisions."""
+from common import *
+from collections import Counter
+
+
+def table(header, records):
+    return '\n'.join(['| ' + ' | '.join(header) + ' |',
+        '| ' + ' | '.join(['---'] * len(header)) + ' |',
+        *['| ' + ' | '.join(map(str, row)) + ' |' for row in records]])
+
+
+def metrics_table(sections):
+    fields = ('IDF1', 'HOTA', 'AssA', 'IDSW', 'FP', 'FN')
+    values = []
+    for name, packet in sections:
+        for arm in ARMS:
+            metric = packet['metrics'][arm]
+            values.append([name, arm, *[f'{metric[k]:.4f}' if k in fields[:3] else metric[k] for k in fields]])
+    return table(('来源', '分支', *fields), values)
+
+
+def main():
+    assert (RUN / 'ALL_PREDICTIONS_SEALED.json').exists()
+    score = read(RUN / 'METRICS.json')
+    result = read(HERE / 'RESULTS.json')
+    state = read(HERE / 'STATE_PUBLICATION_REVIEW.json')
+    diagnostics = read(HERE / 'EVIDENCE_DIAGNOSTICS.json')
+    provenance = read(RUN / 'SCORE_PROVENANCE.json')
+    assert provenance['original_controls_exact'] and state['status'] == 'PASS'
+    assert score['frames'] == state['frames'] == result['frames'] == 20098
+    assert result['total_RGBD_minus_RGB_changed_frames'] == 0
+    assert all(score['segments'][n]['metrics'][a] == score['segments'][n]['metrics']['Z4Q_FROZEN']
+        for n in SEGMENTS for a in ARMS[2:])
+    records = list(rows(HERE / 'EXECUTION_LOG.jsonl'))
+    replay = next(r for r in records if Path(r['command'][1]).name == 'orchestrate.py')
+    score_execution = next(r for r in records if Path(r['command'][1]).name == 'score.py')
+    assert replay['exit_code'] == score_execution['exit_code'] == 0
+    strong = [(n, s) for n, s in score['segments'].items() if n not in ('L3', 'LW')]
+    strong.append(('Feeding 四段独立命名空间合池', score['feeding_pooled']))
+    weak = [(n, score['segments'][n]) for n in ('L3', 'LW')]
+    requests = []
+    for name, packet in result['segments'].items():
+        rgb, rgbd = [packet['arm_counts'][a] for a in ARMS[2:]]
+        reasons = state['sources'][name]['evidence_availability']
+        unknowns = []
+        for arm in ARMS[2:]:
+            counter = reasons[arm]['assessment_reasons']
+            unknowns.append(sum(v for k, v in counter.items() if k not in (
+                'ORIGINAL_OR_AMBIGUOUS_KEEP', 'OUT_OF_SCOPE_MORE_THAN_TWO_SOURCES', 'ACTIVE_WINDOW_OVERLAP_KEEP')))
+        independent = rgb['requests'] - rgb.get('status/ACTIVE_WINDOW_OVERLAP_KEEP', 0) - rgb.get('status/OUT_OF_SCOPE_MORE_THAN_TWO_SOURCES', 0)
+        requests.append([name, score['segments'][name]['frames'], rgb['requests'], independent,
+            rgb.get('status/ACTIVE_WINDOW_OVERLAP_KEEP', 0), rgb.get('status/OUT_OF_SCOPE_MORE_THAN_TWO_SOURCES', 0),
+            '/'.join(map(str, unknowns)), rgbd['depth_weight_used_windows'], rgbd['changed_commits']])
+    delays = []
+    for name, packet in result['segments'].items():
+        f, dt, wall = [packet[k] for k in ('publication_delay_frames',
+            'publication_data_time_delay_seconds', 'receive_to_first_publish_wall_seconds')]
+        delays.append([name, f'{f["min"]:.0f}/{f["median"]:.0f}/{f["max"]:.0f}',
+            f'{dt["median"]:.3f}/{dt["p95"]:.3f}/{dt["max"]:.3f}',
+            f'{wall["median"]:.3f}/{wall["p95"]:.3f}/{wall["max"]:.3f}'])
+    physical = []
+    public = {a: Counter() for a in ARMS[2:]}
+    role_counts = {a: Counter() for a in ARMS[2:]}
+    for name, audit in score['event_audits'].items():
+        for arm, events in audit['event_arms'].items():
+            counts = Counter(e['physical_preanchor'] for e in events)
+            physical.append([name, arm, *[counts[k] for k in ('CORRECT', 'WRONG', 'UNSCORABLE', 'NOT_ALL_SOURCES_RECONNECTED')]])
+            for event in events:
+                role_counts[arm][event['outcome_role']] += 1
+                public[arm].update(s['public_reference_correctness'] for s in event['selected_sources'])
+    depth_windows = [e for e in diagnostics['events'] if e['arm'] == 'RGBD_LAG' and e['common_depth_weight'] > 0]
+    assert len(depth_windows) == 12
+    aggregate = diagnostics['aggregate_both_arm_observation_counts']
+    deltas = []
+    for name, packet in [*strong, *weak]:
+        before, after = packet['metrics']['SAM3_NATIVE'], packet['metrics']['RGBD_LAG']
+        deltas.append([name, *[f'{after[k] - before[k]:+.4f}' for k in ('IDF1', 'HOTA', 'AssA')],
+            f'{after["IDSW"] - before["IDSW"]:+d}'])
+    evidence_rows = []
+    for name in SEGMENTS:
+        value = state['sources'][name]['evidence_availability']['RGBD_LAG']
+        c = value['counts']
+        evidence_rows.append([name, c.get('comparisons', 0), c.get('RGB_available_comparisons', 0),
+            c.get('pre_anchor_depth_qualified_comparisons', 0), c.get('local_3D_depth_qualified_comparisons', 0)])
+    text = f'''# DS33：RGB-D轮廓证据与有限延迟关联完整试验
+
+## 1. 主判定
+
+**完整试验与真实状态/首次发布检查完成；本冻结版本没有新增性能收益。** 八套同源输入共20,098帧，SAM3_NATIVE、Z4Q_FROZEN、RGB_LAG、RGBD_LAG全部运行到段末，全部预测与访问记录先封存，随后独立评分。两个新分支0次改变映射的提交、0个改变发布的帧；完整Bridge状态、engine和公开映射也逐帧等于原Z4Q。相对Z4Q以及RGBD相对RGB，IDF1/HOTA/AssA/IDSW/FP/FN的差值在全部来源均为0。
+
+这不是工程失败停止，也不能据此判定用户提出的完整方法无效。本轮只实现了原Z4Q已接受重接动作范围内的光流轮廓检验、条件性三维支持与尚未发布suffix的真实状态回放。完整合并—分离联合身份恢复、从重现端向前回查的双向轮廓验证，以及有可见性证据的漏检掩码补画均未实现。
+
+| 层次 | 实际证据 | 判定边界 |
+| --- | --- | --- |
+| 工程/状态 | 50项必要检查；真实280帧/7512个原mask切片；全量20,098帧状态与首次发布绑定通过 | 实际数据只有KEEP；真实另类提交仅在必要真实Engine串接检查中被验证 |
+| 输入/来源 | 原SAM3、原始深度、实际RGB/时间戳/标定、精确anchor及DS18质量绑定；不读v3/未来于冻结q窗口之外/GT作选择 | 水下绝对标定精度与场景流物理点身份均UNKNOWN |
+| 方法效果 | 每新臂89个内部候选请求、77个独立窗口；0改动提交 | 所有收益都是原Z4Q已有结果；延迟机制没有在这些来源产生新的纠错 |
+| 深度增量 | RGBD有12个窗口实际启用共同0.25深度权重；相对RGB的发布与指标差0 | 深度不是全部缺失；没有证明深度身份信息有效，也没有否定完整后验事件关联 |
+
+冻结基点：`{BASE}`。新模型HTTP=0、smoke=0、训练=0、新SAM3推理=0、深度恢复服务=0、费用=0美元。本轮没有读取API key。89/178是内部候选协议记录，不能称大模型调用数。
+
+## 2. 实际方法与用户方案的关系
+
+保留原Z4Q的二维运动、自动触发、候选成本、native优先、dummy、D1原5帧确认、BirthRefine与真实事务。在原已接受D1_DELAYED/BIRTH_REFINE边的连通分量内，保存本分支q−1完整checkpoint，等待3个连续raw-clean观测；q本身可计入，最早确认q+2。首次发布统一缓存30帧，窗口截止q+30或EOF。回放真实preview/commit并替换未发布suffix，后续继续选中自身状态，保留全部原mask及残片。已经发布的prefix只读。
+
+实际光流为已安装OpenCV DIS MEDIUM的前后向RGB灰度像素对应。RGB与RGBD均用同一RGB流传播轮廓；RGBD另外在对应像素上读取真实原生XYZ、深度时间差和局部运动一致性，作为轮廓支持评分。**深度没有独立估计整鱼的非刚性轮廓运动，未运行RAFT-3D。** 同像素深度相减、跨帧native/source整数相等均不是运动或物理点身份。
+
+固定检查：前后向误差≤1.5px，局部纹理std≥2，光度残差≤25；轮廓可信点≥16且占比≥0.20；局部32px区域至少16个原生去重点，三维尺度floor15/cap60mm、3sigma。原pre精确bank-anchor与当前DS18深度质量均通过，且整个候选分量全部比较可用时才共同赋深度权重0.25；否则整个分量深度权重0。RGBD有效时，旧身份候选边用组合分数`0.75*RGB Dice+0.25*support purity`检验≥0.25支持门槛，完整解释还需联合margin≥0.10；不是要求原始Dice单独过0.25。SELF另用`1-max(旧边affinity)`且必须有elsewhere真实clean支持，不冒充同一种边评分。缺测不使某条边自动少罚或获利。
+
+三维运动一致性只能提供条件性支持：一致移动的背景也可能通过，不能认证像素属于鱼、鱼的身份或完全遮挡。anchor登记时绑定实际clean来源generation/epoch，capture按精确bank-anchor查询；后续轮廓是持续传播的未认证假设，没有按每帧generation/epoch变化删除原anchor假设。原source缺失使post标为broken并中断清晰确认，post不被认证为旧身份pre。不能将此实现写成完整的逐帧风险来源分段合同。SELF新标签需要旧目标在另一真实清晰mask有支持，不能因旧预测消失而获利。
+
+候选仅最多2个原source、16个联合选项。持续存在但可能串鱼的native不一定进入这个分量。因此当前实现不能完整处理“保留一个旧native的合并，分开后另一个新native接错”的双鱼联合置换。q是原重接接受帧，q之前原D1 pending或更早合并时段未被修正。本轮没有缺失mask增加、分割或补画。
+
+方法背景：[RAFT-3D](https://arxiv.org/abs/2012.00726)讨论RGB-D场景流；[OC-SORT](https://arxiv.org/abs/2203.14360)用重现观测修正运动误差。论文能力不等于本数据验证结果，运动状态修正也不等于历史掩码重建。
+
+## 3. 输入与评估范围
+
+固定Feeding原始0–199、351–555、701–1060、1201–1906共1471帧；FishSA开发1–8400与已曝光验证9301–12188；L3 0–3709、LW 0–3628。每段独立身份命名空间。Feeding合池时给GT和预测身份加段名，避免把分段重启当跨段切换。没有读取中间未曝光sealed test。
+
+这些数据已多轮研究，属于探索性/同录像时间非重叠验证，不能称新的盲测。L3/LW参考为未独立审查的预测辅助标注，弱参考结果分列，不作跨数据集准确率主结论。
+
+原始深度可用帧：Feeding1471，FishSA开发8399/8400，验证2888，L3 3705/3710，LW3606/3629。第一帧缺深度保留；重复深度时间对应速度UNKNOWN。可用文件不等于单鱼可信深度，实际资格见逐mask质量和逐边记录。原生与对齐深度、source_index、RGB时间戳/实际manifest偏移与标定均有来源SHA，不使用含标注v3。
+
+评分复用原官方全mask CLEAR/Identity IoU0.5、HOTA19个alpha；FishSA原reference raster/版本、Feeding640和L3/LW1080p polygon协议不换来源。无ID或mask排除、无GT选择参考或动作。来源/请求/实际发布/事务/访问绑定全部通过后才打开参考。原SAM3与原Z4Q各段及Feeding池均与DS32归档逐项严格相同。
+
+## 4. 完整指标
+
+以下百分指标单位为%，变化单位为百分点。IDSW/FP/FN为完整计数。
+
+### 已曝光正式标注来源
+
+{metrics_table(strong)}
+
+### L3/LW弱参考诊断
+
+{metrics_table(weak)}
+
+### RGBD相对同源SAM3
+
+{table(('来源', 'ΔIDF1', 'ΔHOTA', 'ΔAssA', 'ΔIDSW'), deltas)}
+
+这些差值全部继承原Z4Q。RGBD−Z4Q及RGBD−RGB在上述每行六项指标全为0。Feeding合池原Z4Q的IDF1虽比SAM3高，但HOTA/AssA下降、IDSW增加；不能以单一IDF1将原策略写成全面优于原生，也不能把这次零改动写成解决了Feeding切换问题。
+
+## 5. 内部候选、弃权与深度实际使用
+
+{table(('来源', '帧', '每臂请求', '每臂独立窗口', '重叠', '超范围', 'RGB/RGBD UNKNOWN', 'RGBD深度窗口', '改动提交'), requests)}
+
+每臂89请求=77独立窗口+6重叠shadow+6超范围；两臂178记录与154次独立窗口重放。每臂71 RESOLVED_KEEP、4 deadline、2 EOF、6 overlap、6 outscope。独立窗口RGB：59共同轮廓证据不足、10无支持完整解释、2 DECIDED且理由ORIGINAL_OR_AMBIGUOUS_KEEP；RGBD为59/9/3。DECIDED KEEP不是已证实物理正确。deadline、EOF和证据UNKNOWN保留为UNKNOWN/KEEP；不能当保护成功。
+
+深度权重实际启用12个RGBD独立窗口：Feeding701–1060一个、1201–1906一个、L3四个、LW六个。其中9个没有受支持的完整身份解释，3个仅保留原映射。L3额外一个窗口由UNKNOWN变为DECIDED KEEP，未改变实际状态或发布。原选择、提交、实际q映射和后验参考均分列。
+
+逐候选逐帧质量计数如下；两臂读取相同原始证据，表中仅列RGBD，不能当独立鱼事件样本量。
+
+{table(('来源', '比较数', 'RGB轮廓可用', 'pre深度合格', '当前局部3D支持合格'), evidence_rows)}
+
+全来源每臂698个比较，RGB轮廓94可用，pre深度632合格，局部3D/当前深度462合格。可靠深度存在但需要可靠轮廓和整个联合解释；它没有直接赋予身份。完整逐边时刻、真实anchor、深度质量及候选分数见EVENTS、EVIDENCE_DIAGNOSTICS和STATE_PUBLICATION_REVIEW。
+
+## 6. 后验物理身份与公共ID来源
+
+{table(('来源', '分支', 'CORRECT', 'WRONG', 'UNSCORABLE', '未全部重接'), physical)}
+
+上表包含全部89请求/臂，含shadow/outscope，**不是89个独立恢复**；其中只有77个独立窗口。其正确/错误是最终实际发布所对应重接与真实pre-action reference的物理关系，不是本轮新增恢复，因为0个替代提交。`NO_RECONNECT_REFERENCE`/新SELF标签不认证恢复，UNKNOWN保留不可评分。独立、shadow、outscope角色分别为：`{json.dumps({a:dict(c) for a,c in role_counts.items()}, ensure_ascii=False)}`。
+
+公共ID来源使用严格早于q的首次实际发布对应参考，不按public整数等于GT整数。逐source公共来源正确性（可能一请求多source）分别为`{json.dumps({a:dict(c) for a,c in public.items()}, ensure_ascii=False)}`。事件内实际pre-anchor、checkpoint bank-anchor和公共首次来源分开，不把错误旧公共ID偶然换回称作物理恢复。逐次切换在SWITCHES与SWITCH_CHANGES重算，新增/消除/同GT同帧occurrence分别保留。新两臂相对原Z4Q added=0、eliminated=0；原生与原Z4Q之间的不同切换仍全量保留，不能只用净差推断。
+
+## 7. 失败机制复盘
+
+**长链轮廓传播是主要可观测瓶颈。** 59/77独立窗口在共同轮廓证据阶段UNKNOWN。可信轮廓逐帧传播取一致支持，长链会累积匹配失败、边缘误差、量化与遮挡影响。本轮不能仅由旧anchor年龄断言鱼全程不可见。FishSA开发14个比较的pre深度均合格、局部3D有11个合格，但RGB轮廓0个合格，累计可信占比中位3.75%、最高8.30%，bank-reference年龄66–343帧。LW370比较中RGB可用67，pre深度330、局部3D277合格，reference年龄中位147帧，可信比例中位0。
+
+真实工程切片全局F159对应local q160，target16的精确bank anchor在local F15，相隔145帧；预测188像素，只剩3个可信像素，原始Dice0。F190/local q191,target8,anchor F42相隔149帧，预测279像素、3个可信像素。二者传播轮廓已偏離，简单降低0.20门槛不能恢复丢失的对应，也可能放过背景。它们是工程/来源诊断，不是GT选出的较好正式样本。
+
+**当前后续确认没有充分利用重新清晰的轮廓。** 新检测目前主要用于检验旧anchor一路前推的预测，没有从可靠重现端向缓存反向检查短片段。原动作q才开始关联纠正，q之前pending/合并错误仍继承。等待多几帧不自动补上这一缺口。
+
+**候选覆盖约束限制了纠错。** 只接原接受重接source的合法边，持续存在的native即使发生串鱼也可能不被联合重新选择；多source>2显式超范围。此时即便深度提示矛盾，也没有合法替代映射可提交。本轮没有按GT扩候选或事后修改触发以命中。
+
+**局部3D运动一致性不是身份证据。** 背景表面可以一致，混合mask可以仍有部分合格点；当前原始质量、版本和全分量共同权重保留这些限制。12次有效深度参与也没有支持新的完整解释，不能说“只要放宽深度阈值就会提点”。整鱼形变/遮挡后的点身份没有被本原型解决。
+
+**原策略损害未被修复。** 新分支逐帧状态、mapping与Z4Q全等，因此Feeding原有新增切换保持。FishSA/L3/LW原Z4Q已有收益也保持。此结果衡量本原型的增量为零，不证明RGB-D联合预测、双向事件恢复或未来可靠检测无用。
+
+## 8. 首次发布、延迟与耗时
+
+{table(('来源', '发布延迟帧 min/median/max', '数据时间秒 median/p95/max', '实际墙钟秒 median/p95/max'), delays)}
+
+三帧确认包括q，实际最早q+2。首次发布仍统一等待30帧，段末不足30帧按EOF刷新，未改写任何已发布帧。数据时间使用每来源真实非均匀时间戳，不把30帧统一叫1秒。墙钟包含共同CPU流计算/自身状态回放/调度，不是独立部署分支实时FPS。当前实现没有做到前台零延迟，仅允许有限首次发布延迟。
+
+全正式四臂共同编排耗时{replay['elapsed_seconds']:.3f}秒（{replay['elapsed_seconds']/60:.2f}分钟），UTC {replay['started_utc']}→{replay['ended_utc']}，真实exit0。独立评分耗时{score_execution['elapsed_seconds']:.3f}秒，真实exit0；GT在所有预测/输入/访问/发布绑定通过后读取。实际光流记录累计{diagnostics['recorded_flow_seconds_sum']:.3f}秒；这是记录的工作总量，不是端到端耗时。
+
+## 9. 工程证据、复现与同步
+
+必要检查50项：flow11、lag6、真实Engine7、evidence11、独立数值5、scorer语义10。真实280帧切片无GT，共7512个原mask；完整状态/一次首次发布、未来界限、无效候选原子性、共同缺测处理，以及生成自洽哈希后的语义违规拒绝均有记录。工程联调前v1–v5尝试及真实失败原因保留，未评分，未混入正式结果；原旧封存只读。详见CHECKS_FINAL、REAL_ACCEPTANCE、ENGINEERING_PREFIX_ATTEMPTS_1、RUNTIME_FREEZE、EXECUTION_LOG、ALL_PREDICTIONS_SEALED、SCORE_PROVENANCE、STATE_PUBLICATION_REVIEW。
+
+公开数值图：[完整指标](visuals/FULL_METRICS.svg)、[深度增量](visuals/DEPTH_INCREMENT.svg)、[全部请求首次发布](visuals/ALL_EVENTS.svg)。RGB/深度前中后案例图只保存在本机private目录；逐图来源绑定、精确样本重建、真实路径/字节/SHA见run/PRIVATE_VISUALS_INVENTORY与private/visuals/CASE_INVENTORY。全部受限流数组与图像真实路径/大小/SHA、依赖和复现方式由PRIVATE_INVENTORY列出。公开仓库不包含私有RGB、GT raster、流像素、密钥或provider file IDs。
+
+复现需原DS14冻结SAM3 mask、原始native/aligned depth、记录的RGB/标定/DS18质量包及精确SHA；解释器为`E:/researchsoftware/anaconda3/envs/D-MOT/python.exe`，旧数学/Engine依赖在RUNTIME_FREEZE内固定。另起新输出目录执行相同工程检查、输入冻结、全段回放，全部封存后评分，再生成图/诊断。不得覆盖旧结果或改变本冻结源码。核心路径：runner.py真实状态与发布，controller.py合法候选和事务，evidence.py完整窗口，flow.py对应/三维支持，sensor.py实际源，score.py独立评分。
+
+本轮以普通main提交和非force push交付代码、配置、测试、公开数值预测/日志/结果/报告及数值可视化。HANDOFF新条目保留旧字节；旧实验seal不改。实际commit、远端ref和全部公开文件blob逐项核验的回执为REMOTE_VERIFICATION.json；最后同步commit与main SHA在最终回复列出，不能以本报告自己未知的commit代替远端实读。无法公开的私有产物按上述真实清单保留，不伪称已上传像素。
+
+## 10. 唯一下一步（未启动）
+
+**验证事件内双端短片段联合恢复：合并前保护两条身份的连续清晰片段，把持续native与新source一起纳入有限一对一候选，重现后的连续清晰片段从后向前回查未发布缓存，深度只辅助可靠对应。** 保留原Z4Q组外状态与全部观测；先用真实失败窗口检查该机制能否形成合法替代解释，再冻结同源完整运行。重点补候选和双端证据缺口，不直接放宽累计长链可靠面积门槛。本轮冻结版本停止，尚未运行此下一试验。
+'''
+    path = HERE / 'FINAL_REVIEW.md'
+    with path.open('x', encoding='utf-8', newline='\n') as output:
+        output.write(text)
+    write_new(HERE / 'REPORT_ASSEMBLY.json', dict(status='POSTSEAL_REPORT_WRITTEN_AWAITING_INDEPENDENT_REVIEW',
+        helper=artifact(__file__), report=artifact(path), metrics=artifact(RUN / 'METRICS.json'),
+        results=artifact(HERE / 'RESULTS.json'), state_review=artifact(HERE / 'STATE_PUBLICATION_REVIEW.json'),
+        diagnostics=artifact(HERE / 'EVIDENCE_DIAGNOSTICS.json'), new_model_http=0, cost_usd=0))
+    print('Full report written', flush=True)
+
+
+if __name__ == '__main__':
+    main()

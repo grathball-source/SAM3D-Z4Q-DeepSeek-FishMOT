@@ -1,0 +1,28 @@
+{
+  "lag_frames": 30,
+  "confirmation_clean_frames": 3,
+  "track_expiry_seconds": 12.0,
+  "flow": {
+    "algorithm": "OPENCV_DIS_MEDIUM",
+    "fb_max_px": 1.5,
+    "texture_min_std": 2.0,
+    "texture_window_px": 5,
+    "photometric_max_gray": 25.0,
+    "min_correspondences": 16,
+    "min_correspondence_fraction": 0.2,
+    "depth_edge_jump_mm": 60.0,
+    "point_patch_px": 32,
+    "point_min_patch_points": 16,
+    "point_scale_floor_mm": 15.0,
+    "point_scale_cap_mm": 60.0,
+    "point_residual_sigma": 3.0,
+    "point_mad_sigma": 1.4826
+  },
+  "min_contour_dice": 0.25,
+  "min_joint_margin": 0.10,
+  "min_reliable_contour_fraction": 0.20,
+  "depth_weight": 0.25,
+  "max_joint_sources": 2,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

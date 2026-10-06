@@ -1,0 +1,41 @@
+{
+  "status": "PASS_ACTUAL_LOCAL_NUMERIC_VISUAL_INSPECTION",
+  "reviewer": "root",
+  "render_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\NUMERIC_VISUAL_RENDER.json",
+    "bytes": 4427,
+    "sha256": "6eea800ea572ea7b5160621abd8219ca140f355832393715b2244a1addaf0368"
+  },
+  "actual_images_inspected": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\numeric_QA\\FULL_METRICS.png",
+      "bytes": 202755,
+      "sha256": "e0d54e340e588f9e67fd7f16a00972ac0114edec1be6277f8968aac043d4217b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\numeric_QA\\DEPTH_INCREMENT.png",
+      "bytes": 43239,
+      "sha256": "ebb95ee2ec9ee535250b1e01672ca078504e561162e1c261ca6823907431bf12"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\numeric_QA\\ALL_EVENTS_FIRST.png",
+      "bytes": 248061,
+      "sha256": "f005c92c137d7ac1fedaa45c9de4ef186ca42c33e60717994ddc45c438b01ed4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\private\\numeric_QA\\ALL_EVENTS_LAST.png",
+      "bytes": 213923,
+      "sha256": "04fb4f90520594189655bd1d8773c3f09f9b78aab294c1acf70391bdc4dfc1e9"
+    }
+  ],
+  "findings": [
+    "Actual full metrics include every eight source and all four arms, Feeding namespaced pool and L3/LW weak-reference warning; values readable with all six metric columns.",
+    "Actual depth increment figure contains eight-source and Feeding-pool numerical zero changes.",
+    "All178 request rows are present in source SVG; actual first/last raster regions inspected for once-published mapping, UNKNOWN and shadow/outscope labels without overlaps. Crops are QA samples, not separate selected experiment cases."
+  ],
+  "scope": "Layout and consistency of rendered numeric artifacts only; not physical identity or new performance certification.",
+  "source_RGB_or_depth_pixels": false,
+  "GT_rasters": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

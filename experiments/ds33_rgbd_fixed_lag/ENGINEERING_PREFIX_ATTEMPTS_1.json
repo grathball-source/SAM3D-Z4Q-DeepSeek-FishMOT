@@ -1,0 +1,38 @@
+{
+  "schema": "DS33_ENGINEERING_PREFIX_ATTEMPTS_V1",
+  "old_results_changed": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "attempts": [
+    {
+      "directory": "slice_integration_v1/feeding_000000_000199/public",
+      "execution": "runner.py prefix feeding_000000_000199 40 slice_integration_v1",
+      "exit_code": 0,
+      "console_log_file": null,
+      "status": "EARLY_ENGINEERING_PREFIX_SEALED_NOT_FINAL_ACCEPTANCE",
+      "limitations": [
+        "No new guard ACCESS receipt",
+        "Before explicit raw three-array/whole mask/pre-anchor-quality source checks"
+      ]
+    },
+    {
+      "directory": "slice_integration_v2/feeding_000000_000199/public",
+      "execution": "runner.py prefix feeding_000000_000199 200 slice_integration_v2",
+      "exit_code": 1,
+      "console_log_file": null,
+      "status": "ENGINEERING_BINDING_CHECK_REJECTED_BEFORE_FIRST_PUBLICATION",
+      "actual_error": "AssertionError: cert mask_binding != _source_array_binding decoded mask at first frame",
+      "root_cause": "Comparator used bytes-only SHA; frozen DS12/DS18 binding hashes dtype/shape header + newline + C-order bytes",
+      "repair": "Use exact existing header contract; no mask/depth/input/threshold changes",
+      "not_scientific_result": true
+    },
+    {
+      "directory": "slice_integration_v3/feeding_000000_000199/public",
+      "execution": "guard.py prefix feeding_000000_000199 200 slice_integration_v3",
+      "exit_code": 0,
+      "console_log_file": null,
+      "status": "GUARDED_REAL_PREFIX_SEALED_BEFORE_PUBLISHER_SHADOW_REPORTING_CLARIFICATION",
+      "limitation": "Runner later adds original shadow mapping/accepted-actions publication fields; final acceptance will use new directory"
+    }
+  ]
+}

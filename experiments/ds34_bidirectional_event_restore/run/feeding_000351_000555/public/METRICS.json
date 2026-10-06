@@ -1,0 +1,107 @@
+{
+  "segment": "feeding_000351_000555",
+  "frames": 205,
+  "metrics": {
+    "SAM3_NATIVE": {
+      "IDF1": 82.92727108051807,
+      "HOTA": 78.58284442084609,
+      "AssA": 72.1826902323686,
+      "DetA": 85.59283666556213,
+      "IDSW": 22,
+      "FP": 148,
+      "FN": 201,
+      "GT": 5547,
+      "predictions": 5494
+    },
+    "Z4Q_FROZEN": {
+      "IDF1": 82.89104247803641,
+      "HOTA": 78.14779790472312,
+      "AssA": 71.42993326096412,
+      "DetA": 85.5395185924718,
+      "IDSW": 24,
+      "FP": 148,
+      "FN": 201,
+      "GT": 5547,
+      "predictions": 5494
+    },
+    "EVENT_RGB": {
+      "IDF1": 82.89104247803641,
+      "HOTA": 78.443421890285,
+      "AssA": 71.97105489720246,
+      "DetA": 85.5395185924718,
+      "IDSW": 24,
+      "FP": 148,
+      "FN": 201,
+      "GT": 5547,
+      "predictions": 5494
+    },
+    "EVENT_RGBD": {
+      "IDF1": 82.89104247803641,
+      "HOTA": 78.443421890285,
+      "AssA": 71.97105489720246,
+      "DetA": 85.5395185924718,
+      "IDSW": 24,
+      "FP": 148,
+      "FN": 201,
+      "GT": 5547,
+      "predictions": 5494
+    }
+  },
+  "deltas": {
+    "SAM3_NATIVE": {
+      "EVENT_RGB": {
+        "IDF1": -0.036228602481656935,
+        "HOTA": -0.13942253056109166,
+        "AssA": -0.21163533516613597,
+        "DetA": -0.0533180730903382,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      },
+      "EVENT_RGBD": {
+        "IDF1": -0.036228602481656935,
+        "HOTA": -0.13942253056109166,
+        "AssA": -0.21163533516613597,
+        "DetA": -0.0533180730903382,
+        "IDSW": 2,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "Z4Q_FROZEN": {
+      "EVENT_RGB": {
+        "IDF1": 0.0,
+        "HOTA": 0.29562398556187475,
+        "AssA": 0.5411216362383442,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      },
+      "EVENT_RGBD": {
+        "IDF1": 0.0,
+        "HOTA": 0.29562398556187475,
+        "AssA": 0.5411216362383442,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "EVENT_RGB": {
+      "EVENT_RGBD": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+  "score_protocol": "Unchanged DS14/DS20/DS33 official mask CLEAR.5 Identity.5 HOTA19alphas; FishSA original raster/annotation version; L3/LW1080; Feeding640.",
+  "no_mask_or_ID_exclusion": true,
+  "physical_depth_accuracy": "UNKNOWN"
+}

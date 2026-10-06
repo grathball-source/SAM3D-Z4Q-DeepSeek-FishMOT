@@ -1,0 +1,3947 @@
+{
+  "status": "POSTSEAL_PRIVATE_ACTUAL_SOURCE_CASES",
+  "images_are_private": true,
+  "public_pixel_release": false,
+  "no_GT_raster_or_annotation_reader": true,
+  "uses_only_already_scored_numeric_reference_matches": true,
+  "analysis": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\POSTSEAL_FAILURE_CASES.json",
+    "bytes": 447149,
+    "sha256": "19ca01a8e8562cc00e510659302f6ab684332f51329baaf8469e85662cb964ff"
+  },
+  "images": [
+    {
+      "segment": "fishsa_development_8400",
+      "selected_event_arm": "EVENT_RGBD",
+      "event_id": "MS1-F3863",
+      "selection": "POSTHOC_LONGEST_CONTIGUOUS_POSITIVE_PUBLIC_DIFFERENCE_RUN_VS_Z4Q",
+      "phases": [
+        [
+          "PRE_A / UNKNOWN_REFERENCE",
+          3492
+        ],
+        [
+          "PRE_B / EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+          3836
+        ],
+        [
+          "FIRST_SUSPECT",
+          3863
+        ],
+        [
+          "GROUP_LAST_ACTUAL",
+          3901
+        ],
+        [
+          "Q_FIRST_SPLIT",
+          3902
+        ],
+        [
+          "DECISION_OR_END",
+          3909
+        ]
+      ],
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\postseal_extra_cases\\fishsa_development_8400_MS1-F3863_EVENT_RGBD.png",
+        "bytes": 3240026,
+        "sha256": "9e0c0d937bc93d0ff9d9fd71ab200e26054ecef880df8586dd45928ab5523f5d"
+      },
+      "source_bindings": [
+        {
+          "frame": 3492,
+          "global_frame": 3492,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_04.h5",
+              "bytes": 1356512258,
+              "sha256": "9cf2d2915ce015a3c0bba2000590179d7ac19b5404b63fc4238acb3f63ed5de5"
+            },
+            "h5_row": 790,
+            "aligned_frame_id": 3491,
+            "source_color_index": 3491,
+            "source_depth_index": 3490,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 3492,
+            "time": 1787708857.673,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "dd40aa98aa796f25e0ca5f173964588a1e3cbc8c969831bf0e8fe231b71bbaa6"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "41196386f1ddf21207719f60ebb8bb319bace29d020293aeb134a8104ac08547"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "75e3dd3f8795899c458a625dda6858975db9a8b0ed2135cfa9d337517da4e9cb"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708857673000,
+            "depth_timestamp_us": 1787708857674000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003491.png",
+              "bytes": 266236,
+              "sha256": "79cfcc1f973db22996bb2dd6aba42523bffb16e28bca90a4f622326b63658977"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "f1561b92b69293ab3e01e91d7f45bf55fead0492e6342dbf551fa8af2d5f219f"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "68c13f3c2d129d3dff9d7180b791824636c4b488b20b0792096d16dc5d2c2712"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "04335ce37d8c122a03be6d037cb9469dd46c513d1980e79b78eae9774293e68f"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "dabe9b11cead22a1b700d2ba9e8d8a942d71bc3e890cdfe8c38f382115bb3f3d"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "4fec38e74716b6a9a534aac8e6fe5c2b6c8223339e957f0de70cc891dd4a5c10"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "7ec751d25f8fd69ddb6fcb8bd61f49411138bb7608ec5efe521e1dc19f5f8b4b"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "e47e87c3670bc2c9b941afe6fa03796dfb97928ce8b97db142b6cd358c4cc6ce"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "99ad1063d513f4b8a52fecbb0d8d8edb60e38f7186ee0fdf3a5a184b0ae42650"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8721370902362d383e7cc930fd6cbff09e29a098764013bcfcbcfa884f7506e5"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "6b97a253ae4d40039279c82cb89a1f0864c349cf07d506fa01f591e6d9674f37"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "bd4d1c9df1f82d96727db77fc425589e63b1c9f0a019b7377a1303ce1aa680e7"
+            }
+          },
+          "source_row_sha256": "1adf9b67e2d01fe12d93010d72cf155ea95d1eb92a3d96f1fe54068d41fa6061",
+          "assignment_row_sha256": "beaeec612788640c97121b5277f3d85b71b7b7ef4da814940bee3843f3828c98",
+          "prediction_row_sha256": "211547e4ca0ae416e56ed6a47fd3f01fb2ac5aeaaf54027dbac91dec48e52ad8"
+        },
+        {
+          "frame": 3836,
+          "global_frame": 3836,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_05.h5",
+              "bytes": 1370359859,
+              "sha256": "fa9cc93568a3d585fe674ad072b50d438e5359b3a9b48c8f0b489855b5eb59e6"
+            },
+            "h5_row": 234,
+            "aligned_frame_id": 3835,
+            "source_color_index": 3835,
+            "source_depth_index": 3834,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 3836,
+            "time": 1787708869.132,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "272258a2d96134e1363a9822dd14264fdf2c51b3f6b662b570958447a3788ff7"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ba388cfc3595ba66dc86233d852259d75f552a282de23518ab029cc70ea91fae"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "b241d0a2dbeea1e8deffa59af69caebf9697c6d820271ff8c6c73aa3f27b6136"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708869132000,
+            "depth_timestamp_us": 1787708869134000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003835.png",
+              "bytes": 277942,
+              "sha256": "37b061945f65256c052e1f51d7d39116dbda2abfa86145fdc46d47dc16a335ad"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "0a5260c3515bb48f45b883140c478ce9f01cec548b9b59f731ae70c3d25141b6"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "468a52e9e20d81df41037c48b9e88ec8eee1ba59cbe1795d36ccc70a5b21169a"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "7ac32dd12b99d1eaeb2d788e74a7c48e01b10b164966b7273c5c3ccaec96152e"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "e7f5d413911e6f2847f561b0e564c46d7d427f17f48fd478c27460a132db911d"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "b8239f5721c08cde78285cb20c86e1062127406a7b61663c4cc5aa2dffd97e63"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "43c349b5d026212597db05ea7d66661f48b2c02281f4e35159ae664ef6d79fb0"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "6f3a0d7dd15478cb465118bdfe248467cc399d86004176eaaa99bbc6c4b05a32"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "300c98328163bde2a9a69d263818809b4ea931ea4ef6911665be6bee7b1c5fc1"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "be7c557aca51a83699ac26ae6b3c6d205cfd9662ff4545df82d275afc6e356e6"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "74bb141c5188d0e63194c524c2c1c38ba6684d3bda0084b87dc6f957bbe3c1c5"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d2fd39dd00d6b165a034da712c2f15e39d216c8b7d39993130f1a9fc5af4da15"
+            }
+          },
+          "source_row_sha256": "b552faaa3017324e79d19f5e1f44a57f304889f4f2375dc9738108efc31b8620",
+          "assignment_row_sha256": "96abadfd27782eb0ee3e507b1cab8cd42f111b759badb89c75c071d7b5711b2b",
+          "prediction_row_sha256": "09839a14b0171bf6b699afdca0265d8cf4e6a38baf894ab8601b726e3d55109b"
+        },
+        {
+          "frame": 3863,
+          "global_frame": 3863,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_05.h5",
+              "bytes": 1370359859,
+              "sha256": "fa9cc93568a3d585fe674ad072b50d438e5359b3a9b48c8f0b489855b5eb59e6"
+            },
+            "h5_row": 261,
+            "aligned_frame_id": 3862,
+            "source_color_index": 3862,
+            "source_depth_index": 3861,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 3863,
+            "time": 1787708870.032,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "55b000b1821cf813b869d980c6488c8754e91b74f7a14c788e7332cc98c0b458"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "be0dbc843784365032c9d96cb56e09ba5824ffbf3f26699cb23e5651b3db8bc5"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "90620e25dd21251ccaeaf17bbc4cd2a1f51119e41849aeb9085e61b51f455295"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708870032000,
+            "depth_timestamp_us": 1787708870033000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003862.png",
+              "bytes": 269228,
+              "sha256": "59b97e21a1d51276b2a631b69aa1129e121baa8a39de51f1559ef8615c879ee1"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "699a6c91a4f052a99a8358880d08d736d4c0698bfc83e2734ba96aa0ab489056"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "6e441f3af69421ed2ef34bcbcb55bb5ee08919d2cceeab90eddb6313a67f046a"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "d5a415b25580dd3cc5ad2c2d1cec13842b457d020c514947d4194f4f75a665b1"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "6a6e8beb490fbe997fd58e7b62c90376e1dced0fc53091fba4a87431fc7c6df7"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "3617cd062bc6b55186c6ace1e4b05048ac589626e82646d65a47379d1960410f"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "1851aad0bc5f6cc5cca5b2ed2b8e9cd66688c5aeeca224bcaea7b06904b9020a"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "2caa791dabf97df69b9325963127bbedc8cb249417f269d5f294fe96ec5ba136"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "3dea03ca1a41fc4a5e671e0fe263353404676a4a117d265e7204e1ccd24c7a34"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8bf48b6a3f04768b784cfdf80bf6e9eb6f7d52daf9cf04575f625727bdcf50ce"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "95afbc5fb9df30d858df4ba2ff396aa95e7f350e25b5a32b754238767e542fa2"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "44d8753abecc4af560af649772ba6494dae9f32b7afd28ca563b0f14c6b53b88"
+            }
+          },
+          "source_row_sha256": "b7831b114e55152eb3de67ca1709456fd76ba081df5657d17ec6c3ab53cf748d",
+          "assignment_row_sha256": "91a48c6015df8d7d204e6e3be9de5244256057e87f5f8db5b90c58faa54afb38",
+          "prediction_row_sha256": "1d9e76dfc010fdab29efeb2ed60200696ac9aa221af498082364b2ac6ad9cc8c"
+        },
+        {
+          "frame": 3901,
+          "global_frame": 3901,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_05.h5",
+              "bytes": 1370359859,
+              "sha256": "fa9cc93568a3d585fe674ad072b50d438e5359b3a9b48c8f0b489855b5eb59e6"
+            },
+            "h5_row": 299,
+            "aligned_frame_id": 3900,
+            "source_color_index": 3900,
+            "source_depth_index": 3899,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 3901,
+            "time": 1787708871.298,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "623bbbed9abb52572504b68ed71c6ecc642e8d97db0cb71f987240cd7bfb2451"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ddea4735447d41f774afdd470843acade1070722731470cb8c782ba5f860917d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "949a04713554f5111ebb4b1afdd6f2be6776207ab6409b599287b0a92aaa4316"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708871298000,
+            "depth_timestamp_us": 1787708871299000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003900.png",
+              "bytes": 269182,
+              "sha256": "17321d81e0846e03089161dac136cd4e27013963493195616c643a0a42ec8514"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "e18f8bd450e987cd58ed387e73c7b7b8fafb522869a25bbb1ee4f3eeb3f91976"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "2f46915400b33f794f2a9e1c56fc7c81627f7223ca507cb2ebb94132f61932d2"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "b7982c74790921891216d68da98c85dad315e01bd2c0c6dec604dc792fbbe64e"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "80d57168c35857f6e697973c1acaf1695446a8679297a6465739d2792fe72651"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "f319e3fedf05c95af61b5d677d7303367feb4a08711bfafad34f0d23c48dcb2e"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "b17bd968794e6c49667cf05689f10164f6c351cbc1da35238866da5a7320a9e1"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "82f8db6128f26f98db76593a4e1bb3a0d0bd4da4c7d3be90cb38ef4cdf8cc8eb"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "60b97ab6bad509d873e4d75a73ba00a2eb2e0d87ac5b774f2aebe43af549992d"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d5228031bfdde049fcfd318e516729df132ed89767086a6325bd28249aeb583f"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "657e3b12360c6d7e1f8cecbaa715a14d191a8a518e4555a1c0864b7b45813e95"
+            }
+          },
+          "source_row_sha256": "3c6aa15fee5ed05094528bc2fab7d735b5bd90f67ceb0f77e736f697ef6d8254",
+          "assignment_row_sha256": "3bd6a468d3cdbbb530f25717765975f356912e3af88210ad86121fee0766317c",
+          "prediction_row_sha256": "ddf5d7050a53fe6f78e4196706af1ad2a94bf804ca0aaaefc78e04c8fff3ea11"
+        },
+        {
+          "frame": 3902,
+          "global_frame": 3902,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_05.h5",
+              "bytes": 1370359859,
+              "sha256": "fa9cc93568a3d585fe674ad072b50d438e5359b3a9b48c8f0b489855b5eb59e6"
+            },
+            "h5_row": 300,
+            "aligned_frame_id": 3901,
+            "source_color_index": 3901,
+            "source_depth_index": 3900,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 3902,
+            "time": 1787708871.331,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "84224ea6eec57ef03a03fa906f870d780d19bfe2fa2435e09780b52fb98cd361"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "69dcb2ca6574b94674df181b5f1e66bd1489a215c56cc5e77444774b7df2d155"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "f46f3d697f91acf793b240dae9e026f0517a518a39abb492892ec79135657603"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708871331000,
+            "depth_timestamp_us": 1787708871333000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003901.png",
+              "bytes": 269941,
+              "sha256": "1b1d3ea6d22355c6e8d9f1f9da66ada6f8ea09eef013b30e83af2854f71100b6"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "5831b45e8a0a7854494d1be285a9d8cf0d7b043da3744adf6ad65eb96020884d"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "e1fbe0453b0d8e002c26a2fd9e240b063a3a880dea0ae7749d3ae82ec044f03d"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "18e65d562623f1b581f0f8fb005e916d4e6da04d910361cfdb737bc5dbda5343"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "cc674f2c524f3445789d656d9f755e1bac738f0365a61f3b4060f5db09197a30"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "bfd994514762986406b395246e620bc794b77fdc41e552256cf26a1506d924a0"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "05ecb4dececfba7d5c56f22463896d3208de1da4b19309104206e21fd0a8ddd5"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8b6b25d1bd08007e211c660738801b7bf47a1482f1b0d1d1cbdf234312fc90a1"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "9e52cfa3f0dbdeeb432a82dd1b457f795e08342cbb40b5fbf0dfaf62dd5876c3"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8346c07220cbff4c0c0c92b02c2380c71863fe222e4974207323555e814a178a"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "5d018f182eb46e660218c5bde7e1e8d6eacaa7541f91f05c437be9023cdcf0a7"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "82adb28282debb05718f45e6ffd47e44aa1636bec668c8b76ccb75e0b0c6336f"
+            }
+          },
+          "source_row_sha256": "68ee23e3d478d613aed40fe966d712f8d68be7d5b597ea11a7230fe6b14e832a",
+          "assignment_row_sha256": "177dd6b31e69f5835fa2d4e32e018d49ea22e813347f07d5adbaaa42110cca69",
+          "prediction_row_sha256": "98bce7daea56ba133f30c4aabd0357e868a8145516cbddda75b16e07227e4068"
+        },
+        {
+          "frame": 3909,
+          "global_frame": 3909,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_05.h5",
+              "bytes": 1370359859,
+              "sha256": "fa9cc93568a3d585fe674ad072b50d438e5359b3a9b48c8f0b489855b5eb59e6"
+            },
+            "h5_row": 307,
+            "aligned_frame_id": 3908,
+            "source_color_index": 3908,
+            "source_depth_index": 3907,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 3909,
+            "time": 1787708871.564,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6fe0b02ad493bfc4be94dc0eae3d5ec9f846519f4fd44075feaa8295d2ab17d3"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2ed8c624971acbd47640dd6bb812edd7e98ec9fbfc1a495f2c2e2758fd765985"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "a1e9b0ef0117f937871c652b63a1d279f57dd596558599cf6fdc667304f3390a"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_development_8400",
+            "rgb_timestamp_us": 1787708871564000,
+            "depth_timestamp_us": 1787708871566000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\003908.png",
+              "bytes": 266907,
+              "sha256": "a03c36480b224314301f95fe130096b37a41eaff37fc31bf6103ac5a0b462bc5"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "5df858a80a511b6f42d9f53f71775620e9ab0fbc1f3b8d0f7e4448442679024f"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "912b476d3c755b026fbb8c6174b467a5466280f46816f97c6f9d0271cc55688f"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "7a576323c92d9bf8dcd97b3711198afdcd3d57de7751a3db4df17465ef91b57c"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "1886af7b9ee907252f2bdd7e7ac33bc737d2a0007857af252a8c009adc80ad9d"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "50a8802585f4b10321ea73900278ddb90d40971dea53c544b6e2c0c82238d6dd"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "4dbec0e5642bf8f47b013131ab730179ebcec5ce2408b155ddd4d300df44c4db"
+            },
+            "2": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "ea8c92ee892329cc24d061697e9ca604c239b2599943033fd79c99029c2b898f"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8e7f318c49b81988c0101612117643e7da75cf622ea1cad7b9ae71553b430548"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "03e911bbd106d799d983f8f9bd3d5b1af9497cd1b5825bd68848061616695e8f"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "700490b9623406d78cd79c15111db6557b7a9e8f3f53c7be30ca705299cc9ac8"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "41244d4ba3166e83002fbd59fa6d3440dc263e8535c9c9244902a8ea706b6aaa"
+            }
+          },
+          "source_row_sha256": "7e6b338e607b5162d10dbd30ea8a4fc0a1ff941e0491c955b5ddf23b5c84d89e",
+          "assignment_row_sha256": "e3a04c9931f2b1295b94de6eb168ec92d15343f9aaf4c579057204e6a86b0683",
+          "prediction_row_sha256": "297d18cdace7b6e21d022a8b668617de3ad6bdd9f021f38eca818fd1290b17db"
+        }
+      ],
+      "all_four_published_branches": true,
+      "no_GT_raster_or_annotation_read": true,
+      "all_masks_residuals_preserved": true,
+      "unknown_reference_not_replaced": true,
+      "postseal_diagnostic_selection_only": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "selected_event_arm": "EVENT_RGBD",
+      "event_id": "MS1-F2125",
+      "selection": "POSTHOC_LONGEST_CONTIGUOUS_POSITIVE_PUBLIC_DIFFERENCE_RUN_VS_Z4Q",
+      "phases": [
+        [
+          "PRE_A / EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+          1935
+        ],
+        [
+          "PRE_B / EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+          1992
+        ],
+        [
+          "FIRST_SUSPECT",
+          2125
+        ],
+        [
+          "GROUP_LAST_ACTUAL",
+          2187
+        ],
+        [
+          "Q_FIRST_SPLIT",
+          2188
+        ],
+        [
+          "DECISION_OR_END",
+          2218
+        ]
+      ],
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\postseal_extra_cases\\fishsa_validation_2888_MS1-F2125_EVENT_RGBD.png",
+        "bytes": 3233916,
+        "sha256": "c42dccc855596c2cc9c7cdeb3222c40e331921e69544f3706a3db6d4ef25d75b"
+      },
+      "source_bindings": [
+        {
+          "frame": 1935,
+          "global_frame": 11235,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 433,
+            "aligned_frame_id": 11234,
+            "source_color_index": 11234,
+            "source_depth_index": 11233,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 11235,
+            "time": 1787709115.65,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "50b93ef3b56354c7d82cd8e08175e0cfc1345f408d6f1ddfd95231ad6865afe3"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c0e1f76dacd8a3fbfef0215067603ecbb7c04435d5748dae6dcfb1b264809af0"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "2f456d8b1506299a48dd1007f525d1002fc2e50631917a72618aecf848dec02e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709115650000,
+            "depth_timestamp_us": 1787709115651000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011234.png",
+              "bytes": 265433,
+              "sha256": "8bf17399f22d109d48c69046a8f5eb248faab64d2e2593e017f9d6017c98b095"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "cf210946bddb812bae40c10ce28d3064d7506715bcd8a8e2c36424944479f9f2"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "5c3c6a55e654037bc374eb40aa6727872c300a01a35a6b716819fd7900c26a11"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "b1ec52a00cf08e1f6c44918715f05f58781719288274481af9513cc2bd9b3d8b"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "054cb1cb0e4fded3e097a5f536c2500c490748efd87c20c3cc5bc6563f25b4df"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "7c9a7c1141d020d61eca46afa3bf2ebdf54dfb525285359dc15c96654be1bd48"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "56d57e02fbce8c39221aa0292f2abb416800f02e9c3d859955e04311ec6e2c22"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "3aabf09dc56f1aa3eef8dead0c4c141f0290afa6a2ed1c404d213ebd0fab13a1"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "9c143cd624bab165a6c87b26c6d30ad559eaafe5cda55b4b7d069298e27fb9ec"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "066567879c6e0e6cd3579ec5cf826a4a8e8ca57d3553ccd6155c5bbd030d7efd"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "388b020cdb2587945d7821c78caa56c599474dc0957203a7032f220d0819f0fb"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "e41723a82e5ae3cff6985e73af6b458ad04e5b30487fdcd95b698f63076f6f0a"
+            }
+          },
+          "source_row_sha256": "bdb94e5d840708d04bfc96b5f61b47729748ffed411406215fc74d6c4d4db7c0",
+          "assignment_row_sha256": "d5d4d483619b9b4e6f11f932b8ca7dbfcbce83301cab27e282bae830144a85a5",
+          "prediction_row_sha256": "25099551b129ccaa8ba87ddc461e220b8ba071171c8297ec583f2b477af2a415"
+        },
+        {
+          "frame": 1992,
+          "global_frame": 11292,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 490,
+            "aligned_frame_id": 11291,
+            "source_color_index": 11291,
+            "source_depth_index": 11290,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11292,
+            "time": 1787709117.549,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "db58787ed3dec7e6046285c9be49ff34d3da7dc22c790580b532ad95ba221e93"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "25aea87a972d1e1f69e7eaa5035716f55475be489512376d3900328746dbf159"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "3f06f010af798651dc8680cae7eab1ea6e691c597304d36dc0905822d29eaf61"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709117549000,
+            "depth_timestamp_us": 1787709117551000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011291.png",
+              "bytes": 267420,
+              "sha256": "4d92d5588aecd32387f15796913c18f3a21bf973376563839018931b46d0d614"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "03effde11521ffbfa614ce7d2eb130544987e3093c63ff2d754b0f62421fa65e"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "90601bfed67d8039dc04e54428161fe70253d40523472a893379105ea751913e"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "be7af1529937ba74183e0a70efa8e29c0dd935b94b502cefed09e911838d7167"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "4cf47feab7478ebc3cc3997f319bd47fd1b029ead0d65130eb80f4f99aeb372f"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "44830b1ee59e7a5e1277c41cf5e2b026e10dbae0059641f7dd8b2aa5cfeee06e"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "b3755991b6f94c1a7b5e10e6058e52b205f2aaa60773ca53b2ea0bcd2d133cae"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "cc70dc2bdd50c48a7a07f03f07d65db7604093c60f157a6c72f467bf2c426140"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "33335b287a0f1d24122f6fdaa2e88d92b2114d1ce27f3dbf3d5b4b73f275e5ad"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "00476082299ca2566fc48e2ac2d3f514914ab0a2f0d8a1b0271df8b0aadb0d0f"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "4c5bcd87cd57bef4e6a119e1dceb939b88e44d3c54ee4f657e0081e85346f342"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "4ba07f04a2f6b770e9367de3a336ff1909f9bca5152037aada269b78bd225516"
+            }
+          },
+          "source_row_sha256": "a4c67b87666f378dd7fa27b6c4126060cb1c82d0ac8cfa5557b11ec1e5410a91",
+          "assignment_row_sha256": "321cdcdb9beffbaaf2c49b6d8232e5f01b1fabcc956a2f2dbe49700b0806f449",
+          "prediction_row_sha256": "10bfb62d0abc3e0650abc02e6683d70dfbaf02d72f50047cae5f0c46ae594403"
+        },
+        {
+          "frame": 2125,
+          "global_frame": 11425,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 623,
+            "aligned_frame_id": 11424,
+            "source_color_index": 11424,
+            "source_depth_index": 11423,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11425,
+            "time": 1787709121.98,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "d5e2a05af9ce383bb0736878cb1717d05cf245afb9f90eb768c88a3b696328dc"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "1cb9b5287da0ff17127127257780c56b986f848651dd03cdd283e25e735af1af"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "5cb1246a5e0af76db759ed09c02241220a9c5423e1faf0a1ae1d8b813ee8709a"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709121980000,
+            "depth_timestamp_us": 1787709121982000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011424.png",
+              "bytes": 256080,
+              "sha256": "b6a2bd0ca1447ed6b7ebafb4157602fb1593398f3ae8a33e29da7fe7ed779ebc"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "08835aa97cb9fe49e88bc78f9ad83e7391e28c4d8c3f325d86ae8e2ad41dd093"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "7233babf3a26058b4efbed89ce7aa3bf5c1ef68a8de7030cd1279d3641b0ee16"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "95dfd44b919a821e8d6cabe2fd568c87779f9b8965032c4131fb1230ffbd3356"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "23a2232727c0a509ce13cc2434100334c6752a8f138d1b162ae48963f03d81f6"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "f7aa86d515ef07f07ea1a3a09ba6146b64c4412a203a8782d323ac77b1f8ac78"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "7464f676e6efdaa83208e408622a4b64485d036253fef3185db7aca437d522ac"
+            },
+            "3": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "92a8323500ee5125a644c2b03a54368b3d70ea3e6630feab7c192575abcf7aed"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "392529b1429c766ab36557a570c9f169bc96166d4f0ce8fd7581cecdb0f12548"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "891a731ebe1c7447f49c5214c09df35bb139d8a9710c06edae5407ddc74dcec4"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d65d484e74e5ee169115d7ca627eb24dc690d611afc16642b07d755449a4ad0a"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "0e0540af8a6d892f4b04e5918c23b6268941d457872652682e4c4e7a87e73b45"
+            }
+          },
+          "source_row_sha256": "91d2b0ebaeafcf3d81792b0556c867e102cc582a0133f2add407bf27add6574f",
+          "assignment_row_sha256": "61dd60839a7f6da0588a781807ca95226f90396d22366cf2df86d3b5688f7051",
+          "prediction_row_sha256": "2da3c20caa754f47fe4c4e92eef5aa9f59148c4fcee473f2b05739fa0c7b10e7"
+        },
+        {
+          "frame": 2187,
+          "global_frame": 11487,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 685,
+            "aligned_frame_id": 11486,
+            "source_color_index": 11486,
+            "source_depth_index": 11485,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11487,
+            "time": 1787709124.046,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b3e5d83c53302c872e7be2f7515c3934cd046af2636d195dfaba20574be959b5"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "822c0a4564e9045480543256d5891efbeb8eddb2447e770eeb236f4032d46764"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "f76a9518d255646f08cd18c338438e84f26bfb1927a56cc8d66f88344f2586fd"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709124046000,
+            "depth_timestamp_us": 1787709124048000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011486.png",
+              "bytes": 255970,
+              "sha256": "a64d0b37047bd6cb8db3c4894da40e27dd6cbed2b1166b9f6fa2ec35973a706c"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "9e1a0469f5f0ada73915352b6c2a8b6b9694ef18c0724524bf08ae31211c4f2e"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "4614821f69e12ad9510bf2ec5709024dc01a6cde8e97301062cbb4a69cfede36"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "df9aff453a3f5c80fdb39cb2b783d4087edd028545b3747bf54900bd109926c9"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "e50fa3d3f3ca1eca1ad5db4a1cc33567b704ed51d01eac48e94db288f35dd8da"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "1d1bbeb06b31b254d50e528d8301dfd5e43523624aedd9258b4fdda0390c9a04"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "64899488af8223c6565bd3662a91641e3f989576d0ef37e110f129e17112f085"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "c05581b461bb5eb71243245d701dc0726eda08249ad8b48dc25eaf8bf6dee1da"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "7cd3074c32917a98d67b6f5cad81d3da25533b615a02f98fc1266fad7592459c"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "849177634904122a4ece4ce59131d5761785de81a526ae91566102fb2e936451"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "5624edce03945edba337064cdbbad63ebf921648a6b7d7a17528f4547a3f5018"
+            }
+          },
+          "source_row_sha256": "12f289180709ea5aac582f6223d103b53ead94647d23415cdfe3c56251908595",
+          "assignment_row_sha256": "5663eb10f7d20192a78ce72f87851288bf9e6581a191ef150ba89770e6a9b886",
+          "prediction_row_sha256": "79bd2dbf0e661af5826b3cd86a256eb6765b775459800f32e9699abce8a36e8b"
+        },
+        {
+          "frame": 2188,
+          "global_frame": 11488,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 686,
+            "aligned_frame_id": 11487,
+            "source_color_index": 11487,
+            "source_depth_index": 11486,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11488,
+            "time": 1787709124.079,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b1cf4b0a20abce8892d1dd812151803907618f8199cc0937c87f0b88d2aee0cb"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "89882629d9ec5eefa4bd64235a31ef9e3b347b2ed42b3e27a64136b409be2677"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "1e3080bdb04bdd374790cf67438ffab2ccd380b750b68a4bd7f8a8cbbafb4e32"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709124079000,
+            "depth_timestamp_us": 1787709124081000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011487.png",
+              "bytes": 255356,
+              "sha256": "cce284c219df68fd0fa14d4910086a1298b19bf5e454fea8e6c24a65c1e5297d"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "749b5031eba7377152cc80ae9962612689f15338aee9bbd00cdf6a1248835844"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "4956317077e0172470f1b6615845454878e2ae2c6f724811070604666bf3d6bf"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "77cb32491e0f0f551bd0de0aa4b57d71f695c9894464daad5045dc2c91b6e886"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "15c84adbfd311b3c67e5213cb65ef8db5a7315f20e14820caa9386e0df2e4531"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "8f526e488459484ae5c20dff6fc1e9c7919442ac8de92493ae672e8f53feb74d"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "b5f000ba7fea577f10047488e2f11c820cb416bce262264e167aa04fcabf65d6"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "f22ad66be645295f053971bda4c87c8552dc34eb58e02487f7e019774ed25615"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "86b00689ee76fb471512ab3207cba59757e8476d2b15ba0d4fc512a0e0e2373c"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "e38dc398edf0fa92cb186fe2f84b1e8ee2890ef04538105dd8ae07e40174a9f3"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "46eaabdee7ac1d3cd4ebee3d7bc0105e33dae74303f9bd377bc85df005c7176e"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "f54243b2d0a16052b57b2fd9c2f6a21c140ca9c76d421ee9cb81e6d90c897210"
+            }
+          },
+          "source_row_sha256": "d55036e64135ff153990a483b66e9423f46a64b609dea98a2ec29fa0cd87beb0",
+          "assignment_row_sha256": "d5028fb543aea1af1b5675691bde8dce55133f2612cba431d1b9a8ef3e56c2a0",
+          "prediction_row_sha256": "84655299ba17f9e50f95e7eba61bef09b8871a2d6c3464397c5a27e67e3f3431"
+        },
+        {
+          "frame": 2218,
+          "global_frame": 11518,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 716,
+            "aligned_frame_id": 11517,
+            "source_color_index": 11517,
+            "source_depth_index": 11516,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11518,
+            "time": 1787709125.079,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2eecbbafd994d0f3fe773aec5c52ba7f05f961cb5b7b276a105b6f72c9a244cb"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2bb44b558153ff7d465a52d68b233cd6d3730336cc8737c6acba654ae556a594"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "17d581ef0db48b227c1136c04e0b0b2f0d85bde881768998ff654954eddd432f"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709125079000,
+            "depth_timestamp_us": 1787709125081000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011517.png",
+              "bytes": 260954,
+              "sha256": "bb663adb76fece156e3f804d36219962de24f4451a8222e29e843d9c7035cb43"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "d291a3bda4b5ecffaeeaa409a482c9c922f36118d44bc8bb14bf124fab54ef27"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "2106058fefc64393bce4629e6a2ae6191a730a9249bee478aa4c68b69e81669f"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "3e57010d36fda40cb9ac0b682f0c08e82443d698da2c16b58436222b83ad398b"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "a9ac870c08d4f8d61a8a6b59f555db048dcaf4a0b84e5dd936ddf61a430b4010"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "3d9efeff2e6e81927a85243be1f8fbfe58fcb96000afca3f7839a52d1e079b6d"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "63e77d6ab8f0832540c4323a9b847b596f6c3384832782c0de333ab623d9a936"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "45acc1ad0fbf8dd8ca3006674072ee3449728be50f301c5cd9fcd7051cf51c61"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "bfff14149f2c64d55b8a6e769d2b74e0d6629f0c424576e0f3acc93b463b72bd"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "efc80516818ebf7a31562088c75cb33627c7c0ae8b2358764707819af943fc85"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "6dbe04b7af7c52c4d39c25e7810b86eec375da8eb5e6ca3b2a22a649a346b4d9"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "5fe10fd9c54f3816ffa6fd5c315f8c71a6cc27c0c663760a4fa531387c0be7db"
+            }
+          },
+          "source_row_sha256": "86ba760a9669eaa2318150fbf04e7db415b849dde4c410aae1dd1dee4d21cac8",
+          "assignment_row_sha256": "497a4cc196fdbfcff9e254a254111f5e40d2e94ec744d7dd7022f3292d730a25",
+          "prediction_row_sha256": "ab012b13ceb32eced26811fd0a12f76871f6292c6c7a962453b7a810573185f9"
+        }
+      ],
+      "all_four_published_branches": true,
+      "no_GT_raster_or_annotation_read": true,
+      "all_masks_residuals_preserved": true,
+      "unknown_reference_not_replaced": true,
+      "postseal_diagnostic_selection_only": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "selected_event_arm": "EVENT_RGBD",
+      "event_id": "MS1-F2681",
+      "selection": "POSTHOC_EARLIEST_STAGED_WRONG_PREANCHOR_AND_PREFRAGMENT_IN_VALIDATION",
+      "phases": [
+        [
+          "PRE_A / EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+          2525
+        ],
+        [
+          "PRE_B / EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+          2621
+        ],
+        [
+          "FIRST_SUSPECT",
+          2681
+        ],
+        [
+          "GROUP_LAST_ACTUAL",
+          2688
+        ],
+        [
+          "Q_FIRST_SPLIT",
+          2689
+        ],
+        [
+          "DECISION_OR_END",
+          2710
+        ]
+      ],
+      "image": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\postseal_extra_cases\\fishsa_validation_2888_MS1-F2681_EVENT_RGBD.png",
+        "bytes": 3461259,
+        "sha256": "ee3c1dfbfd340160b9f210b7742d96c2f64733fc3328bcca01fa062daaabd492"
+      },
+      "source_bindings": [
+        {
+          "frame": 2525,
+          "global_frame": 11825,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 123,
+            "aligned_frame_id": 11824,
+            "source_color_index": 11824,
+            "source_depth_index": 11823,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11825,
+            "time": 1787709135.308,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "49b9ef637dfddb3b8a6b5763e5d97fedc907c0b40b1782c3ff3d376a73ddb222"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3cc4c2c36aae748809a1586bb6d04f1c684e56d038dc3888e2d949083cb7d291"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "28a4ccc842ca40f32cfd3f96d441965cf9ca058e056d7318332ad01a366709bf"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709135308000,
+            "depth_timestamp_us": 1787709135310000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011824.png",
+              "bytes": 295221,
+              "sha256": "bc14688d38d83c85ce3be85a2aa37d75c6ab5c21c24f08b727778ffcdfb854c8"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "ff75135bd6e7a8e034f84a850b88abc8599e9004edd8be4c0590a366b08cd0cb"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "53aaab35f3cfae6397de1ba9d16d5652fbcf0850a17e22611917b66e3a5f30f6"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "4314e53619464749d7269e3a158f8e70a7b7760991746547ecfc975c8c7c2b82"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "27362606f5989488c225a6a9a5e636923b468bc1d64ecb9eb48dc926145eb4cd"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "0861af69a5054186f9d3c37d0887292690398384d2e322b0e840f6137553477d"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "62598afd9ecce424b11b5fbea7be21c332a45c735b5c481e93a4f436b3c00524"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "c908717f614437cc71fc3edff27aae39855b2ce6e9521c42069c143905d49b59"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "1a41480802a4650539ab6bb7cce10d18ad2e8427259ffdef009dccddc7effcef"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "c17ac3b9afabb66c8f036d6ca2e0cfb6c18c25986476b3e0d459e228c5222169"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "4810c88dfef497cf7ae483d17ab0b101b65c051d48a5dd0028e27adcf1824b4a"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "3ac1d7ac55322ae67c5dbcf0cec607712c5f8416e388de72bc237eee587ba544"
+            }
+          },
+          "source_row_sha256": "123284aeb578192bec101cd708543fd49fcf08722dcbdbacf20b3b78d9da805c",
+          "assignment_row_sha256": "974b3f4a42a19a05f7f9e711e30dcb2ba4f5c69a0286273545ee1abc13d185f9",
+          "prediction_row_sha256": "5e6ea3c4b74616bbd723ec2768a92e66be30f8fa7f7fd0bc1ca1967411aefd2c"
+        },
+        {
+          "frame": 2621,
+          "global_frame": 11921,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 219,
+            "aligned_frame_id": 11920,
+            "source_color_index": 11920,
+            "source_depth_index": 11919,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11921,
+            "time": 1787709138.507,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "4b49f20c5f028e17a97b9798f39de8036aebfb32491192956b6f3f42da0d41e4"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f75ad47533a70e3852499b9bf62fc65c2c64e4aee94dc11afae411c02f2f4b67"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "aaccef2035475069b767b8521de5c8337fd97752325fe08cefa0f18d461c6e54"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709138507000,
+            "depth_timestamp_us": 1787709138509000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011920.png",
+              "bytes": 287368,
+              "sha256": "ec7eec60c769f8bc8683a52022721ae8453adc030582b7dd73a53c24025a4f95"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "3a408697760df4182d9374bba727cf7dea9e131d709cf8eaa75a29ab7afcb8d3"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "90011c44cb3a3cb4a82f05e6e1c3db8e81b3e37a7b6842581ac3426bcd805644"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "d3bdaf5b83ad8b362d88dedc1cbaf4b3369bdf936bc4ac4d3ea52734aee7537d"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "ee15711029a70bd9c8a02b056750c874facaf3daadd0765765c6d62e9d326cab"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "b1bb0bf667b7b741cefda372c660d439c0ca32ba2b77bf1e78d556fa8c9cb848"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d3efc7bf5087a8618b76c2f9eee93b19b0df464b9c467212bf18625cb891f232"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "c8a71c70794b14721e93142bec5817c725ae265c2b5d05a1d00b07aba5f758ba"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "0a6130475ce82c51d8353b5ae71b5b3cd26dece2efa820abe74da068fb279293"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "bbefec0a1f96253747a940adc13c2db95a78f5c767496155218f685863e3efc2"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8a3aa3ba399f9006ac77d6b9f9ece16e7b18f3d799b6c6d0594b669503bf713c"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "6cdd77556d449a8627dd80921c894d27fb365b2760b75043dcd158ff4cf7cccf"
+            }
+          },
+          "source_row_sha256": "f7bc058aa370e5e2fdd47bd9d7558f714d7dbe842fb563261e011dd566888f3c",
+          "assignment_row_sha256": "c0407428c153ac4a9266b4a922fa315610e91c003be39c89928e40ec8df00c13",
+          "prediction_row_sha256": "3dedd6cb96cfa573aed425d62be4f77abf843ea701fae70d403e74a5b4a81fdc"
+        },
+        {
+          "frame": 2681,
+          "global_frame": 11981,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 279,
+            "aligned_frame_id": 11980,
+            "source_color_index": 11980,
+            "source_depth_index": 11979,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11981,
+            "time": 1787709140.506,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3218d607b49ca6ed05dc73b8d3f6c23a9db43ebc9969e7239280fadf62bb8407"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "00f674a93a7c5747b543770bbff95c2cbb878427373db6e9274c0449aebd48ed"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "d2a2c28a456218c5f3b926a0cbe7041798674591d37f382debf68452ccf1ee9e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709140506000,
+            "depth_timestamp_us": 1787709140508000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011980.png",
+              "bytes": 282851,
+              "sha256": "5b7bf175157b0123a5d146fb989d3fef69056fd190d844df484c56639433d83a"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "c830294308c7b7f823dce1b281691d310d6b68cf418c2e872f25d543d3ab8c9e"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "b56428edb9e4e30c1401c4c41a7a0ab56044eb8481ba0f267ee2e8176704beb1"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "3e563adb7585dec4b81abc1c73e3c9a03b16744c3d4a640f11d9e88b7601fefa"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "48affebf8d16aea96ccbfe2414f2715b5aeffc6d9e2461430cb0a64faae58fda"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "31001fd7d2383a720862561f5926a43efbcbe9c479dee9721cf5e82b7378baf6"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d7056fbf915f20d569f7abb3632de51059b22753e417b7cbee83a13d7fa7b49c"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "ebe61ad98730c096ead753268fffe9735cf1a9e6ae8b20b52757cf36c7257477"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "9b05f9bbb6836da4b3619614b3ba2a269ad6848857edfb86de216a8ac74336fb"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "dea742f28dd1c37f4fed8a9ea26c8bf5362dc55b33ccaa3ffcf7eb2bd42d00cf"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "f3cfa2ef1c7110638351523c54b5b6867f0975bb5281385b72947b574934efa1"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "ebd96b91723bec529686f1668457ff352f550b0ce50c93292f0a080d91e843ac"
+            }
+          },
+          "source_row_sha256": "de11ac64337f4478af1860508a8ed0b01b5c97105b98258502b3d89828def599",
+          "assignment_row_sha256": "15b70aa20a10491120f12e07d963128208403f5f0676c38ded08a886c65d698f",
+          "prediction_row_sha256": "ccec58749b03acef067296338a8dc02172cd60c724a2b0aa77a1b0db12f26915"
+        },
+        {
+          "frame": 2688,
+          "global_frame": 11988,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 286,
+            "aligned_frame_id": 11987,
+            "source_color_index": 11987,
+            "source_depth_index": 11986,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11988,
+            "time": 1787709140.739,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "1ca00685f5ce4985674be471a7115fe2b220e73d83d0ab7e8e61961177df13c6"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "868a6bc484e63f535e604be01216c9cbf472858474b9b0ccf8ed0dbf0042490d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "83013391c830cd53dc923c156ca6b6fb70101b4f3d5616a060569f33b7e241a4"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709140739000,
+            "depth_timestamp_us": 1787709140741000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011987.png",
+              "bytes": 276190,
+              "sha256": "a45b00039d0ab2f7a90bc996632bbee87dc01b7b3ad10a8f30c39dcd96f4b0a1"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "6b0ba01c7f5f57aac04361e07358982a7a694f5f45fbd35a25699ca88ece30e1"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "b9e690ddcdaac084b5805830b8a56d6738b95fe3854294213382d27de8b47fc3"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "f1549f5f8821cd6764923803eaaff67dcbd0aa4cfd659fa91bead723761ce83b"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "73e4de52b05bacc19d9f343cc826985ac3a7c8810d17b4cdbaf59f92c544a04c"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "1e3fc975cc8295b71f6300ca3f06bb06f70b5e337533d00aaabada8953a028e3"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "b7189fbdd84b66a87bbca8b6ba62d5d0be3cdc99119ba030e6d6b53f7a188f85"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "f68d0e2034f1d93064e95f3d333ede2a1267a849777b7016d961deee40dad4f1"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "a0f6fbc968e4764bdb2c3adc0bd93f1979dfa8361c80f380b2b45f55f7ddf378"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "0843e93a8275eb9f2fc65180114428f4d5bf9019728530f4baf42401a9322540"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "f34f4bd29d4badea6a0edd0d4fa2e883ca3bcca6f62c47ad8d4f0f3732e6fae7"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "53c391a0dc41a71a566e80f8776568d3f5439349f04e8f10efb725b2f853bc41"
+            }
+          },
+          "source_row_sha256": "2e880ffb83f1047ae5ca1e982b04c2132048eda69ae8e83cffac17e651c453af",
+          "assignment_row_sha256": "8f6aa09fe49d7aaef0a50b1bbdbf5ce743a6e6c3ec2528458bb1e061efe21e7d",
+          "prediction_row_sha256": "fd4de74f208e14c447f338e6ecfb0754be21abc6e11852cc26aa90f6a36eceb3"
+        },
+        {
+          "frame": 2689,
+          "global_frame": 11989,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 287,
+            "aligned_frame_id": 11988,
+            "source_color_index": 11988,
+            "source_depth_index": 11987,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 11989,
+            "time": 1787709140.773,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a394ed3f278312097d8e6fa2e8d9492e316fb2efc4829395ed44645fa11aeb81"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "7bbbf0d62df7888aa4cf8907fea51df5f0ae6c78cadde9ce16e2224f38860304"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c723587902b50f93a11664b41c57721a8159cd5787a424980fd5845672602f8b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709140773000,
+            "depth_timestamp_us": 1787709140774000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\011988.png",
+              "bytes": 275109,
+              "sha256": "60e8b627d83e8e10015c6593c81e9d5ffa1f1569df0d225b63fc5ca8042765a8"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "a4c06e9ed2484260747848c1590b48f2267d6e63e6809fd29770359beea93365"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "baf317f186292aa473ca1faf9e16eba06f735845144b6cd0d8d6f63c87a19f39"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "a98ba35343c2a7bce4741e849a586b82a28b599d957ee6c5fb7e22e752139acf"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "aa386ac8a3551d21737144ac65720c1479743712a24aa4681b82fe9378d138f0"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "cca1689dd5598cbf6b139ae4e95090f13802dbb4abe5c41803cf9bd7db5ebb65"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "8a6712477b787d33ea3be9f6ec5e20be980745d7b100bd7ae53ce5556372e2f1"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "5c54c02e8fd2355003163a49a3bcbfe1f216cbc5b310c72d785a237b0f7ee04d"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "91c812c2a5cc17f71f5225868900e9782b6c644bff713058ee7c29c04a6efa50"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "7ba7ef57ee2d0efae74daa9261ee668c1a37bb7a9739a2b58dcae867c64d4e6a"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "9a47ee2ed9af35be18a6dd8111baad3fc0e5061f2f46d40f3000853c52c05b20"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "a567a16944a87a70f5eedb1d5aae86117c2e625bd15be0e525a52f80e77ff1e3"
+            }
+          },
+          "source_row_sha256": "7618af3a4c0e38e1459c67e68182100a260ff4da3940fe80fcd282bf98745cbb",
+          "assignment_row_sha256": "4e0ee62023ac40ccfa0f91e15c4bf6add974ab2fcfb5c9b2600339a020176245",
+          "prediction_row_sha256": "a3f3d1a3000466f7d2d93a825f13c56f56433c53bd90c24ddd7ac5460f43fec5"
+        },
+        {
+          "frame": 2710,
+          "global_frame": 12010,
+          "sensor": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 308,
+            "aligned_frame_id": 12009,
+            "source_color_index": 12009,
+            "source_depth_index": 12008,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 12010,
+            "time": 1787709141.472,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c52ff9613c13e590e7c71b47faad1e88eceae98e7f8843b2b66536ac776a0d72"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "140ce1fd837934012f6246dc924387c79421d05cf31d6081c671b1140da75c97"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "6f99a3a97855c30ca21f8c1eed009c3aae964f075cfc4b67e88e1c525c71ea40"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": true,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN",
+            "schema": "DS33_SENSOR_FRAME_V1",
+            "segment": "fishsa_validation_2888",
+            "rgb_timestamp_us": 1787709141472000,
+            "depth_timestamp_us": 1787709141474000,
+            "rgb": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\rgb\\012009.png",
+              "bytes": 276633,
+              "sha256": "65813d2ca3d5c5b288622a28c150272c73faac734d314dadd6325eae2ade470c"
+            },
+            "source_manifest": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\manifest.jsonl",
+              "bytes": 11912122,
+              "sha256": "87fd4e4ffbe1e19b7ef8bc76f1eab27a38afa23176a35268fa1c0191fa6eb43e"
+            },
+            "recorded_calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\calibration\\recorded_profiles.json",
+              "bytes": 2014,
+              "sha256": "3ab6d30e2b71c00bbdfe7ac709be536d3f79e01585276a7f0a25039d562d3bfa"
+            },
+            "annotation_read": false,
+            "no_future_sensor_lookup": true,
+            "rgb_source_shape": [
+              360,
+              640,
+              3
+            ],
+            "rgb_resize": "ALREADY_ALIGNED_640x360",
+            "rgb_gray": "cv2.COLOR_BGR2GRAY",
+            "pixel_center_formula": "u_new=(u_original+0.5)/3-0.5; same for v",
+            "K": [
+              [
+                374.637939453125,
+                0.0,
+                317.36376953125
+              ],
+              [
+                0.0,
+                374.5542805989583,
+                178.07326253255206
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "distortion_opencv": [
+              0.07452753186225891,
+              -0.10574433952569962,
+              -0.00028025300707668066,
+              -0.0001730108488118276,
+              0.043864693492650986,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "calibration_available": true,
+            "xyz_coordinates": "RECORDED_RGB_CAMERA_XYZ_MM_FROM_ACTUAL_NATIVE_SOURCE_INDEX",
+            "array_bindings": {
+              "gray": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "uint8",
+                "sha256": "c2ed8a1f2bcaf3b576384035bc9d0aeff729233150003eb642d27ffc2cd069b0"
+              },
+              "depth_mm": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "8a6b4658a05b90b3e65eec9dfcf04d0d28d78b7e11205a31fa2c5084a40b8c72"
+              },
+              "source_index": {
+                "shape": [
+                  360,
+                  640
+                ],
+                "dtype": "int32",
+                "sha256": "a13592addbda90043531414abb2fc0183a2ede4d9f8bec5a06ead37bc33644e5"
+              },
+              "native_depth": {
+                "shape": [
+                  576,
+                  640
+                ],
+                "dtype": "float32",
+                "sha256": "bf83e59bc935d3285f72ebeedfe0dc66600da421e8374fac5c3280790bce1b5a"
+              },
+              "xyz_mm": {
+                "shape": [
+                  360,
+                  640,
+                  3
+                ],
+                "dtype": "float32",
+                "sha256": "caa7bdc42a82b9972535a64efd9d06d0bc7af6ab5e6084a4909cd729b56249cb"
+              }
+            },
+            "physical_3D_accuracy": "UNKNOWN_UNDERWATER_CALIBRATION_NOT_VALIDATED",
+            "depth_difference_is_motion": false
+          },
+          "actual_mask_bindings": {
+            "1": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "28755ccd6d9c4bef38a625f054ae10f96f913f59716bd185cfb23e859d939ef6"
+            },
+            "4": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "fec768c699d0d927193b5d364598a2b165e334d7168b5dbe9b2b608289311955"
+            },
+            "5": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "57344df9ade418bb8946a884f237c784ee7c895115e0a7986ca3d9d8d99eeccb"
+            },
+            "6": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "da52d5cab67be174c2f52c8d51007e46d42debf47b0e50c1e0424f4632e71f7d"
+            },
+            "7": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "6d433df11297ffbf5a35b35e6d0d9b3f479ce42631bb7111efd4f880cdcad6f8"
+            },
+            "8": {
+              "shape": [
+                360,
+                640
+              ],
+              "dtype": "bool",
+              "sha256": "d805b4d30878abb9de09fe0239cedf64802d7f53859abe23bc461de6099659c9"
+            }
+          },
+          "source_row_sha256": "d8cd1defc39940ca9f587719a52e80d4f46d7b8743387b64728770d600d632b6",
+          "assignment_row_sha256": "548ccc602f0b7efa2e1c26beeacd8326033c251af185c3c5b3004938dda51d35",
+          "prediction_row_sha256": "a8be36a5ccc1c065667cb31fe82af18dc031628c96f5416ec9651d672dbf56a9"
+        }
+      ],
+      "all_four_published_branches": true,
+      "no_GT_raster_or_annotation_read": true,
+      "all_masks_residuals_preserved": true,
+      "unknown_reference_not_replaced": true,
+      "postseal_diagnostic_selection_only": true
+    }
+  ],
+  "reproduction": "Run postseal_extra_visuals.py once after the same all-source SCORING_FREEZE and independent scores; original RGB/raw depth and immutable saved masks required."
+}

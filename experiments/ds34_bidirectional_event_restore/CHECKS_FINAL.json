@@ -1,0 +1,670 @@
+{
+  "status": "PASS",
+  "suites": {
+    "score": {
+      "count": 17,
+      "receipt": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\SCORE_CHECKS_FROZEN_CANDIDATE.json",
+        "bytes": 9506,
+        "sha256": "6cb87073c6e409751022bbf4d073ed5e42ebc83d941ad455fefdbf9476bb4d1e"
+      }
+    },
+    "history": {
+      "count": 9,
+      "receipt": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\HISTORY_CHECKS.json",
+        "bytes": 1112,
+        "sha256": "17fde3126882e104b6b0c140833e043c1761c1baaac94c521ad307a28053dd3b"
+      }
+    },
+    "evidence": {
+      "count": 15,
+      "receipt": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\EVIDENCE_CHECKS_READY.json",
+        "bytes": 2865,
+        "sha256": "895a070752bef67a22b889fa5d4d4f2b7eebc3dc2665e255e0eb244e5d47b055"
+      }
+    },
+    "state": {
+      "checker": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_state.py",
+        "bytes": 17842,
+        "sha256": "1b12e46db336758a449e9e58ec770438701b4b250000879262e1b174f97308c8"
+      },
+      "count": 15,
+      "result": {
+        "status": "PASS",
+        "checks": 15,
+        "no_GT": true,
+        "model_http": 0,
+        "cost_usd": 0,
+        "actual_original_engine": true
+      },
+      "execution": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_state.py"
+        ],
+        "started_utc": "2026-10-06T10:12:53.941099+00:00",
+        "ended_utc": "2026-10-06T10:12:54.933770+00:00",
+        "elapsed_seconds": 0.9924045999068767,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T101253941099Z_2dc5593058074cc7bfcfefe0f7558bb7_checks_state.stdout.txt",
+          "bytes": 113,
+          "sha256": "97965fe63646e5615802ba72c0107954984d540b34a3fcf9a5dc53fce4d56319"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T101253941099Z_2dc5593058074cc7bfcfefe0f7558bb7_checks_state.stderr.txt",
+          "bytes": 2187,
+          "sha256": "548a849381235023b2490c42cc202a67502719ccc6726087581a2f9dc424f75c"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      }
+    },
+    "lag": {
+      "checker": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_lag.py",
+        "bytes": 5101,
+        "sha256": "ad76cfc771152cee4e41615997dc131cf2e1017b2612f764ef0532428cb5625f"
+      },
+      "count": 6,
+      "result": {
+        "status": "PASS",
+        "checks": [
+          "COMPLETE_OWN_STATE_AND_EVERY_REPLAY_CHECKPOINT_SELECTED",
+          "OUTPUT_ONLY_MAPPING_BAD_FINAL_STATE_AND_FUTURE_CUTOFF_REJECTED_ATOMICALLY",
+          "H1_PREVIEW_H2_CONFIRMED_ONCE_AND_PUBLISHED_PREFIX_IMMUTABLE",
+          "CALLER_MUTATIONS_CANNOT_REWRITE_QUEUE_OR_CHECKPOINT",
+          "MASK_ID_TIME_VERSION_AND_FAKE_FUTURE_BOUNDARIES",
+          "EVERY_FRAME_EXACTLY_ONCE_FINAL_FLUSH_AND_OUTSIDE_REPAIR_RETAINED"
+        ],
+        "count": 6,
+        "model_http": 0,
+        "delay_frames": 30
+      },
+      "execution": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_lag.py"
+        ],
+        "started_utc": "2026-10-06T09:17:38.393500+00:00",
+        "ended_utc": "2026-10-06T09:17:38.472262+00:00",
+        "elapsed_seconds": 0.07866950007155538,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T091738393500Z_28d3a3f2705b4ac18d8451237ae8f134_checks_lag.stdout.txt",
+          "bytes": 507,
+          "sha256": "d19f42b3186bbd65901bb4856cb46b602f1b862f07580436cc1dde3b7fd7cdd8"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T091738393500Z_28d3a3f2705b4ac18d8451237ae8f134_checks_lag.stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      }
+    },
+    "flow": {
+      "checker": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_flow.py",
+        "bytes": 11343,
+        "sha256": "cc3eeb13806f26ee40d7a5fce39e9011d2aa524f181800fe0e609728ee5e6c2d"
+      },
+      "count": 11,
+      "result": {
+        "status": "PASS",
+        "checks": 11,
+        "scope": "Actual unittest exit/log"
+      },
+      "execution": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_flow.py"
+        ],
+        "started_utc": "2026-10-06T09:20:22.293847+00:00",
+        "ended_utc": "2026-10-06T09:20:24.616162+00:00",
+        "elapsed_seconds": 2.3221208001486957,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T092022293847Z_8cce8bf4630a48548153f01991d7e6a1_checks_flow.stdout.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T092022293847Z_8cce8bf4630a48548153f01991d7e6a1_checks_flow.stderr.txt",
+          "bytes": 1570,
+          "sha256": "0674c60a7a18979c0b3909efd5b3e2e21d58ccfb37e3601870ddbc592ea19540"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      }
+    }
+  },
+  "total_checks": 73,
+  "artifacts": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\SCORE_CHECKS_FROZEN_CANDIDATE.json",
+      "bytes": 9506,
+      "sha256": "6cb87073c6e409751022bbf4d073ed5e42ebc83d941ad455fefdbf9476bb4d1e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\HISTORY_CHECKS.json",
+      "bytes": 1112,
+      "sha256": "17fde3126882e104b6b0c140833e043c1761c1baaac94c521ad307a28053dd3b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\EVIDENCE_CHECKS_READY.json",
+      "bytes": 2865,
+      "sha256": "895a070752bef67a22b889fa5d4d4f2b7eebc3dc2665e255e0eb244e5d47b055"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\INTEGRATED_CONTRACT_REVIEW_READY.json",
+      "bytes": 41271,
+      "sha256": "62e03f5df2e156938e63557620748ee292599ee16159e1b00e2c990861f5f58e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\NATIVE_RETURN_CASCADE_REVIEW_READY.json",
+      "bytes": 7960,
+      "sha256": "21d4d00967021d71830777f5a7d14e23169cc38b0c68458de072c9f15dc55f81"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T101253941099Z_2dc5593058074cc7bfcfefe0f7558bb7_checks_state.stdout.txt",
+      "bytes": 113,
+      "sha256": "97965fe63646e5615802ba72c0107954984d540b34a3fcf9a5dc53fce4d56319"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T101253941099Z_2dc5593058074cc7bfcfefe0f7558bb7_checks_state.stderr.txt",
+      "bytes": 2187,
+      "sha256": "548a849381235023b2490c42cc202a67502719ccc6726087581a2f9dc424f75c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T091738393500Z_28d3a3f2705b4ac18d8451237ae8f134_checks_lag.stdout.txt",
+      "bytes": 507,
+      "sha256": "d19f42b3186bbd65901bb4856cb46b602f1b862f07580436cc1dde3b7fd7cdd8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T091738393500Z_28d3a3f2705b4ac18d8451237ae8f134_checks_lag.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T092022293847Z_8cce8bf4630a48548153f01991d7e6a1_checks_flow.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T092022293847Z_8cce8bf4630a48548153f01991d7e6a1_checks_flow.stderr.txt",
+      "bytes": 1570,
+      "sha256": "0674c60a7a18979c0b3909efd5b3e2e21d58ccfb37e3601870ddbc592ea19540"
+    }
+  ],
+  "code": [
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\__init__.py",
+      "bytes": 22,
+      "sha256": "492e40efdd86392fcc0109f97ac48a095fcd59a62afbba7c1642dc2b3700c4e8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\_mask.pyd",
+      "bytes": 129024,
+      "sha256": "01783d2782ede36575a020b52b7410aa3e80cac857e54285dcb569f36e1e50c4"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\mask.py",
+      "bytes": 4693,
+      "sha256": "1281ce0b5436ffe924c96521b2ae1d589f6f0e2a7b7281b6bb284f7b2245545c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\__init__.py",
+      "bytes": 116,
+      "sha256": "636586f4cc90a0be21e8aff605fb7fe97c089b3c46fafd43745d4c41bedceae3"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\_timing.py",
+      "bytes": 2323,
+      "sha256": "62e60638efc675bccc35c7da65158f0f19ce31f332121efe7cc748bd92ad2b30"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\__init__.py",
+      "bytes": 609,
+      "sha256": "09911297082107bdf35837442d460bf4c6172dc9d46b76c89d8b2d4dbb7ff82b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\_base_dataset.py",
+      "bytes": 17008,
+      "sha256": "9094b50490b5567ed6f22cac6aa6ec969f4d467d4d28515546e0b875ffe976f5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\bdd100k.py",
+      "bytes": 16589,
+      "sha256": "e9d5c62f164185bc996b02c61f54f0cf02c09098a715ed04aa9971d6a8de927d"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\burst_helpers\\__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\burst_helpers\\burst_base.py",
+      "bytes": 31071,
+      "sha256": "3c26ec13526e3d20f55668791c85bb1e0897a94dcdca57682a97d292f2269beb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\davis.py",
+      "bytes": 14167,
+      "sha256": "4c55560bd58892e30a794b68fdf7ecb08dfdb5a1e51a9b85b1ba21fae78eaf90"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\head_tracking_challenge.py",
+      "bytes": 24685,
+      "sha256": "43eaeee7d37a284178c7ff4062c2b9079816669e1adf50cc246fd0b1ee1edba0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\kitti_2d_box.py",
+      "bytes": 21551,
+      "sha256": "050ac54284a982b5ab400ae9f29022370f52df6d6e03566fd8b30a0be7828a97"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\kitti_mots.py",
+      "bytes": 22380,
+      "sha256": "5d62bddeb7713e16107161556f619b58a39e5397c3c6eee0dba965b82cb8ea33"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\mot_challenge_2d_box.py",
+      "bytes": 23976,
+      "sha256": "d636323991fa30e183acd898d89e26e3be04f8000b56c3f2f45b9940315af54f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\mots_challenge.py",
+      "bytes": 23613,
+      "sha256": "dd310372291fe42f1ba771d39d24e26c424a994f2d98838f910704f64cc636f5"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\person_path_22.py",
+      "bytes": 24966,
+      "sha256": "c2d96f176d547bca3a208853bbb7b4cac3b353f85681c66f30a5aaa8e22ed9bb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\rob_mots.py",
+      "bytes": 28123,
+      "sha256": "75756304b69fa7df1cb2c7e8bc505833ed098ed308002d452312083fe4463305"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\rob_mots_classmap.py",
+      "bytes": 1270,
+      "sha256": "db79031762d5fb55c009999cdb89586a70d11a1deaf2e1948192387872a64d1e"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\tao.py",
+      "bytes": 29842,
+      "sha256": "82fb49965e30b2d108aecdd38e538d5c0a24bc383ee347e19d2195fd8b3e4f3f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\tao_ow.py",
+      "bytes": 33927,
+      "sha256": "a9854eaebbb0c66a71a4012192f337a808917e09ab7b74cb704cbc0dcc690e39"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\datasets\\youtube_vis.py",
+      "bytes": 19626,
+      "sha256": "aa04208b1b7e5fa9018e0066d42be03c0dd68f4bf7dfcb626c85fd7dc52cac2c"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\eval.py",
+      "bytes": 12591,
+      "sha256": "7190887a1ab116e302da5b6b57bbc36a7c38c4267984c1518f44a25f025680fe"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\__init__.py",
+      "bytes": 212,
+      "sha256": "5fd5d495814450ecdb45e60cfd6a2b20b79c75a455d1a2ea2171a0df3cc2dc90"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\_base_metric.py",
+      "bytes": 5025,
+      "sha256": "dac8b87bf3801269aa280b1cf91184f483de4f4e5c158bd07a4b1733b1a5722b"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\clear.py",
+      "bytes": 9166,
+      "sha256": "ab3963eac401073fe1b2957c734af1e531368f42fca49627c14422350b2744f0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\count.py",
+      "bytes": 1584,
+      "sha256": "ffce9a3ed557f164f7a811f0a8cf66f609eec0af822dbc87d8fdaef560032163"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\hota.py",
+      "bytes": 10504,
+      "sha256": "c582255c3d36bdb49c3ceeb2a5bd912cee009190dfcfe465b4173d03aaa97d6a"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\identity.py",
+      "bytes": 6214,
+      "sha256": "e76b1bdcbf5b193662431596a984cf70a5be32e903eb5f2a3d9921b4762f93ba"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\ideucl.py",
+      "bytes": 5514,
+      "sha256": "1009ec40533df6fb28ad3397be745394a6ab970b02920e711808cb78b1720eeb"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\j_and_f.py",
+      "bytes": 13021,
+      "sha256": "9872e658209634e5b07cb080c43308073d65fa32003c9285ecbdf2e60898dccc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\track_map.py",
+      "bytes": 20859,
+      "sha256": "492b588ca63d1adce96530f914239530fac1b018e5a2c603f036a3337d9aefb0"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\metrics\\vace.py",
+      "bytes": 5881,
+      "sha256": "13db97a61cc7291e5356c80a0a4f11a88b75a9664a81fc903d6bd41a1cd6ffdc"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\plotting.py",
+      "bytes": 8400,
+      "sha256": "6d3ebada977b6990527dab143e0e4a0bbf5f1dd64f46bf214701a64acadba13f"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\trackeval\\utils.py",
+      "bytes": 5806,
+      "sha256": "c082ecfbb5061619642b82a034454022806f8e870f774e54dbfbdacaaf097132"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\sam3_i1_validation_20260915\\prepare_truth.py",
+      "bytes": 1943,
+      "sha256": "7bf238da695a947a00e94b08b90a2a43a4feb6f00b2e5e31c794bd02c633e33f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\evaluate.py",
+      "bytes": 15885,
+      "sha256": "d7a6a323688a67631dc258e22100b84db2a9ad2d5c589ebf906fa5937e4d6513"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\finish_scoring.py",
+      "bytes": 4125,
+      "sha256": "4ab505aec0be9c0d0a80b2c04146b1c10da651a82b4dcb49c0d8f5efcb6b616d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds18_association_evidence_interface_repair\\mixed_depth.py",
+      "bytes": 16681,
+      "sha256": "12b7564afb69690dd85be60c2af88744c784e97d62ad5dcbacbb9c2458abfbb7"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_measurement.py",
+      "bytes": 3198,
+      "sha256": "6269c807b0c361fecc5e35061193d82754a5af067ebf3d7999637af16000787e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "bytes": 6837,
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\postseal.py",
+      "bytes": 8787,
+      "sha256": "d3659d17bee641dc815b01542a1448621f8bf6543f0e34ab052d8f93c26638f1"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds20_pending_confirmation_isolation\\score.py",
+      "bytes": 56496,
+      "sha256": "e9fa6547e815e00be9b993904b3ccd6aa8182cb2cc97b23fb80c67009e7f0fa9"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\depth.py",
+      "bytes": 8142,
+      "sha256": "17f7dd00621b8a983d65d57149977bed791b2ad0d7cda5fea7dfab6c4ef118d4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\common.py",
+      "bytes": 1795,
+      "sha256": "1fc91b92d2e6bd21600e1c8aba260ad989540a8d5b99af93be6c62b1855c6fcc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\evidence.py",
+      "bytes": 14988,
+      "sha256": "44fc0e741e8d6e186a684eb071b8b11b5f15fa909490dd243d6d473595915190"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\score.py",
+      "bytes": 35303,
+      "sha256": "9fd0eb6809762b9b751a75cf090d3a182b11d10836058186dd17b8a901359345"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\CONFIG.json",
+      "bytes": 974,
+      "sha256": "fe9140eaa8c6b4673b46cd2fa89f04d433e0fa15f0155e41bc805855182c1e62"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\DATA_CONTRACT.md",
+      "bytes": 7527,
+      "sha256": "d474832e21ea4ecc7af29f191a165714dd21161f249683e5596ab12f81c7e55d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\PLAN.md",
+      "bytes": 5189,
+      "sha256": "01ce787c381096bde0a3754296ebeaf51d945c916c4d61e6334863ea889ca66e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\README.md",
+      "bytes": 875,
+      "sha256": "0b77e370de69b46e304e06212b8d86151f15c600767e3018dafd679037a375bf"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\assemble_acceptance.py",
+      "bytes": 10193,
+      "sha256": "ae633c1944fb3bb7300b4016a0054fb9108bc176f0683599ee5e73158c93e977"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_evidence.py",
+      "bytes": 9675,
+      "sha256": "a2420cb0130ad2fef0fa21ce34325f3949c4168d6f90bc86671daf51d2a6c43f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_flow.py",
+      "bytes": 11343,
+      "sha256": "cc3eeb13806f26ee40d7a5fce39e9011d2aa524f181800fe0e609728ee5e6c2d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_history.py",
+      "bytes": 4654,
+      "sha256": "706e0b861a938756eae998a8c6f1bf822e24ec22b1ee0f4cab70cd381262a989"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_lag.py",
+      "bytes": 5101,
+      "sha256": "ad76cfc771152cee4e41615997dc131cf2e1017b2612f764ef0532428cb5625f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_score.py",
+      "bytes": 10691,
+      "sha256": "c2d31cb1233573529504f2ae00f8136920930a3ef08532089f1138f3d0ba7970"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_state.py",
+      "bytes": 17842,
+      "sha256": "1b12e46db336758a449e9e58ec770438701b4b250000879262e1b174f97308c8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\common.py",
+      "bytes": 1827,
+      "sha256": "2f0def83be5e2febc6bef4df960c181cc7ce006c5442bb7f14d26120d9d775d4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\delivery.py",
+      "bytes": 8572,
+      "sha256": "222905410d72def4fd6f3061f0a54927144ea487a7bc99a738d2d44955104a85"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\evidence.py",
+      "bytes": 19950,
+      "sha256": "c59c255a1fccbbe59a220eb5ad8d711faa65fb462008bb31e5e0c96ab5e84b53"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\execute_unique.py",
+      "bytes": 2096,
+      "sha256": "22dff1784bd5b3bb7c055819801bfc45cee3a562dc6ab4c384d402b81d1e20aa"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\flow.py",
+      "bytes": 21953,
+      "sha256": "a39461177860db1092f2fbfd02b9ab77ec3025c3b340c79c849e51fd032647be"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\freeze.py",
+      "bytes": 4585,
+      "sha256": "8651eafe55d0857c3748b02c16f7faf4aa3303c6a953d2f70533b3902b653762"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\guard.py",
+      "bytes": 3161,
+      "sha256": "bcdf90a07ce46fb299e7433b722e39ee092a4ecd9d28917ec8117f8035af3d1a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\history.py",
+      "bytes": 5952,
+      "sha256": "9c9df3f9ceb60f1653ca9df0bbc1cea6a0bbc7f345eef9ef91f9acaec7ce899a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\lag.py",
+      "bytes": 8045,
+      "sha256": "f52be38f147e115861f8bb60fb24ce86de0cc64e1e897261acea293fd8107881"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\manager.py",
+      "bytes": 6627,
+      "sha256": "68769c14cce4fa082ff5b621b695f6a504f269808f3c7ea657bd3aa2ebf99be2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\orchestrate.py",
+      "bytes": 1976,
+      "sha256": "ce19b3773f707bf43c23ad1e071f441e53774361462ac525500ed7673103952a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\post_visuals.py",
+      "bytes": 14335,
+      "sha256": "2c795282bebdb4bb2b696ed406096c240919da05c885881480d6ce553cfbe591"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\real_acceptance.py",
+      "bytes": 11848,
+      "sha256": "57bc927f941b0e06b80ce8b7fbddd70563e4c7ca422ce7ec0f9814617fc3fd97"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\report.py",
+      "bytes": 25816,
+      "sha256": "f5c0c07f88f0615a38ac663675a040f4e09f259f957a0b3dd65cd7a012be0763"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\review_ready.py",
+      "bytes": 7425,
+      "sha256": "0fea1d58ea61c20fb52b288167df7953e25e367a36f954d4d55c94fe67f88576"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\runner.py",
+      "bytes": 18612,
+      "sha256": "b7123109531e4b39b5d26e5298236d9af48daee4b24cb3a1288fd407e1de5755"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\score.py",
+      "bytes": 50728,
+      "sha256": "7bcf0d3b4d68a306d7357923157e267959a48b9745c93d43a7d361e47d463f47"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\sensor.py",
+      "bytes": 7575,
+      "sha256": "f7f916cefb4a8ac8f1b147a0098aece0999e6f7f6d8fa868729a8ad786d4acc8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\transaction.py",
+      "bytes": 17294,
+      "sha256": "bcf4fb7df75acce38b052efe5679aacb4f2ee8e07d2f13d5a809562757366459"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\verify_inputs.py",
+      "bytes": 3102,
+      "sha256": "84e5743cc34ae738c4952f62f95d2bcda63b031d32a9c54926b9291fa6b4a809"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\mask_geometry.py",
+      "bytes": 2030,
+      "sha256": "ed732fc4433f2c4ab55d7b0f6ca8c3ce6ec837b1fa3e09ac6b36520dfe511a14"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py",
+      "bytes": 27497,
+      "sha256": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\score.py",
+      "bytes": 7658,
+      "sha256": "7a596967f82980d2ea2f8a487cab7af7101a5f85d646ca3eba4f08b07588da02"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan.py",
+      "bytes": 7863,
+      "sha256": "1a6dfa6e91799b8d422f69ae2572b147db3cde62b807c90de2115ba02d68b5e2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py",
+      "bytes": 8442,
+      "sha256": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json",
+      "bytes": 503,
+      "sha256": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py",
+      "bytes": 5882,
+      "sha256": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py",
+      "bytes": 6545,
+      "sha256": "f199d1d78b653bfdbd46b6575da4c6d77e79f1b8fc89463d929843e4ba79950b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py",
+      "bytes": 6658,
+      "sha256": "73ab21fdb0cad0986c967cfc5d56f5174451ee90111c27324afee4b9fae976fc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py",
+      "bytes": 11765,
+      "sha256": "fd2e5aa648281a590c00737d90dd8099af09c8fbdd133c768a5104b965b5afb4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py",
+      "bytes": 9036,
+      "sha256": "ec1c50d2b948968ebbe77913ddcfe323bed1e84b346ca49fdd44e4dd70a11562"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_identity_balance_20260917\\controller.py",
+      "bytes": 12261,
+      "sha256": "cd47bec3c3726a1a34b7af76be07fc7d20d4c2c049bd7822fab0ef5dd36a3b09"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py",
+      "bytes": 4301,
+      "sha256": "233f180ff8a6a14f43a0e133606281644f0257b4a4d303794ac007df84d563b6"
+    },
+    {
+      "path": "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\Lib\\site-packages\\scipy\\optimize\\_lsap.cp312-win_amd64.pyd",
+      "bytes": 190976,
+      "sha256": "34e851d39d8c07b071e1206752073b86d29e5cfb63001bc611805ac1d0db7772"
+    }
+  ],
+  "GT_opened": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "scope": "Engineering/source/arithmetic only; not performance or physical identity qualification"
+}

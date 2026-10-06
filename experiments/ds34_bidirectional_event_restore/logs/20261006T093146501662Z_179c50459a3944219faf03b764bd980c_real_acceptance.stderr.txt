@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds34_bidirectional_event_restore\real_acceptance.py", line 144, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds34_bidirectional_event_restore\real_acceptance.py", line 79, in main
+    try:v=qview if current==q else selected.preview(current,r['time'],r['observations'],p['profiles'])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\bridge.py", line 64, in preview
+    ids, trace = trial.step(frame, now, observations, profiles)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds34_bidirectional_event_restore\transaction.py", line 45, in step
+    return super().step(frame, now, observations, profiles)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\source\sam3_depth_return_guard_20260918\controller_return.py", line 55, in step
+    ids, trace = super().step(frame, now, active, active_profiles)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\source\sam3_depth_birth_quality_20260918\controller_z4.py", line 72, in step
+    ids, trace = super().step(frame, now, active, active_profiles)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\source\sam3_depth_birth_native_prior_20260918\controller_z3.py", line 105, in step
+    ids, trace = super().step(frame, now, observations, profiles)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\source\sam3_depth_birth_refine_20260918\controller_z2.py", line 162, in step
+    ids,tr=super().step(frame,now,obs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\online\closed_loop_2888\z4q_source\source\sam3_depth_failure_repair_20260917\repair_controller_r3.py", line 35, in step
+    assert len(occupied)==len(native)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

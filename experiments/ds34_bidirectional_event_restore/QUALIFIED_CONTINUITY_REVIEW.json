@@ -1,0 +1,51 @@
+{
+  "schema": "DS34_QUALIFIED_CONTINUITY_INDEPENDENT_REVIEW_V1",
+  "status": "PASS",
+  "created_utc": "2026-10-06T09:48:56.205942+00:00",
+  "scope": "Additional actual Engine synthetic continuity branch check; no strategy edits, no GT or performance claim.",
+  "fixture": "Original group1 at F8 migrates to carrier3 at F9; old1 absent, old2 zero-area residual. Real priorpublic carrier3=1. Latent outsidealias99→2 forces LOCAL_FALLBACK_UNRESOLVED.",
+  "first_q_frame": 10,
+  "next_frame": 11,
+  "first_mapping": {
+    "8": 7,
+    "3": 1,
+    "4": 4
+  },
+  "next_mapping": {
+    "8": 7,
+    "3": 1,
+    "4": 4
+  },
+  "actual_alias3": {
+    "target": 1,
+    "anchor": {
+      "frame": 7,
+      "native_id": 1,
+      "mask": "n:1",
+      "canonical_id": 1
+    },
+    "commit_frame": 10,
+    "source": "DS34_UNRESOLVED_SOURCE_CONTINUITY",
+    "transaction_version": 10
+  },
+  "unchanged_original_bank1_at_q": true,
+  "authoritative_state_unchanged_by_stage": true,
+  "outside_aliases8_to7_and99_to2_preserved_at_q_and_next": true,
+  "science_code_modified": false,
+  "synthetic_only": true,
+  "physical_identity_accuracy": "UNKNOWN",
+  "GT_opened": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "execution": {
+    "python": "E:/researchsoftware/anaconda3/envs/D-MOT/python.exe",
+    "mode": "stdin -B",
+    "exit_code": 0,
+    "wall_time_seconds": 1.0235665
+  },
+  "transaction": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\transaction.py",
+    "bytes": 13276,
+    "sha256": "740ccf3fa9b5e3b43ddfc30444bcddc7cef7a62e328dd249a1cc2e63d646f572"
+  }
+}

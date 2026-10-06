@@ -1,0 +1,490 @@
+{
+  "schema": "DS34_INTEGRATED_CONTRACT_REVIEW_V1",
+  "status": "PASS",
+  "created_utc": "2026-10-06T09:42:37.781093+00:00",
+  "scope": "Read-only integrated runtime/evidence/scorer inspection and specific synthetic bug reproduction; not performance or physical accuracy approval",
+  "GT_opened": false,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "formal_jobs_launched": false,
+  "old_science_files_modified": false,
+  "code": [
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\__init__.py",
+      "bytes": 22,
+      "sha256": "492e40efdd86392fcc0109f97ac48a095fcd59a62afbba7c1642dc2b3700c4e8"
+    },
+    {
+      "path": "E:\\CAU\\D-MOT\\tools\\jev_z4q_scene_v1_20260922\\deps\\pycocotools\\mask.py",
+      "bytes": 4693,
+      "sha256": "1281ce0b5436ffe924c96521b2ae1d589f6f0e2a7b7281b6bb284f7b2245545c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds14_raw_multidataset\\source.py",
+      "bytes": 9676,
+      "sha256": "19404334ab98ca3fac749ba04f7a0098820764c8fef9a9e8db72ac1ff1e8c97c"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds1_depth_only\\depth_state.py",
+      "bytes": 6837,
+      "sha256": "ba7a69b902471459c37e6133aa90732569c4d5d5443fa6784098ff1d3d1f1453"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds31_persistent_identity_depth\\depth.py",
+      "bytes": 8142,
+      "sha256": "17f7dd00621b8a983d65d57149977bed791b2ad0d7cda5fea7dfab6c4ef118d4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\evidence.py",
+      "bytes": 14988,
+      "sha256": "44fc0e741e8d6e186a684eb071b8b11b5f15fa909490dd243d6d473595915190"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\flow.py",
+      "bytes": 21953,
+      "sha256": "a39461177860db1092f2fbfd02b9ab77ec3025c3b340c79c849e51fd032647be"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\sensor.py",
+      "bytes": 7575,
+      "sha256": "f7f916cefb4a8ac8f1b147a0098aece0999e6f7f6d8fa868729a8ad786d4acc8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\CONFIG.json",
+      "bytes": 974,
+      "sha256": "fe9140eaa8c6b4673b46cd2fa89f04d433e0fa15f0155e41bc805855182c1e62"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_evidence.py",
+      "bytes": 9675,
+      "sha256": "a2420cb0130ad2fef0fa21ce34325f3949c4168d6f90bc86671daf51d2a6c43f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_flow.py",
+      "bytes": 11343,
+      "sha256": "cc3eeb13806f26ee40d7a5fce39e9011d2aa524f181800fe0e609728ee5e6c2d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_history.py",
+      "bytes": 4654,
+      "sha256": "706e0b861a938756eae998a8c6f1bf822e24ec22b1ee0f4cab70cd381262a989"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_lag.py",
+      "bytes": 5101,
+      "sha256": "ad76cfc771152cee4e41615997dc131cf2e1017b2612f764ef0532428cb5625f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_score.py",
+      "bytes": 10277,
+      "sha256": "cd59046f61147ffe763b22743a0dfaabd2f29bd9b27223320a400817ad241ad2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_state.py",
+      "bytes": 13526,
+      "sha256": "b83b60f9ef46b6f709d0afe6458a97b770664215f39c7b80c0413de3f586def2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\common.py",
+      "bytes": 1827,
+      "sha256": "2f0def83be5e2febc6bef4df960c181cc7ce006c5442bb7f14d26120d9d775d4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\evidence.py",
+      "bytes": 19950,
+      "sha256": "c59c255a1fccbbe59a220eb5ad8d711faa65fb462008bb31e5e0c96ab5e84b53"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\execute_unique.py",
+      "bytes": 2096,
+      "sha256": "22dff1784bd5b3bb7c055819801bfc45cee3a562dc6ab4c384d402b81d1e20aa"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\flow.py",
+      "bytes": 21953,
+      "sha256": "a39461177860db1092f2fbfd02b9ab77ec3025c3b340c79c849e51fd032647be"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\freeze.py",
+      "bytes": 4585,
+      "sha256": "8651eafe55d0857c3748b02c16f7faf4aa3303c6a953d2f70533b3902b653762"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\guard.py",
+      "bytes": 3161,
+      "sha256": "bcdf90a07ce46fb299e7433b722e39ee092a4ecd9d28917ec8117f8035af3d1a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\history.py",
+      "bytes": 5952,
+      "sha256": "9c9df3f9ceb60f1653ca9df0bbc1cea6a0bbc7f345eef9ef91f9acaec7ce899a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\lag.py",
+      "bytes": 8045,
+      "sha256": "f52be38f147e115861f8bb60fb24ce86de0cc64e1e897261acea293fd8107881"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\manager.py",
+      "bytes": 6627,
+      "sha256": "68769c14cce4fa082ff5b621b695f6a504f269808f3c7ea657bd3aa2ebf99be2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\orchestrate.py",
+      "bytes": 1976,
+      "sha256": "ce19b3773f707bf43c23ad1e071f441e53774361462ac525500ed7673103952a"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\real_acceptance.py",
+      "bytes": 11670,
+      "sha256": "16bc3174eb46a7fa24d77c9251d012be34fd300b1f06613e8f2518d0b87a8c27"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\runner.py",
+      "bytes": 18612,
+      "sha256": "b7123109531e4b39b5d26e5298236d9af48daee4b24cb3a1288fd407e1de5755"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\score.py",
+      "bytes": 50008,
+      "sha256": "d17101ec02ce875b285497d34b161ab5da0a62dc9e2d4ce23214f9bfcd54a47e"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\sensor.py",
+      "bytes": 7575,
+      "sha256": "f7f916cefb4a8ac8f1b147a0098aece0999e6f7f6d8fa868729a8ad786d4acc8"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\transaction.py",
+      "bytes": 13276,
+      "sha256": "740ccf3fa9b5e3b43ddfc30444bcddc7cef7a62e328dd249a1cc2e63d646f572"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\verify_inputs.py",
+      "bytes": 3102,
+      "sha256": "84e5743cc34ae738c4952f62f95d2bcda63b031d32a9c54926b9291fa6b4a809"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\mask_geometry.py",
+      "bytes": 2030,
+      "sha256": "ed732fc4433f2c4ab55d7b0f6ca8c3ce6ec837b1fa3e09ac6b36520dfe511a14"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\merge_split_manager.py",
+      "bytes": 27497,
+      "sha256": "58c3ef2d6946316fe8fdbc03fbc94bb5598ddb18ff7f4e82e254c54046494cd0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ms1_s0_development_8400\\source_scan.py",
+      "bytes": 7863,
+      "sha256": "1a6dfa6e91799b8d422f69ae2572b147db3cde62b807c90de2115ba02d68b5e2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\s0p_identity_publication\\manager_p.py",
+      "bytes": 8442,
+      "sha256": "777dfde3711fb7d093a9eb1cd4d7d96ca2a9ebc4bd3f606fce0a6bfe91d5478d"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\CONFIG.json",
+      "bytes": 503,
+      "sha256": "c61977b03dff6cba903b1b3fd4d3b84cab22525681e604460d2f876b6d6698af"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\bridge.py",
+      "bytes": 5882,
+      "sha256": "3b77f2554914b291cea95f91d0a0ec9441426c0f615bd566fc1c1a20364a0aed"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_native_prior_20260918\\controller_z3.py",
+      "bytes": 6545,
+      "sha256": "f199d1d78b653bfdbd46b6575da4c6d77e79f1b8fc89463d929843e4ba79950b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_quality_20260918\\controller_z4.py",
+      "bytes": 6658,
+      "sha256": "73ab21fdb0cad0986c967cfc5d56f5174451ee90111c27324afee4b9fae976fc"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_birth_refine_20260918\\controller_z2.py",
+      "bytes": 11765,
+      "sha256": "fd2e5aa648281a590c00737d90dd8099af09c8fbdd133c768a5104b965b5afb4"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_failure_repair_20260917\\repair_controller_r3.py",
+      "bytes": 9036,
+      "sha256": "ec1c50d2b948968ebbe77913ddcfe323bed1e84b346ca49fdd44e4dd70a11562"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_identity_balance_20260917\\controller.py",
+      "bytes": 12261,
+      "sha256": "cd47bec3c3726a1a34b7af76be07fc7d20d4c2c049bd7822fab0ef5dd36a3b09"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\online\\closed_loop_2888\\z4q_source\\source\\sam3_depth_return_guard_20260918\\controller_return.py",
+      "bytes": 4301,
+      "sha256": "233f180ff8a6a14f43a0e133606281644f0257b4a4d303794ac007df84d563b6"
+    }
+  ],
+  "configuration": {
+    "lag_frames": 30,
+    "history_frames": 30,
+    "fit_observations": 10,
+    "max_history_seconds": 12.0,
+    "max_episode_seconds": 10.0,
+    "short_endpoint_frames": 3,
+    "geometry_prediction_horizon_seconds": 1.0,
+    "motion_weight": 0.25,
+    "contour_weight": 0.25,
+    "confirmation_clean_frames": 3,
+    "track_expiry_seconds": 12.0,
+    "flow": {
+      "algorithm": "OPENCV_DIS_MEDIUM",
+      "fb_max_px": 1.5,
+      "texture_min_std": 2.0,
+      "texture_window_px": 5,
+      "photometric_max_gray": 25.0,
+      "min_correspondences": 16,
+      "min_correspondence_fraction": 0.2,
+      "depth_edge_jump_mm": 60.0,
+      "point_patch_px": 32,
+      "point_min_patch_points": 16,
+      "point_scale_floor_mm": 15.0,
+      "point_scale_cap_mm": 60.0,
+      "point_residual_sigma": 3.0,
+      "point_mad_sigma": 1.4826
+    },
+    "min_contour_dice": 0.25,
+    "min_joint_margin": 0.1,
+    "min_reliable_contour_fraction": 0.2,
+    "depth_weight": 0.25,
+    "max_joint_sources": 2,
+    "new_model_http": 0,
+    "cost_usd": 0
+  },
+  "resolved_findings": [
+    {
+      "id": "UNSAFE_FALLBACK_OUTPUT_ONLY_PERSISTENT_ID",
+      "before": "Supported original-carrier migration with preserved zero-area residuals and an outside latent alias published native3 as public0 without bank0 or alias3; next frame returned3.",
+      "correction": "Event-native fields are taken from an actual own-branch q step. A continuous prior persistent claim requires exact past bank, clean_count>=5, no outside visible/latent owner; other claims use engine-supported candidate/native or explicitly unresolved token.",
+      "independent_reproduction_after_patch": {
+        "first_q_mapping": {
+          "8": 7,
+          "3": 3,
+          "4": 4
+        },
+        "next_mapping": {
+          "8": 7,
+          "3": 3,
+          "4": 4
+        },
+        "outside_alias99_target": 2,
+        "no_bank0": true
+      }
+    },
+    {
+      "id": "UNPUBLISHED_PREVIEW_NOT_ACTUAL_PUBLICATION",
+      "before": "restore.changes used never-published protected H1 preview and could miss real staged H1 identity changes.",
+      "correction": "Internal preview_changes retained explicitly. Actual first publication compared independently to same-source Z4Q_FROZEN and SAM3_NATIVE; changed stage/fallback counts use Z4Q comparison."
+    },
+    {
+      "id": "SOURCE_TO_SCORE_ARITHMETIC_BINDING",
+      "correction": "Independent scorer derives expected joint modality weights from all actual edge availability; checks position/motion means, exact DS31 depth costs, bidirectional contour costs and selected physical mapping."
+    }
+  ],
+  "verified_contracts": [
+    "Fixed first split q; no GT-selected trigger/reference/source/clean window.",
+    "Exact frozen bank anchor registry pins historical native/public/version; no current-member native substitution.",
+    "Group and pending post cannot establish clean individual pre history even with empty neighbors.",
+    "Manager permanently breaks post at every missing native/source-generation change; anonymous public_epoch remains None.",
+    "First three consecutive raw-clean post samples from fixed sources selected at first readiness, not by ranking.",
+    "Only already acquired frames through decision cutoff<=q+30 may enter evidence.",
+    "Pre-to-post DIS is chronological and independently source-bound; post backward-to-q is diagnostic only.",
+    "Whole 2x2 contour/depth common-null avoids per-edge missing-information advantage; missing history is not filtered and stitched.",
+    "Own q-1 complete Bridge checkpoint is replayed q through cutoff; q bank writes use only <=q measured data, later frames use their own actual observations.",
+    "Candidate suffix is isolated; rejected state suffix is discarded before fallback replay and atomic LagBuffer.resolve.",
+    "All actual masks/residuals retained; public IDs unique per frame; published prefix immutable and each frame first published once.",
+    "Group restore preserves outside q state and rejects visible unselected member ownership; later outside decisions run their real own branch state.",
+    "Prediction access blocks GT/restored/annotations/network; all eight seals and input/publication verification precede reference scoring.",
+    "Physical preanchor/prefragment/post consensus/public-origin relations separate; UNKNOWN/DEFER/unscorable are not safety passes."
+  ],
+  "effective_method_boundaries": {
+    "future_authority": "Finite 30-frame unpublished lookahead; not S0 or realtime. future_in_q_state=False means no future measurements written into q bank, not absence of later evidence in identity inference.",
+    "depth_rank": "Unchanged DS31 DS18-qualified scalar depth/WLS normalized density. PairMotion 3D correspondence/point_support is not a candidate rank term; no full scene-flow claim.",
+    "contour_rank": "Last three pre x first confirmed three post all pair forward/back contour hypotheses; not observed hidden trajectories or identity truth.",
+    "minimum_contour_dice_configuration_is_inactive": true,
+    "fallback_continuity_clean_count": 5,
+    "native_and_Z4Q_controls": "Actual saved-source exact per-frame controls. No-event synthetic and disabled-prefix full engine state equality.",
+    "physical_accuracy": "UNKNOWN until sealed independent reference scoring; exposed and weak-reference limitations remain."
+  },
+  "actual_validation": {
+    "guarded_prefix": {
+      "frames": 205,
+      "published": 205,
+      "changed_frames": {
+        "EVENT_RGB": 88,
+        "EVENT_RGBD": 88
+      },
+      "joint_stages": {
+        "EVENT_RGB": 0,
+        "EVENT_RGBD": 0
+      },
+      "actual_flow_pairs": 0,
+      "interpretation": "Actual prediction/source/local fallback/publication coverage only. No clean-confirmed joint choice and no contour/depth effectiveness claim."
+    },
+    "actual_sensor_transaction_slice": {
+      "frames": 78,
+      "q": 48,
+      "cutoff": 50,
+      "mock_choice": "H2",
+      "staged": false,
+      "error": "UNSELECTED_MEMBER_OWNERSHIP",
+      "actual_flow_pairs": 9,
+      "first_publish_arrival": 78,
+      "published_once": true,
+      "method_result": false,
+      "interpretation": "First actual automatic event, mocked H2 engineering action, genuine endpoint sensor/flow bindings. Rejected ownership safely falls back; not a model/method correctness result."
+    },
+    "executed_validation": {
+      "actual_engine_state_checks": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_state.py"
+        ],
+        "started_utc": "2026-10-06T09:36:01.441079+00:00",
+        "ended_utc": "2026-10-06T09:36:02.307332+00:00",
+        "elapsed_seconds": 0.8665976000484079,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093601441079Z_fb15d4efd1084db58f78e496702aa696_checks_state.stdout.txt",
+          "bytes": 113,
+          "sha256": "8a2ab7d325db02fab1b9875866999e33b700a0f56eb0f015f728e0c13c4e31c5"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093601441079Z_fb15d4efd1084db58f78e496702aa696_checks_state.stderr.txt",
+          "bytes": 1694,
+          "sha256": "cf25214fba6f2ccf4ef0e081b46aac73c8595896402f7622880afb492091d118"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      },
+      "actual_sensor_transaction_slice": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\real_acceptance.py"
+        ],
+        "started_utc": "2026-10-06T09:37:54.434084+00:00",
+        "ended_utc": "2026-10-06T09:38:04.273627+00:00",
+        "elapsed_seconds": 9.839351000031456,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093754434084Z_3ec3ed94cc4744f4ac328f6d3c423735_real_acceptance.stdout.txt",
+          "bytes": 200,
+          "sha256": "3c0df5bdebc7757b06d5fc5d11cffb2bb948931a8a073582c10e68f9a948f502"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093754434084Z_3ec3ed94cc4744f4ac328f6d3c423735_real_acceptance.stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      },
+      "disabled_original_state_prefix": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\guard.py",
+          "prefix",
+          "feeding_000351_000555",
+          "60",
+          "slice_disabled_final",
+          "disabled"
+        ],
+        "started_utc": "2026-10-06T09:38:30.696866+00:00",
+        "ended_utc": "2026-10-06T09:38:42.144641+00:00",
+        "elapsed_seconds": 11.44838110008277,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093830696866Z_511a4b9c47a54dd0b8dc3b0e3ad6469a_guard.stdout.txt",
+          "bytes": 33,
+          "sha256": "599452edb4570edb42546844d62703dbbb6c5a21e7b8feea45679b115a7c857a"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093830696866Z_511a4b9c47a54dd0b8dc3b0e3ad6469a_guard.stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      },
+      "guarded_205_frame_prefix": {
+        "command": [
+          "E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe",
+          "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\guard.py",
+          "prefix",
+          "feeding_000351_000555",
+          "205",
+          "slice_freeze_acceptance"
+        ],
+        "started_utc": "2026-10-06T09:38:32.225153+00:00",
+        "ended_utc": "2026-10-06T09:39:27.754580+00:00",
+        "elapsed_seconds": 55.52989060012624,
+        "exit_code": 0,
+        "stdout": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093832225153Z_46b9be35e46945ce8c660aceaac60100_guard.stdout.txt",
+          "bytes": 34,
+          "sha256": "9f5e62e3d231c7541b3c2c706fae7902a340eef82edf657dfd4667bfc9dfb391"
+        },
+        "stderr": {
+          "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\logs\\20261006T093832225153Z_46b9be35e46945ce8c660aceaac60100_guard.stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "new_model_http": 0,
+        "cost_usd": 0
+      }
+    },
+    "artifacts": [
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\REAL_INPUT_SLICE.json",
+        "bytes": 421634,
+        "sha256": "081f87737e4187da87d92fa86f3a44807eab3c23d0cef9f29db5f5b2e35e26fd"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\REAL_INPUT_SLICE_ACCESS.json",
+        "bytes": 4898,
+        "sha256": "840f44a3aba3af2b150cc0957d8e25b6c0cf78171c627d9f89ef74952c12143b"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\slice_freeze_acceptance\\feeding_000351_000555\\public\\PREDICTIONS_SEALED.json",
+        "bytes": 1116,
+        "sha256": "df669bcfcf4e8a8484081390812601018ffc573600c3ba69f80b61c8a4497d63"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\slice_freeze_acceptance\\feeding_000351_000555\\public\\PREFIX_FREEZE.json",
+        "bytes": 4697,
+        "sha256": "99c38ed32705e540f454636c1583690c2cf047080ab76dca7bff923f7301665e"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\slice_freeze_acceptance\\feeding_000351_000555\\public\\ACCESS.json",
+        "bytes": 1999,
+        "sha256": "23b8d42afbe394ef1b97a39737e3b0228f9c97c2a8d7738c03bfa87aef153407"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\slice_freeze_acceptance\\feeding_000351_000555\\public\\RUN_SUMMARY.json",
+        "bytes": 988,
+        "sha256": "5ca6e6b51cae7fdb66a0f53204261a69f0811acf7a3cd5c793d97ef7f7025da9"
+      },
+      {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\slice_disabled_final\\feeding_000351_000555\\public\\PREDICTIONS_SEALED.json",
+        "bytes": 1115,
+        "sha256": "2cde43c3677e5e51187411baac6cbcbf7c446a3661266ab6e47072185aec09de"
+      }
+    ]
+  },
+  "unresolved_limits": [
+    "No guarantee raw masks isolate physical fish surfaces; mixed/background depth remains qualified conditional evidence.",
+    "Short direct optical flow across an interaction gap can be ambiguous; no hidden physical trajectory certification.",
+    "Actual 205-frame prefix had zero joint-ready choices; broader actual method coverage and effect await frozen full replay.",
+    "Finite delayed replay can change future outside associations through legitimate own-state interactions; q-stage outside write-set preservation is not a claim of identical future outside outputs."
+  ]
+}

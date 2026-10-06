@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds34_bidirectional_event_restore\real_acceptance.py", line 144, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds34_bidirectional_event_restore\real_acceptance.py", line 133, in main
+    write_new(HERE/'REAL_INPUT_SLICE.json',receipt)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 70, in write_new
+    json.dump(value,f,ensure_ascii=False,indent=2,allow_nan=False,default=str);f.write('\n')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\json\__init__.py", line 179, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\json\encoder.py", line 377, in _iterencode_dict
+    raise TypeError(f'keys must be str, int, float, bool or None, '
+TypeError: keys must be str, int, float, bool or None, not tuple

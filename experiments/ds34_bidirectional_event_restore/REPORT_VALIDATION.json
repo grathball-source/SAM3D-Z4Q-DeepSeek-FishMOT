@@ -1,0 +1,2473 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-06T11:23:40.239093+00:00",
+  "scope": "Independent postseal review of published predictions, scored artifacts and final report; no science edits or rescoring.",
+  "frames": 20098,
+  "sources": 8,
+  "arms": [
+    "SAM3_NATIVE",
+    "Z4Q_FROZEN",
+    "EVENT_RGB",
+    "EVENT_RGBD"
+  ],
+  "official_metrics_rerun": false,
+  "new_reference_pixels_opened": false,
+  "frozen_code_current_hashes_match": true,
+  "all_prediction_seals_current": true,
+  "original_controls_all_frames_exact": true,
+  "metrics_native_Z4Q_same_DS33": true,
+  "feeding_pool_native_Z4Q_same_DS33": true,
+  "report_metrics_and_switch_tables_exact": true,
+  "all_masks_tokens_retained_and_public_IDs_unique": true,
+  "RGBD_minus_RGB_changed_frames": 0,
+  "metric_comparisons": {
+    "feeding_000000_000199": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 92.8897586431833,
+          "HOTA": 91.36252204380997,
+          "AssA": 88.0858769375677,
+          "IDSW": 10,
+          "FP": 76,
+          "FN": 143
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 92.12561737023577,
+          "HOTA": 90.4837479885973,
+          "AssA": 86.39966385114246,
+          "IDSW": 12,
+          "FP": 76,
+          "FN": 143
+        },
+        "EVENT_RGB": {
+          "IDF1": 92.8897586431833,
+          "HOTA": 91.24360554703888,
+          "AssA": 87.8567216105058,
+          "IDSW": 11,
+          "FP": 76,
+          "FN": 143
+        },
+        "EVENT_RGBD": {
+          "IDF1": 92.8897586431833,
+          "HOTA": 91.24360554703888,
+          "AssA": 87.8567216105058,
+          "IDSW": 11,
+          "FP": 76,
+          "FN": 143
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 0.0,
+          "HOTA": -0.11891649677109228,
+          "AssA": -0.22915532706190334,
+          "IDSW": 1,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.7641412729475263,
+          "HOTA": 0.7598575584415812,
+          "AssA": 1.4570577593633374,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "feeding_000351_000555": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 82.92727108051807,
+          "HOTA": 78.58284442084609,
+          "AssA": 72.1826902323686,
+          "IDSW": 22,
+          "FP": 148,
+          "FN": 201
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 82.89104247803641,
+          "HOTA": 78.14779790472312,
+          "AssA": 71.42993326096412,
+          "IDSW": 24,
+          "FP": 148,
+          "FN": 201
+        },
+        "EVENT_RGB": {
+          "IDF1": 82.89104247803641,
+          "HOTA": 78.443421890285,
+          "AssA": 71.97105489720246,
+          "IDSW": 24,
+          "FP": 148,
+          "FN": 201
+        },
+        "EVENT_RGBD": {
+          "IDF1": 82.89104247803641,
+          "HOTA": 78.443421890285,
+          "AssA": 71.97105489720246,
+          "IDSW": 24,
+          "FP": 148,
+          "FN": 201
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -0.036228602481656935,
+          "HOTA": -0.13942253056109166,
+          "AssA": -0.21163533516613597,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.0,
+          "HOTA": 0.29562398556187475,
+          "AssA": 0.5411216362383442,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "feeding_000701_001060": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 77.42803893145579,
+          "HOTA": 75.54502220156733,
+          "AssA": 65.0065795312991,
+          "IDSW": 36,
+          "FP": 154,
+          "FN": 278
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.56090513377626,
+          "AssA": 61.64216153704466,
+          "IDSW": 42,
+          "FP": 154,
+          "FN": 278
+        },
+        "EVENT_RGB": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.41292524974654,
+          "AssA": 61.4037156055833,
+          "IDSW": 44,
+          "FP": 154,
+          "FN": 278
+        },
+        "EVENT_RGBD": {
+          "IDF1": 75.63677780078692,
+          "HOTA": 73.41292524974654,
+          "AssA": 61.4037156055833,
+          "IDSW": 44,
+          "FP": 154,
+          "FN": 278
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -1.7912611306688717,
+          "HOTA": -2.132096951820799,
+          "AssA": -3.602863925715795,
+          "IDSW": 8,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.0,
+          "HOTA": -0.1479798840297235,
+          "AssA": -0.2384459314613565,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "feeding_001201_001906": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 78.83995135621001,
+          "HOTA": 78.72724758681133,
+          "AssA": 68.0893224800032,
+          "IDSW": 40,
+          "FP": 109,
+          "FN": 363
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 81.52593454237825,
+          "HOTA": 79.89251313802613,
+          "AssA": 70.1131434221072,
+          "IDSW": 54,
+          "FP": 109,
+          "FN": 363
+        },
+        "EVENT_RGB": {
+          "IDF1": 79.78639031354095,
+          "HOTA": 79.19117214834118,
+          "AssA": 68.89160722297014,
+          "IDSW": 51,
+          "FP": 109,
+          "FN": 363
+        },
+        "EVENT_RGBD": {
+          "IDF1": 79.78639031354095,
+          "HOTA": 79.19117214834118,
+          "AssA": 68.89160722297014,
+          "IDSW": 51,
+          "FP": 109,
+          "FN": 363
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 0.9464389573309404,
+          "HOTA": 0.4639245615298506,
+          "AssA": 0.8022847429669326,
+          "IDSW": 11,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -1.7395442288373033,
+          "HOTA": -0.701340989684951,
+          "AssA": -1.2215361991370628,
+          "IDSW": -3,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "fishsa_development_8400": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 91.31328783860297,
+          "HOTA": 73.3461431977153,
+          "AssA": 69.18676765844471,
+          "IDSW": 5,
+          "FP": 194,
+          "FN": 323
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 99.3334724001947,
+          "HOTA": 77.82948776478582,
+          "AssA": 77.90763828694708,
+          "IDSW": 6,
+          "FP": 194,
+          "FN": 323
+        },
+        "EVENT_RGB": {
+          "IDF1": 92.0404088565724,
+          "HOTA": 74.52655613190628,
+          "AssA": 71.4327326512706,
+          "IDSW": 5,
+          "FP": 194,
+          "FN": 323
+        },
+        "EVENT_RGBD": {
+          "IDF1": 92.0404088565724,
+          "HOTA": 74.52655613190628,
+          "AssA": 71.4327326512706,
+          "IDSW": 5,
+          "FP": 194,
+          "FN": 323
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 0.7271210179694236,
+          "HOTA": 1.1804129341909686,
+          "AssA": 2.24596499282589,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -7.293063543622296,
+          "HOTA": -3.302931632879549,
+          "AssA": -6.474905635676478,
+          "IDSW": -1,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "fishsa_validation_2888": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 76.4564442770648,
+          "HOTA": 66.43552909955413,
+          "AssA": 55.19605907649384,
+          "IDSW": 8,
+          "FP": 298,
+          "FN": 423
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 80.69758683623512,
+          "HOTA": 69.24386895965796,
+          "AssA": 60.07432145541481,
+          "IDSW": 9,
+          "FP": 298,
+          "FN": 423
+        },
+        "EVENT_RGB": {
+          "IDF1": 75.81911411106927,
+          "HOTA": 64.79601509419388,
+          "AssA": 52.584202342278594,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423
+        },
+        "EVENT_RGBD": {
+          "IDF1": 75.81911411106927,
+          "HOTA": 64.79601509419388,
+          "AssA": 52.584202342278594,
+          "IDSW": 11,
+          "FP": 298,
+          "FN": 423
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -0.6373301659955359,
+          "HOTA": -1.6395140053602546,
+          "AssA": -2.6118567342152446,
+          "IDSW": 3,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -4.8784727251658495,
+          "HOTA": -4.447853865464083,
+          "AssA": -7.490119113136217,
+          "IDSW": 2,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "L3": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 72.42678743430724,
+          "HOTA": 75.36260748728535,
+          "AssA": 94.25965452544987,
+          "IDSW": 1,
+          "FP": 14677,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0
+        },
+        "EVENT_RGBD": {
+          "IDF1": 74.74525575814927,
+          "HOTA": 77.17155756317197,
+          "AssA": 98.83904547424706,
+          "IDSW": 2,
+          "FP": 14677,
+          "FN": 0
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": 2.3184683238420263,
+          "HOTA": 1.808950075886628,
+          "AssA": 4.579390948797183,
+          "IDSW": 1,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    },
+    "LW": {
+      "metrics": {
+        "SAM3_NATIVE": {
+          "IDF1": 60.61353373435756,
+          "HOTA": 66.36906738520446,
+          "AssA": 77.55512121843537,
+          "IDSW": 7,
+          "FP": 16493,
+          "FN": 28
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": 64.3293952976855,
+          "HOTA": 68.9917212023931,
+          "AssA": 83.80559725800063,
+          "IDSW": 10,
+          "FP": 16493,
+          "FN": 28
+        },
+        "EVENT_RGB": {
+          "IDF1": 58.68728442170863,
+          "HOTA": 65.22029147508688,
+          "AssA": 74.89356943591149,
+          "IDSW": 10,
+          "FP": 16493,
+          "FN": 28
+        },
+        "EVENT_RGBD": {
+          "IDF1": 58.68728442170863,
+          "HOTA": 65.22029147508688,
+          "AssA": 74.89356943591149,
+          "IDSW": 10,
+          "FP": 16493,
+          "FN": 28
+        }
+      },
+      "deltas": {
+        "SAM3_NATIVE": {
+          "IDF1": -1.9262493126489275,
+          "HOTA": -1.1487759101175783,
+          "AssA": -2.661551782523887,
+          "IDSW": 3,
+          "FP": 0,
+          "FN": 0
+        },
+        "Z4Q_FROZEN": {
+          "IDF1": -5.6421108759768615,
+          "HOTA": -3.771429727306213,
+          "AssA": -8.912027822089144,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGB": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    }
+  },
+  "feeding_pooled": {
+    "frames": 1471,
+    "metrics": {
+      "SAM3_NATIVE": {
+        "IDF1": 80.97675951035305,
+        "HOTA": 79.96405589527662,
+        "AssA": 71.53049876161319,
+        "DetA": 89.73060596672879,
+        "IDSW": 108,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "Z4Q_FROZEN": {
+        "IDF1": 81.7168056365157,
+        "HOTA": 79.8598513405802,
+        "AssA": 71.34178214830844,
+        "DetA": 89.72335279629931,
+        "IDSW": 132,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "EVENT_RGB": {
+        "IDF1": 80.98689712851966,
+        "HOTA": 79.65028972410191,
+        "AssA": 70.98353484501874,
+        "DetA": 89.7188402200263,
+        "IDSW": 130,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      },
+      "EVENT_RGBD": {
+        "IDF1": 80.98689712851966,
+        "HOTA": 79.65028972410191,
+        "AssA": 70.98353484501874,
+        "DetA": 89.7188402200263,
+        "IDSW": 130,
+        "FP": 487,
+        "FN": 985,
+        "GT": 39706,
+        "predictions": 39208
+      }
+    },
+    "deltas": {
+      "SAM3_NATIVE": {
+        "EVENT_RGB": {
+          "IDF1": 0.010137618166609741,
+          "HOTA": -0.31376617117470573,
+          "AssA": -0.54696391659445,
+          "DetA": -0.011765746702494084,
+          "IDSW": 22,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGBD": {
+          "IDF1": 0.010137618166609741,
+          "HOTA": -0.31376617117470573,
+          "AssA": -0.54696391659445,
+          "DetA": -0.011765746702494084,
+          "IDSW": 22,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "Z4Q_FROZEN": {
+        "EVENT_RGB": {
+          "IDF1": -0.7299085079960435,
+          "HOTA": -0.20956161647829674,
+          "AssA": -0.35824730328970134,
+          "DetA": -0.004512576273015156,
+          "IDSW": -2,
+          "FP": 0,
+          "FN": 0
+        },
+        "EVENT_RGBD": {
+          "IDF1": -0.7299085079960435,
+          "HOTA": -0.20956161647829674,
+          "AssA": -0.35824730328970134,
+          "DetA": -0.004512576273015156,
+          "IDSW": -2,
+          "FP": 0,
+          "FN": 0
+        }
+      },
+      "EVENT_RGB": {
+        "EVENT_RGBD": {
+          "IDF1": 0.0,
+          "HOTA": 0.0,
+          "AssA": 0.0,
+          "DetA": 0.0,
+          "IDSW": 0,
+          "FP": 0,
+          "FN": 0
+        }
+      }
+    }
+  },
+  "mapping_comparison_counts": {
+    "feeding_000000_000199": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 10,
+        "Z4Q_FROZEN": 41
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 10,
+        "Z4Q_FROZEN": 41
+      }
+    },
+    "feeding_000351_000555": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 182,
+        "Z4Q_FROZEN": 88
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 182,
+        "Z4Q_FROZEN": 88
+      }
+    },
+    "feeding_000701_001060": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 227,
+        "Z4Q_FROZEN": 61
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 227,
+        "Z4Q_FROZEN": 61
+      }
+    },
+    "feeding_001201_001906": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 509,
+        "Z4Q_FROZEN": 441
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 509,
+        "Z4Q_FROZEN": 441
+      }
+    },
+    "fishsa_development_8400": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 2919,
+        "Z4Q_FROZEN": 4503
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 2919,
+        "Z4Q_FROZEN": 4503
+      }
+    },
+    "fishsa_validation_2888": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 2609,
+        "Z4Q_FROZEN": 703
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 2609,
+        "Z4Q_FROZEN": 703
+      }
+    },
+    "L3": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 3323,
+        "Z4Q_FROZEN": 44
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 3323,
+        "Z4Q_FROZEN": 44
+      }
+    },
+    "LW": {
+      "EVENT_RGB": {
+        "SAM3_NATIVE": 3297,
+        "Z4Q_FROZEN": 2224
+      },
+      "EVENT_RGBD": {
+        "SAM3_NATIVE": 3297,
+        "Z4Q_FROZEN": 2224
+      }
+    }
+  },
+  "switch_changes_independently_recomputed": {
+    "feeding_000000_000199": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 1,
+        "eliminated": 0,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 1
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 1,
+        "eliminated": 0,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 1
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 0,
+        "eliminated": 1,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 1,
+        "net_IDSW": -1
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 1,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 1,
+        "net_IDSW": -1
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "feeding_000351_000555": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 4,
+        "eliminated": 2,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 2
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 4,
+        "eliminated": 2,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 2
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 2,
+        "eliminated": 2,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 0
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 2,
+        "eliminated": 2,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 0
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "feeding_000701_001060": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 9,
+        "eliminated": 1,
+        "occurrence_added": 8,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 8
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 9,
+        "eliminated": 1,
+        "occurrence_added": 8,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 8
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 3,
+        "eliminated": 1,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 2
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 3,
+        "eliminated": 1,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 2
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "feeding_001201_001906": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 22,
+        "eliminated": 11,
+        "occurrence_added": 12,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 11
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 22,
+        "eliminated": 11,
+        "occurrence_added": 12,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 11
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 14,
+        "eliminated": 17,
+        "occurrence_added": 5,
+        "occurrence_eliminated": 8,
+        "net_IDSW": -3
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 14,
+        "eliminated": 17,
+        "occurrence_added": 5,
+        "occurrence_eliminated": 8,
+        "net_IDSW": -3
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "fishsa_development_8400": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 2,
+        "eliminated": 2,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 0
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 2,
+        "eliminated": 2,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 0
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 3,
+        "eliminated": 4,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 2,
+        "net_IDSW": -1
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 3,
+        "eliminated": 4,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 2,
+        "net_IDSW": -1
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "fishsa_validation_2888": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 4,
+        "eliminated": 1,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 3
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 4,
+        "eliminated": 1,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 3
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 4,
+        "eliminated": 2,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 2
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 4,
+        "eliminated": 2,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 1,
+        "net_IDSW": 2
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "L3": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 1,
+        "eliminated": 0,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 1
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 1,
+        "eliminated": 0,
+        "occurrence_added": 1,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 1
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    },
+    "LW": {
+      "SAM3_NATIVE_TO_EVENT_RGB": {
+        "added": 5,
+        "eliminated": 2,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 3
+      },
+      "SAM3_NATIVE_TO_EVENT_RGBD": {
+        "added": 5,
+        "eliminated": 2,
+        "occurrence_added": 3,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 3
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGB": {
+        "added": 5,
+        "eliminated": 5,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 2,
+        "net_IDSW": 0
+      },
+      "Z4Q_FROZEN_TO_EVENT_RGBD": {
+        "added": 5,
+        "eliminated": 5,
+        "occurrence_added": 2,
+        "occurrence_eliminated": 2,
+        "net_IDSW": 0
+      },
+      "EVENT_RGB_TO_EVENT_RGBD": {
+        "added": 0,
+        "eliminated": 0,
+        "occurrence_added": 0,
+        "occurrence_eliminated": 0,
+        "net_IDSW": 0
+      }
+    }
+  },
+  "stage_records": [
+    {
+      "segment": "feeding_000701_001060",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F295",
+      "q": 300,
+      "global_frame": 1000,
+      "cutoff": 307,
+      "choice": "H1",
+      "mapping": {
+        "129": 68,
+        "137": 91
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "129": {
+            "before": 129,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        },
+        "Z4Q_FROZEN": {
+          "129": {
+            "before": 91,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "118": {
+            "before": 118,
+            "after": 99
+          },
+          "119": {
+            "before": 119,
+            "after": 70
+          },
+          "123": {
+            "before": 123,
+            "after": 117
+          },
+          "127": {
+            "before": 127,
+            "after": 106
+          },
+          "129": {
+            "before": 129,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        },
+        "Z4Q_FROZEN": {
+          "129": {
+            "before": 91,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "WRONG",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F295",
+      "q": 300,
+      "global_frame": 1000,
+      "cutoff": 307,
+      "choice": "H1",
+      "mapping": {
+        "129": 68,
+        "137": 91
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "129": {
+            "before": 129,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        },
+        "Z4Q_FROZEN": {
+          "129": {
+            "before": 91,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "118": {
+            "before": 118,
+            "after": 99
+          },
+          "119": {
+            "before": 119,
+            "after": 70
+          },
+          "123": {
+            "before": 123,
+            "after": 117
+          },
+          "127": {
+            "before": 127,
+            "after": 106
+          },
+          "129": {
+            "before": 129,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        },
+        "Z4Q_FROZEN": {
+          "129": {
+            "before": 91,
+            "after": 68
+          },
+          "137": {
+            "before": 137,
+            "after": 91
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "WRONG",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F572",
+      "q": 605,
+      "global_frame": 1805,
+      "cutoff": 607,
+      "choice": "H1",
+      "mapping": {
+        "194": 149,
+        "151": 151
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        },
+        "Z4Q_FROZEN": {
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "175": {
+            "before": 175,
+            "after": 166
+          },
+          "176": {
+            "before": 176,
+            "after": 167
+          },
+          "177": {
+            "before": 177,
+            "after": 158
+          },
+          "183": {
+            "before": 183,
+            "after": 136
+          },
+          "186": {
+            "before": 186,
+            "after": 125
+          },
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        },
+        "Z4Q_FROZEN": {
+          "174": {
+            "before": 163,
+            "after": 174
+          },
+          "175": {
+            "before": 175,
+            "after": 166
+          },
+          "183": {
+            "before": 125,
+            "after": 136
+          },
+          "186": {
+            "before": 166,
+            "after": 125
+          },
+          "187": {
+            "before": 164,
+            "after": 187
+          },
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "CORRECT",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "feeding_001201_001906",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F572",
+      "q": 605,
+      "global_frame": 1805,
+      "cutoff": 607,
+      "choice": "H1",
+      "mapping": {
+        "194": 149,
+        "151": 151
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        },
+        "Z4Q_FROZEN": {
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "175": {
+            "before": 175,
+            "after": 166
+          },
+          "176": {
+            "before": 176,
+            "after": 167
+          },
+          "177": {
+            "before": 177,
+            "after": 158
+          },
+          "183": {
+            "before": 183,
+            "after": 136
+          },
+          "186": {
+            "before": 186,
+            "after": 125
+          },
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        },
+        "Z4Q_FROZEN": {
+          "174": {
+            "before": 163,
+            "after": 174
+          },
+          "175": {
+            "before": 175,
+            "after": 166
+          },
+          "183": {
+            "before": 125,
+            "after": 136
+          },
+          "186": {
+            "before": 166,
+            "after": 125
+          },
+          "187": {
+            "before": 164,
+            "after": 187
+          },
+          "194": {
+            "before": 194,
+            "after": 149
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "CORRECT",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F7997",
+      "q": 8035,
+      "global_frame": 8035,
+      "cutoff": 8052,
+      "choice": "H1",
+      "mapping": {
+        "8": 2,
+        "5": 5
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "7": {
+            "before": 0,
+            "after": 7
+          },
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "CORRECT",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F7997",
+      "q": 8035,
+      "global_frame": 8035,
+      "cutoff": 8052,
+      "choice": "H1",
+      "mapping": {
+        "8": 2,
+        "5": 5
+      },
+      "depth_weight": 0.25,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "7": {
+            "before": 0,
+            "after": 7
+          },
+          "8": {
+            "before": 8,
+            "after": 2
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "CORRECT",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F2584",
+      "q": 2600,
+      "global_frame": 11900,
+      "cutoff": 2609,
+      "choice": "H2",
+      "mapping": {
+        "1": 1,
+        "4": 4
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {
+        "4": {
+          "before": 1,
+          "after": 4
+        },
+        "1": {
+          "before": 4,
+          "after": 1
+        }
+      },
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {}
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "6": {
+            "before": 6,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 3,
+            "after": 8
+          }
+        }
+      },
+      "physical_preanchor": "UNSCORABLE",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "UNSCORABLE",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F2681",
+      "q": 2689,
+      "global_frame": 11989,
+      "cutoff": 2710,
+      "choice": "H2",
+      "mapping": {
+        "8": 5,
+        "5": 8
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {
+        "5": {
+          "before": 5,
+          "after": 8
+        },
+        "8": {
+          "before": 8,
+          "after": 5
+        }
+      },
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 5
+          },
+          "5": {
+            "before": 5,
+            "after": 8
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 3,
+            "after": 5
+          },
+          "5": {
+            "before": 5,
+            "after": 8
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "5": {
+            "before": 5,
+            "after": 8
+          },
+          "6": {
+            "before": 6,
+            "after": 2
+          },
+          "8": {
+            "before": 8,
+            "after": 5
+          }
+        },
+        "Z4Q_FROZEN": {
+          "5": {
+            "before": 5,
+            "after": 8
+          },
+          "8": {
+            "before": 3,
+            "after": 5
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "WRONG",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F2584",
+      "q": 2600,
+      "global_frame": 11900,
+      "cutoff": 2609,
+      "choice": "H2",
+      "mapping": {
+        "1": 1,
+        "4": 4
+      },
+      "depth_weight": 0.25,
+      "preview_changes": {
+        "4": {
+          "before": 1,
+          "after": 4
+        },
+        "1": {
+          "before": 4,
+          "after": 1
+        }
+      },
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {}
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "6": {
+            "before": 6,
+            "after": 2
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 3,
+            "after": 8
+          }
+        }
+      },
+      "physical_preanchor": "UNSCORABLE",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "UNSCORABLE",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F2681",
+      "q": 2689,
+      "global_frame": 11989,
+      "cutoff": 2710,
+      "choice": "H2",
+      "mapping": {
+        "8": 5,
+        "5": 8
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {
+        "5": {
+          "before": 5,
+          "after": 8
+        },
+        "8": {
+          "before": 8,
+          "after": 5
+        }
+      },
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "8": {
+            "before": 8,
+            "after": 5
+          },
+          "5": {
+            "before": 5,
+            "after": 8
+          }
+        },
+        "Z4Q_FROZEN": {
+          "8": {
+            "before": 3,
+            "after": 5
+          },
+          "5": {
+            "before": 5,
+            "after": 8
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "5": {
+            "before": 5,
+            "after": 8
+          },
+          "6": {
+            "before": 6,
+            "after": 2
+          },
+          "8": {
+            "before": 8,
+            "after": 5
+          }
+        },
+        "Z4Q_FROZEN": {
+          "5": {
+            "before": 5,
+            "after": 8
+          },
+          "8": {
+            "before": 3,
+            "after": 5
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "WRONG",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F2157",
+      "q": 2161,
+      "global_frame": 2160,
+      "cutoff": 2186,
+      "choice": "H1",
+      "mapping": {
+        "3": 3,
+        "60": 60
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {}
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "63": {
+            "before": 63,
+            "after": 43
+          },
+          "86": {
+            "before": 86,
+            "after": 78
+          }
+        },
+        "Z4Q_FROZEN": {
+          "86": {
+            "before": 86,
+            "after": 78
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F2896",
+      "q": 2909,
+      "global_frame": 2908,
+      "cutoff": 2914,
+      "choice": "H2",
+      "mapping": {
+        "3": 3,
+        "106": 106
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {
+          "106": {
+            "before": 5,
+            "after": 106
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "63": {
+            "before": 63,
+            "after": 43
+          }
+        },
+        "Z4Q_FROZEN": {
+          "106": {
+            "before": 5,
+            "after": 106
+          },
+          "123": {
+            "before": 115,
+            "after": 123
+          },
+          "124": {
+            "before": 93,
+            "after": 124
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "UNSCORABLE",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGB",
+      "event": "MS1-F2979",
+      "q": 3052,
+      "global_frame": 3051,
+      "cutoff": 3076,
+      "choice": "H1",
+      "mapping": {
+        "60": 128,
+        "128": 129
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "128": {
+            "before": 128,
+            "after": 129
+          }
+        },
+        "Z4Q_FROZEN": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "128": {
+            "before": 99,
+            "after": 129
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "63": {
+            "before": 63,
+            "after": 43
+          },
+          "128": {
+            "before": 128,
+            "after": 129
+          }
+        },
+        "Z4Q_FROZEN": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "106": {
+            "before": 5,
+            "after": 106
+          },
+          "128": {
+            "before": 99,
+            "after": 129
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F2157",
+      "q": 2161,
+      "global_frame": 2160,
+      "cutoff": 2186,
+      "choice": "H1",
+      "mapping": {
+        "3": 3,
+        "60": 60
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {}
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "63": {
+            "before": 63,
+            "after": 43
+          },
+          "86": {
+            "before": 86,
+            "after": 78
+          }
+        },
+        "Z4Q_FROZEN": {
+          "86": {
+            "before": 86,
+            "after": 78
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "CORRECT",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F2896",
+      "q": 2909,
+      "global_frame": 2908,
+      "cutoff": 2914,
+      "choice": "H2",
+      "mapping": {
+        "3": 3,
+        "106": 106
+      },
+      "depth_weight": 0.0,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {},
+        "Z4Q_FROZEN": {
+          "106": {
+            "before": 5,
+            "after": 106
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "63": {
+            "before": 63,
+            "after": 43
+          }
+        },
+        "Z4Q_FROZEN": {
+          "106": {
+            "before": 5,
+            "after": 106
+          },
+          "123": {
+            "before": 115,
+            "after": 123
+          },
+          "124": {
+            "before": 93,
+            "after": 124
+          }
+        }
+      },
+      "physical_preanchor": "CORRECT",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "CORRECT",
+      "public_origin_correctness": "UNSCORABLE",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    },
+    {
+      "segment": "LW",
+      "arm": "EVENT_RGBD",
+      "event": "MS1-F2979",
+      "q": 3052,
+      "global_frame": 3051,
+      "cutoff": 3076,
+      "choice": "H1",
+      "mapping": {
+        "60": 128,
+        "128": 129
+      },
+      "depth_weight": 0.25,
+      "preview_changes": {},
+      "selected_edge_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "128": {
+            "before": 128,
+            "after": 129
+          }
+        },
+        "Z4Q_FROZEN": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "128": {
+            "before": 99,
+            "after": 129
+          }
+        }
+      },
+      "full_frame_differences_vs_controls": {
+        "SAM3_NATIVE": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "63": {
+            "before": 63,
+            "after": 43
+          },
+          "128": {
+            "before": 128,
+            "after": 129
+          }
+        },
+        "Z4Q_FROZEN": {
+          "60": {
+            "before": 60,
+            "after": 128
+          },
+          "106": {
+            "before": 5,
+            "after": 106
+          },
+          "128": {
+            "before": 99,
+            "after": 129
+          }
+        }
+      },
+      "physical_preanchor": "WRONG",
+      "physical_prefragment": "UNSCORABLE",
+      "postfragment_preanchor": "WRONG",
+      "public_origin_correctness": "WRONG",
+      "comparison_is_not_causal_proof_of_new_choice": true
+    }
+  ],
+  "event_counts": {
+    "feeding_000000_000199": {
+      "EVENT_RGB": {},
+      "EVENT_RGBD": {}
+    },
+    "feeding_000351_000555": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 3
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 3
+      }
+    },
+    "feeding_000701_001060": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 3,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 3,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      }
+    },
+    "feeding_001201_001906": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 6,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 6,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      }
+    },
+    "fishsa_development_8400": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 8,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 1,
+        "contour_windows": 0,
+        "q_windows": 8,
+        "stages": 1,
+        "full_frame_diff_vs_Z4Q_stages": 1,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 0
+      }
+    },
+    "fishsa_validation_2888": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 7,
+        "stages": 2,
+        "full_frame_diff_vs_Z4Q_stages": 2,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 2
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 1,
+        "contour_windows": 0,
+        "q_windows": 7,
+        "stages": 2,
+        "full_frame_diff_vs_Z4Q_stages": 2,
+        "selected_edge_diff_vs_Z4Q_stages": 1,
+        "internal_preview_changed_stages": 2
+      }
+    },
+    "L3": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 5
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 5
+      }
+    },
+    "LW": {
+      "EVENT_RGB": {
+        "depth_windows": 0,
+        "contour_windows": 0,
+        "q_windows": 10,
+        "stages": 3,
+        "full_frame_diff_vs_Z4Q_stages": 3,
+        "selected_edge_diff_vs_Z4Q_stages": 2,
+        "internal_preview_changed_stages": 0
+      },
+      "EVENT_RGBD": {
+        "depth_windows": 2,
+        "contour_windows": 0,
+        "q_windows": 10,
+        "stages": 3,
+        "full_frame_diff_vs_Z4Q_stages": 3,
+        "selected_edge_diff_vs_Z4Q_stages": 2,
+        "internal_preview_changed_stages": 0
+      }
+    }
+  },
+  "physical_literal_q_stage_counts": {
+    "EVENT_RGB": {
+      "WRONG": 3,
+      "CORRECT": 4,
+      "UNSCORABLE": 1
+    },
+    "EVENT_RGBD": {
+      "WRONG": 3,
+      "CORRECT": 4,
+      "UNSCORABLE": 1
+    }
+  },
+  "physical_prefragment_stage_counts": {
+    "EVENT_RGB": {
+      "WRONG": 2,
+      "CORRECT": 2,
+      "UNSCORABLE": 4
+    },
+    "EVENT_RGBD": {
+      "WRONG": 2,
+      "CORRECT": 2,
+      "UNSCORABLE": 4
+    }
+  },
+  "public_origin_stage_counts": {
+    "EVENT_RGB": {
+      "WRONG": 4,
+      "CORRECT": 3,
+      "UNSCORABLE": 1
+    },
+    "EVENT_RGBD": {
+      "WRONG": 4,
+      "CORRECT": 3,
+      "UNSCORABLE": 1
+    }
+  },
+  "actual_depth_weight_windows": {
+    "EVENT_RGB": 0,
+    "EVENT_RGBD": 4
+  },
+  "actual_contour_weight_windows": {
+    "EVENT_RGB": 0,
+    "EVENT_RGBD": 0
+  },
+  "attribution": {
+    "actual_joint_stage_count_per_arm": 8,
+    "full_frame_q_difference_vs_Z4Q_is_not_new_selected_edge_count": true,
+    "stages_with_selected_edges_different_from_same_frame_Z4Q_per_arm": {
+      "EVENT_RGB": 6,
+      "EVENT_RGBD": 6
+    },
+    "own_internal_preview_change_is_not_rewrite_of_published_history": true,
+    "selected_edge_difference_vs_Z4Q_still_not_isolated_current_event_causal_effect": true,
+    "inherited_only_full_q_differences": [
+      {
+        "segment": "fishsa_validation_2888",
+        "arm": "EVENT_RGB",
+        "event": "MS1-F2584",
+        "q": 2600,
+        "global_frame": 11900,
+        "cutoff": 2609,
+        "choice": "H2",
+        "mapping": {
+          "1": 1,
+          "4": 4
+        },
+        "depth_weight": 0.0,
+        "preview_changes": {
+          "4": {
+            "before": 1,
+            "after": 4
+          },
+          "1": {
+            "before": 4,
+            "after": 1
+          }
+        },
+        "selected_edge_differences_vs_controls": {
+          "SAM3_NATIVE": {},
+          "Z4Q_FROZEN": {}
+        },
+        "full_frame_differences_vs_controls": {
+          "SAM3_NATIVE": {
+            "6": {
+              "before": 6,
+              "after": 2
+            }
+          },
+          "Z4Q_FROZEN": {
+            "8": {
+              "before": 3,
+              "after": 8
+            }
+          }
+        },
+        "physical_preanchor": "UNSCORABLE",
+        "physical_prefragment": "UNSCORABLE",
+        "postfragment_preanchor": "UNSCORABLE",
+        "public_origin_correctness": "WRONG",
+        "comparison_is_not_causal_proof_of_new_choice": true
+      },
+      {
+        "segment": "fishsa_validation_2888",
+        "arm": "EVENT_RGBD",
+        "event": "MS1-F2584",
+        "q": 2600,
+        "global_frame": 11900,
+        "cutoff": 2609,
+        "choice": "H2",
+        "mapping": {
+          "1": 1,
+          "4": 4
+        },
+        "depth_weight": 0.25,
+        "preview_changes": {
+          "4": {
+            "before": 1,
+            "after": 4
+          },
+          "1": {
+            "before": 4,
+            "after": 1
+          }
+        },
+        "selected_edge_differences_vs_controls": {
+          "SAM3_NATIVE": {},
+          "Z4Q_FROZEN": {}
+        },
+        "full_frame_differences_vs_controls": {
+          "SAM3_NATIVE": {
+            "6": {
+              "before": 6,
+              "after": 2
+            }
+          },
+          "Z4Q_FROZEN": {
+            "8": {
+              "before": 3,
+              "after": 8
+            }
+          }
+        },
+        "physical_preanchor": "UNSCORABLE",
+        "physical_prefragment": "UNSCORABLE",
+        "postfragment_preanchor": "UNSCORABLE",
+        "public_origin_correctness": "WRONG",
+        "comparison_is_not_causal_proof_of_new_choice": true
+      },
+      {
+        "segment": "LW",
+        "arm": "EVENT_RGB",
+        "event": "MS1-F2157",
+        "q": 2161,
+        "global_frame": 2160,
+        "cutoff": 2186,
+        "choice": "H1",
+        "mapping": {
+          "3": 3,
+          "60": 60
+        },
+        "depth_weight": 0.0,
+        "preview_changes": {},
+        "selected_edge_differences_vs_controls": {
+          "SAM3_NATIVE": {},
+          "Z4Q_FROZEN": {}
+        },
+        "full_frame_differences_vs_controls": {
+          "SAM3_NATIVE": {
+            "63": {
+              "before": 63,
+              "after": 43
+            },
+            "86": {
+              "before": 86,
+              "after": 78
+            }
+          },
+          "Z4Q_FROZEN": {
+            "86": {
+              "before": 86,
+              "after": 78
+            }
+          }
+        },
+        "physical_preanchor": "CORRECT",
+        "physical_prefragment": "UNSCORABLE",
+        "postfragment_preanchor": "CORRECT",
+        "public_origin_correctness": "CORRECT",
+        "comparison_is_not_causal_proof_of_new_choice": true
+      },
+      {
+        "segment": "LW",
+        "arm": "EVENT_RGBD",
+        "event": "MS1-F2157",
+        "q": 2161,
+        "global_frame": 2160,
+        "cutoff": 2186,
+        "choice": "H1",
+        "mapping": {
+          "3": 3,
+          "60": 60
+        },
+        "depth_weight": 0.0,
+        "preview_changes": {},
+        "selected_edge_differences_vs_controls": {
+          "SAM3_NATIVE": {},
+          "Z4Q_FROZEN": {}
+        },
+        "full_frame_differences_vs_controls": {
+          "SAM3_NATIVE": {
+            "63": {
+              "before": 63,
+              "after": 43
+            },
+            "86": {
+              "before": 86,
+              "after": 78
+            }
+          },
+          "Z4Q_FROZEN": {
+            "86": {
+              "before": 86,
+              "after": 78
+            }
+          }
+        },
+        "physical_preanchor": "CORRECT",
+        "physical_prefragment": "UNSCORABLE",
+        "postfragment_preanchor": "CORRECT",
+        "public_origin_correctness": "CORRECT",
+        "comparison_is_not_causal_proof_of_new_choice": true
+      }
+    ],
+    "no_depth_increment_at_published_output_or_any_full_segment_metric": true,
+    "report_warning_correct_but_8_stages_must_not_be_called_8_new_relabels": true
+  },
+  "source_artifacts": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\METRICS.json",
+      "bytes": 1734608,
+      "sha256": "b4925cc21c0be7c882350f98cbead50b0bdfcaf91748a94ae13e28d9d4ba00c7"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds33_rgbd_fixed_lag\\run\\METRICS.json",
+      "bytes": 4203799,
+      "sha256": "edf06eede32ed42d8b1404ccef78d0a96fe24fa4f20b3bec30fcbc527b90d246"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\RESULTS.json",
+      "bytes": 757616,
+      "sha256": "58c978eeeb07bf7b2bedd8fc674d427c6ff852798d99b17bb942a4d91fb1c0c2"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\FINAL_REVIEW.md",
+      "bytes": 34584,
+      "sha256": "6c13050b200d3293dd39ba171a176d968b8ec7de6d4b8c91822821f0a769c0af"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\SCORE_PROVENANCE.json",
+      "bytes": 923,
+      "sha256": "f87d7063291cf4488576307c8af2b42aeadf311206b45a2cc0f1a9da7df815f3"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\RUNTIME_FREEZE.json",
+      "bytes": 20188,
+      "sha256": "39fe5238314c2a685884a1ce26af839938e1bcccb3c4068274eae0c18215e4a9"
+    }
+  ],
+  "sealed_source_pins": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\feeding_000000_000199\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1109,
+      "sha256": "ac6bb141bb754dfa0afdaa7fc06d27e4790897a78016a776a0ba61bcbc38b1db"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\feeding_000351_000555\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1109,
+      "sha256": "0831886bded34ae1d9e06ef0121c0163781970d6097fef2494a72c04ea5039d0"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\feeding_000701_001060\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1109,
+      "sha256": "c56f0f37c0962f4f54218c2e1ea762643cc45f46a55293457e3a8555081314be"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\feeding_001201_001906\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1109,
+      "sha256": "1f7777d8f35045e19fb6398001ea52ce0920ec9d9461a272087f9d5d313de568"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\fishsa_development_8400\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1112,
+      "sha256": "d5a0ead636f6deddf15bd20a2e183821a05b31e42736422b1f68ee1193d8d73b"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\fishsa_validation_2888\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1111,
+      "sha256": "bdcdbb4c2bd9a4676b9d86ec94b61a1d05e71ad3b24f5df5c62dc177aa755a10"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\L3\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1091,
+      "sha256": "55cb05ae121aa2994aa61a135ba187f4ed7e3f711559867761835a45225aa1dd"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\LW\\public\\PREDICTIONS_SEALED.json",
+      "bytes": 1091,
+      "sha256": "d98809fb240e0ab89de6cd3057a56cd9e194d3b948a3bb765f9184a52facfe8d"
+    }
+  ],
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "validation_detail": "PASS_WITH_ATTRIBUTION_CLARIFICATION",
+  "original_validation_receipt": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\REPORT_VALIDATION_WITH_CLARIFICATION.json",
+    "bytes": 60417,
+    "sha256": "c7cbe89cf930b5833aeb0ce78294a7c516653b8ac1c344b77c84613dd12cbe7f"
+  },
+  "receipt_protocol_normalized_utc": "2026-10-06T11:26:18.960333+00:00",
+  "receipt_protocol_normalization": "Status container only; all observed outcomes and attribution boundaries are preserved. Scientific code, predictions, scoring and thresholds are unchanged."
+}

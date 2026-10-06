@@ -1,0 +1,71 @@
+{
+  "status": "PASS_SCOPED_SYNTHETIC_EVIDENCE_CONTRACT",
+  "checks": [
+    "full_joint_three_by_three_symmetric_contours_and_depth_with_post_backtrace_diagnostic_only",
+    "candidate_permutation_preserves_physical_mapping_not_unpermuted_H_label",
+    "real_time_OLS_uses_all_points_and_reports_residual_not_first_last_secant",
+    "two_point_pre_retains_last_position_and_unknown_motion_common_contour_off",
+    "missing_pre_DEFER_preserved",
+    "middle_missing_pre_depth_retained_no_filter_stitch_entire_component_shared_null",
+    "one_bad_post_endpoint_depth_disables_all_edges_no_missing_candidate_discount",
+    "one_unreliable_cross_endpoint_contour_disables_modality_for_entire_joint_matrix",
+    "extra_q_future_packets_and_later_post_samples_do_not_change_fixed_inputs",
+    "selected_post_after_q_plus_30_rejected",
+    "first_ready_three_raw_clean_post_after_risky_q_keeps_q_and_anonymous_risk",
+    "historical_exact_bank_anchor_native_different_from_current_member_not_falsely_stitched",
+    "post_source_generation_break_since_q_DEFER_not_crash_or_authentication",
+    "wrong_or_future_depth_fact_time_rejected",
+    "motion_provider_future_source_binding_rejected"
+  ],
+  "actual_active_CONFIG": {
+    "lag_frames": 30,
+    "history_frames": 30,
+    "fit_observations": 10,
+    "max_history_seconds": 12.0,
+    "max_episode_seconds": 10.0,
+    "short_endpoint_frames": 3,
+    "geometry_prediction_horizon_seconds": 1.0,
+    "motion_weight": 0.25,
+    "contour_weight": 0.25,
+    "confirmation_clean_frames": 3,
+    "track_expiry_seconds": 12.0,
+    "flow": {
+      "algorithm": "OPENCV_DIS_MEDIUM",
+      "fb_max_px": 1.5,
+      "texture_min_std": 2.0,
+      "texture_window_px": 5,
+      "photometric_max_gray": 25.0,
+      "min_correspondences": 16,
+      "min_correspondence_fraction": 0.2,
+      "depth_edge_jump_mm": 60.0,
+      "point_patch_px": 32,
+      "point_min_patch_points": 16,
+      "point_scale_floor_mm": 15.0,
+      "point_scale_cap_mm": 60.0,
+      "point_residual_sigma": 3.0,
+      "point_mad_sigma": 1.4826
+    },
+    "min_contour_dice": 0.25,
+    "min_joint_margin": 0.1,
+    "min_reliable_contour_fraction": 0.2,
+    "depth_weight": 0.25,
+    "max_joint_sources": 2,
+    "new_model_http": 0,
+    "cost_usd": 0
+  },
+  "evidence": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\evidence.py",
+    "bytes": 19950,
+    "sha256": "c59c255a1fccbbe59a220eb5ad8d711faa65fb462008bb31e5e0c96ab5e84b53"
+  },
+  "tests": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\checks_evidence.py",
+    "bytes": 9675,
+    "sha256": "a2420cb0130ad2fef0fa21ce34325f3949c4168d6f90bc86671daf51d2a6c43f"
+  },
+  "source_dataset_reads": 0,
+  "GT_reads": 0,
+  "new_model_http": 0,
+  "cost_usd": 0,
+  "synthetic_checks_not_performance_evidence": true
+}

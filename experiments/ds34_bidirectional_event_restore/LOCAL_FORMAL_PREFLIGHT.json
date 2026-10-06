@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-06T10:19:20.8896482Z",
+  "host": "LOCAL_WINDOWS",
+  "memory": {
+    "FreePhysicalMemory": 9003836,
+    "TotalVisibleMemorySize": 33458992
+  },
+  "disk": {
+    "Used": 210692128768,
+    "Free": 4061474816
+  },
+  "own_processes": [
+    {
+      "ProcessId": 12804,
+      "CommandLine": "\"E:\\researchsoftware\\anaconda3\\envs\\D-MOT\\python.exe\" -B -c \"import guard,score; code_pin=score.artifact(score.__file__); receipts={}; source=score.HERE; cases=[(\\\"slice_final_acceptance205\\\",\\\"feeding_000351_000555\\\"),(\\\"slice_final_disabled60\\\",\\\"feeding_000351_000555\\\")]; [(receipts.__setitem__(folder,dict(audit=score.verify_publications(name,source/folder/name/\\\"public\\\")[0],seal=score.artifact(source/folder/name/\\\"public/PREDICTIONS_SEALED.json\\\"),access=score.artifact(source/folder/name/\\\"public/ACCESS.json\\\")))) for folder,name in cases]; assert code_pin==score.artifact(score.__file__); score.write_new(source/\\\"REAL_PUBLICATION_CHECKS_FINAL_READY.json\\\",dict(status=\\\"PASS\\\",frames=sum(r[\\\"audit\\\"][\\\"frames\\\"] for r in receipts.values()),checks=receipts,GT_opened=False,new_model_http=0,cost_usd=0,scorer=code_pin,guard_seen_paths=sorted(guard.SEEN),guard_NPZ_fields=[list(x) for x in sorted(guard.NPZ)],guard_H5_fields=[list(x) for x in sorted(guard.H5)])); print(\\\"DS34 FINAL READY PUBLICATION CHECKS PASS\\\",sum(r[\\\"audit\\\"][\\\"frames\\\"] for r in receipts.values()))\""
+    }
+  ],
+  "workers": 2,
+  "threads_each": 1,
+  "server": false,
+  "GPU": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,117 @@
+{
+  "status": "PASS_ACTUAL_LOCAL_VISUAL_INSPECTION",
+  "inspected_utc": "2026-10-06T11:22:43.235212+00:00",
+  "manual_display": "Actual view_image original contact sheets; installed Edge headless rendered the delivered SVGs.",
+  "inspected": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\visuals\\feeding_000351_000555_MS1-F12_EVENT_RGB.png",
+      "bytes": 3858034,
+      "sha256": "ac92c289f7664f3f47d74c88db5c1dc7ee3c012455aefcc8caded164971beeb0",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\visuals\\fishsa_development_8400_MS1-F1152_EVENT_RGB.png",
+      "bytes": 3227439,
+      "sha256": "9b9abd7a13eb49d6403ad281a1ac5f44ee193741afea2f6b358a0ce1384c70b3",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\visuals\\L3_MS1-F126_EVENT_RGB.png",
+      "bytes": 2539579,
+      "sha256": "8c3371bcab0f207fbf04d1beec786902f0effbd7be991ac286a25476532d4e27",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\visuals\\LW_MS1-F218_EVENT_RGB.png",
+      "bytes": 3142593,
+      "sha256": "a522ce9f1a794fd63e96fe799424bc9aef39c980eb2a9a0778841f888019093d",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\postseal_extra_cases\\fishsa_development_8400_MS1-F3863_EVENT_RGBD.png",
+      "bytes": 3240026,
+      "sha256": "9e0c0d937bc93d0ff9d9fd71ab200e26054ecef880df8586dd45928ab5523f5d",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\postseal_extra_cases\\fishsa_validation_2888_MS1-F2681_EVENT_RGBD.png",
+      "bytes": 3461259,
+      "sha256": "ee3c1dfbfd340160b9f210b7742d96c2f64733fc3328bcca01fa062daaabd492",
+      "dimensions": [
+        3840,
+        960
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\svg_inspection\\FULL_METRICS.png",
+      "bytes": 97934,
+      "sha256": "653bbad618e06ce14598177f47f29ce544b368d6f47eff17dfbc34439861b1bf",
+      "dimensions": [
+        1280,
+        1100
+      ]
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\private\\svg_inspection\\EVENT_TIMELINE_TOP.png",
+      "bytes": 166424,
+      "sha256": "eb0bb947248c43f136cc6c055051d141aabc8eea0b4a176c8f68e2c639aa0ec0",
+      "dimensions": [
+        1700,
+        1000
+      ]
+    }
+  ],
+  "inspection_scope": "Six representative actual-source sheets plus full metrics and top of event timeline; not every image manually inspected.",
+  "observations": [
+    "Actual Native/Z4Q/RGB/RGBD rows use the same acquired RGB, raw depth and original masks; overlays show published native-to-public mappings.",
+    "Unknown pre-reference remains explicitly UNKNOWN; no-split L3 displays an empty UNKNOWN q panel.",
+    "Feeding shows crowded masks and missing raw depth; raw depth holes and overlapping contours remain visible.",
+    "Development q3902 and validation q2689 show the reported identity divergence between Z4Q and both event branches.",
+    "All five numeric metric blocks and their negative/zero differences are legible; L3/LW weak-reference label is visible.",
+    "Event timeline preserves no-q, fallback, DEFER and WRONG; only its top portion was raster-inspected."
+  ],
+  "first_source_inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\PRIVATE_VISUALS_INVENTORY.json",
+    "bytes": 434070,
+    "sha256": "d15337da90a950b012e9414c184bc6541013404f34db430684037695391b948c"
+  },
+  "extra_failure_inventory": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\POSTSEAL_EXTRA_PRIVATE_VISUALS.json",
+    "bytes": 136416,
+    "sha256": "4e5e4cd7f11c19501877f64d1b47935eafcbe370bda01ba423ca4458998f5940"
+  },
+  "public_figures": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\PUBLIC_VISUALS.json",
+    "bytes": 118897,
+    "sha256": "e9dd143602db60b992bc9e12a80b99b06e43e315fd2d85b7bde6a909d99cc6ff"
+  },
+  "metrics": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\run\\METRICS.json",
+    "bytes": 1734608,
+    "sha256": "b4925cc21c0be7c882350f98cbead50b0bdfcaf91748a94ae13e28d9d4ba00c7"
+  },
+  "helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds34_bidirectional_event_restore\\record_visual_acceptance.py",
+    "bytes": 2751,
+    "sha256": "c99e5c9f67a7db81d29ceef2c1d3e5e896413a4cfa17fc577417b9309ca3c00f"
+  },
+  "private_pixels_not_for_git": true,
+  "image_inspection_is_not_physical_identity_ground_truth": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

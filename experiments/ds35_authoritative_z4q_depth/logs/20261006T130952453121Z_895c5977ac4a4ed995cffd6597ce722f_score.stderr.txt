@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\score.py", line 243, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\score.py", line 220, in main
+    for name in SEGMENTS:parity[name],origins[name]=verify_publications(name)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\score.py", line 155, in verify_publications
+    for e in values:verify_decision(e,a,records,transactions,predictions,ledgers)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\score.py", line 76, in verify_decision
+    assert digest(recomputed)==digest(decision),(event['id'],arm,'source¡údecision changed')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('MS1-F2896', 'DEPTH_OFF', 'source¡údecision changed')

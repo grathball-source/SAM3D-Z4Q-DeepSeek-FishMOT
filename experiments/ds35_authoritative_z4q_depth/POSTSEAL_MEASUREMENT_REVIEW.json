@@ -1,0 +1,2785 @@
+{
+  "status": "READ_ONLY_POSTSEAL_MEASUREMENT_REVIEW",
+  "created_utc": "2026-10-06T13:12:45.976165+00:00",
+  "all_prediction_seal": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\run\\ALL_PREDICTIONS_SEALED.json",
+    "bytes": 9230,
+    "sha256": "0b33892fd2e9399e6ec7d1a747e4e10aa546bae05cdcdb8d266b9576b2292290"
+  },
+  "helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\postseal_measurement_review.py",
+    "bytes": 6520,
+    "sha256": "3d85432a97a7eff87f4dab9d522eb3695750ee2c4e96de6e0bee5d9bee02d023"
+  },
+  "counts": {
+    "events": 75,
+    "with_q": 42,
+    "complete_endpoint_cost": 9,
+    "common_depth_available": 4,
+    "eligible_proposals": 0,
+    "actual_commits": 0,
+    "pre_references": 150,
+    "unknown_pre_references": 6,
+    "pre_samples": 930,
+    "pre_usable_depth_points": 823,
+    "partial_depth_pre_with_at_least_three_valid_points": 8,
+    "partial_depth_pre_without_observed_mixture_or_ownership_risk": 5
+  },
+  "decision_reasons": {
+    "UNKNOWN_EOF_EVENT_EVIDENCE_ONLY": 3,
+    "UNKNOWN_DEADLINE": 29,
+    "CANCELLED": 14,
+    "CANCELLED_NO_PERSISTENT_COLLAPSE": 5,
+    "COMMON_DEPTH_UNAVAILABLE": 5,
+    "OUT_OF_SCOPE": 9,
+    "NO_COMPLETE_ENDPOINTS": 2,
+    "DEPTH_FORECAST_TOO_UNCERTAIN": 2,
+    "UNKNOWN_POST_SOURCE_BREAK": 2,
+    "TIMEOUT": 2,
+    "TOO_FEW_CONTIGUOUS_PRE_DEPTH_OBSERVATIONS": 2
+  },
+  "forecast_reasons": {
+    "INVALID_OR_UNRELIABLE_HISTORY": 24,
+    "WLS_LINEAR_TIME": 48,
+    "NO_SLOPE_LAST_VALUE": 30,
+    "EXPIRED_OR_NONCAUSAL_HISTORY": 6
+  },
+  "segments": {
+    "feeding_000000_000199": {
+      "counts": {
+        "events": 1,
+        "with_q": 0,
+        "complete_endpoint_cost": 0,
+        "common_depth_available": 0,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 2,
+        "unknown_pre_references": 0,
+        "pre_samples": 20,
+        "pre_usable_depth_points": 10
+      },
+      "current_endpoint_reasons": {},
+      "forecast_reasons": {},
+      "events": [
+        {
+          "event": "MS1-F155",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 10
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    },
+    "feeding_000351_000555": {
+      "counts": {
+        "events": 6,
+        "with_q": 3,
+        "complete_endpoint_cost": 0,
+        "common_depth_available": 0,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 12,
+        "unknown_pre_references": 0,
+        "pre_samples": 66,
+        "pre_usable_depth_points": 57,
+        "partial_depth_pre_with_at_least_three_valid_points": 1,
+        "partial_depth_pre_without_observed_mixture_or_ownership_risk": 0
+      },
+      "current_endpoint_reasons": {},
+      "forecast_reasons": {},
+      "events": [
+        {
+          "event": "MS1-F12",
+          "q": 48,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 4
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 3
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F81",
+          "q": 84,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 9,
+              "usable_depth_points": 9,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F118",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F142",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F166",
+          "q": 169,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F205",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    },
+    "feeding_000701_001060": {
+      "counts": {
+        "events": 7,
+        "with_q": 3,
+        "complete_endpoint_cost": 1,
+        "common_depth_available": 0,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 14,
+        "unknown_pre_references": 0,
+        "pre_samples": 91,
+        "pre_usable_depth_points": 64,
+        "partial_depth_pre_with_at_least_three_valid_points": 1,
+        "partial_depth_pre_without_observed_mixture_or_ownership_risk": 0
+      },
+      "current_endpoint_reasons": {
+        "UNUSABLE_CURRENT_ENDPOINT": 3,
+        "USABLE": 3
+      },
+      "forecast_reasons": {
+        "INVALID_OR_UNRELIABLE_HISTORY": 12
+      },
+      "events": [
+        {
+          "event": "MS1-F55",
+          "q": 64,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F123",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 4,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F178",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 4
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F210",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F269",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 9
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F295",
+          "q": 300,
+          "decision_reason": "COMMON_DEPTH_UNAVAILABLE",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "COMMON_DEPTH_UNAVAILABLE",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 9
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 4
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.25,
+            "contour": 0.0,
+            "depth": 0.0
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F325",
+          "q": 327,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 1
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    },
+    "feeding_001201_001906": {
+      "counts": {
+        "events": 7,
+        "with_q": 6,
+        "complete_endpoint_cost": 1,
+        "common_depth_available": 0,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 14,
+        "unknown_pre_references": 1,
+        "pre_samples": 88,
+        "pre_usable_depth_points": 79
+      },
+      "current_endpoint_reasons": {
+        "USABLE": 6
+      },
+      "forecast_reasons": {
+        "WLS_LINEAR_TIME": 6,
+        "INVALID_OR_UNRELIABLE_HISTORY": 6
+      },
+      "events": [
+        {
+          "event": "MS1-F35",
+          "q": 39,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F71",
+          "q": 80,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1,
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 1
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F123",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F152",
+          "q": 159,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F191",
+          "q": 304,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F515",
+          "q": 519,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F572",
+          "q": 605,
+          "decision_reason": "COMMON_DEPTH_UNAVAILABLE",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "COMMON_DEPTH_UNAVAILABLE",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 7
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.25,
+            "contour": 0.0,
+            "depth": 0.0
+          },
+          "staged": false
+        }
+      ]
+    },
+    "fishsa_development_8400": {
+      "counts": {
+        "events": 12,
+        "with_q": 8,
+        "complete_endpoint_cost": 1,
+        "common_depth_available": 1,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 24,
+        "unknown_pre_references": 2,
+        "pre_samples": 182,
+        "pre_usable_depth_points": 163,
+        "partial_depth_pre_with_at_least_three_valid_points": 1,
+        "partial_depth_pre_without_observed_mixture_or_ownership_risk": 1
+      },
+      "current_endpoint_reasons": {
+        "USABLE": 6
+      },
+      "forecast_reasons": {
+        "WLS_LINEAR_TIME": 12
+      },
+      "events": [
+        {
+          "event": "MS1-F1152",
+          "q": 1274,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2145",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 10
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3078",
+          "q": 3081,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3863",
+          "q": 3902,
+          "decision_reason": "NO_COMPLETE_ENDPOINTS",
+          "underlying_endpoint_reason": "NO_PRE_HISTORY",
+          "gate": {
+            "eligible": false,
+            "reason": "NO_COMPLETE_ENDPOINTS",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F4011",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F4057",
+          "q": 4071,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F4485",
+          "q": 4501,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 9,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 8
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F5303",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F5399",
+          "q": 5436,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 9,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F5927",
+          "q": 5939,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F6052",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F7997",
+          "q": 8035,
+          "decision_reason": "DEPTH_FORECAST_TOO_UNCERTAIN",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "DEPTH_FORECAST_TOO_UNCERTAIN",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.25,
+            "contour": 0.0,
+            "depth": 0.25
+          },
+          "staged": false
+        }
+      ]
+    },
+    "fishsa_validation_2888": {
+      "counts": {
+        "events": 11,
+        "with_q": 7,
+        "complete_endpoint_cost": 2,
+        "common_depth_available": 1,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 22,
+        "unknown_pre_references": 0,
+        "pre_samples": 162,
+        "pre_usable_depth_points": 156,
+        "partial_depth_pre_with_at_least_three_valid_points": 2,
+        "partial_depth_pre_without_observed_mixture_or_ownership_risk": 2
+      },
+      "current_endpoint_reasons": {
+        "USABLE": 9,
+        "UNUSABLE_CURRENT_ENDPOINT": 3
+      },
+      "forecast_reasons": {
+        "WLS_LINEAR_TIME": 18,
+        "NO_SLOPE_LAST_VALUE": 6
+      },
+      "events": [
+        {
+          "event": "MS1-F457",
+          "q": 463,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 5,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 5
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1340",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2125",
+          "q": 2188,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2457",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2482",
+          "q": 2486,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2584",
+          "q": 2600,
+          "decision_reason": "DEPTH_FORECAST_TOO_UNCERTAIN",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "DEPTH_FORECAST_TOO_UNCERTAIN",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.25,
+            "contour": 0.0,
+            "depth": 0.25
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F2617",
+          "q": 2620,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2681",
+          "q": 2689,
+          "decision_reason": "COMMON_DEPTH_UNAVAILABLE",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "COMMON_DEPTH_UNAVAILABLE",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.0,
+            "contour": 0.0,
+            "depth": 0.0
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F2732",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2741",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2759",
+          "q": 2816,
+          "decision_reason": "UNKNOWN_POST_SOURCE_BREAK",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_POST_SOURCE_BREAK"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    },
+    "L3": {
+      "counts": {
+        "events": 11,
+        "with_q": 5,
+        "complete_endpoint_cost": 0,
+        "common_depth_available": 0,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 22,
+        "unknown_pre_references": 1,
+        "pre_samples": 134,
+        "pre_usable_depth_points": 134
+      },
+      "current_endpoint_reasons": {},
+      "forecast_reasons": {},
+      "events": [
+        {
+          "event": "MS1-F126",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F226",
+          "q": 244,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1403",
+          "q": 1421,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1463",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 4,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1571",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2497",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 8,
+              "usable_depth_points": 8,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2571",
+          "q": 2583,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2802",
+          "q": 2848,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 8,
+              "usable_depth_points": 8,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3109",
+          "q": 3114,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3305",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3692",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    },
+    "LW": {
+      "counts": {
+        "events": 20,
+        "with_q": 10,
+        "complete_endpoint_cost": 4,
+        "common_depth_available": 2,
+        "eligible_proposals": 0,
+        "actual_commits": 0,
+        "pre_references": 40,
+        "unknown_pre_references": 2,
+        "pre_samples": 187,
+        "pre_usable_depth_points": 160,
+        "partial_depth_pre_with_at_least_three_valid_points": 3,
+        "partial_depth_pre_without_observed_mixture_or_ownership_risk": 2
+      },
+      "current_endpoint_reasons": {
+        "USABLE": 22,
+        "UNUSABLE_CURRENT_ENDPOINT": 2
+      },
+      "forecast_reasons": {
+        "WLS_LINEAR_TIME": 12,
+        "EXPIRED_OR_NONCAUSAL_HISTORY": 6,
+        "INVALID_OR_UNRELIABLE_HISTORY": 6,
+        "NO_SLOPE_LAST_VALUE": 24
+      },
+      "events": [
+        {
+          "event": "MS1-F218",
+          "q": 223,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 9,
+              "usable_depth_points": 9,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F375",
+          "q": 388,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 4
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 9,
+              "usable_depth_points": 9,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F430",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 5,
+              "usable_depth_points": 5,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 5,
+              "usable_depth_points": 5,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F932",
+          "q": 1156,
+          "decision_reason": "NO_COMPLETE_ENDPOINTS",
+          "underlying_endpoint_reason": "NO_PRE_HISTORY",
+          "gate": {
+            "eligible": false,
+            "reason": "NO_COMPLETE_ENDPOINTS",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 6,
+              "usable_depth_points": 6,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1247",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 8,
+              "usable_depth_points": 8,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1269",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 4,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1274",
+          "q": 1276,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 7,
+              "usable_depth_points": 7,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1392",
+          "q": 1406,
+          "decision_reason": "UNKNOWN_POST_SOURCE_BREAK",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_POST_SOURCE_BREAK"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1636",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 5,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 3,
+                "UNRELIABLE_INDEPENDENT_CORE": 2
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 8,
+              "usable_depth_points": 8,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F1758",
+          "q": 2029,
+          "decision_reason": "UNKNOWN_DEADLINE",
+          "underlying_endpoint_reason": null,
+          "gate": {
+            "eligible": false,
+            "reason": "UNKNOWN_DEADLINE"
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 5,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 3,
+                "UNRELIABLE_INDEPENDENT_CORE": 2
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2157",
+          "q": 2161,
+          "decision_reason": "COMMON_DEPTH_UNAVAILABLE",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "COMMON_DEPTH_UNAVAILABLE",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.0,
+            "contour": 0.0,
+            "depth": 0.0
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F2293",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2365",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 8,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 1,
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 1
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {
+                "UNRELIABLE_INDEPENDENT_CORE": 7
+              },
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2404",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 4,
+              "usable_depth_points": 4,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2850",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "UNKNOWN_REFERENCE",
+              "samples": 0,
+              "usable_depth_points": 0,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": false
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F2896",
+          "q": 2909,
+          "decision_reason": "COMMON_DEPTH_UNAVAILABLE",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "COMMON_DEPTH_UNAVAILABLE",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 5,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {
+                "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 4
+              },
+              "has_depth_mixture_or_ownership_risk": true,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.0,
+            "contour": 0.0,
+            "depth": 0.0
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F2979",
+          "q": 3052,
+          "decision_reason": "TOO_FEW_CONTIGUOUS_PRE_DEPTH_OBSERVATIONS",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "TOO_FEW_CONTIGUOUS_PRE_DEPTH_OBSERVATIONS",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.0,
+            "contour": 0.0,
+            "depth": 0.25
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F3101",
+          "q": 3111,
+          "decision_reason": "TOO_FEW_CONTIGUOUS_PRE_DEPTH_OBSERVATIONS",
+          "underlying_endpoint_reason": "FROZEN_JOINT_SHORT_ENDPOINT_COST",
+          "gate": {
+            "eligible": false,
+            "reason": "TOO_FEW_CONTIGUOUS_PRE_DEPTH_OBSERVATIONS",
+            "weighted_depth_margin": null,
+            "depth_winner": null,
+            "per_post_depth_winners": [],
+            "geometry_only_choice": null
+          },
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": {
+            "motion": 0.0,
+            "contour": 0.0,
+            "depth": 0.25
+          },
+          "staged": false
+        },
+        {
+          "event": "MS1-F3222",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 10,
+              "usable_depth_points": 10,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 1,
+              "usable_depth_points": 1,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        },
+        {
+          "event": "MS1-F3578",
+          "q": null,
+          "decision_reason": null,
+          "underlying_endpoint_reason": null,
+          "gate": {},
+          "pre": [
+            {
+              "role": "A",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 2,
+              "usable_depth_points": 2,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            },
+            {
+              "role": "B",
+              "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+              "samples": 3,
+              "usable_depth_points": 3,
+              "failed_depth_reasons": {},
+              "has_depth_mixture_or_ownership_risk": false,
+              "all_recorded_identity_versions_same": true
+            }
+          ],
+          "common_weights": null,
+          "staged": false
+        }
+      ]
+    }
+  },
+  "partial_depth_in_qualified_contiguous_pre": [
+    {
+      "segment": "feeding_000351_000555",
+      "event": "MS1-F12",
+      "q": 48,
+      "role": "B",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 7,
+      "failed_depth_reasons": {
+        "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 3
+      },
+      "has_depth_mixture_or_ownership_risk": true,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "feeding_000701_001060",
+      "event": "MS1-F325",
+      "q": 327,
+      "role": "B",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 7,
+      "usable_depth_points": 6,
+      "failed_depth_reasons": {
+        "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 1
+      },
+      "has_depth_mixture_or_ownership_risk": true,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "fishsa_development_8400",
+      "event": "MS1-F5399",
+      "q": 5436,
+      "role": "B",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 9,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 1
+      },
+      "has_depth_mixture_or_ownership_risk": false,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F457",
+      "q": 463,
+      "role": "A",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 5,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 5
+      },
+      "has_depth_mixture_or_ownership_risk": false,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "fishsa_validation_2888",
+      "event": "MS1-F2457",
+      "q": null,
+      "role": "B",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 4,
+      "usable_depth_points": 3,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 1
+      },
+      "has_depth_mixture_or_ownership_risk": false,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F375",
+      "q": 388,
+      "role": "A",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 6,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 4
+      },
+      "has_depth_mixture_or_ownership_risk": false,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2365",
+      "q": null,
+      "role": "A",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 8,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 1,
+        "MULTILAYER_INDIVIDUAL_HISTORY_BLOCKED": 1
+      },
+      "has_depth_mixture_or_ownership_risk": true,
+      "all_recorded_identity_versions_same": true
+    },
+    {
+      "segment": "LW",
+      "event": "MS1-F2365",
+      "q": null,
+      "role": "B",
+      "reference_status": "EXACT_INDEPENDENT_VERSIONED_REFERENCE",
+      "samples": 10,
+      "usable_depth_points": 3,
+      "failed_depth_reasons": {
+        "UNRELIABLE_INDEPENDENT_CORE": 7
+      },
+      "has_depth_mixture_or_ownership_risk": false,
+      "all_recorded_identity_versions_same": true
+    }
+  ],
+  "partial_is_hypothesis_only_not_new_forecast_or_association": true,
+  "mixture_and_ownership_risk_must_not_be_skipped_or_joined": true,
+  "predictions_and_scores_unchanged": true,
+  "GT_opened": false,
+  "RGB_pixels_opened": false,
+  "raw_sensor_pixels_opened": false,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

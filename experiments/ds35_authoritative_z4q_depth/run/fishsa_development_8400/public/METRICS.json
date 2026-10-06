@@ -1,0 +1,127 @@
+{
+  "segment": "fishsa_development_8400",
+  "frames": 8400,
+  "metrics": {
+    "SAM3_NATIVE": {
+      "IDF1": 91.31328783860297,
+      "HOTA": 73.3461431977153,
+      "AssA": 69.18676765844471,
+      "DetA": 77.75663771120087,
+      "IDSW": 5,
+      "FP": 194,
+      "FN": 323,
+      "GT": 50400,
+      "predictions": 50271
+    },
+    "Z4Q_FROZEN": {
+      "IDF1": 99.3334724001947,
+      "HOTA": 77.82948776478582,
+      "AssA": 77.90763828694708,
+      "DetA": 77.75663771120087,
+      "IDSW": 6,
+      "FP": 194,
+      "FN": 323,
+      "GT": 50400,
+      "predictions": 50271
+    },
+    "DEPTH_OFF": {
+      "IDF1": 99.3334724001947,
+      "HOTA": 77.82948776478582,
+      "AssA": 77.90763828694708,
+      "DetA": 77.75663771120087,
+      "IDSW": 6,
+      "FP": 194,
+      "FN": 323,
+      "GT": 50400,
+      "predictions": 50271
+    },
+    "DEPTH_OVERRIDE": {
+      "IDF1": 99.3334724001947,
+      "HOTA": 77.82948776478582,
+      "AssA": 77.90763828694708,
+      "DetA": 77.75663771120087,
+      "IDSW": 6,
+      "FP": 194,
+      "FN": 323,
+      "GT": 50400,
+      "predictions": 50271
+    }
+  },
+  "deltas": {
+    "SAM3_NATIVE": {
+      "DEPTH_OFF": {
+        "IDF1": 8.02018456159172,
+        "HOTA": 4.483344567070517,
+        "AssA": 8.720870628502368,
+        "DetA": 0.0,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      },
+      "DEPTH_OVERRIDE": {
+        "IDF1": 8.02018456159172,
+        "HOTA": 4.483344567070517,
+        "AssA": 8.720870628502368,
+        "DetA": 0.0,
+        "IDSW": 1,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "Z4Q_FROZEN": {
+      "DEPTH_OFF": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      },
+      "DEPTH_OVERRIDE": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    },
+    "DEPTH_OFF": {
+      "DEPTH_OVERRIDE": {
+        "IDF1": 0.0,
+        "HOTA": 0.0,
+        "AssA": 0.0,
+        "DetA": 0.0,
+        "IDSW": 0,
+        "FP": 0,
+        "FN": 0
+      }
+    }
+  },
+  "archived_DS34": {
+    "IDF1": 92.0404088565724,
+    "HOTA": 74.52655613190628,
+    "AssA": 71.4327326512706,
+    "DetA": 77.75663771120087,
+    "IDSW": 5,
+    "FP": 194,
+    "FN": 323,
+    "GT": 50400,
+    "predictions": 50271
+  },
+  "difference_vs_archived_DS34": {
+    "IDF1": 7.293063543622296,
+    "HOTA": 3.302931632879549,
+    "AssA": 6.474905635676478,
+    "DetA": 0.0,
+    "IDSW": 1,
+    "FP": 0,
+    "FN": 0
+  },
+  "reference_status": "EXPOSED_EXISTING_ANNOTATION",
+  "score_protocol": "Unchanged DS14/DS20/DS33/DS34 mask CLEAR.5 Identity.5 HOTA19; original coordinate systems and reference versions",
+  "no_mask_or_ID_exclusion": true,
+  "physical_depth_accuracy": "UNKNOWN"
+}

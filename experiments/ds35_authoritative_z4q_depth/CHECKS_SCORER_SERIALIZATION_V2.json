@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "tests_run": 5,
+  "tests": [
+    "ds35_scoring_key_fixture_v1.Checks.test_choice_and_candidate_list_not_reordered",
+    "ds35_scoring_key_fixture_v1.Checks.test_measured_fact_tamper_still_fails",
+    "ds35_scoring_key_fixture_v1.Checks.test_physical_mapping_tamper_still_fails",
+    "ds35_scoring_key_fixture_v1.Checks.test_real_multidigit_decision_matches_actual_json",
+    "ds35_scoring_key_fixture_v1.Checks.test_top_level_choice_tamper_still_fails"
+  ],
+  "failed_fixture_preserved": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\checks_scorer_serialization.py",
+    "bytes": 2716,
+    "sha256": "f6e494b16ac6dee5f266af84c4e6ae83103e519d9547348f3fe5cff1f9db33b9"
+  },
+  "helper": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\checks_scorer_serialization_v2.py",
+    "bytes": 1465,
+    "sha256": "606a8ded755d91ab5b29602b04fae149f852859e2eed850faa6c425a9375f403"
+  },
+  "real_sealed_decision_source": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\run\\LW\\public\\EVENTS.json",
+    "bytes": 12119066,
+    "sha256": "0c6eb757d583f3d6d427c88ed3874792d4eff478c9523fda825abcf8e93b211c"
+  },
+  "GT_opened": false,
+  "choices_and_numeric_values_unchanged": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

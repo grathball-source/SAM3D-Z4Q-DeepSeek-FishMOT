@@ -1,0 +1,31 @@
+{
+  "status": "APPEND_ONLY_SCORER_JSON_KEY_CANONICALIZATION_BEFORE_RECOMPUTED_HASH",
+  "old_scorer": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\score.py",
+    "bytes": 18156,
+    "sha256": "99d3f527e7cc06ea98f619ec07fcc6f994e7f2ed30d1f8c0cad816e7e954f48f"
+  },
+  "adapter": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\score_serialized_v2.py",
+    "bytes": 2679,
+    "sha256": "9dddbd2b54199e1150e251345eab62050eed7f7e4d1996f6f9bb336b64a446b2"
+  },
+  "diagnosis": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\DECISION_BINDING_DIAGNOSIS.json",
+    "bytes": 740,
+    "sha256": "f9909a4cd77d0441b43cedff00de04fca2e07bee313e4cd87a275b2469916592"
+  },
+  "checks": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds35_authoritative_z4q_depth\\CHECKS_SCORER_SERIALIZATION_V2.json",
+    "bytes": 1372,
+    "sha256": "912a84dc741901bcd3c37ccb80c34d1b4f46a1fdfa78f9e06fffdc9e5e194eb9"
+  },
+  "cause": "Python integer keys sort numerically; serialized JSON object keys sort lexicographically. LW MS1-F2896 uses keys106 and3; all actual serialized values are equal. Canonicalize the recomputed object with exactly the publisher JSON serialization, then compare.",
+  "scope": "Only the independent source-to-decision audit. Keep choice, candidate/list order, mappings, supports and numeric values. No tolerance, hypothesis relabeling or changed prediction.",
+  "official_metric_math_unchanged": true,
+  "all_eight_contracts_rechecked_before_any_reference": true,
+  "association_and_all_frozen_code_unchanged": true,
+  "old_failure_logs_preserved": true,
+  "new_model_http": 0,
+  "cost_usd": 0
+}

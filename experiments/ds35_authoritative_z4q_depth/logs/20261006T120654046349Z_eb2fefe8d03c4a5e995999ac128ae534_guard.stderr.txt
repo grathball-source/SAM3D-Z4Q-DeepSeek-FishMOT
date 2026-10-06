@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\guard.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\guard.py", line 22, in main
+    run_segment(name,output,stop_at=int(sys.argv[3]),disabled=(len(sys.argv)>5 and sys.argv[5]=='disabled'))
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\runner.py", line 193, in run_segment
+    elif e.get('ready'):resolve(arm)
+                        ^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\runner.py", line 78, in resolve
+    depth_gate=dict(eligible=False,reason=forced)) if forced else choose(e,e['joint_pre'],available,arm=='DEPTH_OVERRIDE' and not disabled))
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\association.py", line 45, in choose
+    detail['depth_gate'] = gate(detail, enabled)
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\association.py", line 11, in gate
+    if detail['common_weights']['depth'] != CFG['depth_weight']:
+       ~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: 'common_weights'

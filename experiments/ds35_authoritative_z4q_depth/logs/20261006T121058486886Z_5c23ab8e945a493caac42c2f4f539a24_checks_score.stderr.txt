@@ -1,0 +1,28 @@
+test_candidate_container_order_no_effect (__main__.Checks.test_candidate_container_order_no_effect) ... ok
+test_depth_quality_mutation_self_consistent_hash_rejected (__main__.Checks.test_depth_quality_mutation_self_consistent_hash_rejected) ... ok
+test_endpoint_depth_fact_mutation_rejected (__main__.Checks.test_endpoint_depth_fact_mutation_rejected) ... ok
+test_future_frame_rejected_self_consistent_hash (__main__.Checks.test_future_frame_rejected_self_consistent_hash) ... ok
+test_real_frame_pass (__main__.Checks.test_real_frame_pass) ... FAIL
+test_source_index_swapped_rejected (__main__.Checks.test_source_index_swapped_rejected) ... ok
+
+======================================================================
+FAIL: test_real_frame_pass (__main__.Checks.test_real_frame_pass)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\checks_score.py", line 28, in test_real_frame_pass
+    def test_real_frame_pass(self):verify_frame_contract(*copy.deepcopy(self.frame))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\source_contract.py", line 56, in verify_frame_contract
+    assert cert['mask_binding'] == _source_array_binding(masks[int(native)])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.350s
+
+FAILED (failures=1)
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds35_authoritative_z4q_depth\checks_score.py", line 48, in <module>
+    r=unittest.TextTestRunner(verbosity=2).run(unittest.defaultTestLoader.loadTestsFromTestCase(Checks));assert r.wasSuccessful()
+                                                                                                                ^^^^^^^^^^^^^^^^^
+AssertionError

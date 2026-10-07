@@ -1,0 +1,23 @@
+# DS37封存后处理与复现边界
+
+正式推理版本为RUNTIME_FREEZE.json所绑定的v3。该清单、八段FREEZE、实际START、预测、原始事务、量测与访问seal均只读。新增报告辅助脚本不进入runner、控制器、输入生成或评分公式。
+
+archive_preservation.py只核实工程尝试搬迁后的文件字节；旧记录仍保留原路径，由ARCHIVE_PRESERVATION映射到实际归档路径。v2部分未封存、未评分、不参与正式配对。
+
+state_effect_review.py在正式封存及评分之后，绑定每个publisher ledger和事务行，独立统计同一前态与独立原Z4Q的engine SHA、候选提议和公开映射变化。engine SHA包含原pending与诊断计数，不能把它与持久ID提交次数等同；没有序列化逐字段原engine快照的情况如实标注，不能编造状态差值。
+
+report_state_correction.py保留已冻结report.py的全部字节，在结果进程中用预先检查的有限字符串替换修正报告主判定：从“零完整状态或指标增量”改为“零发布或指标增量”。该修正由真实事务审计触发，与科研数值、GT输入选择或评分结果调参无关。REPORT_WORDING_CORRECTION记录原源码SHA、实际修正源码SHA、精确替换及审计出处；旧报告和成绩不回写，本轮报告也只新建一次。
+
+## 复现
+
+不要在本轮已有输出目录直接执行生成程序。新独立checkout从固定基点ff45571a073cd660b812754a348b680e138ac7bf开始，并提供本次交付的科学源码及相同只读依赖；新目录中只准备输入/源码，不复用本轮预测、seal、评分和已存在的测试输出。
+
+Python为E:/researchsoftware/anaconda3/envs/D-MOT/python.exe；既有依赖目录为E:/CAU/D-MOT/tools/jev_z4q_scene_v1_20260922/deps。PRIVATE_INVENTORY与每段FREEZE列真实私有来源路径、字节、SHA和源链。复制或改变这些绝对路径时必须生成新的路径清单及freeze，不声称与原seal字节相同。原始mask像素、原始depth_mm和源索引需要本地访问；Git公开的预测只引用原mask，不能据此重造私有像素。
+
+必要检查→独立160帧真实F159及关闭模块切片→accept→freeze→guard probe→orchestrate。accept所需三个前缀目录由对应真实prefix运行产生，不能把旧切片评分当作新模型成绩。四个来源工作进程各1数值线程；冻结要求启动时至少1,000,000,000字节空余磁盘。保留所有原始失败日志。每分支从首帧继续自己的状态，全部预测/访问seal后才执行score与postseal；没有新API、SAM3、训练、补全或GPU任务。
+
+可视化是封存后的实际深度与已发布mask对照。后一帧只在展示进程读取，不进入关联，也不回填已发布ID。私有图的真实文件、字节、SHA与每一列来源由PRIVATE_VISUALS/PRIVATE_INVENTORY绑定。公开SVG仅含汇总数值，没有RGB、depth raster或GT raster。
+
+自动展示失败与第一版修复失败均有实际非零退出记录和归档。完成版visuals_postseal_repair_v2在独立结果进程正常导入原visuals.py，对RawDepth只暂时开放历史帧随机读取，finally恢复方法；既有帧/时间/来源校验保留。26张图实际完成后才新建COMPLETE。源预测、指标和逐边重算文件哈希逐项核验未变。不能把展示修复的成功倒写为原主进程退出0。
+
+报告和逐边诊断是对本次固定来源的曝光数据分析；L3/LW的预测派生参考未独立人工确认。复现同源输出不等于完成新盲测或证明物理深度不确定性已标定。

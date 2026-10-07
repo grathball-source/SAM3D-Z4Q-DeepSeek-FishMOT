@@ -1,0 +1,48 @@
+{
+  "segment": "feeding_000701_001060",
+  "frames": 360,
+  "objects": 9596,
+  "counts": {
+    "Z4Q_WLS_VETO": {
+      "hook_edges": 1345,
+      "raw_conflicts": 0,
+      "redundant_conflicts": 0,
+      "legal_edges_deleted": 0,
+      "changed_frames": 0,
+      "original_own_state_null_checks": 360,
+      "veto_frames": 0,
+      "selected_commit_changes": 0
+    },
+    "Z4Q_LEVEL_VETO": {
+      "hook_edges": 1345,
+      "raw_conflicts": 83,
+      "redundant_conflicts": 83,
+      "legal_edges_deleted": 0,
+      "changed_frames": 0,
+      "original_own_state_null_checks": 360,
+      "veto_frames": 0,
+      "selected_commit_changes": 0
+    }
+  },
+  "reasons": {
+    "Z4Q_WLS_VETO": {
+      "TARGET_FORECAST_TOO_BROAD": 528,
+      "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 672,
+      "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 145
+    },
+    "Z4Q_LEVEL_VETO": {
+      "NO_RELIABLE_DEPTH_CONFLICT_KEEP_ORIGINAL_EDGE": 174,
+      "TARGET_FORECAST_TOO_BROAD": 218,
+      "CURRENT_DEPTH_UNRELIABLE": 53,
+      "RELIABLE_DEPTH_CONFLICT": 83,
+      "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 672,
+      "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 145
+    }
+  },
+  "elapsed_seconds": 139.24090530001558,
+  "disabled": false,
+  "all_masks_retained": true,
+  "original_Z4Q_and_DS32_WLS_full_state_exact": true,
+  "model_http": 0,
+  "cost_usd": 0
+}

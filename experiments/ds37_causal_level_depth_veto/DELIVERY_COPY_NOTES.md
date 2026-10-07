@@ -1,0 +1,7 @@
+# DS37本地交付副本
+
+E盘交付时空间耗尽，原绝对路径、输入及产物保留。F:/CAU/deliveries/SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007是普通独立Git交付副本；STORAGE_DELIVERY_COPY逐文件核验原本轮全部字节，新增整理命令只追加本副本的执行日志。
+
+直接在副本运行冻结delivery.py prepare会因旧缓存精确绝对路径要求失败，记录于DELIVERY_PREPARE_FAILURE_V1。delivery_copy.py不改科学源码或seal：先在原E路径运行原scorer的完整seal/输入核验，再核对全部复制产物及仓库内科学源码与已验原件相同，只为交付prepare临时绑定原scorer，并在finally恢复。其他提交索引与远端核验继续使用未修改的delivery.py。
+
+DELIVERY_COPY_BINDING保留实际方法和绑定；此步骤不是重跑或新实验。原RESULT_ONLY_PROCESSING字节保持与E路径原件相同。本副本的新增DEEP_REVIEW、整理代码、存储核验和交付记录随完整科学产物一起提交。

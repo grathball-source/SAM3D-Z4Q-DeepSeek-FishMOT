@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\checks.py", line 6, in <module>
+    from evidence import DepthEvidence, OLD, ADAPTATION
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\evidence.py", line 28, in <module>
+    exec(compile(observe_source.replace(observe_needle,'    sample = freeze_sample(sample)\n'+observe_needle),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\evidence.py:immutable_sample_creation", line 45
+    self.live[native] = dict(identity=identity, fragment_start=fragment_start,
+IndentationError: unexpected indent

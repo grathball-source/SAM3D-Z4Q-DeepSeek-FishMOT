@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\visuals.py", line 73, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\visuals.py", line 48, in main
+    pr=published[f];g=pr['global_frame'];d,ix,nat,b=sensor(g,pr['time'])
+                                                    ^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds14_raw_multidataset\source.py", line 77, in __call__
+    assert self.previous_frame is None or g>=self.previous_frame
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

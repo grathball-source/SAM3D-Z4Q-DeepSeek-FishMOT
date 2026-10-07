@@ -1,0 +1,28 @@
+{
+  "reason": "Frozen automatic report status incorrectly equated zero publication changes with zero full engine-state changes",
+  "original_frozen_report_code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds37_causal_level_depth_veto\\report.py",
+    "bytes": 11862,
+    "sha256": "64fec0c0d9049b00f314afc1590cb67b8d181b56e95a1263b491cb3547d50a94"
+  },
+  "result_only_correction_code": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds37_causal_level_depth_veto\\report_state_correction.py",
+    "bytes": 2074,
+    "sha256": "5bd7dfb05814a83ea78701a7099672ae73b52b84e8fb1f69e629a2b3e28852e0"
+  },
+  "exact_replacements": {
+    "NO_DEPTH_STATE_OR_METRIC_INCREMENT_STOP_FROZEN_VERSION": "NO_PUBLICATION_OR_METRIC_INCREMENT_STOP_FROZEN_VERSION",
+    "write_new(HERE/'RESULTS.json',result)": "result['state_effect_review']=review\n    write_new(HERE/'RESULTS.json',result)",
+    "'## main交付',": "'## 候选、状态与发布分层',\n        'STATE_EFFECT_REVIEW独立逐行回查了全部实际事务。零发布增量不代表完整engine状态不变；原engine的pending和诊断计数也属于状态。原合法边的真实删除、同前态状态SHA改变、未确认提议改变、已确认持久提交和发布分别计数。不能用零改帧推出零状态作用。详细真实数字和逐边出处见STATE_EFFECT_REVIEW与DEEP_REVIEW。',\n        '## main交付',"
+  },
+  "transformed_source_sha256": "de721946bedcec97c9355ed8317d0b0a81b7c7377cfe0321652d03584f2ea067",
+  "state_review": {
+    "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds37_causal_level_depth_veto\\STATE_EFFECT_REVIEW.json",
+    "bytes": 13637,
+    "sha256": "08aadf8db9a546431e0145fb042c7c70d9e23ef6d085a8834a9d96bea06cd929"
+  },
+  "inference_score_seals_unchanged": true,
+  "no_previous_report_or_result_overwrite": true,
+  "model_http": 0,
+  "cost_usd": 0
+}

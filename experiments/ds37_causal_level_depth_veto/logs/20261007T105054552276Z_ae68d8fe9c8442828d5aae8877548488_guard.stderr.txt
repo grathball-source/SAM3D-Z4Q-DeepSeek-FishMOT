@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\guard.py", line 29, in <module>
+    write_new(HERE/'GUARD_PROBE.json',dict(status='PASS_EXACT_FROZEN_SOURCE_HASH_ALLOWED_GT_FUTURE_UNLISTED_POSTSEAL_BLOCKED',
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 69, in write_new
+    with p.open('x',encoding='utf-8',newline='\n') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds37_causal_level_depth_veto\\GUARD_PROBE.json'

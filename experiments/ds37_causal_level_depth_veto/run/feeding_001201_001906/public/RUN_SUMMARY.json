@@ -1,0 +1,50 @@
+{
+  "segment": "feeding_001201_001906",
+  "frames": 706,
+  "objects": 18786,
+  "counts": {
+    "Z4Q_WLS_VETO": {
+      "hook_edges": 1469,
+      "raw_conflicts": 0,
+      "redundant_conflicts": 0,
+      "legal_edges_deleted": 0,
+      "changed_frames": 0,
+      "original_own_state_null_checks": 706,
+      "veto_frames": 0,
+      "selected_commit_changes": 0
+    },
+    "Z4Q_LEVEL_VETO": {
+      "hook_edges": 1469,
+      "raw_conflicts": 149,
+      "redundant_conflicts": 147,
+      "legal_edges_deleted": 2,
+      "changed_frames": 0,
+      "original_own_state_null_checks": 704,
+      "veto_frames": 2,
+      "selected_commit_changes": 0
+    }
+  },
+  "reasons": {
+    "Z4Q_WLS_VETO": {
+      "TARGET_FORECAST_TOO_BROAD": 957,
+      "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 409,
+      "NO_RELIABLE_DEPTH_CONFLICT_KEEP_ORIGINAL_EDGE": 24,
+      "CURRENT_DEPTH_UNRELIABLE": 1,
+      "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 78
+    },
+    "Z4Q_LEVEL_VETO": {
+      "NO_RELIABLE_DEPTH_CONFLICT_KEEP_ORIGINAL_EDGE": 565,
+      "RELIABLE_DEPTH_CONFLICT": 149,
+      "CURRENT_DEPTH_UNRELIABLE": 132,
+      "TARGET_FORECAST_TOO_BROAD": 136,
+      "TARGET_INSUFFICIENT_CONTIGUOUS_HISTORY": 409,
+      "TARGET_ANCHOR_CHANGED_OR_UNREGISTERED_REFERENCE": 78
+    }
+  },
+  "elapsed_seconds": 505.350800300017,
+  "disabled": false,
+  "all_masks_retained": true,
+  "original_Z4Q_and_DS32_WLS_full_state_exact": true,
+  "model_http": 0,
+  "cost_usd": 0
+}

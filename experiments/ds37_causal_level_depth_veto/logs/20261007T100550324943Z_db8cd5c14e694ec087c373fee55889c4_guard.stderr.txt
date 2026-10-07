@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\guard.py", line 12, in <module>
+    assert mode=='run';output=RUN;run_segment(name)
+                                  ^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds37_causal_level_depth_veto\runner.py", line 34, in run_segment
+    for path,h in frozen['code'].items():assert sha(path)==h,path
+                                                ^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 63, in sha
+    with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+         ^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\guard.py", line 13, in guard
+    if any(token in path for token in BLOCKED):raise RuntimeError('Forbidden prediction read: '+path)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Forbidden prediction read: e:/cau/sam3d-z4q-deepseek-fishmot/experiments/ds14_raw_multidataset/postseal_visuals.py

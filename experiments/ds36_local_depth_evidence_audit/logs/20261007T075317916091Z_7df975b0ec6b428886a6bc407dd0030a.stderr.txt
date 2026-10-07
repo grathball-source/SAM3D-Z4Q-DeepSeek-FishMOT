@@ -1,0 +1,19 @@
+fatal: path 'experiments/ds14_raw_multidataset/private/feeding_000000_000199/SOURCE_MANIFEST.json' exists on disk, but not in '543731028dc94bdade1c1860246e4e649586487b'
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\audit.py", line 340, in <module>
+    {'initialize':initialize,'freeze':freeze,'measure':measurements,'join':join}[sys.argv[1]]()
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\audit.py", line 80, in initialize
+    source=input_dir(name)/'SOURCE_MANIFEST.json';pin(source);m=read(source)
+                                                  ^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\audit.py", line 64, in pin
+    blob=git('show',BASE+':'+p.relative_to(ROOT).as_posix())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\common.py", line 60, in git
+    return subprocess.check_output(['git',*args],cwd=ROOT,env=env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'show', '543731028dc94bdade1c1860246e4e649586487b:experiments/ds14_raw_multidataset/private/feeding_000000_000199/SOURCE_MANIFEST.json']' returned non-zero exit status 128.

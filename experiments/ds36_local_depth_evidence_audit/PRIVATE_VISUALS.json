@@ -1,0 +1,5150 @@
+{
+  "status": "ALL_WRONG_AND_FIXED_CONTROLS_AND_ALL_GATE_FAILURES_RENDERED",
+  "cases": [
+    {
+      "name": "feeding_000000_000199/F160/n:26->p:16/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000000_000199/F15/n:16",
+        "feeding_000000_000199/F160/n:26"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\001.png",
+        "bytes": 156024,
+        "sha256": "aca7816cc18f5731c230fa299313f3a3e633be0c44c37c3f8b53d04d75ef465a"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000000_000199/F15/n:16",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000014.npz",
+              "bytes": 776854,
+              "sha256": "c1fb4295152a55aed008b40b04481c431a057a1504fda73e18f73ffac76167d8"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000014.npy",
+              "bytes": 1474688,
+              "sha256": "6069618e397ff2949e86383362e0bb70f0f8a9b2449f5ee7365b11be934d6cb6"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 14,
+            "time": 1789706581.147,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5d8c44ccd0844735a145a38d61232d0bfbc4dc77f4aee4c40c7d09b793a1152d"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3e32bf9e0e94e7a26c91e42fed805ae142aef8d86a86ef1274ae36397b02f293"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "277cbb0ab19626a48deda26186475efd68aef57659935f01a2ef3cf08d30311b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "fba38f3af43ac5a55fff737e8a442d83f38f44e1754a8d3670695d54e687e560"
+          }
+        },
+        {
+          "key": "feeding_000000_000199/F160/n:26",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000159.npz",
+              "bytes": 763105,
+              "sha256": "7234a5534bca1676c5c1375cc0ec9eecbe3dbc3bdaffb29cf4ce57934a477692"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000159.npy",
+              "bytes": 1474688,
+              "sha256": "1c06b31d775dd860ee0e137d8a425714f07f5b345a996a962ac03b4ec9214fe7"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 159,
+            "time": 1789706585.964,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "9add92d2237a6ea4e3820aa6499b3e8af16fdef48623c31a49fca7a8518fc860"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "415a463acd3d51b5ab9acbe18c5dc2045ade85d7459e8cc6644c92e3afbfa8fc"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "efba348d4d16a1e68d41aa391336fef595682a10a6e8f7c1656fa3c7ee79b3df"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "07e2ae42cdeb3709bb7616dad000e068f36c27f98eb1bfcf07efc38eb187b7c4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000000_000199/F191/n:30->p:8/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000000_000199/F42/n:8",
+        "feeding_000000_000199/F191/n:30"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\002.png",
+        "bytes": 181821,
+        "sha256": "184658e6365857b6c0bcf90963766a1e4bcbb328a9c4d0ef67d82bd227dfe91d"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000000_000199/F42/n:8",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000041.npz",
+              "bytes": 775309,
+              "sha256": "c6fa9a0be9a1d1fc62d5df1f0877ae256af3fff1a924393a31dd696b87e437cd"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000041.npy",
+              "bytes": 1474688,
+              "sha256": "61bcb0b45a50bf7e2e85f65d7d9cbf10e0aedbb214a521d47d61fa6c3f69631e"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 41,
+            "time": 1789706582.044,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ec01b81bb09408f236ec8627dcb300eb55ab2310db6a915ae74bd0f05bc87ebf"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b242376dad7336a900990ef2662e34f7a12b94eca4d2a359296230bfcc0bcbe4"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c38a1c79da52ed10557c8f5a6be0a890261f3d8524f251bbefe76059313a0ea1"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "79899a10a7ce98473ce149ad80202c9052f199f90f99522385bcd5b358125d0e"
+          }
+        },
+        {
+          "key": "feeding_000000_000199/F191/n:30",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000190.npz",
+              "bytes": 745824,
+              "sha256": "8743e8a2c52fdabaf0f16be22b2da011fc39c9d1be741ed6a6e3e8ea469ffab3"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000190.npy",
+              "bytes": 1474688,
+              "sha256": "cc0292e8b2ea62f6c2112f66e56549063b6c498531db63624dcea2e61bedc92d"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 190,
+            "time": 1789706586.994,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "9f847d8101860cea90ba3782a31783983b7b7f6bc971a1ca39dd7761693a9342"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "57f2f9f1eccee728b7483925bce796f094eee7dc521b010c31d48df2def72675"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "2ebc6406ca86603a7037b66300f117fa33707180ffd1d0ede0296f10713c71f7"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "24076ee5244fee7a6d1363da2944a95dc6a549c8d2a2de248d187745dac8ec68"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000351_000555/F118/n:80->p:21/BIRTH_REFINE",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000351_000555/F36/n:21",
+        "feeding_000351_000555/F118/n:80"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\003.png",
+        "bytes": 168248,
+        "sha256": "b1d6773be29d7b863681df8ae2ad25ace1fc8da9db8b50f426489f0d3a216209"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000351_000555/F36/n:21",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000386.npz",
+              "bytes": 747099,
+              "sha256": "81f812966e051c921cbf41a9d883768c80146bcb84f91282ded7733a83c0434d"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000386.npy",
+              "bytes": 1474688,
+              "sha256": "071ef8de7f781c928801a4cefc983eeeb202017ffe66328dea3d6e34ce369db7"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 386,
+            "time": 1789706593.506,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "789055c7fb2ba023281453b259ebf94fd3e43fc7f083fed347fd15a0dff8086a"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a4452ebca30546e52b0060508ce6df4731b0f55d74f4a98b2710033ddf1278cf"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "358cccdffa89cb5a08c9641d1726e8e408e2944cc9438444ffba13d6a9ade2c7"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "a1fff102d3c607f6a9725cbf0593ff46d658aa658c0c52ca412e6e9eb4b9f9ff"
+          }
+        },
+        {
+          "key": "feeding_000351_000555/F118/n:80",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000468.npz",
+              "bytes": 771585,
+              "sha256": "f461d6ad94030f446aa269cf9ba0843781a6d765dcb12c6b2840309875c19277"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000468.npy",
+              "bytes": 1474688,
+              "sha256": "f27e0c36593a120abe03846f3fff07fa6a0589335c52fe234b27603167464feb"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 468,
+            "time": 1789706596.231,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f94389367eb9c85e26bbdbfa7defed15aacde74ada9771691701834694bd2074"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5754da53b706ed0f6eac0c75a71e412a8167c63e03271f809ecb09fcc6b6415c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "7c8d830baf3442b39ae983506a3098a30805546f6ba37311dee88a70039a0a40"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "3be6a4b6f1a510c6ae0e3c20f435a976bef267e90d23f5976a360a96d3c4078d"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000351_000555/F172/n:83->p:73/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000351_000555/F92/n:73",
+        "feeding_000351_000555/F172/n:83"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\004.png",
+        "bytes": 174621,
+        "sha256": "4668671cb3dbf2f049f1ff480fa3fae0076227f2f28606d1002af79e84b35a64"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000351_000555/F92/n:73",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000442.npz",
+              "bytes": 776562,
+              "sha256": "16a32c8bfe79cfbc352058b08ed6be9bf1e4713fdfd640c45c1e0a3622037d10"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000442.npy",
+              "bytes": 1474688,
+              "sha256": "765a1c1c56995256fd7bcb683907ea4145629f64ee99dbd4540e6523f39acec4"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 442,
+            "time": 1789706595.367,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "241f87291832bd01e2eb2ab86426236ecf747c1228ee2f2be20b118abbf6658c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "41f36701d4fb6e11dd7c7522311a5645b377f786995f4b7952b5b14b8a2c1b1b"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "1c70cb43f9c96d2a31ffb7312ab3e277682fd678a536d0efa01d4027554b8c86"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "60ebc383d87df008c8fc00b88344845b4539b2f8d717a0a752ac5c2b1bc9aa8a"
+          }
+        },
+        {
+          "key": "feeding_000351_000555/F172/n:83",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000522.npz",
+              "bytes": 772101,
+              "sha256": "dea9354f7af213bfc82c51162bf806bfc58c61e25ac1c0f190c5d050ee4a3a6f"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000522.npy",
+              "bytes": 1474688,
+              "sha256": "91f076d65ebfbd15afde9fe345d7baf4985dde7cefddfcb74fbafc2de952cad6"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 522,
+            "time": 1789706598.025,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "349a76f1ca157a6b7f979d5a8b53632631037782241d998ef1773e5ff639370a"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c17caa1a568cbbb9418ccf37993306cbd07973efbd2a6c74192ade95826943bf"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "47d51c39048c95b190e4378ee833a877a7ec9f72f60e6c71e98dd21a8ae17b75"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "3516fa84dc4e6727453ab333f3ca7f51d287805e8f78b274af80b95c42a59195"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000701_001060/F134/n:118->p:99/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000701_001060/F112/n:99",
+        "feeding_000701_001060/F134/n:118"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\005.png",
+        "bytes": 235374,
+        "sha256": "0463c26d3f32bf0bab55009809efb9f1ac6ad42f5cec53c5ea3e3d1bae03a72c"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000701_001060/F112/n:99",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000812.npz",
+              "bytes": 780869,
+              "sha256": "8090642d826d214986dc5c1b11f2a61c6f3a706046a638ec6541b2ed02b89ebe"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000812.npy",
+              "bytes": 1474688,
+              "sha256": "f94ee4486911e83de194218d0dbad86ee913f11317eba2ddc04d82aed2bd9436"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 812,
+            "time": 1789706607.661,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ce7e86ab46b363cdf6b01da310249a02c8a5ca96e4485d8db12dc98fb7e74533"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "85a97bbdb084aaf640f5d8e5487e701eb4b61f12ea4fbab1eff55c0010945a6f"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "310e9d3f9c6037a594eb35505aea8b503947278855778f702e1549b30ab3c6b7"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "cbba04a7eab0e922478e557a7f4f9072bf2a265310d63fefca5258a091c202b2"
+          }
+        },
+        {
+          "key": "feeding_000701_001060/F134/n:118",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000834.npz",
+              "bytes": 770754,
+              "sha256": "1573f1b93b1e381f26381d13cfe028a0b2d68eab63ae1de4cce9f78422c6e4ba"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000834.npy",
+              "bytes": 1474688,
+              "sha256": "cdfb44f201fca7179c7ec6b5bf3d9480bd413395487cc5d050e131cb769e0d8a"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 834,
+            "time": 1789706608.392,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "9dce8c73548c53063cc25f1ba1ea48acabc32fe6f259bc317e75e7c25245515b"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3b5c8288bc1845ce994110809fe1b114c6a76f3841252097798f19f71486c8ec"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "73ebe4a668982c45e18a2ecfb9c3ae90dcb710e87a4bc60dd92b466496040023"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "9be441c3df411788fdb507d86647e8f4b18ff77d7167dc94fef5b4ecbc653433"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000701_001060/F149/n:119->p:70/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000701_001060/F7/n:70",
+        "feeding_000701_001060/F149/n:119"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\006.png",
+        "bytes": 180539,
+        "sha256": "78c326ede415936d478137d7750dd526aa6c0d37fa45a41969b6b1d94c4ace72"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000701_001060/F7/n:70",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000707.npz",
+              "bytes": 782193,
+              "sha256": "851bcc6237d8d2b078cfbccec94506305f0948c80763b955aee9ee994d5a7ef0"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000707.npy",
+              "bytes": 1474688,
+              "sha256": "352303d4636b09c52b57d8e1cc5406cf54ef654ded726d163a3ce7c6747198c5"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 707,
+            "time": 1789706604.172,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "4a2b0a60952fb9531006582f1b6c1a1128a621e9ba257f0096972e41907b0d06"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "1d0d1129dd57840415d1d57e9fbf69341f0853248210bf8597090acca05693f7"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "09f1e8015589b3a8cd5ae215591aa6c8a7481cf19a96a26816c4498f1b16abac"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "23e32573f16ddd7db760837cc320bfb2128693d3354fbe0516dfa0f5eead5bab"
+          }
+        },
+        {
+          "key": "feeding_000701_001060/F149/n:119",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000849.npz",
+              "bytes": 771519,
+              "sha256": "7d402bb5f72d64f05bd0159f8aab23f250b33794dacfeda55b5a91e1296d3cf3"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000849.npy",
+              "bytes": 1474688,
+              "sha256": "10cc592f138d21fc34e5f12ebd11af03ccefcd51249f6dcdf75b22dc72f92509"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 849,
+            "time": 1789706608.89,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8f51da12a1be1c3ad590eb9f1910ef052d7398c1f99ea9cd65140de176d8f107"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2d42be938a397033e91f688305404e28635046a3ee05249942360313bd108782"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "5862590b6378767b7a7795c3737f5c1682ab79c514c88b62e9ee99c0a588b28b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "fcbc399d88b8e9657892ae6e8ae1f4b234c6e9decd5842771ffcff4306df31bb"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000701_001060/F197/n:127->p:106/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000701_001060/F42/n:106",
+        "feeding_000701_001060/F197/n:127"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\007.png",
+        "bytes": 170689,
+        "sha256": "cf2128a78b69008049bee48a915fd0c81958f84b592783be9ce43b201e45053c"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000701_001060/F42/n:106",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000742.npz",
+              "bytes": 785528,
+              "sha256": "8c3a0382be85e922b590948b575359d8f69e5f4e7e056919842fcafc7b3b08ba"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000742.npy",
+              "bytes": 1474688,
+              "sha256": "d3a9a862f3b87412089d331a0e32cabc37999fa2491d863ccfa804b21c488366"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 742,
+            "time": 1789706605.335,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e8243b29f6fc572acb1c756271b1a26c41d8d116c88df9734fbe4f45b96850b0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "73173431f8b022343b5aeb95caeee6f3ea9332fd9f1a3bf39298989079c8b2ca"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "232afcfac3efb8951f60b9edf4b199d3c7e8ecff154520b51d8629b9d7d45154"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "e946593be092b2910cb74479fc1848c6c61df2b413a4400b257fe1dbb2aecaba"
+          }
+        },
+        {
+          "key": "feeding_000701_001060/F197/n:127",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000897.npz",
+              "bytes": 768962,
+              "sha256": "b7fd7f7020c736e1967a14b46a843752c7d027e958956c4060a176e94ec950fc"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000897.npy",
+              "bytes": 1474688,
+              "sha256": "33e9d3488ad0ac14e1ce760545dc28725c3a449e5aee96a2d1562c898caf83d7"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 897,
+            "time": 1789706610.485,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "99dd602b0d6a0ac41d2c96905f6c4e1886d14127551781d6c40ebff33edf2c38"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e35da5f5fc566a05c1d77814c7fe85590a9ca00ec6ebbd93c384b789766469a7"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "ba4c22870a94630facc867380fe55ccf47e95eb3e2398f7687df37048e831dc3"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "4b5178d23f90c56b87cdbce34c9f386a6b906a9a9ff6b68de14255c8cb3a829b"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000701_001060/F269/n:129->p:91/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_000701_001060/F147/n:91",
+        "feeding_000701_001060/F269/n:129"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\008.png",
+        "bytes": 162422,
+        "sha256": "2933fd0647089cb8da4cff50c5ccceb3a286a8e2290aaf406cba9e869e0663e8"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000701_001060/F147/n:91",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000847.npz",
+              "bytes": 768668,
+              "sha256": "9fdd284b96d7bfb91b583b7fc4a71ccf4b5d08cedf80abec6cd490824443aa19"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000847.npy",
+              "bytes": 1474688,
+              "sha256": "463afa2bda7efa2c6d9d31b7cca043fe2d7b36a5916babb3c7b0be8dff1be0a4"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 847,
+            "time": 1789706608.824,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a99f473bfabe6fede9905304b471e1e9403ad97637c5720d7b07a5228fb18943"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "baa636b79b69dbb7aa4b295cfa9322a0cce6762b7d269c6802398c1356e4ccb7"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "49add3317258519f2e64d02e632450dd31b4af4af86328590a236b5c22d2d889"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "3448e12fc1e6a3a4b0494e6be3e9bea0bea79839b3404441db572a50c8e50b95"
+          }
+        },
+        {
+          "key": "feeding_000701_001060/F269/n:129",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000969.npz",
+              "bytes": 781444,
+              "sha256": "b1528d3f03f8dcca9371ce6d682286ceacf9773a0eb109c760625a0c903cd214"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000969.npy",
+              "bytes": 1474688,
+              "sha256": "6e9f5207a68f298d28bd0959dc7b11a19a8f744f9da8944a5464c2ced2d6f758"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 969,
+            "time": 1789706612.878,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5f382c41e1d6d236ab7bca7e2d3ed5687446e9bfefc6928d18320e893641416c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "d112612441da4746496f17f9b7904695c41f2df5f12b8ff8b1eb046307916e60"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "936c17a059991dd98b80d2658cc52995930a0137d4b8e06b71e91ee0534eec5c"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "f08152bbbf466e37f514a5d13141ef65b49b0aa77dc536df90e8bb5630dd4d3a"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F190/n:172->p:126/BIRTH_REFINE",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F138/n:126",
+        "feeding_001201_001906/F190/n:172"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\009.png",
+        "bytes": 176401,
+        "sha256": "d7d529a426c26a1ecd4c7715ff31b78329c29f8fe0195522a055325255f4cae2"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F138/n:126",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001338.npz",
+              "bytes": 777355,
+              "sha256": "042eb39c36739cff2128732cb9319fb5a2c2ebb1fd6ed4d0153324f141ca1515"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001338.npy",
+              "bytes": 1474688,
+              "sha256": "3513c835cbafdcf4f29be08de3072e5b840600a1eea336ac356827f9478e3c86"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1338,
+            "time": 1789706625.139,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "72d237b510489e98070fbc61647137127a75d70e13f61b4a9a2b3ed84aad66ea"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "14618627458e46f50909b39bdcd19d6231ea2a61674317ddb7e6d5ddeea099e0"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c906905e2a36c5b586956f59233a59f4cdb3b5891221f905e497917c4b5a1cf9"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "7cf7acfa7f759398a67a95420404787ac3f8d1588ff1c4984f5463fe36d866fd"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F190/n:172",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001390.npz",
+              "bytes": 783374,
+              "sha256": "fbbd21b48e3170230b606420f17258c0a2d48a6d61b49edfcf325b7506923aab"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001390.npy",
+              "bytes": 1474688,
+              "sha256": "4b7b56d7efd9c91d6a1d13ecfe9db3aceddafd308b4ccac0007d9d6a2ab174b3"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1390,
+            "time": 1789706626.867,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "71d9d7c5f26397cf3f9c040b3760ec701ff5edaeffd025510a1020f8b759d58c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c3c3ae3e8529e33aae32f2064b0dbb1ffdede58b6aed90cdc87abe35010566fe"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c979c6357ba6cc60438c7d78c08c81b6f0098ab6ffce0217fd5fe12082aa2350"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "91f689ef8edd5f04b35651ad1eaae7d1c4074f4f0baafe022fe0fb4e2a50407f"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F204/n:168->p:136/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F22/n:136",
+        "feeding_001201_001906/F204/n:168"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\010.png",
+        "bytes": 186453,
+        "sha256": "04a643a01ed936f9d11dcbcb656e69dd1b152cb289f0341ff8e3ef69bde6c5e1"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F22/n:136",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001222.npz",
+              "bytes": 782495,
+              "sha256": "65e0e87a7e6d8ec35d5a4276620b0657127db4b89b293be01c3140158a7a9194"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001222.npy",
+              "bytes": 1474688,
+              "sha256": "aa993437c0fdc47b78de71ed30b2340d3954bcc8291657b26661427cc80ae46e"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1222,
+            "time": 1789706621.284,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6901e8ff58309bd7b3cfaedc529bd0600cdd1cb7e9d67a7767c877959480057e"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f372ffd099b893931228a885384837c69bc82ecdf30483db1f7d841f0ecf5a2d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "49a6e2e23984a8195af05ce94f67923a0a8984efc4080557ff05a2aa4361b2cd"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "e205a537d6be4b7e384fdb87393254c2388057185fd1fdce8cfd8ae210edfa7d"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F204/n:168",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001404.npz",
+              "bytes": 772344,
+              "sha256": "64543ca776522c22833696934141f39b8e4a4804508465f857bb9a99d72983b6"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001404.npy",
+              "bytes": 1474688,
+              "sha256": "8cd4d7d7545f24a24debd03731ae58515bf8f213ea6e2383b51aa033739a094d"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1404,
+            "time": 1789706627.332,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "afcb564bac6b27ae1aa29e3688f26b7bb8c016158f2249e2b267b9242cd62e98"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c5212588b735237b553b80073b430394828b925ba5e6255101e28b44ea50e81b"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "ee20e4db6a274bfd08f11eaca4551080c19689ee62d6c092ef999198e6e4871e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "3dd93a82712b43d9959da73dc20a5a58e834f0db1db163c549e55c3c081ef8b1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F316/n:178->p:119/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F213/n:119",
+        "feeding_001201_001906/F316/n:178"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\011.png",
+        "bytes": 226404,
+        "sha256": "f3dea427c2c66f149c7b865490e4684f742fd3a9b8b4c3e6b370881c105e23e8"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F213/n:119",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001413.npz",
+              "bytes": 764837,
+              "sha256": "6edf6ba3fdddbb9ea64675824527fd022a33019d2d384ad9c1831d0e5b43e38f"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001413.npy",
+              "bytes": 1474688,
+              "sha256": "df5a7891cff05af9ac671838240ba4c400fe34ef96a5c9dfec7ccfbf06dba29c"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1413,
+            "time": 1789706627.631,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8478ea5a794a1f2531e6723b242a379ab20f5ecc1bc0a81ac41dbe79ea31d98c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "d6b1db7547546101d721fa9f633965f20725e1f5fbbce54a8906547c1cf15be4"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "044ee0bdb2d30bf4ee3882ef7a0a94a4ad6fa78e933afa2cea408b443538e80a"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "029fac4ab11a3b4549c76a87fc38ea2c6b23df3f091c2e70d1a9f06ccacbb9fa"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F316/n:178",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001516.npz",
+              "bytes": 778745,
+              "sha256": "206ea206d107721787e2519992869b46228f6b446d70757413a899c7f8d4e7f5"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001516.npy",
+              "bytes": 1474688,
+              "sha256": "684d7774f8097fbdd6c7a6dba430f9f08c82f8b255f8305b506bce28f435258e"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1516,
+            "time": 1789706631.054,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "0bd0c1207e6823fdec3b7bea2743de3a226aac29f0216df09c22906c2d83e4ff"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a5d364922ad8fb0a03caa2d1b49b331e6be10a679a0a1c0d1ae80fe0d3da3f1d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "dfb8008ea355cf94d00e77360697b799035cbf4ae56dd9209004d50ccc498502"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "e6582ac35bb8e16c27b986b42cf43974ce0fa4e1a3f7b6993f3673de71391dff"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F481/n:188->p:125/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F201/n:125",
+        "feeding_001201_001906/F481/n:188"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\012.png",
+        "bytes": 180282,
+        "sha256": "2c60256e4ee6e1233a92b9e7e0a337d83e926c848b8e9273a9f9bdb90cf83ea5"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F201/n:125",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001401.npz",
+              "bytes": 776742,
+              "sha256": "e13736b678c33d972ef0dd712476ccb0a18b7440b20c8192eb07b04916dfbbad"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001401.npy",
+              "bytes": 1474688,
+              "sha256": "176c5e346611be2ac74fad82648897c0409c40030615be9f3131e0a78d669975"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1401,
+            "time": 1789706627.232,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2d01163de31ad29b638ef42c73eb7ef59ba57de58f08c99ee53e1c55889913f1"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5a9107565a39e26550e7e8e6597a88ed82708717840b402495b48b73488d3bd0"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "fdf5bba605476f7848163a3c2248dfced1f380de61fdfe5259251a1535238392"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1644b984d79de4089bf4bd9622f5392df87601d8d59eb4bb4f2695c412b78384"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F481/n:188",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001681.npz",
+              "bytes": 770940,
+              "sha256": "755b022d61f68835e2db042dc25249674f2c44c0728a71a888574d09d330e1b3"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001681.npy",
+              "bytes": 1474688,
+              "sha256": "a88683087ab0b3570fa0654e2973bde1cde262ad273fa8b5656e95cee7facc96"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1681,
+            "time": 1789706636.537,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "772fb60b90dc9dce1225ae1b60856c2d2344d5b0521cc1dce714c784e72941d6"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e8f48e41ed39342f4ce102e222e40e6695a76cca789396264fcdc58ffcbd1933"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "b5b1e89fe5da9bcb395f97f1ef312592a32d6a9e060ec19555f9e9f418a4482c"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "0d2255eb002f7c00af4dd2a26b31cf98f442d35113c6221d0c95f02d971f78fb"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F512/n:186->p:166/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F254/n:166",
+        "feeding_001201_001906/F512/n:186"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\013.png",
+        "bytes": 162794,
+        "sha256": "b6f323526bddef3d7e16393b19896fe00d8cf016ed8174e9f21932a9a3bdd183"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F254/n:166",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001454.npz",
+              "bytes": 774930,
+              "sha256": "0e586792b4ff61be738e5156ea2b2185e4229138cd419288b4c349631ae7bd58"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001454.npy",
+              "bytes": 1474688,
+              "sha256": "0a8be77e2569f9e5b4cd1cb1c8bf73e80569eed60c3489a434eba293d5ab5004"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1454,
+            "time": 1789706628.994,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "d68456bd1b1fc649de524efdf56c6deac74cf322ba00836fb20b05816aeb97d8"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "24e432cfe6f627b1b4f0b86577e851c47b707939325323547baf0cc3a1b4c437"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "ea2ae9906adec548116dcc77581d2cdadfcf6ce505a1b9ddada9e15c203ee58f"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "02eef6bea302f0fde763e9c8c25791ff39153c4d0f51af21c721ae65f69d822e"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F512/n:186",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001712.npz",
+              "bytes": 777783,
+              "sha256": "17a72bdd6fbdfb3e623ccfbec8a8cae10c83caf095d3d5987080b40b4362a892"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001712.npy",
+              "bytes": 1474688,
+              "sha256": "a761f20cb9e91047d8c72583b43779ac14a3281e31ddae5b72527ce773c9d2a7"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1712,
+            "time": 1789706637.567,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "fa35494981134da0fc8e13728307b070bb3b5654849dc0dd96bcd58e4f6ea945"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c5a4f0a7c263d773e06fb7e50371d5e924917ef9493110381700ba57e14016bf"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "4b426c5c097f5e65f000ce8c31df9f221217d73a4a455190a3a948aa7e558664"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "0447d730e8905d2e2a7296496ec3f98c05cb0f739dd269495296b9a43f40c34f"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F551/n:183->p:125/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F201/n:125",
+        "feeding_001201_001906/F551/n:183"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\014.png",
+        "bytes": 167408,
+        "sha256": "48a852a1344486ca65dcd6995f0ed9e9a912155d4278e90171e4f7e7557bb716"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F201/n:125",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001401.npz",
+              "bytes": 776742,
+              "sha256": "e13736b678c33d972ef0dd712476ccb0a18b7440b20c8192eb07b04916dfbbad"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001401.npy",
+              "bytes": 1474688,
+              "sha256": "176c5e346611be2ac74fad82648897c0409c40030615be9f3131e0a78d669975"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1401,
+            "time": 1789706627.232,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "2d01163de31ad29b638ef42c73eb7ef59ba57de58f08c99ee53e1c55889913f1"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5a9107565a39e26550e7e8e6597a88ed82708717840b402495b48b73488d3bd0"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "fdf5bba605476f7848163a3c2248dfced1f380de61fdfe5259251a1535238392"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1644b984d79de4089bf4bd9622f5392df87601d8d59eb4bb4f2695c412b78384"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F551/n:183",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001751.npz",
+              "bytes": 776787,
+              "sha256": "765e9e06b541db4df9b8b0b2f1ba6e7024f992777e8a99e172ae675bb6c6f43d"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001751.npy",
+              "bytes": 1474688,
+              "sha256": "fb84b572d1f6c001f626eec6c41ab476e5b58181187b136f4b124e8f7c5a93d9"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1751,
+            "time": 1789706638.863,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "fd744f82438b5534924a7e429d0544181f40ea049834c7274c65579a4e1c9398"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8e8169eb19615d2ab2728f1190d7fb2db0a44e8c4752da97a39c5cbc54ec2bb7"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "7049e711e7f55c7ed5a60ce79996d037b2a636aafde13f9e82b4bef9746a9084"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "2c15f24beb7d7438da0e0fc5558acdd6fbce9a29176879759abaea84da28debd"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F599/n:187->p:164/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F376/n:164",
+        "feeding_001201_001906/F599/n:187"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\015.png",
+        "bytes": 180483,
+        "sha256": "0852812e039ed9651b512fd40e775a9e51ba3d7fada7e56e099fcc23cc189c44"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F376/n:164",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001576.npz",
+              "bytes": 791790,
+              "sha256": "cd55a48045e27718920e60a80fd92c234c4fb3f31d98ba8aa7ea0c2467832d3e"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001576.npy",
+              "bytes": 1474688,
+              "sha256": "aa651b73711a9a042f5e3415e3f0b535bd51996fd5f81e2d477729cf7027cc73"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1576,
+            "time": 1789706633.048,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "67017e33ee7f495ce5adca9af4b030875daa0a2afc23c82ce24b76594eeef7cf"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "4c16893f2b4860fd17cfca005b2e36d5a9dedca2787ff73d3e082b8633d6467a"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "db718e02bac701ac345d5d85022cb9d918b850abd61e7bbb870d46acd5bef118"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "af404160cf32b4f815a2da8eb0d13b01695230bf49b991309ecf950c112d236e"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F599/n:187",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001799.npz",
+              "bytes": 776636,
+              "sha256": "90d190a326a52f02bbc17a6bdd73ef8210491b10424bad67bb35a716e475309d"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001799.npy",
+              "bytes": 1474688,
+              "sha256": "a6fd9f30260dc60c5485e057376c9183ab50413abe4a91d518b8674182845ed0"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1799,
+            "time": 1789706640.458,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "9cf09dfffc0e6019242d37065811857de6b61ed6cebbf7977b4ee0d9cbbb2bad"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "bd25d843d8725a491387a2f472244e05fd9de0b92276884e8c91ceff3866a052"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "b4de0c3dae34f9d7e8a0a90f973c2b8dc0a34aacfe8ecb9feafe64868ea1a329"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "0f00b4ef9dc85544e79aef6bac1e2a3ec138336446f0e9cdc7277f81bcd23caa"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F688/n:193->p:158/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F600/n:177",
+        "feeding_001201_001906/F688/n:193"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\016.png",
+        "bytes": 174131,
+        "sha256": "672897f8a82e51af849dff7f048edea1d14ce249252369964a8b963e4bb0ee09"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F600/n:177",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001800.npz",
+              "bytes": 775711,
+              "sha256": "11ed07ef0e6cee59473bba1f8f54b42478c69b7fc7860e9faaaedcf550378972"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001800.npy",
+              "bytes": 1474688,
+              "sha256": "51b9de99f68a6b582d698c3d51ab5cfb616dd331b04ebe5b101ca3fe4168c530"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1800,
+            "time": 1789706640.492,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "fff44817797646d8ecd90c7f69fcfb3f51f634229b9857977f4271183b697c6f"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "9d17df24cab9453152aba925f4615eb20ef4b809c52a7de66dd3bad57c5653e4"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c7e7c30fa56bc19b361510a2ec27cc9cceff9826cdc6c4bae4f275f1963ee1f6"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "ef7ed67856bb1f96b7ad0152047ab924d1b0e37a8b99c5f260108e38fb08abb5"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F688/n:193",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001888.npz",
+              "bytes": 783053,
+              "sha256": "2ad9089dd97696d2a6f5be0a827401f7b56c11bfd4e5c0a45f8e9e2909de4e5a"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001888.npy",
+              "bytes": 1474688,
+              "sha256": "de26f0e296ec0164bbfe2fba2ff52ba1ad7b92ca788768bc3fc903a1b5b1b5fa"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1888,
+            "time": 1789706643.416,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "1726fe9db8683f06719450187f34ccd944d15bbb3ade9d137e68eff3b2d0a7c7"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "20a5925fde02269dd9dc00e3fbb256cab582c62cf689123bf95285975e66c0ad"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "9651d5a6fd9e6fe87bfbf681921abfea1caf5274c38f71f754b2bd15122f435f"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1b2169176ed40751b6610c46d9bdde27cd3005a368f4017f19a0ec3ee153a2a6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F693/n:197->p:167/D1_DELAYED",
+      "selection": "ALL_OLD_WRONG_ACTIONS_POSTSEAL",
+      "grade": "WRONG",
+      "keys": [
+        "feeding_001201_001906/F657/n:176",
+        "feeding_001201_001906/F693/n:197"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\017.png",
+        "bytes": 267099,
+        "sha256": "80e74a1b125a0955a89b709abffe9337a915f5830a6f23a59d508f352e9d26e2"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F657/n:176",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001857.npz",
+              "bytes": 770705,
+              "sha256": "7b36e37bdb6e931327441b7d72cf40470ff671fab5255f6fdb964ea902430956"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001857.npy",
+              "bytes": 1474688,
+              "sha256": "3b5fb747bbbdd7a6d7d4305850c8aace0af4a760acba05c9f76f2c1c03c2cd2e"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1857,
+            "time": 1789706642.386,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "407feef0abeb2de58f8842db04239d9e8a96763e65551dafbc46302d3d4a191c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "0713dfdb85bf563228412b5d3c5b53a0c30960f73e47409681944626c54aed1c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "dcca306bb58549a1e2f13e0b8256d5172b5a6ce8af80c02ff63e47646d15855d"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "936c793f280133856b6a6da9f9d69199eea22b9175a606e62a296b0ba7f4a684"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F693/n:197",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001893.npz",
+              "bytes": 779763,
+              "sha256": "5d86eff4997bae6ea394659dff7bc655557e00e2b4c7ec94406f07d4182b6c0d"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001893.npy",
+              "bytes": 1474688,
+              "sha256": "aaff21a4b5e697d0a24b84234910b4e4c60ce591927d34186c47e47ef408bcbf"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1893,
+            "time": 1789706643.582,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "d7d8d1fcfb1944640cff2e5d597aded06f55e942f8f6007f94e86a0defbfaaf9"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "4d537c9a1e0498b7433e9084a00c16fdc3ba82eb613c7150cbb138a0853c2704"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "95a796e507765640ac5101a3770a1a624207c959342602001d6ed7697bdeccf5"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "5a192281fd339163217ebae51df63c20876b36d15597821db1643dc4cbf12da6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000000_000199/F195/n:38->p:7/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "UNSCORABLE",
+      "keys": [
+        "feeding_000000_000199/F163/n:7",
+        "feeding_000000_000199/F195/n:38"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\018.png",
+        "bytes": 271701,
+        "sha256": "ab74e328aca2e6d51ea56604074b0145457c11b743f4e43d618938274d1d2b84"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000000_000199/F163/n:7",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000162.npz",
+              "bytes": 742826,
+              "sha256": "18cb750660138cb1a61cc8a2870d74da7ec03b5563d024708151a432c9652b6a"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000162.npy",
+              "bytes": 1474688,
+              "sha256": "402a372986a2c2a2c704ab48b112bb3c3074464d3f5eaaa37acd6bb7908de080"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 162,
+            "time": 1789706586.064,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "51cc595b2755fac9c5435f9bbe5f5f6d2bbe3de1a39a13f993ea4ad8b7389f7e"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "cf2a3d333a7834a106249eec79e8c7567470f60f676ac43969b24a676509bbee"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "f80f746f9766bc851d992b81e941895d56320051f70395865134aff0ec1f8156"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "9b414f5b5302a9a144faf68751c47cae87cffda44431c59576af41d44b732782"
+          }
+        },
+        {
+          "key": "feeding_000000_000199/F195/n:38",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000194.npz",
+              "bytes": 771845,
+              "sha256": "af688709a79329446abc4152667d033104c3b7b808a0b7b0091e50655803fca7"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000194.npy",
+              "bytes": 1474688,
+              "sha256": "cf0936966291a2b550c4b72f6ea36556faa8fa681bc5eb6a99632e567a93ecb7"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 194,
+            "time": 1789706587.127,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ce8d1408588157be10d6f68339c04ac00790716145edd732c8b7c0b64c693ec0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b377b7406fae0baed646e388309b64d0928102478393dc758759abfb9f53b3c6"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "0c9b5bb6c4f24f938f927aa2c504a1899fd22b446eff647e34db6dc5d8e8fbad"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1bfe0858c392c251e8516d3610de5292b84b01b07273bade9f715d43b9e314be"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000351_000555/F24/n:70->p:67/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "UNSCORABLE",
+      "keys": [
+        "feeding_000351_000555/F11/n:67",
+        "feeding_000351_000555/F24/n:70"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\019.png",
+        "bytes": 137889,
+        "sha256": "40cc476a039848b5a9183329c794471a64f3bf5a1e48a35128d449bb3e000043"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000351_000555/F11/n:67",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000361.npz",
+              "bytes": 718873,
+              "sha256": "279b847a1a181e279de89781dc29a7b06d42c7ee4167cda0cc379c7def9630da"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000361.npy",
+              "bytes": 1474688,
+              "sha256": "046c4bb12f31507e398e5afb84a1f16c6c3af825bf1ad1b70be55dd8304ba48d"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 361,
+            "time": 1789706592.676,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6f5660f1782d52b8f7a65bda832c89b1d9636a598973443ac997d2aab13924e0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "00a7575054c35d2787e38762f2d99ff3b226476375fba6e0d8d80e563939cbd8"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "1a2d6e3e0d67b39f4a4e3a2c35c8af0dc104e24f67d2fdba1b85d2d414150bb5"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "2827f786089b2234158a618d61975330277c4824de79e34ffb49ed563ff762ed"
+          }
+        },
+        {
+          "key": "feeding_000351_000555/F24/n:70",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000374.npz",
+              "bytes": 737779,
+              "sha256": "1f7176c7df0e586c033b0d415f82e2143a23caf81850e679fe78ef0ecfb3134e"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000374.npy",
+              "bytes": 1474688,
+              "sha256": "42874b7fd1e8928924bcd1afa812ad0fa12f97af810c3917b680596bd8ae9ef1"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 374,
+            "time": 1789706593.108,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "cabb92276b9ddd68f794983a289428c182469783443831e01751f458b336c947"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "41f9517ba89f7c31540fa3d500db88841779d2dc3640df3e1261e0906215821a"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "38af7230fa7e6064fbe6fd195be7dc5b9ab8ffa7dc660037a05f375e3e6297d0"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "0933120d09d8980e76f86fc5636632bf3b64cce1e7627942ab87307be00cd779"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_000701_001060/F205/n:123->p:117/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "feeding_000701_001060/F84/n:117",
+        "feeding_000701_001060/F205/n:123"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\020.png",
+        "bytes": 170900,
+        "sha256": "be461e7717ecfbf73ae62aafead88f96f59e06c24dede1d91c73ccaad4f603e2"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_000701_001060/F84/n:117",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000784.npz",
+              "bytes": 781250,
+              "sha256": "6e21d9c09f256b352ba3e9e34e004c933865544dd19090358fcfd4836bd9449c"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000784.npy",
+              "bytes": 1474688,
+              "sha256": "74349297fa25b1e784988d171bf1ec4540fc67e370e80fed21efba7d28f97dfb"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 784,
+            "time": 1789706606.73,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b3baea5bb2230f0351a5e8b0c0a083150265acd58828722d7e71006ab23ffa32"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ecc4817fb00e8c8fd615fb25214b0bc0fba31a4a6acde3cdcb94b23b87d8c8b4"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "bd39fda4ed92f0f31d083c4c795ec7d22df178167802a480c0ec91877d1bc438"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "7bd30f8f2560338d73fc6eb4683960131d5d5a71bf9d1dd87afd9125ce6f3393"
+          }
+        },
+        {
+          "key": "feeding_000701_001060/F205/n:123",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\000905.npz",
+              "bytes": 770651,
+              "sha256": "639f12538f575cfc227974f23622190ced812f3ee5ada08a8b6490d713e043f8"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\000905.npy",
+              "bytes": 1474688,
+              "sha256": "8c88d00e0aa273ed167e77e1cbe8705f126c43b9c97177c553040172df25292a"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 905,
+            "time": 1789706610.751,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "00eda2d3b34b7a3e8ab7080b2849e4e4ef4abb765fb291fb6b42f5d24400beaa"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e21004b9d3f74fb84f225b6dbbdc568670476dae0a86ae00e7a5612bcf024f89"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "612038e1732c91856e68565f294b2a2024ab85a73065aa1e55dd884f2de9bdbd"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "85a63eae18ca5a020ed29ae39c147bbce89e19ec73ac497a5e12dd8900429d42"
+          }
+        }
+      ]
+    },
+    {
+      "name": "feeding_001201_001906/F160/n:170->p:167/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "feeding_001201_001906/F119/n:167",
+        "feeding_001201_001906/F160/n:170"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\021.png",
+        "bytes": 182155,
+        "sha256": "8cf3f673bbbbd699785653524b70ce2764f390598a94449b9c315d7379474873"
+      },
+      "source_frames": [
+        {
+          "key": "feeding_001201_001906/F119/n:167",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001319.npz",
+              "bytes": 767605,
+              "sha256": "bdef9952442b23d2e62dd68c50b87a9cecfa36d2727ecc08433aa41e7bd6242b"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001319.npy",
+              "bytes": 1474688,
+              "sha256": "cd31423e5c315ad0b9ee5d2ac0a3a3716d4b85f9f1bec1b69ce8eff82eade145"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1319,
+            "time": 1789706624.508,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "19ecac29abd73875032186fe130ee90aa6a8a18786353c052d78dfd1e9e61bc0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "318d8daf9e5faffd756c83fadf7e651fabbcfc01a246febc9459e5fb06131d0e"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "3427e9519032734afd1a4196554f5489437c2e93bcc2c68555b75e7a960b4d4b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "fbc1cdd4a73ed2379748f02bd7f91584ffd9c7c38bdf5f535a3f4a5df11c34f2"
+          }
+        },
+        {
+          "key": "feeding_001201_001906/F160/n:170",
+          "source": {
+            "raw_npz": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_rgb_640x360\\001360.npz",
+              "bytes": 778664,
+              "sha256": "84c9d151216c4fac9d98444ce8ed2b3e45bcd3117d501b40487731ce358047d5"
+            },
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedFeeding_v1\\depth_native_mm\\001360.npy",
+              "bytes": 1474688,
+              "sha256": "c7233841a4d7cc735ad7a5b8ff406fadb32d241dbd12ed70727a600a535fdfd2"
+            },
+            "actual_fields_read": [
+              "depth_mm",
+              "source_index"
+            ],
+            "native_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 1360,
+            "time": 1789706625.87,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "7afc020ad883e5e747d6901a954048e96c99602ab8da377374c56b8382bf15c4"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c04fe775a5a0f8889b98065755f09a8c546c559c90942e53e2a4f4babeeb1e51"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "dc5faa1e63c87e454fac872961496e51ecc153553acd543ca5c2f7d4faf2729e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "f242e693bd71ad6790a237035abc779b4843710d78cd2bf27b020db7174e85f7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishsa_development_8400/F1327/n:6->p:0/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "fishsa_development_8400/F986/n:0",
+        "fishsa_development_8400/F1327/n:6"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\022.png",
+        "bytes": 360557,
+        "sha256": "27cb3e4350fe98f7e0c4735970db37a67aeddfc1c46929ad4b4d5feeec816174"
+      },
+      "source_frames": [
+        {
+          "key": "fishsa_development_8400/F986/n:0",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_02.h5",
+              "bytes": 1354878782,
+              "sha256": "75092ccfafc0ccee149e4608b0db117d7a2cb229daee1af7bac94dbe9ace9d09"
+            },
+            "h5_row": 84,
+            "aligned_frame_id": 985,
+            "source_color_index": 985,
+            "source_depth_index": 984,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 986,
+            "time": 1787708774.176,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "283532de3a25fffc3cff18e1ae87b8111eea21303d5d05f1cac0aa8958ae903c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6c0492ac7084ab304544aa85fb589979545c4b6b4933178dcc98167280680a2a"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "ba44410ac0464de4ed2def3ed254dd382a73d43113337739f27aff441858fcdf"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "5e60458bab1bbb6dbb1d0cf02f00ad43e3212d1da9dca6e0b4cd04c3a65a0e7e"
+          }
+        },
+        {
+          "key": "fishsa_development_8400/F1327/n:6",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_02.h5",
+              "bytes": 1354878782,
+              "sha256": "75092ccfafc0ccee149e4608b0db117d7a2cb229daee1af7bac94dbe9ace9d09"
+            },
+            "h5_row": 425,
+            "aligned_frame_id": 1326,
+            "source_color_index": 1326,
+            "source_depth_index": 1325,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 1327,
+            "time": 1787708785.538,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5ba6fdc3042892a2a1086682852b8436ff6c5f6768d48f816b87a085e9ed4a62"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f7d99025fc480d38704bd8955895a3b1bf4cfe93ede18de2a53fdbee5a5bbf5d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "8540eca8d8313df0a5ea8369ab5929599012124bc84245e0a43cd2296708f5c7"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "6712694c69f0b399bb878d0a4e424c6b0a34926ee4b7d412b9c96dae8df69893"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishsa_development_8400/MS1-F7997",
+      "selection": "ALL_DS35_COMMON_DEPTH_GATE_CASES",
+      "grade": "UNKNOWN_EVENT_MAPPING",
+      "keys": [
+        "fishsa_development_8400/F7890/n:2",
+        "fishsa_development_8400/F7881/n:5",
+        "fishsa_development_8400/F8035/n:8",
+        "fishsa_development_8400/F8035/n:5"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\023.png",
+        "bytes": 633745,
+        "sha256": "e14c17d7c6bd1affa83bb39fd5689b444e45e4b81317e65c203f71012f44090f"
+      },
+      "source_frames": [
+        {
+          "key": "fishsa_development_8400/F7881/n:5",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_09.h5",
+              "bytes": 1358125355,
+              "sha256": "48510f21c61786e96198b3fd80937e5b34ebf9c42c058a499fd08656ac251087"
+            },
+            "h5_row": 679,
+            "aligned_frame_id": 7880,
+            "source_color_index": 7880,
+            "source_depth_index": 7879,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 7881,
+            "time": 1787709003.904,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "1b8d7009866667d201c59f6f812f5c33feb24f7224b63637c5de3ae20443a184"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8b4ff49d8c5886d8e9610b7b66ef25cb235dfb1f976161b136ebea5e28921c7d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "297d95df3eacbae750dc4dd769cef61941ac8cbce26e04443679c1a201696b4a"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "c872453fd33eaf32eb3e028d638b4642db07a0da8f50e50558a71fc85e3ff98f"
+          }
+        },
+        {
+          "key": "fishsa_development_8400/F7890/n:2",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_09.h5",
+              "bytes": 1358125355,
+              "sha256": "48510f21c61786e96198b3fd80937e5b34ebf9c42c058a499fd08656ac251087"
+            },
+            "h5_row": 688,
+            "aligned_frame_id": 7889,
+            "source_color_index": 7889,
+            "source_depth_index": 7888,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 7890,
+            "time": 1787709004.204,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c96554497fc64b08b78e1f089d3ba4da16bdf2991e661f581bc5d5c808e709fe"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5709c932f93b6e7f16377f94c6b532e9504f33f992de34e77f4cc603ab92dc93"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "45c0e0af07fc5505222024c4be87833ef824da67358675291ab22dceb97d5511"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "8d6bd0ae66f1b942be2c848f9295a6ba92817414d2a1fb7c64c0720bbeac753d"
+          }
+        },
+        {
+          "key": "fishsa_development_8400/F8035/n:5",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_09.h5",
+              "bytes": 1358125355,
+              "sha256": "48510f21c61786e96198b3fd80937e5b34ebf9c42c058a499fd08656ac251087"
+            },
+            "h5_row": 833,
+            "aligned_frame_id": 8034,
+            "source_color_index": 8034,
+            "source_depth_index": 8033,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 8035,
+            "time": 1787709009.035,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "68accb4e2e07ff7e43a92d1d77f6c28c37595c631f24b21fe18b16a377390f7b"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "87d4ecdd6bb92d03552add7f9ea621168287f85b0302bce0dc2dd76c9d3d164f"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "2ae747d81b0058017703821dd45257189549a91786e89b25a48f9eb6c73235e1"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "538977805890cadca26d5b1a275bdda370a33b40384cead0c0d57456a1611ccd"
+          }
+        },
+        {
+          "key": "fishsa_development_8400/F8035/n:8",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_09.h5",
+              "bytes": 1358125355,
+              "sha256": "48510f21c61786e96198b3fd80937e5b34ebf9c42c058a499fd08656ac251087"
+            },
+            "h5_row": 833,
+            "aligned_frame_id": 8034,
+            "source_color_index": 8034,
+            "source_depth_index": 8033,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 8035,
+            "time": 1787709009.035,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "68accb4e2e07ff7e43a92d1d77f6c28c37595c631f24b21fe18b16a377390f7b"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "87d4ecdd6bb92d03552add7f9ea621168287f85b0302bce0dc2dd76c9d3d164f"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "2ae747d81b0058017703821dd45257189549a91786e89b25a48f9eb6c73235e1"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "f448cef71ed79f5c95be535f8e8149b881f814734646f5d0e70592634b733889"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishsa_validation_2888/F2188/n:8->p:3/BIRTH_REFINE",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "fishsa_validation_2888/F1935/n:3",
+        "fishsa_validation_2888/F2188/n:8"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\024.png",
+        "bytes": 344476,
+        "sha256": "c4f09f0af35c0687771f2e54c49aed23c35492fdf91ea1d15ca52a7131ca4bfa"
+      },
+      "source_frames": [
+        {
+          "key": "fishsa_validation_2888/F1935/n:3",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 433,
+            "aligned_frame_id": 11234,
+            "source_color_index": 11234,
+            "source_depth_index": 11233,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 11235,
+            "time": 1787709115.65,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "50b93ef3b56354c7d82cd8e08175e0cfc1345f408d6f1ddfd95231ad6865afe3"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c0e1f76dacd8a3fbfef0215067603ecbb7c04435d5748dae6dcfb1b264809af0"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "2f456d8b1506299a48dd1007f525d1002fc2e50631917a72618aecf848dec02e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "a1a5af709a4398069e0a2f7cc14dd6fc53b00ac5799fd23d12ea51f89cd976b4"
+          }
+        },
+        {
+          "key": "fishsa_validation_2888/F2188/n:8",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_13.h5",
+              "bytes": 1355926497,
+              "sha256": "1cfdebf6e9efe1a9cc09de4b9a8fe233f88700154f813b8c56bae84f363520fb"
+            },
+            "h5_row": 686,
+            "aligned_frame_id": 11487,
+            "source_color_index": 11487,
+            "source_depth_index": 11486,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11488,
+            "time": 1787709124.079,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b1cf4b0a20abce8892d1dd812151803907618f8199cc0937c87f0b88d2aee0cb"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "89882629d9ec5eefa4bd64235a31ef9e3b347b2ed42b3e27a64136b409be2677"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "1e3080bdb04bdd374790cf67438ffab2ccd380b750b68a4bd7f8a8cbbafb4e32"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "e2fb651cf11674a51ef31f6f4a1c79c8c8cf1d4620a109bd4fccb901de2176e3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishsa_validation_2888/F280/n:6->p:2/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "UNSCORABLE",
+      "keys": [
+        "fishsa_validation_2888/F96/n:2",
+        "fishsa_validation_2888/F280/n:6"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\025.png",
+        "bytes": 341536,
+        "sha256": "ba7140fbdd74099d377b52dfe5b75fd3b60a282d2864175db2fa4de5278f9410"
+      },
+      "source_frames": [
+        {
+          "key": "fishsa_validation_2888/F96/n:2",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_11.h5",
+              "bytes": 1362483234,
+              "sha256": "e124b85d1f33064aabe40195fc148ba847baa72834a1203fbe3d61673c015a9f"
+            },
+            "h5_row": 394,
+            "aligned_frame_id": 9395,
+            "source_color_index": 9395,
+            "source_depth_index": 9394,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 9396,
+            "time": 1787709054.379,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "c8affcd1b52024c858e6612409babc713112a3e66a8ac75e250eac8c93132dc3"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a26c15ce419ad0b4ced307130626bddbfc4e4e73a55e4bcb575e77f3a12cb92d"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "11b2b2415db26733ddfa1a078581ac94b0262cf54fb0d9ac3784d1e21f147422"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "0567104b0766120a58805d73cd54c70d907c7fa5f82660b2d87b2af5eaae471a"
+          }
+        },
+        {
+          "key": "fishsa_validation_2888/F280/n:6",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_11.h5",
+              "bytes": 1362483234,
+              "sha256": "e124b85d1f33064aabe40195fc148ba847baa72834a1203fbe3d61673c015a9f"
+            },
+            "h5_row": 578,
+            "aligned_frame_id": 9579,
+            "source_color_index": 9579,
+            "source_depth_index": 9578,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 9580,
+            "time": 1787709060.51,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "caafcd23bf1a1729f3baaead3aad2e7b5cdb0229e8ba4f8365ceaec5535414aa"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b94af7918b362d97b9fd55c34a3c0953a8c6c3fd3c6628ad860b2e2cb0ca9242"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "e3b6a96bae88ec6b7d246af2c0e8c618fd0b5d3bd7c9919832618b84175e8bd4"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "57b579e677e37f991116cfd6e2a1887e5f27d9c96a3abc78630ea36a6fbbf927"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishsa_validation_2888/MS1-F2584",
+      "selection": "ALL_DS35_COMMON_DEPTH_GATE_CASES",
+      "grade": "UNKNOWN_EVENT_MAPPING",
+      "keys": [
+        "fishsa_validation_2888/F2580/n:1",
+        "fishsa_validation_2888/F2578/n:4",
+        "fishsa_validation_2888/F2600/n:4",
+        "fishsa_validation_2888/F2600/n:1"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\026.png",
+        "bytes": 420060,
+        "sha256": "b8d6998f57d35b78af771b35c428952585e45b1d477e41ec924f0fa5446aa01d"
+      },
+      "source_frames": [
+        {
+          "key": "fishsa_validation_2888/F2578/n:4",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 176,
+            "aligned_frame_id": 11877,
+            "source_color_index": 11877,
+            "source_depth_index": 11876,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11878,
+            "time": 1787709137.074,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ef8254d5d06e86f00ef1e88d7765908346691da27dbe5e256cb9426960464072"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "276146e2910152546e44eb8312eb1d8c3ef1f961bb2db9376c8d008f8ed7c19b"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "0368c669247f705e2de3cd7df7623335f43a475db9eaacae671d6ff1a580f624"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "d14827eaccd45c329e5df3219718c51cf16e55ea83e6fd3d416712168d09a4ae"
+          }
+        },
+        {
+          "key": "fishsa_validation_2888/F2580/n:1",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 178,
+            "aligned_frame_id": 11879,
+            "source_color_index": 11879,
+            "source_depth_index": 11878,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "global_frame": 11880,
+            "time": 1787709137.141,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f1c0cd33dfb9898a85c0ae281b8000306f320aee804c391faa6ade8a5d7fa179"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f0c8284ab726b66bb1820d15afdd9aa72d3102a1aa44c1c7ee48cdd84a8618e1"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "3eef5c71733e770bf56c559aac5dda1e3338d5ba3dbb3820d0b4963814e1e556"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "d2b38201b15e00672426371c6eaa5f434f586e7570f7e32d5aa92cbd3b2a0b65"
+          }
+        },
+        {
+          "key": "fishsa_validation_2888/F2600/n:1",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 198,
+            "aligned_frame_id": 11899,
+            "source_color_index": 11899,
+            "source_depth_index": 11898,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11900,
+            "time": 1787709137.807,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "17e5ea7dbe49545b150d806549f0f6ffdd6122d3b380fe05cef8377b5c4242e1"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e09a3a4f3ce1ed08c5ebf62f73c0b34ff1c3168ec645cb9f39cd863f6f9db32c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "57e31b266d796acf097ec8cce604983dd554bf5f44d9af3180946ed32e5b1bec"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "8cc0cb4ec3402313706fc48868bb3abec4d1182559e7cbf3686adcd39498e85b"
+          }
+        },
+        {
+          "key": "fishsa_validation_2888/F2600/n:4",
+          "source": {
+            "raw_h5": {
+              "path": "E:\\CAU\\D-MOT\\data\\AlignedDataset_v1\\shards\\part_14.h5",
+              "bytes": 739015937,
+              "sha256": "dc92a55acd094626867292bd1b580a28115d346a7ebf03391e3198afae910661"
+            },
+            "h5_row": 198,
+            "aligned_frame_id": 11899,
+            "source_color_index": 11899,
+            "source_depth_index": 11898,
+            "actual_fields_read": [
+              "frame_id",
+              "aligned/raw_depth_mm",
+              "aligned/raw_source_index",
+              "native/original_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "global_frame": 11900,
+            "time": 1787709137.807,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "17e5ea7dbe49545b150d806549f0f6ffdd6122d3b380fe05cef8377b5c4242e1"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e09a3a4f3ce1ed08c5ebf62f73c0b34ff1c3168ec645cb9f39cd863f6f9db32c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "57e31b266d796acf097ec8cce604983dd554bf5f44d9af3180946ed32e5b1bec"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "367fa7a57a4a4d05bf2cdc50dcf73b944c872de2abcb4af4f086a294a68fd067"
+          }
+        }
+      ]
+    },
+    {
+      "name": "L3/F3025/n:47->p:9/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "L3/F2712/n:9",
+        "L3/F3025/n:47"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\027.png",
+        "bytes": 384002,
+        "sha256": "a15285373ee2ab14e87b935d74e490fab6efb3ff00872c59e39515ff66676eb3"
+      },
+      "source_frames": [
+        {
+          "key": "L3/F2712/n:9",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder4\\depth_1786858263250000.npy",
+              "bytes": 1474688,
+              "sha256": "26e7ad06b1964e37338565a01891b250e2b0349178966b29da59e2731ddf58c7"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2711,
+            "time": 1786858263.248,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "0c1c1a4aead2f4d66e64d272f7206fc4e9e4c83f654b11ec0ebbd270fb98083d"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8cbeafc43ffcb1b0307ff546c184b1f9d1d638abb90d11d555e2248bac565e68"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "f368035ab4436a7bfbe182e2114535866aed0c3dd4863c38a171a70653934baf"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "9d8fc76a4f3d347fefbb93542ef2413c18596ef89ab66e695984fe4fa6897d57"
+          }
+        },
+        {
+          "key": "L3/F3025/n:47",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder4\\depth_1786858273629000.npy",
+              "bytes": 1474688,
+              "sha256": "50add46536238f8fff6024d3208dbf7b7977031b0e0eca63f0ed0e245d6bc536"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3024,
+            "time": 1786858273.627,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6c66cf66b79179cb81606d6f6520b16fdf1ef7e1da34ce023a8ca90bc85056d4"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "6488a5510cb6d10fde5fb63101c2d92ee809907b2560ed2825b702ab644ca466"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "03b0b113f94c9a09442c587533d97446e1c592f3235bceff2a596d9164feae8f"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "61f76977430a2bae59a54223b9e8d03e00bbb7a3fae51cd36d7078420ed3ba3f"
+          }
+        }
+      ]
+    },
+    {
+      "name": "L3/F298/n:12->p:13/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "UNSCORABLE",
+      "keys": [
+        "L3/F211/n:13",
+        "L3/F298/n:12"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\028.png",
+        "bytes": 214464,
+        "sha256": "3e3c6e6bf4b5e42e115ca4c4c683f0b29815aa735140f5442b1665e79926da28"
+      },
+      "source_frames": [
+        {
+          "key": "L3/F211/n:13",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder1\\depth_1786858180360000.npy",
+              "bytes": 1474688,
+              "sha256": "999880dd0804caf3e475568a108ffcce22aa33c6f7987bd4d1ce5a2b9ae1aa3e"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 210,
+            "time": 1786858180.358,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3fc45420182e71ab9b9f3d5ae8f768a7be0df850b1774a369515d5678c103187"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "f47c0bdbb09229015183de10a548bada1599579b15df4c425303f5cf2a8951c9"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "c3cf770a07b72fb9b6b52186da188921a6e90b0bb89c1870243b7cc0fd7b674b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "fc7339cf3711b7e328774304e75b17530b77ffcc39d72e53e64def74dbfb3ef8"
+          }
+        },
+        {
+          "key": "L3/F298/n:12",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132923_CL8654103L3\\_temp\\subfolder1\\depth_1786858183243000.npy",
+              "bytes": 1474688,
+              "sha256": "5c550e2059fa6071c9f587c384c7c5a884af1af9fae3b61111b7dcc7cc89d4d2"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\L3\\calibration.json",
+              "bytes": 1928,
+              "sha256": "4ecf1d204d1f51d00ef8fb32abcd15b8733d6e2f59c4134a0ee73f0f0e52e1cf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 297,
+            "time": 1786858183.241,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "16195d58d07294d89aeb91e9f2f6842ec9ee30b3b2342f4ff8f9ecd7ca591a27"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "16e47de3e40c98b0f998e4a904b891f03153fc339ccbc9001a1b1a01c4c21363"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "21874550d89743afd6411cfc7bb67496fa89d0334b2a28a0cc8187b8e669a329"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "2dc28c795995df4973f767b8f08e21a0534862ed1c0db5f97d2f88cd5d7fccfd"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LW/F2515/n:106->p:5/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "CORRECT",
+      "keys": [
+        "LW/F2309/n:5",
+        "LW/F2515/n:106"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\029.png",
+        "bytes": 179361,
+        "sha256": "333bd347f2cff5e37f3b882efdfb9c27d8b0760cfb9b9bd946c5bf3f9f989005"
+      },
+      "source_frames": [
+        {
+          "key": "LW/F2309/n:5",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder3\\depth_1786858275362000.npy",
+              "bytes": 1474688,
+              "sha256": "d82033a7866a8b32acf811f918994c4d337d4322e7ae4842037df839e4ba3137"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2308,
+            "time": 1786858275.361,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8a348ab82ff888e35dec9c119c4b0dfe47fbf97df2d16ed74c4f36388a9aabe3"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "fb2dc95adc010dca8bdea3a35e66b2e8cf1fbffe470720ba0eaa62a1ccc48579"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "14bdf8cef88d2e85022b8ee1269a8fd56b6bd3643b4d1db9bc03ece7e2ad8c1a"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "4bb98138ea3c391ffbaf75a6eac1af58e2a46fa8b3a2b74867d86247dd3761e6"
+          }
+        },
+        {
+          "key": "LW/F2515/n:106",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder3\\depth_1786858282201000.npy",
+              "bytes": 1474688,
+              "sha256": "6e9e4d9535d2932cf71896f3d755c390f652e26244c4698ea33b4e47eb420729"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2514,
+            "time": 1786858282.199,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a3c17389216a0199f91e7cbe2dbe919104291e8fac579e0b7f8d3ca2dc33e13e"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "831e1e78cf7cb5f3efe7abb74e6ce2f5cedf37574d22f7d0d918b5e8afd86ed1"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "67f334ea2d923a98e3247c1ce711d3a9ec8ee4b6abc518964bf32692245e2f2b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "5f4e753adfdca13038f26e3f9d78d4a7c960d2c66b4e3dea20828dea7b9dd105"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LW/F115/n:14->p:9/D1_DELAYED",
+      "selection": "EARLIEST_GRADE_CONTROL_PER_SOURCE_POSTSEAL",
+      "grade": "UNSCORABLE",
+      "keys": [
+        "LW/F52/n:9",
+        "LW/F115/n:14"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\030.png",
+        "bytes": 133042,
+        "sha256": "00a3a3963d8dd5ed22280633350fa79a7c33c173729b4cc0ca80b5981ff4d937"
+      },
+      "source_frames": [
+        {
+          "key": "LW/F52/n:9",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder1\\depth_1786858200467000.npy",
+              "bytes": 1474688,
+              "sha256": "2b4765970ca47a5ffac398a2bb4b1dc2bbf5f63078a3270899e7e598effb3df1"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 51,
+            "time": 1786858200.465,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "92de41c3fc320719a628a6ad99bdb36d22a5aa16f5de0988f429b07a80d27a7c"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "28c251842d24472b6527af33d76b750d467b1b1b909a1b1fade8b3e856d921c1"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "147e7844f757523f5cbee671e6da88610a270c642f01277ab0e8eaed3f705304"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "4e0134e3dfdc7e876eb95eb54cb9dfa72ec6a44912eef8196416dc88178ae813"
+          }
+        },
+        {
+          "key": "LW/F115/n:14",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder1\\depth_1786858202557000.npy",
+              "bytes": 1474688,
+              "sha256": "c42522202ab0f65c7de2898685cbb42713f181fb64cf384a6ff7a55c23b25065"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 114,
+            "time": 1786858202.556,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "8241a6a3d1ebde0df7ff7de025df02e4c9afe612a2d3976c0b6e493981fa833a"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "90c0ceac655b8226a837e3b491a342432166db03fec012c7c697c2466996b994"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "afaca51cbb1156456fdfdad0e0700f2f8bc30dc99783a5d4cba8b457ce9465e3"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "f340e986243b86dcf9f96eced4e7480c6f88ef0fe7019a6882213c6239c58e86"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LW/MS1-F2979",
+      "selection": "ALL_DS35_COMMON_DEPTH_GATE_CASES",
+      "grade": "UNKNOWN_EVENT_MAPPING",
+      "keys": [
+        "LW/F2977/n:128",
+        "LW/F2860/n:120",
+        "LW/F3052/n:60",
+        "LW/F3052/n:128"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\031.png",
+        "bytes": 480196,
+        "sha256": "1db193d88104eb83ac8635e8a59268bb81e9006cf84200d6afb54a5103bff26e"
+      },
+      "source_frames": [
+        {
+          "key": "LW/F2860/n:120",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858293651000.npy",
+              "bytes": 1474688,
+              "sha256": "ad833f59983645bda68a90fbfbc8468404f8ffbd1443d2cdc46aa186b390f7c5"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2859,
+            "time": 1786858293.65,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a84833202b99c7bb40b64ce7c9bc18667694918dcc6c8ee629bd50d977856ec0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5bd0b7f91757538f398605486889c1909360c3eb2f4eff37d61588b59dcc9f4c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "99b35bdc0b4d98d54b917680bd06a01f7d38e73dc8a23ee8ddd7caa2b5a1f595"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "9af1ff765aca483218da8e3acfc9bfdd4a6a73bb8b69ee902011bd03813317d5"
+          }
+        },
+        {
+          "key": "LW/F2977/n:128",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858297535000.npy",
+              "bytes": 1474688,
+              "sha256": "863b8a2d38029ce9a68ce6e2cdee88c372949d6ea7b19034a45efe9014dac0f5"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2976,
+            "time": 1786858297.533,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "ef614eab28c129d65ba62abe9b181b72e7cec9a6b31a6753cef7f37f51bf6ebb"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "3baeaf2d205bb3d76b810d83f9a26a611ad097b2264f9794c5ecba39b88e5be2"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "611cc9c2d6f6aef726f9e6be8411e36c9a0c5259719793f0494240da014cd081"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "af9f107a8bb864d3c20edaea48e1ca5f37ed91d791740fa0976582990350b979"
+          }
+        },
+        {
+          "key": "LW/F3052/n:60",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858300024000.npy",
+              "bytes": 1474688,
+              "sha256": "fd599f5306a93419d785eb34941cdf4fa9c23bb3fb7d814e2b9a6fbc403e45e4"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3051,
+            "time": 1786858300.022,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b08f528ca66c20e2e20463e5ccfa3854876e2a394e811f7b74e4943520a94c35"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5cc0b0935f229eaecef9a2f5c4264d4558b0c75e222730c735a0ec9f001855e9"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "95a00f01f098f4ebb86597460185c703d21f1a58fdbc533ddd2882296e1cd28e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "f6e43892e7d30ab7b687e77cc53be3ee331b301ba84bdf843895f0e3ada12267"
+          }
+        },
+        {
+          "key": "LW/F3052/n:128",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858300024000.npy",
+              "bytes": 1474688,
+              "sha256": "fd599f5306a93419d785eb34941cdf4fa9c23bb3fb7d814e2b9a6fbc403e45e4"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3051,
+            "time": 1786858300.022,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "b08f528ca66c20e2e20463e5ccfa3854876e2a394e811f7b74e4943520a94c35"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5cc0b0935f229eaecef9a2f5c4264d4558b0c75e222730c735a0ec9f001855e9"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "95a00f01f098f4ebb86597460185c703d21f1a58fdbc533ddd2882296e1cd28e"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "df2f4a15ee0fba0c731f7b46716507c03abf0339ad4f37b381bc62bfe2ec7808"
+          }
+        }
+      ]
+    },
+    {
+      "name": "LW/MS1-F3101",
+      "selection": "ALL_DS35_COMMON_DEPTH_GATE_CASES",
+      "grade": "UNKNOWN_EVENT_MAPPING",
+      "keys": [
+        "LW/F2860/n:1",
+        "LW/F3018/n:6",
+        "LW/F3111/n:128",
+        "LW/F3111/n:6"
+      ],
+      "artifact": {
+        "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\private\\cases\\032.png",
+        "bytes": 513966,
+        "sha256": "7f6a25bfe4c3e9d2fdd6d9cfcd237a70daaf1c9e083da49bc0301011f61b7168"
+      },
+      "source_frames": [
+        {
+          "key": "LW/F2860/n:1",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858293651000.npy",
+              "bytes": 1474688,
+              "sha256": "ad833f59983645bda68a90fbfbc8468404f8ffbd1443d2cdc46aa186b390f7c5"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 2859,
+            "time": 1786858293.65,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "a84833202b99c7bb40b64ce7c9bc18667694918dcc6c8ee629bd50d977856ec0"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5bd0b7f91757538f398605486889c1909360c3eb2f4eff37d61588b59dcc9f4c"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "99b35bdc0b4d98d54b917680bd06a01f7d38e73dc8a23ee8ddd7caa2b5a1f595"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "c0ce259c444760a2984055de28c1136f74a3d88fa9b39280c4074020eaa8e471"
+          }
+        },
+        {
+          "key": "LW/F3018/n:6",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858298895000.npy",
+              "bytes": 1474688,
+              "sha256": "87ec1b497eb74cd7f6bc02554fbc0a1499ab7ca189111ad7047cfc2a77557a88"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -1000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3017,
+            "time": 1786858298.894,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "e2c625938d6ce1c830624e366de71af9d39a54521cb731e3d0be476a2724e132"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "fb8f435cba12b200b278a2d2c45e38d27e708c2413850b13541e25de03f5d450"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "df3a01103a79498ee5797814874597f1a381211415c079abec74e6a3e0b4893b"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "ab1cfeba78616f1ec3a8309f8f3d2ed91cd31dc450a853c67d87d2ad359d9cd0"
+          }
+        },
+        {
+          "key": "LW/F3111/n:6",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858301978000.npy",
+              "bytes": 1474688,
+              "sha256": "8658a031a1f1ab7e267e955d2107ff2b4a39d7957c431eaad269ad81d8a83f1b"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3110,
+            "time": 1786858301.976,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "84c3019fce61d01e9ddf73354598c0b36871b797ee8f705819e6047d18ed693b"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5199b1007ec33bd066390f25848298b6c77a6798a0c7113f7e3430017168f480"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "7a8dec06f480fedfcca5801d8ed805607e299836325e6455d80532a73f3b1c56"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1ff7b7481f2cfec280a5e6ab06e13b23729d06dbdb9981e50fe9d16be5b92846"
+          }
+        },
+        {
+          "key": "LW/F3111/n:128",
+          "source": {
+            "native_npy": {
+              "path": "E:\\CAU\\D-MOT\\data\\HDF5\\20260816_132950_CL8654103LW\\_temp\\subfolder4\\depth_1786858301978000.npy",
+              "bytes": 1474688,
+              "sha256": "8658a031a1f1ab7e267e955d2107ff2b4a39d7957c431eaad269ad81d8a83f1b"
+            },
+            "actual_fields_read": [
+              "current_native_depth_mm"
+            ],
+            "delta_us": -2000,
+            "sensor_available": true,
+            "missing_reason": null,
+            "calibration": {
+              "path": "E:\\CAU\\D-MOT\\data\\AnnotationNewBags_20260919\\LW\\calibration.json",
+              "bytes": 1936,
+              "sha256": "eeab4343e6e0a3628cc26c49f56c7f36f3a5f8c452a022961ecc8bbb3344fcaf"
+            },
+            "projection": "FROZEN_GEOMETRY_NEAREST_Z_NATIVE_INDEX_TIE",
+            "global_frame": 3110,
+            "time": 1786858301.976,
+            "aligned_depth": {
+              "dtype": "<f4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "84c3019fce61d01e9ddf73354598c0b36871b797ee8f705819e6047d18ed693b"
+            },
+            "aligned_source_index": {
+              "dtype": "<i4",
+              "shape": [
+                360,
+                640
+              ],
+              "sha256": "5199b1007ec33bd066390f25848298b6c77a6798a0c7113f7e3430017168f480"
+            },
+            "native_depth": {
+              "dtype": "<f4",
+              "shape": [
+                576,
+                640
+              ],
+              "sha256": "7a8dec06f480fedfcca5801d8ed805607e299836325e6455d80532a73f3b1c56"
+            },
+            "aligned_coordinates": "RECORDED_RGB_CAMERA_Z_MM",
+            "native_coordinates": "RECORDED_NATIVE_SENSOR_Z_MM",
+            "RGB_read": false,
+            "GT_read": false,
+            "restored_read": false,
+            "sensor_valid_range": "UNKNOWN",
+            "physical_accuracy_mm": "UNKNOWN"
+          },
+          "mask": {
+            "dtype": "|b1",
+            "shape": [
+              360,
+              640
+            ],
+            "sha256": "1ad88a5caf8bac71349f7aca1bd74af190787097a4735dc3fbcd775c313e983a"
+          }
+        }
+      ]
+    }
+  ],
+  "pixels_private": true,
+  "GT_raster": false,
+  "RGB": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\audit.py", line 2, in <module>
+    from common import *
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\common.py", line 30, in <module>
+    MEASUREMENT = module('ds36_existing_local_background', ROOT/'experiments/ds22_local_background_depth/measurement.py')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds36_local_depth_evidence_audit\common.py", line 13, in module
+    result = importlib.util.module_from_spec(spec); spec.loader.exec_module(result)
+                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds22_local_background_depth\measurement.py", line 17, in <module>
+    from mixed_depth import array_binding, PARAMETERS as OLD_PARAMETERS, _old
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\mixed_depth.py", line 24, in <module>
+    _old = _module('ds18_frozen_ds17_measurement', ROOT / 'experiments/ds17_mixed_depth_activity_repair/mixed_depth.py')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds18_association_evidence_interface_repair\mixed_depth.py", line 19, in _module
+    spec.loader.exec_module(module)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds17_mixed_depth_activity_repair\mixed_depth.py", line 18, in <module>
+    _spec.loader.exec_module(_core)
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds12_contact_depth_admission\contact_measurement.py", line 20, in <module>
+    CFG = read(HERE/'CONFIG.json')
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CAU\SAM3D-Z4Q-DeepSeek-FishMOT\experiments\ds20_pending_confirmation_isolation\common.py", line 41, in read
+    def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\researchsoftware\anaconda3\envs\D-MOT\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\CONFIG.json'

@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checks": [
+    "TIED_RANK_AND_MISSING",
+    "CORE_PATCH_PARTITION_WITHOUT_PEAK_SELECTION",
+    "OUTSIDE_MASK_DOES_NOT_ENTER_CORE",
+    "SHARED_NATIVE_SOURCE_EXCLUDED",
+    "MISSING_DEPTH_REMAINS_UNKNOWN",
+    "SELF_CONSISTENT_UNTRUSTED_SOURCE_REJECTED",
+    "REAL_WLS_VARIANCE_EQUATION_AND_CITATIONS",
+    "VERSION_BREAK",
+    "FRAME_GAP",
+    "UNUSABLE_POINT",
+    "FUTURE_HISTORY_REJECTED",
+    "REAL_SOURCE_MASK_CORE_POPULATION_SLICE"
+  ],
+  "real_slice": {
+    "segment": "feeding_000000_000199",
+    "frame": 160,
+    "native": 26,
+    "contexts": [
+      {
+        "context": "feeding_000000_000199/F160/n:26->p:16/D1_DELAYED",
+        "role": "CURRENT",
+        "evidence_cutoff": 160,
+        "recorded_version": null
+      }
+    ]
+  },
+  "code": [
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\checks.py",
+      "bytes": 4815,
+      "sha256": "4e987c95b88da0071d13608cd5e3168c46c3a345626e36fb0e9d1e58d159b26f"
+    },
+    {
+      "path": "E:\\CAU\\SAM3D-Z4Q-DeepSeek-FishMOT\\experiments\\ds36_local_depth_evidence_audit\\measurement.py",
+      "bytes": 6487,
+      "sha256": "af649ff71c5e2fa8daf9b9e6a8f6ab36ceeb82d935590035a26f8f80edb85994"
+    }
+  ],
+  "physical_label_content_read": false,
+  "RGB": false,
+  "GT": false,
+  "model_http": 0,
+  "cost_usd": 0
+}

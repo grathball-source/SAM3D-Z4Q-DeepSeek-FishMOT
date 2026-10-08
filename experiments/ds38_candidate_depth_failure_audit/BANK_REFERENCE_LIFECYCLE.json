@@ -1,0 +1,1318 @@
+{
+  "actions": [
+    {
+      "action_id": "feeding_000000_000199/F160/n26-p16",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": false,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 26,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000000_000199/F191/n30-p8",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 30,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 55,
+          "last_same_snapshot": 156,
+          "last_same_anchor": {
+            "frame": 155,
+            "native_id": 7,
+            "mask": "n:7",
+            "canonical_id": 7
+          },
+          "target": 7,
+          "status": "CURRENT_ANCHOR_UNSCORABLE",
+          "current_anchor": {
+            "frame": 163,
+            "native_id": 7,
+            "mask": "n:7",
+            "canonical_id": 7
+          },
+          "current_failures": [
+            "outside_motion_range"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000000_000199/F195/n38-p7",
+      "physical": "UNSCORABLE",
+      "availability": {
+        "any_bank_same": false,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 38,
+        "independent_correct_targets": [],
+        "cause": "UNSCORABLE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000351_000555/F24/n70-p67",
+      "physical": "UNSCORABLE",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 70,
+        "independent_correct_targets": [],
+        "cause": "UNSCORABLE"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 10,
+          "last_same_anchor": {
+            "frame": 10,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "target": 67,
+          "status": "CURRENT_ANCHOR_UNSCORABLE",
+          "current_anchor": {
+            "frame": 11,
+            "native_id": 67,
+            "mask": "n:67",
+            "canonical_id": 67
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000351_000555/F118/n80-p21",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 80,
+        "independent_correct_targets": [
+          67
+        ],
+        "cause": "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 117,
+          "last_same_anchor": {
+            "frame": 71,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 67
+          },
+          "target": 67,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 71,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 67
+          },
+          "current_failures": [
+            "occupied"
+          ]
+        },
+        {
+          "first_snapshot": 20,
+          "last_same_snapshot": 23,
+          "last_same_anchor": {
+            "frame": 20,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "target": 70,
+          "status": "BANK_REMOVED",
+          "current_anchor": null,
+          "current_failures": null
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000351_000555/F172/n83-p73",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 83,
+        "independent_correct_targets": [
+          22
+        ],
+        "cause": "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 5,
+          "last_same_snapshot": 171,
+          "last_same_anchor": {
+            "frame": 23,
+            "native_id": 22,
+            "mask": "n:22",
+            "canonical_id": 22
+          },
+          "target": 22,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 23,
+            "native_id": 22,
+            "mask": "n:22",
+            "canonical_id": 22
+          },
+          "current_failures": [
+            "depth_residual"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F134/n118-p99",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 118,
+        "independent_correct_targets": [
+          100
+        ],
+        "cause": "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 27,
+          "last_same_snapshot": 133,
+          "last_same_anchor": {
+            "frame": 28,
+            "native_id": 100,
+            "mask": "n:100",
+            "canonical_id": 100
+          },
+          "target": 100,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 28,
+            "native_id": 100,
+            "mask": "n:100",
+            "canonical_id": 100
+          },
+          "current_failures": [
+            "insufficient_D1_history"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F149/n119-p70",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 119,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F197/n127-p106",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 127,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 59,
+          "last_same_snapshot": 144,
+          "last_same_anchor": {
+            "frame": 62,
+            "native_id": 68,
+            "mask": "n:68",
+            "canonical_id": 68
+          },
+          "target": 68,
+          "status": "ANCHOR_REPLACED_BY_OTHER_PHYSICAL_REFERENCE",
+          "current_anchor": {
+            "frame": 196,
+            "native_id": 68,
+            "mask": "n:68",
+            "canonical_id": 68
+          },
+          "current_failures": [
+            "occupied"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F205/n123-p117",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 123,
+        "independent_correct_targets": [
+          70,
+          117
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 204,
+          "last_same_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "target": 70,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 7,
+            "native_id": 70,
+            "mask": "n:70",
+            "canonical_id": 70
+          },
+          "current_failures": [
+            "occupied"
+          ]
+        },
+        {
+          "first_snapshot": 47,
+          "last_same_snapshot": 204,
+          "last_same_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "target": 117,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 84,
+            "native_id": 117,
+            "mask": "n:117",
+            "canonical_id": 117
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F269/n129-p91",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": false,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 129,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_000701_001060/F343/n132-p120",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 132,
+        "independent_correct_targets": [
+          106,
+          120
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 11,
+          "last_same_snapshot": 342,
+          "last_same_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "target": 106,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 42,
+            "native_id": 106,
+            "mask": "n:106",
+            "canonical_id": 106
+          },
+          "current_failures": [
+            "occupied"
+          ]
+        },
+        {
+          "first_snapshot": 103,
+          "last_same_snapshot": 342,
+          "last_same_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "target": 120,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 126,
+            "native_id": 120,
+            "mask": "n:120",
+            "canonical_id": 120
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F160/n170-p167",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 170,
+        "independent_correct_targets": [
+          136,
+          167
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 159,
+          "last_same_anchor": {
+            "frame": 22,
+            "native_id": 136,
+            "mask": "n:136",
+            "canonical_id": 136
+          },
+          "target": 136,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 22,
+            "native_id": 136,
+            "mask": "n:136",
+            "canonical_id": 136
+          },
+          "current_failures": [
+            "partner_ambiguous"
+          ]
+        },
+        {
+          "first_snapshot": 54,
+          "last_same_snapshot": 159,
+          "last_same_anchor": {
+            "frame": 119,
+            "native_id": 167,
+            "mask": "n:167",
+            "canonical_id": 167
+          },
+          "target": 167,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 119,
+            "native_id": 167,
+            "mask": "n:167",
+            "canonical_id": 167
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F190/n172-p126",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 172,
+        "independent_correct_targets": [
+          136,
+          167
+        ],
+        "cause": "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 189,
+          "last_same_anchor": {
+            "frame": 22,
+            "native_id": 136,
+            "mask": "n:136",
+            "canonical_id": 136
+          },
+          "target": 136,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 22,
+            "native_id": 136,
+            "mask": "n:136",
+            "canonical_id": 136
+          },
+          "current_failures": [
+            "target_core_risk",
+            "partner_157_joint_core_opposed_or_ambiguous",
+            "no_verified_local_survivor",
+            "total_cost_exceeds_dummy"
+          ]
+        },
+        {
+          "first_snapshot": 54,
+          "last_same_snapshot": 189,
+          "last_same_anchor": {
+            "frame": 166,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 167
+          },
+          "target": 167,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 166,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 167
+          },
+          "current_failures": [
+            "target_core_risk",
+            "partner_157_joint_core_opposed_or_ambiguous",
+            "no_verified_local_survivor",
+            "total_cost_exceeds_dummy"
+          ]
+        },
+        {
+          "first_snapshot": 156,
+          "last_same_snapshot": 159,
+          "last_same_anchor": {
+            "frame": 159,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 170
+          },
+          "target": 170,
+          "status": "BANK_REMOVED",
+          "current_anchor": null,
+          "current_failures": null
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F204/n168-p136",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 168,
+        "independent_correct_targets": [
+          162
+        ],
+        "cause": "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 19,
+          "last_same_snapshot": 203,
+          "last_same_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "target": 162,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "current_failures": [
+            "partner_ambiguous"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F263/n177-p158",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 177,
+        "independent_correct_targets": [
+          158
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 262,
+          "last_same_anchor": {
+            "frame": 217,
+            "native_id": 158,
+            "mask": "n:158",
+            "canonical_id": 158
+          },
+          "target": 158,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 217,
+            "native_id": 158,
+            "mask": "n:158",
+            "canonical_id": 158
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F266/n174-p163",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 174,
+        "independent_correct_targets": [
+          163
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 265,
+          "last_same_anchor": {
+            "frame": 7,
+            "native_id": 163,
+            "mask": "n:163",
+            "canonical_id": 163
+          },
+          "target": 163,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 7,
+            "native_id": 163,
+            "mask": "n:163",
+            "canonical_id": 163
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F266/n176-p167",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 176,
+        "independent_correct_targets": [
+          126,
+          167
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 1,
+          "last_same_snapshot": 203,
+          "last_same_anchor": {
+            "frame": 22,
+            "native_id": 136,
+            "mask": "n:136",
+            "canonical_id": 136
+          },
+          "target": 136,
+          "status": "ANCHOR_REPLACED_BY_OTHER_PHYSICAL_REFERENCE",
+          "current_anchor": {
+            "frame": 205,
+            "native_id": 168,
+            "mask": "n:168",
+            "canonical_id": 136
+          },
+          "current_failures": [
+            "outside_motion_range"
+          ]
+        },
+        {
+          "first_snapshot": 54,
+          "last_same_snapshot": 265,
+          "last_same_anchor": {
+            "frame": 166,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 167
+          },
+          "target": 167,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 166,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 167
+          },
+          "current_failures": []
+        },
+        {
+          "first_snapshot": 156,
+          "last_same_snapshot": 159,
+          "last_same_anchor": {
+            "frame": 159,
+            "native_id": 170,
+            "mask": "n:170",
+            "canonical_id": 170
+          },
+          "target": 170,
+          "status": "BANK_REMOVED",
+          "current_anchor": null,
+          "current_failures": null
+        },
+        {
+          "first_snapshot": 207,
+          "last_same_snapshot": 265,
+          "last_same_anchor": {
+            "frame": 222,
+            "native_id": 172,
+            "mask": "n:172",
+            "canonical_id": 126
+          },
+          "target": 126,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 222,
+            "native_id": 172,
+            "mask": "n:172",
+            "canonical_id": 126
+          },
+          "current_failures": [
+            "partner_ambiguous"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F316/n178-p119",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 178,
+        "independent_correct_targets": [
+          136,
+          162,
+          173
+        ],
+        "cause": "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 19,
+          "last_same_snapshot": 315,
+          "last_same_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "target": 162,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "current_failures": [
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 204,
+          "last_same_snapshot": 315,
+          "last_same_anchor": {
+            "frame": 205,
+            "native_id": 168,
+            "mask": "n:168",
+            "canonical_id": 136
+          },
+          "target": 136,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 205,
+            "native_id": 168,
+            "mask": "n:168",
+            "canonical_id": 136
+          },
+          "current_failures": [
+            "partner_ambiguous"
+          ]
+        },
+        {
+          "first_snapshot": 229,
+          "last_same_snapshot": 315,
+          "last_same_anchor": {
+            "frame": 239,
+            "native_id": 173,
+            "mask": "n:173",
+            "canonical_id": 173
+          },
+          "target": 173,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 239,
+            "native_id": 173,
+            "mask": "n:173",
+            "canonical_id": 173
+          },
+          "current_failures": [
+            "partner_ambiguous"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F415/n181-p166",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 181,
+        "independent_correct_targets": [
+          135,
+          166
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 12,
+          "last_same_snapshot": 414,
+          "last_same_anchor": {
+            "frame": 15,
+            "native_id": 135,
+            "mask": "n:135",
+            "canonical_id": 135
+          },
+          "target": 135,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 15,
+            "native_id": 135,
+            "mask": "n:135",
+            "canonical_id": 135
+          },
+          "current_failures": [
+            "insufficient_D1_history",
+            "D1_history_expired",
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 66,
+          "last_same_snapshot": 414,
+          "last_same_anchor": {
+            "frame": 254,
+            "native_id": 166,
+            "mask": "n:166",
+            "canonical_id": 166
+          },
+          "target": 166,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 254,
+            "native_id": 166,
+            "mask": "n:166",
+            "canonical_id": 166
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F481/n188-p125",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 188,
+        "independent_correct_targets": [
+          135,
+          166
+        ],
+        "cause": "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 12,
+          "last_same_snapshot": 480,
+          "last_same_anchor": {
+            "frame": 15,
+            "native_id": 135,
+            "mask": "n:135",
+            "canonical_id": 135
+          },
+          "target": 135,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 15,
+            "native_id": 135,
+            "mask": "n:135",
+            "canonical_id": 135
+          },
+          "current_failures": [
+            "insufficient_D1_history",
+            "D1_history_expired",
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 66,
+          "last_same_snapshot": 480,
+          "last_same_anchor": {
+            "frame": 254,
+            "native_id": 166,
+            "mask": "n:166",
+            "canonical_id": 166
+          },
+          "target": 166,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 254,
+            "native_id": 166,
+            "mask": "n:166",
+            "canonical_id": 166
+          },
+          "current_failures": [
+            "occupied"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F512/n186-p166",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 186,
+        "independent_correct_targets": [
+          132
+        ],
+        "cause": "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 4,
+          "last_same_snapshot": 511,
+          "last_same_anchor": {
+            "frame": 320,
+            "native_id": 132,
+            "mask": "n:132",
+            "canonical_id": 132
+          },
+          "target": 132,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 320,
+            "native_id": 132,
+            "mask": "n:132",
+            "canonical_id": 132
+          },
+          "current_failures": [
+            "depth_residual"
+          ]
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F551/n183-p125",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": false,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 183,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F599/n187-p164",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 187,
+        "independent_correct_targets": [
+          136,
+          162,
+          173
+        ],
+        "cause": "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 19,
+          "last_same_snapshot": 598,
+          "last_same_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "target": 162,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 26,
+            "native_id": 162,
+            "mask": "n:162",
+            "canonical_id": 162
+          },
+          "current_failures": [
+            "D1_history_expired",
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 204,
+          "last_same_snapshot": 598,
+          "last_same_anchor": {
+            "frame": 205,
+            "native_id": 168,
+            "mask": "n:168",
+            "canonical_id": 136
+          },
+          "target": 136,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 205,
+            "native_id": 168,
+            "mask": "n:168",
+            "canonical_id": 136
+          },
+          "current_failures": [
+            "D1_history_expired",
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 229,
+          "last_same_snapshot": 598,
+          "last_same_anchor": {
+            "frame": 239,
+            "native_id": 173,
+            "mask": "n:173",
+            "canonical_id": 173
+          },
+          "target": 173,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 239,
+            "native_id": 173,
+            "mask": "n:173",
+            "canonical_id": 173
+          },
+          "current_failures": [
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 312,
+          "last_same_snapshot": 315,
+          "last_same_anchor": {
+            "frame": 315,
+            "native_id": 178,
+            "mask": "n:178",
+            "canonical_id": 178
+          },
+          "target": 178,
+          "status": "BANK_REMOVED",
+          "current_anchor": null,
+          "current_failures": null
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F621/n194-p149",
+      "physical": "CORRECT",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": true,
+        "independent_legal": true,
+        "independent_below_dummy": true,
+        "incumbent_public": 194,
+        "independent_correct_targets": [
+          149
+        ],
+        "cause": "CORRECT_CONTROL"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 519,
+          "last_same_snapshot": 620,
+          "last_same_anchor": {
+            "frame": 559,
+            "native_id": 149,
+            "mask": "n:149",
+            "canonical_id": 149
+          },
+          "target": 149,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 559,
+            "native_id": 149,
+            "mask": "n:149",
+            "canonical_id": 149
+          },
+          "current_failures": []
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F688/n193-p158",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": true,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 193,
+        "independent_correct_targets": [
+          132
+        ],
+        "cause": "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX"
+      },
+      "independent_same_bank_seen_before_q": true,
+      "references": [
+        {
+          "first_snapshot": 4,
+          "last_same_snapshot": 687,
+          "last_same_anchor": {
+            "frame": 320,
+            "native_id": 132,
+            "mask": "n:132",
+            "canonical_id": 132
+          },
+          "target": 132,
+          "status": "SAME_REFERENCE_RETAINED",
+          "current_anchor": {
+            "frame": 320,
+            "native_id": 132,
+            "mask": "n:132",
+            "canonical_id": 132
+          },
+          "current_failures": [
+            "D1_history_expired",
+            "not_recently_missing"
+          ]
+        },
+        {
+          "first_snapshot": 478,
+          "last_same_snapshot": 511,
+          "last_same_anchor": {
+            "frame": 511,
+            "native_id": 186,
+            "mask": "n:186",
+            "canonical_id": 186
+          },
+          "target": 186,
+          "status": "BANK_REMOVED",
+          "current_anchor": null,
+          "current_failures": null
+        }
+      ],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    },
+    {
+      "action_id": "feeding_001201_001906/F693/n197-p167",
+      "physical": "WRONG",
+      "availability": {
+        "any_bank_same": true,
+        "independent_bank_same": false,
+        "independent_column": false,
+        "independent_legal": false,
+        "independent_below_dummy": false,
+        "incumbent_public": 197,
+        "independent_correct_targets": [],
+        "cause": "NO_INDEPENDENT_CORRECT_BANK_REFERENCE"
+      },
+      "independent_same_bank_seen_before_q": false,
+      "references": [],
+      "posthoc_GT_lookup": true,
+      "new_candidate_created": false
+    }
+  ],
+  "postseal_diagnostic_only": true,
+  "GT_raster": false
+}

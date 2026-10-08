@@ -1,0 +1,70 @@
+{
+  "status": "ACTUAL_LOCAL_INSPECTION_COMPLETED",
+  "created_utc": "2026-10-08T01:54:54.096398+00:00",
+  "contact_sheets": [
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_WRONG_1.png",
+      "bytes": 1599209,
+      "sha256": "1d7e55f2d5f2d85f57dc436555e7e27304d950f4698e95b1b71952024d6e3aaa"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_WRONG_2.png",
+      "bytes": 1633369,
+      "sha256": "37231bcae6a82b0f5f3ba6810e3c9280583510cbd4c47a5913f00371db9c69e7"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_WRONG_3.png",
+      "bytes": 1574352,
+      "sha256": "b0c8015d5abe1f6143abfc9ca19562af2e65d86f260d480c74ed9f871f828699"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_WRONG_4.png",
+      "bytes": 1584449,
+      "sha256": "4fc8b4fc6b3fbe6e62308e526be97c2580131ffc8a9838bff8ee64df86fe41ef"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_WRONG_5.png",
+      "bytes": 428274,
+      "sha256": "05d3756d4bebee30b8b05b8c7b1d170dd9c9d6ac87930b8441f5aaafefb4c8ec"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_CORRECT_1.png",
+      "bytes": 1606937,
+      "sha256": "abda1a3b09626a56896e0c842b0ffac6cd99a117c15ed6f520acab6a5e2bbbe2"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_CORRECT_2.png",
+      "bytes": 1403098,
+      "sha256": "03e78aca855c587719d3eaf65154f765f88f7b1f4183d92d46597d4c9b43b6ea"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CONTACT_UNSCORABLE_1.png",
+      "bytes": 814685,
+      "sha256": "6997d55545f77af18d0415468c7c577f6c92251367fa2bc2552154ee2dc5918f"
+    }
+  ],
+  "actions_covered": 27,
+  "wrong": 17,
+  "correct": 8,
+  "unscorable": 2,
+  "inspected_legacy_gray_details": [
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CASE_global522_n83.png",
+      "bytes": 1013262,
+      "sha256": "87095c5c6c9505433defde3f936ff1173e7d7dfbd559914c373e575018d0a40d"
+    },
+    {
+      "path": "F:\\CAU\\deliveries\\SAM3D-Z4Q-DeepSeek-FishMOT-DS37-20261007\\experiments\\ds38_candidate_depth_failure_audit\\private\\CASE_global1516_n178.png",
+      "bytes": 1009499,
+      "sha256": "dfcb4b5c2d85f18eb5e35601f894881b24d81ae6f92e29a80c4b8671c25dfc15"
+    }
+  ],
+  "findings": [
+    "Fixed scale separates missing magenta from low valid black; old grey images retained",
+    "All cohort panels retain contours and observations; colors do not bind identities across frames",
+    "Uniform-looking depth inside a mask is not certified fish surface or background; numeric summaries govern interpretation"
+  ],
+  "expert_physical_identity_certification": false,
+  "RGB": false,
+  "GT_raster": false
+}

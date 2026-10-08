@@ -1,0 +1,105 @@
+{
+  "WRONG": {
+    "actions": 17,
+    "availability": {
+      "any_bank_same": 14,
+      "independent_bank_same": 10,
+      "independent_column": 5,
+      "independent_legal": 0,
+      "independent_below_dummy": 0
+    },
+    "causes": {
+      "NO_INDEPENDENT_CORRECT_BANK_REFERENCE": 7,
+      "CORRECT_HISTORY_EXCLUDED_BEFORE_MATRIX": 5,
+      "CORRECT_HISTORY_COLUMN_BUT_EDGE_REJECTED": 5
+    },
+    "ranking": {
+      "whole": {
+        "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 17
+      },
+      "core": {
+        "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 17
+      }
+    },
+    "qualified_core_ranking": {
+      "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 17
+    }
+  },
+  "CORRECT": {
+    "actions": 8,
+    "availability": {
+      "any_bank_same": 8,
+      "independent_bank_same": 8,
+      "independent_column": 8,
+      "independent_legal": 8,
+      "independent_below_dummy": 8
+    },
+    "causes": {
+      "CORRECT_CONTROL": 8
+    },
+    "ranking": {
+      "whole": {
+        "ONLY_CORRECT_EDGE_NO_COMPETITION": 6,
+        "UNIQUE_CORRECT_MINIMUM": 2
+      },
+      "core": {
+        "ONLY_CORRECT_EDGE_NO_COMPETITION": 6,
+        "UNIQUE_CORRECT_MINIMUM": 2
+      }
+    },
+    "qualified_core_ranking": {
+      "ONLY_CORRECT_EDGE_NO_COMPETITION": 6,
+      "UNIQUE_CORRECT_MINIMUM": 2
+    }
+  },
+  "UNSCORABLE": {
+    "actions": 2,
+    "availability": {
+      "any_bank_same": 1,
+      "independent_bank_same": 0,
+      "independent_column": 0,
+      "independent_legal": 0,
+      "independent_below_dummy": 0
+    },
+    "causes": {
+      "UNSCORABLE": 2
+    },
+    "ranking": {
+      "whole": {
+        "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 2
+      },
+      "core": {
+        "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 2
+      }
+    },
+    "qualified_core_ranking": {
+      "NO_SCOREABLE_CORRECT_EDGE_IN_POOL": 2
+    }
+  },
+  "relative_order": {
+    "total": 1309,
+    "statuses": {
+      "UNKNOWN": 1244,
+      "SAME_VERSION_MEASURED_PROXY_ORDER": 65
+    },
+    "reasons": {
+      "WITNESS_CONTACT_OR_QUALITY_RISK": 1159,
+      "WEAK_MEASUREMENT": 185,
+      "SOURCE_OR_PUBLIC_VERSION_BREAK": 39,
+      "NOT_INDEPENDENT_WITNESS": 19,
+      "VISIBILITY_BREAK": 34
+    },
+    "qualified_by_reference_relation": {
+      "SAME": {
+        "False": 9
+      },
+      "DIFFERENT": {
+        "True": 23,
+        "False": 32
+      },
+      "UNKNOWN": {
+        "True": 1
+      }
+    }
+  }
+}
